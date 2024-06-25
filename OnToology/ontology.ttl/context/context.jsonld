@@ -1,0 +1,429 @@
+{
+  "@context" : {
+    "domainAddObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#domainAddObjectProperty",
+      "@type" : "@id"
+    },
+    "AddClass" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddClass"
+    },
+    "ObjectPropertyRangeChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange"
+    },
+    "propertyAddObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#propertyAddObjectProperty",
+      "@type" : "@id"
+    },
+    "ObjectPropertyDomainChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange"
+    },
+    "deprecatedElement" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#deprecatedElement",
+      "@type" : "@id"
+    },
+    "rangeAddDataProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#rangeAddDataProperty",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "AddInverseFunctionalObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddInverseFunctionalObjectProperty"
+    },
+    "RemoveDataProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveDataProperty"
+    },
+    "EquivalentClassChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#EquivalentClassChange"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "DataPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyChange"
+    },
+    "DisjointObjectPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange"
+    },
+    "DisjointDataPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange"
+    },
+    "license" : {
+      "@id" : "http://creativecommons.org/ns#license"
+    },
+    "AddDataPropertyRange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddDataPropertyRange"
+    },
+    "AddTransitiveObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddTransitiveObjectProperty"
+    },
+    "rangeRemoveSubProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#rangeRemoveSubProperty",
+      "@type" : "@id"
+    },
+    "RemoveObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveObjectProperty"
+    },
+    "AddAsymmetricObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddAsymmetricObjectProperty"
+    },
+    "InverseObjectPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange"
+    },
+    "RemoveSubClass" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveSubClass"
+    },
+    "bibliographicCitation" : {
+      "@id" : "http://purl.org/dc/terms/bibliographicCitation"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "AddInverseObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddInverseObjectProperty"
+    },
+    "OntologyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    },
+    "AddEquivalentDataProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddEquivalentDataProperty"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "RemoveDisjointClass" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveDisjointClass"
+    },
+    "Class" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Class"
+    },
+    "AddEquivalentClass" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddEquivalentClass"
+    },
+    "RemoveDisjointDataProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveDisjointDataProperty"
+    },
+    "ClassChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#ClassChange"
+    },
+    "TransitiveObjectPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange"
+    },
+    "rangeRemoveDataProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#rangeRemoveDataProperty",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "RemoveProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveProperty"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "AddObjectPropertyDomain" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddObjectPropertyDomain"
+    },
+    "SymmetricObjectPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange"
+    },
+    "AddFunctionalObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddFunctionalObjectProperty"
+    },
+    "RemoveEquivalentClass" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveEquivalentClass"
+    },
+    "AddFunctionalDataProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddFunctionalDataProperty"
+    },
+    "RemoveRange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveRange"
+    },
+    "OWLEntity" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#OWLEntity"
+    },
+    "AddSubPropertyOf" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddSubPropertyOf"
+    },
+    "RemoveDataPropertyDomain" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveDataPropertyDomain"
+    },
+    "FunctionalDataPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange"
+    },
+    "RemoveTransitiveObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveTransitiveObjectProperty"
+    },
+    "RemoveDisjointUnion" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveDisjointUnion"
+    },
+    "RemoveInverseObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveInverseObjectProperty"
+    },
+    "RemoveFunctionalObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveFunctionalObjectProperty"
+    },
+    "rangeAddSubClass" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#rangeAddSubClass",
+      "@type" : "@id"
+    },
+    "EquivalentObjectPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange"
+    },
+    "SubClassChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#SubClassChange"
+    },
+    "InverseFunctionalObjectPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange"
+    },
+    "RemoveFunctionalDataProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveFunctionalDataProperty"
+    },
+    "RemoveSubPropertyOf" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf"
+    },
+    "IrreflexiveObjectPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange"
+    },
+    "ObjectPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange"
+    },
+    "RemoveAsymmetricObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveAsymmetricObjectProperty"
+    },
+    "renamedElement" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#renamedElement",
+      "@type" : "@id"
+    },
+    "RemoveDisjointObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveDisjointObjectProperty"
+    },
+    "RemoveClass" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveClass"
+    },
+    "DeprecateElement" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#DeprecateElement"
+    },
+    "addedClass" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#addedClass",
+      "@type" : "@id"
+    },
+    "RenameElement" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RenameElement"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "SubObjectPropertyOfChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#SubObjectPropertyOfChange"
+    },
+    "AddDisjointObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddDisjointObjectProperty"
+    },
+    "AddDataPropertyDomain" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddDataPropertyDomain"
+    },
+    "domainRemoveObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#domainRemoveObjectProperty",
+      "@type" : "@id"
+    },
+    "hasRelatedEntity" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#hasRelatedEntity",
+      "@type" : "@id"
+    },
+    "DataPropertyRangeChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyRangeChange"
+    },
+    "rangeRemoveObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#rangeRemoveObjectProperty",
+      "@type" : "@id"
+    },
+    "AddDatatype" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddDatatype"
+    },
+    "rangeRemoveSubClass" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#rangeRemoveSubClass",
+      "@type" : "@id"
+    },
+    "AddProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddProperty"
+    },
+    "rangeAddSubProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#rangeAddSubProperty",
+      "@type" : "@id"
+    },
+    "RemoveDatatype" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveDatatype"
+    },
+    "RemoveReflexiveObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveReflexiveObjectProperty"
+    },
+    "propertyAddDataProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#propertyAddDataProperty",
+      "@type" : "@id"
+    },
+    "RevokeDeprecate" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RevokeDeprecate"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "SubDataPropertyOfChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#SubDataPropertyOfChange"
+    },
+    "RemoveIrreflexiveObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveIrreflexiveObjectProperty"
+    },
+    "AddObjectPropertyRange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddObjectPropertyRange"
+    },
+    "ObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    "RemoveObjectPropertyDomain" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveObjectPropertyDomain"
+    },
+    "ReflexiveObjectPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange"
+    },
+    "AddObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddObjectProperty"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Property"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "AddReflexiveObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddReflexiveObjectProperty"
+    },
+    "AddEquivalentObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddEquivalentObjectProperty"
+    },
+    "domainAddSubProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#domainAddSubProperty",
+      "@type" : "@id"
+    },
+    "AddDomain" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddDomain"
+    },
+    "AddDisjointUnion" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddDisjointUnion"
+    },
+    "AddSubClass" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddSubClass"
+    },
+    "AddDisjointClass" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddDisjointClass"
+    },
+    "domainAddDataProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#domainAddDataProperty",
+      "@type" : "@id"
+    },
+    "RemoveDataPropertyRange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveDataPropertyRange"
+    },
+    "domainRemoveSubClass" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#domainRemoveSubClass",
+      "@type" : "@id"
+    },
+    "domainRemoveSubProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#domainRemoveSubProperty",
+      "@type" : "@id"
+    },
+    "removedClass" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#removedClass",
+      "@type" : "@id"
+    },
+    "RemoveSymmetricObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveSymmetricObjectProperty"
+    },
+    "domainAddSubClass" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#domainAddSubClass",
+      "@type" : "@id"
+    },
+    "RemoveInverseFunctionalObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveInverseFunctionalObjectProperty"
+    },
+    "AddRange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddRange"
+    },
+    "RemoveEquivalentDataProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveEquivalentDataProperty"
+    },
+    "RemoveObjectPropertyRange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveObjectPropertyRange"
+    },
+    "AddDisjointDataProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddDisjointDataProperty"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "DataPropertyDomainChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyDomainChange"
+    },
+    "propertyRemoveObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#propertyRemoveObjectProperty",
+      "@type" : "@id"
+    },
+    "EntityChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#EntityChange"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "AddDataProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddDataProperty"
+    },
+    "RemoveEquivalentObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveEquivalentObjectProperty"
+    },
+    "domainRemoveDataProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#domainRemoveDataProperty",
+      "@type" : "@id"
+    },
+    "rangeAddObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#rangeAddObjectProperty",
+      "@type" : "@id"
+    },
+    "propertyRemoveDataProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#propertyRemoveDataProperty",
+      "@type" : "@id"
+    },
+    "DatatypeProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    "FunctionalObjectPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange"
+    },
+    "AddIrreflexiveObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddIrreflexiveObjectProperty"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "DisjointUnionChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#DisjointUnionChange"
+    },
+    "undeprecatedElement" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#undeprecatedElement",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "AsymmetricObjectPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange"
+    },
+    "RemoveDomain" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#RemoveDomain"
+    },
+    "AddSymmetricObjectProperty" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#AddSymmetricObjectProperty"
+    },
+    "DisjointClassChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#DisjointClassChange"
+    },
+    "EquivalentDataPropertyChange" : {
+      "@id" : "https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange"
+    }
+  }
+}

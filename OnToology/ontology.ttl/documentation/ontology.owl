@@ -1,0 +1,1522 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/OWLChangeOntology#"
+     xml:base="https://w3id.org/OWLChangeOntology"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/OWLChangeOntology#">
+        <owl:versionIRI rdf:resource="http://w3id.org/OWLChangeOntology/1.0.0"/>
+        <ns:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+        <terms:bibliographicCitation>Conde-Herreros, D., Stork, L., Pernisch, R., Poveda-Villalón, M., Corcho, O., &amp; Chaves-Fraga, D. (2024). Propagating Ontology Changes to Declarative Mappings in Construction of Knowledge Graphs.</terms:bibliographicCitation>
+        <terms:contributor>Diego Conde Herreros</terms:contributor>
+        <terms:contributor>Raúl Palma</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-17 </terms:created>
+        <terms:creator>Diego Conde Herreros</terms:creator>
+        <terms:creator>Raúl Palma</terms:creator>
+        <terms:description>An ontology for describing changes between OWL ontology versions</terms:description>
+        <terms:title>OWL Change Ontology</terms:title>
+        <vann:preferredNamespacePrefix>och</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="http://w3id.org#OWLChangeOntology"/>
+        <owl:priorVersion rdf:resource="https://w3id.org/OWLChangeOntology#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#addedClass -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#addedClass">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#AddClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The OWL class that is added between ontology versions</rdfs:comment>
+        <rdfs:label>Added Class</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#deprecatedElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#deprecatedElement">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#DeprecateElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>The Element that is being deprecated.</rdfs:comment>
+        <rdfs:label>Deprecate Element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#domainAddDataProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#domainAddDataProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#AddDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The domain of an OWL data property added between ontology versions</rdfs:comment>
+        <rdfs:label>Domain in Add Data Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#domainAddObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#domainAddObjectProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#AddObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The domain of an OWL object property added between ontology versions</rdfs:comment>
+        <rdfs:label>Domain in Add Object Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#domainAddSubClass -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#domainAddSubClass">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#AddSubClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The subject of the rdfs:subClassOf property removed between ontology versions, the child class</rdfs:comment>
+        <rdfs:label>Domain in Add Subclass Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#domainAddSubProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#domainAddSubProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#AddSubPropertyOf"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Property"/>
+        <rdfs:comment>The subject of the rdfs:subPropertyOf property removed between ontology versions.</rdfs:comment>
+        <rdfs:label>Domain in Add SubProperty Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#domainRemoveDataProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#domainRemoveDataProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#RemoveDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The domain of an OWL data property removed between ontology versions</rdfs:comment>
+        <rdfs:label>Domain in Remove Data Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#domainRemoveObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#domainRemoveObjectProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#RemoveObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The domain of an OWL object property removed between ontology versions</rdfs:comment>
+        <rdfs:label>Domain in Remove Object Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#domainRemoveSubClass -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#domainRemoveSubClass">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#RemoveSubClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The subject of the rdfs:subClassOf property removed between ontology versions, the child class</rdfs:comment>
+        <rdfs:label>Domain in Remove Subclass Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#domainRemoveSubProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#domainRemoveSubProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Property"/>
+        <rdfs:comment>The subject of the rdfs:subPropertyOf property removed between ontology versions, the child class</rdfs:comment>
+        <rdfs:label>Domain in Remove SubProperty Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#hasRelatedEntity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#hasRelatedEntity">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#OWLEntity"/>
+        <rdfs:range rdf:resource="https://w3id.org/OWLChangeOntology#OWLEntity"/>
+        <rdfs:comment>EStablishes an equivalence between ontological terms</rdfs:comment>
+        <rdfs:label>Has Related Entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#propertyAddDataProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#propertyAddDataProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#AddDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <rdfs:comment>The data property added between ontology versions</rdfs:comment>
+        <rdfs:label>Property in Add Data Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#propertyAddObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#propertyAddObjectProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#AddObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:comment>The object property added between ontology versions</rdfs:comment>
+        <rdfs:label>Property in Add Object Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#propertyRemoveDataProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#propertyRemoveDataProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#RemoveDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <rdfs:comment>The data property removed between ontology versions</rdfs:comment>
+        <rdfs:label>Property in Remove Data Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#propertyRemoveObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#propertyRemoveObjectProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#RemoveObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:comment>The data property removed between ontology versions</rdfs:comment>
+        <rdfs:label>Property in Remove Data Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#rangeAddObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#rangeAddObjectProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#AddObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The object of the object property added between ontology versions.</rdfs:comment>
+        <rdfs:label>Range in Add Object Property operation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#rangeAddSubClass -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#rangeAddSubClass">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#AddSubClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The object of the rdfs:subClassOf property added between ontology versions, the parent class.</rdfs:comment>
+        <rdfs:label>Range in Add Subclass Property operation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#rangeAddSubProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#rangeAddSubProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#AddSubPropertyOf"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Property"/>
+        <rdfs:comment>The object of the rdfs:subPropertyOf property removed between ontology versions.</rdfs:comment>
+        <rdfs:label>Range in Add SubProperty Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#rangeRemoveObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#rangeRemoveObjectProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#RemoveObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The range of an OWL object property removed between ontology versions</rdfs:comment>
+        <rdfs:label>Range in Remove Object Property operation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#rangeRemoveSubClass -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#rangeRemoveSubClass">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#RemoveSubClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The object of the rdfs:subClassOf property removed between ontology versions, the parent class</rdfs:comment>
+        <rdfs:label>Range in Remove Subclass Property operation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#rangeRemoveSubProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#rangeRemoveSubProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Property"/>
+        <rdfs:comment>The object of the rdfs:subPropertyOf property removed between ontology versions</rdfs:comment>
+        <rdfs:label>Range in Remove SubProperty Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#removedClass -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#removedClass">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#RemoveClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The OWL class that is deleted betweeen ontology versions</rdfs:comment>
+        <rdfs:label>Deleted Class</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#renamedElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#renamedElement">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#RenameElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>The OWL class or property that is being renamed between ontology versions</rdfs:comment>
+        <rdfs:label>Renamed Element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#undeprecatedElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/OWLChangeOntology#undeprecatedElement">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#RevokeDeprecate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>The Element that is being undeprecated.</rdfs:comment>
+        <rdfs:label>Uneprecate Element</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#rangeAddDataProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/OWLChangeOntology#rangeAddDataProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#AddDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#rangeRemoveDataProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/OWLChangeOntology#rangeRemoveDataProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/OWLChangeOntology#RemoveDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>The range of an OWL data property removed between ontology versions</rdfs:comment>
+        <rdfs:label>Range in Remove Data Property operation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Class -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#DatatypeProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#ObjectProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Property -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Property"/>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddAsymmetricObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddAsymmetricObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange"/>
+        <rdfs:comment>The class of the addition of asymmetric properties change betweeen ontology versions</rdfs:comment>
+        <rdfs:label>Addition of Asymetric Object Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddClass -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ClassChange"/>
+        <rdfs:comment>The addition of a class operation</rdfs:comment>
+        <rdfs:label>Addition of Class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddDataProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddDataProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#AddProperty"/>
+        <rdfs:comment>The class of the addition of data properties change betweeen ontology versions</rdfs:comment>
+        <rdfs:label>Addition of Data Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddDataPropertyDomain -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddDataPropertyDomain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#AddDomain"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DataPropertyDomainChange"/>
+        <rdfs:comment>The class of the addition of the domain of a data property change betweeen ontology versions</rdfs:comment>
+        <rdfs:label>Addition of the Domain of a Data Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddDataPropertyRange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddDataPropertyRange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#AddRange"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DataPropertyRangeChange"/>
+        <rdfs:comment>The class of the addition of the range of a data property change betweeen ontology versions</rdfs:comment>
+        <rdfs:label>Addition of the Range of a Data Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddDatatype -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddDatatype">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The class of the addition of the Datatype of a data property change betweeen ontology versions</rdfs:comment>
+        <rdfs:label>Addition of the Datatype of a Data Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddDisjointClass -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddDisjointClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DisjointClassChange"/>
+        <rdfs:comment>The class of the addition of the owl:disjointWith property change betweeen ontology versions</rdfs:comment>
+        <rdfs:label>Addition of the Disjoint With Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddDisjointDataProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddDisjointDataProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange"/>
+        <rdfs:comment>The class of the addition of the owl:propertyDisjointWith property betweeen data properties change betweeen ontology versions</rdfs:comment>
+        <rdfs:label>Addition of the property Disjoint With Property to data property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddDisjointObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddDisjointObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange"/>
+        <rdfs:comment>The class of the addition of the owl:propertyDisjointWith property betweeen object properties change betweeen ontology versions</rdfs:comment>
+        <rdfs:label>Addition of the property Disjoint With Property to object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddDisjointUnion -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddDisjointUnion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DisjointUnionChange"/>
+        <rdfs:comment>The class of the addition of the owl:DisjointUnionOf property change betweeen ontology versions. The property that determines that a given class is equivalent to the disjoint union of a collection of other classes</rdfs:comment>
+        <rdfs:label>Addition of the DisjointUnionOf Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddDomain -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddDomain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The change operation that describes the addition of a domain to a property.</rdfs:comment>
+        <rdfs:label>Addition of the Domain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddEquivalentClass -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddEquivalentClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#EquivalentClassChange"/>
+        <rdfs:comment>The class of the addition of the owl:equivalentClass property change betweeen ontology versions. The property that determines that two given classes are equivalent, and that is used to specify datatype definitions.</rdfs:comment>
+        <rdfs:label>Addition of the equivalentClass Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddEquivalentDataProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddEquivalentDataProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange"/>
+        <rdfs:comment>The class of the addition of the owl:equivalentProperty property between data properties change betweeen ontology versions. The property that determines that two given properties are equivalent.</rdfs:comment>
+        <rdfs:label>Addition of the equivalentProperty Property for data properties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddEquivalentObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddEquivalentObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange"/>
+        <rdfs:comment>The class of the addition of the owl:equivalentProperty property between object properties change betweeen ontology versions. The property that determines that two given properties are equivalent.</rdfs:comment>
+        <rdfs:label>Addition of the equivalentProperty Property for object properties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddFunctionalDataProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddFunctionalDataProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange"/>
+        <rdfs:comment>The class of the addition of the owl:FuctionalProperty change betweeen ontology versions.This is the class of functional properties</rdfs:comment>
+        <rdfs:label>Addition of functional data property </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddFunctionalObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddFunctionalObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange"/>
+        <rdfs:comment>The class of the addition of the owl:FuctionalProperty change betweeen ontology versions.This is the class of functional properties</rdfs:comment>
+        <rdfs:label>Addition of functional object property </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddInverseFunctionalObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddInverseFunctionalObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange"/>
+        <rdfs:comment>The class of the addition of the owl:InverseFuctionalProperty change betweeen ontology versions.This is the class of inverse-functional properties</rdfs:comment>
+        <rdfs:label>Addition of an inverse functional object property </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddInverseObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddInverseObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange"/>
+        <rdfs:comment>The class of the addition of the owl:inverseOf change betweeen ontology versions.The property that determines that two given properties are inverse.</rdfs:comment>
+        <rdfs:label>Addition of an inverse property to object property </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddIrreflexiveObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddIrreflexiveObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange"/>
+        <rdfs:comment>The class of the addition of the owl:irreflexiveProperty change betweeen ontology versions.The class of irreflexive properties.</rdfs:comment>
+        <rdfs:label>Addition of an irreflexive object property </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#AddProperty"/>
+        <rdfs:comment>Addition of an Object type property.</rdfs:comment>
+        <rdfs:label>Addition of an Object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddObjectPropertyDomain -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddObjectPropertyDomain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#AddDomain"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange"/>
+        <rdfs:comment>The class of the addition of the domain of an object property change betweeen ontology versions</rdfs:comment>
+        <rdfs:label>Addition of the Domain of an object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddObjectPropertyRange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddObjectPropertyRange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#AddRange"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange"/>
+        <rdfs:comment>The class of the addition of the range of an object property change betweeen ontology versions</rdfs:comment>
+        <rdfs:label>Addition of the Range of an object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The change operation that describes the addition of a property to the ontology.</rdfs:comment>
+        <rdfs:label>Addition of a Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddRange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddRange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The change operation that describes the addition of a range to a property.</rdfs:comment>
+        <rdfs:label>Addition of the Range</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddReflexiveObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddReflexiveObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange"/>
+        <rdfs:comment>The class of the addition of the owl:reflexiveProperty change betweeen ontology versions.The class of rreflexive properties.</rdfs:comment>
+        <rdfs:label>Addition of an reflexive object property </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddSubClass -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddSubClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#SubClassChange"/>
+        <rdfs:comment>The change operation that describes the addition of an rdfs:subClassOf property.</rdfs:comment>
+        <rdfs:label>Addition  of SubClass property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddSubPropertyOf -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddSubPropertyOf">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The change operation that describes the addition of sub property property.</rdfs:comment>
+        <rdfs:label>Addition of the sub property property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddSymmetricObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddSymmetricObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the addition of Symmetric object property.</rdfs:comment>
+        <rdfs:label>Addition a Symmetric object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AddTransitiveObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AddTransitiveObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the addition of a transitive object property.</rdfs:comment>
+        <rdfs:label>Addition a transitive object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of a transitive object property.</rdfs:comment>
+        <rdfs:label>Change of an asymmetric object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#ClassChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#ClassChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The change operation that describes changes in classes.</rdfs:comment>
+        <rdfs:label>Class Changes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#DataPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#DataPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#EntityChange"/>
+        <rdfs:comment>The change operation that describes the change of a datatype property.</rdfs:comment>
+        <rdfs:label>Change of a datatype property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#DataPropertyDomainChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#DataPropertyDomainChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DataPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of  the domain of a datatype property.</rdfs:comment>
+        <rdfs:label>Change of  the domain of a datatype property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#DataPropertyRangeChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#DataPropertyRangeChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DataPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of  the range of a datatype property.</rdfs:comment>
+        <rdfs:label>Change of  the range of a datatype property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#DeprecateElement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#DeprecateElement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The change operation that describes the deprecation of a class or property</rdfs:comment>
+        <rdfs:label>Deprecation of an element.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#DisjointClassChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#DisjointClassChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ClassChange"/>
+        <rdfs:comment>The change operation that describes the change of a disjoint class.</rdfs:comment>
+        <rdfs:label>Change of a disjoint class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DataPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of a disjoint datatype property.</rdfs:comment>
+        <rdfs:label>Change of a disjoint datatype property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of a disjoint object property.</rdfs:comment>
+        <rdfs:label>Change of a disjoint object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#DisjointUnionChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#DisjointUnionChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ClassChange"/>
+        <rdfs:comment>The change operation that describes the change of a disjoint union property.</rdfs:comment>
+        <rdfs:label>Change of a disjoint union property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#EntityChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#EntityChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The change operation that describes changes in entities.</rdfs:comment>
+        <rdfs:label>Entity Changes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#EquivalentClassChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#EquivalentClassChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ClassChange"/>
+        <rdfs:comment>The change operation that describes the change of an equivalent class property.</rdfs:comment>
+        <rdfs:label>Change of an equivalent class property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DataPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of an equivalent data property property.</rdfs:comment>
+        <rdfs:label>Change of an equivalent data property property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of an equivalent object property property.</rdfs:comment>
+        <rdfs:label>Change of an equivalent object property property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DataPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of a functional datatype property property.</rdfs:comment>
+        <rdfs:label>Change of a functional datatype property property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of a functional object property property.</rdfs:comment>
+        <rdfs:label>Change of a functional object property property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of an inverse functional object property property.</rdfs:comment>
+        <rdfs:label>Change of an inverse functional object property property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of an inverse functional object property property.</rdfs:comment>
+        <rdfs:label>Change of an inverse functional object property property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of an irreflexive object property property.</rdfs:comment>
+        <rdfs:label>Change of an irreflexive object property property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#OWLEntity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#OWLEntity">
+        <rdfs:comment>The class that describes an OWL Entities, the named terms of the ontology</rdfs:comment>
+        <rdfs:label>OWL Entity Class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#ObjectPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#ObjectPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#EntityChange"/>
+        <rdfs:comment>The change operation that describes the change of an object property.</rdfs:comment>
+        <rdfs:label>Change of an object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of the domain of an object property.</rdfs:comment>
+        <rdfs:label>Change of the domain of an object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of the range of an object property.</rdfs:comment>
+        <rdfs:label>Change of the range of an object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#OntologyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#OntologyChange">
+        <rdfs:comment>The change operation that describes changes in an ontology.</rdfs:comment>
+        <rdfs:label>Ontology Changes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change a reflexive object property.</rdfs:comment>
+        <rdfs:label>Change of a reflexive object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveAsymmetricObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveAsymmetricObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the removal of an asymmetric object property.</rdfs:comment>
+        <rdfs:label>Removal of an asymmetric object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveClass -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ClassChange"/>
+        <rdfs:comment>The change operation that describes the removal of a class.</rdfs:comment>
+        <rdfs:label>Removal of a class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveDataProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveDataProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#RemoveProperty"/>
+        <rdfs:comment>The change operation that describes the removal of a data property.</rdfs:comment>
+        <rdfs:label>Removal of a data property </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveDataPropertyDomain -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveDataPropertyDomain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DataPropertyDomainChange"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#RemoveDomain"/>
+        <rdfs:comment>The change operation that describes the removal of the domain of a data property.</rdfs:comment>
+        <rdfs:label>Removal of the domain of a datatype property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveDataPropertyRange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveDataPropertyRange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DataPropertyRangeChange"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#RemoveRange"/>
+        <rdfs:comment>The change operation that describes the removal of the range of a data property.</rdfs:comment>
+        <rdfs:label>Removal of the range of a datatype property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveDatatype -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveDatatype">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The change operation that describes the removal of the Datatype of a data property.</rdfs:comment>
+        <rdfs:label>Removal of the Datatype of a datatype property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveDisjointClass -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveDisjointClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DisjointClassChange"/>
+        <rdfs:comment>The change operation that describes the removal of the disjoint class property.</rdfs:comment>
+        <rdfs:label>Removal of a disjoint class property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveDisjointDataProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveDisjointDataProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange"/>
+        <rdfs:comment>The change operation that describes the removal of the disjointWith property.</rdfs:comment>
+        <rdfs:label>Removal of the disjointWith property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveDisjointObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveDisjointObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the removal of the disjointWith property.</rdfs:comment>
+        <rdfs:label>Removal of the disjointWith property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveDisjointUnion -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveDisjointUnion">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DisjointUnionChange"/>
+        <rdfs:comment>The change operation that describes the removal of the disjointUnionOf property.</rdfs:comment>
+        <rdfs:label>Removal of the disjointUnionOf property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveDomain -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveDomain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The change operation that describes the removal of the domain from a property.</rdfs:comment>
+        <rdfs:label>Removal of the Domain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveEquivalentClass -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveEquivalentClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#EquivalentClassChange"/>
+        <rdfs:comment>The change operation that describes the removal of the equivalentClass property.</rdfs:comment>
+        <rdfs:label>Removal of the equivalentClass property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveEquivalentDataProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveEquivalentDataProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange"/>
+        <rdfs:comment>The change operation that describes the removal of the equivalentProperty property for a Datatype property.</rdfs:comment>
+        <rdfs:label>Removal of the equivalentProperty property for a Datatype property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveEquivalentObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveEquivalentObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the removal of the equivalentProperty property for an object property.</rdfs:comment>
+        <rdfs:label>Removal of the equivalentProperty property for an object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveFunctionalDataProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveFunctionalDataProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange"/>
+        <rdfs:comment>The class of the removal of the owl:FuctionalProperty change betweeen ontology versions.This is the class of functional properties</rdfs:comment>
+        <rdfs:label>Removal of functional data property </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveFunctionalObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveFunctionalObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange"/>
+        <rdfs:comment>The class of the removal of the owl:InverseFuctionalProperty change betweeen ontology versions.This is the class of inverse functional properties</rdfs:comment>
+        <rdfs:label>Removal of functional object property </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveInverseFunctionalObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveInverseFunctionalObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange"/>
+        <rdfs:comment>The class of the removal of the owl:InverseFuctionalProperty change betweeen ontology versions.This is the class of inverse functional properties</rdfs:comment>
+        <rdfs:label>Removal of inverse functional object property </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveInverseObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveInverseObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange"/>
+        <rdfs:comment>The class of the removal of the owl:inverseOf change betweeen ontology versions.The property that determines that two given properties are inverse.</rdfs:comment>
+        <rdfs:label>Removal of an inverse property to object property </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveIrreflexiveObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveIrreflexiveObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange"/>
+        <rdfs:comment>The class of the removal of the owl:irreflexiveProperty change betweeen ontology versions.The class of irreflexive properties.</rdfs:comment>
+        <rdfs:label>Removal of an irreflexive object property </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#RemoveProperty"/>
+        <rdfs:comment>Removal of an Object type property.</rdfs:comment>
+        <rdfs:label>Removal of an Object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveObjectPropertyDomain -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveObjectPropertyDomain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#RemoveDomain"/>
+        <rdfs:comment>The class of the removal of the domain of an object property change betweeen ontology versions</rdfs:comment>
+        <rdfs:label>Removal of the Domain of an object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveObjectPropertyRange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveObjectPropertyRange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#RemoveRange"/>
+        <rdfs:comment>The class of the removal of the range of an object property change betweeen ontology versions</rdfs:comment>
+        <rdfs:label>Removal of the Range of an object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The change operation that describes the removal of a Property.</rdfs:comment>
+        <rdfs:label>Removal of a Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveRange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveRange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The change operation that describes the removal of the range from a property.</rdfs:comment>
+        <rdfs:label>Removal of the Range</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveReflexiveObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveReflexiveObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange"/>
+        <rdfs:comment>The class of the removal of the owl:reflexiveProperty change betweeen ontology versions.The class of rreflexive properties.</rdfs:comment>
+        <rdfs:label>Removal of an reflexive object property </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveSubClass -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveSubClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#SubClassChange"/>
+        <rdfs:comment>The change operation that describes the removal of an rdfs:subClassOf property.</rdfs:comment>
+        <rdfs:label>Removal of SubClass property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The change operation that describes the removal of sub property property.</rdfs:comment>
+        <rdfs:label>Removal of the sub property property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveSymmetricObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveSymmetricObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange"/>
+        <rdfs:comment>The class of the removal of symmetric properties change betweeen ontology versions</rdfs:comment>
+        <rdfs:label>Removal of Symetric Object Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RemoveTransitiveObjectProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RemoveTransitiveObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the removal of a transitive object property.</rdfs:comment>
+        <rdfs:label>Removal of a transitive object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RenameElement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RenameElement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The change operation that describes the Renaming of a class or property.</rdfs:comment>
+        <rdfs:label>Renaming of a class or property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#RevokeDeprecate -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#RevokeDeprecate">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+        <rdfs:comment>The change operation that describes the revoke deprecation of a class or property</rdfs:comment>
+        <rdfs:label>Revoke Deprecation of an Element.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#SubClassChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#SubClassChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ClassChange"/>
+        <rdfs:comment>The change operation that describes the change of an rdfs:subClassOf property.</rdfs:comment>
+        <rdfs:label>Change of SubClass property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#SubDataPropertyOfChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#SubDataPropertyOfChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#DataPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of a subproperty of a Datatype property.</rdfs:comment>
+        <rdfs:label>Change of the subproperty of a Datatype property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#SubObjectPropertyOfChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#SubObjectPropertyOfChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of a subproperty of an object property.</rdfs:comment>
+        <rdfs:label>Change of the subproperty of an object property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of a symmetric object property property.</rdfs:comment>
+        <rdfs:label>Change of the symmetric object property property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#ObjectPropertyChange"/>
+        <rdfs:comment>The change operation that describes the change of a transitive object property property.</rdfs:comment>
+        <rdfs:label>Change of the transitive object property property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OWLChangeOntology#rangeAddDataProperty -->
+
+
+    <owl:Class rdf:about="https://w3id.org/OWLChangeOntology#rangeAddDataProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/OWLChangeOntology#OntologyChange"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/OWLChangeOntology#rangeAddDataProperty">
+        <rdfs:comment>The range of an OWL data property added between ontology versions</rdfs:comment>
+        <rdfs:label>Range in Add Data Property operation</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

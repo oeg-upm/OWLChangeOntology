@@ -1,0 +1,844 @@
+<https://w3id.org/OWLChangeOntology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/OWLChangeOntology#> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/OWLChangeOntology/1.0.0> .
+<https://w3id.org/OWLChangeOntology#> <http://creativecommons.org/ns#license> <http://creativecommons.org/publicdomain/zero/1.0/> .
+<https://w3id.org/OWLChangeOntology#> <http://purl.org/dc/terms/bibliographicCitation> "Conde-Herreros, D., Stork, L., Pernisch, R., Poveda-Villalón, M., Corcho, O., & Chaves-Fraga, D. (2024). Propagating Ontology Changes to Declarative Mappings in Construction of Knowledge Graphs." .
+<https://w3id.org/OWLChangeOntology#> <http://purl.org/dc/terms/contributor> "Diego Conde Herreros" .
+<https://w3id.org/OWLChangeOntology#> <http://purl.org/dc/terms/contributor> "Raúl Palma" .
+<https://w3id.org/OWLChangeOntology#> <http://purl.org/dc/terms/created> "2024-04-17 "^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/OWLChangeOntology#> <http://purl.org/dc/terms/creator> "Diego Conde Herreros" .
+<https://w3id.org/OWLChangeOntology#> <http://purl.org/dc/terms/creator> "Raúl Palma" .
+<https://w3id.org/OWLChangeOntology#> <http://purl.org/dc/terms/description> "An ontology for describing changes between OWL ontology versions" .
+<https://w3id.org/OWLChangeOntology#> <http://purl.org/dc/terms/title> "OWL Change Ontology" .
+<https://w3id.org/OWLChangeOntology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "och" .
+<https://w3id.org/OWLChangeOntology#> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://w3id.org#OWLChangeOntology> .
+<https://w3id.org/OWLChangeOntology#> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/OWLChangeOntology#> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/OWLChangeOntology#addedClass
+<https://w3id.org/OWLChangeOntology#addedClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#addedClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#AddClass> .
+<https://w3id.org/OWLChangeOntology#addedClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#addedClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The OWL class that is added between ontology versions" .
+<https://w3id.org/OWLChangeOntology#addedClass> <http://www.w3.org/2000/01/rdf-schema#label> "Added Class" .
+# 
+# https://w3id.org/OWLChangeOntology#deprecatedElement
+<https://w3id.org/OWLChangeOntology#deprecatedElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#deprecatedElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#DeprecateElement> .
+<https://w3id.org/OWLChangeOntology#deprecatedElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/OWLChangeOntology#deprecatedElement> <http://www.w3.org/2000/01/rdf-schema#comment> "The Element that is being deprecated." .
+<https://w3id.org/OWLChangeOntology#deprecatedElement> <http://www.w3.org/2000/01/rdf-schema#label> "Deprecate Element" .
+# 
+# https://w3id.org/OWLChangeOntology#domainAddDataProperty
+<https://w3id.org/OWLChangeOntology#domainAddDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#domainAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#AddDataProperty> .
+<https://w3id.org/OWLChangeOntology#domainAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#domainAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The domain of an OWL data property added between ontology versions" .
+<https://w3id.org/OWLChangeOntology#domainAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Add Data Property" .
+# 
+# https://w3id.org/OWLChangeOntology#domainAddObjectProperty
+<https://w3id.org/OWLChangeOntology#domainAddObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#domainAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#AddObjectProperty> .
+<https://w3id.org/OWLChangeOntology#domainAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#domainAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The domain of an OWL object property added between ontology versions" .
+<https://w3id.org/OWLChangeOntology#domainAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Add Object Property" .
+# 
+# https://w3id.org/OWLChangeOntology#domainAddSubClass
+<https://w3id.org/OWLChangeOntology#domainAddSubClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#domainAddSubClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#AddSubClass> .
+<https://w3id.org/OWLChangeOntology#domainAddSubClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#domainAddSubClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the rdfs:subClassOf property removed between ontology versions, the child class" .
+<https://w3id.org/OWLChangeOntology#domainAddSubClass> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Add Subclass Property" .
+# 
+# https://w3id.org/OWLChangeOntology#domainAddSubProperty
+<https://w3id.org/OWLChangeOntology#domainAddSubProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#domainAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#AddSubPropertyOf> .
+<https://w3id.org/OWLChangeOntology#domainAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Property> .
+<http://www.w3.org/2002/07/owl#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#domainAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the rdfs:subPropertyOf property removed between ontology versions." .
+<https://w3id.org/OWLChangeOntology#domainAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Add SubProperty Property" .
+# 
+# https://w3id.org/OWLChangeOntology#domainRemoveDataProperty
+<https://w3id.org/OWLChangeOntology#domainRemoveDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#domainRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#RemoveDataProperty> .
+<https://w3id.org/OWLChangeOntology#domainRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#domainRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The domain of an OWL data property removed between ontology versions" .
+<https://w3id.org/OWLChangeOntology#domainRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Remove Data Property" .
+# 
+# https://w3id.org/OWLChangeOntology#domainRemoveObjectProperty
+<https://w3id.org/OWLChangeOntology#domainRemoveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#domainRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#RemoveObjectProperty> .
+<https://w3id.org/OWLChangeOntology#domainRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#domainRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The domain of an OWL object property removed between ontology versions" .
+<https://w3id.org/OWLChangeOntology#domainRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Remove Object Property" .
+# 
+# https://w3id.org/OWLChangeOntology#domainRemoveSubClass
+<https://w3id.org/OWLChangeOntology#domainRemoveSubClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#domainRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#RemoveSubClass> .
+<https://w3id.org/OWLChangeOntology#domainRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#domainRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the rdfs:subClassOf property removed between ontology versions, the child class" .
+<https://w3id.org/OWLChangeOntology#domainRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Remove Subclass Property" .
+# 
+# https://w3id.org/OWLChangeOntology#domainRemoveSubProperty
+<https://w3id.org/OWLChangeOntology#domainRemoveSubProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#domainRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf> .
+<https://w3id.org/OWLChangeOntology#domainRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Property> .
+<https://w3id.org/OWLChangeOntology#domainRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the rdfs:subPropertyOf property removed between ontology versions, the child class" .
+<https://w3id.org/OWLChangeOntology#domainRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Remove SubProperty Property" .
+# 
+# https://w3id.org/OWLChangeOntology#hasRelatedEntity
+<https://w3id.org/OWLChangeOntology#hasRelatedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#hasRelatedEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#OWLEntity> .
+<https://w3id.org/OWLChangeOntology#hasRelatedEntity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/OWLChangeOntology#OWLEntity> .
+<https://w3id.org/OWLChangeOntology#hasRelatedEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "EStablishes an equivalence between ontological terms" .
+<https://w3id.org/OWLChangeOntology#hasRelatedEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Has Related Entity" .
+# 
+# https://w3id.org/OWLChangeOntology#propertyAddDataProperty
+<https://w3id.org/OWLChangeOntology#propertyAddDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#propertyAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#AddDataProperty> .
+<https://w3id.org/OWLChangeOntology#propertyAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2002/07/owl#DatatypeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#propertyAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The data property added between ontology versions" .
+<https://w3id.org/OWLChangeOntology#propertyAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Property in Add Data Property" .
+# 
+# https://w3id.org/OWLChangeOntology#propertyAddObjectProperty
+<https://w3id.org/OWLChangeOntology#propertyAddObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#propertyAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#AddObjectProperty> .
+<https://w3id.org/OWLChangeOntology#propertyAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#propertyAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The object property added between ontology versions" .
+<https://w3id.org/OWLChangeOntology#propertyAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Property in Add Object Property" .
+# 
+# https://w3id.org/OWLChangeOntology#propertyRemoveDataProperty
+<https://w3id.org/OWLChangeOntology#propertyRemoveDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#propertyRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#RemoveDataProperty> .
+<https://w3id.org/OWLChangeOntology#propertyRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/OWLChangeOntology#propertyRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The data property removed between ontology versions" .
+<https://w3id.org/OWLChangeOntology#propertyRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Property in Remove Data Property" .
+# 
+# https://w3id.org/OWLChangeOntology#propertyRemoveObjectProperty
+<https://w3id.org/OWLChangeOntology#propertyRemoveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#propertyRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#RemoveObjectProperty> .
+<https://w3id.org/OWLChangeOntology#propertyRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#propertyRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The data property removed between ontology versions" .
+<https://w3id.org/OWLChangeOntology#propertyRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Property in Remove Data Property" .
+# 
+# https://w3id.org/OWLChangeOntology#rangeAddObjectProperty
+<https://w3id.org/OWLChangeOntology#rangeAddObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#rangeAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#AddObjectProperty> .
+<https://w3id.org/OWLChangeOntology#rangeAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#rangeAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the object property added between ontology versions." .
+<https://w3id.org/OWLChangeOntology#rangeAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Add Object Property operation" .
+# 
+# https://w3id.org/OWLChangeOntology#rangeAddSubClass
+<https://w3id.org/OWLChangeOntology#rangeAddSubClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#rangeAddSubClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#AddSubClass> .
+<https://w3id.org/OWLChangeOntology#rangeAddSubClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#rangeAddSubClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the rdfs:subClassOf property added between ontology versions, the parent class." .
+<https://w3id.org/OWLChangeOntology#rangeAddSubClass> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Add Subclass Property operation" .
+# 
+# https://w3id.org/OWLChangeOntology#rangeAddSubProperty
+<https://w3id.org/OWLChangeOntology#rangeAddSubProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#rangeAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#AddSubPropertyOf> .
+<https://w3id.org/OWLChangeOntology#rangeAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Property> .
+<https://w3id.org/OWLChangeOntology#rangeAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the rdfs:subPropertyOf property removed between ontology versions." .
+<https://w3id.org/OWLChangeOntology#rangeAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Add SubProperty Property" .
+# 
+# https://w3id.org/OWLChangeOntology#rangeRemoveObjectProperty
+<https://w3id.org/OWLChangeOntology#rangeRemoveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#rangeRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#RemoveObjectProperty> .
+<https://w3id.org/OWLChangeOntology#rangeRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#rangeRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The range of an OWL object property removed between ontology versions" .
+<https://w3id.org/OWLChangeOntology#rangeRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Remove Object Property operation" .
+# 
+# https://w3id.org/OWLChangeOntology#rangeRemoveSubClass
+<https://w3id.org/OWLChangeOntology#rangeRemoveSubClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#rangeRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#RemoveSubClass> .
+<https://w3id.org/OWLChangeOntology#rangeRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#rangeRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the rdfs:subClassOf property removed between ontology versions, the parent class" .
+<https://w3id.org/OWLChangeOntology#rangeRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Remove Subclass Property operation" .
+# 
+# https://w3id.org/OWLChangeOntology#rangeRemoveSubProperty
+<https://w3id.org/OWLChangeOntology#rangeRemoveSubProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#rangeRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf> .
+<https://w3id.org/OWLChangeOntology#rangeRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Property> .
+<https://w3id.org/OWLChangeOntology#rangeRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the rdfs:subPropertyOf property removed between ontology versions" .
+<https://w3id.org/OWLChangeOntology#rangeRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Remove SubProperty Property" .
+# 
+# https://w3id.org/OWLChangeOntology#removedClass
+<https://w3id.org/OWLChangeOntology#removedClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#removedClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#RemoveClass> .
+<https://w3id.org/OWLChangeOntology#removedClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#removedClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The OWL class that is deleted betweeen ontology versions" .
+<https://w3id.org/OWLChangeOntology#removedClass> <http://www.w3.org/2000/01/rdf-schema#label> "Deleted Class" .
+# 
+# https://w3id.org/OWLChangeOntology#renamedElement
+<https://w3id.org/OWLChangeOntology#renamedElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#renamedElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#RenameElement> .
+<https://w3id.org/OWLChangeOntology#renamedElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/OWLChangeOntology#renamedElement> <http://www.w3.org/2000/01/rdf-schema#comment> "The OWL class or property that is being renamed between ontology versions" .
+<https://w3id.org/OWLChangeOntology#renamedElement> <http://www.w3.org/2000/01/rdf-schema#label> "Renamed Element" .
+# 
+# https://w3id.org/OWLChangeOntology#undeprecatedElement
+<https://w3id.org/OWLChangeOntology#undeprecatedElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/OWLChangeOntology#undeprecatedElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#RevokeDeprecate> .
+<https://w3id.org/OWLChangeOntology#undeprecatedElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/OWLChangeOntology#undeprecatedElement> <http://www.w3.org/2000/01/rdf-schema#comment> "The Element that is being undeprecated." .
+<https://w3id.org/OWLChangeOntology#undeprecatedElement> <http://www.w3.org/2000/01/rdf-schema#label> "Uneprecate Element" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/OWLChangeOntology#rangeAddDataProperty
+<https://w3id.org/OWLChangeOntology#rangeAddDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/OWLChangeOntology#rangeAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#AddDataProperty> .
+<https://w3id.org/OWLChangeOntology#rangeAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/OWLChangeOntology#rangeRemoveDataProperty
+<https://w3id.org/OWLChangeOntology#rangeRemoveDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/OWLChangeOntology#rangeRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/OWLChangeOntology#RemoveDataProperty> .
+<https://w3id.org/OWLChangeOntology#rangeRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/OWLChangeOntology#rangeRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The range of an OWL data property removed between ontology versions" .
+<https://w3id.org/OWLChangeOntology#rangeRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Remove Data Property operation" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#Class
+<http://www.w3.org/2002/07/owl#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2002/07/owl#DatatypeProperty
+# 
+# http://www.w3.org/2002/07/owl#ObjectProperty
+<http://www.w3.org/2002/07/owl#ObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2002/07/owl#Property
+# 
+# https://w3id.org/OWLChangeOntology#AddAsymmetricObjectProperty
+<https://w3id.org/OWLChangeOntology#AddAsymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddAsymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#AddAsymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of asymmetric properties change betweeen ontology versions" .
+<https://w3id.org/OWLChangeOntology#AddAsymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of Asymetric Object Property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddClass
+<https://w3id.org/OWLChangeOntology#AddClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ClassChange> .
+<https://w3id.org/OWLChangeOntology#AddClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The addition of a class operation" .
+<https://w3id.org/OWLChangeOntology#AddClass> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of Class" .
+# 
+# https://w3id.org/OWLChangeOntology#AddDataProperty
+<https://w3id.org/OWLChangeOntology#AddDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#AddProperty> .
+<https://w3id.org/OWLChangeOntology#AddDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of data properties change betweeen ontology versions" .
+<https://w3id.org/OWLChangeOntology#AddDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of Data Property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddDataPropertyDomain
+<https://w3id.org/OWLChangeOntology#AddDataPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#AddDomain> .
+<https://w3id.org/OWLChangeOntology#AddDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DataPropertyDomainChange> .
+<https://w3id.org/OWLChangeOntology#AddDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the domain of a data property change betweeen ontology versions" .
+<https://w3id.org/OWLChangeOntology#AddDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Domain of a Data Property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddDataPropertyRange
+<https://w3id.org/OWLChangeOntology#AddDataPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#AddRange> .
+<https://w3id.org/OWLChangeOntology#AddDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DataPropertyRangeChange> .
+<https://w3id.org/OWLChangeOntology#AddDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the range of a data property change betweeen ontology versions" .
+<https://w3id.org/OWLChangeOntology#AddDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Range of a Data Property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddDatatype
+<https://w3id.org/OWLChangeOntology#AddDatatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddDatatype> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#AddDatatype> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the Datatype of a data property change betweeen ontology versions" .
+<https://w3id.org/OWLChangeOntology#AddDatatype> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Datatype of a Data Property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddDisjointClass
+<https://w3id.org/OWLChangeOntology#AddDisjointClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DisjointClassChange> .
+<https://w3id.org/OWLChangeOntology#AddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:disjointWith property change betweeen ontology versions" .
+<https://w3id.org/OWLChangeOntology#AddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Disjoint With Property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddDisjointDataProperty
+<https://w3id.org/OWLChangeOntology#AddDisjointDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddDisjointDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange> .
+<https://w3id.org/OWLChangeOntology#AddDisjointDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:propertyDisjointWith property betweeen data properties change betweeen ontology versions" .
+<https://w3id.org/OWLChangeOntology#AddDisjointDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the property Disjoint With Property to data property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddDisjointObjectProperty
+<https://w3id.org/OWLChangeOntology#AddDisjointObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddDisjointObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#AddDisjointObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:propertyDisjointWith property betweeen object properties change betweeen ontology versions" .
+<https://w3id.org/OWLChangeOntology#AddDisjointObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the property Disjoint With Property to object property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddDisjointUnion
+<https://w3id.org/OWLChangeOntology#AddDisjointUnion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddDisjointUnion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DisjointUnionChange> .
+<https://w3id.org/OWLChangeOntology#AddDisjointUnion> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:DisjointUnionOf property change betweeen ontology versions. The property that determines that a given class is equivalent to the disjoint union of a collection of other classes" .
+<https://w3id.org/OWLChangeOntology#AddDisjointUnion> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the DisjointUnionOf Property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddDomain
+<https://w3id.org/OWLChangeOntology#AddDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#AddDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the addition of a domain to a property." .
+<https://w3id.org/OWLChangeOntology#AddDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Domain" .
+# 
+# https://w3id.org/OWLChangeOntology#AddEquivalentClass
+<https://w3id.org/OWLChangeOntology#AddEquivalentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#EquivalentClassChange> .
+<https://w3id.org/OWLChangeOntology#AddEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:equivalentClass property change betweeen ontology versions. The property that determines that two given classes are equivalent, and that is used to specify datatype definitions." .
+<https://w3id.org/OWLChangeOntology#AddEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the equivalentClass Property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddEquivalentDataProperty
+<https://w3id.org/OWLChangeOntology#AddEquivalentDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddEquivalentDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange> .
+<https://w3id.org/OWLChangeOntology#AddEquivalentDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:equivalentProperty property between data properties change betweeen ontology versions. The property that determines that two given properties are equivalent." .
+<https://w3id.org/OWLChangeOntology#AddEquivalentDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the equivalentProperty Property for data properties" .
+# 
+# https://w3id.org/OWLChangeOntology#AddEquivalentObjectProperty
+<https://w3id.org/OWLChangeOntology#AddEquivalentObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddEquivalentObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#AddEquivalentObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:equivalentProperty property between object properties change betweeen ontology versions. The property that determines that two given properties are equivalent." .
+<https://w3id.org/OWLChangeOntology#AddEquivalentObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the equivalentProperty Property for object properties" .
+# 
+# https://w3id.org/OWLChangeOntology#AddFunctionalDataProperty
+<https://w3id.org/OWLChangeOntology#AddFunctionalDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddFunctionalDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange> .
+<https://w3id.org/OWLChangeOntology#AddFunctionalDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:FuctionalProperty change betweeen ontology versions.This is the class of functional properties" .
+<https://w3id.org/OWLChangeOntology#AddFunctionalDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of functional data property " .
+# 
+# https://w3id.org/OWLChangeOntology#AddFunctionalObjectProperty
+<https://w3id.org/OWLChangeOntology#AddFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#AddFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:FuctionalProperty change betweeen ontology versions.This is the class of functional properties" .
+<https://w3id.org/OWLChangeOntology#AddFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of functional object property " .
+# 
+# https://w3id.org/OWLChangeOntology#AddInverseFunctionalObjectProperty
+<https://w3id.org/OWLChangeOntology#AddInverseFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddInverseFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#AddInverseFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:InverseFuctionalProperty change betweeen ontology versions.This is the class of inverse-functional properties" .
+<https://w3id.org/OWLChangeOntology#AddInverseFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of an inverse functional object property " .
+# 
+# https://w3id.org/OWLChangeOntology#AddInverseObjectProperty
+<https://w3id.org/OWLChangeOntology#AddInverseObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddInverseObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#AddInverseObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:inverseOf change betweeen ontology versions.The property that determines that two given properties are inverse." .
+<https://w3id.org/OWLChangeOntology#AddInverseObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of an inverse property to object property " .
+# 
+# https://w3id.org/OWLChangeOntology#AddIrreflexiveObjectProperty
+<https://w3id.org/OWLChangeOntology#AddIrreflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddIrreflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#AddIrreflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:irreflexiveProperty change betweeen ontology versions.The class of irreflexive properties." .
+<https://w3id.org/OWLChangeOntology#AddIrreflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of an irreflexive object property " .
+# 
+# https://w3id.org/OWLChangeOntology#AddObjectProperty
+<https://w3id.org/OWLChangeOntology#AddObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#AddProperty> .
+<https://w3id.org/OWLChangeOntology#AddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Addition of an Object type property." .
+<https://w3id.org/OWLChangeOntology#AddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of an Object property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddObjectPropertyDomain
+<https://w3id.org/OWLChangeOntology#AddObjectPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#AddDomain> .
+<https://w3id.org/OWLChangeOntology#AddObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange> .
+<https://w3id.org/OWLChangeOntology#AddObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the domain of an object property change betweeen ontology versions" .
+<https://w3id.org/OWLChangeOntology#AddObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Domain of an object property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddObjectPropertyRange
+<https://w3id.org/OWLChangeOntology#AddObjectPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#AddRange> .
+<https://w3id.org/OWLChangeOntology#AddObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange> .
+<https://w3id.org/OWLChangeOntology#AddObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the range of an object property change betweeen ontology versions" .
+<https://w3id.org/OWLChangeOntology#AddObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Range of an object property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddProperty
+<https://w3id.org/OWLChangeOntology#AddProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#AddProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the addition of a property to the ontology." .
+<https://w3id.org/OWLChangeOntology#AddProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of a Property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddRange
+<https://w3id.org/OWLChangeOntology#AddRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#AddRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the addition of a range to a property." .
+<https://w3id.org/OWLChangeOntology#AddRange> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Range" .
+# 
+# https://w3id.org/OWLChangeOntology#AddReflexiveObjectProperty
+<https://w3id.org/OWLChangeOntology#AddReflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddReflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#AddReflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:reflexiveProperty change betweeen ontology versions.The class of rreflexive properties." .
+<https://w3id.org/OWLChangeOntology#AddReflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of an reflexive object property " .
+# 
+# https://w3id.org/OWLChangeOntology#AddSubClass
+<https://w3id.org/OWLChangeOntology#AddSubClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddSubClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#SubClassChange> .
+<https://w3id.org/OWLChangeOntology#AddSubClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the addition of an rdfs:subClassOf property." .
+<https://w3id.org/OWLChangeOntology#AddSubClass> <http://www.w3.org/2000/01/rdf-schema#label> "Addition  of SubClass property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddSubPropertyOf
+<https://w3id.org/OWLChangeOntology#AddSubPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#AddSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the addition of sub property property." .
+<https://w3id.org/OWLChangeOntology#AddSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the sub property property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddSymmetricObjectProperty
+<https://w3id.org/OWLChangeOntology#AddSymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddSymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#AddSymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the addition of Symmetric object property." .
+<https://w3id.org/OWLChangeOntology#AddSymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition a Symmetric object property" .
+# 
+# https://w3id.org/OWLChangeOntology#AddTransitiveObjectProperty
+<https://w3id.org/OWLChangeOntology#AddTransitiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AddTransitiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#AddTransitiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the addition of a transitive object property." .
+<https://w3id.org/OWLChangeOntology#AddTransitiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition a transitive object property" .
+# 
+# https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange
+<https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a transitive object property." .
+<https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an asymmetric object property" .
+# 
+# https://w3id.org/OWLChangeOntology#ClassChange
+<https://w3id.org/OWLChangeOntology#ClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#ClassChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#ClassChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes changes in classes." .
+<https://w3id.org/OWLChangeOntology#ClassChange> <http://www.w3.org/2000/01/rdf-schema#label> "Class Changes" .
+# 
+# https://w3id.org/OWLChangeOntology#DataPropertyChange
+<https://w3id.org/OWLChangeOntology#DataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#DataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#EntityChange> .
+<https://w3id.org/OWLChangeOntology#DataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a datatype property." .
+<https://w3id.org/OWLChangeOntology#DataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a datatype property" .
+# 
+# https://w3id.org/OWLChangeOntology#DataPropertyDomainChange
+<https://w3id.org/OWLChangeOntology#DataPropertyDomainChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#DataPropertyDomainChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DataPropertyChange> .
+<https://w3id.org/OWLChangeOntology#DataPropertyDomainChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of  the domain of a datatype property." .
+<https://w3id.org/OWLChangeOntology#DataPropertyDomainChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of  the domain of a datatype property" .
+# 
+# https://w3id.org/OWLChangeOntology#DataPropertyRangeChange
+<https://w3id.org/OWLChangeOntology#DataPropertyRangeChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#DataPropertyRangeChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DataPropertyChange> .
+<https://w3id.org/OWLChangeOntology#DataPropertyRangeChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of  the range of a datatype property." .
+<https://w3id.org/OWLChangeOntology#DataPropertyRangeChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of  the range of a datatype property" .
+# 
+# https://w3id.org/OWLChangeOntology#DeprecateElement
+<https://w3id.org/OWLChangeOntology#DeprecateElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#DeprecateElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#DeprecateElement> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the deprecation of a class or property" .
+<https://w3id.org/OWLChangeOntology#DeprecateElement> <http://www.w3.org/2000/01/rdf-schema#label> "Deprecation of an element." .
+# 
+# https://w3id.org/OWLChangeOntology#DisjointClassChange
+<https://w3id.org/OWLChangeOntology#DisjointClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#DisjointClassChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ClassChange> .
+<https://w3id.org/OWLChangeOntology#DisjointClassChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a disjoint class." .
+<https://w3id.org/OWLChangeOntology#DisjointClassChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a disjoint class" .
+# 
+# https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange
+<https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DataPropertyChange> .
+<https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a disjoint datatype property." .
+<https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a disjoint datatype property" .
+# 
+# https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange
+<https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a disjoint object property." .
+<https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a disjoint object property" .
+# 
+# https://w3id.org/OWLChangeOntology#DisjointUnionChange
+<https://w3id.org/OWLChangeOntology#DisjointUnionChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#DisjointUnionChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ClassChange> .
+<https://w3id.org/OWLChangeOntology#DisjointUnionChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a disjoint union property." .
+<https://w3id.org/OWLChangeOntology#DisjointUnionChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a disjoint union property" .
+# 
+# https://w3id.org/OWLChangeOntology#EntityChange
+<https://w3id.org/OWLChangeOntology#EntityChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#EntityChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#EntityChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes changes in entities." .
+<https://w3id.org/OWLChangeOntology#EntityChange> <http://www.w3.org/2000/01/rdf-schema#label> "Entity Changes" .
+# 
+# https://w3id.org/OWLChangeOntology#EquivalentClassChange
+<https://w3id.org/OWLChangeOntology#EquivalentClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#EquivalentClassChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ClassChange> .
+<https://w3id.org/OWLChangeOntology#EquivalentClassChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an equivalent class property." .
+<https://w3id.org/OWLChangeOntology#EquivalentClassChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an equivalent class property" .
+# 
+# https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange
+<https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DataPropertyChange> .
+<https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an equivalent data property property." .
+<https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an equivalent data property property" .
+# 
+# https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange
+<https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an equivalent object property property." .
+<https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an equivalent object property property" .
+# 
+# https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange
+<https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DataPropertyChange> .
+<https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a functional datatype property property." .
+<https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a functional datatype property property" .
+# 
+# https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange
+<https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a functional object property property." .
+<https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a functional object property property" .
+# 
+# https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange
+<https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an inverse functional object property property." .
+<https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an inverse functional object property property" .
+# 
+# https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange
+<https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an inverse functional object property property." .
+<https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an inverse functional object property property" .
+# 
+# https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange
+<https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an irreflexive object property property." .
+<https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an irreflexive object property property" .
+# 
+# https://w3id.org/OWLChangeOntology#OWLEntity
+<https://w3id.org/OWLChangeOntology#OWLEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#OWLEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that describes an OWL Entities, the named terms of the ontology" .
+<https://w3id.org/OWLChangeOntology#OWLEntity> <http://www.w3.org/2000/01/rdf-schema#label> "OWL Entity Class" .
+# 
+# https://w3id.org/OWLChangeOntology#ObjectPropertyChange
+<https://w3id.org/OWLChangeOntology#ObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#ObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#EntityChange> .
+<https://w3id.org/OWLChangeOntology#ObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an object property." .
+<https://w3id.org/OWLChangeOntology#ObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an object property" .
+# 
+# https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange
+<https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of the domain of an object property." .
+<https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of the domain of an object property" .
+# 
+# https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange
+<https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of the range of an object property." .
+<https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of the range of an object property" .
+# 
+# https://w3id.org/OWLChangeOntology#OntologyChange
+<https://w3id.org/OWLChangeOntology#OntologyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#OntologyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes changes in an ontology." .
+<https://w3id.org/OWLChangeOntology#OntologyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Ontology Changes" .
+# 
+# https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange
+<https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change a reflexive object property." .
+<https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a reflexive object property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveAsymmetricObjectProperty
+<https://w3id.org/OWLChangeOntology#RemoveAsymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveAsymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveAsymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of an asymmetric object property." .
+<https://w3id.org/OWLChangeOntology#RemoveAsymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of an asymmetric object property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveClass
+<https://w3id.org/OWLChangeOntology#RemoveClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ClassChange> .
+<https://w3id.org/OWLChangeOntology#RemoveClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of a class." .
+<https://w3id.org/OWLChangeOntology#RemoveClass> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of a class" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveDataProperty
+<https://w3id.org/OWLChangeOntology#RemoveDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#RemoveProperty> .
+<https://w3id.org/OWLChangeOntology#RemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of a data property." .
+<https://w3id.org/OWLChangeOntology#RemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of a data property " .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveDataPropertyDomain
+<https://w3id.org/OWLChangeOntology#RemoveDataPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DataPropertyDomainChange> .
+<https://w3id.org/OWLChangeOntology#RemoveDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#RemoveDomain> .
+<https://w3id.org/OWLChangeOntology#RemoveDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the domain of a data property." .
+<https://w3id.org/OWLChangeOntology#RemoveDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the domain of a datatype property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveDataPropertyRange
+<https://w3id.org/OWLChangeOntology#RemoveDataPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DataPropertyRangeChange> .
+<https://w3id.org/OWLChangeOntology#RemoveDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#RemoveRange> .
+<https://w3id.org/OWLChangeOntology#RemoveDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the range of a data property." .
+<https://w3id.org/OWLChangeOntology#RemoveDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the range of a datatype property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveDatatype
+<https://w3id.org/OWLChangeOntology#RemoveDatatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveDatatype> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveDatatype> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the Datatype of a data property." .
+<https://w3id.org/OWLChangeOntology#RemoveDatatype> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the Datatype of a datatype property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveDisjointClass
+<https://w3id.org/OWLChangeOntology#RemoveDisjointClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DisjointClassChange> .
+<https://w3id.org/OWLChangeOntology#RemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the disjoint class property." .
+<https://w3id.org/OWLChangeOntology#RemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of a disjoint class property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveDisjointDataProperty
+<https://w3id.org/OWLChangeOntology#RemoveDisjointDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveDisjointDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveDisjointDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the disjointWith property." .
+<https://w3id.org/OWLChangeOntology#RemoveDisjointDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the disjointWith property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveDisjointObjectProperty
+<https://w3id.org/OWLChangeOntology#RemoveDisjointObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveDisjointObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveDisjointObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the disjointWith property." .
+<https://w3id.org/OWLChangeOntology#RemoveDisjointObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the disjointWith property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveDisjointUnion
+<https://w3id.org/OWLChangeOntology#RemoveDisjointUnion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveDisjointUnion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DisjointUnionChange> .
+<https://w3id.org/OWLChangeOntology#RemoveDisjointUnion> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the disjointUnionOf property." .
+<https://w3id.org/OWLChangeOntology#RemoveDisjointUnion> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the disjointUnionOf property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveDomain
+<https://w3id.org/OWLChangeOntology#RemoveDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the domain from a property." .
+<https://w3id.org/OWLChangeOntology#RemoveDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the Domain" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveEquivalentClass
+<https://w3id.org/OWLChangeOntology#RemoveEquivalentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#EquivalentClassChange> .
+<https://w3id.org/OWLChangeOntology#RemoveEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the equivalentClass property." .
+<https://w3id.org/OWLChangeOntology#RemoveEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the equivalentClass property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveEquivalentDataProperty
+<https://w3id.org/OWLChangeOntology#RemoveEquivalentDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveEquivalentDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveEquivalentDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the equivalentProperty property for a Datatype property." .
+<https://w3id.org/OWLChangeOntology#RemoveEquivalentDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the equivalentProperty property for a Datatype property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveEquivalentObjectProperty
+<https://w3id.org/OWLChangeOntology#RemoveEquivalentObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveEquivalentObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveEquivalentObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the equivalentProperty property for an object property." .
+<https://w3id.org/OWLChangeOntology#RemoveEquivalentObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the equivalentProperty property for an object property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveFunctionalDataProperty
+<https://w3id.org/OWLChangeOntology#RemoveFunctionalDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveFunctionalDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveFunctionalDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the owl:FuctionalProperty change betweeen ontology versions.This is the class of functional properties" .
+<https://w3id.org/OWLChangeOntology#RemoveFunctionalDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of functional data property " .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveFunctionalObjectProperty
+<https://w3id.org/OWLChangeOntology#RemoveFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the owl:InverseFuctionalProperty change betweeen ontology versions.This is the class of inverse functional properties" .
+<https://w3id.org/OWLChangeOntology#RemoveFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of functional object property " .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveInverseFunctionalObjectProperty
+<https://w3id.org/OWLChangeOntology#RemoveInverseFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveInverseFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveInverseFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the owl:InverseFuctionalProperty change betweeen ontology versions.This is the class of inverse functional properties" .
+<https://w3id.org/OWLChangeOntology#RemoveInverseFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of inverse functional object property " .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveInverseObjectProperty
+<https://w3id.org/OWLChangeOntology#RemoveInverseObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveInverseObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveInverseObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the owl:inverseOf change betweeen ontology versions.The property that determines that two given properties are inverse." .
+<https://w3id.org/OWLChangeOntology#RemoveInverseObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of an inverse property to object property " .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveIrreflexiveObjectProperty
+<https://w3id.org/OWLChangeOntology#RemoveIrreflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveIrreflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveIrreflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the owl:irreflexiveProperty change betweeen ontology versions.The class of irreflexive properties." .
+<https://w3id.org/OWLChangeOntology#RemoveIrreflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of an irreflexive object property " .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveObjectProperty
+<https://w3id.org/OWLChangeOntology#RemoveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#RemoveProperty> .
+<https://w3id.org/OWLChangeOntology#RemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Removal of an Object type property." .
+<https://w3id.org/OWLChangeOntology#RemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of an Object property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveObjectPropertyDomain
+<https://w3id.org/OWLChangeOntology#RemoveObjectPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange> .
+<https://w3id.org/OWLChangeOntology#RemoveObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#RemoveDomain> .
+<https://w3id.org/OWLChangeOntology#RemoveObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the domain of an object property change betweeen ontology versions" .
+<https://w3id.org/OWLChangeOntology#RemoveObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the Domain of an object property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveObjectPropertyRange
+<https://w3id.org/OWLChangeOntology#RemoveObjectPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange> .
+<https://w3id.org/OWLChangeOntology#RemoveObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#RemoveRange> .
+<https://w3id.org/OWLChangeOntology#RemoveObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the range of an object property change betweeen ontology versions" .
+<https://w3id.org/OWLChangeOntology#RemoveObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the Range of an object property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveProperty
+<https://w3id.org/OWLChangeOntology#RemoveProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of a Property." .
+<https://w3id.org/OWLChangeOntology#RemoveProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of a Property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveRange
+<https://w3id.org/OWLChangeOntology#RemoveRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the range from a property." .
+<https://w3id.org/OWLChangeOntology#RemoveRange> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the Range" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveReflexiveObjectProperty
+<https://w3id.org/OWLChangeOntology#RemoveReflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveReflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveReflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the owl:reflexiveProperty change betweeen ontology versions.The class of rreflexive properties." .
+<https://w3id.org/OWLChangeOntology#RemoveReflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of an reflexive object property " .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveSubClass
+<https://w3id.org/OWLChangeOntology#RemoveSubClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#SubClassChange> .
+<https://w3id.org/OWLChangeOntology#RemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of an rdfs:subClassOf property." .
+<https://w3id.org/OWLChangeOntology#RemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of SubClass property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf
+<https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of sub property property." .
+<https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the sub property property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveSymmetricObjectProperty
+<https://w3id.org/OWLChangeOntology#RemoveSymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveSymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveSymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of symmetric properties change betweeen ontology versions" .
+<https://w3id.org/OWLChangeOntology#RemoveSymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of Symetric Object Property" .
+# 
+# https://w3id.org/OWLChangeOntology#RemoveTransitiveObjectProperty
+<https://w3id.org/OWLChangeOntology#RemoveTransitiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RemoveTransitiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#RemoveTransitiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of a transitive object property." .
+<https://w3id.org/OWLChangeOntology#RemoveTransitiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of a transitive object property" .
+# 
+# https://w3id.org/OWLChangeOntology#RenameElement
+<https://w3id.org/OWLChangeOntology#RenameElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RenameElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#RenameElement> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the Renaming of a class or property." .
+<https://w3id.org/OWLChangeOntology#RenameElement> <http://www.w3.org/2000/01/rdf-schema#label> "Renaming of a class or property" .
+# 
+# https://w3id.org/OWLChangeOntology#RevokeDeprecate
+<https://w3id.org/OWLChangeOntology#RevokeDeprecate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#RevokeDeprecate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+<https://w3id.org/OWLChangeOntology#RevokeDeprecate> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the revoke deprecation of a class or property" .
+<https://w3id.org/OWLChangeOntology#RevokeDeprecate> <http://www.w3.org/2000/01/rdf-schema#label> "Revoke Deprecation of an Element." .
+# 
+# https://w3id.org/OWLChangeOntology#SubClassChange
+<https://w3id.org/OWLChangeOntology#SubClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#SubClassChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ClassChange> .
+<https://w3id.org/OWLChangeOntology#SubClassChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an rdfs:subClassOf property." .
+<https://w3id.org/OWLChangeOntology#SubClassChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of SubClass property" .
+# 
+# https://w3id.org/OWLChangeOntology#SubDataPropertyOfChange
+<https://w3id.org/OWLChangeOntology#SubDataPropertyOfChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#SubDataPropertyOfChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#DataPropertyChange> .
+<https://w3id.org/OWLChangeOntology#SubDataPropertyOfChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a subproperty of a Datatype property." .
+<https://w3id.org/OWLChangeOntology#SubDataPropertyOfChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of the subproperty of a Datatype property" .
+# 
+# https://w3id.org/OWLChangeOntology#SubObjectPropertyOfChange
+<https://w3id.org/OWLChangeOntology#SubObjectPropertyOfChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#SubObjectPropertyOfChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#SubObjectPropertyOfChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a subproperty of an object property." .
+<https://w3id.org/OWLChangeOntology#SubObjectPropertyOfChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of the subproperty of an object property" .
+# 
+# https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange
+<https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a symmetric object property property." .
+<https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of the symmetric object property property" .
+# 
+# https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange
+<https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#ObjectPropertyChange> .
+<https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a transitive object property property." .
+<https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of the transitive object property property" .
+# 
+# https://w3id.org/OWLChangeOntology#rangeAddDataProperty
+<https://w3id.org/OWLChangeOntology#rangeAddDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/OWLChangeOntology#rangeAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/OWLChangeOntology#OntologyChange> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://w3id.org/OWLChangeOntology#rangeAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The range of an OWL data property added between ontology versions" .
+<https://w3id.org/OWLChangeOntology#rangeAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Add Data Property operation" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
