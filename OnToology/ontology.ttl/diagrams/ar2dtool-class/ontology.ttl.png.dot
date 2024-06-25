@@ -1,0 +1,36 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "och:RemoveSubPropertyOf" "och:RemoveDataProperty" "och:OWLEntity" "och:AddSubClass" "och:DeprecateElement" "och:RenameElement" "owl:ObjectProperty" "och:AddObjectProperty" "och:RemoveSubClass" "och:AddSubPropertyOf" "och:RemoveObjectProperty" "och:RemoveClass" "owl:Class" "och:AddDataProperty" "och:RevokeDeprecate" "och:AddClass" ; /*classes style*/
+	"och:" -> "http://w3id.org#OWLChangeOntology" [ label = ":preferredNamespaceUri" ];
+	"och:" -> "och:" [ label = "owl:priorVersion" ];
+	"och:" -> "http://w3id.org/OWLChangeOntology/1.0.0" [ label = "owl:versionIRI" ];
+	"och:" -> "http://creativecommons.org/publicdomain/zero/1.0/" [ label = ":license" ];
+	"och:RemoveObjectProperty" -> "owl:ObjectProperty" [ label = "och:propertyRemoveObjectProperty" ];
+	"och:RemoveSubClass" -> "owl:Class" [ label = "och:domainRemoveSubClass" ];
+	"och:AddClass" -> "owl:Class" [ label = "och:addedClass" ];
+	"och:OWLEntity" -> "och:OWLEntity" [ label = "och:hasRelatedEntity" ];
+	"och:AddSubClass" -> "owl:Class" [ label = "och:rangeAddSubClass" ];
+	"och:AddDataProperty" -> "rdfs:Literal" [ label = "och:rangeAddDataProperty" ];
+	"och:AddDataProperty" -> "owl:DatatypeProperty" [ label = "och:propertyAddDataProperty" ];
+	"och:RevokeDeprecate" -> "owl:Thing" [ label = "och:undeprecatedElement" ];
+	"och:RemoveDataProperty" -> "owl:DatatypeProperty" [ label = "och:propertyRemoveDataProperty" ];
+	"och:AddSubClass" -> "owl:Class" [ label = "och:domainAddSubClass" ];
+	"och:AddObjectProperty" -> "owl:ObjectProperty" [ label = "och:propertyAddObjectProperty" ];
+	"och:AddObjectProperty" -> "owl:Class" [ label = "och:domainAddObjectProperty" ];
+	"och:RemoveSubPropertyOf" -> "owl:Property" [ label = "och:rangeRemoveSubProperty" ];
+	"och:RemoveDataProperty" -> "rdfs:Literal" [ label = "och:rangeRemoveDataProperty" ];
+	"och:RemoveDataProperty" -> "owl:Class" [ label = "och:domainRemoveDataProperty" ];
+	"och:AddSubPropertyOf" -> "owl:Property" [ label = "och:domainAddSubProperty" ];
+	"och:RemoveClass" -> "owl:Class" [ label = "och:removedClass" ];
+	"och:RemoveObjectProperty" -> "owl:Class" [ label = "och:rangeRemoveObjectProperty" ];
+	"och:RemoveSubPropertyOf" -> "owl:Property" [ label = "och:domainRemoveSubProperty" ];
+	"och:AddObjectProperty" -> "owl:Class" [ label = "och:rangeAddObjectProperty" ];
+	"och:RemoveSubClass" -> "owl:Class" [ label = "och:rangeRemoveSubClass" ];
+	"och:AddSubPropertyOf" -> "owl:Property" [ label = "och:rangeAddSubProperty" ];
+	"och:RenameElement" -> "owl:Thing" [ label = "och:renamedElement" ];
+	"och:RemoveObjectProperty" -> "owl:Class" [ label = "och:domainRemoveObjectProperty" ];
+	"och:AddDataProperty" -> "owl:Class" [ label = "och:domainAddDataProperty" ];
+	"och:DeprecateElement" -> "owl:Thing" [ label = "och:deprecatedElement" ];
+
+}
