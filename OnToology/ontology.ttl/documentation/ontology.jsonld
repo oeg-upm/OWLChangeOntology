@@ -49,7 +49,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#",
+  "@id" : "https://w3id.org/def/och#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://creativecommons.org/ns#license" : [ {
     "@id" : "http://creativecommons.org/publicdomain/zero/1.0/"
@@ -81,16 +81,16 @@
     "@value" : "och"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "http://w3id.org#OWLChangeOntology"
+    "@id" : "https://w3id.org/def/och#"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#"
+    "@id" : "https://w3id.org/def/och#"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://w3id.org/OWLChangeOntology/1.0.0"
+    "@id" : "http://w3id.org/def/och"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddAsymmetricObjectProperty",
+  "@id" : "https://w3id.orgdef/och#AddAsymmetricObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -101,10 +101,12 @@
     "@value" : "Addition of Asymetric Object Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#AddObjectProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#AsymmetricObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddClass",
+  "@id" : "https://w3id.orgdef/och#AddClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -115,10 +117,10 @@
     "@value" : "Addition of Class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ClassChange"
+    "@id" : "https://w3id.orgdef/och#ClassChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddDataProperty",
+  "@id" : "https://w3id.orgdef/och#AddDataProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -129,10 +131,12 @@
     "@value" : "Addition of Data Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddProperty"
+    "@id" : "https://w3id.orgdef/och#AddProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#DataPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddDataPropertyDomain",
+  "@id" : "https://w3id.orgdef/och#AddDataPropertyDomain",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -143,12 +147,12 @@
     "@value" : "Addition of the Domain of a Data Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddDomain"
+    "@id" : "https://w3id.orgdef/och#AddDomain"
   }, {
-    "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyDomainChange"
+    "@id" : "https://w3id.orgdef/och#DataPropertyDomainChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddDataPropertyRange",
+  "@id" : "https://w3id.orgdef/och#AddDataPropertyRange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -159,12 +163,12 @@
     "@value" : "Addition of the Range of a Data Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddRange"
+    "@id" : "https://w3id.orgdef/och#AddRange"
   }, {
-    "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyRangeChange"
+    "@id" : "https://w3id.orgdef/och#DataPropertyRangeChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddDatatype",
+  "@id" : "https://w3id.orgdef/och#AddDatatype",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -175,10 +179,10 @@
     "@value" : "Addition of the Datatype of a Data Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#DatatypeChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddDisjointClass",
+  "@id" : "https://w3id.orgdef/och#AddDisjointClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -189,10 +193,10 @@
     "@value" : "Addition of the Disjoint With Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DisjointClassChange"
+    "@id" : "https://w3id.orgdef/och#DisjointClassChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddDisjointDataProperty",
+  "@id" : "https://w3id.orgdef/och#AddDisjointDataProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -203,10 +207,10 @@
     "@value" : "Addition of the property Disjoint With Property to data property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange"
+    "@id" : "https://w3id.orgdef/och#DisjointDataPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddDisjointObjectProperty",
+  "@id" : "https://w3id.orgdef/och#AddDisjointObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -217,10 +221,12 @@
     "@value" : "Addition of the property Disjoint With Property to object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#AddProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#DisjointObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddDisjointUnion",
+  "@id" : "https://w3id.orgdef/och#AddDisjointUnion",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -231,10 +237,10 @@
     "@value" : "Addition of the DisjointUnionOf Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DisjointUnionChange"
+    "@id" : "https://w3id.orgdef/och#DisjointUnionChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddDomain",
+  "@id" : "https://w3id.orgdef/och#AddDomain",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -245,10 +251,10 @@
     "@value" : "Addition of the Domain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#DomainChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddEquivalentClass",
+  "@id" : "https://w3id.orgdef/och#AddEquivalentClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -259,10 +265,10 @@
     "@value" : "Addition of the equivalentClass Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#EquivalentClassChange"
+    "@id" : "https://w3id.orgdef/och#EquivalentClassChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddEquivalentDataProperty",
+  "@id" : "https://w3id.orgdef/och#AddEquivalentDataProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -273,10 +279,10 @@
     "@value" : "Addition of the equivalentProperty Property for data properties"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange"
+    "@id" : "https://w3id.orgdef/och#EquivalentDataPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddEquivalentObjectProperty",
+  "@id" : "https://w3id.orgdef/och#AddEquivalentObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -287,10 +293,12 @@
     "@value" : "Addition of the equivalentProperty Property for object properties"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#AddObjectProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#EquivalentObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddFunctionalDataProperty",
+  "@id" : "https://w3id.orgdef/och#AddFunctionalDataProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -301,10 +309,10 @@
     "@value" : "Addition of functional data property "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange"
+    "@id" : "https://w3id.orgdef/och#FunctionalDataPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddFunctionalObjectProperty",
+  "@id" : "https://w3id.orgdef/och#AddFunctionalObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -312,13 +320,15 @@
     "@value" : "The class of the addition of the owl:FuctionalProperty change betweeen ontology versions.This is the class of functional properties"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Addition of functional object property "
+    "@value" : "Addition of Functional Object Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#AddProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#FunctionalObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddInverseFunctionalObjectProperty",
+  "@id" : "https://w3id.orgdef/och#AddInverseFunctionalObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -329,10 +339,12 @@
     "@value" : "Addition of an inverse functional object property "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#AddObjectProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddInverseObjectProperty",
+  "@id" : "https://w3id.orgdef/och#AddInverseObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -343,10 +355,12 @@
     "@value" : "Addition of an inverse property to object property "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#AddObjectProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#InverseObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddIrreflexiveObjectProperty",
+  "@id" : "https://w3id.orgdef/och#AddIrreflexiveObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -357,10 +371,12 @@
     "@value" : "Addition of an irreflexive object property "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#AddObjectProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#IrreflexiveObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddObjectProperty",
+  "@id" : "https://w3id.orgdef/och#AddObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -371,10 +387,12 @@
     "@value" : "Addition of an Object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddProperty"
+    "@id" : "https://w3id.orgdef/och#AddProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddObjectPropertyDomain",
+  "@id" : "https://w3id.orgdef/och#AddObjectPropertyDomain",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -385,12 +403,12 @@
     "@value" : "Addition of the Domain of an object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddDomain"
+    "@id" : "https://w3id.orgdef/och#AddDomain"
   }, {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyDomainChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddObjectPropertyRange",
+  "@id" : "https://w3id.orgdef/och#AddObjectPropertyRange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -401,12 +419,12 @@
     "@value" : "Addition of the Range of an object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddRange"
+    "@id" : "https://w3id.orgdef/och#AddRange"
   }, {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyRangeChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddProperty",
+  "@id" : "https://w3id.orgdef/och#AddProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -417,10 +435,10 @@
     "@value" : "Addition of a Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#PropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddRange",
+  "@id" : "https://w3id.orgdef/och#AddRange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -431,10 +449,10 @@
     "@value" : "Addition of the Range"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#RangeChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddReflexiveObjectProperty",
+  "@id" : "https://w3id.orgdef/och#AddReflexiveObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -445,10 +463,12 @@
     "@value" : "Addition of an reflexive object property "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#AddObjectProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#ReflexiveObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddSubClass",
+  "@id" : "https://w3id.orgdef/och#AddSubClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -459,10 +479,10 @@
     "@value" : "Addition  of SubClass property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#SubClassChange"
+    "@id" : "https://w3id.orgdef/och#SubClassChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddSubPropertyOf",
+  "@id" : "https://w3id.orgdef/och#AddSubPropertyOf",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -470,13 +490,13 @@
     "@value" : "The change operation that describes the addition of sub property property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Addition of the sub property property"
+    "@value" : "Addition of the sub-property property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#SubPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddSymmetricObjectProperty",
+  "@id" : "https://w3id.orgdef/och#AddSymmetricObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -487,10 +507,12 @@
     "@value" : "Addition a Symmetric object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#AddObjectProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#SymmetricObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AddTransitiveObjectProperty",
+  "@id" : "https://w3id.orgdef/och#AddTransitiveObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -501,10 +523,12 @@
     "@value" : "Addition a transitive object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#AddObjectProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#TransitiveObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange",
+  "@id" : "https://w3id.orgdef/och#AsymmetricObjectPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -515,10 +539,10 @@
     "@value" : "Change of an asymmetric object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#ClassChange",
+  "@id" : "https://w3id.orgdef/och#ClassChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -529,10 +553,10 @@
     "@value" : "Class Changes"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#OntologyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyChange",
+  "@id" : "https://w3id.orgdef/och#DataPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -540,13 +564,13 @@
     "@value" : "The change operation that describes the change of a datatype property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Change of a datatype property"
+    "@value" : "Change of a Datatype Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#EntityChange"
+    "@id" : "https://w3id.orgdef/och#PropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyDomainChange",
+  "@id" : "https://w3id.orgdef/och#DataPropertyDomainChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -554,13 +578,13 @@
     "@value" : "The change operation that describes the change of  the domain of a datatype property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Change of  the domain of a datatype property"
+    "@value" : "Change of  the Domain of a Datatype Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyChange"
+    "@id" : "https://w3id.orgdef/och#DataPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyRangeChange",
+  "@id" : "https://w3id.orgdef/och#DataPropertyRangeChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -571,10 +595,24 @@
     "@value" : "Change of  the range of a datatype property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyChange"
+    "@id" : "https://w3id.orgdef/och#DataPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#DeprecateElement",
+  "@id" : "https://w3id.orgdef/och#DatatypeChange",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The change operation that describes the change of the datatype of a property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Change of the Datatype of a Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.orgdef/och#DataPropertyChange"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#DeprecateElement",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -585,10 +623,10 @@
     "@value" : "Deprecation of an element."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#ElementChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#DisjointClassChange",
+  "@id" : "https://w3id.orgdef/och#DisjointClassChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -599,10 +637,10 @@
     "@value" : "Change of a disjoint class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ClassChange"
+    "@id" : "https://w3id.orgdef/och#ClassChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange",
+  "@id" : "https://w3id.orgdef/och#DisjointDataPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -610,13 +648,13 @@
     "@value" : "The change operation that describes the change of a disjoint datatype property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Change of a disjoint datatype property"
+    "@value" : "Change of a Disjoint datatype property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyChange"
+    "@id" : "https://w3id.orgdef/och#DataPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange",
+  "@id" : "https://w3id.orgdef/och#DisjointObjectPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -624,13 +662,13 @@
     "@value" : "The change operation that describes the change of a disjoint object property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Change of a disjoint object property"
+    "@value" : "Change of a Disjoint Object Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#DisjointUnionChange",
+  "@id" : "https://w3id.orgdef/och#DisjointUnionChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -641,24 +679,38 @@
     "@value" : "Change of a disjoint union property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ClassChange"
+    "@id" : "https://w3id.orgdef/och#ClassChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#EntityChange",
+  "@id" : "https://w3id.orgdef/och#DomainChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The change operation that describes changes in entities."
+    "@value" : "Change operation that describes the change of the domain of a property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Entity Changes"
+    "@value" : "Change of the domain of a property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#PropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#EquivalentClassChange",
+  "@id" : "https://w3id.orgdef/och#ElementChange",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The change operation that describes changes in changes and properties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Element Changes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.orgdef/och#OntologyChange"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#EquivalentClassChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -669,10 +721,10 @@
     "@value" : "Change of an equivalent class property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ClassChange"
+    "@id" : "https://w3id.orgdef/och#ClassChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange",
+  "@id" : "https://w3id.orgdef/och#EquivalentDataPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -680,13 +732,13 @@
     "@value" : "The change operation that describes the change of an equivalent data property property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Change of an equivalent data property property"
+    "@value" : "Change of an Equivalent Data Property property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyChange"
+    "@id" : "https://w3id.orgdef/och#DataPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange",
+  "@id" : "https://w3id.orgdef/och#EquivalentObjectPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -697,10 +749,10 @@
     "@value" : "Change of an equivalent object property property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange",
+  "@id" : "https://w3id.orgdef/och#FunctionalDataPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -708,13 +760,13 @@
     "@value" : "The change operation that describes the change of a functional datatype property property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Change of a functional datatype property property"
+    "@value" : "Change of a Functional Datatype Property property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyChange"
+    "@id" : "https://w3id.orgdef/och#DataPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange",
+  "@id" : "https://w3id.orgdef/och#FunctionalObjectPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -722,13 +774,15 @@
     "@value" : "The change operation that describes the change of a functional object property property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Change of a functional object property property"
+    "@value" : "Change of a Functional Object Property property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
+  }, {
+    "@id" : "https://w3id.orgdef/och#RemoveObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange",
+  "@id" : "https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -739,10 +793,10 @@
     "@value" : "Change of an inverse functional object property property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange",
+  "@id" : "https://w3id.orgdef/och#InverseObjectPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -753,10 +807,10 @@
     "@value" : "Change of an inverse functional object property property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange",
+  "@id" : "https://w3id.orgdef/och#IrreflexiveObjectPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -767,10 +821,10 @@
     "@value" : "Change of an irreflexive object property property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#OWLEntity",
+  "@id" : "https://w3id.orgdef/och#OWLEntity",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -781,7 +835,7 @@
     "@value" : "OWL Entity Class"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange",
+  "@id" : "https://w3id.orgdef/och#ObjectPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -789,13 +843,13 @@
     "@value" : "The change operation that describes the change of an object property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Change of an object property"
+    "@value" : "Change of an Object Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#EntityChange"
+    "@id" : "https://w3id.orgdef/och#PropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange",
+  "@id" : "https://w3id.orgdef/och#ObjectPropertyDomainChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -806,10 +860,10 @@
     "@value" : "Change of the domain of an object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange",
+  "@id" : "https://w3id.orgdef/och#ObjectPropertyRangeChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -820,10 +874,10 @@
     "@value" : "Change of the range of an object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange",
+  "@id" : "https://w3id.orgdef/och#OntologyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -834,7 +888,35 @@
     "@value" : "Ontology Changes"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange",
+  "@id" : "https://w3id.orgdef/och#PropertyChange",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The change operation that describes changes in properties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Property Changes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.orgdef/och#OntologyChange"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#RangeChange",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The change operation that describes the change of the range of a property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Change of the range of a property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.orgdef/och#PropertyChange"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#ReflexiveObjectPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -845,10 +927,10 @@
     "@value" : "Change of a reflexive object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveAsymmetricObjectProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveAsymmetricObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -859,10 +941,12 @@
     "@value" : "Removal of an asymmetric object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AsymmetricObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#AsymmetricObjectPropertyChange"
+  }, {
+    "@id" : "https://w3id.orgdef/och#RemoveObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveClass",
+  "@id" : "https://w3id.orgdef/och#RemoveClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -873,10 +957,10 @@
     "@value" : "Removal of a class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ClassChange"
+    "@id" : "https://w3id.orgdef/och#ClassChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveDataProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveDataProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -884,13 +968,15 @@
     "@value" : "The change operation that describes the removal of a data property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Removal of a data property "
+    "@value" : "Removal of a Data Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveProperty"
+    "@id" : "https://w3id.orgdef/och#DataPropertyChange"
+  }, {
+    "@id" : "https://w3id.orgdef/och#RemoveProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveDataPropertyDomain",
+  "@id" : "https://w3id.orgdef/och#RemoveDataPropertyDomain",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -901,12 +987,12 @@
     "@value" : "Removal of the domain of a datatype property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyDomainChange"
+    "@id" : "https://w3id.orgdef/och#DataPropertyDomainChange"
   }, {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveDomain"
+    "@id" : "https://w3id.orgdef/och#RemoveDomain"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveDataPropertyRange",
+  "@id" : "https://w3id.orgdef/och#RemoveDataPropertyRange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -917,12 +1003,12 @@
     "@value" : "Removal of the range of a datatype property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyRangeChange"
+    "@id" : "https://w3id.orgdef/och#DataPropertyRangeChange"
   }, {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveRange"
+    "@id" : "https://w3id.orgdef/och#RemoveRange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveDatatype",
+  "@id" : "https://w3id.orgdef/och#RemoveDatatype",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -930,13 +1016,13 @@
     "@value" : "The change operation that describes the removal of the Datatype of a data property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Removal of the Datatype of a datatype property"
+    "@value" : "Removal of the Datatype of a Datatype Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#DatatypeChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveDisjointClass",
+  "@id" : "https://w3id.orgdef/och#RemoveDisjointClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -947,10 +1033,10 @@
     "@value" : "Removal of a disjoint class property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DisjointClassChange"
+    "@id" : "https://w3id.orgdef/och#DisjointClassChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveDisjointDataProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveDisjointDataProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -961,10 +1047,10 @@
     "@value" : "Removal of the disjointWith property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DisjointDataPropertyChange"
+    "@id" : "https://w3id.orgdef/och#DisjointDataPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveDisjointObjectProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveDisjointObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -975,10 +1061,12 @@
     "@value" : "Removal of the disjointWith property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DisjointObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#DisjointObjectPropertyChange"
+  }, {
+    "@id" : "https://w3id.orgdef/och#RemoveObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveDisjointUnion",
+  "@id" : "https://w3id.orgdef/och#RemoveDisjointUnion",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -989,10 +1077,10 @@
     "@value" : "Removal of the disjointUnionOf property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DisjointUnionChange"
+    "@id" : "https://w3id.orgdef/och#DisjointUnionChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveDomain",
+  "@id" : "https://w3id.orgdef/och#RemoveDomain",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1003,10 +1091,10 @@
     "@value" : "Removal of the Domain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#DomainChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveEquivalentClass",
+  "@id" : "https://w3id.orgdef/och#RemoveEquivalentClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1017,10 +1105,10 @@
     "@value" : "Removal of the equivalentClass property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#EquivalentClassChange"
+    "@id" : "https://w3id.orgdef/och#EquivalentClassChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveEquivalentDataProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveEquivalentDataProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1031,10 +1119,10 @@
     "@value" : "Removal of the equivalentProperty property for a Datatype property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#EquivalentDataPropertyChange"
+    "@id" : "https://w3id.orgdef/och#EquivalentDataPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveEquivalentObjectProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveEquivalentObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1045,10 +1133,12 @@
     "@value" : "Removal of the equivalentProperty property for an object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#EquivalentObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#EquivalentObjectPropertyChange"
+  }, {
+    "@id" : "https://w3id.orgdef/och#RemoveObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveFunctionalDataProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveFunctionalDataProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1059,10 +1149,10 @@
     "@value" : "Removal of functional data property "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#FunctionalDataPropertyChange"
+    "@id" : "https://w3id.orgdef/och#FunctionalDataPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveFunctionalObjectProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveFunctionalObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1073,10 +1163,10 @@
     "@value" : "Removal of functional object property "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#FunctionalObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#FunctionalObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveInverseFunctionalObjectProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveInverseFunctionalObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1087,10 +1177,12 @@
     "@value" : "Removal of inverse functional object property "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#InverseFunctionalObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange"
+  }, {
+    "@id" : "https://w3id.orgdef/och#RemoveObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveInverseObjectProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveInverseObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1101,10 +1193,12 @@
     "@value" : "Removal of an inverse property to object property "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#InverseObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#InverseObjectPropertyChange"
+  }, {
+    "@id" : "https://w3id.orgdef/och#RemoveObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveIrreflexiveObjectProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveIrreflexiveObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1115,10 +1209,10 @@
     "@value" : "Removal of an irreflexive object property "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#IrreflexiveObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#IrreflexiveObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveObjectProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1129,10 +1223,12 @@
     "@value" : "Removal of an Object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveProperty"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
+  }, {
+    "@id" : "https://w3id.orgdef/och#RemoveProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveObjectPropertyDomain",
+  "@id" : "https://w3id.orgdef/och#RemoveObjectPropertyDomain",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1143,12 +1239,12 @@
     "@value" : "Removal of the Domain of an object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyDomainChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyDomainChange"
   }, {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveDomain"
+    "@id" : "https://w3id.orgdef/och#RemoveDomain"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveObjectPropertyRange",
+  "@id" : "https://w3id.orgdef/och#RemoveObjectPropertyRange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1159,12 +1255,12 @@
     "@value" : "Removal of the Range of an object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyRangeChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyRangeChange"
   }, {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveRange"
+    "@id" : "https://w3id.orgdef/och#RemoveRange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1175,10 +1271,10 @@
     "@value" : "Removal of a Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#PropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveRange",
+  "@id" : "https://w3id.orgdef/och#RemoveRange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1189,10 +1285,10 @@
     "@value" : "Removal of the Range"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#RangeChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveReflexiveObjectProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveReflexiveObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1203,10 +1299,12 @@
     "@value" : "Removal of an reflexive object property "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ReflexiveObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#ReflexiveObjectPropertyChange"
+  }, {
+    "@id" : "https://w3id.orgdef/och#RemoveObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveSubClass",
+  "@id" : "https://w3id.orgdef/och#RemoveSubClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1217,10 +1315,10 @@
     "@value" : "Removal of SubClass property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#SubClassChange"
+    "@id" : "https://w3id.orgdef/och#SubClassChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf",
+  "@id" : "https://w3id.orgdef/och#RemoveSubPropertyOf",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1231,10 +1329,10 @@
     "@value" : "Removal of the sub property property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#SubPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveSymmetricObjectProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveSymmetricObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1245,10 +1343,12 @@
     "@value" : "Removal of Symetric Object Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#RemoveObjectProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#SymmetricObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RemoveTransitiveObjectProperty",
+  "@id" : "https://w3id.orgdef/och#RemoveTransitiveObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1259,10 +1359,12 @@
     "@value" : "Removal of a transitive object property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#RemoveObjectProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#TransitiveObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RenameElement",
+  "@id" : "https://w3id.orgdef/och#RenameElement",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1273,10 +1375,10 @@
     "@value" : "Renaming of a class or property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#ElementChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#RevokeDeprecate",
+  "@id" : "https://w3id.orgdef/och#RevokeDeprecate",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1287,10 +1389,10 @@
     "@value" : "Revoke Deprecation of an Element."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
+    "@id" : "https://w3id.orgdef/och#ElementChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#SubClassChange",
+  "@id" : "https://w3id.orgdef/och#SubClassChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1301,38 +1403,24 @@
     "@value" : "Change of SubClass property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ClassChange"
+    "@id" : "https://w3id.orgdef/och#ClassChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#SubDataPropertyOfChange",
+  "@id" : "https://w3id.orgdef/och#SubPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The change operation that describes the change of a subproperty of a Datatype property."
+    "@value" : "The change operation that describes the change of a subproperty property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Change of the subproperty of a Datatype property"
+    "@value" : "Change of a Subproperty Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DataPropertyChange"
+    "@id" : "https://w3id.orgdef/och#PropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#SubObjectPropertyOfChange",
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The change operation that describes the change of a subproperty of an object property."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Change of the subproperty of an object property"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange"
-  } ]
-}, {
-  "@id" : "https://w3id.org/OWLChangeOntology#SymmetricObjectPropertyChange",
+  "@id" : "https://w3id.orgdef/och#SymmetricObjectPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1343,10 +1431,10 @@
     "@value" : "Change of the symmetric object property property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#TransitiveObjectPropertyChange",
+  "@id" : "https://w3id.orgdef/och#TransitiveObjectPropertyChange",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1357,10 +1445,10 @@
     "@value" : "Change of the transitive object property property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#ObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#addedClass",
+  "@id" : "https://w3id.orgdef/och#addedClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1368,7 +1456,7 @@
     "@value" : "The OWL class that is added between ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddClass"
+    "@id" : "https://w3id.orgdef/och#AddClass"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Added Class"
@@ -1377,7 +1465,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#deprecatedElement",
+  "@id" : "https://w3id.orgdef/och#deprecatedElement",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1385,7 +1473,7 @@
     "@value" : "The Element that is being deprecated."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#DeprecateElement"
+    "@id" : "https://w3id.orgdef/och#DeprecateElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Deprecate Element"
@@ -1394,7 +1482,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#domainAddDataProperty",
+  "@id" : "https://w3id.orgdef/och#domainAddDataProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1402,7 +1490,7 @@
     "@value" : "The domain of an OWL data property added between ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddDataProperty"
+    "@id" : "https://w3id.orgdef/och#AddDataProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Domain in Add Data Property"
@@ -1411,7 +1499,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#domainAddObjectProperty",
+  "@id" : "https://w3id.orgdef/och#domainAddObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1419,7 +1507,7 @@
     "@value" : "The domain of an OWL object property added between ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddObjectProperty"
+    "@id" : "https://w3id.orgdef/och#AddObjectProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Domain in Add Object Property"
@@ -1428,7 +1516,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#domainAddSubClass",
+  "@id" : "https://w3id.orgdef/och#domainAddSubClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1436,7 +1524,7 @@
     "@value" : "The subject of the rdfs:subClassOf property removed between ontology versions, the child class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddSubClass"
+    "@id" : "https://w3id.orgdef/och#AddSubClass"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Domain in Add Subclass Property"
@@ -1445,7 +1533,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#domainAddSubProperty",
+  "@id" : "https://w3id.orgdef/och#domainAddSubProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1453,7 +1541,7 @@
     "@value" : "The subject of the rdfs:subPropertyOf property removed between ontology versions."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddSubPropertyOf"
+    "@id" : "https://w3id.orgdef/och#AddSubPropertyOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Domain in Add SubProperty Property"
@@ -1462,7 +1550,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Property"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#domainRemoveDataProperty",
+  "@id" : "https://w3id.orgdef/och#domainRemoveDataProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1470,7 +1558,7 @@
     "@value" : "The domain of an OWL data property removed between ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveDataProperty"
+    "@id" : "https://w3id.orgdef/och#RemoveDataProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Domain in Remove Data Property"
@@ -1479,7 +1567,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#domainRemoveObjectProperty",
+  "@id" : "https://w3id.orgdef/och#domainRemoveObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1487,7 +1575,7 @@
     "@value" : "The domain of an OWL object property removed between ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveObjectProperty"
+    "@id" : "https://w3id.orgdef/och#RemoveObjectProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Domain in Remove Object Property"
@@ -1496,7 +1584,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#domainRemoveSubClass",
+  "@id" : "https://w3id.orgdef/och#domainRemoveSubClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1504,7 +1592,7 @@
     "@value" : "The subject of the rdfs:subClassOf property removed between ontology versions, the child class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveSubClass"
+    "@id" : "https://w3id.orgdef/och#RemoveSubClass"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Domain in Remove Subclass Property"
@@ -1513,7 +1601,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#domainRemoveSubProperty",
+  "@id" : "https://w3id.orgdef/och#domainRemoveSubProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1521,7 +1609,7 @@
     "@value" : "The subject of the rdfs:subPropertyOf property removed between ontology versions, the child class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf"
+    "@id" : "https://w3id.orgdef/och#RemoveSubPropertyOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Domain in Remove SubProperty Property"
@@ -1530,7 +1618,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Property"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#hasRelatedEntity",
+  "@id" : "https://w3id.orgdef/och#hasRelatedEntity",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1538,16 +1626,16 @@
     "@value" : "EStablishes an equivalence between ontological terms"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OWLEntity"
+    "@id" : "https://w3id.orgdef/och#OWLEntity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Has Related Entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OWLEntity"
+    "@id" : "https://w3id.orgdef/och#OWLEntity"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#propertyAddDataProperty",
+  "@id" : "https://w3id.orgdef/och#propertyAddDataProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1555,7 +1643,7 @@
     "@value" : "The data property added between ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddDataProperty"
+    "@id" : "https://w3id.orgdef/och#AddDataProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Property in Add Data Property"
@@ -1564,7 +1652,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#propertyAddObjectProperty",
+  "@id" : "https://w3id.orgdef/och#propertyAddObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1572,7 +1660,7 @@
     "@value" : "The object property added between ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddObjectProperty"
+    "@id" : "https://w3id.orgdef/och#AddObjectProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Property in Add Object Property"
@@ -1581,7 +1669,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#propertyRemoveDataProperty",
+  "@id" : "https://w3id.orgdef/och#propertyRemoveDataProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1589,7 +1677,7 @@
     "@value" : "The data property removed between ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveDataProperty"
+    "@id" : "https://w3id.orgdef/och#RemoveDataProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Property in Remove Data Property"
@@ -1598,7 +1686,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#propertyRemoveObjectProperty",
+  "@id" : "https://w3id.orgdef/och#propertyRemoveObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1606,7 +1694,7 @@
     "@value" : "The data property removed between ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveObjectProperty"
+    "@id" : "https://w3id.orgdef/och#RemoveObjectProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Property in Remove Data Property"
@@ -1615,29 +1703,24 @@
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#rangeAddDataProperty",
+  "@id" : "https://w3id.orgdef/och#rangeAddDataProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
-  }, {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The range of an OWL data property added between ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddDataProperty"
+    "@id" : "https://w3id.orgdef/och#AddDataProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Range in Add Data Property operation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#OntologyChange"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#rangeAddObjectProperty",
+  "@id" : "https://w3id.orgdef/och#rangeAddObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1645,7 +1728,7 @@
     "@value" : "The object of the object property added between ontology versions."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddObjectProperty"
+    "@id" : "https://w3id.orgdef/och#AddObjectProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Range in Add Object Property operation"
@@ -1654,7 +1737,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#rangeAddSubClass",
+  "@id" : "https://w3id.orgdef/och#rangeAddSubClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1662,7 +1745,7 @@
     "@value" : "The object of the rdfs:subClassOf property added between ontology versions, the parent class."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddSubClass"
+    "@id" : "https://w3id.orgdef/och#AddSubClass"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Range in Add Subclass Property operation"
@@ -1671,7 +1754,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#rangeAddSubProperty",
+  "@id" : "https://w3id.orgdef/och#rangeAddSubProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1679,7 +1762,7 @@
     "@value" : "The object of the rdfs:subPropertyOf property removed between ontology versions."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#AddSubPropertyOf"
+    "@id" : "https://w3id.orgdef/och#AddSubPropertyOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Range in Add SubProperty Property"
@@ -1688,7 +1771,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Property"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#rangeRemoveDataProperty",
+  "@id" : "https://w3id.orgdef/och#rangeRemoveDataProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
   } ],
@@ -1696,7 +1779,7 @@
     "@value" : "The range of an OWL data property removed between ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveDataProperty"
+    "@id" : "https://w3id.orgdef/och#RemoveDataProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Range in Remove Data Property operation"
@@ -1705,7 +1788,7 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#rangeRemoveObjectProperty",
+  "@id" : "https://w3id.orgdef/och#rangeRemoveObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1713,7 +1796,7 @@
     "@value" : "The range of an OWL object property removed between ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveObjectProperty"
+    "@id" : "https://w3id.orgdef/och#RemoveObjectProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Range in Remove Object Property operation"
@@ -1722,7 +1805,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#rangeRemoveSubClass",
+  "@id" : "https://w3id.orgdef/och#rangeRemoveSubClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1730,7 +1813,7 @@
     "@value" : "The object of the rdfs:subClassOf property removed between ontology versions, the parent class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveSubClass"
+    "@id" : "https://w3id.orgdef/och#RemoveSubClass"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Range in Remove Subclass Property operation"
@@ -1739,7 +1822,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#rangeRemoveSubProperty",
+  "@id" : "https://w3id.orgdef/och#rangeRemoveSubProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1747,7 +1830,7 @@
     "@value" : "The object of the rdfs:subPropertyOf property removed between ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveSubPropertyOf"
+    "@id" : "https://w3id.orgdef/och#RemoveSubPropertyOf"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Range in Remove SubProperty Property"
@@ -1756,7 +1839,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Property"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#removedClass",
+  "@id" : "https://w3id.orgdef/och#removedClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1764,7 +1847,7 @@
     "@value" : "The OWL class that is deleted betweeen ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RemoveClass"
+    "@id" : "https://w3id.orgdef/och#RemoveClass"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Deleted Class"
@@ -1773,7 +1856,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#renamedElement",
+  "@id" : "https://w3id.orgdef/och#renamedElement",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1781,7 +1864,7 @@
     "@value" : "The OWL class or property that is being renamed between ontology versions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RenameElement"
+    "@id" : "https://w3id.orgdef/och#RenameElement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Renamed Element"
@@ -1790,7 +1873,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "https://w3id.org/OWLChangeOntology#undeprecatedElement",
+  "@id" : "https://w3id.orgdef/och#undeprecatedElement",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
@@ -1798,7 +1881,7 @@
     "@value" : "The Element that is being undeprecated."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/OWLChangeOntology#RevokeDeprecate"
+    "@id" : "https://w3id.orgdef/och#RevokeDeprecate"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Uneprecate Element"
