@@ -2,6 +2,476 @@
   "@id" : "http://creativecommons.org/ns#license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddAsymmetricObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddAsymmetricObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddDataProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddDataPropertyDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddDataPropertyDomain"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddDataPropertyRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddDataPropertyRange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddDatatype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddDatatype"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddDisjointClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddDisjointClass"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddDisjointDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddDisjointDataProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddDisjointObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddDisjointObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddDisjointUnion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddDisjointUnion"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddDomain"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddEquivalentClass"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddEquivalentDataProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddEquivalentObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddFunctionalDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddFunctionalDataProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddFunctionalObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddFunctionalObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddInverseFunctionalObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddInverseFunctionalObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddInverseObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddInverseObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddIrreflexiveObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddIrreflexiveObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddObjectProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#AddObjectPropertyDomain"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddObjectPropertyRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddObjectPropertyRange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddRange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddReflexiveObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddReflexiveObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddSubPropertyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddSubPropertyOf"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddSymmetricObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddSymmetricObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddTransitiveObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AddTransitiveObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAsymmetricObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#AsymmetricObjectPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesClassChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#ClassChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesDataPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#DataPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesDataPropertyDomainChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#DataPropertyDomainChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesDataPropertyRangeChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#DataPropertyRangeChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesDisjointClassChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#DisjointClassChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesDisjointDataPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#DisjointDataPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesDisjointObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#DisjointObjectPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesDisjointUnionChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#DisjointUnionChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesEquivalentClassChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#EquivalentClassChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesEquivalentDataPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#EquivalentDataPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesEquivalentObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#EquivalentObjectPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesFunctionalDataPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#FunctionalDataPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesFunctionalObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#FunctionalObjectPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesInverseFunctionalObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesInverseObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#InverseObjectPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesIrreflexiveObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#IrreflexiveObjectPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesOWLEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#OWLEntity"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesObjectPropertyDomainChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyDomainChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesObjectPropertyRangeChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyRangeChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesOntologyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#OntologyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesReflexiveObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#ReflexiveObjectPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveAsymmetricObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveAsymmetricObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveDataPropertyDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveDataPropertyDomain"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveDataPropertyRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveDataPropertyRange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveDatatype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveDatatype"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveDisjointClass"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveDisjointDataProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveDisjointObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointUnion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveDisjointUnion"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveDomain"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveEquivalentClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveEquivalentClass"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveEquivalentDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveEquivalentDataProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveEquivalentObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveEquivalentObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveFunctionalDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveFunctionalDataProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveFunctionalObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveFunctionalObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveInverseFunctionalObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveInverseFunctionalObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveInverseObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveInverseObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveIrreflexiveObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveIrreflexiveObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveObjectPropertyDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveObjectPropertyDomain"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveObjectPropertyRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveObjectPropertyRange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveRange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveReflexiveObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveReflexiveObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveSubPropertyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveSubPropertyOf"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveSymmetricObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveSymmetricObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveTransitiveObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveTransitiveObjectProperty"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesSymmetricObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#SymmetricObjectPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangesTransitiveObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#TransitiveObjectPropertyChange"
+  } ]
+}, {
+  "@id" : "http://omv.ontoware.org/2007/07/OWLChangeshasRelatedEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://w3id.orgdef/och#hasRelatedEntity"
+  } ]
+}, {
   "@id" : "http://purl.org/dc/terms/bibliographicCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -67,9 +537,19 @@
     "@value" : "2024-04-17 "
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Diego Conde Herreros"
+    "@value" : "David Chaves-Fraga"
+  }, {
+    "@value" : "Diego Conde-Herreros"
+  }, {
+    "@value" : "Lise Stork"
+  }, {
+    "@value" : "María Poveda-Villalón"
+  }, {
+    "@value" : "Oscar Corcho"
   }, {
     "@value" : "Raúl Palma"
+  }, {
+    "@value" : "Romana Pernisch"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "An ontology for describing changes between OWL ontology versions"
@@ -91,6 +571,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddAsymmetricObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -121,6 +602,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -137,6 +619,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddDataPropertyDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -153,6 +636,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddDataPropertyRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -169,6 +653,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddDatatype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -183,6 +668,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddDisjointClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -197,6 +683,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddDisjointDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -211,6 +698,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddDisjointObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -227,6 +715,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddDisjointUnion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -241,6 +730,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -255,6 +745,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddEquivalentClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -269,6 +760,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddEquivalentDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -283,6 +775,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddEquivalentObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -299,6 +792,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddFunctionalDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -313,6 +807,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddFunctionalObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -329,6 +824,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddInverseFunctionalObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -345,6 +841,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddInverseObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -361,6 +858,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddIrreflexiveObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -377,6 +875,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -393,6 +892,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddObjectPropertyDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -409,6 +909,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddObjectPropertyRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -425,6 +926,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -439,6 +941,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -453,6 +956,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddReflexiveObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -483,6 +987,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddSubPropertyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -497,6 +1002,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddSymmetricObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -513,6 +1019,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddTransitiveObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -529,6 +1036,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AsymmetricObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -543,6 +1051,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#ClassChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -557,6 +1066,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#DataPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -571,6 +1081,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#DataPropertyDomainChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -585,6 +1096,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#DataPropertyRangeChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -627,6 +1139,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#DisjointClassChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -641,6 +1154,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#DisjointDataPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -655,6 +1169,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#DisjointObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -669,6 +1184,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#DisjointUnionChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -711,6 +1227,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#EquivalentClassChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -725,6 +1242,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#EquivalentDataPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -739,6 +1257,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#EquivalentObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -753,6 +1272,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#FunctionalDataPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -767,6 +1287,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#FunctionalObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -783,6 +1304,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -797,6 +1319,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#InverseObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -811,6 +1334,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#IrreflexiveObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -825,6 +1349,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#OWLEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -836,6 +1361,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#ObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -850,6 +1376,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#ObjectPropertyDomainChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -864,6 +1391,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#ObjectPropertyRangeChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -878,6 +1406,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#OntologyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -917,6 +1446,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#ReflexiveObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -931,6 +1461,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveAsymmetricObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -977,6 +1508,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveDataPropertyDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -993,6 +1525,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveDataPropertyRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1009,6 +1542,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveDatatype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1023,6 +1557,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveDisjointClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1037,6 +1572,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveDisjointDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1051,6 +1587,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveDisjointObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1067,6 +1604,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveDisjointUnion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1081,6 +1619,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1095,6 +1634,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveEquivalentClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1109,6 +1649,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveEquivalentDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1123,6 +1664,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveEquivalentObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1139,6 +1681,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveFunctionalDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1153,6 +1696,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveFunctionalObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1167,6 +1711,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveInverseFunctionalObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1183,6 +1728,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveInverseObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1199,6 +1745,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveIrreflexiveObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1213,6 +1760,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1229,6 +1777,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveObjectPropertyDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1245,6 +1794,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveObjectPropertyRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1261,6 +1811,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1275,6 +1826,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1289,6 +1841,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveReflexiveObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1319,6 +1872,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveSubPropertyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1333,6 +1887,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveSymmetricObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1349,6 +1904,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveTransitiveObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1421,6 +1977,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#SymmetricObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1435,6 +1992,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#TransitiveObjectPropertyChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ],
@@ -1619,6 +2177,7 @@
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#hasRelatedEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
