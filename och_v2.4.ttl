@@ -9,7 +9,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix propchar: <https://w3id.org/def/propchar#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
 
 
 ##########################################################
@@ -85,62 +86,62 @@ och: a owl:Ontology ;
 ############################################################
 #### SKOS for the representation ###
 ###########################################################
-propchar: a skos:ConceptScheme.
+och: a skos:ConceptScheme.
 
-propchar:PropertyCharacteristic a skos:Concept;
-        skos:inScheme <https://w3id.org/def/propchar#>;
+och:PropertyCharacteristic a skos:Concept;
+        skos:inScheme <https://w3id.org/def/och#>;
         skos:prefLabel "Property Characteristic"@en;
         skos:definition "The top term that encompases all characteristics"@en;
-        skos:narrower propchar:FunctionalProperty, propchar:ObjectPropertyCharacteristic.
+        skos:narrower och:FunctionalProperty, och:ObjectPropertyCharacteristic.
 
-propchar:FunctionalProperty a skos:Concept;
-        skos:inScheme <https://w3id.org/def/propchar#>;
+och:FunctionalProperty a skos:Concept;
+        skos:inScheme <https://w3id.org/def/och#>;
         skos:prefLabel "Functional Property"@en;
         skos:definition "The term that describes Functional Properties."@en;
-        skos:broader propchar:PropertyCharacteristic.
+        skos:broader och:PropertyCharacteristic.
 
-propchar:ObjectPropertyCharacteristic a skos:Concept;
-        skos:inScheme <https://w3id.org/def/propchar#>;
+och:ObjectPropertyCharacteristic a skos:Concept;
+        skos:inScheme <https://w3id.org/def/och#>;
         skos:prefLabel "Object Property Characteristic"@en;
         skos:definition "The term that describes those property characteristics that are exclusive to object properties"@en;
-        skos:broader propchar:PropertyCharacteristic;
-        skos:narrower propchar:SymmetricProperty,propchar:AsymmetricProperty,propchar:ReflexiveProperty,propchar:IrreflexiveProperty,propchar:InverseFunctionalProperty,propchar:TransitiveProperty.
+        skos:broader och:PropertyCharacteristic;
+        skos:narrower och:SymmetricProperty,och:AsymmetricProperty,och:ReflexiveProperty,och:IrreflexiveProperty,och:InverseFunctionalProperty,och:TransitiveProperty.
 
-propchar:SymmetricProperty a skos:Concept;
-        skos:inScheme <https://w3id.org/def/propchar#>;
+och:SymmetricProperty a skos:Concept;
+        skos:inScheme <https://w3id.org/def/och#>;
         skos:prefLabel "Symmetric Property"@en;
         skos:definition "The term that describes symmetric properties."@en;
-        skos:broader propchar:PropertyCharacteristic.
+        skos:broader och:PropertyCharacteristic.
 
-propchar:AsymmetricProperty a skos:Concept;
-        skos:inScheme <https://w3id.org/def/propchar#>;
+och:AsymmetricProperty a skos:Concept;
+        skos:inScheme <https://w3id.org/def/och#>;
         skos:prefLabel "Asymmetric Property"@en;
         skos:definition "The term that describes asymmetric properties."@en;
-        skos:broader propchar:PropertyCharacteristic.       
+        skos:broader och:PropertyCharacteristic.       
 
-propchar:ReflexiveProperty a skos:Concept;
-        skos:inScheme <https://w3id.org/def/propchar#>;
+och:ReflexiveProperty a skos:Concept;
+        skos:inScheme <https://w3id.org/def/och#>;
         skos:prefLabel "Reflexive Property"@en;
         skos:definition "The term that describes reflexive properties."@en;
-        skos:broader propchar:PropertyCharacteristic.
+        skos:broader och:PropertyCharacteristic.
 
-propchar:IrreflexiveProperty a skos:Concept;
-        skos:inScheme <https://w3id.org/def/propchar#>;
+och:IrreflexiveProperty a skos:Concept;
+        skos:inScheme <https://w3id.org/def/och#>;
         skos:prefLabel "Irreflexive Property"@en;
         skos:definition "The term that describes irreflexive properties."@en;
-        skos:broader propchar:PropertyCharacteristic.
+        skos:broader och:PropertyCharacteristic.
 
-propchar:InverseFunctionalProperty a skos:Concept;
-        skos:inScheme <https://w3id.org/def/propchar#>;
+och:InverseFunctionalProperty a skos:Concept;
+        skos:inScheme <https://w3id.org/def/och#>;
         skos:prefLabel "Inverse Functional Property"@en;
         skos:definition "The term that describes the inverse functional properties."@en;
-        skos:broader propchar:PropertyCharacteristic.
+        skos:broader och:PropertyCharacteristic.
 
-propchar:TransitiveProperty a skos:Concept;
-        skos:inScheme <https://w3id.org/def/propchar#>;
+och:TransitiveProperty a skos:Concept;
+        skos:inScheme <https://w3id.org/def/och#>;
         skos:prefLabel "Transitive Property"@en;
         skos:definition "The term that describes transitive properties."@en;
-        skos:broader propchar:PropertyCharacteristic.
+        skos:broader och:PropertyCharacteristic.
 
 ##########################################################################################
 
@@ -166,7 +167,7 @@ och:addedCharacteristic a owl:ObjectProperty ;
     rdfs:label "added characteristic" ;
     rdfs:comment "The characteristic being added to a given property";
     rdfs:domain och:AddCharacteristic ;
-    rdfs:range propchar:PropertyCharacteristic .
+    rdfs:range och:PropertyCharacteristic .
 
 och:addedClass a owl:ObjectProperty ;
     rdfs:label "added class" ;
@@ -271,7 +272,7 @@ och:removedCharacteristic a owl:ObjectProperty ;
     rdfs:label "removed characteristic" ;
     rdfs:comment "The characteristic that is being removed from a property";
     rdfs:domain och:RemoveCharacteristic ;
-    rdfs:range propchar:PropertyCharacteristic .
+    rdfs:range och:PropertyCharacteristic .
 
 och:removedClass a owl:ObjectProperty ;
     rdfs:label "removed class" ;
@@ -768,7 +769,26 @@ och:sourceProperty a owl:ObjectProperty ;
     rdfs:range rdf:Property .
 
 och:targetProperty a owl:ObjectProperty ;
-    rdfs:label "target property" ;
+    rdfs:label "target Property";
     rdfs:comment "The property that is the object of the property relations being changed in a change operation";
     rdfs:domain och:PropertyRelationChange ;
     rdfs:range rdf:Property .
+
+och:AddProperty a owl:Class;
+    rdfs:label "Add Property";
+    rdfs:comment "The class that represents the addition of a property to an ontology";
+    rdfs:subClassOf och:PropertyChange.
+
+och:addedProperty a owl:ObjectProperty;
+    rdfs:label "added Property";
+    rdfs:comment "The property being added to the ontology";
+    rdfs:subPropertyOf och:addedEntity;
+    rdfs:domain och:AddProperty;
+    rdfs:range rdf:Property.
+
+och:removedProperty a owl:ObjectProperty;
+    rdfs:label "removed Property";
+    rdfs:comment "The property being removed from the ontology";
+    rdfs:subPropertyOf och:removedEntity;
+    rdfs:domain och:RemoveProperty;
+    rdfs:range rdf:Property.
