@@ -342,7 +342,7 @@ owl:Property rdf:type owl:Class .
                        rdfs:subClassOf :AddDomain ,
                                        :DataPropertyDomainChange ;
                        rdfs:comment "The class of the addition of the domain of a data property change betweeen ontology versions" ;
-                       owel:sameAs omv:AddDataPropertyDomain;
+                       owl:sameAs omv:AddDataPropertyDomain;
                        rdfs:label "Addition of the Domain of a Data Property" .
 
 ### From Raul Palma

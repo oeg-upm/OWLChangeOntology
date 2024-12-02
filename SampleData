@@ -1,0 +1,239 @@
+#The following sample data is for the OWLChangeOntology to drive the ontology development
+
+@prefix : <https://w3id.orgdef/och#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix omv: <http://omv.ontoware.org/2007/07/OWLChanges>.
+@prefix och: <https://w3id.org/def/och#> .
+@prefix ex:  <https://exampleuri.org#> .
+
+#First we need metadata to document the changelog
+ex:changelog1 a dcat:Dataset, och:ChangeLog;
+			  dcterms:title "Example datasets";
+			  dcterms:description "Example dataset";
+			  foaf:homepage <https://exampleuri.org#>;
+			  dcterms:contributor ex:usr1, ex:usr2;
+			  dcterms:issued "2008-11-17"^^xsd:date;
+			  och:prevVersion <https://exampleuri.org#ontology1.2>;
+	   		  och:currenVersion <https://exampleuri.org#ontology1.3>.
+
+ex:usr1 a foaf:Agent.
+ex:usr2 a foaf:Agent.
+
+#An Example change for the change corresponding to adding a class.
+ex:ch1 a och:OntologyChange,och:AddClass;
+	   och:issuedby ex:usr1;
+	   #Not sure if using owl:priorVersion and owl:versionIRI since those are for ontologies.
+	   och:fromChangelog ex:changelog1;
+	   och:adddedClass 	epo:SmallFund.
+
+
+#Example of the addSubClass change without linking it with previous change.
+ex:ch3 a och:OntologyChange, och:AddSubClass;
+	   och:issuedby ex:usr1;
+	   och:fromChangelog ex:changelog1;
+	   och:domainAddSubClass ex:SmallFund;
+	   och:rangeAddSubClass ex:Fund.
+
+#This choice comes from the need of having different representations and nested changes.
+
+#Example of a change of characteristics 
+ex:ch4 a och:OntologyChange, och:AddCharacteristic;
+	   och:issuedby ex:usr1;
+	   och:fromChangelog ex:changelog1;
+	   och:propertyAddCharacteristic ex:ownedBy;
+	   och:addedCharacteristic och_char:DisjointClass.
+
+# Example of a adding an object property.
+#Perhaps for adding a new change we would be interested in including a property for including related changes, maybe changes to that same term from different changelogs if interested in a term-level evolution
+ex:ch5  a och:OntologyChange, och:AddObjectProperty;
+		och:issuedby ex:usr2;
+#		och:relatedChange <https://exampleuri.org/changelog2/ch3>;
+	    och:fromChangelog ex:changelog1;
+	    och:propertyAddObjectProperty epo:ownedBy.
+#Same operation for adding the domain and range.	    
+ex:ch6  a och:OntologyChange, och:AddDomain;
+		och:issuedby ex:usr2;
+	    och:fromChangelog ex:changelog1;
+	    och:addedDomain ex:Fund.
+ex:ch7  a och:OntologyChange, och:AddRange;
+		och:issuedby ex:usr2;
+	    och:fromChangelog ex:changelog1;
+	    och:addedRange foaf:Agent.
+
+
+######################## Complex Class Operations ###############################
+
+# La clase con intersección original es la siguiente.
+# :Mother  owl:equivalentClass  [
+#   rdf:type            owl:Class ;
+#   owl:intersectionOf  ( :Woman :Parent ) 
+# ] .
+
+ex:ch8 a och:AddComplexClass, och:AddClass;
+	 och:addedClass ex:Mother;
+	 och:addedComplexClass ex:ch9.
+
+ex:ch9 a och:AddComplexClass;
+	  och:complexClassType och:IntersectionOf;
+	   och:addedComplexClass ex:ch10b;
+	   och:addedComplexClass ex:ch10.
+	
+ex:ch10 a och:AddComplexClass;
+	   och:addedClass :Parent.
+
+ex:ch10b a och:AddComlexClass;
+	   och:addedClass :Woman.	   
+
+# :Parent  owl:equivalentClass  [
+#   rdf:type     owl:Class ;
+#   owl:unionOf  ( :Mother :Father )
+# ] .
+
+
+ex:ch11 a och:AddComplexClass, och:AddClass;
+	 och:addedClass ex:Parent;
+	 och:addedComplexClass ex:ch9.
+
+ex:ch12 a och:addedComplexClass;
+		och:complexClassType och:UnionOf;
+	   och:addedClass :Mother;
+	   och:addedClass :Father.
+
+# :ChildlessPerson  owl:equivalentClass  [
+#   rdf:type            owl:Class ;
+#   owl:intersectionOf  ( :Person  
+#                         [ rdf:type          owl:Class ;
+#                           owl:complementOf  :Parent ] ) 
+# ] .
+
+ex:ch14 a och:AddComplexClass, och:AddClass;
+	 och:addedClass ex:ChildlessPerson;
+	 och:addedComplexClass ex:ch15.
+
+ex:ch15 a och:AddComplexClass;
+		och:complexClassType och:IntersectionOf;
+	   och:addedComplexClass ex:ch116;
+	   och:addedComplexClass ex:ch116b.
+	
+ex:ch16 a och:AddComplexClass;
+		och:complexClassType och:ComplementOf;
+	    och:addedComplexClass :Parent.
+
+ex:ch16b a och:AddComplexClass;
+	   och:addedComplexClass :Person.
+
+#################### Restrictions Operations ###################################
+# :Parent  owl:equivalentClass  [
+#   rdf:type            owl:Restriction ;
+#   owl:onProperty      :hasChild ;
+#   owl:someValuesFrom  :Person
+# ] .
+
+ex:ch11 a och:AddComplexClass,och:addClass;
+	och:addedClass ex:Parent;
+	och:addedComplexClass ex:ch12.
+
+ex:ch12 a och:AddComplexType;
+	och:complexClassType och:Restriction;
+	och:addedRestrictionOn ex:hasChild;
+	och_restric:someValuesFrom ex:Person.
+
+# :HappyPerson  rdf:type    owl:Class ;
+#     owl:equivalentClass  [
+#       rdf:type           owl:Restriction ;
+#       owl:onProperty     :hasChild ;
+#       owl:allValuesFrom  :Happy
+#     ] .
+
+ex:ch13 a och:AddComplexClass,och:addClass;
+	och:addedClass ex:HappyPerson;
+	och:addedComplexClass ex:ch12.
+
+ex:ch14 a och:AddComplexClass;
+	och:complexClassType och:Restriction;
+	och:addedRestrictionOn ex:hasChild;
+	och_restric:someValuesFrom ex:Person.
+
+#:HappyPerson  rdf:type    owl:Class ;
+#    owl:equivalentClass  [
+#      rdf:type            owl:Class ;
+#      owl:intersectionOf  ( [ rdf:type            owl:Restriction ;
+#                              owl:onProperty      :hasChild ;
+#                              owl:allValuesFrom   :Happy            ]
+#                            [ rdf:type            owl:Restriction ;
+#                             owl:onProperty      :hasChild ;
+#                               owl:someValuesFrom  :Happy            ]
+#                           )
+#     ] .
+ex:ch15 a och:AddComplexClass, och:addClass;
+	och:addedClass ex:HappyPerson;
+	och:addedComplexClass ex:ch16.
+
+ex:ch16 a och:AddComplexClass;
+	  och:complexClassType och:IntersectionOf;
+	  och:addedComplexClass ex:ch17;
+	  och:addedComplexClass ex:ch18.
+
+ex:ch17 a och:AddComplexClass;
+		och:complexClassType och:Restriction;
+		och:addedRestrictionOn ex:hasChild;
+		och_restric:allValuesFrom ex:Happy.
+
+ex:ch18 a och:AddComplexClass;
+		och:complexClassType och:Restriction;
+		och:addedRestrictionOn ex:hasChild;
+		och_restric:someValuesFrom ex:Happy.
+
+# :JohnsChildren  owl:equivalentClass  [
+#   rdf:type        owl:Restriction ;
+#   owl:onProperty  :hasParent ;
+#   owl:hasValue    :John
+# ] .
+
+ex:ch19 a och:AddComplexClass, och:addClass;
+		och:addedClass ex:JohnsChildren;
+		och:addedComplexClass ex:ch20.
+
+ex:ch20 a och:AddComplexClass;
+		och:complexClassType och:Restriction;
+		och:addedRestrictionOn ex:hasParent;
+		och_restric:hasValue ex:John.
+
+# :NarcisticPerson owl:equivalentClass  [
+#   rdf:type        owl:Restriction ;
+#   owl:onProperty  :loves ;
+#   owl:hasSelf     "true"^^xsd:boolean .
+# ] .
+
+ex:ch21 a och:AddComplexClass, och:addClass;
+		och:addedClass ex:NarcisticPerson;
+		och:addedComplexClass ex:ch22.
+
+ex:ch22 a och:AddComplexClass;
+		och:complexClassType och:Restriction;
+		och:addedRestrictionOn ex:Loves;
+		och_restric:hasSelf "true"^^xsd:boolean.
+
+
+#Property Cardinality Restrictions.
+
+# :John  rdf:type  [
+#   rdf:type                     owl:Restriction ;
+#   owl:maxQualifiedCardinality  "4"^^xsd:nonNegativeInteger ;
+#   owl:onProperty               :hasChild ;
+#   owl:onClass                  :Parent
+# ] .
+
+ex:ch23 a och:AddComplexClass, och:addClass;
+		och:addedClass ex:John;
+		och:addedComplexClass ex:ch23.
+
+ex:ch24 a och:AddComplexClass;
+		och:complexClassType och:Restriction;
+		och:addedRestrictionOn ex:hasChild;
+		och:maxCard "4"^^xsd:nonNegativeInteger;
+		och_restric:onClass ex:Parent.
