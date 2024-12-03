@@ -3,7 +3,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix mod: <https://w3id.org/mod#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix och: <https://w3id.orgdef/och/> .
+@prefix och: <https://w3id.orgdef/och#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -68,6 +68,7 @@ och: a owl:Ontology ;
     dcterms:contributor "Diego Conde Herreros",
         "Raúl Palma" ;
     dcterms:created "2024-04-17"^^xsd:date ;
+    dcterms:modified "2024-12-03"^^xsd:date;    
     dcterms:creator "David Chaves-Fraga",
         "Diego Conde-Herreros",
         "Lise Stork",
@@ -80,7 +81,8 @@ och: a owl:Ontology ;
     vann:preferredNamespacePrefix "och" ;
     vann:preferredNamespaceUri <https://w3id.org/def/och#> ;
     owl:priorVersion <https://w3id.org/def/och#> ;
-    owl:versionIRI <http://w3id.org/def/och> ;
+    owl:versionIRI <http://w3id.org/def/och/2.0.0> ;
+    owl:versionInfo "2.0.0"@en;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
 ############################################################
