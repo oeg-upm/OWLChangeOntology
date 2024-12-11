@@ -781,6 +781,11 @@ och:AddProperty a owl:Class;
     rdfs:comment "The class that represents the addition of a property to an ontology";
     rdfs:subClassOf och:PropertyChange.
 
+och:RemoveProperty a owl:Class;
+    rdfs:label "Remove Property";
+    rdfs:comment "The class that represents the removal of a property to an ontology";
+    rdfs:subClassOf och:PropertyChange.
+
 och:addedProperty a owl:ObjectProperty;
     rdfs:label "added Property";
     rdfs:comment "The property being added to the ontology";
