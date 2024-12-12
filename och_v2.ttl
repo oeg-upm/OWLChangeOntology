@@ -799,3 +799,98 @@ och:removedProperty a owl:ObjectProperty;
     rdfs:subPropertyOf och:removedEntity;
     rdfs:domain och:RemoveProperty;
     rdfs:range rdf:Property.
+
+
+###### Individual Changes ##################
+
+och:IndividualChange a owl:Class ;
+    rdfs:label "Individual Change" ;
+    rdfs:comment "The change operation corresponding to the change of a given individual within the ontology";
+    rdfs:subClassOf och:EntityChange .
+
+och:AddIndividual a owl:Class ;
+    rdfs:label "Add Individual" ;
+    rdfs:comment "The change operation corresponding to the addition of an individual to the ontology";    
+    rdfs:subClassOf och:IndividualChange .
+
+och:addedIndividual a owl:ObjectProperty ;
+    rdfs:label "added individual" ;
+    rdfs:comment "The individual being added in an AddIndividual operation";
+    rdfs:domain och:AddIndividual ;
+    rdfs:range owl:Class ;
+    rdfs:subPropertyOf och:addedEntity .
+
+och:RemoveIndividual a owl:Class ;
+    rdfs:label "Remove Individual" ;
+    rdfs:comment "The change operation corresponding to the removal of an individual to the ontology";    
+    rdfs:subClassOf och:IndividualChange .
+
+och:removedIndividual a owl:ObjectProperty ;
+    rdfs:label "removed individual" ;
+    rdfs:comment "The individual that is being removed in an ontology";
+    rdfs:domain och:RemoveIndividual ;
+    rdfs:range owl:Class ;
+    rdfs:subPropertyOf och:removedEntity .
+    
+och:IndividualRelationChange a owl:Class ;
+    rdfs:label "Individual Relation Change" ;
+    rdfs:comment "The change operation corresponding to the change of a relationship between two individuals within the ontology";    
+    rdfs:subClassOf och:IndividualChange .
+
+och:sourceIndividual a owl:ObjectProperty ;
+    rdfs:label "source individual" ;
+    rdfs:comment "The individual that is the subject of the relation being changed in a change operation";
+    rdfs:domain och:IndividualRelationChange ;
+    rdfs:range owl:Class .
+
+och:targetIndividual a owl:ObjectProperty ;
+    rdfs:label "target individual" ;
+    rdfs:comment "The individual that is the object of the relation being changed in a change operation";
+    rdfs:domain och:IndividualRelationChange ;
+    rdfs:range owl:Class .
+
+och:AddRelationtoIndividuals a owl:Class ;
+    rdfs:label "Add Relation to Individual" ;
+    rdfs:comment "The change operation corresponding to the addition of a relation between two individuals";
+    rdfs:subClassOf och:IndividualRelationChange .
+
+och:sourceAddRelationtoIndividuals a owl:ObjectProperty ;
+    rdfs:label "source add relation to individuals" ;
+    rdfs:comment "The individual that is the subject of the relation being added in a change operation";
+    rdfs:domain och:AddRelationtoIndividuals ;
+    rdfs:range owl:Class .
+
+och:targetAddRelationtoIndividuals a owl:ObjectProperty ;
+    rdfs:label "target add relation to individuals" ;
+    rdfs:comment "The individual that is the object of the relation being added in a change operation";
+    rdfs:domain och:AddRelationtoIndividuals ;
+    rdfs:range owl:Class .
+
+och:propertyAddRelationtoIndividuals a owl:ObjectProperty ;
+    rdfs:label "property add relation to individuals" ;
+    rdfs:comment "The individual that is the relation being added in a change operation";
+    rdfs:domain och:AddRelationtoIndividuals ;
+    rdfs:range rdf:Property .    
+
+och:RemoveRelationfromIndividuals a owl:Class ;
+    rdfs:label "Remove Relation from Individuals" ;
+    rdfs:comment "The change operation corresponding to the removal of a relation between two individuals";
+    rdfs:subClassOf och:IndividualRelationChange .
+
+och:sourceRemoveRelationtoIndividuals a owl:ObjectProperty ;
+    rdfs:label "source remove relation to individuals" ;
+    rdfs:comment "The individual that is the subject of the relation being removed in a change operation";
+    rdfs:domain och:RemoveRelationtoIndividuals ;
+    rdfs:range owl:Class .
+
+och:targetRemoveRelationtoIndividuals a owl:ObjectProperty ;
+    rdfs:label "target remove relation to individuals" ;
+    rdfs:comment "The individual that is the object of the relation being removed in a change operation";
+    rdfs:domain och:RemoveRelationtoIndividuals ;
+    rdfs:range owl:Class .
+
+och:propertyRemoveRelationtoIndividuals a owl:ObjectProperty ;
+    rdfs:label "property remove relation to individuals" ;
+    rdfs:comment "The individual that is the relation being remove in a change operation";
+    rdfs:domain och:RemoveRelationtoIndividuals ;
+    rdfs:range rdf:Property . 
