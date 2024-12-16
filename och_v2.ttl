@@ -63,7 +63,7 @@ owl:Class a owl:Class  .
 #### Ontology Metadata
 
 och: a owl:Ontology ;
-    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
     dcterms:bibliographicCitation "Conde-Herreros, D., Stork, L., Pernisch, R., Poveda-Villalón, M., Corcho, O., & Chaves-Fraga, D. (2024). Propagating Ontology Changes to Declarative Mappings in Construction of Knowledge Graphs." ;
     dcterms:contributor "Diego Conde Herreros",
         "Raúl Palma" ;
