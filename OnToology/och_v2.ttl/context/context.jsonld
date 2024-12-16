@@ -6,12 +6,14 @@
     "AddClass" : {
       "@id" : "https://w3id.orgdef/och#AddClass"
     },
+    "abstract" : {
+      "@id" : "http://purl.org/dc/terms/abstract"
+    },
+    "IndividualRelationChange" : {
+      "@id" : "https://w3id.orgdef/och#IndividualRelationChange"
+    },
     "newVersion" : {
       "@id" : "https://w3id.orgdef/och#newVersion",
-      "@type" : "@id"
-    },
-    "propertyRemoveDomain" : {
-      "@id" : "https://w3id.orgdef/och#propertyRemoveDomain",
       "@type" : "@id"
     },
     "addedDataRange" : {
@@ -38,6 +40,10 @@
     },
     "DataPropertyChange" : {
       "@id" : "https://w3id.orgdef/och#DataPropertyChange"
+    },
+    "sourceIndividual" : {
+      "@id" : "https://w3id.orgdef/och#sourceIndividual",
+      "@type" : "@id"
     },
     "Dataset" : {
       "@id" : "http://www.w3.org/ns/dcat#Dataset"
@@ -68,8 +74,15 @@
       "@id" : "https://w3id.orgdef/och#sourceAddDisjointProperty",
       "@type" : "@id"
     },
+    "RemoveRelationfromIndividuals" : {
+      "@id" : "https://w3id.orgdef/och#RemoveRelationfromIndividuals"
+    },
     "RemoveSubClass" : {
       "@id" : "https://w3id.orgdef/och#RemoveSubClass"
+    },
+    "sourceRemoveRelationtoIndividuals" : {
+      "@id" : "https://w3id.orgdef/och#sourceRemoveRelationtoIndividuals",
+      "@type" : "@id"
     },
     "bibliographicCitation" : {
       "@id" : "http://purl.org/dc/terms/bibliographicCitation"
@@ -88,6 +101,10 @@
       "@id" : "https://w3id.orgdef/och#outdatedEntityName",
       "@type" : "@id"
     },
+    "removedIndividual" : {
+      "@id" : "https://w3id.orgdef/och#removedIndividual",
+      "@type" : "@id"
+    },
     "deprecatedEntity" : {
       "@id" : "https://w3id.orgdef/och#deprecatedEntity",
       "@type" : "@id"
@@ -102,8 +119,16 @@
     "priorVersion" : {
       "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
     },
+    "targetIndividual" : {
+      "@id" : "https://w3id.orgdef/och#targetIndividual",
+      "@type" : "@id"
+    },
     "Class" : {
       "@id" : "http://www.w3.org/2002/07/owl#Class"
+    },
+    "targetRemoveRelationtoIndividuals" : {
+      "@id" : "https://w3id.orgdef/och#targetRemoveRelationtoIndividuals",
+      "@type" : "@id"
     },
     "targetRemoveSubProperty" : {
       "@id" : "https://w3id.orgdef/och#targetRemoveSubProperty",
@@ -130,6 +155,9 @@
     "narrower" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#narrower"
     },
+    "AddIndividual" : {
+      "@id" : "https://w3id.orgdef/och#AddIndividual"
+    },
     "Concept" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     },
@@ -141,6 +169,10 @@
     },
     "RemoveRange" : {
       "@id" : "https://w3id.orgdef/och#RemoveRange"
+    },
+    "sourceAddRelationtoIndividuals" : {
+      "@id" : "https://w3id.orgdef/och#sourceAddRelationtoIndividuals",
+      "@type" : "@id"
     },
     "AddSubPropertyOf" : {
       "@id" : "https://w3id.orgdef/och#AddSubPropertyOf"
@@ -175,6 +207,10 @@
     },
     "propertyRemoveCharacteristic" : {
       "@id" : "https://w3id.orgdef/och#propertyRemoveCharacteristic",
+      "@type" : "@id"
+    },
+    "targetAddRelationtoIndividuals" : {
+      "@id" : "https://w3id.orgdef/och#targetAddRelationtoIndividuals",
       "@type" : "@id"
     },
     "targetAddEquivalentClass" : {
@@ -235,8 +271,15 @@
       "@id" : "https://w3id.orgdef/och#relatedChange",
       "@type" : "@id"
     },
+    "propertyRemoveRelationtoIndividuals" : {
+      "@id" : "https://w3id.orgdef/och#propertyRemoveRelationtoIndividuals",
+      "@type" : "@id"
+    },
     "RemoveRangeDataProperty" : {
       "@id" : "https://w3id.orgdef/och#RemoveRangeDataProperty"
+    },
+    "RemoveIndividual" : {
+      "@id" : "https://w3id.orgdef/och#RemoveIndividual"
     },
     "createdWith" : {
       "@id" : "https://w3id.org/mod#createdWith"
@@ -244,6 +287,9 @@
     "issuedBy" : {
       "@id" : "https://w3id.orgdef/och#issuedBy",
       "@type" : "@id"
+    },
+    "IndividualChange" : {
+      "@id" : "https://w3id.orgdef/och#IndividualChange"
     },
     "addedEntity" : {
       "@id" : "https://w3id.orgdef/och#addedEntity",
@@ -254,10 +300,6 @@
     },
     "AddProperty" : {
       "@id" : "https://w3id.orgdef/och#AddProperty"
-    },
-    "propertyAddDomain" : {
-      "@id" : "https://w3id.orgdef/och#propertyAddDomain",
-      "@type" : "@id"
     },
     "RevokeDeprecate" : {
       "@id" : "https://w3id.orgdef/och#RevokeDeprecate"
@@ -279,11 +321,19 @@
       "@id" : "https://w3id.orgdef/och#removedEntity",
       "@type" : "@id"
     },
+    "propertyAddRelationtoIndividuals" : {
+      "@id" : "https://w3id.orgdef/och#propertyAddRelationtoIndividuals",
+      "@type" : "@id"
+    },
     "ObjectProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
     },
     "definition" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "addedIndividual" : {
+      "@id" : "https://w3id.orgdef/och#addedIndividual",
+      "@type" : "@id"
     },
     "addedDataProperty" : {
       "@id" : "https://w3id.orgdef/och#addedDataProperty",
@@ -427,6 +477,9 @@
     "Resource" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
     },
+    "RemoveRelationtoIndividuals" : {
+      "@id" : "https://w3id.orgdef/och#RemoveRelationtoIndividuals"
+    },
     "AddRange" : {
       "@id" : "https://w3id.orgdef/och#AddRange"
     },
@@ -457,15 +510,18 @@
     "AddDataProperty" : {
       "@id" : "https://w3id.orgdef/och#AddDataProperty"
     },
+    "AddRelationtoIndividuals" : {
+      "@id" : "https://w3id.orgdef/och#AddRelationtoIndividuals"
+    },
     "AddInverseProperty" : {
       "@id" : "https://w3id.orgdef/och#AddInverseProperty"
     },
-    "AddedDomain" : {
-      "@id" : "https://w3id.orgdef/och#AddedDomain",
-      "@type" : "@id"
-    },
     "AddDisjointProperty" : {
       "@id" : "https://w3id.orgdef/och#AddDisjointProperty"
+    },
+    "removedDomainforProperty" : {
+      "@id" : "https://w3id.orgdef/och#removedDomainforProperty",
+      "@type" : "@id"
     },
     "targetProperty" : {
       "@id" : "https://w3id.orgdef/och#targetProperty",
@@ -476,6 +532,10 @@
     },
     "InversePropertyChange" : {
       "@id" : "https://w3id.orgdef/och#InversePropertyChange"
+    },
+    "addedDomainforProperty" : {
+      "@id" : "https://w3id.orgdef/och#addedDomainforProperty",
+      "@type" : "@id"
     },
     "DatatypeProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
@@ -495,6 +555,10 @@
     },
     "preferredNamespaceUri" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "addedDomain" : {
+      "@id" : "https://w3id.orgdef/och#addedDomain",
+      "@type" : "@id"
     },
     "RemoveDomain" : {
       "@id" : "https://w3id.orgdef/och#RemoveDomain"

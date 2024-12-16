@@ -27,7 +27,13 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#https://w3id.orgdef/och#AddEquivalentProperty" title="https://w3id.orgdef/och#AddEquivalentProperty">Add Equivalent Property</a>
       </li>
       <li>
+         <a href="#https://w3id.orgdef/och#AddIndividual" title="https://w3id.orgdef/och#AddIndividual">Add Individual</a>
+      </li>
+      <li>
          <a href="#https://w3id.orgdef/och#AddInverseProperty" title="https://w3id.orgdef/och#AddInverseProperty">Add Inverse Property</a>
+      </li>
+      <li>
+         <a href="#https://w3id.orgdef/och#AddObjectProperty" title="https://w3id.orgdef/och#AddObjectProperty">Add Object Property</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#AddProperty" title="https://w3id.orgdef/och#AddProperty">Add Property</a>
@@ -40,6 +46,10 @@ This section provides details for each class and property defined by OWL Change 
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#AddRangeObjectProperty" title="https://w3id.orgdef/och#AddRangeObjectProperty">Add Range Object Property</a>
+      </li>
+      <li>
+         <a href="#https://w3id.orgdef/och#AddRelationtoIndividuals"
+            title="https://w3id.orgdef/och#AddRelationtoIndividuals">Add Relation to Individual</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#AddSubClass" title="https://w3id.orgdef/och#AddSubClass">Add Sub Class</a>
@@ -80,6 +90,13 @@ This section provides details for each class and property defined by OWL Change 
       <li>
          <a href="#https://w3id.orgdef/och#EquivalentPropertyChange"
             title="https://w3id.orgdef/och#EquivalentPropertyChange">Equivalent Property Change</a>
+      </li>
+      <li>
+         <a href="#https://w3id.orgdef/och#IndividualChange" title="https://w3id.orgdef/och#IndividualChange">Individual Change</a>
+      </li>
+      <li>
+         <a href="#https://w3id.orgdef/och#IndividualRelationChange"
+            title="https://w3id.orgdef/och#IndividualRelationChange">Individual Relation Change</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#InversePropertyChange" title="https://w3id.orgdef/och#InversePropertyChange">Inverse Property Change</a>
@@ -126,10 +143,16 @@ This section provides details for each class and property defined by OWL Change 
             title="https://w3id.orgdef/och#RemoveEquivalentProperty">Remove Equivalent Property</a>
       </li>
       <li>
+         <a href="#https://w3id.orgdef/och#RemoveIndividual" title="https://w3id.orgdef/och#RemoveIndividual">Remove Individual</a>
+      </li>
+      <li>
          <a href="#https://w3id.orgdef/och#RemoveInverseProperty" title="https://w3id.orgdef/och#RemoveInverseProperty">Remove Inverse Property</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#RemoveObjectProperty" title="https://w3id.orgdef/och#RemoveObjectProperty">Remove Object Property</a>
+      </li>
+      <li>
+         <a href="#https://w3id.orgdef/och#RemoveProperty" title="https://w3id.orgdef/och#RemoveProperty">Remove Property</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#RemoveRange" title="https://w3id.orgdef/och#RemoveRange">Remove Range</a>
@@ -140,6 +163,10 @@ This section provides details for each class and property defined by OWL Change 
       <li>
          <a href="#https://w3id.orgdef/och#RemoveRangeObjectProperty"
             title="https://w3id.orgdef/och#RemoveRangeObjectProperty">Remove Range Object Property</a>
+      </li>
+      <li>
+         <a href="#https://w3id.orgdef/och#RemoveRelationfromIndividuals"
+            title="https://w3id.orgdef/och#RemoveRelationfromIndividuals">Remove Relation from Individuals</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#RemoveSubClass" title="https://w3id.orgdef/och#RemoveSubClass">Remove Sub Class</a>
@@ -222,7 +249,8 @@ This section provides details for each class and property defined by OWL Change 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#https://w3id.orgdef/och#ObjectPropertyChange" title="https://w3id.orgdef/och#ObjectPropertyChange">Object Property Change</a>
+            <a href="#https://w3id.orgdef/och#AddProperty" title="https://w3id.orgdef/och#AddProperty">Add Property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#DataPropertyChange" title="https://w3id.orgdef/och#DataPropertyChange">Data Property Change</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -276,8 +304,8 @@ This section provides details for each class and property defined by OWL Change 
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#https://w3id.orgdef/och#AddedDomain" title="https://w3id.orgdef/och#AddedDomain">added domain</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#propertyAddDomain" title="https://w3id.orgdef/och#propertyAddDomain">property AddDomain</a>
+            <a href="#https://w3id.orgdef/och#addedDomainforProperty" title="https://w3id.orgdef/och#addedDomainforProperty">added Domain for Property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#addedDomain" title="https://w3id.orgdef/och#addedDomain">added domain</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -301,7 +329,8 @@ This section provides details for each class and property defined by OWL Change 
          <dt>is in domain of</dt>
          <dd>
             <a href="#https://w3id.orgdef/och#sourceAddEquivalentClass" title="https://w3id.orgdef/och#sourceAddEquivalentClass">source AddEquivalentClass</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#targetAddEquivalentClass" title="https://w3id.orgdef/och#targetAddEquivalentClass">target AddEquivalentClass</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#targetAddEquivalentClass"
+               title="https://w3id.orgdef/och#targetAddEquivalentClass">target AddEquivalentClass</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -333,6 +362,29 @@ This section provides details for each class and property defined by OWL Change 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="https://w3id.orgdef/och#AddIndividual">
+      <h3>Add Individual<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#AddIndividual</p>
+      <div class="comment">
+         <span class="markdown">The change operation corresponding to the addition of an individual to the ontology</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#IndividualChange" title="https://w3id.orgdef/och#IndividualChange">Individual Change</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#addedIndividual" title="https://w3id.orgdef/och#addedIndividual">added individual</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://w3id.orgdef/och#AddInverseProperty">
       <h3>Add Inverse Property<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -352,7 +404,32 @@ This section provides details for each class and property defined by OWL Change 
          <dt>is in domain of</dt>
          <dd>
             <a href="#https://w3id.orgdef/och#sourceAddInverseProperty" title="https://w3id.orgdef/och#sourceAddInverseProperty">source AddInverseProperty</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#targetAddInverseProperty" title="https://w3id.orgdef/och#targetAddInverseProperty">target AddInverseProperty</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#targetAddInverseProperty"
+               title="https://w3id.orgdef/och#targetAddInverseProperty">target AddInverseProperty</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.orgdef/och#AddObjectProperty">
+      <h3>Add Object Property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#AddObjectProperty</p>
+      <div class="comment">
+         <span class="markdown">The change operation corresponding to the addition of an object property</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#AddProperty" title="https://w3id.orgdef/och#AddProperty">Add Property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#ObjectPropertyChange" title="https://w3id.orgdef/och#ObjectPropertyChange">Object Property Change</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#addedObjectProperty" title="https://w3id.orgdef/och#addedObjectProperty">added object property</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -371,6 +448,12 @@ This section provides details for each class and property defined by OWL Change 
          <dt>has super-classes</dt>
          <dd>
             <a href="#https://w3id.orgdef/och#PropertyChange" title="https://w3id.orgdef/och#PropertyChange">Property Change</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#AddDataProperty" title="https://w3id.orgdef/och#AddDataProperty">Add Data Property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#AddObjectProperty" title="https://w3id.orgdef/och#AddObjectProperty">Add Object Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -451,6 +534,35 @@ This section provides details for each class and property defined by OWL Change 
          <dt>is in domain of</dt>
          <dd>
             <a href="#https://w3id.orgdef/och#addedObjectRange" title="https://w3id.orgdef/och#addedObjectRange">added object range</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.orgdef/och#AddRelationtoIndividuals">
+      <h3>Add Relation to Individual<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#AddRelationtoIndividuals</p>
+      <div class="comment">
+         <span class="markdown">The change operation corresponding to the addition of a relation between two individuals</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#IndividualRelationChange"
+               title="https://w3id.orgdef/och#IndividualRelationChange">Individual Relation Change</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#propertyAddRelationtoIndividuals"
+               title="https://w3id.orgdef/och#propertyAddRelationtoIndividuals">property add relation to individuals</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#sourceAddRelationtoIndividuals"
+               title="https://w3id.orgdef/och#sourceAddRelationtoIndividuals">source add relation to individuals</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#targetAddRelationtoIndividuals"
+               title="https://w3id.orgdef/och#targetAddRelationtoIndividuals">target add relation to individuals</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -630,7 +742,8 @@ This section provides details for each class and property defined by OWL Change 
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#https://w3id.orgdef/och#RemoveDataProperty" title="https://w3id.orgdef/och#RemoveDataProperty">Remove Data Property</a>
+            <a href="#https://w3id.orgdef/och#AddDataProperty" title="https://w3id.orgdef/och#AddDataProperty">Add Data Property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#RemoveDataProperty" title="https://w3id.orgdef/och#RemoveDataProperty">Remove Data Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -726,6 +839,7 @@ This section provides details for each class and property defined by OWL Change 
          <dd>
             <a href="#https://w3id.orgdef/och#ClassChange" title="https://w3id.orgdef/och#ClassChange">Class Change</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#DeprecateEntity" title="https://w3id.orgdef/och#DeprecateEntity">Deprecate Entity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#IndividualChange" title="https://w3id.orgdef/och#IndividualChange">Individual Change</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#PropertyChange" title="https://w3id.orgdef/och#PropertyChange">Property Change</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#RenameEntity" title="https://w3id.orgdef/och#RenameEntity">Rename Entity</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#RevokeDeprecate" title="https://w3id.orgdef/och#RevokeDeprecate">Revoke Deprecate</a>
@@ -788,6 +902,64 @@ This section provides details for each class and property defined by OWL Change 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="https://w3id.orgdef/och#IndividualChange">
+      <h3>Individual Change<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#IndividualChange</p>
+      <div class="comment">
+         <span class="markdown">The change operation corresponding to the change of a given individual within the ontology</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#EntityChange" title="https://w3id.orgdef/och#EntityChange">Entity Change</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#AddIndividual" title="https://w3id.orgdef/och#AddIndividual">Add Individual</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#IndividualRelationChange"
+               title="https://w3id.orgdef/och#IndividualRelationChange">Individual Relation Change</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#RemoveIndividual" title="https://w3id.orgdef/och#RemoveIndividual">Remove Individual</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.orgdef/och#IndividualRelationChange">
+      <h3>Individual Relation Change<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#IndividualRelationChange</p>
+      <div class="comment">
+         <span class="markdown">The change operation corresponding to the change of a relationship between two individuals within the ontology</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#IndividualChange" title="https://w3id.orgdef/och#IndividualChange">Individual Change</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#AddRelationtoIndividuals"
+               title="https://w3id.orgdef/och#AddRelationtoIndividuals">Add Relation to Individual</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#RemoveRelationfromIndividuals"
+               title="https://w3id.orgdef/och#RemoveRelationfromIndividuals">Remove Relation from Individuals</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#sourceIndividual" title="https://w3id.orgdef/och#sourceIndividual">source individual</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#targetIndividual" title="https://w3id.orgdef/och#targetIndividual">target individual</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://w3id.orgdef/och#InversePropertyChange">
       <h3>Inverse Property Change<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -830,7 +1002,7 @@ This section provides details for each class and property defined by OWL Change 
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#https://w3id.orgdef/och#AddDataProperty" title="https://w3id.orgdef/och#AddDataProperty">Add Data Property</a>
+            <a href="#https://w3id.orgdef/och#AddObjectProperty" title="https://w3id.orgdef/och#AddObjectProperty">Add Object Property</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#RemoveObjectProperty" title="https://w3id.orgdef/och#RemoveObjectProperty">Remove Object Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -892,6 +1064,7 @@ This section provides details for each class and property defined by OWL Change 
                title="https://w3id.orgdef/och#PropertyCharacteristicChange">Property Characteristic Change</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#PropertyRelationChange" title="https://w3id.orgdef/och#PropertyRelationChange">Property Relation Change</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#RangeChange" title="https://w3id.orgdef/och#RangeChange">Range Change</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#RemoveProperty" title="https://w3id.orgdef/och#RemoveProperty">Remove Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1040,6 +1213,7 @@ This section provides details for each class and property defined by OWL Change 
          <dt>has super-classes</dt>
          <dd>
             <a href="#https://w3id.orgdef/och#DataPropertyChange" title="https://w3id.orgdef/och#DataPropertyChange">Data Property Change</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#RemoveProperty" title="https://w3id.orgdef/och#RemoveProperty">Remove Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -1093,7 +1267,7 @@ This section provides details for each class and property defined by OWL Change 
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#https://w3id.orgdef/och#propertyRemoveDomain" title="https://w3id.orgdef/och#propertyRemoveDomain">property RemoveDomain</a>
+            <a href="#https://w3id.orgdef/och#removedDomainforProperty" title="https://w3id.orgdef/och#removedDomainforProperty">removed Domain for Property</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#removedDomain" title="https://w3id.orgdef/och#removedDomain">removed domain</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -1152,6 +1326,29 @@ This section provides details for each class and property defined by OWL Change 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="https://w3id.orgdef/och#RemoveIndividual">
+      <h3>Remove Individual<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#RemoveIndividual</p>
+      <div class="comment">
+         <span class="markdown">The change operation corresponding to the removal of an individual to the ontology</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#IndividualChange" title="https://w3id.orgdef/och#IndividualChange">Individual Change</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#removedIndividual" title="https://w3id.orgdef/och#removedIndividual">removed individual</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://w3id.orgdef/och#RemoveInverseProperty">
       <h3>Remove Inverse Property<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1192,11 +1389,41 @@ This section provides details for each class and property defined by OWL Change 
          <dt>has super-classes</dt>
          <dd>
             <a href="#https://w3id.orgdef/och#ObjectPropertyChange" title="https://w3id.orgdef/och#ObjectPropertyChange">Object Property Change</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#RemoveProperty" title="https://w3id.orgdef/och#RemoveProperty">Remove Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#https://w3id.orgdef/och#removedObjectProperty" title="https://w3id.orgdef/och#removedObjectProperty">removed object property</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.orgdef/och#RemoveProperty">
+      <h3>Remove Property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#RemoveProperty</p>
+      <div class="comment">
+         <span class="markdown">The class that represents the removal of a property to an ontology</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#PropertyChange" title="https://w3id.orgdef/och#PropertyChange">Property Change</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#RemoveDataProperty" title="https://w3id.orgdef/och#RemoveDataProperty">Remove Data Property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.orgdef/och#RemoveObjectProperty" title="https://w3id.orgdef/och#RemoveObjectProperty">Remove Object Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#removedProperty" title="https://w3id.orgdef/och#removedProperty">removed Property</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1274,6 +1501,25 @@ This section provides details for each class and property defined by OWL Change 
          <dd>
             <a href="#https://w3id.orgdef/och#removedObjectRange" title="https://w3id.orgdef/och#removedObjectRange">removed object range</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.orgdef/och#RemoveRelationfromIndividuals">
+      <h3>Remove Relation from Individuals<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#RemoveRelationfromIndividuals</p>
+      <div class="comment">
+         <span class="markdown">The change operation corresponding to the removal of a relation between two individuals</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.orgdef/och#IndividualRelationChange"
+               title="https://w3id.orgdef/och#IndividualRelationChange">Individual Relation Change</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1441,10 +1687,16 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#https://w3id.orgdef/och#addedDataRange" title="https://w3id.orgdef/och#addedDataRange">added data range</a>
       </li>
       <li>
-         <a href="#https://w3id.orgdef/och#AddedDomain" title="https://w3id.orgdef/och#AddedDomain">added domain</a>
+         <a href="#https://w3id.orgdef/och#addedDomain" title="https://w3id.orgdef/och#addedDomain">added domain</a>
+      </li>
+      <li>
+         <a href="#https://w3id.orgdef/och#addedDomainforProperty" title="https://w3id.orgdef/och#addedDomainforProperty">added Domain for Property</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#addedEntity" title="https://w3id.orgdef/och#addedEntity">added entity</a>
+      </li>
+      <li>
+         <a href="#https://w3id.orgdef/och#addedIndividual" title="https://w3id.orgdef/och#addedIndividual">added individual</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#addedObjectProperty" title="https://w3id.orgdef/och#addedObjectProperty">added object property</a>
@@ -1474,18 +1726,20 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#https://w3id.orgdef/och#prevVersion" title="https://w3id.orgdef/och#prevVersion">previous version</a>
       </li>
       <li>
+         <a href="#https://w3id.orgdef/och#propertyAddRelationtoIndividuals"
+            title="https://w3id.orgdef/och#propertyAddRelationtoIndividuals">property add relation to individuals</a>
+      </li>
+      <li>
          <a href="#https://w3id.orgdef/och#propertyAddCharacteristic"
             title="https://w3id.orgdef/och#propertyAddCharacteristic">property AddCharacteristic</a>
       </li>
       <li>
-         <a href="#https://w3id.orgdef/och#propertyAddDomain" title="https://w3id.orgdef/och#propertyAddDomain">property AddDomain</a>
+         <a href="#https://w3id.orgdef/och#propertyRemoveRelationtoIndividuals"
+            title="https://w3id.orgdef/och#propertyRemoveRelationtoIndividuals">property remove relation to individuals</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#propertyRemoveCharacteristic"
             title="https://w3id.orgdef/och#propertyRemoveCharacteristic">property RemoveCharacteristic</a>
-      </li>
-      <li>
-         <a href="#https://w3id.orgdef/och#propertyRemoveDomain" title="https://w3id.orgdef/och#propertyRemoveDomain">property RemoveDomain</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#relatedChange" title="https://w3id.orgdef/och#relatedChange">related change</a>
@@ -1506,7 +1760,13 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#https://w3id.orgdef/och#removedDomain" title="https://w3id.orgdef/och#removedDomain">removed domain</a>
       </li>
       <li>
+         <a href="#https://w3id.orgdef/och#removedDomainforProperty" title="https://w3id.orgdef/och#removedDomainforProperty">removed Domain for Property</a>
+      </li>
+      <li>
          <a href="#https://w3id.orgdef/och#removedEntity" title="https://w3id.orgdef/och#removedEntity">removed entity</a>
+      </li>
+      <li>
+         <a href="#https://w3id.orgdef/och#removedIndividual" title="https://w3id.orgdef/och#removedIndividual">removed individual</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#removedObjectProperty" title="https://w3id.orgdef/och#removedObjectProperty">removed object property</a>
@@ -1522,6 +1782,10 @@ This section provides details for each class and property defined by OWL Change 
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#renamedEntityName" title="https://w3id.orgdef/och#renamedEntityName">renamed entity name</a>
+      </li>
+      <li>
+         <a href="#https://w3id.orgdef/och#sourceAddRelationtoIndividuals"
+            title="https://w3id.orgdef/och#sourceAddRelationtoIndividuals">source add relation to individuals</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#sourceAddDisjointProperty"
@@ -1547,7 +1811,14 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#https://w3id.orgdef/och#sourceClass" title="https://w3id.orgdef/och#sourceClass">source class</a>
       </li>
       <li>
+         <a href="#https://w3id.orgdef/och#sourceIndividual" title="https://w3id.orgdef/och#sourceIndividual">source individual</a>
+      </li>
+      <li>
          <a href="#https://w3id.orgdef/och#sourceProperty" title="https://w3id.orgdef/och#sourceProperty">source property</a>
+      </li>
+      <li>
+         <a href="#https://w3id.orgdef/och#sourceRemoveRelationtoIndividuals"
+            title="https://w3id.orgdef/och#sourceRemoveRelationtoIndividuals">source remove relation to individuals</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#sourceRemoveDisjointProperty"
@@ -1572,18 +1843,24 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#https://w3id.orgdef/och#sourceRemoveSubProperty" title="https://w3id.orgdef/och#sourceRemoveSubProperty">source RemoveSubProperty</a>
       </li>
       <li>
+         <a href="#https://w3id.orgdef/och#targetAddRelationtoIndividuals"
+            title="https://w3id.orgdef/och#targetAddRelationtoIndividuals">target add relation to individuals</a>
+      </li>
+      <li>
          <a href="#https://w3id.orgdef/och#targetAddDisjointProperty"
             title="https://w3id.orgdef/och#targetAddDisjointProperty">target AddDisjointProperty</a>
       </li>
       <li>
-         <a href="#https://w3id.orgdef/och#targetAddEquivalentClass" title="https://w3id.orgdef/och#targetAddEquivalentClass">target AddEquivalentClass</a>
+         <a href="#https://w3id.orgdef/och#targetAddEquivalentClass"
+            title="https://w3id.orgdef/och#targetAddEquivalentClass">target AddEquivalentClass</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#targetAddEquivalentProperty"
             title="https://w3id.orgdef/och#targetAddEquivalentProperty">target AddEquivalentProperty</a>
       </li>
       <li>
-         <a href="#https://w3id.orgdef/och#targetAddInverseProperty" title="https://w3id.orgdef/och#targetAddInverseProperty">target AddInverseProperty</a>
+         <a href="#https://w3id.orgdef/och#targetAddInverseProperty"
+            title="https://w3id.orgdef/och#targetAddInverseProperty">target AddInverseProperty</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#targetAddSubClass" title="https://w3id.orgdef/och#targetAddSubClass">target AddSubClass</a>
@@ -1595,7 +1872,14 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#https://w3id.orgdef/och#targetClass" title="https://w3id.orgdef/och#targetClass">target class</a>
       </li>
       <li>
+         <a href="#https://w3id.orgdef/och#targetIndividual" title="https://w3id.orgdef/och#targetIndividual">target individual</a>
+      </li>
+      <li>
          <a href="#https://w3id.orgdef/och#targetProperty" title="https://w3id.orgdef/och#targetProperty">target Property</a>
+      </li>
+      <li>
+         <a href="#https://w3id.orgdef/och#targetRemoveRelationtoIndividuals"
+            title="https://w3id.orgdef/och#targetRemoveRelationtoIndividuals">target remove relation to individuals</a>
       </li>
       <li>
          <a href="#https://w3id.orgdef/och#targetRemoveDisjointProperty"
@@ -1768,13 +2052,13 @@ This section provides details for each class and property defined by OWL Change 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.orgdef/och#AddedDomain">
+   <div class="entity" id="https://w3id.orgdef/och#addedDomain">
       <h3>added domain<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.orgdef/och#AddedDomain</p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#addedDomain</p>
       <div class="comment">
          <span class="markdown">The added domain of an Add Domain change operation</span>
       </div>
@@ -1790,6 +2074,33 @@ This section provides details for each class and property defined by OWL Change 
                <a href="http://www.w3.org/2002/07/owl#Class"
                   target="_blank"
                   title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.orgdef/och#addedDomainforProperty">
+      <h3>added Domain for Property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#addedDomainforProperty</p>
+      <div class="comment">
+         <span class="markdown">The property a domain is added to.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.orgdef/och#AddDomain" title="https://w3id.orgdef/och#AddDomain">Add Domain</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+                  target="_blank"
+                  title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1812,6 +2123,7 @@ This section provides details for each class and property defined by OWL Change 
                <a href="#https://w3id.orgdef/och#addedProperty" title="https://w3id.orgdef/och#addedProperty">added Property</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#addedClass" title="https://w3id.orgdef/och#addedClass">added class</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#addedDataProperty" title="https://w3id.orgdef/och#addedDataProperty">added data property</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#addedIndividual" title="https://w3id.orgdef/och#addedIndividual">added individual</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#addedObjectProperty" title="https://w3id.orgdef/och#addedObjectProperty">added object property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
@@ -1825,6 +2137,38 @@ This section provides details for each class and property defined by OWL Change 
                <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
                   target="_blank"
                   title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.orgdef/och#addedIndividual">
+      <h3>added individual<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#addedIndividual</p>
+      <div class="comment">
+         <span class="markdown">The individual being added in an AddIndividual operation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#https://w3id.orgdef/och#addedEntity" title="https://w3id.orgdef/och#addedEntity">added entity</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.orgdef/och#AddIndividual" title="https://w3id.orgdef/och#AddIndividual">Add Individual</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1849,9 +2193,7 @@ This section provides details for each class and property defined by OWL Change 
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.orgdef/och#AddObjectProperty"
-                  target="_blank"
-                  title="https://w3id.orgdef/och#AddObjectProperty">add object property</a>
+               <a href="#https://w3id.orgdef/och#AddObjectProperty" title="https://w3id.orgdef/och#AddObjectProperty">Add Object Property</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2083,6 +2425,34 @@ This section provides details for each class and property defined by OWL Change 
          </dl>
       </div>
    </div>
+   <div class="entity" id="https://w3id.orgdef/och#propertyAddRelationtoIndividuals">
+      <h3>property add relation to individuals<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#propertyAddRelationtoIndividuals</p>
+      <div class="comment">
+         <span class="markdown">The individual that is the relation being added in a change operation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.orgdef/och#AddRelationtoIndividuals"
+                  title="https://w3id.orgdef/och#AddRelationtoIndividuals">Add Relation to Individual</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+                  target="_blank"
+                  title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="https://w3id.orgdef/och#propertyAddCharacteristic">
       <h3>property AddCharacteristic<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2110,21 +2480,23 @@ This section provides details for each class and property defined by OWL Change 
          </dl>
       </div>
    </div>
-   <div class="entity" id="https://w3id.orgdef/och#propertyAddDomain">
-      <h3>property AddDomain<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="https://w3id.orgdef/och#propertyRemoveRelationtoIndividuals">
+      <h3>property remove relation to individuals<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.orgdef/och#propertyAddDomain</p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#propertyRemoveRelationtoIndividuals</p>
       <div class="comment">
-         <span class="markdown">The property a domain is added to.</span>
+         <span class="markdown">The individual that is the relation being remove in a change operation</span>
       </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.orgdef/och#AddDomain" title="https://w3id.orgdef/och#AddDomain">Add Domain</a>
+               <a href="https://w3id.orgdef/och#RemoveRelationtoIndividuals"
+                  target="_blank"
+                  title="https://w3id.orgdef/och#RemoveRelationtoIndividuals">remove relationto individuals</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2152,33 +2524,6 @@ This section provides details for each class and property defined by OWL Change 
             <dt>has domain</dt>
             <dd>
                <a href="#https://w3id.orgdef/och#AddCharacteristic" title="https://w3id.orgdef/och#AddCharacteristic">Add Characteristic</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-                  target="_blank"
-                  title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="https://w3id.orgdef/och#propertyRemoveDomain">
-      <h3>property RemoveDomain<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.orgdef/och#propertyRemoveDomain</p>
-      <div class="comment">
-         <span class="markdown">The property a domain is removed from</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#https://w3id.orgdef/och#RemoveDomain" title="https://w3id.orgdef/och#RemoveDomain">Remove Domain</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2361,6 +2706,33 @@ This section provides details for each class and property defined by OWL Change 
          </dl>
       </div>
    </div>
+   <div class="entity" id="https://w3id.orgdef/och#removedDomainforProperty">
+      <h3>removed Domain for Property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#removedDomainforProperty</p>
+      <div class="comment">
+         <span class="markdown">The property a domain is removed from</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.orgdef/och#RemoveDomain" title="https://w3id.orgdef/och#RemoveDomain">Remove Domain</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+                  target="_blank"
+                  title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="https://w3id.orgdef/och#removedEntity">
       <h3>removed entity<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2378,6 +2750,7 @@ This section provides details for each class and property defined by OWL Change 
                <a href="#https://w3id.orgdef/och#removedProperty" title="https://w3id.orgdef/och#removedProperty">removed Property</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#removedClass" title="https://w3id.orgdef/och#removedClass">removed class</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#removedDataProperty" title="https://w3id.orgdef/och#removedDataProperty">removed data property</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#removedIndividual" title="https://w3id.orgdef/och#removedIndividual">removed individual</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#removedObjectProperty" title="https://w3id.orgdef/och#removedObjectProperty">removed object property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
@@ -2391,6 +2764,38 @@ This section provides details for each class and property defined by OWL Change 
                <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
                   target="_blank"
                   title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.orgdef/och#removedIndividual">
+      <h3>removed individual<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#removedIndividual</p>
+      <div class="comment">
+         <span class="markdown">The individual that is being removed in an ontology</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#https://w3id.orgdef/och#removedEntity" title="https://w3id.orgdef/och#removedEntity">removed entity</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.orgdef/och#RemoveIndividual" title="https://w3id.orgdef/och#RemoveIndividual">Remove Individual</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2475,9 +2880,7 @@ This section provides details for each class and property defined by OWL Change 
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="https://w3id.orgdef/och#RemoveProperty"
-                  target="_blank"
-                  title="https://w3id.orgdef/och#RemoveProperty">remove property</a>
+               <a href="#https://w3id.orgdef/och#RemoveProperty" title="https://w3id.orgdef/och#RemoveProperty">Remove Property</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2539,6 +2942,34 @@ This section provides details for each class and property defined by OWL Change 
                <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
                   target="_blank"
                   title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.orgdef/och#sourceAddRelationtoIndividuals">
+      <h3>source add relation to individuals<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#sourceAddRelationtoIndividuals</p>
+      <div class="comment">
+         <span class="markdown">The individual that is the subject of the relation being added in a change operation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.orgdef/och#AddRelationtoIndividuals"
+                  title="https://w3id.orgdef/och#AddRelationtoIndividuals">Add Relation to Individual</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2772,6 +3203,34 @@ This section provides details for each class and property defined by OWL Change 
          </dl>
       </div>
    </div>
+   <div class="entity" id="https://w3id.orgdef/och#sourceIndividual">
+      <h3>source individual<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#sourceIndividual</p>
+      <div class="comment">
+         <span class="markdown">The individual that is the subject of the relation being changed in a change operation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.orgdef/och#IndividualRelationChange"
+                  title="https://w3id.orgdef/och#IndividualRelationChange">Individual Relation Change</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="https://w3id.orgdef/och#sourceProperty">
       <h3>source property<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2811,6 +3270,35 @@ This section provides details for each class and property defined by OWL Change 
                <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
                   target="_blank"
                   title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.orgdef/och#sourceRemoveRelationtoIndividuals">
+      <h3>source remove relation to individuals<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#sourceRemoveRelationtoIndividuals</p>
+      <div class="comment">
+         <span class="markdown">The individual that is the subject of the relation being removed in a change operation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="https://w3id.orgdef/och#RemoveRelationtoIndividuals"
+                  target="_blank"
+                  title="https://w3id.orgdef/och#RemoveRelationtoIndividuals">remove relationto individuals</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -3004,6 +3492,34 @@ This section provides details for each class and property defined by OWL Change 
                <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
                   target="_blank"
                   title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.orgdef/och#targetAddRelationtoIndividuals">
+      <h3>target add relation to individuals<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#targetAddRelationtoIndividuals</p>
+      <div class="comment">
+         <span class="markdown">The individual that is the object of the relation being added in a change operation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.orgdef/och#AddRelationtoIndividuals"
+                  title="https://w3id.orgdef/och#AddRelationtoIndividuals">Add Relation to Individual</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -3215,7 +3731,8 @@ This section provides details for each class and property defined by OWL Change 
          <dl>
             <dt>has sub-properties</dt>
             <dd>
-               <a href="#https://w3id.orgdef/och#targetAddEquivalentClass" title="https://w3id.orgdef/och#targetAddEquivalentClass">target AddEquivalentClass</a>
+               <a href="#https://w3id.orgdef/och#targetAddEquivalentClass"
+                  title="https://w3id.orgdef/och#targetAddEquivalentClass">target AddEquivalentClass</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#targetAddSubClass" title="https://w3id.orgdef/och#targetAddSubClass">target AddSubClass</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#targetRemoveEquivalentClass"
                   title="https://w3id.orgdef/och#targetRemoveEquivalentClass">target RemoveEquivalentClass</a>
@@ -3225,6 +3742,34 @@ This section provides details for each class and property defined by OWL Change 
             <dt>has domain</dt>
             <dd>
                <a href="#https://w3id.orgdef/och#ClassRelationChange" title="https://w3id.orgdef/och#ClassRelationChange">Class Relation Change</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.orgdef/och#targetIndividual">
+      <h3>target individual<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#targetIndividual</p>
+      <div class="comment">
+         <span class="markdown">The individual that is the object of the relation being changed in a change operation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.orgdef/och#IndividualRelationChange"
+                  title="https://w3id.orgdef/och#IndividualRelationChange">Individual Relation Change</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3255,7 +3800,8 @@ This section provides details for each class and property defined by OWL Change 
                   title="https://w3id.orgdef/och#targetAddDisjointProperty">target AddDisjointProperty</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#targetAddEquivalentProperty"
                   title="https://w3id.orgdef/och#targetAddEquivalentProperty">target AddEquivalentProperty</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#targetAddInverseProperty" title="https://w3id.orgdef/och#targetAddInverseProperty">target AddInverseProperty</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#targetAddInverseProperty"
+                  title="https://w3id.orgdef/och#targetAddInverseProperty">target AddInverseProperty</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#targetAddSubProperty" title="https://w3id.orgdef/och#targetAddSubProperty">target AddSubProperty</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.orgdef/och#targetRemoveDisjointProperty"
                   title="https://w3id.orgdef/och#targetRemoveDisjointProperty">target RemoveDisjointProperty</a>
@@ -3276,6 +3822,35 @@ This section provides details for each class and property defined by OWL Change 
                <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
                   target="_blank"
                   title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.orgdef/och#targetRemoveRelationtoIndividuals">
+      <h3>target remove relation to individuals<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.orgdef/och#targetRemoveRelationtoIndividuals</p>
+      <div class="comment">
+         <span class="markdown">The individual that is the object of the relation being removed in a change operation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="https://w3id.orgdef/och#RemoveRelationtoIndividuals"
+                  target="_blank"
+                  title="https://w3id.orgdef/och#RemoveRelationtoIndividuals">remove relationto individuals</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
