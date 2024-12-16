@@ -146,7 +146,7 @@ och:TransitiveProperty a skos:Concept;
 ##########################################################################################
 
 
-och:AddedDomain a owl:ObjectProperty ;
+och:addedDomain a owl:ObjectProperty ;
     rdfs:label "added domain" ;
     rdfs:comment "The added domain of an Add Domain change operation";
     rdfs:domain och:AddDomain ;
@@ -244,8 +244,8 @@ och:propertyAddCharacteristic a owl:ObjectProperty ;
     rdfs:domain och:RemoveCharacteristic ;
     rdfs:range rdf:Property .
 
-och:propertyAddDomain a owl:ObjectProperty ;
-    rdfs:label "property AddDomain" ;
+och:addedDomainforProperty a owl:ObjectProperty ;
+    rdfs:label "added Domain for Property";
     rdfs:comment "The property a domain is added to.";
     rdfs:domain och:AddDomain ;
     rdfs:range rdf:Property .
@@ -256,8 +256,8 @@ och:propertyRemoveCharacteristic a owl:ObjectProperty ;
     rdfs:domain och:AddCharacteristic ;
     rdfs:range rdf:Property .
 
-och:propertyRemoveDomain a owl:ObjectProperty ;
-    rdfs:label "property RemoveDomain" ;
+och:removedDomainforProperty a owl:ObjectProperty ;
+    rdfs:label "removed Domain for Property" ;
     rdfs:comment "The property a domain is removed from";
     rdfs:domain och:RemoveDomain ;
     rdfs:range rdf:Property .
