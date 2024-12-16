@@ -2,6 +2,9 @@
   "@id" : "http://creativecommons.org/ns#license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/bibliographicCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -121,15 +124,16 @@
   "@id" : "https://w3id.orgdef/och#",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://creativecommons.org/ns#license" : [ {
-    "@id" : "http://creativecommons.org/publicdomain/zero/1.0/"
+    "@id" : "https://creativecommons.org/licenses/by/4.0/legalcode"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "As any other engineering product, ontologies evolve during their lifecycle due to several reasons such as accommodating new requirements or fixing issues. To keep track of these changes, several tools have defined ad-hoc formalisms to define and manage them. However, some of them are not based on standard interoperable languages such as RDF, and the RDF-based ones cover a limited set of changes. In this paper, we present the OWL Change Ontology (OCH), an ontology to capture changes in ontologies. Developed following the LOT methodology, OCH provides a declarative framework for documenting ontology changelogs. With this approach, ontologies gain a valuable resource to improve their lifecycle management, while associated semantic products such as declarative mappings (e.g., RML) and validation shapes (e.g., SHACL) can take advantage of standardized and machine-readable changelogs to streamline their schema evolution."
   } ],
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@value" : "Conde-Herreros, D., Stork, L., Pernisch, R., Poveda-Villalón, M., Corcho, O., & Chaves-Fraga, D. (2024). Propagating Ontology Changes to Declarative Mappings in Construction of Knowledge Graphs."
+    "@value" : "Conde-Herreros, D. Pernisch, R., Poveda-Villalón, M., Corcho, O., & Chaves-Fraga, D. (2024). OCH: The OWL Change Ontology"
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@value" : "Diego Conde Herreros"
-  }, {
-    "@value" : "Raúl Palma"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -140,13 +144,9 @@
   }, {
     "@value" : "Diego Conde-Herreros"
   }, {
-    "@value" : "Lise Stork"
-  }, {
     "@value" : "María Poveda-Villalón"
   }, {
     "@value" : "Oscar Corcho"
-  }, {
-    "@value" : "Raúl Palma"
   }, {
     "@value" : "Romana Pernisch"
   } ],
@@ -155,7 +155,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2024-12-03"
+    "@value" : "2024-12-16"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "OWL Change Ontology"
@@ -224,7 +224,9 @@
     "@value" : "Add Data Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
+    "@id" : "https://w3id.orgdef/och#AddProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#DataPropertyChange"
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddDisjointProperty",
@@ -283,6 +285,20 @@
     "@id" : "https://w3id.orgdef/och#EquivalentPropertyChange"
   } ]
 }, {
+  "@id" : "https://w3id.orgdef/och#AddIndividual",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The change operation corresponding to the addition of an individual to the ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Add Individual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.orgdef/och#IndividualChange"
+  } ]
+}, {
   "@id" : "https://w3id.orgdef/och#AddInverseProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
@@ -300,6 +316,17 @@
   "@id" : "https://w3id.orgdef/och#AddObjectProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The change operation corresponding to the addition of an object property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Add Object Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.orgdef/och#AddProperty"
+  }, {
+    "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AddProperty",
@@ -358,6 +385,20 @@
     "@id" : "https://w3id.orgdef/och#AddRange"
   } ]
 }, {
+  "@id" : "https://w3id.orgdef/och#AddRelationtoIndividuals",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The change operation corresponding to the addition of a relation between two individuals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Add Relation to Individual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.orgdef/och#IndividualRelationChange"
+  } ]
+}, {
   "@id" : "https://w3id.orgdef/och#AddSubClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
@@ -384,23 +425,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.orgdef/och#SubPropertyChange"
-  } ]
-}, {
-  "@id" : "https://w3id.orgdef/och#AddedDomain",
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The added domain of an Add Domain change operation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.orgdef/och#AddDomain"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "added domain"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#AsymmetricProperty",
@@ -595,6 +619,34 @@
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "Functional Property"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#IndividualChange",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The change operation corresponding to the change of a given individual within the ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Individual Change"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.orgdef/och#EntityChange"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#IndividualRelationChange",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The change operation corresponding to the change of a relationship between two individuals within the ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Individual Relation Change"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.orgdef/och#IndividualChange"
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#InverseFunctionalProperty",
@@ -849,6 +901,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.orgdef/och#DataPropertyChange"
+  }, {
+    "@id" : "https://w3id.orgdef/och#RemoveProperty"
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveDisjointProperty",
@@ -907,6 +961,20 @@
     "@id" : "https://w3id.orgdef/och#EquivalentPropertyChange"
   } ]
 }, {
+  "@id" : "https://w3id.orgdef/och#RemoveIndividual",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The change operation corresponding to the removal of an individual to the ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Remove Individual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.orgdef/och#IndividualChange"
+  } ]
+}, {
   "@id" : "https://w3id.orgdef/och#RemoveInverseProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
@@ -933,11 +1001,22 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.orgdef/och#ObjectPropertyChange"
+  }, {
+    "@id" : "https://w3id.orgdef/och#RemoveProperty"
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The class that represents the removal of a property to an ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Remove Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.orgdef/och#PropertyChange"
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveRange",
@@ -980,6 +1059,25 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.orgdef/och#RemoveRange"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#RemoveRelationfromIndividuals",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The change operation corresponding to the removal of a relation between two individuals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Remove Relation from Individuals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.orgdef/och#IndividualRelationChange"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#RemoveRelationtoIndividuals",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#RemoveSubClass",
@@ -1197,6 +1295,40 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
   } ]
 }, {
+  "@id" : "https://w3id.orgdef/och#addedDomain",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The added domain of an Add Domain change operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.orgdef/och#AddDomain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "added domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#addedDomainforProperty",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The property a domain is added to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.orgdef/och#AddDomain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "added Domain for Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  } ]
+}, {
   "@id" : "https://w3id.orgdef/och#addedEntity",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
@@ -1212,6 +1344,26 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#addedIndividual",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The individual being added in an AddIndividual operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.orgdef/och#AddIndividual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "added individual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.orgdef/och#addedEntity"
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#addedObjectProperty",
@@ -1390,18 +1542,18 @@
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
   } ]
 }, {
-  "@id" : "https://w3id.orgdef/och#propertyAddDomain",
+  "@id" : "https://w3id.orgdef/och#propertyAddRelationtoIndividuals",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The property a domain is added to."
+    "@value" : "The individual that is the relation being added in a change operation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.orgdef/och#AddDomain"
+    "@id" : "https://w3id.orgdef/och#AddRelationtoIndividuals"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "property AddDomain"
+    "@value" : "property add relation to individuals"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -1424,18 +1576,18 @@
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
   } ]
 }, {
-  "@id" : "https://w3id.orgdef/och#propertyRemoveDomain",
+  "@id" : "https://w3id.orgdef/och#propertyRemoveRelationtoIndividuals",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The property a domain is removed from"
+    "@value" : "The individual that is the relation being remove in a change operation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.orgdef/och#RemoveDomain"
+    "@id" : "https://w3id.orgdef/och#RemoveRelationtoIndividuals"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "property RemoveDomain"
+    "@value" : "property remove relation to individuals"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -1549,6 +1701,23 @@
     "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
+  "@id" : "https://w3id.orgdef/och#removedDomainforProperty",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The property a domain is removed from"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveDomain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "removed Domain for Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  } ]
+}, {
   "@id" : "https://w3id.orgdef/och#removedEntity",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
@@ -1564,6 +1733,26 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#removedIndividual",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The individual that is being removed in an ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveIndividual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "removed individual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.orgdef/och#removedEntity"
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#removedObjectProperty",
@@ -1737,6 +1926,23 @@
     "@id" : "https://w3id.orgdef/och#sourceProperty"
   } ]
 }, {
+  "@id" : "https://w3id.orgdef/och#sourceAddRelationtoIndividuals",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The individual that is the subject of the relation being added in a change operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.orgdef/och#AddRelationtoIndividuals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "source add relation to individuals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ]
+}, {
   "@id" : "https://w3id.orgdef/och#sourceAddSubClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
@@ -1789,6 +1995,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "source class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#sourceIndividual",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The individual that is the subject of the relation being changed in a change operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.orgdef/och#IndividualRelationChange"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "source individual"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
@@ -1889,6 +2112,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.orgdef/och#sourceProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#sourceRemoveRelationtoIndividuals",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The individual that is the subject of the relation being removed in a change operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveRelationtoIndividuals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "source remove relation to individuals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#sourceRemoveSubClass",
@@ -2011,6 +2251,23 @@
     "@id" : "https://w3id.orgdef/och#targetProperty"
   } ]
 }, {
+  "@id" : "https://w3id.orgdef/och#targetAddRelationtoIndividuals",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The individual that is the object of the relation being added in a change operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.orgdef/och#AddRelationtoIndividuals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "target add relation to individuals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ]
+}, {
   "@id" : "https://w3id.orgdef/och#targetAddSubClass",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
@@ -2063,6 +2320,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "target class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#targetIndividual",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The individual that is the object of the relation being changed in a change operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.orgdef/och#IndividualRelationChange"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "target individual"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
@@ -2163,6 +2437,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.orgdef/och#targetProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.orgdef/och#targetRemoveRelationtoIndividuals",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The individual that is the object of the relation being removed in a change operation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.orgdef/och#RemoveRelationtoIndividuals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "target remove relation to individuals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
   } ]
 }, {
   "@id" : "https://w3id.orgdef/och#targetRemoveSubClass",
