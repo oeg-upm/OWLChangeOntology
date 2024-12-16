@@ -13,20 +13,18 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.orgdef/och#">
         <owl:versionIRI rdf:resource="http://w3id.org/def/och/2.0.0"/>
-        <ns:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
-        <terms:bibliographicCitation>Conde-Herreros, D., Stork, L., Pernisch, R., Poveda-Villalón, M., Corcho, O., &amp; Chaves-Fraga, D. (2024). Propagating Ontology Changes to Declarative Mappings in Construction of Knowledge Graphs.</terms:bibliographicCitation>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode"/>
+        <terms:abstract>As any other engineering product, ontologies evolve during their lifecycle due to several reasons such as accommodating new requirements or fixing issues. To keep track of these changes, several tools have defined ad-hoc formalisms to define and manage them. However, some of them are not based on standard interoperable languages such as RDF, and the RDF-based ones cover a limited set of changes. In this paper, we present the OWL Change Ontology (OCH), an ontology to capture changes in ontologies. Developed following the LOT methodology, OCH provides a declarative framework for documenting ontology changelogs. With this approach, ontologies gain a valuable resource to improve their lifecycle management, while associated semantic products such as declarative mappings (e.g., RML) and validation shapes (e.g., SHACL) can take advantage of standardized and machine-readable changelogs to streamline their schema evolution.</terms:abstract>
+        <terms:bibliographicCitation>Conde-Herreros, D. Pernisch, R., Poveda-Villalón, M., Corcho, O., &amp; Chaves-Fraga, D. (2024). OCH: The OWL Change Ontology</terms:bibliographicCitation>
         <terms:contributor>Diego Conde Herreros</terms:contributor>
-        <terms:contributor>Raúl Palma</terms:contributor>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-17</terms:created>
         <terms:creator>David Chaves-Fraga</terms:creator>
         <terms:creator>Diego Conde-Herreros</terms:creator>
-        <terms:creator>Lise Stork</terms:creator>
         <terms:creator>María Poveda-Villalón</terms:creator>
         <terms:creator>Oscar Corcho</terms:creator>
-        <terms:creator>Raúl Palma</terms:creator>
         <terms:creator>Romana Pernisch</terms:creator>
         <terms:description>An ontology for describing changes between OWL ontology versions</terms:description>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-03</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-16</terms:modified>
         <terms:title>OWL Change Ontology</terms:title>
         <vann:preferredNamespacePrefix>och</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/def/och#"/>
@@ -53,6 +51,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
     
 
 
@@ -206,18 +211,6 @@
     
 
 
-    <!-- https://w3id.orgdef/och#AddedDomain -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#AddedDomain">
-        <rdfs:domain rdf:resource="https://w3id.orgdef/och#AddDomain"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-        <rdfs:comment>The added domain of an Add Domain change operation</rdfs:comment>
-        <rdfs:label>added domain</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.orgdef/och#addRangeforProperty -->
 
 
@@ -280,6 +273,30 @@
     
 
 
+    <!-- https://w3id.orgdef/och#addedDomain -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#addedDomain">
+        <rdfs:domain rdf:resource="https://w3id.orgdef/och#AddDomain"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The added domain of an Add Domain change operation</rdfs:comment>
+        <rdfs:label>added domain</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.orgdef/och#addedDomainforProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#addedDomainforProperty">
+        <rdfs:domain rdf:resource="https://w3id.orgdef/och#AddDomain"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:comment>The property a domain is added to.</rdfs:comment>
+        <rdfs:label>added Domain for Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.orgdef/och#addedEntity -->
 
 
@@ -288,6 +305,19 @@
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
         <rdfs:comment>The entity that is being added in a change operation</rdfs:comment>
         <rdfs:label>added entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.orgdef/och#addedIndividual -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#addedIndividual">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.orgdef/och#addedEntity"/>
+        <rdfs:domain rdf:resource="https://w3id.orgdef/och#AddIndividual"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The individual being added in an AddIndividual operation</rdfs:comment>
+        <rdfs:label>added individual</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -414,14 +444,14 @@
     
 
 
-    <!-- https://w3id.orgdef/och#propertyAddDomain -->
+    <!-- https://w3id.orgdef/och#propertyAddRelationtoIndividuals -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#propertyAddDomain">
-        <rdfs:domain rdf:resource="https://w3id.orgdef/och#AddDomain"/>
+    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#propertyAddRelationtoIndividuals">
+        <rdfs:domain rdf:resource="https://w3id.orgdef/och#AddRelationtoIndividuals"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <rdfs:comment>The property a domain is added to.</rdfs:comment>
-        <rdfs:label>property AddDomain</rdfs:label>
+        <rdfs:comment>The individual that is the relation being added in a change operation</rdfs:comment>
+        <rdfs:label>property add relation to individuals</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -438,14 +468,14 @@
     
 
 
-    <!-- https://w3id.orgdef/och#propertyRemoveDomain -->
+    <!-- https://w3id.orgdef/och#propertyRemoveRelationtoIndividuals -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#propertyRemoveDomain">
-        <rdfs:domain rdf:resource="https://w3id.orgdef/och#RemoveDomain"/>
+    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#propertyRemoveRelationtoIndividuals">
+        <rdfs:domain rdf:resource="https://w3id.orgdef/och#RemoveRelationtoIndividuals"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <rdfs:comment>The property a domain is removed from</rdfs:comment>
-        <rdfs:label>property RemoveDomain</rdfs:label>
+        <rdfs:comment>The individual that is the relation being remove in a change operation</rdfs:comment>
+        <rdfs:label>property remove relation to individuals</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -524,6 +554,18 @@
     
 
 
+    <!-- https://w3id.orgdef/och#removedDomainforProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#removedDomainforProperty">
+        <rdfs:domain rdf:resource="https://w3id.orgdef/och#RemoveDomain"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:comment>The property a domain is removed from</rdfs:comment>
+        <rdfs:label>removed Domain for Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.orgdef/och#removedEntity -->
 
 
@@ -532,6 +574,19 @@
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
         <rdfs:comment>The entity that is being removed in a change operation</rdfs:comment>
         <rdfs:label>removed entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.orgdef/och#removedIndividual -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#removedIndividual">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.orgdef/och#removedEntity"/>
+        <rdfs:domain rdf:resource="https://w3id.orgdef/och#RemoveIndividual"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The individual that is being removed in an ontology</rdfs:comment>
+        <rdfs:label>removed individual</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -650,6 +705,18 @@
     
 
 
+    <!-- https://w3id.orgdef/och#sourceAddRelationtoIndividuals -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#sourceAddRelationtoIndividuals">
+        <rdfs:domain rdf:resource="https://w3id.orgdef/och#AddRelationtoIndividuals"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The individual that is the subject of the relation being added in a change operation</rdfs:comment>
+        <rdfs:label>source add relation to individuals</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.orgdef/och#sourceAddSubClass -->
 
 
@@ -684,6 +751,18 @@
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <rdfs:comment>The class that is the subject of the class relations being changed in a change operation</rdfs:comment>
         <rdfs:label>source class</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.orgdef/och#sourceIndividual -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#sourceIndividual">
+        <rdfs:domain rdf:resource="https://w3id.orgdef/och#IndividualRelationChange"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The individual that is the subject of the relation being changed in a change operation</rdfs:comment>
+        <rdfs:label>source individual</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -748,6 +827,18 @@
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
         <rdfs:comment>The subject of the inverse property relation being removed</rdfs:comment>
         <rdfs:label>source RemoveInverseProperty</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.orgdef/och#sourceRemoveRelationtoIndividuals -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#sourceRemoveRelationtoIndividuals">
+        <rdfs:domain rdf:resource="https://w3id.orgdef/och#RemoveRelationtoIndividuals"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The individual that is the subject of the relation being removed in a change operation</rdfs:comment>
+        <rdfs:label>source remove relation to individuals</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -830,6 +921,18 @@
     
 
 
+    <!-- https://w3id.orgdef/och#targetAddRelationtoIndividuals -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#targetAddRelationtoIndividuals">
+        <rdfs:domain rdf:resource="https://w3id.orgdef/och#AddRelationtoIndividuals"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The individual that is the object of the relation being added in a change operation</rdfs:comment>
+        <rdfs:label>target add relation to individuals</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.orgdef/och#targetAddSubClass -->
 
 
@@ -864,6 +967,18 @@
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <rdfs:comment>The class that is the object of the class relations being changed in a change operation</rdfs:comment>
         <rdfs:label>target class</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.orgdef/och#targetIndividual -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#targetIndividual">
+        <rdfs:domain rdf:resource="https://w3id.orgdef/och#IndividualRelationChange"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The individual that is the object of the relation being changed in a change operation</rdfs:comment>
+        <rdfs:label>target individual</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -928,6 +1043,18 @@
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
         <rdfs:comment>The object of the inverse property relation being removed</rdfs:comment>
         <rdfs:label>target RemoveInverseProperty</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.orgdef/och#targetRemoveRelationtoIndividuals -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.orgdef/och#targetRemoveRelationtoIndividuals">
+        <rdfs:domain rdf:resource="https://w3id.orgdef/och#RemoveRelationtoIndividuals"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The individual that is the object of the relation being removed in a change operation</rdfs:comment>
+        <rdfs:label>target remove relation to individuals</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1104,7 +1231,8 @@
 
 
     <owl:Class rdf:about="https://w3id.orgdef/och#AddDataProperty">
-        <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#ObjectPropertyChange"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#AddProperty"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#DataPropertyChange"/>
         <rdfs:comment>The change operation corresponding to the addition of a data property</rdfs:comment>
         <rdfs:label>Add Data Property</rdfs:label>
     </owl:Class>
@@ -1155,6 +1283,17 @@
     
 
 
+    <!-- https://w3id.orgdef/och#AddIndividual -->
+
+
+    <owl:Class rdf:about="https://w3id.orgdef/och#AddIndividual">
+        <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#IndividualChange"/>
+        <rdfs:comment>The change operation corresponding to the addition of an individual to the ontology</rdfs:comment>
+        <rdfs:label>Add Individual</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.orgdef/och#AddInverseProperty -->
 
 
@@ -1169,7 +1308,12 @@
     <!-- https://w3id.orgdef/och#AddObjectProperty -->
 
 
-    <owl:Class rdf:about="https://w3id.orgdef/och#AddObjectProperty"/>
+    <owl:Class rdf:about="https://w3id.orgdef/och#AddObjectProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#AddProperty"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#ObjectPropertyChange"/>
+        <rdfs:comment>The change operation corresponding to the addition of an object property</rdfs:comment>
+        <rdfs:label>Add Object Property</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1213,6 +1357,17 @@
         <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#AddRange"/>
         <rdfs:comment>The change operation corresponding to the addition of the range of a given object property</rdfs:comment>
         <rdfs:label>Add Range Object Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.orgdef/och#AddRelationtoIndividuals -->
+
+
+    <owl:Class rdf:about="https://w3id.orgdef/och#AddRelationtoIndividuals">
+        <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#IndividualRelationChange"/>
+        <rdfs:comment>The change operation corresponding to the addition of a relation between two individuals</rdfs:comment>
+        <rdfs:label>Add Relation to Individual</rdfs:label>
     </owl:Class>
     
 
@@ -1360,6 +1515,28 @@
     
 
 
+    <!-- https://w3id.orgdef/och#IndividualChange -->
+
+
+    <owl:Class rdf:about="https://w3id.orgdef/och#IndividualChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#EntityChange"/>
+        <rdfs:comment>The change operation corresponding to the change of a given individual within the ontology</rdfs:comment>
+        <rdfs:label>Individual Change</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.orgdef/och#IndividualRelationChange -->
+
+
+    <owl:Class rdf:about="https://w3id.orgdef/och#IndividualRelationChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#IndividualChange"/>
+        <rdfs:comment>The change operation corresponding to the change of a relationship between two individuals within the ontology</rdfs:comment>
+        <rdfs:label>Individual Relation Change</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.orgdef/och#InversePropertyChange -->
 
 
@@ -1470,6 +1647,7 @@
 
     <owl:Class rdf:about="https://w3id.orgdef/och#RemoveDataProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#DataPropertyChange"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#RemoveProperty"/>
         <rdfs:comment>The change operation corresponding to the removal of a data property</rdfs:comment>
         <rdfs:label>Remove Data Property</rdfs:label>
     </owl:Class>
@@ -1520,6 +1698,17 @@
     
 
 
+    <!-- https://w3id.orgdef/och#RemoveIndividual -->
+
+
+    <owl:Class rdf:about="https://w3id.orgdef/och#RemoveIndividual">
+        <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#IndividualChange"/>
+        <rdfs:comment>The change operation corresponding to the removal of an individual to the ontology</rdfs:comment>
+        <rdfs:label>Remove Individual</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.orgdef/och#RemoveInverseProperty -->
 
 
@@ -1536,6 +1725,7 @@
 
     <owl:Class rdf:about="https://w3id.orgdef/och#RemoveObjectProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#ObjectPropertyChange"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#RemoveProperty"/>
         <rdfs:comment>The change operation corresponding to the removal of an object property</rdfs:comment>
         <rdfs:label>Remove Object Property</rdfs:label>
     </owl:Class>
@@ -1545,7 +1735,11 @@
     <!-- https://w3id.orgdef/och#RemoveProperty -->
 
 
-    <owl:Class rdf:about="https://w3id.orgdef/och#RemoveProperty"/>
+    <owl:Class rdf:about="https://w3id.orgdef/och#RemoveProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#PropertyChange"/>
+        <rdfs:comment>The class that represents the removal of a property to an ontology</rdfs:comment>
+        <rdfs:label>Remove Property</rdfs:label>
+    </owl:Class>
     
 
 
@@ -1579,6 +1773,24 @@
         <rdfs:comment>The change operation corresponding to the removal of the range off an object property</rdfs:comment>
         <rdfs:label>Remove Range Object Property</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.orgdef/och#RemoveRelationfromIndividuals -->
+
+
+    <owl:Class rdf:about="https://w3id.orgdef/och#RemoveRelationfromIndividuals">
+        <rdfs:subClassOf rdf:resource="https://w3id.orgdef/och#IndividualRelationChange"/>
+        <rdfs:comment>The change operation corresponding to the removal of a relation between two individuals</rdfs:comment>
+        <rdfs:label>Remove Relation from Individuals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.orgdef/och#RemoveRelationtoIndividuals -->
+
+
+    <owl:Class rdf:about="https://w3id.orgdef/och#RemoveRelationtoIndividuals"/>
     
 
 
