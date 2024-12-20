@@ -1,0 +1,1681 @@
+<https://w3id.org/def/och#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/def/och#> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/def/och> .
+<https://w3id.org/def/och#> <http://creativecommons.org/ns#license> <http://creativecommons.org/publicdomain/zero/1.0/> .
+<https://w3id.org/def/och#> <http://purl.org/dc/terms/bibliographicCitation> "Conde-Herreros, D., Stork, L., Pernisch, R., Poveda-Villalón, M., Corcho, O., & Chaves-Fraga, D. (2024). Propagating Ontology Changes to Declarative Mappings in Construction of Knowledge Graphs." .
+<https://w3id.org/def/och#> <http://purl.org/dc/terms/contributor> "Diego Conde Herreros" .
+<https://w3id.org/def/och#> <http://purl.org/dc/terms/contributor> "Raúl Palma" .
+<https://w3id.org/def/och#> <http://purl.org/dc/terms/created> "2024-04-17 "^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/def/och#> <http://purl.org/dc/terms/creator> "David Chaves-Fraga" .
+<https://w3id.org/def/och#> <http://purl.org/dc/terms/creator> "Diego Conde-Herreros" .
+<https://w3id.org/def/och#> <http://purl.org/dc/terms/creator> "Lise Stork" .
+<https://w3id.org/def/och#> <http://purl.org/dc/terms/creator> "María Poveda-Villalón" .
+<https://w3id.org/def/och#> <http://purl.org/dc/terms/creator> "Oscar Corcho" .
+<https://w3id.org/def/och#> <http://purl.org/dc/terms/creator> "Raúl Palma" .
+<https://w3id.org/def/och#> <http://purl.org/dc/terms/creator> "Romana Pernisch" .
+<https://w3id.org/def/och#> <http://purl.org/dc/terms/description> "An ontology for describing changes between OWL ontology versions" .
+<https://w3id.org/def/och#> <http://purl.org/dc/terms/title> "OWL Change Ontology" .
+<https://w3id.org/def/och#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "och" .
+<https://w3id.org/def/och#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/def/och#> .
+<https://w3id.org/def/och#> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/def/och#> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.orgdef/och#addedClass
+<https://w3id.orgdef/och#addedClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#addedClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#AddClass> .
+<https://w3id.orgdef/och#addedClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#addedClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The OWL class that is added between ontology versions" .
+<https://w3id.orgdef/och#addedClass> <http://www.w3.org/2000/01/rdf-schema#label> "Added Class" .
+# 
+# https://w3id.orgdef/och#deprecatedElement
+<https://w3id.orgdef/och#deprecatedElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#deprecatedElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#DeprecateElement> .
+<https://w3id.orgdef/och#deprecatedElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.orgdef/och#deprecatedElement> <http://www.w3.org/2000/01/rdf-schema#comment> "The Element that is being deprecated." .
+<https://w3id.orgdef/och#deprecatedElement> <http://www.w3.org/2000/01/rdf-schema#label> "Deprecate Element" .
+# 
+# https://w3id.orgdef/och#domainAddDataProperty
+<https://w3id.orgdef/och#domainAddDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#domainAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#AddDataProperty> .
+<https://w3id.orgdef/och#domainAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#domainAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The domain of an OWL data property added between ontology versions" .
+<https://w3id.orgdef/och#domainAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Add Data Property" .
+# 
+# https://w3id.orgdef/och#domainAddObjectProperty
+<https://w3id.orgdef/och#domainAddObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#domainAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#AddObjectProperty> .
+<https://w3id.orgdef/och#domainAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#domainAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The domain of an OWL object property added between ontology versions" .
+<https://w3id.orgdef/och#domainAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Add Object Property" .
+# 
+# https://w3id.orgdef/och#domainAddSubClass
+<https://w3id.orgdef/och#domainAddSubClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#domainAddSubClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#AddSubClass> .
+<https://w3id.orgdef/och#domainAddSubClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#domainAddSubClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the rdfs:subClassOf property removed between ontology versions, the child class" .
+<https://w3id.orgdef/och#domainAddSubClass> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Add Subclass Property" .
+# 
+# https://w3id.orgdef/och#domainAddSubProperty
+<https://w3id.orgdef/och#domainAddSubProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#domainAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#AddSubPropertyOf> .
+<https://w3id.orgdef/och#domainAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Property> .
+<https://w3id.orgdef/och#domainAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the rdfs:subPropertyOf property removed between ontology versions." .
+<https://w3id.orgdef/och#domainAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Add SubProperty Property" .
+# 
+# https://w3id.orgdef/och#domainRemoveDataProperty
+<https://w3id.orgdef/och#domainRemoveDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#domainRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#RemoveDataProperty> .
+<https://w3id.orgdef/och#domainRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#domainRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The domain of an OWL data property removed between ontology versions" .
+<https://w3id.orgdef/och#domainRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Remove Data Property" .
+# 
+# https://w3id.orgdef/och#domainRemoveObjectProperty
+<https://w3id.orgdef/och#domainRemoveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#domainRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#RemoveObjectProperty> .
+<https://w3id.orgdef/och#domainRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#domainRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The domain of an OWL object property removed between ontology versions" .
+<https://w3id.orgdef/och#domainRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Remove Object Property" .
+# 
+# https://w3id.orgdef/och#domainRemoveSubClass
+<https://w3id.orgdef/och#domainRemoveSubClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#domainRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#RemoveSubClass> .
+<https://w3id.orgdef/och#domainRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#domainRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the rdfs:subClassOf property removed between ontology versions, the child class" .
+<https://w3id.orgdef/och#domainRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Remove Subclass Property" .
+# 
+# https://w3id.orgdef/och#domainRemoveSubProperty
+<https://w3id.orgdef/och#domainRemoveSubProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#domainRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#RemoveSubPropertyOf> .
+<https://w3id.orgdef/och#domainRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Property> .
+<https://w3id.orgdef/och#domainRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the rdfs:subPropertyOf property removed between ontology versions, the child class" .
+<https://w3id.orgdef/och#domainRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Domain in Remove SubProperty Property" .
+# 
+# https://w3id.orgdef/och#hasRelatedEntity
+<https://w3id.orgdef/och#hasRelatedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#hasRelatedEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#OWLEntity> .
+<https://w3id.orgdef/och#hasRelatedEntity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.orgdef/och#OWLEntity> .
+# 
+# https://w3id.orgdef/och#propertyAddDataProperty
+<https://w3id.orgdef/och#propertyAddDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#propertyAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#AddDataProperty> .
+<https://w3id.orgdef/och#propertyAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.orgdef/och#propertyAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The data property added between ontology versions" .
+<https://w3id.orgdef/och#propertyAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Property in Add Data Property" .
+# 
+# https://w3id.orgdef/och#propertyAddObjectProperty
+<https://w3id.orgdef/och#propertyAddObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#propertyAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#AddObjectProperty> .
+<https://w3id.orgdef/och#propertyAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#propertyAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The object property added between ontology versions" .
+<https://w3id.orgdef/och#propertyAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Property in Add Object Property" .
+# 
+# https://w3id.orgdef/och#propertyRemoveDataProperty
+<https://w3id.orgdef/och#propertyRemoveDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#propertyRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#RemoveDataProperty> .
+<https://w3id.orgdef/och#propertyRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.orgdef/och#propertyRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The data property removed between ontology versions" .
+<https://w3id.orgdef/och#propertyRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Property in Remove Data Property" .
+# 
+# https://w3id.orgdef/och#propertyRemoveObjectProperty
+<https://w3id.orgdef/och#propertyRemoveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#propertyRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#RemoveObjectProperty> .
+<https://w3id.orgdef/och#propertyRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#propertyRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The data property removed between ontology versions" .
+<https://w3id.orgdef/och#propertyRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Property in Remove Data Property" .
+# 
+# https://w3id.orgdef/och#rangeAddObjectProperty
+<https://w3id.orgdef/och#rangeAddObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#rangeAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#AddObjectProperty> .
+<https://w3id.orgdef/och#rangeAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#rangeAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the object property added between ontology versions." .
+<https://w3id.orgdef/och#rangeAddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Add Object Property operation" .
+# 
+# https://w3id.orgdef/och#rangeAddSubClass
+<https://w3id.orgdef/och#rangeAddSubClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#rangeAddSubClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#AddSubClass> .
+<https://w3id.orgdef/och#rangeAddSubClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#rangeAddSubClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the rdfs:subClassOf property added between ontology versions, the parent class." .
+<https://w3id.orgdef/och#rangeAddSubClass> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Add Subclass Property operation" .
+# 
+# https://w3id.orgdef/och#rangeAddSubProperty
+<https://w3id.orgdef/och#rangeAddSubProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#rangeAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#AddSubPropertyOf> .
+<https://w3id.orgdef/och#rangeAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Property> .
+<https://w3id.orgdef/och#rangeAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the rdfs:subPropertyOf property removed between ontology versions." .
+<https://w3id.orgdef/och#rangeAddSubProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Add SubProperty Property" .
+# 
+# https://w3id.orgdef/och#rangeRemoveObjectProperty
+<https://w3id.orgdef/och#rangeRemoveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#rangeRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#RemoveObjectProperty> .
+<https://w3id.orgdef/och#rangeRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#rangeRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The range of an OWL object property removed between ontology versions" .
+<https://w3id.orgdef/och#rangeRemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Remove Object Property operation" .
+# 
+# https://w3id.orgdef/och#rangeRemoveSubClass
+<https://w3id.orgdef/och#rangeRemoveSubClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#rangeRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#RemoveSubClass> .
+<https://w3id.orgdef/och#rangeRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#rangeRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the rdfs:subClassOf property removed between ontology versions, the parent class" .
+<https://w3id.orgdef/och#rangeRemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Remove Subclass Property operation" .
+# 
+# https://w3id.orgdef/och#rangeRemoveSubProperty
+<https://w3id.orgdef/och#rangeRemoveSubProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#rangeRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#RemoveSubPropertyOf> .
+<https://w3id.orgdef/och#rangeRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Property> .
+<https://w3id.orgdef/och#rangeRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the rdfs:subPropertyOf property removed between ontology versions" .
+<https://w3id.orgdef/och#rangeRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Remove SubProperty Property" .
+# 
+# https://w3id.orgdef/och#removedClass
+<https://w3id.orgdef/och#removedClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#removedClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#RemoveClass> .
+<https://w3id.orgdef/och#removedClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#removedClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The OWL class that is deleted betweeen ontology versions" .
+<https://w3id.orgdef/och#removedClass> <http://www.w3.org/2000/01/rdf-schema#label> "Deleted Class" .
+# 
+# https://w3id.orgdef/och#renamedElement
+<https://w3id.orgdef/och#renamedElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#renamedElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#RenameElement> .
+<https://w3id.orgdef/och#renamedElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.orgdef/och#renamedElement> <http://www.w3.org/2000/01/rdf-schema#comment> "The OWL class or property that is being renamed between ontology versions" .
+<https://w3id.orgdef/och#renamedElement> <http://www.w3.org/2000/01/rdf-schema#label> "Renamed Element" .
+# 
+# https://w3id.orgdef/och#undeprecatedElement
+<https://w3id.orgdef/och#undeprecatedElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.orgdef/och#undeprecatedElement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#RevokeDeprecate> .
+<https://w3id.orgdef/och#undeprecatedElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.orgdef/och#undeprecatedElement> <http://www.w3.org/2000/01/rdf-schema#comment> "The Element that is being undeprecated." .
+<https://w3id.orgdef/och#undeprecatedElement> <http://www.w3.org/2000/01/rdf-schema#label> "Uneprecate Element" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.orgdef/och#rangeAddDataProperty
+<https://w3id.orgdef/och#rangeAddDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.orgdef/och#rangeAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#AddDataProperty> .
+<https://w3id.orgdef/och#rangeAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.orgdef/och#rangeAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The range of an OWL data property added between ontology versions" .
+<https://w3id.orgdef/och#rangeAddDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Add Data Property operation" .
+# 
+# https://w3id.orgdef/och#rangeRemoveDataProperty
+<https://w3id.orgdef/och#rangeRemoveDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.orgdef/och#rangeRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.orgdef/och#RemoveDataProperty> .
+<https://w3id.orgdef/och#rangeRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.orgdef/och#rangeRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The range of an OWL data property removed between ontology versions" .
+<https://w3id.orgdef/och#rangeRemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Range in Remove Data Property operation" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#Class
+<http://www.w3.org/2002/07/owl#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2002/07/owl#DatatypeProperty
+<http://www.w3.org/2002/07/owl#DatatypeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2002/07/owl#ObjectProperty
+<http://www.w3.org/2002/07/owl#ObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2002/07/owl#Property
+<http://www.w3.org/2002/07/owl#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.orgdef/och#AddAsymmetricObjectProperty
+<https://w3id.orgdef/och#AddAsymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddAsymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddObjectProperty> .
+<https://w3id.orgdef/och#AddAsymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AsymmetricObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddClass
+<https://w3id.orgdef/och#AddClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ClassChange> .
+<https://w3id.orgdef/och#AddClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The addition of a class operation" .
+<https://w3id.orgdef/och#AddClass> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of Class" .
+# 
+# https://w3id.orgdef/och#AddDataProperty
+<https://w3id.orgdef/och#AddDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddProperty> .
+<https://w3id.orgdef/och#AddDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DataPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddDataPropertyDomain
+<https://w3id.orgdef/och#AddDataPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddDomain> .
+<https://w3id.orgdef/och#AddDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DataPropertyDomainChange> .
+# 
+# https://w3id.orgdef/och#AddDataPropertyRange
+<https://w3id.orgdef/och#AddDataPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddRange> .
+<https://w3id.orgdef/och#AddDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DataPropertyRangeChange> .
+# 
+# https://w3id.orgdef/och#AddDatatype
+<https://w3id.orgdef/och#AddDatatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddDatatype> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DatatypeChange> .
+# 
+# https://w3id.orgdef/och#AddDisjointClass
+<https://w3id.orgdef/och#AddDisjointClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DisjointClassChange> .
+# 
+# https://w3id.orgdef/och#AddDisjointDataProperty
+<https://w3id.orgdef/och#AddDisjointDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddDisjointDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DisjointDataPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddDisjointObjectProperty
+<https://w3id.orgdef/och#AddDisjointObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddDisjointObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddProperty> .
+<https://w3id.orgdef/och#AddDisjointObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DisjointObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddDisjointUnion
+<https://w3id.orgdef/och#AddDisjointUnion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddDisjointUnion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DisjointUnionChange> .
+# 
+# https://w3id.orgdef/och#AddDomain
+<https://w3id.orgdef/och#AddDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DomainChange> .
+# 
+# https://w3id.orgdef/och#AddEquivalentClass
+<https://w3id.orgdef/och#AddEquivalentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#EquivalentClassChange> .
+# 
+# https://w3id.orgdef/och#AddEquivalentDataProperty
+<https://w3id.orgdef/och#AddEquivalentDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddEquivalentDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#EquivalentDataPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddEquivalentObjectProperty
+<https://w3id.orgdef/och#AddEquivalentObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddEquivalentObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddObjectProperty> .
+<https://w3id.orgdef/och#AddEquivalentObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#EquivalentObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddFunctionalDataProperty
+<https://w3id.orgdef/och#AddFunctionalDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddFunctionalDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#FunctionalDataPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddFunctionalObjectProperty
+<https://w3id.orgdef/och#AddFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddProperty> .
+<https://w3id.orgdef/och#AddFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#FunctionalObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddInverseFunctionalObjectProperty
+<https://w3id.orgdef/och#AddInverseFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddInverseFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddObjectProperty> .
+<https://w3id.orgdef/och#AddInverseFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddInverseObjectProperty
+<https://w3id.orgdef/och#AddInverseObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddInverseObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddObjectProperty> .
+<https://w3id.orgdef/och#AddInverseObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#InverseObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddIrreflexiveObjectProperty
+<https://w3id.orgdef/och#AddIrreflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddIrreflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddObjectProperty> .
+<https://w3id.orgdef/och#AddIrreflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#IrreflexiveObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddObjectProperty
+<https://w3id.orgdef/och#AddObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddProperty> .
+<https://w3id.orgdef/och#AddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddObjectPropertyDomain
+<https://w3id.orgdef/och#AddObjectPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddDomain> .
+<https://w3id.orgdef/och#AddObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyDomainChange> .
+# 
+# https://w3id.orgdef/och#AddObjectPropertyRange
+<https://w3id.orgdef/och#AddObjectPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddRange> .
+<https://w3id.orgdef/och#AddObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyRangeChange> .
+# 
+# https://w3id.orgdef/och#AddProperty
+<https://w3id.orgdef/och#AddProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#PropertyChange> .
+# 
+# https://w3id.orgdef/och#AddRange
+<https://w3id.orgdef/och#AddRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RangeChange> .
+# 
+# https://w3id.orgdef/och#AddReflexiveObjectProperty
+<https://w3id.orgdef/och#AddReflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddReflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddObjectProperty> .
+<https://w3id.orgdef/och#AddReflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ReflexiveObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddSubClass
+<https://w3id.orgdef/och#AddSubClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddSubClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#SubClassChange> .
+<https://w3id.orgdef/och#AddSubClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the addition of an rdfs:subClassOf property." .
+<https://w3id.orgdef/och#AddSubClass> <http://www.w3.org/2000/01/rdf-schema#label> "Addition  of SubClass property" .
+# 
+# https://w3id.orgdef/och#AddSubPropertyOf
+<https://w3id.orgdef/och#AddSubPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#SubPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddSymmetricObjectProperty
+<https://w3id.orgdef/och#AddSymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddSymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddObjectProperty> .
+<https://w3id.orgdef/och#AddSymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#SymmetricObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#AddTransitiveObjectProperty
+<https://w3id.orgdef/och#AddTransitiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AddTransitiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AddObjectProperty> .
+<https://w3id.orgdef/och#AddTransitiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#TransitiveObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#AsymmetricObjectPropertyChange
+<https://w3id.orgdef/och#AsymmetricObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#AsymmetricObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#ClassChange
+<https://w3id.orgdef/och#ClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#ClassChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#OntologyChange> .
+# 
+# https://w3id.orgdef/och#DataPropertyChange
+<https://w3id.orgdef/och#DataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#DataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#PropertyChange> .
+# 
+# https://w3id.orgdef/och#DataPropertyDomainChange
+<https://w3id.orgdef/och#DataPropertyDomainChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#DataPropertyDomainChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DataPropertyChange> .
+# 
+# https://w3id.orgdef/och#DataPropertyRangeChange
+<https://w3id.orgdef/och#DataPropertyRangeChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#DataPropertyRangeChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DataPropertyChange> .
+# 
+# https://w3id.orgdef/och#DatatypeChange
+<https://w3id.orgdef/och#DatatypeChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#DatatypeChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DataPropertyChange> .
+<https://w3id.orgdef/och#DatatypeChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of the datatype of a property" .
+<https://w3id.orgdef/och#DatatypeChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of the Datatype of a Property" .
+# 
+# https://w3id.orgdef/och#DeprecateElement
+<https://w3id.orgdef/och#DeprecateElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#DeprecateElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ElementChange> .
+<https://w3id.orgdef/och#DeprecateElement> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the deprecation of a class or property" .
+<https://w3id.orgdef/och#DeprecateElement> <http://www.w3.org/2000/01/rdf-schema#label> "Deprecation of an element." .
+# 
+# https://w3id.orgdef/och#DisjointClassChange
+<https://w3id.orgdef/och#DisjointClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#DisjointClassChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ClassChange> .
+# 
+# https://w3id.orgdef/och#DisjointDataPropertyChange
+<https://w3id.orgdef/och#DisjointDataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#DisjointDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DataPropertyChange> .
+# 
+# https://w3id.orgdef/och#DisjointObjectPropertyChange
+<https://w3id.orgdef/och#DisjointObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#DisjointObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#DisjointUnionChange
+<https://w3id.orgdef/och#DisjointUnionChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#DisjointUnionChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ClassChange> .
+# 
+# https://w3id.orgdef/och#DomainChange
+<https://w3id.orgdef/och#DomainChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#DomainChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#PropertyChange> .
+<https://w3id.orgdef/och#DomainChange> <http://www.w3.org/2000/01/rdf-schema#comment> "Change operation that describes the change of the domain of a property" .
+<https://w3id.orgdef/och#DomainChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of the domain of a property" .
+# 
+# https://w3id.orgdef/och#ElementChange
+<https://w3id.orgdef/och#ElementChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#ElementChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#OntologyChange> .
+<https://w3id.orgdef/och#ElementChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes changes in changes and properties." .
+<https://w3id.orgdef/och#ElementChange> <http://www.w3.org/2000/01/rdf-schema#label> "Element Changes" .
+# 
+# https://w3id.orgdef/och#EquivalentClassChange
+<https://w3id.orgdef/och#EquivalentClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#EquivalentClassChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ClassChange> .
+# 
+# https://w3id.orgdef/och#EquivalentDataPropertyChange
+<https://w3id.orgdef/och#EquivalentDataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#EquivalentDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DataPropertyChange> .
+# 
+# https://w3id.orgdef/och#EquivalentObjectPropertyChange
+<https://w3id.orgdef/och#EquivalentObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#EquivalentObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#FunctionalDataPropertyChange
+<https://w3id.orgdef/och#FunctionalDataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#FunctionalDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DataPropertyChange> .
+# 
+# https://w3id.orgdef/och#FunctionalObjectPropertyChange
+<https://w3id.orgdef/och#FunctionalObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#FunctionalObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyChange> .
+<https://w3id.orgdef/och#FunctionalObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveObjectProperty> .
+# 
+# https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange
+<https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#InverseObjectPropertyChange
+<https://w3id.orgdef/och#InverseObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#InverseObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#IrreflexiveObjectPropertyChange
+<https://w3id.orgdef/och#IrreflexiveObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#IrreflexiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#OWLEntity
+<https://w3id.orgdef/och#OWLEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.orgdef/och#ObjectPropertyChange
+<https://w3id.orgdef/och#ObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#ObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#PropertyChange> .
+# 
+# https://w3id.orgdef/och#ObjectPropertyDomainChange
+<https://w3id.orgdef/och#ObjectPropertyDomainChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#ObjectPropertyDomainChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#ObjectPropertyRangeChange
+<https://w3id.orgdef/och#ObjectPropertyRangeChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#ObjectPropertyRangeChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#OntologyChange
+<https://w3id.orgdef/och#OntologyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.orgdef/och#PropertyChange
+<https://w3id.orgdef/och#PropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#PropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#OntologyChange> .
+<https://w3id.orgdef/och#PropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes changes in properties." .
+<https://w3id.orgdef/och#PropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Property Changes" .
+# 
+# https://w3id.orgdef/och#RangeChange
+<https://w3id.orgdef/och#RangeChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RangeChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#PropertyChange> .
+<https://w3id.orgdef/och#RangeChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of the range of a property" .
+<https://w3id.orgdef/och#RangeChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of the range of a property" .
+# 
+# https://w3id.orgdef/och#ReflexiveObjectPropertyChange
+<https://w3id.orgdef/och#ReflexiveObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#ReflexiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#RemoveAsymmetricObjectProperty
+<https://w3id.orgdef/och#RemoveAsymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveAsymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#AsymmetricObjectPropertyChange> .
+<https://w3id.orgdef/och#RemoveAsymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveObjectProperty> .
+# 
+# https://w3id.orgdef/och#RemoveClass
+<https://w3id.orgdef/och#RemoveClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ClassChange> .
+<https://w3id.orgdef/och#RemoveClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of a class." .
+<https://w3id.orgdef/och#RemoveClass> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of a class" .
+# 
+# https://w3id.orgdef/och#RemoveDataProperty
+<https://w3id.orgdef/och#RemoveDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DataPropertyChange> .
+<https://w3id.orgdef/och#RemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveProperty> .
+<https://w3id.orgdef/och#RemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of a data property." .
+<https://w3id.orgdef/och#RemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of a Data Property" .
+# 
+# https://w3id.orgdef/och#RemoveDataPropertyDomain
+<https://w3id.orgdef/och#RemoveDataPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DataPropertyDomainChange> .
+<https://w3id.orgdef/och#RemoveDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveDomain> .
+# 
+# https://w3id.orgdef/och#RemoveDataPropertyRange
+<https://w3id.orgdef/och#RemoveDataPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DataPropertyRangeChange> .
+<https://w3id.orgdef/och#RemoveDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveRange> .
+# 
+# https://w3id.orgdef/och#RemoveDatatype
+<https://w3id.orgdef/och#RemoveDatatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveDatatype> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DatatypeChange> .
+# 
+# https://w3id.orgdef/och#RemoveDisjointClass
+<https://w3id.orgdef/och#RemoveDisjointClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DisjointClassChange> .
+# 
+# https://w3id.orgdef/och#RemoveDisjointDataProperty
+<https://w3id.orgdef/och#RemoveDisjointDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveDisjointDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DisjointDataPropertyChange> .
+# 
+# https://w3id.orgdef/och#RemoveDisjointObjectProperty
+<https://w3id.orgdef/och#RemoveDisjointObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveDisjointObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DisjointObjectPropertyChange> .
+<https://w3id.orgdef/och#RemoveDisjointObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveObjectProperty> .
+# 
+# https://w3id.orgdef/och#RemoveDisjointUnion
+<https://w3id.orgdef/och#RemoveDisjointUnion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveDisjointUnion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DisjointUnionChange> .
+# 
+# https://w3id.orgdef/och#RemoveDomain
+<https://w3id.orgdef/och#RemoveDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#DomainChange> .
+# 
+# https://w3id.orgdef/och#RemoveEquivalentClass
+<https://w3id.orgdef/och#RemoveEquivalentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#EquivalentClassChange> .
+# 
+# https://w3id.orgdef/och#RemoveEquivalentDataProperty
+<https://w3id.orgdef/och#RemoveEquivalentDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveEquivalentDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#EquivalentDataPropertyChange> .
+# 
+# https://w3id.orgdef/och#RemoveEquivalentObjectProperty
+<https://w3id.orgdef/och#RemoveEquivalentObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveEquivalentObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#EquivalentObjectPropertyChange> .
+<https://w3id.orgdef/och#RemoveEquivalentObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveObjectProperty> .
+# 
+# https://w3id.orgdef/och#RemoveFunctionalDataProperty
+<https://w3id.orgdef/och#RemoveFunctionalDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveFunctionalDataProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#FunctionalDataPropertyChange> .
+# 
+# https://w3id.orgdef/och#RemoveFunctionalObjectProperty
+<https://w3id.orgdef/och#RemoveFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#FunctionalObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#RemoveInverseFunctionalObjectProperty
+<https://w3id.orgdef/och#RemoveInverseFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveInverseFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange> .
+<https://w3id.orgdef/och#RemoveInverseFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveObjectProperty> .
+# 
+# https://w3id.orgdef/och#RemoveInverseObjectProperty
+<https://w3id.orgdef/och#RemoveInverseObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveInverseObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#InverseObjectPropertyChange> .
+<https://w3id.orgdef/och#RemoveInverseObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveObjectProperty> .
+# 
+# https://w3id.orgdef/och#RemoveIrreflexiveObjectProperty
+<https://w3id.orgdef/och#RemoveIrreflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveIrreflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#IrreflexiveObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#RemoveObjectProperty
+<https://w3id.orgdef/och#RemoveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyChange> .
+<https://w3id.orgdef/och#RemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveProperty> .
+# 
+# https://w3id.orgdef/och#RemoveObjectPropertyDomain
+<https://w3id.orgdef/och#RemoveObjectPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyDomainChange> .
+<https://w3id.orgdef/och#RemoveObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveDomain> .
+# 
+# https://w3id.orgdef/och#RemoveObjectPropertyRange
+<https://w3id.orgdef/och#RemoveObjectPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyRangeChange> .
+<https://w3id.orgdef/och#RemoveObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveRange> .
+# 
+# https://w3id.orgdef/och#RemoveProperty
+<https://w3id.orgdef/och#RemoveProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#PropertyChange> .
+# 
+# https://w3id.orgdef/och#RemoveRange
+<https://w3id.orgdef/och#RemoveRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RangeChange> .
+# 
+# https://w3id.orgdef/och#RemoveReflexiveObjectProperty
+<https://w3id.orgdef/och#RemoveReflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveReflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ReflexiveObjectPropertyChange> .
+<https://w3id.orgdef/och#RemoveReflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveObjectProperty> .
+# 
+# https://w3id.orgdef/och#RemoveSubClass
+<https://w3id.orgdef/och#RemoveSubClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#SubClassChange> .
+<https://w3id.orgdef/och#RemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of an rdfs:subClassOf property." .
+<https://w3id.orgdef/och#RemoveSubClass> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of SubClass property" .
+# 
+# https://w3id.orgdef/och#RemoveSubPropertyOf
+<https://w3id.orgdef/och#RemoveSubPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#SubPropertyChange> .
+# 
+# https://w3id.orgdef/och#RemoveSymmetricObjectProperty
+<https://w3id.orgdef/och#RemoveSymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveSymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveObjectProperty> .
+<https://w3id.orgdef/och#RemoveSymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#SymmetricObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#RemoveTransitiveObjectProperty
+<https://w3id.orgdef/och#RemoveTransitiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RemoveTransitiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#RemoveObjectProperty> .
+<https://w3id.orgdef/och#RemoveTransitiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#TransitiveObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#RenameElement
+<https://w3id.orgdef/och#RenameElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RenameElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ElementChange> .
+<https://w3id.orgdef/och#RenameElement> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the Renaming of a class or property." .
+<https://w3id.orgdef/och#RenameElement> <http://www.w3.org/2000/01/rdf-schema#label> "Renaming of a class or property" .
+# 
+# https://w3id.orgdef/och#RevokeDeprecate
+<https://w3id.orgdef/och#RevokeDeprecate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#RevokeDeprecate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ElementChange> .
+<https://w3id.orgdef/och#RevokeDeprecate> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the revoke deprecation of a class or property" .
+<https://w3id.orgdef/och#RevokeDeprecate> <http://www.w3.org/2000/01/rdf-schema#label> "Revoke Deprecation of an Element." .
+# 
+# https://w3id.orgdef/och#SubClassChange
+<https://w3id.orgdef/och#SubClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#SubClassChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ClassChange> .
+<https://w3id.orgdef/och#SubClassChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an rdfs:subClassOf property." .
+<https://w3id.orgdef/och#SubClassChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of SubClass property" .
+# 
+# https://w3id.orgdef/och#SubPropertyChange
+<https://w3id.orgdef/och#SubPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#SubPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#PropertyChange> .
+<https://w3id.orgdef/och#SubPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a subproperty property" .
+<https://w3id.orgdef/och#SubPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a Subproperty Property" .
+# 
+# https://w3id.orgdef/och#SymmetricObjectPropertyChange
+<https://w3id.orgdef/och#SymmetricObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#SymmetricObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyChange> .
+# 
+# https://w3id.orgdef/och#TransitiveObjectPropertyChange
+<https://w3id.orgdef/och#TransitiveObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.orgdef/och#TransitiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.orgdef/och#ObjectPropertyChange> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddAsymmetricObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddAsymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddAsymmetricObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddAsymmetricObjectProperty> .
+<https://w3id.orgdef/och#AddAsymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddAsymmetricObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddDataProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddDataProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddDataProperty> .
+<https://w3id.orgdef/och#AddDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddDataProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddDataPropertyDomain
+<http://omv.ontoware.org/2007/07/OWLChangesAddDataPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddDataPropertyDomain> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddDataPropertyDomain> .
+<https://w3id.orgdef/och#AddDataPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddDataPropertyDomain
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddDataPropertyRange
+<http://omv.ontoware.org/2007/07/OWLChangesAddDataPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddDataPropertyRange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddDataPropertyRange> .
+<https://w3id.orgdef/och#AddDataPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddDataPropertyRange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddDatatype
+<http://omv.ontoware.org/2007/07/OWLChangesAddDatatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddDatatype> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddDatatype> .
+<https://w3id.orgdef/och#AddDatatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddDatatype
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddDisjointClass
+<http://omv.ontoware.org/2007/07/OWLChangesAddDisjointClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddDisjointClass> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddDisjointClass> .
+<https://w3id.orgdef/och#AddDisjointClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddDisjointClass
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddDisjointDataProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddDisjointDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddDisjointDataProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddDisjointDataProperty> .
+<https://w3id.orgdef/och#AddDisjointDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddDisjointDataProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddDisjointObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddDisjointObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddDisjointObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddDisjointObjectProperty> .
+<https://w3id.orgdef/och#AddDisjointObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddDisjointObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddDisjointUnion
+<http://omv.ontoware.org/2007/07/OWLChangesAddDisjointUnion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddDisjointUnion> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddDisjointUnion> .
+<https://w3id.orgdef/och#AddDisjointUnion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddDisjointUnion
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddDomain
+<http://omv.ontoware.org/2007/07/OWLChangesAddDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddDomain> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddDomain> .
+<https://w3id.orgdef/och#AddDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddDomain
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentClass
+<http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentClass> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddEquivalentClass> .
+<https://w3id.orgdef/och#AddEquivalentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddEquivalentClass
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentDataProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentDataProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddEquivalentDataProperty> .
+<https://w3id.orgdef/och#AddEquivalentDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddEquivalentDataProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddEquivalentObjectProperty> .
+<https://w3id.orgdef/och#AddEquivalentObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddEquivalentObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddFunctionalDataProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddFunctionalDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddFunctionalDataProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddFunctionalDataProperty> .
+<https://w3id.orgdef/och#AddFunctionalDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddFunctionalDataProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddFunctionalObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddFunctionalObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddFunctionalObjectProperty> .
+<https://w3id.orgdef/och#AddFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddFunctionalObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddInverseFunctionalObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddInverseFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddInverseFunctionalObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddInverseFunctionalObjectProperty> .
+<https://w3id.orgdef/och#AddInverseFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddInverseFunctionalObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddInverseObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddInverseObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddInverseObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddInverseObjectProperty> .
+<https://w3id.orgdef/och#AddInverseObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddInverseObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddIrreflexiveObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddIrreflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddIrreflexiveObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddIrreflexiveObjectProperty> .
+<https://w3id.orgdef/och#AddIrreflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddIrreflexiveObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddObjectProperty> .
+<https://w3id.orgdef/och#AddObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddObjectPropertyDomain> .
+<https://w3id.orgdef/och#AddObjectPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddObjectProperty
+# 
+# https://w3id.orgdef/och#AddObjectPropertyDomain
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddObjectPropertyRange
+<http://omv.ontoware.org/2007/07/OWLChangesAddObjectPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddObjectPropertyRange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddObjectPropertyRange> .
+<https://w3id.orgdef/och#AddObjectPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddObjectPropertyRange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddProperty> .
+<https://w3id.orgdef/och#AddProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddRange
+<http://omv.ontoware.org/2007/07/OWLChangesAddRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddRange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddRange> .
+<https://w3id.orgdef/och#AddRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddRange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddReflexiveObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddReflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddReflexiveObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddReflexiveObjectProperty> .
+<https://w3id.orgdef/och#AddReflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddReflexiveObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddSubPropertyOf
+<http://omv.ontoware.org/2007/07/OWLChangesAddSubPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddSubPropertyOf> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddSubPropertyOf> .
+<https://w3id.orgdef/och#AddSubPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddSubPropertyOf
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddSymmetricObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddSymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddSymmetricObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddSymmetricObjectProperty> .
+<https://w3id.orgdef/och#AddSymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddSymmetricObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAddTransitiveObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesAddTransitiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAddTransitiveObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AddTransitiveObjectProperty> .
+<https://w3id.orgdef/och#AddTransitiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AddTransitiveObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesAsymmetricObjectPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesAsymmetricObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesAsymmetricObjectPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#AsymmetricObjectPropertyChange> .
+<https://w3id.orgdef/och#AsymmetricObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#AsymmetricObjectPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesClassChange
+<http://omv.ontoware.org/2007/07/OWLChangesClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesClassChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#ClassChange> .
+<https://w3id.orgdef/och#ClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#ClassChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesDataPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesDataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesDataPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#DataPropertyChange> .
+<https://w3id.orgdef/och#DataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#DataPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesDataPropertyDomainChange
+<http://omv.ontoware.org/2007/07/OWLChangesDataPropertyDomainChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesDataPropertyDomainChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#DataPropertyDomainChange> .
+<https://w3id.orgdef/och#DataPropertyDomainChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#DataPropertyDomainChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesDataPropertyRangeChange
+<http://omv.ontoware.org/2007/07/OWLChangesDataPropertyRangeChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesDataPropertyRangeChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#DataPropertyRangeChange> .
+<https://w3id.orgdef/och#DataPropertyRangeChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#DataPropertyRangeChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesDisjointClassChange
+<http://omv.ontoware.org/2007/07/OWLChangesDisjointClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesDisjointClassChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#DisjointClassChange> .
+<https://w3id.orgdef/och#DisjointClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#DisjointClassChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesDisjointDataPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesDisjointDataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesDisjointDataPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#DisjointDataPropertyChange> .
+<https://w3id.orgdef/och#DisjointDataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#DisjointDataPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesDisjointObjectPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesDisjointObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesDisjointObjectPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#DisjointObjectPropertyChange> .
+<https://w3id.orgdef/och#DisjointObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#DisjointObjectPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesDisjointUnionChange
+<http://omv.ontoware.org/2007/07/OWLChangesDisjointUnionChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesDisjointUnionChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#DisjointUnionChange> .
+<https://w3id.orgdef/och#DisjointUnionChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#DisjointUnionChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesEquivalentClassChange
+<http://omv.ontoware.org/2007/07/OWLChangesEquivalentClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesEquivalentClassChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#EquivalentClassChange> .
+<https://w3id.orgdef/och#EquivalentClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#EquivalentClassChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesEquivalentDataPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesEquivalentDataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesEquivalentDataPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#EquivalentDataPropertyChange> .
+<https://w3id.orgdef/och#EquivalentDataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#EquivalentDataPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesEquivalentObjectPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesEquivalentObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesEquivalentObjectPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#EquivalentObjectPropertyChange> .
+<https://w3id.orgdef/och#EquivalentObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#EquivalentObjectPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesFunctionalDataPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesFunctionalDataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesFunctionalDataPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#FunctionalDataPropertyChange> .
+<https://w3id.orgdef/och#FunctionalDataPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#FunctionalDataPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesFunctionalObjectPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesFunctionalObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesFunctionalObjectPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#FunctionalObjectPropertyChange> .
+<https://w3id.orgdef/och#FunctionalObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#FunctionalObjectPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesInverseFunctionalObjectPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesInverseFunctionalObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesInverseFunctionalObjectPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange> .
+<https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesInverseObjectPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesInverseObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesInverseObjectPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#InverseObjectPropertyChange> .
+<https://w3id.orgdef/och#InverseObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#InverseObjectPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesIrreflexiveObjectPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesIrreflexiveObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesIrreflexiveObjectPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#IrreflexiveObjectPropertyChange> .
+<https://w3id.orgdef/och#IrreflexiveObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#IrreflexiveObjectPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesOWLEntity
+<http://omv.ontoware.org/2007/07/OWLChangesOWLEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesOWLEntity> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#OWLEntity> .
+<https://w3id.orgdef/och#OWLEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#OWLEntity
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesObjectPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesObjectPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#ObjectPropertyChange> .
+<https://w3id.orgdef/och#ObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#ObjectPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesObjectPropertyDomainChange
+<http://omv.ontoware.org/2007/07/OWLChangesObjectPropertyDomainChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesObjectPropertyDomainChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#ObjectPropertyDomainChange> .
+<https://w3id.orgdef/och#ObjectPropertyDomainChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#ObjectPropertyDomainChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesObjectPropertyRangeChange
+<http://omv.ontoware.org/2007/07/OWLChangesObjectPropertyRangeChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesObjectPropertyRangeChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#ObjectPropertyRangeChange> .
+<https://w3id.orgdef/och#ObjectPropertyRangeChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#ObjectPropertyRangeChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesOntologyChange
+<http://omv.ontoware.org/2007/07/OWLChangesOntologyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesOntologyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#OntologyChange> .
+<https://w3id.orgdef/och#OntologyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#OntologyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesReflexiveObjectPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesReflexiveObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesReflexiveObjectPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#ReflexiveObjectPropertyChange> .
+<https://w3id.orgdef/och#ReflexiveObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#ReflexiveObjectPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveAsymmetricObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveAsymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveAsymmetricObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveAsymmetricObjectProperty> .
+<https://w3id.orgdef/och#RemoveAsymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveAsymmetricObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveDataPropertyDomain
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDataPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDataPropertyDomain> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveDataPropertyDomain> .
+<https://w3id.orgdef/och#RemoveDataPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveDataPropertyDomain
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveDataPropertyRange
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDataPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDataPropertyRange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveDataPropertyRange> .
+<https://w3id.orgdef/och#RemoveDataPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveDataPropertyRange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveDatatype
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDatatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDatatype> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveDatatype> .
+<https://w3id.orgdef/och#RemoveDatatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveDatatype
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointClass
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointClass> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveDisjointClass> .
+<https://w3id.orgdef/och#RemoveDisjointClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveDisjointClass
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointDataProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointDataProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveDisjointDataProperty> .
+<https://w3id.orgdef/och#RemoveDisjointDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveDisjointDataProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveDisjointObjectProperty> .
+<https://w3id.orgdef/och#RemoveDisjointObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveDisjointObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointUnion
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointUnion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDisjointUnion> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveDisjointUnion> .
+<https://w3id.orgdef/och#RemoveDisjointUnion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveDisjointUnion
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveDomain
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveDomain> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveDomain> .
+<https://w3id.orgdef/och#RemoveDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveDomain
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveEquivalentClass
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveEquivalentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveEquivalentClass> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveEquivalentClass> .
+<https://w3id.orgdef/och#RemoveEquivalentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveEquivalentClass
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveEquivalentDataProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveEquivalentDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveEquivalentDataProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveEquivalentDataProperty> .
+<https://w3id.orgdef/och#RemoveEquivalentDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveEquivalentDataProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveEquivalentObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveEquivalentObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveEquivalentObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveEquivalentObjectProperty> .
+<https://w3id.orgdef/och#RemoveEquivalentObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveEquivalentObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveFunctionalDataProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveFunctionalDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveFunctionalDataProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveFunctionalDataProperty> .
+<https://w3id.orgdef/och#RemoveFunctionalDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveFunctionalDataProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveFunctionalObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveFunctionalObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveFunctionalObjectProperty> .
+<https://w3id.orgdef/och#RemoveFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveFunctionalObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveInverseFunctionalObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveInverseFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveInverseFunctionalObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveInverseFunctionalObjectProperty> .
+<https://w3id.orgdef/och#RemoveInverseFunctionalObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveInverseFunctionalObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveInverseObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveInverseObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveInverseObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveInverseObjectProperty> .
+<https://w3id.orgdef/och#RemoveInverseObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveInverseObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveIrreflexiveObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveIrreflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveIrreflexiveObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveIrreflexiveObjectProperty> .
+<https://w3id.orgdef/och#RemoveIrreflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveIrreflexiveObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveObjectProperty> .
+<https://w3id.orgdef/och#RemoveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveObjectPropertyDomain
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveObjectPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveObjectPropertyDomain> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveObjectPropertyDomain> .
+<https://w3id.orgdef/och#RemoveObjectPropertyDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveObjectPropertyDomain
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveObjectPropertyRange
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveObjectPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveObjectPropertyRange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveObjectPropertyRange> .
+<https://w3id.orgdef/och#RemoveObjectPropertyRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveObjectPropertyRange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveProperty> .
+<https://w3id.orgdef/och#RemoveProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveRange
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveRange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveRange> .
+<https://w3id.orgdef/och#RemoveRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveRange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveReflexiveObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveReflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveReflexiveObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveReflexiveObjectProperty> .
+<https://w3id.orgdef/och#RemoveReflexiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveReflexiveObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveSubPropertyOf
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveSubPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveSubPropertyOf> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveSubPropertyOf> .
+<https://w3id.orgdef/och#RemoveSubPropertyOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveSubPropertyOf
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveSymmetricObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveSymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveSymmetricObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveSymmetricObjectProperty> .
+<https://w3id.orgdef/och#RemoveSymmetricObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveSymmetricObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesRemoveTransitiveObjectProperty
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveTransitiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesRemoveTransitiveObjectProperty> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#RemoveTransitiveObjectProperty> .
+<https://w3id.orgdef/och#RemoveTransitiveObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#RemoveTransitiveObjectProperty
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesSymmetricObjectPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesSymmetricObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesSymmetricObjectPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#SymmetricObjectPropertyChange> .
+<https://w3id.orgdef/och#SymmetricObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#SymmetricObjectPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangesTransitiveObjectPropertyChange
+<http://omv.ontoware.org/2007/07/OWLChangesTransitiveObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangesTransitiveObjectPropertyChange> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#TransitiveObjectPropertyChange> .
+<https://w3id.orgdef/och#TransitiveObjectPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#TransitiveObjectPropertyChange
+# 
+# http://omv.ontoware.org/2007/07/OWLChangeshasRelatedEntity
+<http://omv.ontoware.org/2007/07/OWLChangeshasRelatedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://omv.ontoware.org/2007/07/OWLChangeshasRelatedEntity> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.orgdef/och#hasRelatedEntity> .
+<https://w3id.orgdef/och#hasRelatedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.orgdef/och#hasRelatedEntity
+# 
+# https://w3id.orgdef/och#AddAsymmetricObjectProperty
+# 
+# https://w3id.orgdef/och#AddDataProperty
+# 
+# https://w3id.orgdef/och#AddDataPropertyDomain
+# 
+# https://w3id.orgdef/och#AddDataPropertyRange
+# 
+# https://w3id.orgdef/och#AddDatatype
+# 
+# https://w3id.orgdef/och#AddDisjointClass
+# 
+# https://w3id.orgdef/och#AddDisjointDataProperty
+# 
+# https://w3id.orgdef/och#AddDisjointObjectProperty
+# 
+# https://w3id.orgdef/och#AddDisjointUnion
+# 
+# https://w3id.orgdef/och#AddDomain
+# 
+# https://w3id.orgdef/och#AddEquivalentClass
+# 
+# https://w3id.orgdef/och#AddEquivalentDataProperty
+# 
+# https://w3id.orgdef/och#AddEquivalentObjectProperty
+# 
+# https://w3id.orgdef/och#AddFunctionalDataProperty
+# 
+# https://w3id.orgdef/och#AddFunctionalObjectProperty
+# 
+# https://w3id.orgdef/och#AddInverseFunctionalObjectProperty
+# 
+# https://w3id.orgdef/och#AddInverseObjectProperty
+# 
+# https://w3id.orgdef/och#AddIrreflexiveObjectProperty
+# 
+# https://w3id.orgdef/och#AddObjectProperty
+# 
+# https://w3id.orgdef/och#AddObjectPropertyDomain
+# 
+# https://w3id.orgdef/och#AddObjectPropertyRange
+# 
+# https://w3id.orgdef/och#AddProperty
+# 
+# https://w3id.orgdef/och#AddRange
+# 
+# https://w3id.orgdef/och#AddReflexiveObjectProperty
+# 
+# https://w3id.orgdef/och#AddSubPropertyOf
+# 
+# https://w3id.orgdef/och#AddSymmetricObjectProperty
+# 
+# https://w3id.orgdef/och#AddTransitiveObjectProperty
+# 
+# https://w3id.orgdef/och#AsymmetricObjectPropertyChange
+# 
+# https://w3id.orgdef/och#ClassChange
+# 
+# https://w3id.orgdef/och#DataPropertyChange
+# 
+# https://w3id.orgdef/och#DataPropertyDomainChange
+# 
+# https://w3id.orgdef/och#DataPropertyRangeChange
+# 
+# https://w3id.orgdef/och#DisjointClassChange
+# 
+# https://w3id.orgdef/och#DisjointDataPropertyChange
+# 
+# https://w3id.orgdef/och#DisjointObjectPropertyChange
+# 
+# https://w3id.orgdef/och#DisjointUnionChange
+# 
+# https://w3id.orgdef/och#EquivalentClassChange
+# 
+# https://w3id.orgdef/och#EquivalentDataPropertyChange
+# 
+# https://w3id.orgdef/och#EquivalentObjectPropertyChange
+# 
+# https://w3id.orgdef/och#FunctionalDataPropertyChange
+# 
+# https://w3id.orgdef/och#FunctionalObjectPropertyChange
+# 
+# https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange
+# 
+# https://w3id.orgdef/och#InverseObjectPropertyChange
+# 
+# https://w3id.orgdef/och#IrreflexiveObjectPropertyChange
+# 
+# https://w3id.orgdef/och#OWLEntity
+# 
+# https://w3id.orgdef/och#ObjectPropertyChange
+# 
+# https://w3id.orgdef/och#ObjectPropertyDomainChange
+# 
+# https://w3id.orgdef/och#ObjectPropertyRangeChange
+# 
+# https://w3id.orgdef/och#OntologyChange
+# 
+# https://w3id.orgdef/och#ReflexiveObjectPropertyChange
+# 
+# https://w3id.orgdef/och#RemoveAsymmetricObjectProperty
+# 
+# https://w3id.orgdef/och#RemoveDataPropertyDomain
+# 
+# https://w3id.orgdef/och#RemoveDataPropertyRange
+# 
+# https://w3id.orgdef/och#RemoveDatatype
+# 
+# https://w3id.orgdef/och#RemoveDisjointClass
+# 
+# https://w3id.orgdef/och#RemoveDisjointDataProperty
+# 
+# https://w3id.orgdef/och#RemoveDisjointObjectProperty
+# 
+# https://w3id.orgdef/och#RemoveDisjointUnion
+# 
+# https://w3id.orgdef/och#RemoveDomain
+# 
+# https://w3id.orgdef/och#RemoveEquivalentClass
+# 
+# https://w3id.orgdef/och#RemoveEquivalentDataProperty
+# 
+# https://w3id.orgdef/och#RemoveEquivalentObjectProperty
+# 
+# https://w3id.orgdef/och#RemoveFunctionalDataProperty
+# 
+# https://w3id.orgdef/och#RemoveFunctionalObjectProperty
+# 
+# https://w3id.orgdef/och#RemoveInverseFunctionalObjectProperty
+# 
+# https://w3id.orgdef/och#RemoveInverseObjectProperty
+# 
+# https://w3id.orgdef/och#RemoveIrreflexiveObjectProperty
+# 
+# https://w3id.orgdef/och#RemoveObjectProperty
+# 
+# https://w3id.orgdef/och#RemoveObjectPropertyDomain
+# 
+# https://w3id.orgdef/och#RemoveObjectPropertyRange
+# 
+# https://w3id.orgdef/och#RemoveProperty
+# 
+# https://w3id.orgdef/och#RemoveRange
+# 
+# https://w3id.orgdef/och#RemoveReflexiveObjectProperty
+# 
+# https://w3id.orgdef/och#RemoveSubPropertyOf
+# 
+# https://w3id.orgdef/och#RemoveSymmetricObjectProperty
+# 
+# https://w3id.orgdef/och#RemoveTransitiveObjectProperty
+# 
+# https://w3id.orgdef/och#SymmetricObjectPropertyChange
+# 
+# https://w3id.orgdef/och#TransitiveObjectPropertyChange
+# 
+# https://w3id.orgdef/och#hasRelatedEntity
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://w3id.orgdef/och#AddAsymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of asymmetric properties change betweeen ontology versions" .
+<https://w3id.orgdef/och#AddAsymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of Asymetric Object Property" .
+# 
+<https://w3id.orgdef/och#AddDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of data properties change betweeen ontology versions" .
+<https://w3id.orgdef/och#AddDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of Data Property" .
+# 
+<https://w3id.orgdef/och#AddDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the domain of a data property change betweeen ontology versions" .
+<https://w3id.orgdef/och#AddDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Domain of a Data Property" .
+# 
+<https://w3id.orgdef/och#AddDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the range of a data property change betweeen ontology versions" .
+<https://w3id.orgdef/och#AddDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Range of a Data Property" .
+# 
+<https://w3id.orgdef/och#AddDatatype> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the Datatype of a data property change betweeen ontology versions" .
+<https://w3id.orgdef/och#AddDatatype> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Datatype of a Data Property" .
+# 
+<https://w3id.orgdef/och#AddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:disjointWith property change betweeen ontology versions" .
+<https://w3id.orgdef/och#AddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Disjoint With Property" .
+# 
+<https://w3id.orgdef/och#AddDisjointDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:propertyDisjointWith property betweeen data properties change betweeen ontology versions" .
+<https://w3id.orgdef/och#AddDisjointDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the property Disjoint With Property to data property" .
+# 
+<https://w3id.orgdef/och#AddDisjointObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:propertyDisjointWith property betweeen object properties change betweeen ontology versions" .
+<https://w3id.orgdef/och#AddDisjointObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the property Disjoint With Property to object property" .
+# 
+<https://w3id.orgdef/och#AddDisjointUnion> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:DisjointUnionOf property change betweeen ontology versions. The property that determines that a given class is equivalent to the disjoint union of a collection of other classes" .
+<https://w3id.orgdef/och#AddDisjointUnion> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the DisjointUnionOf Property" .
+# 
+<https://w3id.orgdef/och#AddDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the addition of a domain to a property." .
+<https://w3id.orgdef/och#AddDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Domain" .
+# 
+<https://w3id.orgdef/och#AddEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:equivalentClass property change betweeen ontology versions. The property that determines that two given classes are equivalent, and that is used to specify datatype definitions." .
+<https://w3id.orgdef/och#AddEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the equivalentClass Property" .
+# 
+<https://w3id.orgdef/och#AddEquivalentDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:equivalentProperty property between data properties change betweeen ontology versions. The property that determines that two given properties are equivalent." .
+<https://w3id.orgdef/och#AddEquivalentDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the equivalentProperty Property for data properties" .
+# 
+<https://w3id.orgdef/och#AddEquivalentObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:equivalentProperty property between object properties change betweeen ontology versions. The property that determines that two given properties are equivalent." .
+<https://w3id.orgdef/och#AddEquivalentObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the equivalentProperty Property for object properties" .
+# 
+<https://w3id.orgdef/och#AddFunctionalDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:FuctionalProperty change betweeen ontology versions.This is the class of functional properties" .
+<https://w3id.orgdef/och#AddFunctionalDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of functional data property " .
+# 
+<https://w3id.orgdef/och#AddFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:FuctionalProperty change betweeen ontology versions.This is the class of functional properties" .
+<https://w3id.orgdef/och#AddFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of Functional Object Property" .
+# 
+<https://w3id.orgdef/och#AddInverseFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:InverseFuctionalProperty change betweeen ontology versions.This is the class of inverse-functional properties" .
+<https://w3id.orgdef/och#AddInverseFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of an inverse functional object property " .
+# 
+<https://w3id.orgdef/och#AddInverseObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:inverseOf change betweeen ontology versions.The property that determines that two given properties are inverse." .
+<https://w3id.orgdef/och#AddInverseObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of an inverse property to object property " .
+# 
+<https://w3id.orgdef/och#AddIrreflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:irreflexiveProperty change betweeen ontology versions.The class of irreflexive properties." .
+<https://w3id.orgdef/och#AddIrreflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of an irreflexive object property " .
+# 
+<https://w3id.orgdef/och#AddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Addition of an Object type property." .
+<https://w3id.orgdef/och#AddObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of an Object property" .
+# 
+<https://w3id.orgdef/och#AddObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the domain of an object property change betweeen ontology versions" .
+<https://w3id.orgdef/och#AddObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Domain of an object property" .
+# 
+<https://w3id.orgdef/och#AddObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the range of an object property change betweeen ontology versions" .
+<https://w3id.orgdef/och#AddObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Range of an object property" .
+# 
+<https://w3id.orgdef/och#AddProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the addition of a property to the ontology." .
+<https://w3id.orgdef/och#AddProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of a Property" .
+# 
+<https://w3id.orgdef/och#AddRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the addition of a range to a property." .
+<https://w3id.orgdef/och#AddRange> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the Range" .
+# 
+<https://w3id.orgdef/och#AddReflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the addition of the owl:reflexiveProperty change betweeen ontology versions.The class of rreflexive properties." .
+<https://w3id.orgdef/och#AddReflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of an reflexive object property " .
+# 
+<https://w3id.orgdef/och#AddSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the addition of sub property property." .
+<https://w3id.orgdef/och#AddSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> "Addition of the sub-property property" .
+# 
+<https://w3id.orgdef/och#AddSymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the addition of Symmetric object property." .
+<https://w3id.orgdef/och#AddSymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition a Symmetric object property" .
+# 
+<https://w3id.orgdef/och#AddTransitiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the addition of a transitive object property." .
+<https://w3id.orgdef/och#AddTransitiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Addition a transitive object property" .
+# 
+<https://w3id.orgdef/och#AsymmetricObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a transitive object property." .
+<https://w3id.orgdef/och#AsymmetricObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an asymmetric object property" .
+# 
+<https://w3id.orgdef/och#ClassChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes changes in classes." .
+<https://w3id.orgdef/och#ClassChange> <http://www.w3.org/2000/01/rdf-schema#label> "Class Changes" .
+# 
+<https://w3id.orgdef/och#DataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a datatype property." .
+<https://w3id.orgdef/och#DataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a Datatype Property" .
+# 
+<https://w3id.orgdef/och#DataPropertyDomainChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of  the domain of a datatype property." .
+<https://w3id.orgdef/och#DataPropertyDomainChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of  the Domain of a Datatype Property" .
+# 
+<https://w3id.orgdef/och#DataPropertyRangeChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of  the range of a datatype property." .
+<https://w3id.orgdef/och#DataPropertyRangeChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of  the range of a datatype property" .
+# 
+<https://w3id.orgdef/och#DisjointClassChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a disjoint class." .
+<https://w3id.orgdef/och#DisjointClassChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a disjoint class" .
+# 
+<https://w3id.orgdef/och#DisjointDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a disjoint datatype property." .
+<https://w3id.orgdef/och#DisjointDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a Disjoint datatype property" .
+# 
+<https://w3id.orgdef/och#DisjointObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a disjoint object property." .
+<https://w3id.orgdef/och#DisjointObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a Disjoint Object Property" .
+# 
+<https://w3id.orgdef/och#DisjointUnionChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a disjoint union property." .
+<https://w3id.orgdef/och#DisjointUnionChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a disjoint union property" .
+# 
+<https://w3id.orgdef/och#EquivalentClassChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an equivalent class property." .
+<https://w3id.orgdef/och#EquivalentClassChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an equivalent class property" .
+# 
+<https://w3id.orgdef/och#EquivalentDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an equivalent data property property." .
+<https://w3id.orgdef/och#EquivalentDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an Equivalent Data Property property" .
+# 
+<https://w3id.orgdef/och#EquivalentObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an equivalent object property property." .
+<https://w3id.orgdef/och#EquivalentObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an equivalent object property property" .
+# 
+<https://w3id.orgdef/och#FunctionalDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a functional datatype property property." .
+<https://w3id.orgdef/och#FunctionalDataPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a Functional Datatype Property property" .
+# 
+<https://w3id.orgdef/och#FunctionalObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a functional object property property." .
+<https://w3id.orgdef/och#FunctionalObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a Functional Object Property property" .
+# 
+<https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an inverse functional object property property." .
+<https://w3id.orgdef/och#InverseFunctionalObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an inverse functional object property property" .
+# 
+<https://w3id.orgdef/och#InverseObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an inverse functional object property property." .
+<https://w3id.orgdef/och#InverseObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an inverse functional object property property" .
+# 
+<https://w3id.orgdef/och#IrreflexiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an irreflexive object property property." .
+<https://w3id.orgdef/och#IrreflexiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an irreflexive object property property" .
+# 
+<https://w3id.orgdef/och#OWLEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that describes an OWL Entities, the named terms of the ontology" .
+<https://w3id.orgdef/och#OWLEntity> <http://www.w3.org/2000/01/rdf-schema#label> "OWL Entity Class" .
+# 
+<https://w3id.orgdef/och#ObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of an object property." .
+<https://w3id.orgdef/och#ObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of an Object Property" .
+# 
+<https://w3id.orgdef/och#ObjectPropertyDomainChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of the domain of an object property." .
+<https://w3id.orgdef/och#ObjectPropertyDomainChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of the domain of an object property" .
+# 
+<https://w3id.orgdef/och#ObjectPropertyRangeChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of the range of an object property." .
+<https://w3id.orgdef/och#ObjectPropertyRangeChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of the range of an object property" .
+# 
+<https://w3id.orgdef/och#OntologyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes changes in an ontology." .
+<https://w3id.orgdef/och#OntologyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Ontology Changes" .
+# 
+<https://w3id.orgdef/och#ReflexiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change a reflexive object property." .
+<https://w3id.orgdef/och#ReflexiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of a reflexive object property" .
+# 
+<https://w3id.orgdef/och#RemoveAsymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of an asymmetric object property." .
+<https://w3id.orgdef/och#RemoveAsymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of an asymmetric object property" .
+# 
+<https://w3id.orgdef/och#RemoveDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the domain of a data property." .
+<https://w3id.orgdef/och#RemoveDataPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the domain of a datatype property" .
+# 
+<https://w3id.orgdef/och#RemoveDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the range of a data property." .
+<https://w3id.orgdef/och#RemoveDataPropertyRange> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the range of a datatype property" .
+# 
+<https://w3id.orgdef/och#RemoveDatatype> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the Datatype of a data property." .
+<https://w3id.orgdef/och#RemoveDatatype> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the Datatype of a Datatype Property" .
+# 
+<https://w3id.orgdef/och#RemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the disjoint class property." .
+<https://w3id.orgdef/och#RemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of a disjoint class property" .
+# 
+<https://w3id.orgdef/och#RemoveDisjointDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the disjointWith property." .
+<https://w3id.orgdef/och#RemoveDisjointDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the disjointWith property" .
+# 
+<https://w3id.orgdef/och#RemoveDisjointObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the disjointWith property." .
+<https://w3id.orgdef/och#RemoveDisjointObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the disjointWith property" .
+# 
+<https://w3id.orgdef/och#RemoveDisjointUnion> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the disjointUnionOf property." .
+<https://w3id.orgdef/och#RemoveDisjointUnion> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the disjointUnionOf property" .
+# 
+<https://w3id.orgdef/och#RemoveDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the domain from a property." .
+<https://w3id.orgdef/och#RemoveDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the Domain" .
+# 
+<https://w3id.orgdef/och#RemoveEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the equivalentClass property." .
+<https://w3id.orgdef/och#RemoveEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the equivalentClass property" .
+# 
+<https://w3id.orgdef/och#RemoveEquivalentDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the equivalentProperty property for a Datatype property." .
+<https://w3id.orgdef/och#RemoveEquivalentDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the equivalentProperty property for a Datatype property" .
+# 
+<https://w3id.orgdef/och#RemoveEquivalentObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the equivalentProperty property for an object property." .
+<https://w3id.orgdef/och#RemoveEquivalentObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the equivalentProperty property for an object property" .
+# 
+<https://w3id.orgdef/och#RemoveFunctionalDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the owl:FuctionalProperty change betweeen ontology versions.This is the class of functional properties" .
+<https://w3id.orgdef/och#RemoveFunctionalDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of functional data property " .
+# 
+<https://w3id.orgdef/och#RemoveFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the owl:InverseFuctionalProperty change betweeen ontology versions.This is the class of inverse functional properties" .
+<https://w3id.orgdef/och#RemoveFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of functional object property " .
+# 
+<https://w3id.orgdef/och#RemoveInverseFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the owl:InverseFuctionalProperty change betweeen ontology versions.This is the class of inverse functional properties" .
+<https://w3id.orgdef/och#RemoveInverseFunctionalObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of inverse functional object property " .
+# 
+<https://w3id.orgdef/och#RemoveInverseObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the owl:inverseOf change betweeen ontology versions.The property that determines that two given properties are inverse." .
+<https://w3id.orgdef/och#RemoveInverseObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of an inverse property to object property " .
+# 
+<https://w3id.orgdef/och#RemoveIrreflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the owl:irreflexiveProperty change betweeen ontology versions.The class of irreflexive properties." .
+<https://w3id.orgdef/och#RemoveIrreflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of an irreflexive object property " .
+# 
+<https://w3id.orgdef/och#RemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Removal of an Object type property." .
+<https://w3id.orgdef/och#RemoveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of an Object property" .
+# 
+<https://w3id.orgdef/och#RemoveObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the domain of an object property change betweeen ontology versions" .
+<https://w3id.orgdef/och#RemoveObjectPropertyDomain> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the Domain of an object property" .
+# 
+<https://w3id.orgdef/och#RemoveObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the range of an object property change betweeen ontology versions" .
+<https://w3id.orgdef/och#RemoveObjectPropertyRange> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the Range of an object property" .
+# 
+<https://w3id.orgdef/och#RemoveProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of a Property." .
+<https://w3id.orgdef/och#RemoveProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of a Property" .
+# 
+<https://w3id.orgdef/och#RemoveRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of the range from a property." .
+<https://w3id.orgdef/och#RemoveRange> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the Range" .
+# 
+<https://w3id.orgdef/och#RemoveReflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of the owl:reflexiveProperty change betweeen ontology versions.The class of rreflexive properties." .
+<https://w3id.orgdef/och#RemoveReflexiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of an reflexive object property " .
+# 
+<https://w3id.orgdef/och#RemoveSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of sub property property." .
+<https://w3id.orgdef/och#RemoveSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of the sub property property" .
+# 
+<https://w3id.orgdef/och#RemoveSymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of the removal of symmetric properties change betweeen ontology versions" .
+<https://w3id.orgdef/och#RemoveSymmetricObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of Symetric Object Property" .
+# 
+<https://w3id.orgdef/och#RemoveTransitiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the removal of a transitive object property." .
+<https://w3id.orgdef/och#RemoveTransitiveObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Removal of a transitive object property" .
+# 
+<https://w3id.orgdef/och#SymmetricObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a symmetric object property property." .
+<https://w3id.orgdef/och#SymmetricObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of the symmetric object property property" .
+# 
+<https://w3id.orgdef/och#TransitiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that describes the change of a transitive object property property." .
+<https://w3id.orgdef/och#TransitiveObjectPropertyChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change of the transitive object property property" .
+# 
+<https://w3id.orgdef/och#hasRelatedEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "EStablishes an equivalence between ontological terms" .
+<https://w3id.orgdef/och#hasRelatedEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Has Related Entity" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
