@@ -1,0 +1,3230 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/def/och", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/ns/dcat", "http://xmlns.com/foaf/0.1" ],
+    "title" : {
+      "undefined" : "OWL Change Ontology"
+    },
+    "iri" : "https://w3id.org/def/och#",
+    "version" : "2.0.0",
+    "author" : [ "Romana Pernisch", "Diego Conde-Herreros", "Oscar Corcho", "David Chaves-Fraga", "María Poveda-Villalón" ],
+    "description" : {
+      "undefined" : "An ontology for describing changes between OWL ontology versions"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Romana Pernisch",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Diego Conde-Herreros",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "David Chaves-Fraga",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Oscar Corcho",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "María Poveda-Villalón",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Diego Conde Herreros",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2024-04-17",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "och",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2024-12-19",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/och#",
+        "type" : "iri"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "undefined",
+        "value" : "As any other engineering product, ontologies evolve during their lifecycle due to several reasons such as accommodating new requirements or fixing issues. To keep track of these changes, several tools have defined ad-hoc formalisms to define and manage them. However, some of them are not based on standard interoperable languages such as RDF, and the RDF-based ones cover a limited set of changes. In this paper, we present the OWL Change Ontology (OCH), an ontology to capture changes in ontologies. Developed following the LOT methodology, OCH provides a declarative framework for documenting ontology changelogs. With this approach, ontologies gain a valuable resource to improve their lifecycle management, while associated semantic products such as declarative mappings (e.g., RML) and validation shapes (e.g., SHACL) can take advantage of standardized and machine-readable changelogs to streamline their schema evolution.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "Conde-Herreros, D. Pernisch, R., Poveda-Villalón, M., Corcho, O., & Chaves-Fraga, D. (2024). OCH: The OWL Change Ontology",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "2.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "OWL Change Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/def/och#AddDataProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesAddDataProperty",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AddDataProperty",
+      "undefined" : "Add Data Property"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of a data property"
+    },
+    "id" : "0",
+    "superClasses" : [ "1", "2" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#RenameEntity",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RenameEntity",
+      "undefined" : "Rename Entity"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the renaming of an OWL Entity within an ontology, this is whenever the semantics do not change and only the URI is modified"
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#ClassChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesClassChange",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ClassChange",
+      "undefined" : "Class Change"
+    },
+    "subClasses" : [ "13", "14", "15" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the change of a given class within the ontology"
+    },
+    "id" : "12",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddEquivalentClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentClass",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AddEquivalentClass",
+      "undefined" : "Add Equivalent Class"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of an equivalent class relation between two classes"
+    },
+    "id" : "22",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveCharacteristic",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RemoveCharacteristic",
+      "undefined" : "Remove Characteristic"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of a property characteristic"
+    },
+    "id" : "21",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveProperty",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RemoveProperty",
+      "undefined" : "Remove Property"
+    },
+    "subClasses" : [ "34", "35" ],
+    "comment" : {
+      "undefined" : "The class that represents the removal of a property to an ontology"
+    },
+    "id" : "32",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#IndividualRelationChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndividualRelationChange",
+      "undefined" : "Individual Relation Change"
+    },
+    "subClasses" : [ "41", "42" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the change of a relationship between two individuals within the ontology"
+    },
+    "id" : "39",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#DataPropertyChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesDataPropertyChange",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataPropertyChange",
+      "undefined" : "Data Property Change"
+    },
+    "subClasses" : [ "0", "35" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the change of a data property"
+    },
+    "id" : "2",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#ObjectPropertyChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesObjectPropertyChange",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ObjectPropertyChange",
+      "undefined" : "Object Property Change"
+    },
+    "subClasses" : [ "34", "44" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the change of an object property"
+    },
+    "id" : "62",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveSubPropertyOf",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveSubPropertyOf",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RemoveSubPropertyOf",
+      "undefined" : "Remove Sub Property Of"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of the subProperty relation between two properties"
+    },
+    "id" : "63",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveEquivalentClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveEquivalentClass",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RemoveEquivalentClass",
+      "undefined" : "Remove Equivalent Class"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of the equivalent class relation between two classes"
+    },
+    "id" : "48",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#RangeChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RangeChange",
+      "undefined" : "Range Change"
+    },
+    "subClasses" : [ "54", "67" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the change of the range of a given property"
+    },
+    "id" : "66",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddDisjointProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AddDisjointProperty",
+      "undefined" : "Add Disjoint Property"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of a Disjoint Property relation between two properties"
+    },
+    "id" : "71",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddRelationToIndividual",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AddRelationToIndividual",
+      "undefined" : "Add Relation to Individual"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of a relation between two individuals"
+    },
+    "id" : "41",
+    "superClasses" : [ "39" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddIndividual",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AddIndividual",
+      "undefined" : "Add Individual"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of an individual to the ontology"
+    },
+    "id" : "75",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddDomain",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesAddDomain",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AddDomain",
+      "undefined" : "Add Domain"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of the domain to a given property"
+    },
+    "id" : "37",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Ontology",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveObjectProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveObjectProperty",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RemoveObjectProperty",
+      "undefined" : "Remove Object Property"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of an object property"
+    },
+    "id" : "34",
+    "superClasses" : [ "62", "32" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddSubClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AddSubClass",
+      "undefined" : "Add Sub Class"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of a subClass relation between two classes"
+    },
+    "id" : "78",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddEquivalentProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AddEquivalentProperty",
+      "undefined" : "Add Equivalent Property"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of an equivalent property relation between two properties"
+    },
+    "id" : "51",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AddClass",
+      "undefined" : "Add Class"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of a class"
+    },
+    "id" : "13",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#PropertyCharacteristic",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PropertyCharacteristic",
+      "en" : "Property Characteristic"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/och#FunctionalProperty",
+      "baseIri" : "https://w3id.org/def/och",
+      "comment" : {
+        "en" : "The term that describes Functional Properties."
+      },
+      "labels" : {
+        "IRI-based" : "FunctionalProperty",
+        "en" : "Functional Property"
+      }
+    } ],
+    "subClasses" : [ "84" ],
+    "comment" : {
+      "en" : "The top term that encompases all characteristics"
+    },
+    "id" : "83"
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveRange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveRange",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RemoveRange",
+      "undefined" : "Remove Range"
+    },
+    "subClasses" : [ "92", "18" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of the range of a given property"
+    },
+    "id" : "67",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#ChangeSet",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChangeSet",
+      "undefined" : "Change Set"
+    },
+    "comment" : {
+      "undefined" : "The class for representing sets of changes, it can be used for representing complex changes made out of atomic changes."
+    },
+    "id" : "93",
+    "superClasses" : [ "94" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#PropertyChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PropertyChange",
+      "undefined" : "Property Change"
+    },
+    "subClasses" : [ "66", "76", "62", "1", "31", "96", "32", "2" ],
+    "comment" : {
+      "undefined" : "The class that represents changes to properties"
+    },
+    "id" : "33",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#EquivalentPropertyChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EquivalentPropertyChange",
+      "undefined" : "Equivalent Property Change"
+    },
+    "subClasses" : [ "51", "4" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the change of an equivalent property relation between two properties"
+    },
+    "id" : "82",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#SubClassChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubClassChange",
+      "undefined" : "Sub Class Change"
+    },
+    "subClasses" : [ "78", "106" ],
+    "comment" : {
+      "undefined" : "The class that represents changes to a subclass relationship between two classes."
+    },
+    "id" : "79",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#ObjectPropertyCharacteristic",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectPropertyCharacteristic",
+      "en" : "Object Property Characteristic"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/def/och#IrreflexiveProperty",
+      "baseIri" : "https://w3id.org/def/och",
+      "comment" : {
+        "en" : "The term that describes irreflexive properties."
+      },
+      "labels" : {
+        "IRI-based" : "IrreflexiveProperty",
+        "en" : "Irreflexive Property"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/och#ReflexiveProperty",
+      "baseIri" : "https://w3id.org/def/och",
+      "comment" : {
+        "en" : "The term that describes reflexive properties."
+      },
+      "labels" : {
+        "IRI-based" : "ReflexiveProperty",
+        "en" : "Reflexive Property"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/och#TransitiveProperty",
+      "baseIri" : "https://w3id.org/def/och",
+      "comment" : {
+        "en" : "The term that describes transitive properties."
+      },
+      "labels" : {
+        "IRI-based" : "TransitiveProperty",
+        "en" : "Transitive Property"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/och#InverseFunctionalProperty",
+      "baseIri" : "https://w3id.org/def/och",
+      "comment" : {
+        "en" : "The term that describes the inverse functional properties."
+      },
+      "labels" : {
+        "IRI-based" : "InverseFunctionalProperty",
+        "en" : "Inverse Functional Property"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/och#AsymmetricProperty",
+      "baseIri" : "https://w3id.org/def/och",
+      "comment" : {
+        "en" : "The term that describes asymmetric properties."
+      },
+      "labels" : {
+        "IRI-based" : "AsymmetricProperty",
+        "en" : "Asymmetric Property"
+      }
+    }, {
+      "iri" : "https://w3id.org/def/och#SymmetricProperty",
+      "baseIri" : "https://w3id.org/def/och",
+      "comment" : {
+        "en" : "The term that describes symmetric properties."
+      },
+      "labels" : {
+        "IRI-based" : "SymmetricProperty",
+        "en" : "Symmetric Property"
+      }
+    } ],
+    "comment" : {
+      "en" : "The term that describes those property characteristics that are exclusive to object properties"
+    },
+    "id" : "84",
+    "superClasses" : [ "83" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#InversePropertyChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InversePropertyChange",
+      "undefined" : "Inverse Property Change"
+    },
+    "subClasses" : [ "98", "116" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the change of an inverse prop7 relation between two properties"
+    },
+    "id" : "117",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#IndividualChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndividualChange",
+      "undefined" : "Individual Change"
+    },
+    "subClasses" : [ "39", "75", "28" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the change of a given individual within the ontology"
+    },
+    "id" : "40",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddCharacteristic",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AddCharacteristic",
+      "undefined" : "Add Characteristic"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to addition of a characteristic to a property"
+    },
+    "id" : "118",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddObjectProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesAddObjectProperty",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AddObjectProperty",
+      "undefined" : "Add Object Property"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of an object property"
+    },
+    "id" : "44",
+    "superClasses" : [ "62", "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#NamedIndividual",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NamedIndividual"
+    },
+    "attributes" : [ "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveInverseProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RemoveInverseProperty",
+      "undefined" : "Remove Inverse Property"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of the inverse property relation between two properties"
+    },
+    "id" : "116",
+    "superClasses" : [ "117" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveDomain",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveDomain",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RemoveDomain",
+      "undefined" : "Remove Domain"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of the domain of a given property"
+    },
+    "id" : "81",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveIndividual",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RemoveIndividual",
+      "undefined" : "Remove Individual"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of an individual to the ontology"
+    },
+    "id" : "28",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveRangeObjectProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RemoveRangeObjectProperty",
+      "undefined" : "Remove Range Object Property"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of the range off an object property"
+    },
+    "id" : "92",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesAddProperty",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AddProperty",
+      "undefined" : "Add Property"
+    },
+    "subClasses" : [ "0", "44" ],
+    "comment" : {
+      "undefined" : "The class that represents the addition of a property to an ontology"
+    },
+    "id" : "1",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#DeprecateEntity",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeprecateEntity",
+      "undefined" : "Deprecate Entity"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the deprecation of an OWL Entity"
+    },
+    "id" : "138",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddSubPropertyOf",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesAddSubPropertyOf",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AddSubPropertyOf",
+      "undefined" : "Add Sub Property Of"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of a subProperty relation between two properties"
+    },
+    "id" : "149",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#Changelog",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Changelog",
+      "undefined" : "Changelog"
+    },
+    "subClasses" : [ "93" ],
+    "comment" : {
+      "undefined" : "The set of change operations between ontology versions"
+    },
+    "id" : "94",
+    "superClasses" : [ "152" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddRange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesAddRange",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AddRange",
+      "undefined" : "Add Range"
+    },
+    "subClasses" : [ "105", "91" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of the range to a given property"
+    },
+    "id" : "54",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveDataProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveDataProperty",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RemoveDataProperty",
+      "undefined" : "Remove Data Property"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of a data property"
+    },
+    "id" : "35",
+    "superClasses" : [ "32", "2" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#DomainChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomainChange",
+      "undefined" : "Domain Change"
+    },
+    "subClasses" : [ "81", "37" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the change of the domain of a given property"
+    },
+    "id" : "76",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveRangeDataProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RemoveRangeDataProperty",
+      "undefined" : "Remove Range Data Property"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of the range of a data property"
+    },
+    "id" : "18",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#OntologicalChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesOntologyChange",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OntologicalChange",
+      "undefined" : "Ontological Change"
+    },
+    "subClasses" : [ "8" ],
+    "comment" : {
+      "undefined" : "The class that represents all changes within an ontology being term-level, structural level, or higher level"
+    },
+    "id" : "56"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Class",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Class"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/def/och#PropertyCharacteristicChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PropertyCharacteristicChange",
+      "undefined" : "Property Characteristic Change"
+    },
+    "subClasses" : [ "21", "118" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the change of a property characteristic."
+    },
+    "id" : "31",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#PropertyRelationChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PropertyRelationChange",
+      "undefined" : "Property Relation Change"
+    },
+    "subClasses" : [ "72", "117", "64", "82" ],
+    "comment" : {
+      "undefined" : "The class that represents changes to property relations"
+    },
+    "id" : "96",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#RevokeDeprecate",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RevokeDeprecate",
+      "undefined" : "Revoke Deprecate"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the revokal of an ontological term"
+    },
+    "id" : "61",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddRangeObjectProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AddRangeObjectProperty",
+      "undefined" : "Add Range Object Property"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of the range of a given object property"
+    },
+    "id" : "105",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#EquivalentClassChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "annotations" : {
+      "wasDerivedFrom" : [ {
+        "identifier" : "wasDerivedFrom",
+        "language" : "undefined",
+        "value" : "http://omv.ontoware.org/2007/07/OWLChangesEquivalentClassChange",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EquivalentClassChange",
+      "undefined" : "Equivalent Class Change"
+    },
+    "subClasses" : [ "22", "48" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the change of an equivalent class relation between two classes"
+    },
+    "id" : "23",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#SubPropertyChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubPropertyChange",
+      "undefined" : "Sub Property Change"
+    },
+    "subClasses" : [ "63", "149" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the change of the subProperty relation between to properties"
+    },
+    "id" : "64",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Datatype",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Datatype"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveSubClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RemoveSubClass",
+      "undefined" : "Remove Sub Class"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of the subClass relation between two classes"
+    },
+    "id" : "106",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#DatatypeProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DatatypeProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "140"
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RemoveClass",
+      "undefined" : "Remove Class"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of a class"
+    },
+    "id" : "15",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#DisjointPropertyChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DisjointPropertyChange",
+      "undefined" : "Disjoint Property Change"
+    },
+    "subClasses" : [ "71", "59" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the change of a Disjoint Property"
+    },
+    "id" : "72",
+    "superClasses" : [ "96" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddInverseProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AddInverseProperty",
+      "undefined" : "Add Inverse Property"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of an inverse property relation between two properties"
+    },
+    "id" : "98",
+    "superClasses" : [ "117" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#EntityChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EntityChange",
+      "undefined" : "Entity Change"
+    },
+    "subClasses" : [ "12", "40", "33", "138", "7", "61" ],
+    "comment" : {
+      "undefined" : "The class that represents all changes to OWL Entities: classes, properties, and individuals"
+    },
+    "id" : "8",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveRelationFromIndividual",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RemoveRelationFromIndividual",
+      "undefined" : "Remove Relation from Individuals"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of a relation between two individuals"
+    },
+    "id" : "42",
+    "superClasses" : [ "39" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#AddRangeDataProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AddRangeDataProperty",
+      "undefined" : "Add Range Data Property"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the addition of the range of a given data property"
+    },
+    "id" : "91",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#ObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "69",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveEquivalentProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RemoveEquivalentProperty",
+      "undefined" : "Remove Equivalent Property"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of the equivalent property relation between two properties"
+    },
+    "id" : "4",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveRelationtoIndividual",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RemoveRelationtoIndividual"
+    },
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Dataset",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset"
+    },
+    "subClasses" : [ "94" ],
+    "attributes" : [ "external" ],
+    "id" : "152"
+  }, {
+    "iri" : "https://w3id.org/def/och#ClassRelationChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ClassRelationChange",
+      "undefined" : "Class Relation Change"
+    },
+    "subClasses" : [ "79", "23" ],
+    "comment" : {
+      "undefined" : "The change operation corresponding to the change of the relationship between two classes"
+    },
+    "id" : "14",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/def/och#RemoveDisjointProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RemoveDisjointProperty",
+      "undefined" : "Remove Disjoint Property"
+    },
+    "comment" : {
+      "undefined" : "The change operation corresponding to the removal of a Disjoint Property relation between two properties"
+    },
+    "id" : "59",
+    "superClasses" : [ "72" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "168",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "180",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "186",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "187",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "203",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "204",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "205",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "206",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/def/och#targetRemoveEquivalentProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "targetRemoveEquivalentProperty",
+      "undefined" : "target RemoveEquivalentProperty"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The object of the equivalent class relation being removed"
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetRemoveRelationToIndividual",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "targetRemoveRelationToIndividual",
+      "undefined" : "target remove relation to individuals"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "The individual that is the object of the relation being removed in a change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/def/och#renamedEntityName",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "renamedEntityName",
+      "undefined" : "renamed entity name"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The new name the OWL Entity is being renamed to"
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/def/och#removedDataRange",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "removedDataRange",
+      "undefined" : "removed data range"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "The range that is being removed from a Datatype Property"
+    },
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/def/och#removedCharacteristicFromProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "removedCharacteristicFromProperty",
+      "undefined" : "property RemoveCharacteristic"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "The property a characteristicic is removed from"
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/def/och#addedClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "addedClass",
+      "undefined" : "added class"
+    },
+    "superproperty" : [ "26" ],
+    "domain" : "13",
+    "comment" : {
+      "undefined" : "The class being added in an AddClass operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/def/och#removedIndividual",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "removedIndividual",
+      "undefined" : "removed individual"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "28",
+    "comment" : {
+      "undefined" : "The individual that is being removed in an ontology"
+    },
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/def/och#addedDomainToProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "addedDomainToProperty",
+      "undefined" : "added Domain for Property"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "The property a domain is added to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/def/och#removedProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "removedProperty",
+      "undefined" : "removed Property"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "32",
+    "comment" : {
+      "undefined" : "The property being removed from the ontology"
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/def/och#addedObjectProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "addedObjectProperty",
+      "undefined" : "added object property"
+    },
+    "superproperty" : [ "26" ],
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "The object property being added to the ontology"
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/def/och#addedProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "addedProperty",
+      "undefined" : "added Property"
+    },
+    "superproperty" : [ "26" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The property being added to the ontology"
+    },
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceRemoveEquivalentClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "sourceRemoveEquivalentClass",
+      "undefined" : "source RemoveEquivalentClass"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "The subject of the equivalent class relation being removed"
+    },
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceAddEquivalentProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "sourceAddEquivalentProperty",
+      "undefined" : "source AddEquivalentProperty"
+    },
+    "superproperty" : [ "52" ],
+    "domain" : "51",
+    "comment" : {
+      "undefined" : "The subject of the equivalent property relation being added"
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/def/och#addedRangeToProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "addedRangeToProperty",
+      "undefined" : "add range for property"
+    },
+    "domain" : "54",
+    "comment" : {
+      "undefined" : "The property to which the change is being added."
+    },
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/def/och#issuedBy",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "issuedBy",
+      "undefined" : "issued by"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "The issuedBy property indicates what Agent has issued a change."
+    },
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetRemoveDisjointProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "targetRemoveDisjointProperty",
+      "undefined" : "target RemoveDisjointProperty"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "59",
+    "comment" : {
+      "undefined" : "The object of the disjoint property relation being removed"
+    },
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/def/och#undeprecatedElement",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "undeprecatedElement",
+      "undefined" : "undeprecated element"
+    },
+    "domain" : "61",
+    "comment" : {
+      "undefined" : "The ontological term that is being undeprecated"
+    },
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceAddEquivalentClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "sourceAddEquivalentClass",
+      "undefined" : "source AddEquivalentClass"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "The subject of the equivalent class relation being added"
+    },
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://purl.org/dc/terms/issued",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "issued"
+    },
+    "domain" : "69",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://w3id.org/def/och#relatedChange",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "relatedChange",
+      "undefined" : "related change"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "The property that indicates an unspecified relation between two Ontology Changes"
+    },
+    "attributes" : [ "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://w3id.org/def/och#removedObjectProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "removedObjectProperty",
+      "undefined" : "removed object property"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "34",
+    "comment" : {
+      "undefined" : "The object property being removed from an ontology"
+    },
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/def/och#removedDomainFromProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "removedDomainFromProperty",
+      "undefined" : "removed Domain for Property"
+    },
+    "domain" : "81",
+    "comment" : {
+      "undefined" : "The property a domain is removed from"
+    },
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "targetClass",
+      "undefined" : "target class"
+    },
+    "domain" : "14",
+    "subproperty" : [ "86", "87", "88", "89" ],
+    "comment" : {
+      "undefined" : "The class that is the object of the class relations being changed in a change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://w3id.org/def/och#addedDataRange",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "addedDataRange",
+      "undefined" : "added data range"
+    },
+    "domain" : "91",
+    "comment" : {
+      "undefined" : "The range being added to a data property"
+    },
+    "attributes" : [ "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://w3id.org/def/och#addedIndividual",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "addedIndividual",
+      "undefined" : "added individual"
+    },
+    "superproperty" : [ "26" ],
+    "domain" : "75",
+    "comment" : {
+      "undefined" : "The individual being added in an AddIndividual operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceAddInverseProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "sourceAddInverseProperty",
+      "undefined" : "source AddInverseProperty"
+    },
+    "superproperty" : [ "52" ],
+    "domain" : "98",
+    "comment" : {
+      "undefined" : "The subject of the inverse property relation being added"
+    },
+    "attributes" : [ "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceIndividual",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "sourceIndividual",
+      "undefined" : "source individual"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "The individual that is the subject of the relation being changed in a change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "https://w3id.org/def/och#removedCharacteristic",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "removedCharacteristic",
+      "undefined" : "removed characteristic"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "The characteristic that is being removed from a property"
+    },
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetAddEquivalentClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "targetAddEquivalentClass",
+      "undefined" : "target AddEquivalentClass"
+    },
+    "superproperty" : [ "85" ],
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "The object of the equivalent class relation being added"
+    },
+    "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://w3id.org/def/och#removedEntity",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "removedEntity",
+      "undefined" : "removed entity"
+    },
+    "domain" : "8",
+    "subproperty" : [ "101", "74", "102", "27", "38" ],
+    "comment" : {
+      "undefined" : "The entity that is being removed in a change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceRemoveRelationToIndividual",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "sourceRemoveRelationToIndividual",
+      "undefined" : "source remove relation to individuals"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "The individual that is the subject of the relation being removed in a change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "https://w3id.org/def/och#addedObjectRange",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "addedObjectRange",
+      "undefined" : "added object range"
+    },
+    "domain" : "105",
+    "comment" : {
+      "undefined" : "The range that is being added to the object property"
+    },
+    "attributes" : [ "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceRemoveSubClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "sourceRemoveSubClass",
+      "undefined" : "source RemoveSubClass"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "106",
+    "comment" : {
+      "undefined" : "The subject of the disjoint property relation being added"
+    },
+    "attributes" : [ "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://w3id.org/def/och#removedRelationFromIndividual",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "removedRelationFromIndividual",
+      "undefined" : "removed relation from individuals"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "The relation being removed from an individual in a change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetRemoveEquivalentClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "targetRemoveEquivalentClass",
+      "undefined" : "target RemoveEquivalentClass"
+    },
+    "superproperty" : [ "85" ],
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "The object of the equivalent class relation being removed"
+    },
+    "attributes" : [ "object" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "targetProperty",
+      "undefined" : "target Property"
+    },
+    "domain" : "96",
+    "subproperty" : [ "109", "110", "58", "111", "112", "3", "113", "114" ],
+    "comment" : {
+      "undefined" : "The property that is the object of the property relations being changed in a change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceRemoveInverseProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "sourceRemoveInverseProperty",
+      "undefined" : "source RemoveInverseProperty"
+    },
+    "superproperty" : [ "52" ],
+    "domain" : "116",
+    "comment" : {
+      "undefined" : "The subject of the inverse property relation being removed"
+    },
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "https://w3id.org/def/och#removedClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "removedClass",
+      "undefined" : "removed class"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The class that is being removed in an ontology"
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "range" : "23",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "sourceProperty",
+      "undefined" : "source property"
+    },
+    "domain" : "96",
+    "subproperty" : [ "115", "120", "50", "121", "122", "123", "97", "124" ],
+    "comment" : {
+      "undefined" : "The property that is the subject of the property relations being changed in a change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceAddSubClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "sourceAddSubClass",
+      "undefined" : "source AddSubClass"
+    },
+    "superproperty" : [ "49" ],
+    "domain" : "78",
+    "comment" : {
+      "undefined" : "The subject of the subClass relation being added"
+    },
+    "attributes" : [ "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "https://w3id.org/def/och#addedCharacteristic",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "addedCharacteristic",
+      "undefined" : "added characteristic"
+    },
+    "domain" : "118",
+    "comment" : {
+      "undefined" : "The characteristic being added to a given property"
+    },
+    "attributes" : [ "object" ],
+    "id" : "126"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetAddEquivalentProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "targetAddEquivalentProperty",
+      "undefined" : "target AddEquivalentProperty"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "51",
+    "comment" : {
+      "undefined" : "The object of the equivalent property relation being added"
+    },
+    "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceAddDisjointProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "sourceAddDisjointProperty",
+      "undefined" : "source AddDisjointProperty"
+    },
+    "superproperty" : [ "52" ],
+    "domain" : "71",
+    "comment" : {
+      "undefined" : "The subject of the disjoint property relation being added"
+    },
+    "attributes" : [ "object" ],
+    "id" : "120"
+  }, {
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "96",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "range" : "96",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "31",
+    "domain" : "118",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "96",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "96",
+    "domain" : "117",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "66",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "56",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "31",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "66",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "iri" : "https://w3id.org/def/och#deprecatedEntity",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "deprecatedEntity",
+      "undefined" : "deprecated entity"
+    },
+    "domain" : "138",
+    "comment" : {
+      "undefined" : "The OWL Entity that is being deprecated"
+    },
+    "attributes" : [ "object" ],
+    "id" : "137"
+  }, {
+    "iri" : "https://w3id.org/def/och#addedDomain",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "addedDomain",
+      "undefined" : "added domain"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "The added domain of an Add Domain change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://w3id.org/def/och#removedDataProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "140",
+    "label" : {
+      "IRI-based" : "removedDataProperty",
+      "undefined" : "removed data property"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "35",
+    "comment" : {
+      "undefined" : "The data property that is being removed in an ontology"
+    },
+    "attributes" : [ "object" ],
+    "id" : "101"
+  }, {
+    "range" : "62",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "range" : "2",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "142"
+  }, {
+    "range" : "62",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "range" : "76",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "54",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "2",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "76",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "39",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "range" : "54",
+    "domain" : "105",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceAddSubProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "sourceAddSubProperty",
+      "undefined" : "source AddSubProperty"
+    },
+    "superproperty" : [ "52" ],
+    "domain" : "149",
+    "comment" : {
+      "undefined" : "The subject of the subProperty relation being added"
+    },
+    "attributes" : [ "object" ],
+    "id" : "124"
+  }, {
+    "range" : "39",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "range" : "82",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "range" : "33",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetRemoveSubProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "targetRemoveSubProperty",
+      "undefined" : "target RemoveSubProperty"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "63",
+    "comment" : {
+      "undefined" : "The object of the subProperty relation being removed"
+    },
+    "attributes" : [ "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetAddSubClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "targetAddSubClass",
+      "undefined" : "target AddSubClass"
+    },
+    "superproperty" : [ "85" ],
+    "domain" : "78",
+    "comment" : {
+      "undefined" : "The object of the subClass relation being added"
+    },
+    "attributes" : [ "object" ],
+    "id" : "86"
+  }, {
+    "range" : "33",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "33",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "range" : "33",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "33",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "range" : "67",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "range" : "67",
+    "domain" : "92",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "33",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "range" : "33",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
+  }, {
+    "range" : "8",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "iri" : "https://w3id.org/def/och#addedEntity",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "addedEntity",
+      "undefined" : "added entity"
+    },
+    "domain" : "8",
+    "subproperty" : [ "95", "24", "165", "43", "46" ],
+    "comment" : {
+      "undefined" : "The entity that is being added in a change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "iri" : "https://w3id.org/def/och#fromChangelog",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "fromChangelog",
+      "undefined" : "from changelog"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "The fromChangelog property indicates that a given change belongs to a Changelog"
+    },
+    "attributes" : [ "object" ],
+    "id" : "167"
+  }, {
+    "iri" : "https://w3id.org/def/och#removedObjectRange",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "removedObjectRange",
+      "undefined" : "removed object range"
+    },
+    "domain" : "92",
+    "comment" : {
+      "undefined" : "The range being removed from an object property"
+    },
+    "attributes" : [ "object" ],
+    "id" : "168"
+  }, {
+    "range" : "8",
+    "domain" : "138",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "8",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "72",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "iri" : "https://w3id.org/def/och#prevVersion",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "prevVersion",
+      "undefined" : "previous version"
+    },
+    "domain" : "94",
+    "comment" : {
+      "undefined" : "The former version of the ontology that is being outdated"
+    },
+    "attributes" : [ "object" ],
+    "id" : "172"
+  }, {
+    "range" : "8",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "8",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "64",
+    "domain" : "149",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "range" : "64",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "72",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "83",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceAddRelationToIndividual",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "sourceAddRelationToIndividual",
+      "undefined" : "source add relation to individuals"
+    },
+    "domain" : "41",
+    "comment" : {
+      "undefined" : "The individual that is the subject of the relation being added in a change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "179"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceRemoveSubProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "sourceRemoveSubProperty",
+      "undefined" : "source RemoveSubProperty"
+    },
+    "superproperty" : [ "52" ],
+    "domain" : "63",
+    "comment" : {
+      "undefined" : "The subject of the subProperty relation being removed"
+    },
+    "attributes" : [ "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetResource",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "targetResource",
+      "undefined" : "target individual"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "The individual that is the object of the relation being changed in a change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "180"
+  }, {
+    "range" : "40",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "range" : "117",
+    "domain" : "116",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "182"
+  }, {
+    "range" : "40",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "183"
+  }, {
+    "iri" : "https://w3id.org/def/och#outdatedEntityName",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "outdatedEntityName",
+      "undefined" : "outdated entity name"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "The former name of the OWL Entity that has been renamed"
+    },
+    "attributes" : [ "object" ],
+    "id" : "184"
+  }, {
+    "range" : "40",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "185"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceRemoveEquivalentProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "sourceRemoveEquivalentProperty",
+      "undefined" : "source RemoveEquivalentProperty"
+    },
+    "superproperty" : [ "52" ],
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The subject of the equivalent property relation being removed"
+    },
+    "attributes" : [ "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetAddInverseProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "targetAddInverseProperty",
+      "undefined" : "target AddInverseProperty"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "98",
+    "comment" : {
+      "undefined" : "The object of the inverse property relation being added"
+    },
+    "attributes" : [ "object" ],
+    "id" : "114"
+  }, {
+    "iri" : "https://w3id.org/def/och#removedDomain",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "removedDomain",
+      "undefined" : "removed domain"
+    },
+    "domain" : "81",
+    "comment" : {
+      "undefined" : "The domain that is being removed from a property"
+    },
+    "attributes" : [ "object" ],
+    "id" : "186"
+  }, {
+    "iri" : "https://w3id.org/def/och#addedCharacteristicToProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "addedCharacteristicToProperty",
+      "undefined" : "add Characteristic to property"
+    },
+    "domain" : "118",
+    "comment" : {
+      "undefined" : "The property a characteristic is added to"
+    },
+    "attributes" : [ "object" ],
+    "id" : "187"
+  }, {
+    "range" : "14",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "14",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetRemoveInverseProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "targetRemoveInverseProperty",
+      "undefined" : "target RemoveInverseProperty"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "116",
+    "comment" : {
+      "undefined" : "The object of the inverse property relation being removed"
+    },
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "range" : "117",
+    "domain" : "98",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "79",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "82",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "192"
+  }, {
+    "range" : "152",
+    "domain" : "94",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "79",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "194"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetRemoveSubClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "targetRemoveSubClass",
+      "undefined" : "target RemovesubClass"
+    },
+    "superproperty" : [ "85" ],
+    "domain" : "106",
+    "comment" : {
+      "undefined" : "The object of the subClass relation being removed"
+    },
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "range" : "12",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "iri" : "https://w3id.org/def/och#addedDataProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "140",
+    "label" : {
+      "IRI-based" : "addedDataProperty",
+      "undefined" : "added data property"
+    },
+    "superproperty" : [ "26" ],
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "The data property that is being added to the ontology"
+    },
+    "attributes" : [ "object" ],
+    "id" : "165"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetAddDisjointProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "targetAddDisjointProperty",
+      "undefined" : "target AddDisjointProperty"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "71",
+    "comment" : {
+      "undefined" : "The object of the disjoint property relation being added"
+    },
+    "attributes" : [ "object" ],
+    "id" : "112"
+  }, {
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "196"
+  }, {
+    "range" : "12",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "range" : "1",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "32",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "range" : "32",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "201"
+  }, {
+    "range" : "94",
+    "domain" : "93",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceRemoveDisjointProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "sourceRemoveDisjointProperty",
+      "undefined" : "source RemoveDisjointProperty"
+    },
+    "superproperty" : [ "52" ],
+    "domain" : "59",
+    "comment" : {
+      "undefined" : "The subject of the disjoint property relation being removed"
+    },
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://w3id.org/def/och#addedRelationToIndividual",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "addedRelationToIndividual",
+      "undefined" : "property add relation to individuals"
+    },
+    "domain" : "41",
+    "comment" : {
+      "undefined" : "The individual that is the relation being added in a change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "203"
+  }, {
+    "iri" : "https://w3id.org/def/och#newVersion",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "newVersion",
+      "undefined" : "new version"
+    },
+    "domain" : "94",
+    "comment" : {
+      "undefined" : "The new version the ontology is updated to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "204"
+  }, {
+    "iri" : "https://w3id.org/def/och#sourceClass",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "sourceClass",
+      "undefined" : "source class"
+    },
+    "domain" : "14",
+    "subproperty" : [ "47", "107", "65", "125" ],
+    "comment" : {
+      "undefined" : "The class that is the subject of the class relations being changed in a change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/def/och#removedRangeFromProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "removedRangeFromProperty",
+      "undefined" : "removed range for property"
+    },
+    "domain" : "67",
+    "comment" : {
+      "undefined" : "The removed range for a property"
+    },
+    "attributes" : [ "object" ],
+    "id" : "205"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetAddSubProperty",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "targetAddSubProperty",
+      "undefined" : "target AddSubProperty"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "149",
+    "comment" : {
+      "undefined" : "The object of the subProperty relation being added"
+    },
+    "attributes" : [ "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "https://w3id.org/def/och#targetAddRelationToIndividual",
+    "baseIri" : "https://w3id.org/def/och",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "targetAddRelationToIndividual",
+      "undefined" : "target add relation to individuals"
+    },
+    "domain" : "41",
+    "comment" : {
+      "undefined" : "The individual that is the object of the relation being added in a change operation"
+    },
+    "attributes" : [ "object" ],
+    "id" : "206"
+  } ]
+}

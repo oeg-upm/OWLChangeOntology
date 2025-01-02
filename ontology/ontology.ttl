@@ -9,7 +9,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix omv: <http://omv.ontoware.org/2007/07/OWLChanges>.
 @prefix prov: <http://www.w3.org/ns/prov#>.
 
@@ -81,9 +80,6 @@ och: a owl:Ontology ;
     owl:versionInfo "2.0.0"@en;
     mod:createdWith <https://chowlk.linkeddata.es/> .
 
-############################################################
-#### SKOS for the representation ###
-###########################################################
 och:PropertyCharacteristic a owl:Class;
         rdfs:label "Property Characteristic"@en;
         rdfs:comment "The top term that encompases all characteristics"@en.
