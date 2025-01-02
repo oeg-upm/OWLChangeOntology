@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>OWLChangeOntology</title>
+    <link rel="stylesheet" href="vocab/themes/blue/style.css" type="text/css" media="print, projection, screen" />
+    <script src="vocab/js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="vocab/js/bootstrap.js"></script>
+    <script type="text/javascript" id="js">
+	    $(document).ready(function() 
+		    { 
+		    	$("#tablesorter-demo").tablesorter(); 
+		    	$("#tablesorter-demo").stickyTableHeaders(); 
+		    	$('[data-toggle="tooltip"]').tooltip(); 
+		    } 
+	    ); 
+    </script>
+
+    <!-- Le styles -->
+    <link href="vocab/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="vocab/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+  </head>
+
+  <body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Vocabularies</a></li>
+        <li><a href="report.html">Vocabulary report</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+ </div>
+    <div class="container">
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>OWLChangeOntology landing page</h1>
+        <p class="lead">Here you can find the list of vocabularies that have been found on OWLChangeOntology.</p>
+      </div>
+      <hr>
+<div class="row"> 
+</div>
+<br>
+<table id="tablesorter-demo" class="tablesorter table table-hover table-responsive">
+<thead>
+<tr>
+<th class="col-md-2">Ontology</th>
+<th class="col-md-1">Serialization</th>
+<th class="col-md-2">License</th>
+<th class="col-md-1">Language</th>
+<th class="col-md-6">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr id="tr1">
+<td><a href = "https://w3id.org/def/och#" target="_blank">OWL Change Ontology</a> </td><td>
+<a href="ontologies/ontology.ttl"><span class="label label-primary">TURTLE</span></a>
+</td>
+<td><a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank"> <span class="label label-success">https://creativecommons.org/l...</span> </a></td>
+<td><a href="http://lexvo.org/id/iso639-3/eng" target="_blank"> <span class="label label-primary">en</span></a> </td>
+<td>
+<p id="collapse1" data-toggle="collapse" >
+As any other engineering product, ontologies evolve during their lifecycle due to several reasons such as accommodating new requirements or fixing ... <a class="more1">See more</a>
+</p>
+<script>
+$('#collapse1').click(function () {
+if($('a').hasClass('more1'))
+{
+$('#collapse1').html('As any other engineering product, ontologies evolve during their lifecycle due to several reasons such as accommodating new requirements or fixing issues. To keep track of these changes, several tools have defined ad-hoc formalisms to define and manage them. However, some of them are not based on standard interoperable languages such as RDF, and the RDF-based ones cover a limited set of changes. In this paper, we present the OWL Change Ontology (OCH), an ontology to capture changes in ontologies. Developed following the LOT methodology, OCH provides a declarative framework for documenting ontology changelogs. With this approach, ontologies gain a valuable resource to improve their lifecycle management, while associated semantic products such as declarative mappings (e.g., RML) and validation shapes (e.g., SHACL) can take advantage of standardized and machine-readable changelogs to streamline their schema evolution.  <a class="less1">See less<a>'); 
+}
+else
+{      
+$('#collapse1').html('As any other engineering product, ontologies evolve during their lifecycle due to several reasons such as accommodating new requirements or fixing ...  <a  class="more1">See more</a>'); 
+}
+}); 
+</script>
+</td>
+</tr><tr id="tr2">
+<td><a href = "https://w3id.org/def/och#" target="_blank">OWL Change Ontology</a> </td><td>
+<a href="ontologies/ontology_ocp2kg.ttl"><span class="label label-primary">TURTLE</span></a>
+</td>
+<td><a href="http://creativecommons.org/publicdomain/zero/1.0/" target="_blank"> <span class="label label-success">http://creativecommons.org/pu...</span> </a></td>
+<td><span class="label label-default">Undefined</span></td>
+<td>
+An ontology for describing changes between OWL ontology versions</td>
+</tr></tbody></table>
+<hr>
+      <footer class="footer">
+           <footer class="footer">
+            <div class="row">
+    	<div class="col-md-10">
+    		Page created with  <a href = "https://github.com/dgarijo/vocabLite" target="_blank">VocabLite</a> (<a href="http://oeg-upm.net/">Ontology Engineering Group</a>)
+	        <br>
+    	Built with <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>
+ 	        <br>
+	        Latest revision January, 2025
+        </div>
+		<div class="col-md-2">
+			<a href="https://github.com/dgarijo/vocabLite"><img width="140px"src="vocab/logoLite.png"></img></a>
+		</div>
+      </footer>      </div>
+      </footer>
+    </div> <!-- /container -->
