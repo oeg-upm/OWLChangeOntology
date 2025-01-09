@@ -2,6 +2,81 @@
 
 <span class="markdown">An ontology for describing changes between OWL ontology versions</span>
 
+<h3 id="desc" class="list">Instantiating the OWL Change Ontology <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">This is an example of how to instantiate the OWL Change Ontology. It shows the use of the different change operations from the ontology. First of all the example shows the changelog that contains the ontology changes (ex:log234), and information on the ontology versions it covers (och:prevVersion, and och:newVersion).</span>
+
+<div class="turtle" style=""><div class="exampleheader"><span class="exampleheader"><b>Turtle Syntax</b></span></div>
+<pre>
+    ex:log234 a och:ChangeLog ;
+    och:prevVersion epo:3.1.0;
+    och:newVersion epo:4.0.0.
+</pre>
+</div>
+
+<span class="markdown">The following example show an entity change, the addition of a class, along with term specific metadata. First the URI corresponding to the change is instantiated as an och:AddClass change operation, then it is indicated what log it belongs to (och:fromChangelog), who issued said change (och:issuedBy), the date it was issued (dct:issued) and the term that has been added, in this instance a class (och:addedClass).</span>
+
+<div class="turtle" style=""><div class="exampleheader"><span class="exampleheader"><b>Turtle Syntax</b></span></div>
+<pre>
+    ex:ac1 a och:AddClass ;
+    och:fromChangelog ex:log234 ;
+    och:issuedBy ex:Jane_Doe ;
+    dct:issued "2023-11-24"^^xsd:date ;
+    och:addedClass ex:Class1 .
+</pre>
+</div>
+
+<span class="markdown">The next example show an entity being renamed. The URI is instantiated as an och:RenameTerm change operation, then the metadata is used to indicate provenance, author,date it was issued. The name that the OWL entity used to have (och:outdatedEntityName), and the term that it has been renamed to (och:renamedEntityName) are indicated.</span>
+
+<div class="turtle" style=""><div class="exampleheader"><span class="exampleheader"><b>Turtle Syntax</b></span></div>
+<pre>
+    ex:rt1 a och:RenameTerm ;
+    och:fromChangelog ex:log234 ;
+    och:issuedBy ex:Jane_Doe ;
+    dct:issued "2023-11-24"^^xsd:date ;
+    och:outdatedEntityName ex:Identifier ;
+    och:renamedEntityName ex:Id .
+</pre>
+</div>
+
+<span class="markdown">The following is an example of the addition of a property. Besides the aforementioned provenance, author, and date, there is a property for the object property added in that change (och:addedObjectProperty), and related changes for adding the range and domain of said property (och:relatedChange). Within the domain and range addition operations there are properties indicating the related property (och:addedDomainToProperty, och:addedRangeToProperty), and properties pointing to the terms domain and range that are added (och:addedDomain, och:addedRange).</span>
+<div class="turtle" style=""><div class="exampleheader"><span class="exampleheader"><b>Turtle Syntax</b></span></div>
+<pre>
+    ex:aop1 a och:AddObjectProperty ;
+        och:fromChangelog ex:log234 ;
+        och:issuedBy ex:Jane_Doe ;
+        dct:issued "2023-09-25"^^xsd:date ;
+        och:addedObjectProperty ex:exampleObjectProperty .
+    ex:ad1 a och:AddDomain ;
+        och:fromChangelog ex:log234 ;
+        och:issuedBy ex:Jane_Doe ;
+        dct:issued "2023-09-25"^^xsd:date ;
+        och:addedDomainToProperty ex:exampleObejctProperty ;
+        och:addedDomain ex:exampleDomain :
+        och:relatedChange ex:aop1 .
+    ex:ar1 a och:AddRange ;
+        och:fromChangelog ex:log234 ;
+        och:issuedBy ex:Jane_Doe ;
+        dct:issued "2023-09-25"^^xsd:date ;
+        och:addedRangeToProperty ex:exampleObjectProperty ;
+        och:addedRange ex:exampleRange ;
+        och:relatedChange ex:aop1 .   
+</pre>
+</div>
+
+<span class="markdown">The last example is one for removing a Characteristic from a property. Besides the aforementioned provenance, author, and date, there is a property for the property that the characteristic belongs to (och:removedCharacteristicFromProperty). Then there is a property to indicate the property that has been added (och:removedCharacteristic), in this case och:SymmetricProperty. </span>
+<div class="turtle" style=""><div class="exampleheader"><span class="exampleheader"><b>Turtle Syntax</b></span></div>
+<pre>
+    ex:rc1 a och:RemoveCharacteristic ;
+        och:fromChangelog ex:log234 ;
+        och:issuedBy ex:Jane_Doe ;
+        dct:issued "2023-09-25"^^xsd:date ;
+        och:removedCharacteristicFromProperty ex:exampleObjectProperty;
+        och:removedCharacteristic och:SymmetricProperty .   
+</pre>
+</div>
+
+
 <title>OCH_diagram</title>
 <meta charset="utf-8"/>
 </head>
