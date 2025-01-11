@@ -11,10 +11,13 @@ This ontology is particularly valuable for:
 **Ontology users**: To understand how an ontology evolves and assess the impact of updates on their use cases.
 
 **Tools and workflows**: To support automated processes for comparing ontology versions, generating changelogs, and integrating change-tracking into ontology lifecycle management tools.
+
 The scope of this ontology includes, but is not limited to:
 
 **Change representation**: A framework to represent types of changes (e.g., addition, deletion, renaming...) at various OWL entities (classes, properties, individuals).
+
 **Provenance and context**: Capturing metadata about the changes, such as who made the change, when it was made, and what changes are related to it.
+
 **Integration**: Compatibility with existing OWL standards, enabling adoption in ontology engineering workflows.
 
 By providing a formalized and interoperable way to track ontology changes, this project supports transparency, reproducibility, and informed decision-making in ontology development and use.
