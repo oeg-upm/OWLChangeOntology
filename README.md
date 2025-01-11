@@ -7,7 +7,9 @@ The purpose of this project is to provide an ontology for tracking changes in OW
 This ontology is particularly valuable for:
 
 **Ontology developers**: To track and document updates made to ontologies during development and maintenance cycles.
+
 **Ontology users**: To understand how an ontology evolves and assess the impact of updates on their use cases.
+
 **Tools and workflows**: To support automated processes for comparing ontology versions, generating changelogs, and integrating change-tracking into ontology lifecycle management tools.
 The scope of this ontology includes, but is not limited to:
 
@@ -21,7 +23,7 @@ By providing a formalized and interoperable way to track ontology changes, this 
 This ontology is developed following the guidelines provided by the [LOT methodology](https://lot.linkeddata.es/). 
 
 ### Requirements
-TBC
+The set of requirements for the OWL Change Ontology are written as a set of competency questions,  see the [Ontology Requirements Specification Document](requirements/). 
 
 ### Ontology model
 
