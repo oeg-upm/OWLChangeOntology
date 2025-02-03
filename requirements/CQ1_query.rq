@@ -1,0 +1,9 @@
+PREFIX och:     <https://w3id.org/def/och#> 
+PREFIX ex:      <https://example.org/>
+
+SELECT ?change
+WHERE
+   { ?changelog och:prevVersion ex:v1 .
+     ?changelog och:newVersion ex:v2 .
+     ?change och:fromChangelog ?changelog .
+     }

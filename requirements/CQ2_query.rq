@@ -1,0 +1,9 @@
+PREFIX och:     <https://w3id.org/def/och#> 
+PREFIX ex:      <https://example.org/>
+
+ASK WHERE {
+  FILTER (
+    EXISTS { ?change a och:ClassChange  } ||
+    EXISTS { ?change a och:PropertyChange  }
+  )
+}

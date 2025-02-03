@@ -1,0 +1,7 @@
+PREFIX ex:      <https://example.org/>
+PREFIX och:     <https://w3id.org/def/och#> 
+
+SELECT ?type
+WHERE
+   { ex:change1 ?property ex:term.
+     ex:term a ?type}
