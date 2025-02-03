@@ -46,7 +46,7 @@ To check that a change KG is compliant with the OCH ontology, shapes SHACL are p
 To generate a change KG with the OCH ontology, we provide a mapping template in [YARRRML](https://w3id.org/kg-construct/yarrrml) in the [mappings folder](mappings/)
 
 ### Examples
-Some examples of how the language can be used to describe data for RDF transformation is shown in the [examples folder](examples/).
+Some examples of how the language can be used to describe data for RDF transformation is shown in the [examples folder](examples/). Csv templates with the associated mappings to generate the change KG are in the [change data template folder](change_data_template/). 
 
 ## Contribute
 The management of issues and improvements suggested for this vocabulary is done by addressing [issues]() in the repository. If you are interested in collaborate with us in a new version of the language, send us an email or open a new issue or discussion!

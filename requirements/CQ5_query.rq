@@ -1,0 +1,8 @@
+PREFIX och:     <https://w3id.org/def/och#> 
+PREFIX ex:      <https://example.org/>
+
+SELECT ?term
+WHERE
+   { ex:change1 a och:OntologicalChange . 
+     ex:change1 ?property ?term.
+     }
