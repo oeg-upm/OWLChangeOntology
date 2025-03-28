@@ -25,7 +25,7 @@
                              <http://purl.org/dc/terms/title> "OWL Change Ontology" ;
                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "och" ;
                              <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/def/och#> ;
-                             owl:versionIRI <https://w3id.org/def/och#1.0.0> ; 
+                             owl:versionIRI <https://w3id.org/def/och/1.0.0> ; 
                              owl:versionInfo "1.0.0"@en .
 
 #################################################################
