@@ -7,7 +7,7 @@
 @base <https://w3id.org/def/och#> .
 
 <https://w3id.org/def/och#> rdf:type owl:Ontology ;
-                             owl:versionIRI <https://w3id.org/def/och#1.0.0> ;
+                             owl:versionIRI <https://w3id.org/def/och/1.0.0> ;
                              <http://creativecommons.org/ns#license> <http://creativecommons.org/publicdomain/zero/1.0/> ;
                              <http://purl.org/dc/terms/bibliographicCitation> "Conde-Herreros, D., Stork, L., Pernisch, R., Poveda-Villalón, M., Corcho, O., & Chaves-Fraga, D. (2024). Propagating Ontology Changes to Declarative Mappings in Construction of Knowledge Graphs." ;
                              <http://purl.org/dc/terms/contributor> "Diego Conde Herreros" ,

@@ -44,9 +44,9 @@ node [shape = rectangle, color="orange"]; "och:PropertyCharacteristic" "och:Remo
 	"och:addedProperty" -> "och:addedEntity" [ label = "rdfs:subPropertyOf" ];
 	"och:sourceAddDisjointProperty" -> "och:sourceProperty" [ label = "rdfs:subPropertyOf" ];
 	"och:AddSubPropertyOf" -> "http://omv.ontoware.org/2007/07/OWLChangesAddSubPropertyOf" [ label = "prov:wasDerivedFrom" ];
+	"och:" -> "https://w3id.org/def/och/2.0.0" [ label = "owl:versionIRI" ];
 	"och:" -> "https://creativecommons.org/licenses/by/4.0/legalcode" [ label = "cc:license" ];
-	"och:" -> "https://w3id.org/def/och#1.0.0" [ label = "owl:priorVersion" ];
-	"och:" -> "https://w3id.org/def/och#2.0.0" [ label = "owl:versionIRI" ];
+	"och:" -> "https://w3id.org/def/och/1.0.0" [ label = "owl:priorVersion" ];
 	"och:" -> "https://chowlk.linkeddata.es/" [ label = "mod:createdWith" ];
 	"och:" -> "och:" [ label = "vann:preferredNamespaceUri" ];
 	"och:AddProperty" -> "http://omv.ontoware.org/2007/07/OWLChangesAddProperty" [ label = "prov:wasDerivedFrom" ];
