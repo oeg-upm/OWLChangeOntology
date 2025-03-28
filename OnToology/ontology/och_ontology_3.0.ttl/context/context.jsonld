@@ -1,0 +1,591 @@
+{
+  "@context" : {
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI"
+    },
+    "AddClass" : {
+      "@id" : "https://w3id.org/def/och#AddClass"
+    },
+    "abstract" : {
+      "@id" : "http://purl.org/dc/terms/abstract"
+    },
+    "IndividualRelationChange" : {
+      "@id" : "https://w3id.org/def/och#IndividualRelationChange"
+    },
+    "newVersion" : {
+      "@id" : "https://w3id.org/def/och#newVersion",
+      "@type" : "@id"
+    },
+    "addedDataRange" : {
+      "@id" : "https://w3id.org/def/och#addedDataRange",
+      "@type" : "@id"
+    },
+    "RemoveDataProperty" : {
+      "@id" : "https://w3id.org/def/och#RemoveDataProperty"
+    },
+    "EquivalentClassChange" : {
+      "@id" : "https://w3id.org/def/och#EquivalentClassChange"
+    },
+    "EquivalentPropertyChange" : {
+      "@id" : "https://w3id.org/def/och#EquivalentPropertyChange"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "sourceRemoveRelationToIndividual" : {
+      "@id" : "https://w3id.org/def/och#sourceRemoveRelationToIndividual",
+      "@type" : "@id"
+    },
+    "RemoveDisjointProperty" : {
+      "@id" : "https://w3id.org/def/och#RemoveDisjointProperty"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "DataPropertyChange" : {
+      "@id" : "https://w3id.org/def/och#DataPropertyChange"
+    },
+    "sourceIndividual" : {
+      "@id" : "https://w3id.org/def/och#sourceIndividual",
+      "@type" : "@id"
+    },
+    "Dataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#Dataset"
+    },
+    "addedProperty" : {
+      "@id" : "https://w3id.org/def/och#addedProperty",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://creativecommons.org/ns#license"
+    },
+    "sourceRemoveSubProperty" : {
+      "@id" : "https://w3id.org/def/och#sourceRemoveSubProperty",
+      "@type" : "@id"
+    },
+    "targetClass" : {
+      "@id" : "https://w3id.org/def/och#targetClass",
+      "@type" : "@id"
+    },
+    "sourceAddEquivalentClass" : {
+      "@id" : "https://w3id.org/def/och#sourceAddEquivalentClass",
+      "@type" : "@id"
+    },
+    "RemoveObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#RemoveObjectProperty"
+    },
+    "sourceAddDisjointProperty" : {
+      "@id" : "https://w3id.org/def/och#sourceAddDisjointProperty",
+      "@type" : "@id"
+    },
+    "RemoveSubClass" : {
+      "@id" : "https://w3id.org/def/och#RemoveSubClass"
+    },
+    "bibliographicCitation" : {
+      "@id" : "http://purl.org/dc/terms/bibliographicCitation"
+    },
+    "OntologicalChange" : {
+      "@id" : "https://w3id.org/def/och#OntologicalChange"
+    },
+    "targetRemoveSubClass" : {
+      "@id" : "https://w3id.org/def/och#targetRemoveSubClass",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "outdatedEntityName" : {
+      "@id" : "https://w3id.org/def/och#outdatedEntityName",
+      "@type" : "@id"
+    },
+    "removedIndividual" : {
+      "@id" : "https://w3id.org/def/och#removedIndividual",
+      "@type" : "@id"
+    },
+    "deprecatedEntity" : {
+      "@id" : "https://w3id.org/def/och#deprecatedEntity",
+      "@type" : "@id"
+    },
+    "removedProperty" : {
+      "@id" : "https://w3id.org/def/och#removedProperty",
+      "@type" : "@id"
+    },
+    "RemoveCharacteristic" : {
+      "@id" : "https://w3id.org/def/och#RemoveCharacteristic"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "targetRemoveRelationToIndividual" : {
+      "@id" : "https://w3id.org/def/och#targetRemoveRelationToIndividual",
+      "@type" : "@id"
+    },
+    "Class" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Class"
+    },
+    "RemoveRelationtoIndividual" : {
+      "@id" : "https://w3id.org/def/och#RemoveRelationtoIndividual"
+    },
+    "targetRemoveSubProperty" : {
+      "@id" : "https://w3id.org/def/och#targetRemoveSubProperty",
+      "@type" : "@id"
+    },
+    "AddEquivalentClass" : {
+      "@id" : "https://w3id.org/def/och#AddEquivalentClass"
+    },
+    "ClassChange" : {
+      "@id" : "https://w3id.org/def/och#ClassChange"
+    },
+    "removedCharacteristicFromProperty" : {
+      "@id" : "https://w3id.org/def/och#removedCharacteristicFromProperty",
+      "@type" : "@id"
+    },
+    "removedDomainFromProperty" : {
+      "@id" : "https://w3id.org/def/och#removedDomainFromProperty",
+      "@type" : "@id"
+    },
+    "ChangeSet" : {
+      "@id" : "https://w3id.org/def/och#ChangeSet"
+    },
+    "SubPropertyChange" : {
+      "@id" : "https://w3id.org/def/och#SubPropertyChange"
+    },
+    "RemoveProperty" : {
+      "@id" : "https://w3id.org/def/och#RemoveProperty"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "AddIndividual" : {
+      "@id" : "https://w3id.org/def/och#AddIndividual"
+    },
+    "addedRelationToIndividual" : {
+      "@id" : "https://w3id.org/def/och#addedRelationToIndividual",
+      "@type" : "@id"
+    },
+    "addedCharacteristicToProperty" : {
+      "@id" : "https://w3id.org/def/och#addedCharacteristicToProperty",
+      "@type" : "@id"
+    },
+    "RemoveEquivalentClass" : {
+      "@id" : "https://w3id.org/def/och#RemoveEquivalentClass"
+    },
+    "RangeChange" : {
+      "@id" : "https://w3id.org/def/och#RangeChange"
+    },
+    "RemoveRange" : {
+      "@id" : "https://w3id.org/def/och#RemoveRange"
+    },
+    "AddSubPropertyOf" : {
+      "@id" : "https://w3id.org/def/och#AddSubPropertyOf"
+    },
+    "targetAddEquivalentProperty" : {
+      "@id" : "https://w3id.org/def/och#targetAddEquivalentProperty",
+      "@type" : "@id"
+    },
+    "addedAnnotation" : {
+      "@id" : "https://w3id.org/def/och#addedAnnotation",
+      "@type" : "@id"
+    },
+    "AddEquivalentProperty" : {
+      "@id" : "https://w3id.org/def/och#AddEquivalentProperty"
+    },
+    "PropertyRelationChange" : {
+      "@id" : "https://w3id.org/def/och#PropertyRelationChange"
+    },
+    "PropertyChange" : {
+      "@id" : "https://w3id.org/def/och#PropertyChange"
+    },
+    "sourceAddSubClass" : {
+      "@id" : "https://w3id.org/def/och#sourceAddSubClass",
+      "@type" : "@id"
+    },
+    "addedDomainToProperty" : {
+      "@id" : "https://w3id.org/def/och#addedDomainToProperty",
+      "@type" : "@id"
+    },
+    "SubClassChange" : {
+      "@id" : "https://w3id.org/def/och#SubClassChange"
+    },
+    "sourceRemoveSubClass" : {
+      "@id" : "https://w3id.org/def/och#sourceRemoveSubClass",
+      "@type" : "@id"
+    },
+    "sourceRemoveInverseProperty" : {
+      "@id" : "https://w3id.org/def/och#sourceRemoveInverseProperty",
+      "@type" : "@id"
+    },
+    "RemoveRelationFromIndividual" : {
+      "@id" : "https://w3id.org/def/och#RemoveRelationFromIndividual"
+    },
+    "addedRangeToProperty" : {
+      "@id" : "https://w3id.org/def/och#addedRangeToProperty",
+      "@type" : "@id"
+    },
+    "targetAddEquivalentClass" : {
+      "@id" : "https://w3id.org/def/och#targetAddEquivalentClass",
+      "@type" : "@id"
+    },
+    "removedCharacteristic" : {
+      "@id" : "https://w3id.org/def/och#removedCharacteristic",
+      "@type" : "@id"
+    },
+    "RemoveSubPropertyOf" : {
+      "@id" : "https://w3id.org/def/och#RemoveSubPropertyOf"
+    },
+    "removedDomain" : {
+      "@id" : "https://w3id.org/def/och#removedDomain",
+      "@type" : "@id"
+    },
+    "ObjectPropertyChange" : {
+      "@id" : "https://w3id.org/def/och#ObjectPropertyChange"
+    },
+    "removedAnnotation" : {
+      "@id" : "https://w3id.org/def/och#removedAnnotation",
+      "@type" : "@id"
+    },
+    "targetAddDisjointProperty" : {
+      "@id" : "https://w3id.org/def/och#targetAddDisjointProperty",
+      "@type" : "@id"
+    },
+    "sourceRemoveDisjointProperty" : {
+      "@id" : "https://w3id.org/def/och#sourceRemoveDisjointProperty",
+      "@type" : "@id"
+    },
+    "RemoveClass" : {
+      "@id" : "https://w3id.org/def/och#RemoveClass"
+    },
+    "Agent" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Agent"
+    },
+    "addedClass" : {
+      "@id" : "https://w3id.org/def/och#addedClass",
+      "@type" : "@id"
+    },
+    "sourceRemoveEquivalentProperty" : {
+      "@id" : "https://w3id.org/def/och#sourceRemoveEquivalentProperty",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "NamedIndividual" : {
+      "@id" : "http://www.w3.org/2002/07/owl#NamedIndividual"
+    },
+    "wasDerivedFrom" : {
+      "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+    },
+    "sourceAddEquivalentProperty" : {
+      "@id" : "https://w3id.org/def/och#sourceAddEquivalentProperty",
+      "@type" : "@id"
+    },
+    "ObjectPropertyCharacteristic" : {
+      "@id" : "https://w3id.org/def/och#ObjectPropertyCharacteristic"
+    },
+    "addedCharacteristic" : {
+      "@id" : "https://w3id.org/def/och#addedCharacteristic",
+      "@type" : "@id"
+    },
+    "RenameEntity" : {
+      "@id" : "https://w3id.org/def/och#RenameEntity"
+    },
+    "relatedChange" : {
+      "@id" : "https://w3id.org/def/och#relatedChange",
+      "@type" : "@id"
+    },
+    "RemoveRangeDataProperty" : {
+      "@id" : "https://w3id.org/def/och#RemoveRangeDataProperty"
+    },
+    "RemoveIndividual" : {
+      "@id" : "https://w3id.org/def/och#RemoveIndividual"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "issuedBy" : {
+      "@id" : "https://w3id.org/def/och#issuedBy",
+      "@type" : "@id"
+    },
+    "sourceAddRelationToIndividual" : {
+      "@id" : "https://w3id.org/def/och#sourceAddRelationToIndividual",
+      "@type" : "@id"
+    },
+    "IndividualChange" : {
+      "@id" : "https://w3id.org/def/och#IndividualChange"
+    },
+    "addedEntity" : {
+      "@id" : "https://w3id.org/def/och#addedEntity",
+      "@type" : "@id"
+    },
+    "Changelog" : {
+      "@id" : "https://w3id.org/def/och#Changelog"
+    },
+    "AddProperty" : {
+      "@id" : "https://w3id.org/def/och#AddProperty"
+    },
+    "RevokeDeprecate" : {
+      "@id" : "https://w3id.org/def/och#RevokeDeprecate"
+    },
+    "ClassRelationChange" : {
+      "@id" : "https://w3id.org/def/och#ClassRelationChange"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "targetAddRelationToIndividual" : {
+      "@id" : "https://w3id.org/def/och#targetAddRelationToIndividual",
+      "@type" : "@id"
+    },
+    "renamedEntityName" : {
+      "@id" : "https://w3id.org/def/och#renamedEntityName",
+      "@type" : "@id"
+    },
+    "Datatype" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    },
+    "removedEntity" : {
+      "@id" : "https://w3id.org/def/och#removedEntity",
+      "@type" : "@id"
+    },
+    "ObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    "addedIndividual" : {
+      "@id" : "https://w3id.org/def/och#addedIndividual",
+      "@type" : "@id"
+    },
+    "AddRelationToIndividual" : {
+      "@id" : "https://w3id.org/def/och#AddRelationToIndividual"
+    },
+    "addedDataProperty" : {
+      "@id" : "https://w3id.org/def/och#addedDataProperty",
+      "@type" : "@id"
+    },
+    "AddObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#AddObjectProperty"
+    },
+    "AddAnnotation" : {
+      "@id" : "https://w3id.org/def/och#AddAnnotation"
+    },
+    "targetRemoveInverseProperty" : {
+      "@id" : "https://w3id.org/def/och#targetRemoveInverseProperty",
+      "@type" : "@id"
+    },
+    "removedRelationFromIndividual" : {
+      "@id" : "https://w3id.org/def/och#removedRelationFromIndividual",
+      "@type" : "@id"
+    },
+    "targetAddInverseProperty" : {
+      "@id" : "https://w3id.org/def/och#targetAddInverseProperty",
+      "@type" : "@id"
+    },
+    "addedObjectRange" : {
+      "@id" : "https://w3id.org/def/och#addedObjectRange",
+      "@type" : "@id"
+    },
+    "RemoveInverseProperty" : {
+      "@id" : "https://w3id.org/def/och#RemoveInverseProperty"
+    },
+    "sourceProperty" : {
+      "@id" : "https://w3id.org/def/och#sourceProperty",
+      "@type" : "@id"
+    },
+    "DeprecateEntity" : {
+      "@id" : "https://w3id.org/def/och#DeprecateEntity"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "RemoveRangeObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#RemoveRangeObjectProperty"
+    },
+    "addedObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#addedObjectProperty",
+      "@type" : "@id"
+    },
+    "sourceClass" : {
+      "@id" : "https://w3id.org/def/och#sourceClass",
+      "@type" : "@id"
+    },
+    "sourceRemoveEquivalentClass" : {
+      "@id" : "https://w3id.org/def/och#sourceRemoveEquivalentClass",
+      "@type" : "@id"
+    },
+    "DomainChange" : {
+      "@id" : "https://w3id.org/def/och#DomainChange"
+    },
+    "targetAddSubClass" : {
+      "@id" : "https://w3id.org/def/och#targetAddSubClass",
+      "@type" : "@id"
+    },
+    "removedDataRange" : {
+      "@id" : "https://w3id.org/def/och#removedDataRange",
+      "@type" : "@id"
+    },
+    "AddRangeObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#AddRangeObjectProperty"
+    },
+    "AddDomain" : {
+      "@id" : "https://w3id.org/def/och#AddDomain"
+    },
+    "RemoveEquivalentProperty" : {
+      "@id" : "https://w3id.org/def/och#RemoveEquivalentProperty"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "sourceAddSubProperty" : {
+      "@id" : "https://w3id.org/def/och#sourceAddSubProperty",
+      "@type" : "@id"
+    },
+    "AddSubClass" : {
+      "@id" : "https://w3id.org/def/och#AddSubClass"
+    },
+    "removedObjectRange" : {
+      "@id" : "https://w3id.org/def/och#removedObjectRange",
+      "@type" : "@id"
+    },
+    "prevVersion" : {
+      "@id" : "https://w3id.org/def/och#prevVersion",
+      "@type" : "@id"
+    },
+    "targetRemoveEquivalentProperty" : {
+      "@id" : "https://w3id.org/def/och#targetRemoveEquivalentProperty",
+      "@type" : "@id"
+    },
+    "sourceAddInverseProperty" : {
+      "@id" : "https://w3id.org/def/och#sourceAddInverseProperty",
+      "@type" : "@id"
+    },
+    "addedAnnotationType" : {
+      "@id" : "https://w3id.org/def/och#addedAnnotationType",
+      "@type" : "@id"
+    },
+    "AddRangeDataProperty" : {
+      "@id" : "https://w3id.org/def/och#AddRangeDataProperty"
+    },
+    "PropertyCharacteristic" : {
+      "@id" : "https://w3id.org/def/och#PropertyCharacteristic"
+    },
+    "AddCharacteristic" : {
+      "@id" : "https://w3id.org/def/och#AddCharacteristic"
+    },
+    "fromChangelog" : {
+      "@id" : "https://w3id.org/def/och#fromChangelog",
+      "@type" : "@id"
+    },
+    "AnnotationChange" : {
+      "@id" : "https://w3id.org/def/och#AnnotationChange"
+    },
+    "targetRemoveEquivalentClass" : {
+      "@id" : "https://w3id.org/def/och#targetRemoveEquivalentClass",
+      "@type" : "@id"
+    },
+    "removedClass" : {
+      "@id" : "https://w3id.org/def/och#removedClass",
+      "@type" : "@id"
+    },
+    "removedDataProperty" : {
+      "@id" : "https://w3id.org/def/och#removedDataProperty",
+      "@type" : "@id"
+    },
+    "removedRangeFromProperty" : {
+      "@id" : "https://w3id.org/def/och#removedRangeFromProperty",
+      "@type" : "@id"
+    },
+    "targetAddSubProperty" : {
+      "@id" : "https://w3id.org/def/och#targetAddSubProperty",
+      "@type" : "@id"
+    },
+    "removedObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#removedObjectProperty",
+      "@type" : "@id"
+    },
+    "Resource" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+    },
+    "RemoveAnnotation" : {
+      "@id" : "https://w3id.org/def/och#RemoveAnnotation"
+    },
+    "AddRange" : {
+      "@id" : "https://w3id.org/def/och#AddRange"
+    },
+    "targetRemoveDisjointProperty" : {
+      "@id" : "https://w3id.org/def/och#targetRemoveDisjointProperty",
+      "@type" : "@id"
+    },
+    "DisjointPropertyChange" : {
+      "@id" : "https://w3id.org/def/och#DisjointPropertyChange"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "EntityChange" : {
+      "@id" : "https://w3id.org/def/och#EntityChange"
+    },
+    "removedAnnotationFromResource" : {
+      "@id" : "https://w3id.org/def/och#removedAnnotationFromResource",
+      "@type" : "@id"
+    },
+    "addAnnotationToResource" : {
+      "@id" : "https://w3id.org/def/och#addAnnotationToResource",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "targetResource" : {
+      "@id" : "https://w3id.org/def/och#targetResource",
+      "@type" : "@id"
+    },
+    "AddDataProperty" : {
+      "@id" : "https://w3id.org/def/och#AddDataProperty"
+    },
+    "AddInverseProperty" : {
+      "@id" : "https://w3id.org/def/och#AddInverseProperty"
+    },
+    "AddDisjointProperty" : {
+      "@id" : "https://w3id.org/def/och#AddDisjointProperty"
+    },
+    "targetProperty" : {
+      "@id" : "https://w3id.org/def/och#targetProperty",
+      "@type" : "@id"
+    },
+    "PropertyCharacteristicChange" : {
+      "@id" : "https://w3id.org/def/och#PropertyCharacteristicChange"
+    },
+    "InversePropertyChange" : {
+      "@id" : "https://w3id.org/def/och#InversePropertyChange"
+    },
+    "DatatypeProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "undeprecatedElement" : {
+      "@id" : "https://w3id.org/def/och#undeprecatedElement",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "addedDomain" : {
+      "@id" : "https://w3id.org/def/och#addedDomain",
+      "@type" : "@id"
+    },
+    "removedAnnotationType" : {
+      "@id" : "https://w3id.org/def/och#removedAnnotationType",
+      "@type" : "@id"
+    },
+    "RemoveDomain" : {
+      "@id" : "https://w3id.org/def/och#RemoveDomain"
+    },
+    "Ontology" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Ontology"
+    }
+  }
+}
