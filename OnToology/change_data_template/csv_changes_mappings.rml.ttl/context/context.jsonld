@@ -1,0 +1,25 @@
+{
+  "@context" : {
+    "predicateObjectMap" : {
+      "@id" : "http://www.w3.org/ns/r2rml#predicateObjectMap"
+    },
+    "class" : {
+      "@id" : "http://www.w3.org/ns/r2rml#class"
+    },
+    "referenceFormulation" : {
+      "@id" : "http://semweb.mmlab.be/ns/rml#referenceFormulation"
+    },
+    "predicate" : {
+      "@id" : "http://www.w3.org/ns/r2rml#predicate"
+    },
+    "subjectMap" : {
+      "@id" : "http://www.w3.org/ns/r2rml#subjectMap"
+    },
+    "objectMap" : {
+      "@id" : "http://www.w3.org/ns/r2rml#objectMap"
+    },
+    "logicalSource" : {
+      "@id" : "http://semweb.mmlab.be/ns/rml#logicalSource"
+    }
+  }
+}
