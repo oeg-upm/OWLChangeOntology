@@ -1,0 +1,27 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://w3id.org/def/och#1.0.0> a prov:Entity;
+	 dc:title "OWL Change Ontology";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
+	 prov:wasAttributedTo :agent6;
+	 prov:wasAttributedTo :agent7;
+	 prov:wasAttributedTo :agent8;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2024-04-17 ";
+.
+:agent0 a prov:Agent; foaf:name "David Chaves-Fraga".
+:agent1 a prov:Agent; foaf:name "Diego Conde-Herreros".
+:agent2 a prov:Agent; foaf:name "Lise Stork".
+:agent3 a prov:Agent; foaf:name "María Poveda-Villalón".
+:agent4 a prov:Agent; foaf:name "Oscar Corcho".
+:agent5 a prov:Agent; foaf:name "Raúl Palma".
+:agent6 a prov:Agent; foaf:name "Romana Pernisch".
+:agent7 a prov:Agent; foaf:name "Diego Conde Herreros".
+:agent8 a prov:Agent; foaf:name "Raúl Palma".
