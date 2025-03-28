@@ -166,10 +166,10 @@
     <rdf:Description rdf:nodeID="genid13">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Predicate</rml:reference>
+                <rml:reference>Source</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedDataProperty"/>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#fromChangelog"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid15">
         <r2rml:objectMap>
@@ -182,18 +182,18 @@
     <rdf:Description rdf:nodeID="genid17">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Source</rml:reference>
-            </rdf:Description>
-        </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#fromChangelog"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid19">
-        <r2rml:objectMap>
-            <rdf:Description>
                 <rml:reference>Author</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
         <r2rml:predicate rdf:resource="https://w3id.org/def/och#issuedBy"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid19">
+        <r2rml:objectMap>
+            <rdf:Description>
+                <rml:reference>Predicate</rml:reference>
+            </rdf:Description>
+        </r2rml:objectMap>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedDataProperty"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid21">
         <r2rml:class rdf:resource="https://w3id.org/def/och#AddDataProperty"/>
@@ -215,18 +215,18 @@
     <rdf:Description rdf:nodeID="genid23">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Source</rml:reference>
+                <rml:reference>Domain</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#fromChangelog"/>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedDomain"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid25">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Author</rml:reference>
+                <rml:reference>Predicate</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#issuedBy"/>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedDomainToProperty"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid27">
         <r2rml:objectMap>
@@ -239,18 +239,18 @@
     <rdf:Description rdf:nodeID="genid29">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Predicate</rml:reference>
+                <rml:reference>Author</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedDomainToProperty"/>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#issuedBy"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid31">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Domain</rml:reference>
+                <rml:reference>Source</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedDomain"/>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#fromChangelog"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid33">
         <r2rml:class rdf:resource="https://w3id.org/def/och#AddDomain"/>
@@ -272,28 +272,12 @@
     <rdf:Description rdf:nodeID="genid35">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Author</rml:reference>
+                <rml:reference>Source</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#issuedBy"/>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#fromChangelog"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid37">
-        <r2rml:objectMap>
-            <rdf:Description>
-                <rml:reference>Predicate</rml:reference>
-            </rdf:Description>
-        </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedDomainToProperty"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid39">
-        <r2rml:objectMap>
-            <rdf:Description>
-                <rml:reference>Domain</rml:reference>
-            </rdf:Description>
-        </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedDomain"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid41">
         <r2rml:objectMap>
             <rdf:Description>
                 <rml:reference>Date</rml:reference>
@@ -301,13 +285,29 @@
         </r2rml:objectMap>
         <r2rml:predicate rdf:resource="http://purl.org/dc/terms/date"/>
     </rdf:Description>
+    <rdf:Description rdf:nodeID="genid39">
+        <r2rml:objectMap>
+            <rdf:Description>
+                <rml:reference>Author</rml:reference>
+            </rdf:Description>
+        </r2rml:objectMap>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#issuedBy"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid41">
+        <r2rml:objectMap>
+            <rdf:Description>
+                <rml:reference>Predicate</rml:reference>
+            </rdf:Description>
+        </r2rml:objectMap>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedDomainToProperty"/>
+    </rdf:Description>
     <rdf:Description rdf:nodeID="genid43">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Source</rml:reference>
+                <rml:reference>Domain</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#fromChangelog"/>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedDomain"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid45">
         <r2rml:class rdf:resource="https://w3id.org/def/och#AddDomain"/>
@@ -377,18 +377,18 @@
     <rdf:Description rdf:nodeID="genid57">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Predicate</rml:reference>
+                <rml:reference>Source</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedRangeToProperty"/>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#fromChangelog"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid59">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Author</rml:reference>
+                <rml:reference>Date</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#issuedBy"/>
+        <r2rml:predicate rdf:resource="http://purl.org/dc/terms/date"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid61">
         <r2rml:objectMap>
@@ -401,18 +401,18 @@
     <rdf:Description rdf:nodeID="genid63">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Date</rml:reference>
+                <rml:reference>Author</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="http://purl.org/dc/terms/date"/>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#issuedBy"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid65">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Source</rml:reference>
+                <rml:reference>Predicate</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#fromChangelog"/>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedRangeToProperty"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid67">
         <r2rml:class rdf:resource="https://w3id.org/def/och#AddRangeDataProperty"/>
@@ -434,12 +434,20 @@
     <rdf:Description rdf:nodeID="genid69">
         <r2rml:objectMap>
             <rdf:Description>
+                <rml:reference>Range</rml:reference>
+            </rdf:Description>
+        </r2rml:objectMap>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedObjectRange"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid71">
+        <r2rml:objectMap>
+            <rdf:Description>
                 <rml:reference>Source</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
         <r2rml:predicate rdf:resource="https://w3id.org/def/och#fromChangelog"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid71">
+    <rdf:Description rdf:nodeID="genid73">
         <r2rml:objectMap>
             <rdf:Description>
                 <rml:reference>Date</rml:reference>
@@ -447,7 +455,7 @@
         </r2rml:objectMap>
         <r2rml:predicate rdf:resource="http://purl.org/dc/terms/date"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid73">
+    <rdf:Description rdf:nodeID="genid75">
         <r2rml:objectMap>
             <rdf:Description>
                 <rml:reference>Author</rml:reference>
@@ -455,21 +463,13 @@
         </r2rml:objectMap>
         <r2rml:predicate rdf:resource="https://w3id.org/def/och#issuedBy"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid75">
+    <rdf:Description rdf:nodeID="genid77">
         <r2rml:objectMap>
             <rdf:Description>
                 <rml:reference>Predicate</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
         <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedRangeToProperty"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid77">
-        <r2rml:objectMap>
-            <rdf:Description>
-                <rml:reference>Range</rml:reference>
-            </rdf:Description>
-        </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#addedObjectRange"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid79">
         <r2rml:class rdf:resource="https://w3id.org/def/och#AddRangeObjectProperty"/>
@@ -491,10 +491,10 @@
     <rdf:Description rdf:nodeID="genid81">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Parent</rml:reference>
+                <rml:reference>Source</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#targetAddSubClass"/>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#fromChangelog"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid83">
         <r2rml:objectMap>
@@ -523,10 +523,10 @@
     <rdf:Description rdf:nodeID="genid89">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Source</rml:reference>
+                <rml:reference>Parent</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#fromChangelog"/>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#targetAddSubClass"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid91">
         <r2rml:class rdf:resource="https://w3id.org/def/och#AddSubClass"/>
@@ -655,34 +655,34 @@
     <rdf:Description rdf:nodeID="genid114">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Source</rml:reference>
-            </rdf:Description>
-        </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#fromChangelog"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid116">
-        <r2rml:objectMap>
-            <rdf:Description>
                 <rml:reference>Date</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
         <r2rml:predicate rdf:resource="http://purl.org/dc/terms/date"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid118">
+    <rdf:Description rdf:nodeID="genid116">
         <r2rml:objectMap>
             <rdf:Description>
-                <rml:reference>Author</rml:reference>
+                <rml:reference>Source</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
-        <r2rml:predicate rdf:resource="https://w3id.org/def/och#issuedBy"/>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#fromChangelog"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid120">
+    <rdf:Description rdf:nodeID="genid118">
         <r2rml:objectMap>
             <rdf:Description>
                 <rml:reference>Predicate</rml:reference>
             </rdf:Description>
         </r2rml:objectMap>
         <r2rml:predicate rdf:resource="https://w3id.org/def/och#removedDomainFromProperty"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid120">
+        <r2rml:objectMap>
+            <rdf:Description>
+                <rml:reference>Author</rml:reference>
+            </rdf:Description>
+        </r2rml:objectMap>
+        <r2rml:predicate rdf:resource="https://w3id.org/def/och#issuedBy"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid122">
         <r2rml:objectMap>

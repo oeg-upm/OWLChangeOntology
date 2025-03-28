@@ -117,12 +117,12 @@
     "@id" : "_:genid115"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#fromChangelog"
+    "@id" : "http://purl.org/dc/terms/date"
   } ]
 }, {
   "@id" : "_:genid115",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Source"
+    "@value" : "Date"
   } ]
 }, {
   "@id" : "_:genid116",
@@ -130,12 +130,12 @@
     "@id" : "_:genid117"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "http://purl.org/dc/terms/date"
+    "@id" : "https://w3id.org/def/och#fromChangelog"
   } ]
 }, {
   "@id" : "_:genid117",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Date"
+    "@value" : "Source"
   } ]
 }, {
   "@id" : "_:genid118",
@@ -143,12 +143,12 @@
     "@id" : "_:genid119"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#issuedBy"
+    "@id" : "https://w3id.org/def/och#removedDomainFromProperty"
   } ]
 }, {
   "@id" : "_:genid119",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Author"
+    "@value" : "Predicate"
   } ]
 }, {
   "@id" : "_:genid12",
@@ -164,12 +164,12 @@
     "@id" : "_:genid121"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#removedDomainFromProperty"
+    "@id" : "https://w3id.org/def/och#issuedBy"
   } ]
 }, {
   "@id" : "_:genid121",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Predicate"
+    "@value" : "Author"
   } ]
 }, {
   "@id" : "_:genid122",
@@ -229,7 +229,7 @@
     "@id" : "_:genid14"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#addedDataProperty"
+    "@id" : "https://w3id.org/def/och#fromChangelog"
   } ]
 }, {
   "@id" : "_:genid130",
@@ -305,7 +305,7 @@
 }, {
   "@id" : "_:genid14",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Predicate"
+    "@value" : "Source"
   } ]
 }, {
   "@id" : "_:genid140",
@@ -527,7 +527,7 @@
     "@id" : "_:genid18"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#fromChangelog"
+    "@id" : "https://w3id.org/def/och#issuedBy"
   } ]
 }, {
   "@id" : "_:genid170",
@@ -600,7 +600,7 @@
 }, {
   "@id" : "_:genid18",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Source"
+    "@value" : "Author"
   } ]
 }, {
   "@id" : "_:genid180",
@@ -621,7 +621,7 @@
     "@id" : "_:genid20"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#issuedBy"
+    "@id" : "https://w3id.org/def/och#addedDataProperty"
   } ]
 }, {
   "@id" : "_:genid2",
@@ -634,7 +634,7 @@
 }, {
   "@id" : "_:genid20",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Author"
+    "@value" : "Predicate"
   } ]
 }, {
   "@id" : "_:genid21",
@@ -658,12 +658,12 @@
     "@id" : "_:genid24"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#fromChangelog"
+    "@id" : "https://w3id.org/def/och#addedDomain"
   } ]
 }, {
   "@id" : "_:genid24",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Source"
+    "@value" : "Domain"
   } ]
 }, {
   "@id" : "_:genid25",
@@ -671,12 +671,12 @@
     "@id" : "_:genid26"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#issuedBy"
+    "@id" : "https://w3id.org/def/och#addedDomainToProperty"
   } ]
 }, {
   "@id" : "_:genid26",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Author"
+    "@value" : "Predicate"
   } ]
 }, {
   "@id" : "_:genid27",
@@ -697,7 +697,7 @@
     "@id" : "_:genid30"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#addedDomainToProperty"
+    "@id" : "https://w3id.org/def/och#issuedBy"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -710,7 +710,7 @@
 }, {
   "@id" : "_:genid30",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Predicate"
+    "@value" : "Author"
   } ]
 }, {
   "@id" : "_:genid31",
@@ -718,12 +718,12 @@
     "@id" : "_:genid32"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#addedDomain"
+    "@id" : "https://w3id.org/def/och#fromChangelog"
   } ]
 }, {
   "@id" : "_:genid32",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Domain"
+    "@value" : "Source"
   } ]
 }, {
   "@id" : "_:genid33",
@@ -747,12 +747,12 @@
     "@id" : "_:genid36"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#issuedBy"
+    "@id" : "https://w3id.org/def/och#fromChangelog"
   } ]
 }, {
   "@id" : "_:genid36",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Author"
+    "@value" : "Source"
   } ]
 }, {
   "@id" : "_:genid37",
@@ -760,12 +760,12 @@
     "@id" : "_:genid38"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#addedDomainToProperty"
+    "@id" : "http://purl.org/dc/terms/date"
   } ]
 }, {
   "@id" : "_:genid38",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Predicate"
+    "@value" : "Date"
   } ]
 }, {
   "@id" : "_:genid39",
@@ -773,7 +773,7 @@
     "@id" : "_:genid40"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#addedDomain"
+    "@id" : "https://w3id.org/def/och#issuedBy"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -783,7 +783,7 @@
 }, {
   "@id" : "_:genid40",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Domain"
+    "@value" : "Author"
   } ]
 }, {
   "@id" : "_:genid41",
@@ -791,12 +791,12 @@
     "@id" : "_:genid42"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "http://purl.org/dc/terms/date"
+    "@id" : "https://w3id.org/def/och#addedDomainToProperty"
   } ]
 }, {
   "@id" : "_:genid42",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Date"
+    "@value" : "Predicate"
   } ]
 }, {
   "@id" : "_:genid43",
@@ -804,12 +804,12 @@
     "@id" : "_:genid44"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#fromChangelog"
+    "@id" : "https://w3id.org/def/och#addedDomain"
   } ]
 }, {
   "@id" : "_:genid44",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Source"
+    "@value" : "Domain"
   } ]
 }, {
   "@id" : "_:genid45",
@@ -909,12 +909,12 @@
     "@id" : "_:genid58"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#addedRangeToProperty"
+    "@id" : "https://w3id.org/def/och#fromChangelog"
   } ]
 }, {
   "@id" : "_:genid58",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Predicate"
+    "@value" : "Source"
   } ]
 }, {
   "@id" : "_:genid59",
@@ -922,7 +922,7 @@
     "@id" : "_:genid60"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#issuedBy"
+    "@id" : "http://purl.org/dc/terms/date"
   } ]
 }, {
   "@id" : "_:genid6",
@@ -932,7 +932,7 @@
 }, {
   "@id" : "_:genid60",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Author"
+    "@value" : "Date"
   } ]
 }, {
   "@id" : "_:genid61",
@@ -953,12 +953,12 @@
     "@id" : "_:genid64"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "http://purl.org/dc/terms/date"
+    "@id" : "https://w3id.org/def/och#issuedBy"
   } ]
 }, {
   "@id" : "_:genid64",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Date"
+    "@value" : "Author"
   } ]
 }, {
   "@id" : "_:genid65",
@@ -966,12 +966,12 @@
     "@id" : "_:genid66"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#fromChangelog"
+    "@id" : "https://w3id.org/def/och#addedRangeToProperty"
   } ]
 }, {
   "@id" : "_:genid66",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Source"
+    "@value" : "Predicate"
   } ]
 }, {
   "@id" : "_:genid67",
@@ -995,7 +995,7 @@
     "@id" : "_:genid70"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#fromChangelog"
+    "@id" : "https://w3id.org/def/och#addedObjectRange"
   } ]
 }, {
   "@id" : "_:genid7",
@@ -1008,7 +1008,7 @@
 }, {
   "@id" : "_:genid70",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Source"
+    "@value" : "Range"
   } ]
 }, {
   "@id" : "_:genid71",
@@ -1016,12 +1016,12 @@
     "@id" : "_:genid72"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "http://purl.org/dc/terms/date"
+    "@id" : "https://w3id.org/def/och#fromChangelog"
   } ]
 }, {
   "@id" : "_:genid72",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Date"
+    "@value" : "Source"
   } ]
 }, {
   "@id" : "_:genid73",
@@ -1029,12 +1029,12 @@
     "@id" : "_:genid74"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#issuedBy"
+    "@id" : "http://purl.org/dc/terms/date"
   } ]
 }, {
   "@id" : "_:genid74",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Author"
+    "@value" : "Date"
   } ]
 }, {
   "@id" : "_:genid75",
@@ -1042,12 +1042,12 @@
     "@id" : "_:genid76"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#addedRangeToProperty"
+    "@id" : "https://w3id.org/def/och#issuedBy"
   } ]
 }, {
   "@id" : "_:genid76",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Predicate"
+    "@value" : "Author"
   } ]
 }, {
   "@id" : "_:genid77",
@@ -1055,12 +1055,12 @@
     "@id" : "_:genid78"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#addedObjectRange"
+    "@id" : "https://w3id.org/def/och#addedRangeToProperty"
   } ]
 }, {
   "@id" : "_:genid78",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Range"
+    "@value" : "Predicate"
   } ]
 }, {
   "@id" : "_:genid79",
@@ -1089,12 +1089,12 @@
     "@id" : "_:genid82"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#targetAddSubClass"
+    "@id" : "https://w3id.org/def/och#fromChangelog"
   } ]
 }, {
   "@id" : "_:genid82",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Parent"
+    "@value" : "Source"
   } ]
 }, {
   "@id" : "_:genid83",
@@ -1141,7 +1141,7 @@
     "@id" : "_:genid90"
   } ],
   "http://www.w3.org/ns/r2rml#predicate" : [ {
-    "@id" : "https://w3id.org/def/och#fromChangelog"
+    "@id" : "https://w3id.org/def/och#targetAddSubClass"
   } ]
 }, {
   "@id" : "_:genid9",
@@ -1154,7 +1154,7 @@
 }, {
   "@id" : "_:genid90",
   "http://semweb.mmlab.be/ns/rml#reference" : [ {
-    "@value" : "Source"
+    "@value" : "Parent"
   } ]
 }, {
   "@id" : "_:genid91",

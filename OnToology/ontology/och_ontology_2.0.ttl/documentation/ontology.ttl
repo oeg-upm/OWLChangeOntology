@@ -7,7 +7,7 @@
 @base <https://w3id.org/def/och#> .
 
 <https://w3id.org/def/och#> rdf:type owl:Ontology ;
-                             owl:versionIRI <https://w3id.org/def/och#2.0.0> ;
+                             owl:versionIRI <https://w3id.org/def/och/2.0.0> ;
                              <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/legalcode> ;
                              <http://purl.org/dc/terms/abstract> "As any other engineering product, ontologies evolve during their lifecycle due to several reasons such as accommodating new requirements or fixing issues. To keep track of these changes, several tools have defined ad-hoc formalisms to define and manage them. However, some of them are not based on standard interoperable languages such as RDF, and the RDF-based ones cover a limited set of changes. In this paper, we present the OWL Change Ontology (OCH), an ontology to capture changes in ontologies. Developed following the LOT methodology, OCH provides a declarative framework for documenting ontology changelogs. With this approach, ontologies gain a valuable resource to improve their lifecycle management, while associated semantic products such as declarative mappings (e.g., RML) and validation shapes (e.g., SHACL) can take advantage of standardized and machine-readable changelogs to streamline their schema evolution." ;
                              <http://purl.org/dc/terms/bibliographicCitation> "Conde-Herreros, D. Pernisch, R., Poveda-Villalón, M., Corcho, O., & Chaves-Fraga, D. (2024). OCH: The OWL Change Ontology" ;
@@ -23,7 +23,7 @@
                              <http://purl.org/dc/terms/title> "OWL Change Ontology" ;
                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "och" ;
                              <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/def/och#> ;
-                             owl:priorVersion <https://w3id.org/def/och#1.0.0> ;
+                             owl:priorVersion <https://w3id.org/def/och/1.0.0> ;
                              owl:versionInfo "2.0.0"@en ;
                              <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
 

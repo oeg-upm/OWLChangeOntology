@@ -149,10 +149,10 @@
     "@id" : "http://www.w3.org/2002/07/owl#Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@id" : "https://w3id.org/def/och#2.0.0"
+    "@id" : "https://w3id.org/def/och/2.0.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/def/och#2.0.0"
+    "@id" : "https://w3id.org/def/och/3.0.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",

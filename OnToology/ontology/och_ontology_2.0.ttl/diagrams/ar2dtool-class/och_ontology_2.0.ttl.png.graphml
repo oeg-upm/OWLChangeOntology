@@ -1200,6 +1200,29 @@
          </data>
          <data key="d1" />
       </node>
+      <node id="nid_https://w3id.org/def/och/2.0.0">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="300.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/och/2.0.0</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_owl:versionIRI42" source="nid_och:" target="nid_https://w3id.org/def/och/2.0.0">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:versionIRI</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_https://creativecommons.org/licenses/by/4.0/legalcode">
          <data key="d0">
             <y:ShapeNode>
@@ -1212,7 +1235,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_cc:license42" source="nid_och:" target="nid_https://creativecommons.org/licenses/by/4.0/legalcode">
+    <edge id="eid_cc:license43" source="nid_och:" target="nid_https://creativecommons.org/licenses/by/4.0/legalcode">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1223,47 +1246,24 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_https://w3id.org/def/och#1.0.0">
+      <node id="nid_https://w3id.org/def/och/1.0.0">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="300.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/och#1.0.0</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/och/1.0.0</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:priorVersion43" source="nid_och:" target="nid_https://w3id.org/def/och#1.0.0">
+    <edge id="eid_owl:priorVersion44" source="nid_och:" target="nid_https://w3id.org/def/och/1.0.0">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:priorVersion</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_https://w3id.org/def/och#2.0.0">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="300.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/och#2.0.0</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:versionIRI44" source="nid_och:" target="nid_https://w3id.org/def/och#2.0.0">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:versionIRI</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>

@@ -1,5 +1,5 @@
 <https://w3id.org/def/och#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/def/och#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/def/och#1.0.0> .
+<https://w3id.org/def/och#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/def/och/1.0.0> .
 <https://w3id.org/def/och#> <http://creativecommons.org/ns#license> <http://creativecommons.org/publicdomain/zero/1.0/> .
 <https://w3id.org/def/och#> <http://purl.org/dc/terms/bibliographicCitation> "Conde-Herreros, D., Stork, L., Pernisch, R., Poveda-Villalón, M., Corcho, O., & Chaves-Fraga, D. (2024). Propagating Ontology Changes to Declarative Mappings in Construction of Knowledge Graphs." .
 <https://w3id.org/def/och#> <http://purl.org/dc/terms/contributor> "Diego Conde Herreros" .

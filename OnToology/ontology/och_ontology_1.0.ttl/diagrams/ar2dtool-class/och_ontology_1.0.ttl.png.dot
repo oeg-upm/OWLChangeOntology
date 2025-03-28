@@ -72,7 +72,7 @@ node [shape = rectangle, color="orange"]; "base:AddSubClass" "base:RemoveDomain"
 	"base:RemoveRange" -> "http://omv.ontoware.org/2007/07/OWLChangesRemoveRange" [ label = "owl:sameAs" ];
 	"base:RemoveSubPropertyOf" -> "http://omv.ontoware.org/2007/07/OWLChangesRemoveSubPropertyOf" [ label = "owl:sameAs" ];
 	"base:AddReflexiveObjectProperty" -> "http://omv.ontoware.org/2007/07/OWLChangesAddReflexiveObjectProperty" [ label = "owl:sameAs" ];
-	"och:" -> "https://w3id.org/def/och#1.0.0" [ label = "owl:versionIRI" ];
+	"och:" -> "https://w3id.org/def/och/1.0.0" [ label = "owl:versionIRI" ];
 	"och:" -> "http://creativecommons.org/publicdomain/zero/1.0/" [ label = ":license" ];
 	"och:" -> "http://w3id.org/def/och" [ label = "owl:versionIRI" ];
 	"och:" -> "och:" [ label = ":preferredNamespaceUri" ];

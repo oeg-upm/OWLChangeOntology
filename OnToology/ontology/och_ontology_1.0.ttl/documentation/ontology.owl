@@ -10,7 +10,7 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/def/och#">
-        <owl:versionIRI rdf:resource="https://w3id.org/def/och#1.0.0"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/def/och/1.0.0"/>
         <ns:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
         <terms:bibliographicCitation>Conde-Herreros, D., Stork, L., Pernisch, R., Poveda-Villalón, M., Corcho, O., &amp; Chaves-Fraga, D. (2024). Propagating Ontology Changes to Declarative Mappings in Construction of Knowledge Graphs.</terms:bibliographicCitation>
         <terms:contributor>Diego Conde Herreros</terms:contributor>

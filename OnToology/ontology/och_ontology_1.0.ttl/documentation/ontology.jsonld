@@ -564,7 +564,7 @@
     "@id" : "https://w3id.org/def/och#"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/def/och#1.0.0"
+    "@id" : "https://w3id.org/def/och/1.0.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
