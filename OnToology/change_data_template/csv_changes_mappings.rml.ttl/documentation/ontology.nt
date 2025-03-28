@@ -1,0 +1,456 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://semweb.mmlab.be/ns/rml#logicalSource
+<http://semweb.mmlab.be/ns/rml#logicalSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://semweb.mmlab.be/ns/rml#reference
+<http://semweb.mmlab.be/ns/rml#reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://semweb.mmlab.be/ns/rml#referenceFormulation
+<http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://semweb.mmlab.be/ns/rml#source
+<http://semweb.mmlab.be/ns/rml#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/r2rml#class
+<http://www.w3.org/ns/r2rml#class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/r2rml#objectMap
+<http://www.w3.org/ns/r2rml#objectMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/r2rml#predicate
+<http://www.w3.org/ns/r2rml#predicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/r2rml#predicateObjectMap
+<http://www.w3.org/ns/r2rml#predicateObjectMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/r2rml#subjectMap
+<http://www.w3.org/ns/r2rml#subjectMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/r2rml#template
+<http://www.w3.org/ns/r2rml#template> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddClassTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid2 .
+_:genid2 <http://semweb.mmlab.be/ns/rml#source> "AddClass_template.csv" .
+_:genid2 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid3 .
+_:genid3 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid3 <http://www.w3.org/ns/r2rml#objectMap> _:genid4 .
+_:genid4 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid5 .
+_:genid5 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid5 <http://www.w3.org/ns/r2rml#objectMap> _:genid6 .
+_:genid6 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid7 .
+_:genid7 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid7 <http://www.w3.org/ns/r2rml#objectMap> _:genid8 .
+_:genid8 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid9 .
+_:genid9 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#addedClass> .
+_:genid9 <http://www.w3.org/ns/r2rml#objectMap> _:genid10 .
+_:genid10 <http://semweb.mmlab.be/ns/rml#reference> "Term" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddClassTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid11 .
+_:genid11 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/AddClass/{Term}" .
+_:genid11 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#AddClass> .
+# 
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDataPropertyTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid12 .
+_:genid12 <http://semweb.mmlab.be/ns/rml#source> "AddDataProperty_template.csv" .
+_:genid12 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDataPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid13 .
+_:genid13 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#addedDataProperty> .
+_:genid13 <http://www.w3.org/ns/r2rml#objectMap> _:genid14 .
+_:genid14 <http://semweb.mmlab.be/ns/rml#reference> "Predicate" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDataPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid15 .
+_:genid15 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid15 <http://www.w3.org/ns/r2rml#objectMap> _:genid16 .
+_:genid16 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDataPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid17 .
+_:genid17 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid17 <http://www.w3.org/ns/r2rml#objectMap> _:genid18 .
+_:genid18 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDataPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid19 .
+_:genid19 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid19 <http://www.w3.org/ns/r2rml#objectMap> _:genid20 .
+_:genid20 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDataPropertyTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid21 .
+_:genid21 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/AddDataProperty/{Predicate}" .
+_:genid21 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#AddDataProperty> .
+# 
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDomainDPTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid22 .
+_:genid22 <http://semweb.mmlab.be/ns/rml#source> "AddDataProperty_template.csv" .
+_:genid22 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDomainDPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid23 .
+_:genid23 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid23 <http://www.w3.org/ns/r2rml#objectMap> _:genid24 .
+_:genid24 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDomainDPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid25 .
+_:genid25 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid25 <http://www.w3.org/ns/r2rml#objectMap> _:genid26 .
+_:genid26 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDomainDPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid27 .
+_:genid27 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid27 <http://www.w3.org/ns/r2rml#objectMap> _:genid28 .
+_:genid28 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDomainDPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid29 .
+_:genid29 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#addedDomainToProperty> .
+_:genid29 <http://www.w3.org/ns/r2rml#objectMap> _:genid30 .
+_:genid30 <http://semweb.mmlab.be/ns/rml#reference> "Predicate" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDomainDPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid31 .
+_:genid31 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#addedDomain> .
+_:genid31 <http://www.w3.org/ns/r2rml#objectMap> _:genid32 .
+_:genid32 <http://semweb.mmlab.be/ns/rml#reference> "Domain" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDomainDPTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid33 .
+_:genid33 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/AddDomain/{Predicate}-{Domain}" .
+_:genid33 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#AddDomain> .
+# 
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDomainOPTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid34 .
+_:genid34 <http://semweb.mmlab.be/ns/rml#source> "AddObjectProperty_template.csv" .
+_:genid34 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid35 .
+_:genid35 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid35 <http://www.w3.org/ns/r2rml#objectMap> _:genid36 .
+_:genid36 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid37 .
+_:genid37 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#addedDomainToProperty> .
+_:genid37 <http://www.w3.org/ns/r2rml#objectMap> _:genid38 .
+_:genid38 <http://semweb.mmlab.be/ns/rml#reference> "Predicate" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid39 .
+_:genid39 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#addedDomain> .
+_:genid39 <http://www.w3.org/ns/r2rml#objectMap> _:genid40 .
+_:genid40 <http://semweb.mmlab.be/ns/rml#reference> "Domain" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid41 .
+_:genid41 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid41 <http://www.w3.org/ns/r2rml#objectMap> _:genid42 .
+_:genid42 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid43 .
+_:genid43 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid43 <http://www.w3.org/ns/r2rml#objectMap> _:genid44 .
+_:genid44 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddDomainOPTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid45 .
+_:genid45 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/AddDomain/{Predicate}-{Domain}" .
+_:genid45 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#AddDomain> .
+# 
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddObjectPropertyTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid46 .
+_:genid46 <http://semweb.mmlab.be/ns/rml#source> "AddObjectProperty_template.csv" .
+_:genid46 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddObjectPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid47 .
+_:genid47 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid47 <http://www.w3.org/ns/r2rml#objectMap> _:genid48 .
+_:genid48 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddObjectPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid49 .
+_:genid49 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid49 <http://www.w3.org/ns/r2rml#objectMap> _:genid50 .
+_:genid50 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddObjectPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid51 .
+_:genid51 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid51 <http://www.w3.org/ns/r2rml#objectMap> _:genid52 .
+_:genid52 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddObjectPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid53 .
+_:genid53 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#addedObjectProperty> .
+_:genid53 <http://www.w3.org/ns/r2rml#objectMap> _:genid54 .
+_:genid54 <http://semweb.mmlab.be/ns/rml#reference> "Predicate" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddObjectPropertyTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid55 .
+_:genid55 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/AddObjectProperty/{Predicate}" .
+_:genid55 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#AddObjectProperty> .
+# 
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddRangeDPTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid56 .
+_:genid56 <http://semweb.mmlab.be/ns/rml#source> "AddDataProperty_template.csv" .
+_:genid56 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddRangeDPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid57 .
+_:genid57 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#addedRangeToProperty> .
+_:genid57 <http://www.w3.org/ns/r2rml#objectMap> _:genid58 .
+_:genid58 <http://semweb.mmlab.be/ns/rml#reference> "Predicate" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddRangeDPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid59 .
+_:genid59 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid59 <http://www.w3.org/ns/r2rml#objectMap> _:genid60 .
+_:genid60 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddRangeDPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid61 .
+_:genid61 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#addedDataRange> .
+_:genid61 <http://www.w3.org/ns/r2rml#objectMap> _:genid62 .
+_:genid62 <http://semweb.mmlab.be/ns/rml#reference> "Range" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddRangeDPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid63 .
+_:genid63 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid63 <http://www.w3.org/ns/r2rml#objectMap> _:genid64 .
+_:genid64 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddRangeDPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid65 .
+_:genid65 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid65 <http://www.w3.org/ns/r2rml#objectMap> _:genid66 .
+_:genid66 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddRangeDPTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid67 .
+_:genid67 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/AddRange/{Predicate}-{Range}" .
+_:genid67 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#AddRangeDataProperty> .
+# 
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddRangeOPTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid68 .
+_:genid68 <http://semweb.mmlab.be/ns/rml#source> "AddObjectProperty_template.csv" .
+_:genid68 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid69 .
+_:genid69 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid69 <http://www.w3.org/ns/r2rml#objectMap> _:genid70 .
+_:genid70 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid71 .
+_:genid71 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid71 <http://www.w3.org/ns/r2rml#objectMap> _:genid72 .
+_:genid72 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid73 .
+_:genid73 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid73 <http://www.w3.org/ns/r2rml#objectMap> _:genid74 .
+_:genid74 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid75 .
+_:genid75 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#addedRangeToProperty> .
+_:genid75 <http://www.w3.org/ns/r2rml#objectMap> _:genid76 .
+_:genid76 <http://semweb.mmlab.be/ns/rml#reference> "Predicate" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid77 .
+_:genid77 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#addedObjectRange> .
+_:genid77 <http://www.w3.org/ns/r2rml#objectMap> _:genid78 .
+_:genid78 <http://semweb.mmlab.be/ns/rml#reference> "Range" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddRangeOPTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid79 .
+_:genid79 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/AddRange/{Predicate}-{Range}" .
+_:genid79 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#AddRangeObjectProperty> .
+# 
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddSubClassTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid80 .
+_:genid80 <http://semweb.mmlab.be/ns/rml#source> "AddSubClass_template.csv" .
+_:genid80 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddSubClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid81 .
+_:genid81 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#targetAddSubClass> .
+_:genid81 <http://www.w3.org/ns/r2rml#objectMap> _:genid82 .
+_:genid82 <http://semweb.mmlab.be/ns/rml#reference> "Parent" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddSubClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid83 .
+_:genid83 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid83 <http://www.w3.org/ns/r2rml#objectMap> _:genid84 .
+_:genid84 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddSubClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid85 .
+_:genid85 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid85 <http://www.w3.org/ns/r2rml#objectMap> _:genid86 .
+_:genid86 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddSubClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid87 .
+_:genid87 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#sourceAddSubClass> .
+_:genid87 <http://www.w3.org/ns/r2rml#objectMap> _:genid88 .
+_:genid88 <http://semweb.mmlab.be/ns/rml#reference> "Child" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddSubClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid89 .
+_:genid89 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid89 <http://www.w3.org/ns/r2rml#objectMap> _:genid90 .
+_:genid90 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#AddSubClassTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid91 .
+_:genid91 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/AddSubClass/{Child}-{Parent}" .
+_:genid91 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#AddSubClass> .
+# 
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveClassTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid92 .
+_:genid92 <http://semweb.mmlab.be/ns/rml#source> "RemoveClass_template.csv" .
+_:genid92 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid93 .
+_:genid93 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid93 <http://www.w3.org/ns/r2rml#objectMap> _:genid94 .
+_:genid94 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid95 .
+_:genid95 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid95 <http://www.w3.org/ns/r2rml#objectMap> _:genid96 .
+_:genid96 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid97 .
+_:genid97 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid97 <http://www.w3.org/ns/r2rml#objectMap> _:genid98 .
+_:genid98 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid99 .
+_:genid99 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#removedClass> .
+_:genid99 <http://www.w3.org/ns/r2rml#objectMap> _:genid100 .
+_:genid100 <http://semweb.mmlab.be/ns/rml#reference> "Term" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveClassTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid101 .
+_:genid101 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/RemoveClass/{Term}" .
+_:genid101 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#RemoveClass> .
+# 
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDataPropertyTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid102 .
+_:genid102 <http://semweb.mmlab.be/ns/rml#source> "RemoveDataProperty_template.csv" .
+_:genid102 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDataPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid103 .
+_:genid103 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid103 <http://www.w3.org/ns/r2rml#objectMap> _:genid104 .
+_:genid104 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDataPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid105 .
+_:genid105 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid105 <http://www.w3.org/ns/r2rml#objectMap> _:genid106 .
+_:genid106 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDataPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid107 .
+_:genid107 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid107 <http://www.w3.org/ns/r2rml#objectMap> _:genid108 .
+_:genid108 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDataPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid109 .
+_:genid109 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#removedDataProperty> .
+_:genid109 <http://www.w3.org/ns/r2rml#objectMap> _:genid110 .
+_:genid110 <http://semweb.mmlab.be/ns/rml#reference> "Predicate" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDataPropertyTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid111 .
+_:genid111 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/RemoveDataProperty/{Predicate}" .
+_:genid111 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#RemoveDataProperty> .
+# 
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDomainOPTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid112 .
+_:genid112 <http://semweb.mmlab.be/ns/rml#source> "RemoveObjectProperty_template.csv" .
+_:genid112 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDomainOPTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid113 .
+_:genid113 <http://semweb.mmlab.be/ns/rml#source> "RemoveDataProperty_template.csv" .
+_:genid113 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid114 .
+_:genid114 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid114 <http://www.w3.org/ns/r2rml#objectMap> _:genid115 .
+_:genid115 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid116 .
+_:genid116 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid116 <http://www.w3.org/ns/r2rml#objectMap> _:genid117 .
+_:genid117 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid118 .
+_:genid118 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid118 <http://www.w3.org/ns/r2rml#objectMap> _:genid119 .
+_:genid119 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid120 .
+_:genid120 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#removedDomainFromProperty> .
+_:genid120 <http://www.w3.org/ns/r2rml#objectMap> _:genid121 .
+_:genid121 <http://semweb.mmlab.be/ns/rml#reference> "Predicate" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid122 .
+_:genid122 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#removedDomain> .
+_:genid122 <http://www.w3.org/ns/r2rml#objectMap> _:genid123 .
+_:genid123 <http://semweb.mmlab.be/ns/rml#reference> "Domain" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid124 .
+_:genid124 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid124 <http://www.w3.org/ns/r2rml#objectMap> _:genid125 .
+_:genid125 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid126 .
+_:genid126 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid126 <http://www.w3.org/ns/r2rml#objectMap> _:genid127 .
+_:genid127 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid128 .
+_:genid128 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid128 <http://www.w3.org/ns/r2rml#objectMap> _:genid129 .
+_:genid129 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid130 .
+_:genid130 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#removedDomainFromProperty> .
+_:genid130 <http://www.w3.org/ns/r2rml#objectMap> _:genid131 .
+_:genid131 <http://semweb.mmlab.be/ns/rml#reference> "Predicate" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDomainOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid132 .
+_:genid132 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#removedDomain> .
+_:genid132 <http://www.w3.org/ns/r2rml#objectMap> _:genid133 .
+_:genid133 <http://semweb.mmlab.be/ns/rml#reference> "Domain" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDomainOPTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid134 .
+_:genid134 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/RemoveDomain/{Predicate}-{Domain}" .
+_:genid134 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#RemoveDomain> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveDomainOPTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid135 .
+_:genid135 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/RemoveDomain/{Predicate}-{Domain}" .
+_:genid135 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#RemoveDomain> .
+# 
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveObjectPropertyTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid136 .
+_:genid136 <http://semweb.mmlab.be/ns/rml#source> "RemoveObjectProperty_template.csv" .
+_:genid136 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveObjectPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid137 .
+_:genid137 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid137 <http://www.w3.org/ns/r2rml#objectMap> _:genid138 .
+_:genid138 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveObjectPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid139 .
+_:genid139 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid139 <http://www.w3.org/ns/r2rml#objectMap> _:genid140 .
+_:genid140 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveObjectPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid141 .
+_:genid141 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid141 <http://www.w3.org/ns/r2rml#objectMap> _:genid142 .
+_:genid142 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveObjectPropertyTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid143 .
+_:genid143 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#removedObjectProperty> .
+_:genid143 <http://www.w3.org/ns/r2rml#objectMap> _:genid144 .
+_:genid144 <http://semweb.mmlab.be/ns/rml#reference> "Predicate" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveObjectPropertyTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid145 .
+_:genid145 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/RemoveObjectProperty/{Predicate}" .
+_:genid145 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#RemoveObjectProperty> .
+# 
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveRangeOPTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid146 .
+_:genid146 <http://semweb.mmlab.be/ns/rml#source> "RemoveObjectProperty_template.csv" .
+_:genid146 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveRangeOPTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid147 .
+_:genid147 <http://semweb.mmlab.be/ns/rml#source> "RemoveDataProperty_template.csv" .
+_:genid147 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid148 .
+_:genid148 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#removedObjectRange> .
+_:genid148 <http://www.w3.org/ns/r2rml#objectMap> _:genid149 .
+_:genid149 <http://semweb.mmlab.be/ns/rml#reference> "Range" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid150 .
+_:genid150 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid150 <http://www.w3.org/ns/r2rml#objectMap> _:genid151 .
+_:genid151 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid152 .
+_:genid152 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid152 <http://www.w3.org/ns/r2rml#objectMap> _:genid153 .
+_:genid153 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid154 .
+_:genid154 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid154 <http://www.w3.org/ns/r2rml#objectMap> _:genid155 .
+_:genid155 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid156 .
+_:genid156 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#removedRangeFromProperty> .
+_:genid156 <http://www.w3.org/ns/r2rml#objectMap> _:genid157 .
+_:genid157 <http://semweb.mmlab.be/ns/rml#reference> "Predicate" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid158 .
+_:genid158 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid158 <http://www.w3.org/ns/r2rml#objectMap> _:genid159 .
+_:genid159 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid160 .
+_:genid160 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid160 <http://www.w3.org/ns/r2rml#objectMap> _:genid161 .
+_:genid161 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid162 .
+_:genid162 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid162 <http://www.w3.org/ns/r2rml#objectMap> _:genid163 .
+_:genid163 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid164 .
+_:genid164 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#removedRangeFromProperty> .
+_:genid164 <http://www.w3.org/ns/r2rml#objectMap> _:genid165 .
+_:genid165 <http://semweb.mmlab.be/ns/rml#reference> "Predicate" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveRangeOPTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid166 .
+_:genid166 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#removedDataRange> .
+_:genid166 <http://www.w3.org/ns/r2rml#objectMap> _:genid167 .
+_:genid167 <http://semweb.mmlab.be/ns/rml#reference> "Range" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveRangeOPTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid168 .
+_:genid168 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/RemoveRange/{Predicate}-{Range}" .
+_:genid168 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#RemoveRangeObjectProperty> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveRangeOPTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid169 .
+_:genid169 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/RemoveRange/{Predicate}-{Range}" .
+_:genid169 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#RemoveRangeObjectProperty> .
+# 
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveSubClassTM> <http://semweb.mmlab.be/ns/rml#logicalSource> _:genid170 .
+_:genid170 <http://semweb.mmlab.be/ns/rml#source> "RemoveSubClass_template.csv" .
+_:genid170 <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveSubClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid171 .
+_:genid171 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#fromChangelog> .
+_:genid171 <http://www.w3.org/ns/r2rml#objectMap> _:genid172 .
+_:genid172 <http://semweb.mmlab.be/ns/rml#reference> "Source" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveSubClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid173 .
+_:genid173 <http://www.w3.org/ns/r2rml#predicate> <http://purl.org/dc/terms/date> .
+_:genid173 <http://www.w3.org/ns/r2rml#objectMap> _:genid174 .
+_:genid174 <http://semweb.mmlab.be/ns/rml#reference> "Date" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveSubClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid175 .
+_:genid175 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#issuedBy> .
+_:genid175 <http://www.w3.org/ns/r2rml#objectMap> _:genid176 .
+_:genid176 <http://semweb.mmlab.be/ns/rml#reference> "Author" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveSubClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid177 .
+_:genid177 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#sourceRemoveSubClass> .
+_:genid177 <http://www.w3.org/ns/r2rml#objectMap> _:genid178 .
+_:genid178 <http://semweb.mmlab.be/ns/rml#reference> "Child" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveSubClassTM> <http://www.w3.org/ns/r2rml#predicateObjectMap> _:genid179 .
+_:genid179 <http://www.w3.org/ns/r2rml#predicate> <https://w3id.org/def/och#targetRemoveSubClass> .
+_:genid179 <http://www.w3.org/ns/r2rml#objectMap> _:genid180 .
+_:genid180 <http://semweb.mmlab.be/ns/rml#reference> "Parent" .
+<file:/home/ahmad/repos/diegocondeherreros@gmail.com/change_data_template/csv_changes_mappings.rml.ttl#RemoveSubClassTM> <http://www.w3.org/ns/r2rml#subjectMap> _:genid181 .
+_:genid181 <http://www.w3.org/ns/r2rml#template> "http://example.com/changes/RemoveSubClass/{Child}-{Parent}" .
+_:genid181 <http://www.w3.org/ns/r2rml#class> <https://w3id.org/def/och#RemoveSubClass> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
