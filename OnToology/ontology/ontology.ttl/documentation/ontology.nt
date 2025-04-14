@@ -93,26 +93,12 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/def/och#addAnnotationToResource
-<https://w3id.org/def/och#addAnnotationToResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/och#addAnnotationToResource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#AddAnnotation> .
-<https://w3id.org/def/och#addAnnotationToResource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
-<https://w3id.org/def/och#addAnnotationToResource> <http://www.w3.org/2000/01/rdf-schema#comment> "The Entity the annotation is added to" .
-<https://w3id.org/def/och#addAnnotationToResource> <http://www.w3.org/2000/01/rdf-schema#label> "add annotation to resource" .
-# 
-# https://w3id.org/def/och#addedAnnotation
-<https://w3id.org/def/och#addedAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/och#addedAnnotation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#AddAnnotation> .
-<https://w3id.org/def/och#addedAnnotation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
-<https://w3id.org/def/och#addedAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "The annotation being added to an entity." .
-<https://w3id.org/def/och#addedAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "added annotation" .
-# 
-# https://w3id.org/def/och#addedAnnotationType
-<https://w3id.org/def/och#addedAnnotationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/och#addedAnnotationType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#AddAnnotation> .
-<https://w3id.org/def/och#addedAnnotationType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<https://w3id.org/def/och#addedAnnotationType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of the annotation property being added to an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations." .
-<https://w3id.org/def/och#addedAnnotationType> <http://www.w3.org/2000/01/rdf-schema#label> "added annotation type" .
+# https://w3id.org/def/och#addedAnnotationToEntity
+<https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#AddAnnotationToEntity> .
+<https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The annotation property being added to an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations." .
+<https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#label> "added annotation to entity" .
 # 
 # https://w3id.org/def/och#addedCharacteristic
 <https://w3id.org/def/och#addedCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -267,26 +253,12 @@
 <https://w3id.org/def/och#relatedChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that indicates an unspecified relation between two Ontology Changes" .
 <https://w3id.org/def/och#relatedChange> <http://www.w3.org/2000/01/rdf-schema#label> "related change" .
 # 
-# https://w3id.org/def/och#removedAnnotation
-<https://w3id.org/def/och#removedAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/och#removedAnnotation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#RemoveAnnotation> .
-<https://w3id.org/def/och#removedAnnotation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
-<https://w3id.org/def/och#removedAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "The annotation being removed from an entity." .
-<https://w3id.org/def/och#removedAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "removed annotation" .
-# 
-# https://w3id.org/def/och#removedAnnotationFromResource
-<https://w3id.org/def/och#removedAnnotationFromResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/och#removedAnnotationFromResource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#RemoveAnnotation> .
-<https://w3id.org/def/och#removedAnnotationFromResource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
-<https://w3id.org/def/och#removedAnnotationFromResource> <http://www.w3.org/2000/01/rdf-schema#comment> "The Entity the annotation is removed from" .
-<https://w3id.org/def/och#removedAnnotationFromResource> <http://www.w3.org/2000/01/rdf-schema#label> "remove annotation from resource" .
-# 
-# https://w3id.org/def/och#removedAnnotationType
-<https://w3id.org/def/och#removedAnnotationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/def/och#removedAnnotationType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#RemoveAnnotation> .
-<https://w3id.org/def/och#removedAnnotationType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<https://w3id.org/def/och#removedAnnotationType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of the annotation property being removed from an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations." .
-<https://w3id.org/def/och#removedAnnotationType> <http://www.w3.org/2000/01/rdf-schema#label> "removed annotation type" .
+# https://w3id.org/def/och#removedAnnotationFromEntity
+<https://w3id.org/def/och#removedAnnotationFromEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/och#removedAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#RemoveAnnotationFromEntity> .
+<https://w3id.org/def/och#removedAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/def/och#removedAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The annotation property being removed from an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations." .
+<https://w3id.org/def/och#removedAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#label> "removed annotation from entity" .
 # 
 # https://w3id.org/def/och#removedCharacteristic
 <https://w3id.org/def/och#removedCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -399,6 +371,13 @@
 <https://w3id.org/def/och#renamedEntityName> <http://www.w3.org/2000/01/rdf-schema#comment> "The new name the OWL Entity is being renamed to" .
 <https://w3id.org/def/och#renamedEntityName> <http://www.w3.org/2000/01/rdf-schema#label> "renamed entity name" .
 # 
+# https://w3id.org/def/och#sourceAddAnnotationToEntity
+<https://w3id.org/def/och#sourceAddAnnotationToEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/och#sourceAddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#AddAnnotationToEntity> .
+<https://w3id.org/def/och#sourceAddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://w3id.org/def/och#sourceAddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The Entity the annotation is added to" .
+<https://w3id.org/def/och#sourceAddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#label> "source add annotation to entity" .
+# 
 # https://w3id.org/def/och#sourceAddDisjointProperty
 <https://w3id.org/def/och#sourceAddDisjointProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/och#sourceAddDisjointProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/och#sourceProperty> .
@@ -475,6 +454,13 @@
 <https://w3id.org/def/och#sourceProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that is the subject of the property relations being changed in a change operation" .
 <https://w3id.org/def/och#sourceProperty> <http://www.w3.org/2000/01/rdf-schema#label> "source property" .
 # 
+# https://w3id.org/def/och#sourceRemoveAnnotationFromEntity
+<https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#RemoveAnnotationFromEntity> .
+<https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The Entity the annotation is removed from" .
+<https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#label> "source remove annotation from entity" .
+# 
 # https://w3id.org/def/och#sourceRemoveDisjointProperty
 <https://w3id.org/def/och#sourceRemoveDisjointProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/och#sourceRemoveDisjointProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/och#sourceProperty> .
@@ -529,6 +515,13 @@
 <https://w3id.org/def/och#sourceRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/def/och#sourceRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the subProperty relation being removed" .
 <https://w3id.org/def/och#sourceRemoveSubProperty> <http://www.w3.org/2000/01/rdf-schema#label> "source RemoveSubProperty" .
+# 
+# https://w3id.org/def/och#targetAddAnnotationToEntity
+<https://w3id.org/def/och#targetAddAnnotationToEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/och#targetAddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#AddAnnotationToEntity> .
+<https://w3id.org/def/och#targetAddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://w3id.org/def/och#targetAddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The content of the annotation being added to an entity." .
+<https://w3id.org/def/och#targetAddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#label> "target add annotation to entity" .
 # 
 # https://w3id.org/def/och#targetAddDisjointProperty
 <https://w3id.org/def/och#targetAddDisjointProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -598,6 +591,13 @@
 <https://w3id.org/def/och#targetProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/def/och#targetProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that is the object of the property relations being changed in a change operation" .
 <https://w3id.org/def/och#targetProperty> <http://www.w3.org/2000/01/rdf-schema#label> "target Property" .
+# 
+# https://w3id.org/def/och#targetRemoveAnnotationFromEntity
+<https://w3id.org/def/och#targetRemoveAnnotationFromEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/och#targetRemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#RemoveAnnotationFromEntity> .
+<https://w3id.org/def/och#targetRemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://w3id.org/def/och#targetRemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The content of the annotation being removed from an entity." .
+<https://w3id.org/def/och#targetRemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#label> "target remove annotation from entity" .
 # 
 # https://w3id.org/def/och#targetRemoveDisjointProperty
 <https://w3id.org/def/och#targetRemoveDisjointProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -718,10 +718,10 @@
 # http://xmlns.com/foaf/0.1/Agent
 <http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://w3id.org/def/och#AddAnnotation
-<https://w3id.org/def/och#AddAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/och#AddAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that corresponds to the addition of the annotation of an entity" .
-<https://w3id.org/def/och#AddAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "Add Annotation" .
+# https://w3id.org/def/och#AddAnnotationToEntity
+<https://w3id.org/def/och#AddAnnotationToEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/och#AddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that corresponds to the addition of the annotation of an entity" .
+<https://w3id.org/def/och#AddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Add Annotation to Entity" .
 # 
 # https://w3id.org/def/och#AddCharacteristic
 <https://w3id.org/def/och#AddCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -834,11 +834,6 @@
 <https://w3id.org/def/och#AddSubPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> "Add Sub Property Of" .
 <https://w3id.org/def/och#AddSubPropertyOf> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://omv.ontoware.org/2007/07/OWLChangesAddSubPropertyOf> .
 # 
-# https://w3id.org/def/och#AnnotationChange
-<https://w3id.org/def/och#AnnotationChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/och#AnnotationChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that corresponds to the change of the annotation of an entity" .
-<https://w3id.org/def/och#AnnotationChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change to Annotation" .
-# 
 # https://w3id.org/def/och#ChangeSet
 <https://w3id.org/def/och#ChangeSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/och#ChangeSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/och#Changelog> .
@@ -888,6 +883,11 @@
 <https://w3id.org/def/och#DomainChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/och#PropertyChange> .
 <https://w3id.org/def/och#DomainChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation corresponding to the change of the domain of a given property" .
 <https://w3id.org/def/och#DomainChange> <http://www.w3.org/2000/01/rdf-schema#label> "Domain Change" .
+# 
+# https://w3id.org/def/och#EntityAnnotationChange
+<https://w3id.org/def/och#EntityAnnotationChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/och#EntityAnnotationChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that corresponds to the change of the annotation of an entity" .
+<https://w3id.org/def/och#EntityAnnotationChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change to the Annotation of an Entity" .
 # 
 # https://w3id.org/def/och#EntityChange
 <https://w3id.org/def/och#EntityChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -974,10 +974,10 @@
 <https://w3id.org/def/och#RangeChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation corresponding to the change of the range of a given property" .
 <https://w3id.org/def/och#RangeChange> <http://www.w3.org/2000/01/rdf-schema#label> "Range Change" .
 # 
-# https://w3id.org/def/och#RemoveAnnotation
-<https://w3id.org/def/och#RemoveAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/och#RemoveAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that corresponds to the removal of the annotation of an entity" .
-<https://w3id.org/def/och#RemoveAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "Remove Annotation" .
+# https://w3id.org/def/och#RemoveAnnotationFromEntity
+<https://w3id.org/def/och#RemoveAnnotationFromEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/och#RemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that corresponds to the removal of the annotation of an entity" .
+<https://w3id.org/def/och#RemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Remove Annotation from Entity" .
 # 
 # https://w3id.org/def/och#RemoveCharacteristic
 <https://w3id.org/def/och#RemoveCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
