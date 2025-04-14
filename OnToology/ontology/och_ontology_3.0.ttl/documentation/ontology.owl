@@ -1246,6 +1246,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/och#AddAnnotationToEntity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/och#EntityAnnotationChange"/>
         <rdfs:comment>The change operation that corresponds to the addition of the annotation of an entity</rdfs:comment>
         <rdfs:label>Add Annotation to Entity</rdfs:label>
     </owl:Class>
@@ -1542,6 +1543,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/och#EntityAnnotationChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/och#EntityChange"/>
         <rdfs:comment>The change operation that corresponds to the change of the annotation of an entity</rdfs:comment>
         <rdfs:label>Change to the Annotation of an Entity</rdfs:label>
     </owl:Class>
@@ -1707,6 +1709,7 @@
 
 
     <owl:Class rdf:about="https://w3id.org/def/och#RemoveAnnotationFromEntity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/och#EntityAnnotationChange"/>
         <rdfs:comment>The change operation that corresponds to the removal of the annotation of an entity</rdfs:comment>
         <rdfs:label>Remove Annotation from Entity</rdfs:label>
     </owl:Class>

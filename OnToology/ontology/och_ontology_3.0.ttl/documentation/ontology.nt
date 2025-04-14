@@ -720,6 +720,7 @@
 # 
 # https://w3id.org/def/och#AddAnnotationToEntity
 <https://w3id.org/def/och#AddAnnotationToEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/och#AddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/och#EntityAnnotationChange> .
 <https://w3id.org/def/och#AddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that corresponds to the addition of the annotation of an entity" .
 <https://w3id.org/def/och#AddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Add Annotation to Entity" .
 # 
@@ -886,6 +887,7 @@
 # 
 # https://w3id.org/def/och#EntityAnnotationChange
 <https://w3id.org/def/och#EntityAnnotationChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/och#EntityAnnotationChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/och#EntityChange> .
 <https://w3id.org/def/och#EntityAnnotationChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that corresponds to the change of the annotation of an entity" .
 <https://w3id.org/def/och#EntityAnnotationChange> <http://www.w3.org/2000/01/rdf-schema#label> "Change to the Annotation of an Entity" .
 # 
@@ -976,6 +978,7 @@
 # 
 # https://w3id.org/def/och#RemoveAnnotationFromEntity
 <https://w3id.org/def/och#RemoveAnnotationFromEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/och#RemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/och#EntityAnnotationChange> .
 <https://w3id.org/def/och#RemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation that corresponds to the removal of the annotation of an entity" .
 <https://w3id.org/def/och#RemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Remove Annotation from Entity" .
 # 
