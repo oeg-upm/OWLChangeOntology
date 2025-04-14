@@ -134,7 +134,7 @@ och:ChangeSet a owl:Class ;
     rdfs:subClassOf och:Changelog .
 
 och:addedRangeToProperty a owl:ObjectProperty ;
-    rdfs:label "add range to property" ;
+    rdfs:label "add range for property" ;
     rdfs:comment "The property to which the change is being added.";
     rdfs:domain och:AddRange ;
     rdfs:range rdf:Property .
@@ -147,7 +147,7 @@ och:addedCharacteristic a owl:ObjectProperty ;
 
 och:addedClass a owl:ObjectProperty ;
     rdfs:label "added class" ;
-    rdfs:comment "The class being added to an ontology";
+    rdfs:comment "The class being added in an AddClass operation";
     rdfs:domain och:AddClass ;
     rdfs:range owl:Class ;
     rdfs:subPropertyOf och:addedEntity .
@@ -215,25 +215,25 @@ och:prevVersion a owl:ObjectProperty ;
     rdfs:range owl:Ontology .
 
 och:addedCharacteristicToProperty a owl:ObjectProperty ;
-    rdfs:label "add characteristic to property" ;
+    rdfs:label "add Characteristic to property" ;
     rdfs:comment "The property a characteristic is added to";
     rdfs:domain och:AddCharacteristic ;
     rdfs:range rdf:Property .
 
 och:addedDomainToProperty a owl:ObjectProperty ;
-    rdfs:label "added domain to property";
+    rdfs:label "added Domain for Property";
     rdfs:comment "The property a domain is added to.";
     rdfs:domain och:AddDomain ;
     rdfs:range rdf:Property .
 
 och:removedCharacteristicFromProperty a owl:ObjectProperty ;
-    rdfs:label "removed characteristic from property " ;
+    rdfs:label "property RemoveCharacteristic" ;
     rdfs:comment "The property a characteristicic is removed from";
     rdfs:domain och:RemoveCharacteristic ;
     rdfs:range rdf:Property .
 
 och:removedDomainFromProperty a owl:ObjectProperty ;
-    rdfs:label "removed domain for property" ;
+    rdfs:label "removed Domain for Property" ;
     rdfs:comment "The property a domain is removed from";
     rdfs:domain och:RemoveDomain ;
     rdfs:range rdf:Property .
@@ -290,8 +290,8 @@ och:removedObjectRange a owl:ObjectProperty ;
     rdfs:range owl:Class .
 
 och:removedRangeFromProperty a owl:ObjectProperty ;
-    rdfs:label "removed range from property" ;
-    rdfs:comment "The removed range from a property";
+    rdfs:label "removed range for property" ;
+    rdfs:comment "The removed range for a property";
     rdfs:domain och:RemoveRange ;
     rdfs:range rdf:Property .
 
@@ -302,168 +302,168 @@ och:renamedEntityName a owl:ObjectProperty ;
     rdfs:range rdfs:Resource .
 
 och:sourceAddDisjointProperty a owl:ObjectProperty ;
-    rdfs:label "source add disjoint property" ;
+    rdfs:label "source AddDisjointProperty" ;
     rdfs:comment "The subject of the disjoint property relation being added";
     rdfs:domain och:AddDisjointProperty ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:sourceProperty .
 
 och:sourceAddEquivalentClass a owl:ObjectProperty ;
-    rdfs:label "source add equivalent class" ;
+    rdfs:label "source AddEquivalentClass" ;
     rdfs:comment "The subject of the equivalent class relation being added";
     rdfs:domain och:AddEquivalentClass ;
     rdfs:range owl:Class ;
     rdfs:subPropertyOf och:sourceClass .
 
 och:sourceAddEquivalentProperty a owl:ObjectProperty ;
-    rdfs:label "source add equivalent property" ;
+    rdfs:label "source AddEquivalentProperty" ;
     rdfs:comment "The subject of the equivalent property relation being added";    
     rdfs:domain och:AddEquivalentProperty ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:sourceProperty .
 
 och:sourceAddInverseProperty a owl:ObjectProperty ;
-    rdfs:label "source add inverse property" ;
+    rdfs:label "source AddInverseProperty" ;
     rdfs:comment "The subject of the inverse property relation being added";    
     rdfs:domain och:AddInverseProperty ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:sourceProperty .
 
 och:sourceAddSubClass a owl:ObjectProperty ;
-    rdfs:label "source add sub class" ;
+    rdfs:label "source AddSubClass" ;
     rdfs:comment "The subject of the subClass relation being added";
     rdfs:domain och:AddSubClass ;
     rdfs:range owl:Class ;
     rdfs:subPropertyOf och:sourceClass .
 
 och:sourceAddSubProperty a owl:ObjectProperty ;
-    rdfs:label "source add sub property" ;
+    rdfs:label "source AddSubProperty" ;
     rdfs:comment "The subject of the subProperty relation being added";
     rdfs:domain och:AddSubPropertyOf ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:sourceProperty .
 
 och:sourceRemoveDisjointProperty a owl:ObjectProperty ;
-    rdfs:label "source remove disjoint property" ;
+    rdfs:label "source RemoveDisjointProperty" ;
     rdfs:comment "The subject of the disjoint property relation being removed";
     rdfs:domain och:RemoveDisjointProperty ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:sourceProperty .
 
 och:sourceRemoveEquivalentClass a owl:ObjectProperty ;
-    rdfs:label "source remove equivalent class" ;
+    rdfs:label "source RemoveEquivalentClass" ;
     rdfs:comment "The subject of the equivalent class relation being removed";
     rdfs:domain och:RemoveEquivalentClass ;
     rdfs:range owl:Class ;
     rdfs:subPropertyOf och:sourceClass .
 
 och:sourceRemoveEquivalentProperty a owl:ObjectProperty ;
-    rdfs:label "source remove equivalent property" ;
+    rdfs:label "source RemoveEquivalentProperty" ;
     rdfs:comment "The subject of the equivalent property relation being removed";
     rdfs:domain och:RemoveEquivalentProperty ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:sourceProperty .
 
 och:sourceRemoveInverseProperty a owl:ObjectProperty ;
-    rdfs:label "source remove inverse property" ;
+    rdfs:label "source RemoveInverseProperty" ;
     rdfs:comment "The subject of the inverse property relation being removed";
     rdfs:domain och:RemoveInverseProperty ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:sourceProperty .
 
 och:sourceRemoveSubClass a owl:ObjectProperty ;
-    rdfs:label "source remove sub class" ;
+    rdfs:label "source RemoveSubClass" ;
     rdfs:comment "The subject of the disjoint property relation being added";
     rdfs:domain och:RemoveSubClass ;
     rdfs:range owl:Class ;
     rdfs:subPropertyOf och:sourceClass .
 
 och:sourceRemoveSubProperty a owl:ObjectProperty ;
-    rdfs:label "source remove sub property" ;
+    rdfs:label "source RemoveSubProperty" ;
     rdfs:comment "The subject of the subProperty relation being removed";
     rdfs:domain och:RemoveSubPropertyOf ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:sourceProperty .
 
 och:targetAddDisjointProperty a owl:ObjectProperty ;
-    rdfs:label "target add disjoint property" ;
+    rdfs:label "target AddDisjointProperty" ;
     rdfs:comment "The object of the disjoint property relation being added";
     rdfs:domain och:AddDisjointProperty ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:targetProperty .
 
 och:targetAddEquivalentClass a owl:ObjectProperty ;
-    rdfs:label "target add equivalent class" ;
+    rdfs:label "target AddEquivalentClass" ;
     rdfs:comment "The object of the equivalent class relation being added";
     rdfs:domain och:AddEquivalentClass ;
     rdfs:range owl:Class ;
     rdfs:subPropertyOf och:targetClass .
 
 och:targetAddEquivalentProperty a owl:ObjectProperty ;
-    rdfs:label "target add equivalent property" ;
+    rdfs:label "target AddEquivalentProperty" ;
     rdfs:comment "The object of the equivalent property relation being added";
     rdfs:domain och:AddEquivalentProperty ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:targetProperty .
 
 och:targetAddInverseProperty a owl:ObjectProperty ;
-    rdfs:label "target add inverse property" ;
+    rdfs:label "target AddInverseProperty" ;
     rdfs:comment "The object of the inverse property relation being added";
     rdfs:domain och:AddInverseProperty ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:targetProperty .
 
 och:targetAddSubClass a owl:ObjectProperty ;
-    rdfs:label "target add sub class" ;
+    rdfs:label "target AddSubClass" ;
     rdfs:comment "The object of the subClass relation being added";
     rdfs:domain och:AddSubClass ;
     rdfs:range owl:Class ;
     rdfs:subPropertyOf och:targetClass .
 
 och:targetAddSubProperty a owl:ObjectProperty ;
-    rdfs:label "target add sub property" ;
+    rdfs:label "target AddSubProperty" ;
     rdfs:comment "The object of the subProperty relation being added";
     rdfs:domain och:AddSubPropertyOf ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:targetProperty .
 
 och:targetRemoveDisjointProperty a owl:ObjectProperty ;
-    rdfs:label "target remove disjoint property" ;
+    rdfs:label "target RemoveDisjointProperty" ;
     rdfs:comment "The object of the disjoint property relation being removed";
     rdfs:domain och:RemoveDisjointProperty ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:targetProperty .
 
 och:targetRemoveEquivalentClass a owl:ObjectProperty ;
-    rdfs:label "target remove equivalent class" ;
+    rdfs:label "target RemoveEquivalentClass" ;
     rdfs:comment "The object of the equivalent class relation being removed";
     rdfs:domain och:RemoveEquivalentClass ;
     rdfs:range owl:Class ;
     rdfs:subPropertyOf och:targetClass .
 
 och:targetRemoveEquivalentProperty a owl:ObjectProperty ;
-    rdfs:label "target remove equivalent property" ;
+    rdfs:label "target RemoveEquivalentProperty" ;
     rdfs:comment "The object of the equivalent class relation being removed";
     rdfs:domain och:RemoveEquivalentProperty ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:targetProperty .
 
 och:targetRemoveInverseProperty a owl:ObjectProperty ;
-    rdfs:label "target remove inverse property" ;
+    rdfs:label "target RemoveInverseProperty" ;
     rdfs:comment "The object of the inverse property relation being removed";
     rdfs:domain och:RemoveInverseProperty ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:targetProperty .
 
 och:targetRemoveSubClass a owl:ObjectProperty ;
-    rdfs:label "target remove sub class" ;
+    rdfs:label "target RemovesubClass" ;
     rdfs:comment "The object of the subClass relation being removed";
     rdfs:domain och:RemoveSubClass ;
     rdfs:range owl:Class ;
     rdfs:subPropertyOf och:targetClass .
 
 och:targetRemoveSubProperty a owl:ObjectProperty ;
-    rdfs:label "target remove sub property" ;
+    rdfs:label "target RemoveSubProperty" ;
     rdfs:comment "The object of the subProperty relation being removed";
     rdfs:domain och:RemoveSubPropertyOf ;
     rdfs:range rdf:Property ;
@@ -769,7 +769,7 @@ och:sourceProperty a owl:ObjectProperty ;
     rdfs:range rdf:Property .
 
 och:targetProperty a owl:ObjectProperty ;
-    rdfs:label "target property";
+    rdfs:label "target Property";
     rdfs:comment "The property that is the object of the property relations being changed in a change operation";
     rdfs:domain och:PropertyRelationChange ;
     rdfs:range rdf:Property .
@@ -787,14 +787,14 @@ och:RemoveProperty a owl:Class;
     prov:wasDerivedFrom omv:RemoveProperty.
 
 och:addedProperty a owl:ObjectProperty;
-    rdfs:label "added property";
+    rdfs:label "added Property";
     rdfs:comment "The property being added to the ontology";
     rdfs:subPropertyOf och:addedEntity;
     rdfs:domain och:AddProperty;
     rdfs:range rdf:Property.
 
 och:removedProperty a owl:ObjectProperty;
-    rdfs:label "removed property";
+    rdfs:label "removed Property";
     rdfs:comment "The property being removed from the ontology";
     rdfs:subPropertyOf och:removedEntity;
     rdfs:domain och:RemoveProperty;
@@ -855,47 +855,45 @@ och:AddRelationToIndividual a owl:Class ;
     rdfs:subClassOf och:IndividualRelationChange .
 
 och:sourceAddRelationToIndividual a owl:ObjectProperty ;
-    rdfs:label "source add relation to individual" ;
+    rdfs:label "source add relation to individuals" ;
     rdfs:comment "The individual that is the subject of the relation being added in a change operation";
     rdfs:domain och:AddRelationToIndividual ;
     rdfs:range owl:NamedIndividual .
 
 och:targetAddRelationToIndividual a owl:ObjectProperty ;
-    rdfs:label "target add relation to individual" ;
+    rdfs:label "target add relation to individuals" ;
     rdfs:comment "The individual that is the object of the relation being added in a change operation";
     rdfs:domain och:AddRelationToIndividual ;
     rdfs:range rdfs:Resource .
 
 och:addedRelationToIndividual a owl:ObjectProperty ;
-    rdfs:label "property add relation to individual" ;
+    rdfs:label "property add relation to individuals" ;
     rdfs:comment "The individual that is the relation being added in a change operation";
     rdfs:domain och:AddRelationToIndividual ;
     rdfs:range rdf:Property .    
 
 och:RemoveRelationFromIndividual a owl:Class ;
-    rdfs:label "Remove Relation from Individual" ;
+    rdfs:label "Remove Relation from Individuals" ;
     rdfs:comment "The change operation corresponding to the removal of a relation between two individuals";
     rdfs:subClassOf och:IndividualRelationChange .
 
 och:sourceRemoveRelationToIndividual a owl:ObjectProperty ;
-    rdfs:label "source remove relation to individual" ;
+    rdfs:label "source remove relation to individuals" ;
     rdfs:comment "The individual that is the subject of the relation being removed in a change operation";
     rdfs:domain och:RemoveRelationtoIndividual ;
     rdfs:range owl:NamedIndividual .
 
 och:targetRemoveRelationToIndividual a owl:ObjectProperty ;
-    rdfs:label "target remove relation to individual" ;
+    rdfs:label "target remove relation to individuals" ;
     rdfs:comment "The individual that is the object of the relation being removed in a change operation";
     rdfs:domain och:RemoveRelationtoIndividual ;
     rdfs:range rdfs:Resource .
 
 och:removedRelationFromIndividual a owl:ObjectProperty ;
-    rdfs:label "removed relation from individual" ;
+    rdfs:label "removed relation from individuals" ;
     rdfs:comment "The relation being removed from an individual in a change operation";
     rdfs:domain och:RemoveRelationtoIndividual ;
     rdfs:range rdf:Property .
-    
-### Annotation Changes
 
 och:EntityAnnotationChange a owl:Class;
     rdfs:label "Change to the Annotation of an Entity";
