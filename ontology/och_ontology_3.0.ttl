@@ -895,20 +895,22 @@ och:removedRelationFromIndividual a owl:ObjectProperty ;
     rdfs:domain och:RemoveRelationtoIndividual ;
     rdfs:range rdf:Property .
 
+# Annotation Changes.
+
 och:EntityAnnotationChange a owl:Class;
     rdfs:label "Change to the Annotation of an Entity";
     rdfs:comment "The change operation that corresponds to the change of the annotation of an entity";
-    rdfs:subclassOf och:EntityChange.
+    rdfs:subClassOf och:EntityChange.
 
 och:AddAnnotationToEntity a owl:Class;
     rdfs:label "Add Annotation to Entity";
     rdfs:comment "The change operation that corresponds to the addition of the annotation of an entity";
-    rdfs:subclassOf och:EntityAnnotationChange.
+    rdfs:subClassOf och:EntityAnnotationChange.
 
 och:RemoveAnnotationFromEntity a owl:Class;
     rdfs:label "Remove Annotation from Entity";
     rdfs:comment "The change operation that corresponds to the removal of the annotation of an entity";
-    rdfs:subclassOf och:EntityAnnotationChange.
+    rdfs:subClassOf och:EntityAnnotationChange.
 
 och:sourceAddAnnotationToEntity a owl:ObjectProperty;
     rdfs:label "source add annotation to entity" ;
