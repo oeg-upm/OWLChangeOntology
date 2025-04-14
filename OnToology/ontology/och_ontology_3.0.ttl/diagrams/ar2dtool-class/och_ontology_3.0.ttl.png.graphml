@@ -378,41 +378,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_och:AnnotationChange">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="200.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:AnnotationChange</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-      <node id="nid_och:EntityChange">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:EntityChange</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subclassOf12" source="nid_och:AnnotationChange" target="nid_och:EntityChange">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subclassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_och:removedDataProperty">
          <data key="d0">
             <y:ShapeNode>
@@ -425,12 +390,47 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf13" source="nid_och:removedDataProperty" target="nid_och:removedEntity">
+    <edge id="eid_rdfs:subPropertyOf12" source="nid_och:removedDataProperty" target="nid_och:removedEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subPropertyOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_och:RemoveAnnotationFromEntity">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="300.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:RemoveAnnotationFromEntity</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_och:EntityAnnotationChange">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:EntityAnnotationChange</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subclassOf13" source="nid_och:RemoveAnnotationFromEntity" target="nid_och:EntityAnnotationChange">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subclassOf</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -528,6 +528,29 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_och:EntityChange">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:EntityChange</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subclassOf18" source="nid_och:EntityAnnotationChange" target="nid_och:EntityChange">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subclassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_och:sourceRemoveSubProperty">
          <data key="d0">
             <y:ShapeNode>
@@ -540,30 +563,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf18" source="nid_och:sourceRemoveSubProperty" target="nid_och:sourceProperty">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subPropertyOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_och:sourceRemoveDisjointProperty">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:sourceRemoveDisjointProperty</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subPropertyOf19" source="nid_och:sourceRemoveDisjointProperty" target="nid_och:sourceProperty">
+    <edge id="eid_rdfs:subPropertyOf19" source="nid_och:sourceRemoveSubProperty" target="nid_och:sourceProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -587,6 +587,29 @@
          <data key="d1" />
       </node>
     <edge id="eid_rdfs:subPropertyOf20" source="nid_och:targetAddEquivalentClass" target="nid_och:targetClass">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subPropertyOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_och:sourceRemoveDisjointProperty">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:sourceRemoveDisjointProperty</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subPropertyOf21" source="nid_och:sourceRemoveDisjointProperty" target="nid_och:sourceProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -621,7 +644,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_prov:wasDerivedFrom21" source="nid_och:OntologicalChange" target="nid_http://omv.ontoware.org/2007/07/OWLChangesOntologyChange">
+    <edge id="eid_prov:wasDerivedFrom22" source="nid_och:OntologicalChange" target="nid_http://omv.ontoware.org/2007/07/OWLChangesOntologyChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -644,7 +667,30 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf22" source="nid_och:targetRemoveEquivalentProperty" target="nid_och:targetProperty">
+    <edge id="eid_rdfs:subPropertyOf23" source="nid_och:targetRemoveEquivalentProperty" target="nid_och:targetProperty">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subPropertyOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_och:targetRemoveInverseProperty">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="310.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:targetRemoveInverseProperty</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subPropertyOf24" source="nid_och:targetRemoveInverseProperty" target="nid_och:targetProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -679,30 +725,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf23" source="nid_och:sourceRemoveEquivalentClass" target="nid_och:sourceClass">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subPropertyOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_och:targetRemoveInverseProperty">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="310.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:targetRemoveInverseProperty</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subPropertyOf24" source="nid_och:targetRemoveInverseProperty" target="nid_och:targetProperty">
+    <edge id="eid_rdfs:subPropertyOf25" source="nid_och:sourceRemoveEquivalentClass" target="nid_och:sourceClass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -737,35 +760,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_prov:wasDerivedFrom25" source="nid_och:AddDataProperty" target="nid_http://omv.ontoware.org/2007/07/OWLChangesAddDataProperty">
+    <edge id="eid_prov:wasDerivedFrom26" source="nid_och:AddDataProperty" target="nid_http://omv.ontoware.org/2007/07/OWLChangesAddDataProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">prov:wasDerivedFrom</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_och:AddAnnotation">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="170.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:AddAnnotation</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subclassOf26" source="nid_och:AddAnnotation" target="nid_och:AnnotationChange">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subclassOf</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -806,6 +806,29 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_och:sourceRemoveEquivalentProperty">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="340.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:sourceRemoveEquivalentProperty</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subPropertyOf28" source="nid_och:sourceRemoveEquivalentProperty" target="nid_och:sourceProperty">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subPropertyOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_och:RemoveRange">
          <data key="d0">
             <y:ShapeNode>
@@ -830,7 +853,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_prov:wasDerivedFrom28" source="nid_och:RemoveRange" target="nid_http://omv.ontoware.org/2007/07/OWLChangesRemoveRange">
+    <edge id="eid_prov:wasDerivedFrom29" source="nid_och:RemoveRange" target="nid_http://omv.ontoware.org/2007/07/OWLChangesRemoveRange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -841,24 +864,24 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_och:sourceRemoveEquivalentProperty">
+      <node id="nid_och:AddAnnotationToEntity">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="340.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
+               <y:Geometry height="30.0" width="250.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:sourceRemoveEquivalentProperty</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:AddAnnotationToEntity</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf29" source="nid_och:sourceRemoveEquivalentProperty" target="nid_och:sourceProperty">
+    <edge id="eid_rdfs:subclassOf30" source="nid_och:AddAnnotationToEntity" target="nid_och:EntityAnnotationChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subPropertyOf</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subclassOf</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -876,7 +899,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf30" source="nid_och:sourceAddEquivalentProperty" target="nid_och:sourceProperty">
+    <edge id="eid_rdfs:subPropertyOf31" source="nid_och:sourceAddEquivalentProperty" target="nid_och:sourceProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -899,7 +922,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf31" source="nid_och:sourceRemoveSubClass" target="nid_och:sourceClass">
+    <edge id="eid_rdfs:subPropertyOf32" source="nid_och:sourceRemoveSubClass" target="nid_och:sourceClass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -934,7 +957,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_prov:wasDerivedFrom32" source="nid_och:RemoveProperty" target="nid_http://omv.ontoware.org/2007/07/OWLChangesRemoveProperty">
+    <edge id="eid_prov:wasDerivedFrom33" source="nid_och:RemoveProperty" target="nid_http://omv.ontoware.org/2007/07/OWLChangesRemoveProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -969,7 +992,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_prov:wasDerivedFrom33" source="nid_och:AddEquivalentClass" target="nid_http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentClass">
+    <edge id="eid_prov:wasDerivedFrom34" source="nid_och:AddEquivalentClass" target="nid_http://omv.ontoware.org/2007/07/OWLChangesAddEquivalentClass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -992,7 +1015,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf34" source="nid_och:targetAddEquivalentProperty" target="nid_och:targetProperty">
+    <edge id="eid_rdfs:subPropertyOf35" source="nid_och:targetAddEquivalentProperty" target="nid_och:targetProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1027,7 +1050,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_prov:wasDerivedFrom35" source="nid_och:DataPropertyChange" target="nid_http://omv.ontoware.org/2007/07/OWLChangesDataPropertyChange">
+    <edge id="eid_prov:wasDerivedFrom36" source="nid_och:DataPropertyChange" target="nid_http://omv.ontoware.org/2007/07/OWLChangesDataPropertyChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1050,7 +1073,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf36" source="nid_och:sourceAddSubProperty" target="nid_och:sourceProperty">
+    <edge id="eid_rdfs:subPropertyOf37" source="nid_och:sourceAddSubProperty" target="nid_och:sourceProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1073,7 +1096,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf37" source="nid_och:sourceAddInverseProperty" target="nid_och:sourceProperty">
+    <edge id="eid_rdfs:subPropertyOf38" source="nid_och:sourceAddInverseProperty" target="nid_och:sourceProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1096,35 +1119,12 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf38" source="nid_och:sourceAddEquivalentClass" target="nid_och:sourceClass">
+    <edge id="eid_rdfs:subPropertyOf39" source="nid_och:sourceAddEquivalentClass" target="nid_och:sourceClass">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subPropertyOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_och:RemoveAnnotation">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="200.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:RemoveAnnotation</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subclassOf39" source="nid_och:RemoveAnnotation" target="nid_och:AnnotationChange">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subclassOf</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1985,17 +1985,6 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:removedAnnotationFromResource73" source="nid_och:RemoveAnnotation" target="nid_rdfs:Resource">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:removedAnnotationFromResource</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_och:AddClass">
          <data key="d0">
             <y:ShapeNode>
@@ -2008,7 +1997,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_och:addedClass74" source="nid_och:AddClass" target="nid_owl:Class">
+    <edge id="eid_och:addedClass73" source="nid_och:AddClass" target="nid_owl:Class">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2019,7 +2008,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:removedDomain75" source="nid_och:RemoveDomain" target="nid_owl:Class">
+    <edge id="eid_och:removedDomain74" source="nid_och:RemoveDomain" target="nid_owl:Class">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2030,12 +2019,23 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:removedDomainFromProperty76" source="nid_och:RemoveDomain" target="nid_rdf:Property">
+    <edge id="eid_och:removedDomainFromProperty75" source="nid_och:RemoveDomain" target="nid_rdf:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:removedDomainFromProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_och:targetAddAnnotationToEntity76" source="nid_och:AddAnnotationToEntity" target="nid_rdfs:Resource">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:targetAddAnnotationToEntity</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2327,18 +2327,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:removedAnnotation91" source="nid_och:RemoveAnnotation" target="nid_rdfs:Resource">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:removedAnnotation</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_och:sourceProperty92" source="nid_och:PropertyRelationChange" target="nid_rdf:Property">
+    <edge id="eid_och:sourceProperty91" source="nid_och:PropertyRelationChange" target="nid_rdf:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2349,7 +2338,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:fromChangelog93" source="nid_och:OntologicalChange" target="nid_och:Changelog">
+    <edge id="eid_och:fromChangelog92" source="nid_och:OntologicalChange" target="nid_och:Changelog">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2372,7 +2361,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_och:addedObjectRange94" source="nid_och:AddRangeObjectProperty" target="nid_owl:Class">
+    <edge id="eid_och:addedObjectRange93" source="nid_och:AddRangeObjectProperty" target="nid_owl:Class">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2395,7 +2384,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_och:sourceAddSubClass95" source="nid_och:AddSubClass" target="nid_owl:Class">
+    <edge id="eid_och:sourceAddSubClass94" source="nid_och:AddSubClass" target="nid_owl:Class">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2406,7 +2395,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:sourceRemoveEquivalentClass96" source="nid_och:RemoveEquivalentClass" target="nid_owl:Class">
+    <edge id="eid_och:sourceRemoveEquivalentClass95" source="nid_och:RemoveEquivalentClass" target="nid_owl:Class">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2417,7 +2406,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:targetRemoveRelationToIndividual97" source="nid_och:RemoveRelationtoIndividual" target="nid_rdfs:Resource">
+    <edge id="eid_och:targetRemoveRelationToIndividual96" source="nid_och:RemoveRelationtoIndividual" target="nid_rdfs:Resource">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2428,23 +2417,12 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:targetResource98" source="nid_och:IndividualRelationChange" target="nid_rdfs:Resource">
+    <edge id="eid_och:targetResource97" source="nid_och:IndividualRelationChange" target="nid_rdfs:Resource">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:targetResource</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_och:addedAnnotationType99" source="nid_och:AddAnnotation" target="nid_rdf:Property">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:addedAnnotationType</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2462,7 +2440,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_och:targetRemoveDisjointProperty100" source="nid_och:RemoveDisjointProperty" target="nid_rdf:Property">
+    <edge id="eid_och:targetRemoveDisjointProperty98" source="nid_och:RemoveDisjointProperty" target="nid_rdf:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2473,7 +2451,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:targetAddEquivalentProperty101" source="nid_och:AddEquivalentProperty" target="nid_rdf:Property">
+    <edge id="eid_och:targetAddEquivalentProperty99" source="nid_och:AddEquivalentProperty" target="nid_rdf:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2484,23 +2462,34 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:addedAnnotation102" source="nid_och:AddAnnotation" target="nid_rdfs:Resource">
+    <edge id="eid_och:addedAnnotationToEntity100" source="nid_och:AddAnnotationToEntity" target="nid_rdf:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:addedAnnotation</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:addedAnnotationToEntity</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:sourceRemoveEquivalentProperty103" source="nid_och:RemoveEquivalentProperty" target="nid_rdf:Property">
+    <edge id="eid_och:sourceRemoveEquivalentProperty101" source="nid_och:RemoveEquivalentProperty" target="nid_rdf:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:sourceRemoveEquivalentProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_och:targetRemoveAnnotationFromEntity102" source="nid_och:RemoveAnnotationFromEntity" target="nid_rdfs:Resource">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:targetRemoveAnnotationFromEntity</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2518,7 +2507,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_och:removedClass104" source="nid_och:RemoveClass" target="nid_owl:Class">
+    <edge id="eid_och:removedClass103" source="nid_och:RemoveClass" target="nid_owl:Class">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2541,7 +2530,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_och:removedDataRange105" source="nid_och:RemoveRangeDataProperty" target="nid_rdfs:Datatype">
+    <edge id="eid_och:removedDataRange104" source="nid_och:RemoveRangeDataProperty" target="nid_rdfs:Datatype">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2564,7 +2553,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_och:addedIndividual106" source="nid_och:AddIndividual" target="nid_owl:NamedIndividual">
+    <edge id="eid_och:addedIndividual105" source="nid_och:AddIndividual" target="nid_owl:NamedIndividual">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2575,7 +2564,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:addedProperty107" source="nid_och:AddProperty" target="nid_rdf:Property">
+    <edge id="eid_och:addedProperty106" source="nid_och:AddProperty" target="nid_rdf:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2586,7 +2575,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:addedDomainToProperty108" source="nid_och:AddDomain" target="nid_rdf:Property">
+    <edge id="eid_och:addedDomainToProperty107" source="nid_och:AddDomain" target="nid_rdf:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2597,18 +2586,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:addAnnotationToResource109" source="nid_och:AddAnnotation" target="nid_rdfs:Resource">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:addAnnotationToResource</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_och:newVersion110" source="nid_och:Changelog" target="nid_owl:Ontology">
+    <edge id="eid_och:newVersion108" source="nid_och:Changelog" target="nid_owl:Ontology">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2619,23 +2597,12 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:addedEntity111" source="nid_och:EntityChange" target="nid_rdfs:Resource">
+    <edge id="eid_och:addedEntity109" source="nid_och:EntityChange" target="nid_rdfs:Resource">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:addedEntity</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_och:removedAnnotationType112" source="nid_och:RemoveAnnotation" target="nid_rdf:Property">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:removedAnnotationType</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2653,7 +2620,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_och:sourceClass113" source="nid_och:ClassRelationChange" target="nid_owl:Class">
+    <edge id="eid_och:sourceClass110" source="nid_och:ClassRelationChange" target="nid_owl:Class">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2664,7 +2631,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:targetClass114" source="nid_och:ClassRelationChange" target="nid_owl:Class">
+    <edge id="eid_och:targetClass111" source="nid_och:ClassRelationChange" target="nid_owl:Class">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2687,7 +2654,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_och:targetRemoveSubClass115" source="nid_och:RemoveSubClass" target="nid_owl:Class">
+    <edge id="eid_och:targetRemoveSubClass112" source="nid_och:RemoveSubClass" target="nid_owl:Class">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2698,7 +2665,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:addedDomain116" source="nid_och:AddDomain" target="nid_owl:Class">
+    <edge id="eid_och:addedDomain113" source="nid_och:AddDomain" target="nid_owl:Class">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2709,7 +2676,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:addedRangeToProperty117" source="nid_och:AddRange" target="nid_rdf:Property">
+    <edge id="eid_och:addedRangeToProperty114" source="nid_och:AddRange" target="nid_rdf:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2720,7 +2687,29 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:sourceRemoveSubProperty118" source="nid_och:RemoveSubPropertyOf" target="nid_rdf:Property">
+    <edge id="eid_och:sourceRemoveAnnotationFromEntity115" source="nid_och:RemoveAnnotationFromEntity" target="nid_rdfs:Resource">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:sourceRemoveAnnotationFromEntity</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_och:sourceAddAnnotationToEntity116" source="nid_och:AddAnnotationToEntity" target="nid_rdfs:Resource">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:sourceAddAnnotationToEntity</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_och:sourceRemoveSubProperty117" source="nid_och:RemoveSubPropertyOf" target="nid_rdf:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2731,7 +2720,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:sourceRemoveSubClass119" source="nid_och:RemoveSubClass" target="nid_owl:Class">
+    <edge id="eid_och:sourceRemoveSubClass118" source="nid_och:RemoveSubClass" target="nid_owl:Class">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2742,12 +2731,23 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_och:sourceRemoveDisjointProperty120" source="nid_och:RemoveDisjointProperty" target="nid_rdf:Property">
+    <edge id="eid_och:sourceRemoveDisjointProperty119" source="nid_och:RemoveDisjointProperty" target="nid_rdf:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:sourceRemoveDisjointProperty</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_och:removedAnnotationFromEntity120" source="nid_och:RemoveAnnotationFromEntity" target="nid_rdf:Property">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">och:removedAnnotationFromEntity</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
