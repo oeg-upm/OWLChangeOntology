@@ -895,53 +895,53 @@ och:removedRelationFromIndividual a owl:ObjectProperty ;
     rdfs:domain och:RemoveRelationtoIndividual ;
     rdfs:range rdf:Property .
 
-och:AnnotationChange a owl:Class;
-    rdfs:label "Change to Annotation";
+och:EntityAnnotationChange a owl:Class;
+    rdfs:label "Change to the Annotation of an Entity";
     rdfs:comment "The change operation that corresponds to the change of the annotation of an entity";
     rdfs:subclassOf och:EntityChange.
 
-och:AddAnnotation a owl:Class;
-    rdfs:label "Add Annotation";
+och:AddAnnotationToEntity a owl:Class;
+    rdfs:label "Add Annotation to Entity";
     rdfs:comment "The change operation that corresponds to the addition of the annotation of an entity";
-    rdfs:subclassOf och:AnnotationChange.
+    rdfs:subclassOf och:EntityAnnotationChange.
 
-och:RemoveAnnotation a owl:Class;
-    rdfs:label "Remove Annotation";
+och:RemoveAnnotationFromEntity a owl:Class;
+    rdfs:label "Remove Annotation from Entity";
     rdfs:comment "The change operation that corresponds to the removal of the annotation of an entity";
-    rdfs:subclassOf och:AnnotationChange.
+    rdfs:subclassOf och:EntityAnnotationChange.
 
-och:addAnnotationToResource a owl:ObjectProperty;
-    rdfs:label "add annotation to resource" ;
+och:sourceAddAnnotationToEntity a owl:ObjectProperty;
+    rdfs:label "source add annotation to entity" ;
     rdfs:comment "The Entity the annotation is added to";
-    rdfs:domain och:AddAnnotation ;
+    rdfs:domain och:AddAnnotationToEntity ;
     rdfs:range rdfs:Resource .
 
-och:addedAnnotationType a owl:ObjectProperty;
-    rdfs:label "added annotation type" ;
-    rdfs:comment "The type of the annotation property being added to an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations.";
-    rdfs:domain och:AddAnnotation ;
+och:addedAnnotationToEntity a owl:ObjectProperty;
+    rdfs:label "added annotation to entity" ;
+    rdfs:comment "The annotation property being added to an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations.";
+    rdfs:domain och:AddAnnotationToEntity ;
     rdfs:range rdf:Property .
 
-och:addedAnnotation a owl:ObjectProperty;
-    rdfs:label "added annotation" ;
-    rdfs:comment "The annotation being added to an entity.";
-    rdfs:domain och:AddAnnotation ;
+och:targetAddAnnotationToEntity a owl:ObjectProperty;
+    rdfs:label "target add annotation to entity" ;
+    rdfs:comment "The content of the annotation being added to an entity.";
+    rdfs:domain och:AddAnnotationToEntity ;
     rdfs:range rdfs:Resource .
 
-och:removedAnnotationFromResource a owl:ObjectProperty;
-    rdfs:label "remove annotation from resource" ;
+och:sourceRemoveAnnotationFromEntity a owl:ObjectProperty;
+    rdfs:label "source remove annotation from entity" ;
     rdfs:comment "The Entity the annotation is removed from";
-    rdfs:domain och:RemoveAnnotation ;
+    rdfs:domain och:RemoveAnnotationFromEntity ;
     rdfs:range rdfs:Resource .
 
-och:removedAnnotationType a owl:ObjectProperty;
-    rdfs:label "removed annotation type" ;
-    rdfs:comment "The type of the annotation property being removed from an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations.";
-    rdfs:domain och:RemoveAnnotation ;
+och:removedAnnotationFromEntity a owl:ObjectProperty;
+    rdfs:label "removed annotation from entity" ;
+    rdfs:comment "The annotation property being removed from an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations.";
+    rdfs:domain och:RemoveAnnotationFromEntity ;
     rdfs:range rdf:Property .
 
-och:removedAnnotation a owl:ObjectProperty;
-    rdfs:label "removed annotation" ;
-    rdfs:comment "The annotation being removed from an entity.";
-    rdfs:domain och:RemoveAnnotation ;
+och:targetRemoveAnnotationFromEntity a owl:ObjectProperty;
+    rdfs:label "target remove annotation from entity" ;
+    rdfs:comment "The content of the annotation being removed from an entity.";
+    rdfs:domain och:RemoveAnnotationFromEntity ;
     rdfs:range rdfs:Resource .
