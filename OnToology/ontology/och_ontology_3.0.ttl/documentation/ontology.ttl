@@ -807,6 +807,7 @@ owl:Ontology rdf:type owl:Class .
 
 ###  https://w3id.org/def/och#AddAnnotationToEntity
 :AddAnnotationToEntity rdf:type owl:Class ;
+                       rdfs:subClassOf :EntityAnnotationChange ;
                        rdfs:comment "The change operation that corresponds to the addition of the annotation of an entity" ;
                        rdfs:label "Add Annotation to Entity" .
 
@@ -999,6 +1000,7 @@ owl:Ontology rdf:type owl:Class .
 
 ###  https://w3id.org/def/och#EntityAnnotationChange
 :EntityAnnotationChange rdf:type owl:Class ;
+                        rdfs:subClassOf :EntityChange ;
                         rdfs:comment "The change operation that corresponds to the change of the annotation of an entity" ;
                         rdfs:label "Change to the Annotation of an Entity" .
 
@@ -1104,6 +1106,7 @@ owl:Ontology rdf:type owl:Class .
 
 ###  https://w3id.org/def/och#RemoveAnnotationFromEntity
 :RemoveAnnotationFromEntity rdf:type owl:Class ;
+                            rdfs:subClassOf :EntityAnnotationChange ;
                             rdfs:comment "The change operation that corresponds to the removal of the annotation of an entity" ;
                             rdfs:label "Remove Annotation from Entity" .
 
