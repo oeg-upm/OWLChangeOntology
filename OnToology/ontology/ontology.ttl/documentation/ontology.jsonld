@@ -171,6 +171,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Add Annotation to Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/och#EntityAnnotationChange"
   } ]
 }, {
   "@id" : "https://w3id.org/def/och#AddCharacteristic",
@@ -578,6 +581,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Change to the Annotation of an Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/och#EntityChange"
   } ]
 }, {
   "@id" : "https://w3id.org/def/och#EntityChange",
@@ -852,6 +858,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Remove Annotation from Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/och#EntityAnnotationChange"
   } ]
 }, {
   "@id" : "https://w3id.org/def/och#RemoveCharacteristic",

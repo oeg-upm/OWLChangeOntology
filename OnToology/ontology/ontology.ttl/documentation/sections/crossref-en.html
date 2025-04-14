@@ -216,6 +216,11 @@ This section provides details for each class and property defined by OWL Change 
          <span class="markdown">The change operation that corresponds to the addition of the annotation of an entity</span>
       </div>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#EntityAnnotationChange" title="https://w3id.org/def/och#EntityAnnotationChange">Change to the Annotation of an Entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#addedAnnotationToEntity" title="https://w3id.org/def/och#addedAnnotationToEntity">added annotation to entity</a>
@@ -685,6 +690,20 @@ This section provides details for each class and property defined by OWL Change 
       <div class="comment">
          <span class="markdown">The change operation that corresponds to the change of the annotation of an entity</span>
       </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#EntityChange" title="https://w3id.org/def/och#EntityChange">Entity Change</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#AddAnnotationToEntity" title="https://w3id.org/def/och#AddAnnotationToEntity">Add Annotation to Entity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RemoveAnnotationFromEntity"
+               title="https://w3id.org/def/och#RemoveAnnotationFromEntity">Remove Annotation from Entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="Changelog">
       <h3>Changelog<sup class="type-c" title="class">c</sup>
@@ -890,7 +909,8 @@ This section provides details for each class and property defined by OWL Change 
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#ClassChange" title="https://w3id.org/def/och#ClassChange">Class Change</a>
+            <a href="#EntityAnnotationChange" title="https://w3id.org/def/och#EntityAnnotationChange">Change to the Annotation of an Entity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ClassChange" title="https://w3id.org/def/och#ClassChange">Class Change</a>
             <sup class="type-c" title="class">c</sup>, <a href="#DeprecateEntity" title="https://w3id.org/def/och#DeprecateEntity">Deprecate Entity</a>
             <sup class="type-c" title="class">c</sup>, <a href="#IndividualChange" title="https://w3id.org/def/och#IndividualChange">Individual Change</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PropertyChange" title="https://w3id.org/def/och#PropertyChange">Property Change</a>
@@ -1273,6 +1293,11 @@ This section provides details for each class and property defined by OWL Change 
          <span class="markdown">The change operation that corresponds to the removal of the annotation of an entity</span>
       </div>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#EntityAnnotationChange" title="https://w3id.org/def/och#EntityAnnotationChange">Change to the Annotation of an Entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#removedAnnotationFromEntity"

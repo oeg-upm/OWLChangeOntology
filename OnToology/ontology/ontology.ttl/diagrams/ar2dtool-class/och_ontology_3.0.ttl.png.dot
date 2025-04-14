@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "och:PropertyCharacteristic" "och:RemoveObjectProperty" "och:RemoveCharacteristic" "och:RemoveIndividual" "och:AddIndividual" "och:RemoveEquivalentProperty" "och:PropertyRelationChange" "och:AddRelationToIndividual" "och:DataPropertyChange" "rdfs:Datatype" "och:ClassChange" "och:RemoveClass" "och:AddSubClass" "och:AddClass" "och:RemoveDataProperty" "rdf:Property" "och:RenameEntity" "och:ObjectPropertyChange" "och:RevokeDeprecate" "och:EntityChange" "och:RemoveDisjointProperty" "owl:Ontology" "och:AddRangeObjectProperty" "och:AddProperty" "och:AddEquivalentClass" "och:AddCharacteristic" "och:RemoveInverseProperty" "och:EntityAnnotationChange" "och:RemoveEquivalentClass" "och:RemoveDomain" "och:AddDisjointProperty" "och:Changelog" "rdfs:Resource" "och:RemoveSubClass" "och:AddInverseProperty" "och:DeprecateEntity" "owl:ObjectProperty" "och:AddEquivalentProperty" "och:RemoveAnnotationFromEntity" "och:RemoveProperty" "foaf:Agent" "och:ClassRelationChange" "och:AddDataProperty" "och:AddAnnotationToEntity" "och:EquivalentClassChange" "och:IndividualRelationChange" "owl:Class" "och:AddObjectProperty" "och:RemoveRange" "och:RemoveSubPropertyOf" "och:AddDomain" "och:AddSubPropertyOf" "och:AddRange" "och:OntologicalChange" "och:AddRangeDataProperty" "och:RemoveRangeDataProperty" "och:RemoveRangeObjectProperty" "owl:DatatypeProperty" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "och:PropertyCharacteristic" "och:RemoveObjectProperty" "och:RemoveCharacteristic" "och:RemoveIndividual" "och:AddIndividual" "och:RemoveEquivalentProperty" "och:PropertyRelationChange" "och:AddRelationToIndividual" "och:DataPropertyChange" "rdfs:Datatype" "och:ClassChange" "och:RemoveClass" "och:AddSubClass" "och:AddClass" "och:RemoveDataProperty" "rdf:Property" "och:RenameEntity" "och:ObjectPropertyChange" "och:RevokeDeprecate" "och:EntityChange" "och:RemoveDisjointProperty" "owl:Ontology" "och:AddRangeObjectProperty" "och:AddProperty" "och:AddEquivalentClass" "och:AddCharacteristic" "och:RemoveInverseProperty" "och:RemoveEquivalentClass" "och:RemoveDomain" "och:AddDisjointProperty" "och:Changelog" "rdfs:Resource" "och:RemoveSubClass" "och:AddInverseProperty" "och:DeprecateEntity" "owl:ObjectProperty" "och:AddEquivalentProperty" "och:RemoveAnnotationFromEntity" "och:RemoveProperty" "foaf:Agent" "och:ClassRelationChange" "och:AddDataProperty" "och:AddAnnotationToEntity" "och:EquivalentClassChange" "och:IndividualRelationChange" "owl:Class" "och:AddObjectProperty" "och:RemoveRange" "och:RemoveSubPropertyOf" "och:AddDomain" "och:AddSubPropertyOf" "och:AddRange" "och:OntologicalChange" "och:AddRangeDataProperty" "och:RemoveRangeDataProperty" "och:RemoveRangeObjectProperty" "owl:DatatypeProperty" ; /*classes style*/
 	"och:addedDataProperty" -> "och:addedEntity" [ label = "rdfs:subPropertyOf" ];
 	"och:RemoveDomain" -> "http://omv.ontoware.org/2007/07/OWLChangesRemoveDomain" [ label = "prov:wasDerivedFrom" ];
 	"och:removedProperty" -> "och:removedEntity" [ label = "rdfs:subPropertyOf" ];
@@ -15,15 +15,13 @@ node [shape = rectangle, color="orange"]; "och:PropertyCharacteristic" "och:Remo
 	"och:AddObjectProperty" -> "http://omv.ontoware.org/2007/07/OWLChangesAddObjectProperty" [ label = "prov:wasDerivedFrom" ];
 	"och:targetRemoveDisjointProperty" -> "och:targetProperty" [ label = "rdfs:subPropertyOf" ];
 	"och:removedDataProperty" -> "och:removedEntity" [ label = "rdfs:subPropertyOf" ];
-	"och:RemoveAnnotationFromEntity" -> "och:EntityAnnotationChange" [ label = "rdfs:subclassOf" ];
 	"och:addedObjectProperty" -> "och:addedEntity" [ label = "rdfs:subPropertyOf" ];
 	"och:targetRemoveSubClass" -> "och:targetClass" [ label = "rdfs:subPropertyOf" ];
 	"och:targetAddDisjointProperty" -> "och:targetProperty" [ label = "rdfs:subPropertyOf" ];
 	"och:targetAddInverseProperty" -> "och:targetProperty" [ label = "rdfs:subPropertyOf" ];
-	"och:EntityAnnotationChange" -> "och:EntityChange" [ label = "rdfs:subclassOf" ];
 	"och:sourceRemoveSubProperty" -> "och:sourceProperty" [ label = "rdfs:subPropertyOf" ];
-	"och:targetAddEquivalentClass" -> "och:targetClass" [ label = "rdfs:subPropertyOf" ];
 	"och:sourceRemoveDisjointProperty" -> "och:sourceProperty" [ label = "rdfs:subPropertyOf" ];
+	"och:targetAddEquivalentClass" -> "och:targetClass" [ label = "rdfs:subPropertyOf" ];
 	"och:OntologicalChange" -> "http://omv.ontoware.org/2007/07/OWLChangesOntologyChange" [ label = "prov:wasDerivedFrom" ];
 	"och:targetRemoveEquivalentProperty" -> "och:targetProperty" [ label = "rdfs:subPropertyOf" ];
 	"och:targetRemoveInverseProperty" -> "och:targetProperty" [ label = "rdfs:subPropertyOf" ];
@@ -32,7 +30,6 @@ node [shape = rectangle, color="orange"]; "och:PropertyCharacteristic" "och:Remo
 	"och:RemoveEquivalentClass" -> "http://omv.ontoware.org/2007/07/OWLChangesRemoveEquivalentClass" [ label = "prov:wasDerivedFrom" ];
 	"och:sourceRemoveEquivalentProperty" -> "och:sourceProperty" [ label = "rdfs:subPropertyOf" ];
 	"och:RemoveRange" -> "http://omv.ontoware.org/2007/07/OWLChangesRemoveRange" [ label = "prov:wasDerivedFrom" ];
-	"och:AddAnnotationToEntity" -> "och:EntityAnnotationChange" [ label = "rdfs:subclassOf" ];
 	"och:sourceAddEquivalentProperty" -> "och:sourceProperty" [ label = "rdfs:subPropertyOf" ];
 	"och:sourceRemoveSubClass" -> "och:sourceClass" [ label = "rdfs:subPropertyOf" ];
 	"och:RemoveProperty" -> "http://omv.ontoware.org/2007/07/OWLChangesRemoveProperty" [ label = "prov:wasDerivedFrom" ];
