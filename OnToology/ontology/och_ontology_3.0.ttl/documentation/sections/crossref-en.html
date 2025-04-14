@@ -6,7 +6,7 @@ This section provides details for each class and property defined by OWL Change 
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#AddAnnotation" title="https://w3id.org/def/och#AddAnnotation">Add Annotation</a>
+         <a href="#AddAnnotationToEntity" title="https://w3id.org/def/och#AddAnnotationToEntity">Add Annotation to Entity</a>
       </li>
       <li>
          <a href="#AddCharacteristic" title="https://w3id.org/def/och#AddCharacteristic">Add Characteristic</a>
@@ -64,7 +64,7 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#ChangeSet" title="https://w3id.org/def/och#ChangeSet">Change Set</a>
       </li>
       <li>
-         <a href="#AnnotationChange" title="https://w3id.org/def/och#AnnotationChange">Change to Annotation</a>
+         <a href="#EntityAnnotationChange" title="https://w3id.org/def/och#EntityAnnotationChange">Change to the Annotation of an Entity</a>
       </li>
       <li>
          <a href="#Changelog" title="https://w3id.org/def/och#Changelog">Changelog</a>
@@ -134,7 +134,8 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#RangeChange" title="https://w3id.org/def/och#RangeChange">Range Change</a>
       </li>
       <li>
-         <a href="#RemoveAnnotation" title="https://w3id.org/def/och#RemoveAnnotation">Remove Annotation</a>
+         <a href="#RemoveAnnotationFromEntity"
+            title="https://w3id.org/def/och#RemoveAnnotationFromEntity">Remove Annotation from Entity</a>
       </li>
       <li>
          <a href="#RemoveCharacteristic" title="https://w3id.org/def/och#RemoveCharacteristic">Remove Characteristic</a>
@@ -204,22 +205,24 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#SubPropertyChange" title="https://w3id.org/def/och#SubPropertyChange">Sub Property Change</a>
       </li>
    </ul>
-   <div class="entity" id="AddAnnotation">
-      <h3>Add Annotation<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="AddAnnotationToEntity">
+      <h3>Add Annotation to Entity<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/och#AddAnnotation</p>
+         <strong>IRI:</strong> https://w3id.org/def/och#AddAnnotationToEntity</p>
       <div class="comment">
          <span class="markdown">The change operation that corresponds to the addition of the annotation of an entity</span>
       </div>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#addAnnotationToResource" title="https://w3id.org/def/och#addAnnotationToResource">add annotation to resource</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#addedAnnotation" title="https://w3id.org/def/och#addedAnnotation">added annotation</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#addedAnnotationType" title="https://w3id.org/def/och#addedAnnotationType">added annotation type</a>
+            <a href="#addedAnnotationToEntity" title="https://w3id.org/def/och#addedAnnotationToEntity">added annotation to entity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#sourceAddAnnotationToEntity"
+               title="https://w3id.org/def/och#sourceAddAnnotationToEntity">source add annotation to entity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#targetAddAnnotationToEntity"
+               title="https://w3id.org/def/och#targetAddAnnotationToEntity">target add annotation to entity</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -672,13 +675,13 @@ This section provides details for each class and property defined by OWL Change 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="AnnotationChange">
-      <h3>Change to Annotation<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="EntityAnnotationChange">
+      <h3>Change to the Annotation of an Entity<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/och#AnnotationChange</p>
+         <strong>IRI:</strong> https://w3id.org/def/och#EntityAnnotationChange</p>
       <div class="comment">
          <span class="markdown">The change operation that corresponds to the change of the annotation of an entity</span>
       </div>
@@ -1259,23 +1262,25 @@ This section provides details for each class and property defined by OWL Change 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="RemoveAnnotation">
-      <h3>Remove Annotation<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="RemoveAnnotationFromEntity">
+      <h3>Remove Annotation from Entity<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/och#RemoveAnnotation</p>
+         <strong>IRI:</strong> https://w3id.org/def/och#RemoveAnnotationFromEntity</p>
       <div class="comment">
          <span class="markdown">The change operation that corresponds to the removal of the annotation of an entity</span>
       </div>
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#removedAnnotationFromResource"
-               title="https://w3id.org/def/och#removedAnnotationFromResource">remove annotation from resource</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#removedAnnotation" title="https://w3id.org/def/och#removedAnnotation">removed annotation</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#removedAnnotationType" title="https://w3id.org/def/och#removedAnnotationType">removed annotation type</a>
+            <a href="#removedAnnotationFromEntity"
+               title="https://w3id.org/def/och#removedAnnotationFromEntity">removed annotation from entity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#sourceRemoveAnnotationFromEntity"
+               title="https://w3id.org/def/och#sourceRemoveAnnotationFromEntity">source remove annotation from entity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#targetRemoveAnnotationFromEntity"
+               title="https://w3id.org/def/och#targetRemoveAnnotationFromEntity">target remove annotation from entity</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1807,9 +1812,6 @@ This section provides details for each class and property defined by OWL Change 
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#addAnnotationToResource" title="https://w3id.org/def/och#addAnnotationToResource">add annotation to resource</a>
-      </li>
-      <li>
          <a href="#addedCharacteristicToProperty"
             title="https://w3id.org/def/och#addedCharacteristicToProperty">add Characteristic to property</a>
       </li>
@@ -1817,10 +1819,7 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#addedRangeToProperty" title="https://w3id.org/def/och#addedRangeToProperty">add range for property</a>
       </li>
       <li>
-         <a href="#addedAnnotation" title="https://w3id.org/def/och#addedAnnotation">added annotation</a>
-      </li>
-      <li>
-         <a href="#addedAnnotationType" title="https://w3id.org/def/och#addedAnnotationType">added annotation type</a>
+         <a href="#addedAnnotationToEntity" title="https://w3id.org/def/och#addedAnnotationToEntity">added annotation to entity</a>
       </li>
       <li>
          <a href="#addedCharacteristic" title="https://w3id.org/def/och#addedCharacteristic">added characteristic</a>
@@ -1885,14 +1884,8 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#relatedChange" title="https://w3id.org/def/och#relatedChange">related change</a>
       </li>
       <li>
-         <a href="#removedAnnotationFromResource"
-            title="https://w3id.org/def/och#removedAnnotationFromResource">remove annotation from resource</a>
-      </li>
-      <li>
-         <a href="#removedAnnotation" title="https://w3id.org/def/och#removedAnnotation">removed annotation</a>
-      </li>
-      <li>
-         <a href="#removedAnnotationType" title="https://w3id.org/def/och#removedAnnotationType">removed annotation type</a>
+         <a href="#removedAnnotationFromEntity"
+            title="https://w3id.org/def/och#removedAnnotationFromEntity">removed annotation from entity</a>
       </li>
       <li>
          <a href="#removedCharacteristic" title="https://w3id.org/def/och#removedCharacteristic">removed characteristic</a>
@@ -1940,6 +1933,10 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#renamedEntityName" title="https://w3id.org/def/och#renamedEntityName">renamed entity name</a>
       </li>
       <li>
+         <a href="#sourceAddAnnotationToEntity"
+            title="https://w3id.org/def/och#sourceAddAnnotationToEntity">source add annotation to entity</a>
+      </li>
+      <li>
          <a href="#sourceAddRelationToIndividual"
             title="https://w3id.org/def/och#sourceAddRelationToIndividual">source add relation to individuals</a>
       </li>
@@ -1975,6 +1972,10 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#sourceProperty" title="https://w3id.org/def/och#sourceProperty">source property</a>
       </li>
       <li>
+         <a href="#sourceRemoveAnnotationFromEntity"
+            title="https://w3id.org/def/och#sourceRemoveAnnotationFromEntity">source remove annotation from entity</a>
+      </li>
+      <li>
          <a href="#sourceRemoveRelationToIndividual"
             title="https://w3id.org/def/och#sourceRemoveRelationToIndividual">source remove relation to individuals</a>
       </li>
@@ -2000,6 +2001,10 @@ This section provides details for each class and property defined by OWL Change 
       <li>
          <a href="#sourceRemoveSubProperty"
             title="https://w3id.org/def/och#sourceRemoveSubProperty">source RemoveSubProperty</a>
+      </li>
+      <li>
+         <a href="#targetAddAnnotationToEntity"
+            title="https://w3id.org/def/och#targetAddAnnotationToEntity">target add annotation to entity</a>
       </li>
       <li>
          <a href="#targetAddRelationToIndividual"
@@ -2037,6 +2042,10 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#targetProperty" title="https://w3id.org/def/och#targetProperty">target Property</a>
       </li>
       <li>
+         <a href="#targetRemoveAnnotationFromEntity"
+            title="https://w3id.org/def/och#targetRemoveAnnotationFromEntity">target remove annotation from entity</a>
+      </li>
+      <li>
          <a href="#targetRemoveRelationToIndividual"
             title="https://w3id.org/def/och#targetRemoveRelationToIndividual">target remove relation to individuals</a>
       </li>
@@ -2067,33 +2076,6 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#undeprecatedElement" title="https://w3id.org/def/och#undeprecatedElement">undeprecated element</a>
       </li>
    </ul>
-   <div class="entity" id="addAnnotationToResource">
-      <h3>add annotation to resource<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/och#addAnnotationToResource</p>
-      <div class="comment">
-         <span class="markdown">The Entity the annotation is added to</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#AddAnnotation" title="https://w3id.org/def/och#AddAnnotation">Add Annotation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="addedCharacteristicToProperty">
       <h3>add Characteristic to property<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2148,48 +2130,21 @@ This section provides details for each class and property defined by OWL Change 
          </dl>
       </div>
    </div>
-   <div class="entity" id="addedAnnotation">
-      <h3>added annotation<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="addedAnnotationToEntity">
+      <h3>added annotation to entity<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/och#addedAnnotation</p>
+         <strong>IRI:</strong> https://w3id.org/def/och#addedAnnotationToEntity</p>
       <div class="comment">
-         <span class="markdown">The annotation being added to an entity.</span>
+         <span class="markdown">The annotation property being added to an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations.</span>
       </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#AddAnnotation" title="https://w3id.org/def/och#AddAnnotation">Add Annotation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="addedAnnotationType">
-      <h3>added annotation type<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/och#addedAnnotationType</p>
-      <div class="comment">
-         <span class="markdown">The type of the annotation property being added to an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#AddAnnotation" title="https://w3id.org/def/och#AddAnnotation">Add Annotation</a>
+               <a href="#AddAnnotationToEntity" title="https://w3id.org/def/och#AddAnnotationToEntity">Add Annotation to Entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2771,75 +2726,22 @@ This section provides details for each class and property defined by OWL Change 
          </dl>
       </div>
    </div>
-   <div class="entity" id="removedAnnotationFromResource">
-      <h3>remove annotation from resource<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="removedAnnotationFromEntity">
+      <h3>removed annotation from entity<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/och#removedAnnotationFromResource</p>
+         <strong>IRI:</strong> https://w3id.org/def/och#removedAnnotationFromEntity</p>
       <div class="comment">
-         <span class="markdown">The Entity the annotation is removed from</span>
+         <span class="markdown">The annotation property being removed from an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations.</span>
       </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#RemoveAnnotation" title="https://w3id.org/def/och#RemoveAnnotation">Remove Annotation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="removedAnnotation">
-      <h3>removed annotation<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/och#removedAnnotation</p>
-      <div class="comment">
-         <span class="markdown">The annotation being removed from an entity.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#RemoveAnnotation" title="https://w3id.org/def/och#RemoveAnnotation">Remove Annotation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
-                  target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="removedAnnotationType">
-      <h3>removed annotation type<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/och#removedAnnotationType</p>
-      <div class="comment">
-         <span class="markdown">The type of the annotation property being removed from an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#RemoveAnnotation" title="https://w3id.org/def/och#RemoveAnnotation">Remove Annotation</a>
+               <a href="#RemoveAnnotationFromEntity"
+                  title="https://w3id.org/def/och#RemoveAnnotationFromEntity">Remove Annotation from Entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3266,6 +3168,33 @@ This section provides details for each class and property defined by OWL Change 
          </dl>
       </div>
    </div>
+   <div class="entity" id="sourceAddAnnotationToEntity">
+      <h3>source add annotation to entity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/och#sourceAddAnnotationToEntity</p>
+      <div class="comment">
+         <span class="markdown">The Entity the annotation is added to</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#AddAnnotationToEntity" title="https://w3id.org/def/och#AddAnnotationToEntity">Add Annotation to Entity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="sourceAddRelationToIndividual">
       <h3>source add relation to individuals<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -3597,6 +3526,34 @@ This section provides details for each class and property defined by OWL Change 
          </dl>
       </div>
    </div>
+   <div class="entity" id="sourceRemoveAnnotationFromEntity">
+      <h3>source remove annotation from entity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/och#sourceRemoveAnnotationFromEntity</p>
+      <div class="comment">
+         <span class="markdown">The Entity the annotation is removed from</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RemoveAnnotationFromEntity"
+                  title="https://w3id.org/def/och#RemoveAnnotationFromEntity">Remove Annotation from Entity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="sourceRemoveRelationToIndividual">
       <h3>source remove relation to individuals<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -3814,6 +3771,33 @@ This section provides details for each class and property defined by OWL Change 
                <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
                   target="_blank"
                   title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="targetAddAnnotationToEntity">
+      <h3>target add annotation to entity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/och#targetAddAnnotationToEntity</p>
+      <div class="comment">
+         <span class="markdown">The content of the annotation being added to an entity.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#AddAnnotationToEntity" title="https://w3id.org/def/och#AddAnnotationToEntity">Add Annotation to Entity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -4145,6 +4129,34 @@ This section provides details for each class and property defined by OWL Change 
                <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
                   target="_blank"
                   title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="targetRemoveAnnotationFromEntity">
+      <h3>target remove annotation from entity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/och#targetRemoveAnnotationFromEntity</p>
+      <div class="comment">
+         <span class="markdown">The content of the annotation being removed from an entity.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RemoveAnnotationFromEntity"
+                  title="https://w3id.org/def/och#RemoveAnnotationFromEntity">Remove Annotation from Entity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
+                  target="_blank"
+                  title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>

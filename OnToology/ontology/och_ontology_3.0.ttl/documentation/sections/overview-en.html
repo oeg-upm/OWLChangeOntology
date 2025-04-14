@@ -6,7 +6,7 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#AddAnnotation" title="https://w3id.org/def/och#AddAnnotation">Add Annotation</a>
+      <a href="#AddAnnotationToEntity" title="https://w3id.org/def/och#AddAnnotationToEntity">Add Annotation to Entity</a>
    </li>
    <li>
       <a href="#AddCharacteristic" title="https://w3id.org/def/och#AddCharacteristic">Add Characteristic</a>
@@ -64,7 +64,7 @@ This ontology has the following classes and properties.</span>
       <a href="#ChangeSet" title="https://w3id.org/def/och#ChangeSet">Change Set</a>
    </li>
    <li>
-      <a href="#AnnotationChange" title="https://w3id.org/def/och#AnnotationChange">Change to Annotation</a>
+      <a href="#EntityAnnotationChange" title="https://w3id.org/def/och#EntityAnnotationChange">Change to the Annotation of an Entity</a>
    </li>
    <li>
       <a href="#Changelog" title="https://w3id.org/def/och#Changelog">Changelog</a>
@@ -134,7 +134,8 @@ This ontology has the following classes and properties.</span>
       <a href="#RangeChange" title="https://w3id.org/def/och#RangeChange">Range Change</a>
    </li>
    <li>
-      <a href="#RemoveAnnotation" title="https://w3id.org/def/och#RemoveAnnotation">Remove Annotation</a>
+      <a href="#RemoveAnnotationFromEntity"
+         title="https://w3id.org/def/och#RemoveAnnotationFromEntity">Remove Annotation from Entity</a>
    </li>
    <li>
       <a href="#RemoveCharacteristic" title="https://w3id.org/def/och#RemoveCharacteristic">Remove Characteristic</a>
@@ -207,9 +208,6 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#addAnnotationToResource" title="https://w3id.org/def/och#addAnnotationToResource">add annotation to resource</a>
-   </li>
-   <li>
       <a href="#addedCharacteristicToProperty"
          title="https://w3id.org/def/och#addedCharacteristicToProperty">add Characteristic to property</a>
    </li>
@@ -217,10 +215,7 @@ This ontology has the following classes and properties.</span>
       <a href="#addedRangeToProperty" title="https://w3id.org/def/och#addedRangeToProperty">add range for property</a>
    </li>
    <li>
-      <a href="#addedAnnotation" title="https://w3id.org/def/och#addedAnnotation">added annotation</a>
-   </li>
-   <li>
-      <a href="#addedAnnotationType" title="https://w3id.org/def/och#addedAnnotationType">added annotation type</a>
+      <a href="#addedAnnotationToEntity" title="https://w3id.org/def/och#addedAnnotationToEntity">added annotation to entity</a>
    </li>
    <li>
       <a href="#addedCharacteristic" title="https://w3id.org/def/och#addedCharacteristic">added characteristic</a>
@@ -285,14 +280,8 @@ This ontology has the following classes and properties.</span>
       <a href="#relatedChange" title="https://w3id.org/def/och#relatedChange">related change</a>
    </li>
    <li>
-      <a href="#removedAnnotationFromResource"
-         title="https://w3id.org/def/och#removedAnnotationFromResource">remove annotation from resource</a>
-   </li>
-   <li>
-      <a href="#removedAnnotation" title="https://w3id.org/def/och#removedAnnotation">removed annotation</a>
-   </li>
-   <li>
-      <a href="#removedAnnotationType" title="https://w3id.org/def/och#removedAnnotationType">removed annotation type</a>
+      <a href="#removedAnnotationFromEntity"
+         title="https://w3id.org/def/och#removedAnnotationFromEntity">removed annotation from entity</a>
    </li>
    <li>
       <a href="#removedCharacteristic" title="https://w3id.org/def/och#removedCharacteristic">removed characteristic</a>
@@ -340,6 +329,10 @@ This ontology has the following classes and properties.</span>
       <a href="#renamedEntityName" title="https://w3id.org/def/och#renamedEntityName">renamed entity name</a>
    </li>
    <li>
+      <a href="#sourceAddAnnotationToEntity"
+         title="https://w3id.org/def/och#sourceAddAnnotationToEntity">source add annotation to entity</a>
+   </li>
+   <li>
       <a href="#sourceAddRelationToIndividual"
          title="https://w3id.org/def/och#sourceAddRelationToIndividual">source add relation to individuals</a>
    </li>
@@ -375,6 +368,10 @@ This ontology has the following classes and properties.</span>
       <a href="#sourceProperty" title="https://w3id.org/def/och#sourceProperty">source property</a>
    </li>
    <li>
+      <a href="#sourceRemoveAnnotationFromEntity"
+         title="https://w3id.org/def/och#sourceRemoveAnnotationFromEntity">source remove annotation from entity</a>
+   </li>
+   <li>
       <a href="#sourceRemoveRelationToIndividual"
          title="https://w3id.org/def/och#sourceRemoveRelationToIndividual">source remove relation to individuals</a>
    </li>
@@ -400,6 +397,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#sourceRemoveSubProperty"
          title="https://w3id.org/def/och#sourceRemoveSubProperty">source RemoveSubProperty</a>
+   </li>
+   <li>
+      <a href="#targetAddAnnotationToEntity"
+         title="https://w3id.org/def/och#targetAddAnnotationToEntity">target add annotation to entity</a>
    </li>
    <li>
       <a href="#targetAddRelationToIndividual"
@@ -435,6 +436,10 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#targetProperty" title="https://w3id.org/def/och#targetProperty">target Property</a>
+   </li>
+   <li>
+      <a href="#targetRemoveAnnotationFromEntity"
+         title="https://w3id.org/def/och#targetRemoveAnnotationFromEntity">target remove annotation from entity</a>
    </li>
    <li>
       <a href="#targetRemoveRelationToIndividual"
