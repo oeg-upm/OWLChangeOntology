@@ -302,18 +302,46 @@ och:renamedEntityName a owl:ObjectProperty ;
     rdfs:range rdfs:Resource .
 
 och:sourceAddDisjointProperty a owl:ObjectProperty ;
-    rdfs:label "source AddDisjointProperty" ;
+    rdfs:label "source add disjoint property" ;
     rdfs:comment "The subject of the disjoint property relation being added";
     rdfs:domain och:AddDisjointProperty ;
     rdfs:range rdf:Property ;
     rdfs:subPropertyOf och:sourceProperty .
 
 och:sourceAddEquivalentClass a owl:ObjectProperty ;
-    rdfs:label "source AddEquivalentClass" ;
+    rdfs:label "source add equivalent class" ;
     rdfs:comment "The subject of the equivalent class relation being added";
     rdfs:domain och:AddEquivalentClass ;
     rdfs:range owl:Class ;
     rdfs:subPropertyOf och:sourceClass .
+
+och:sourceAddDisjointClass a owl:ObjectProperty ;
+    rdfs:label "source add disjoint class" ;
+    rdfs:comment "The subject of the disjoint class relation being added";
+    rdfs:domain och:AddDisjointClass ;
+    rdfs:range owl:Class ;
+    rdfs:subPropertyOf och:sourceClass .
+
+och:sourceRemoveDisjointClass a owl:ObjectProperty ;
+    rdfs:label "source remove disjoint class" ;
+    rdfs:comment "The subject of the disjoint class relation being removed";
+    rdfs:domain och:RemoveDisjointClass ;
+    rdfs:range owl:Class ;
+    rdfs:subPropertyOf och:sourceClass .
+
+och:targetAddDisjointClass a owl:ObjectProperty ;
+    rdfs:label "target add disjoint class" ;
+    rdfs:comment "The object of the disjoint class relation being added";
+    rdfs:domain och:AddDisjointClass ;
+    rdfs:range owl:Class ;
+    rdfs:subPropertyOf och:targetClass .
+
+och:targetRemoveDisjointClass a owl:ObjectProperty ;
+    rdfs:label "target remove disjoint class" ;
+    rdfs:comment "The object of the disjoint class relation being removed";
+    rdfs:domain och:RemoveDisjointClass ;
+    rdfs:range owl:Class ;
+    rdfs:subPropertyOf och:targetClass .
 
 och:sourceAddEquivalentProperty a owl:ObjectProperty ;
     rdfs:label "source AddEquivalentProperty" ;
@@ -563,6 +591,11 @@ och:AddEquivalentClass a owl:Class ;
     rdfs:subClassOf och:EquivalentClassChange;
     prov:wasDerivedFrom omv:AddEquivalentClass.
 
+och:AddDisjointClass a owl:Class ;
+    rdfs:label "Add Disjoint Class" ;
+    rdfs:comment "The change operation corresponding to the addition of an disjoint class relation between two classes";
+    rdfs:subClassOf och:DisjointClassChange.
+
 och:AddEquivalentProperty a owl:Class ;
     rdfs:label "Add Equivalent Property" ;
     rdfs:comment "The change operation corresponding to the addition of an equivalent property relation between two properties";
@@ -611,6 +644,11 @@ och:EquivalentClassChange a owl:Class ;
     rdfs:subClassOf och:ClassRelationChange;
     prov:wasDerivedFrom omv:EquivalentClassChange.
 
+och:DisjointClassChange a owl:Class ;
+    rdfs:label "Disjoint Class Change" ;
+    rdfs:comment "The change operation corresponding to the change of an disjoint class relation between two classes";
+    rdfs:subClassOf och:ClassRelationChange.
+
 och:EquivalentPropertyChange a owl:Class ;
     rdfs:label "Equivalent Property Change" ;
     rdfs:comment "The change operation corresponding to the change of an equivalent property relation between two properties";
@@ -658,6 +696,11 @@ och:RemoveEquivalentClass a owl:Class ;
     rdfs:comment "The change operation corresponding to the removal of the equivalent class relation between two classes";
     rdfs:subClassOf och:EquivalentClassChange;
     prov:wasDerivedFrom omv:RemoveEquivalentClass.
+
+och:RemoveDisjointClass a owl:Class ;
+    rdfs:label "Remove Disjoint Class" ;
+    rdfs:comment "The change operation corresponding to the removal of the disjoint class relation between two classes";
+    rdfs:subClassOf och:DisjointClassChange.
 
 och:RemoveEquivalentProperty a owl:Class ;
     rdfs:label "Remove Equivalent Property" ;
