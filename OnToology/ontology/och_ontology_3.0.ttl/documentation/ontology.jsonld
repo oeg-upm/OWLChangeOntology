@@ -223,6 +223,20 @@
     "@id" : "http://omv.ontoware.org/2007/07/OWLChangesAddDataProperty"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/och#AddDisjointClass",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The change operation corresponding to the addition of an disjoint class relation between two classes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Add Disjoint Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/och#DisjointClassChange"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/och#AddDisjointProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
@@ -542,6 +556,20 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/och#EntityChange"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/och#DisjointClassChange",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The change operation corresponding to the change of an disjoint class relation between two classes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Disjoint Class Change"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/och#ClassRelationChange"
   } ]
 }, {
   "@id" : "https://w3id.org/def/och#DisjointPropertyChange",
@@ -908,6 +936,20 @@
   } ],
   "http://www.w3.org/ns/prov#wasDerivedFrom" : [ {
     "@id" : "http://omv.ontoware.org/2007/07/OWLChangesRemoveDataProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/och#RemoveDisjointClass",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The change operation corresponding to the removal of the disjoint class relation between two classes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Remove Disjoint Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/och#DisjointClassChange"
   } ]
 }, {
   "@id" : "https://w3id.org/def/och#RemoveDisjointProperty",
@@ -1910,6 +1952,26 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/och#sourceAddDisjointClass",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The subject of the disjoint class relation being added"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/och#AddDisjointClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "source add disjoint class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/och#sourceClass"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/och#sourceAddDisjointProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
@@ -1921,7 +1983,7 @@
     "@id" : "https://w3id.org/def/och#AddDisjointProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "source AddDisjointProperty"
+    "@value" : "source add disjoint property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -1941,7 +2003,7 @@
     "@id" : "https://w3id.org/def/och#AddEquivalentClass"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "source AddEquivalentClass"
+    "@value" : "source add equivalent class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Class"
@@ -2115,6 +2177,26 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/och#sourceRemoveDisjointClass",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The subject of the disjoint class relation being removed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/och#RemoveDisjointClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "source remove disjoint class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/och#sourceClass"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/och#sourceRemoveDisjointProperty",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
@@ -2267,6 +2349,26 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/och#targetAddDisjointClass",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The object of the disjoint class relation being added"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/och#AddDisjointClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "target add disjoint class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/och#targetClass"
   } ]
 }, {
   "@id" : "https://w3id.org/def/och#targetAddDisjointProperty",
@@ -2455,6 +2557,26 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/och#targetRemoveDisjointClass",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The object of the disjoint class relation being removed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/och#RemoveDisjointClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "target remove disjoint class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/def/och#targetClass"
   } ]
 }, {
   "@id" : "https://w3id.org/def/och#targetRemoveDisjointProperty",

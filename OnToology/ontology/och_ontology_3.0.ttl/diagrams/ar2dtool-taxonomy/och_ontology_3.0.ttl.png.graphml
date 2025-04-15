@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="65" parse.nodes="64" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="68" parse.nodes="67" parse.order="free">
       <node id="nid_och:RemoveDomain">
          <data key="d0">
             <y:ShapeNode>
@@ -1081,6 +1081,41 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_och:AddDisjointClass">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="200.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:AddDisjointClass</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_och:DisjointClassChange">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="230.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:DisjointClassChange</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf41" source="nid_och:AddDisjointClass" target="nid_och:DisjointClassChange">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_och:ObjectPropertyCharacteristic">
          <data key="d0">
             <y:ShapeNode>
@@ -1105,7 +1140,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf41" source="nid_och:ObjectPropertyCharacteristic" target="nid_och:PropertyCharacteristic">
+    <edge id="eid_rdfs:subClassOf42" source="nid_och:ObjectPropertyCharacteristic" target="nid_och:PropertyCharacteristic">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1116,7 +1151,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf42" source="nid_och:PropertyCharacteristicChange" target="nid_och:PropertyChange">
+    <edge id="eid_rdfs:subClassOf43" source="nid_och:PropertyCharacteristicChange" target="nid_och:PropertyChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1139,7 +1174,30 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf43" source="nid_och:RemoveRangeDataProperty" target="nid_och:RemoveRange">
+    <edge id="eid_rdfs:subClassOf44" source="nid_och:RemoveRangeDataProperty" target="nid_och:RemoveRange">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_och:RemoveDisjointClass">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="230.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">och:RemoveDisjointClass</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf45" source="nid_och:RemoveDisjointClass" target="nid_och:DisjointClassChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1162,7 +1220,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf44" source="nid_och:RevokeDeprecate" target="nid_och:EntityChange">
+    <edge id="eid_rdfs:subClassOf46" source="nid_och:RevokeDeprecate" target="nid_och:EntityChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1173,7 +1231,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf45" source="nid_och:DomainChange" target="nid_och:PropertyChange">
+    <edge id="eid_rdfs:subClassOf47" source="nid_och:DomainChange" target="nid_och:PropertyChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1196,7 +1254,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf46" source="nid_och:RemoveObjectProperty" target="nid_och:ObjectPropertyChange">
+    <edge id="eid_rdfs:subClassOf48" source="nid_och:RemoveObjectProperty" target="nid_och:ObjectPropertyChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1207,7 +1265,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf47" source="nid_och:RemoveObjectProperty" target="nid_och:RemoveProperty">
+    <edge id="eid_rdfs:subClassOf49" source="nid_och:RemoveObjectProperty" target="nid_och:RemoveProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1230,7 +1288,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf48" source="nid_och:AddSubPropertyOf" target="nid_och:SubPropertyChange">
+    <edge id="eid_rdfs:subClassOf50" source="nid_och:AddSubPropertyOf" target="nid_och:SubPropertyChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1241,7 +1299,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf49" source="nid_och:AddProperty" target="nid_och:PropertyChange">
+    <edge id="eid_rdfs:subClassOf51" source="nid_och:AddProperty" target="nid_och:PropertyChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1252,7 +1310,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf50" source="nid_och:EquivalentPropertyChange" target="nid_och:PropertyRelationChange">
+    <edge id="eid_rdfs:subClassOf52" source="nid_och:EquivalentPropertyChange" target="nid_och:PropertyRelationChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1263,7 +1321,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf51" source="nid_och:ClassRelationChange" target="nid_och:ClassChange">
+    <edge id="eid_rdfs:subClassOf53" source="nid_och:ClassRelationChange" target="nid_och:ClassChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1274,7 +1332,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf52" source="nid_och:ClassChange" target="nid_och:EntityChange">
+    <edge id="eid_rdfs:subClassOf54" source="nid_och:ClassChange" target="nid_och:EntityChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1285,7 +1343,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf53" source="nid_och:AddRange" target="nid_och:RangeChange">
+    <edge id="eid_rdfs:subClassOf55" source="nid_och:AddRange" target="nid_och:RangeChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1308,7 +1366,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf54" source="nid_och:AddSubClass" target="nid_och:SubClassChange">
+    <edge id="eid_rdfs:subClassOf56" source="nid_och:AddSubClass" target="nid_och:SubClassChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1331,7 +1389,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf55" source="nid_och:AddDomain" target="nid_och:DomainChange">
+    <edge id="eid_rdfs:subClassOf57" source="nid_och:AddDomain" target="nid_och:DomainChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1342,7 +1400,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf56" source="nid_och:IndividualChange" target="nid_och:EntityChange">
+    <edge id="eid_rdfs:subClassOf58" source="nid_och:IndividualChange" target="nid_och:EntityChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1365,7 +1423,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf57" source="nid_och:RemoveSubPropertyOf" target="nid_och:SubPropertyChange">
+    <edge id="eid_rdfs:subClassOf59" source="nid_och:RemoveSubPropertyOf" target="nid_och:SubPropertyChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1388,7 +1446,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf58" source="nid_och:AddRelationToIndividual" target="nid_och:IndividualRelationChange">
+    <edge id="eid_rdfs:subClassOf60" source="nid_och:AddRelationToIndividual" target="nid_och:IndividualRelationChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1399,7 +1457,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf59" source="nid_och:RangeChange" target="nid_och:PropertyChange">
+    <edge id="eid_rdfs:subClassOf61" source="nid_och:RangeChange" target="nid_och:PropertyChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1422,7 +1480,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf60" source="nid_och:RemoveRelationFromIndividual" target="nid_och:IndividualRelationChange">
+    <edge id="eid_rdfs:subClassOf62" source="nid_och:RemoveRelationFromIndividual" target="nid_och:IndividualRelationChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1433,7 +1491,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf61" source="nid_och:InversePropertyChange" target="nid_och:PropertyRelationChange">
+    <edge id="eid_rdfs:subClassOf63" source="nid_och:InversePropertyChange" target="nid_och:PropertyRelationChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1444,7 +1502,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf62" source="nid_och:ObjectPropertyChange" target="nid_och:PropertyChange">
+    <edge id="eid_rdfs:subClassOf64" source="nid_och:ObjectPropertyChange" target="nid_och:PropertyChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1467,7 +1525,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf63" source="nid_och:RemoveCharacteristic" target="nid_och:PropertyCharacteristicChange">
+    <edge id="eid_rdfs:subClassOf65" source="nid_och:RemoveCharacteristic" target="nid_och:PropertyCharacteristicChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1478,7 +1536,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf64" source="nid_och:EquivalentClassChange" target="nid_och:ClassRelationChange">
+    <edge id="eid_rdfs:subClassOf66" source="nid_och:EquivalentClassChange" target="nid_och:ClassRelationChange">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_rdfs:subClassOf67" source="nid_och:DisjointClassChange" target="nid_och:ClassRelationChange">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

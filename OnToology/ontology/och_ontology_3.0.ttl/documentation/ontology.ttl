@@ -425,13 +425,22 @@ xsd:date rdf:type rdfs:Datatype .
                              rdfs:label "source add annotation to entity" .
 
 
+###  https://w3id.org/def/och#sourceAddDisjointClass
+:sourceAddDisjointClass rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :sourceClass ;
+                        rdfs:domain :AddDisjointClass ;
+                        rdfs:range owl:Class ;
+                        rdfs:comment "The subject of the disjoint class relation being added" ;
+                        rdfs:label "source add disjoint class" .
+
+
 ###  https://w3id.org/def/och#sourceAddDisjointProperty
 :sourceAddDisjointProperty rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :sourceProperty ;
                            rdfs:domain :AddDisjointProperty ;
                            rdfs:range rdf:Property ;
                            rdfs:comment "The subject of the disjoint property relation being added" ;
-                           rdfs:label "source AddDisjointProperty" .
+                           rdfs:label "source add disjoint property" .
 
 
 ###  https://w3id.org/def/och#sourceAddEquivalentClass
@@ -440,7 +449,7 @@ xsd:date rdf:type rdfs:Datatype .
                           rdfs:domain :AddEquivalentClass ;
                           rdfs:range owl:Class ;
                           rdfs:comment "The subject of the equivalent class relation being added" ;
-                          rdfs:label "source AddEquivalentClass" .
+                          rdfs:label "source add equivalent class" .
 
 
 ###  https://w3id.org/def/och#sourceAddEquivalentProperty
@@ -519,6 +528,15 @@ xsd:date rdf:type rdfs:Datatype .
                                   rdfs:label "source remove annotation from entity" .
 
 
+###  https://w3id.org/def/och#sourceRemoveDisjointClass
+:sourceRemoveDisjointClass rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :sourceClass ;
+                           rdfs:domain :RemoveDisjointClass ;
+                           rdfs:range owl:Class ;
+                           rdfs:comment "The subject of the disjoint class relation being removed" ;
+                           rdfs:label "source remove disjoint class" .
+
+
 ###  https://w3id.org/def/och#sourceRemoveDisjointProperty
 :sourceRemoveDisjointProperty rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf :sourceProperty ;
@@ -587,6 +605,15 @@ xsd:date rdf:type rdfs:Datatype .
                              rdfs:range rdfs:Resource ;
                              rdfs:comment "The content of the annotation being added to an entity." ;
                              rdfs:label "target add annotation to entity" .
+
+
+###  https://w3id.org/def/och#targetAddDisjointClass
+:targetAddDisjointClass rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :targetClass ;
+                        rdfs:domain :AddDisjointClass ;
+                        rdfs:range owl:Class ;
+                        rdfs:comment "The object of the disjoint class relation being added" ;
+                        rdfs:label "target add disjoint class" .
 
 
 ###  https://w3id.org/def/och#targetAddDisjointProperty
@@ -673,6 +700,15 @@ xsd:date rdf:type rdfs:Datatype .
                                   rdfs:range rdfs:Resource ;
                                   rdfs:comment "The content of the annotation being removed from an entity." ;
                                   rdfs:label "target remove annotation from entity" .
+
+
+###  https://w3id.org/def/och#targetRemoveDisjointClass
+:targetRemoveDisjointClass rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :targetClass ;
+                           rdfs:domain :RemoveDisjointClass ;
+                           rdfs:range owl:Class ;
+                           rdfs:comment "The object of the disjoint class relation being removed" ;
+                           rdfs:label "target remove disjoint class" .
 
 
 ###  https://w3id.org/def/och#targetRemoveDisjointProperty
@@ -835,6 +871,13 @@ owl:Ontology rdf:type owl:Class .
                  <http://www.w3.org/ns/prov#wasDerivedFrom> <http://omv.ontoware.org/2007/07/OWLChangesAddDataProperty> .
 
 
+###  https://w3id.org/def/och#AddDisjointClass
+:AddDisjointClass rdf:type owl:Class ;
+                  rdfs:subClassOf :DisjointClassChange ;
+                  rdfs:comment "The change operation corresponding to the addition of an disjoint class relation between two classes" ;
+                  rdfs:label "Add Disjoint Class" .
+
+
 ###  https://w3id.org/def/och#AddDisjointProperty
 :AddDisjointProperty rdf:type owl:Class ;
                      rdfs:subClassOf :DisjointPropertyChange ;
@@ -982,6 +1025,13 @@ owl:Ontology rdf:type owl:Class .
                  rdfs:subClassOf :EntityChange ;
                  rdfs:comment "The change operation corresponding to the deprecation of an OWL Entity" ;
                  rdfs:label "Deprecate Entity" .
+
+
+###  https://w3id.org/def/och#DisjointClassChange
+:DisjointClassChange rdf:type owl:Class ;
+                     rdfs:subClassOf :ClassRelationChange ;
+                     rdfs:comment "The change operation corresponding to the change of an disjoint class relation between two classes" ;
+                     rdfs:label "Disjoint Class Change" .
 
 
 ###  https://w3id.org/def/och#DisjointPropertyChange
@@ -1132,6 +1182,13 @@ owl:Ontology rdf:type owl:Class .
                     rdfs:comment "The change operation corresponding to the removal of a data property" ;
                     rdfs:label "Remove Data Property" ;
                     <http://www.w3.org/ns/prov#wasDerivedFrom> <http://omv.ontoware.org/2007/07/OWLChangesRemoveDataProperty> .
+
+
+###  https://w3id.org/def/och#RemoveDisjointClass
+:RemoveDisjointClass rdf:type owl:Class ;
+                     rdfs:subClassOf :DisjointClassChange ;
+                     rdfs:comment "The change operation corresponding to the removal of the disjoint class relation between two classes" ;
+                     rdfs:label "Remove Disjoint Class" .
 
 
 ###  https://w3id.org/def/och#RemoveDisjointProperty
