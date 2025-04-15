@@ -127,6 +127,13 @@
     "priorVersion" : {
       "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
     },
+    "RemoveDisjointClass" : {
+      "@id" : "https://w3id.org/def/och#RemoveDisjointClass"
+    },
+    "sourceAddDisjointClass" : {
+      "@id" : "https://w3id.org/def/och#sourceAddDisjointClass",
+      "@type" : "@id"
+    },
     "targetRemoveRelationToIndividual" : {
       "@id" : "https://w3id.org/def/och#targetRemoveRelationToIndividual",
       "@type" : "@id"
@@ -160,6 +167,10 @@
     },
     "SubPropertyChange" : {
       "@id" : "https://w3id.org/def/och#SubPropertyChange"
+    },
+    "targetRemoveDisjointClass" : {
+      "@id" : "https://w3id.org/def/och#targetRemoveDisjointClass",
+      "@type" : "@id"
     },
     "RemoveProperty" : {
       "@id" : "https://w3id.org/def/och#RemoveProperty"
@@ -469,6 +480,9 @@
     "AddRangeDataProperty" : {
       "@id" : "https://w3id.org/def/och#AddRangeDataProperty"
     },
+    "AddDisjointClass" : {
+      "@id" : "https://w3id.org/def/och#AddDisjointClass"
+    },
     "PropertyCharacteristic" : {
       "@id" : "https://w3id.org/def/och#PropertyCharacteristic"
     },
@@ -509,6 +523,10 @@
     },
     "Resource" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+    },
+    "sourceRemoveDisjointClass" : {
+      "@id" : "https://w3id.org/def/och#sourceRemoveDisjointClass",
+      "@type" : "@id"
     },
     "AddRange" : {
       "@id" : "https://w3id.org/def/och#AddRange"
@@ -560,6 +578,10 @@
     "InversePropertyChange" : {
       "@id" : "https://w3id.org/def/och#InversePropertyChange"
     },
+    "targetAddDisjointClass" : {
+      "@id" : "https://w3id.org/def/och#targetAddDisjointClass",
+      "@type" : "@id"
+    },
     "DatatypeProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
     },
@@ -586,6 +608,9 @@
     },
     "Ontology" : {
       "@id" : "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    "DisjointClassChange" : {
+      "@id" : "https://w3id.org/def/och#DisjointClassChange"
     }
   }
 }

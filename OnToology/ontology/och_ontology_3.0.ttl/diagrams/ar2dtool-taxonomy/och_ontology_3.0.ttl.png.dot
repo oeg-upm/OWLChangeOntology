@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "och:PropertyCharacteristic" "och:RemoveObjectProperty" "och:RemoveCharacteristic" "och:RemoveIndividual" "och:AddIndividual" "och:RemoveEquivalentProperty" "och:DisjointPropertyChange" "och:PropertyRelationChange" "och:AddRelationToIndividual" "och:IndividualChange" "och:PropertyCharacteristicChange" "och:DataPropertyChange" "och:ClassChange" "och:RangeChange" "och:RemoveClass" "och:AddSubClass" "och:AddClass" "och:RemoveDataProperty" "och:RenameEntity" "och:PropertyChange" "och:EquivalentPropertyChange" "och:ObjectPropertyChange" "och:RevokeDeprecate" "och:EntityChange" "och:SubClassChange" "och:RemoveDisjointProperty" "och:AddRangeObjectProperty" "och:AddProperty" "och:ChangeSet" "och:AddEquivalentClass" "och:AddCharacteristic" "och:RemoveInverseProperty" "och:EntityAnnotationChange" "och:RemoveEquivalentClass" "och:RemoveDomain" "och:AddDisjointProperty" "och:Changelog" "och:RemoveSubClass" "och:AddInverseProperty" "och:DeprecateEntity" "och:RemoveRelationFromIndividual" "och:AddEquivalentProperty" "och:RemoveAnnotationFromEntity" "och:SubPropertyChange" "och:RemoveProperty" "och:ClassRelationChange" "och:AddDataProperty" "och:DomainChange" "och:AddAnnotationToEntity" "och:EquivalentClassChange" "och:IndividualRelationChange" "och:AddObjectProperty" "och:RemoveRange" "dcat:Dataset" "och:RemoveSubPropertyOf" "och:AddDomain" "och:AddSubPropertyOf" "och:AddRange" "och:InversePropertyChange" "och:OntologicalChange" "och:AddRangeDataProperty" "och:ObjectPropertyCharacteristic" "och:RemoveRangeDataProperty" "och:RemoveRangeObjectProperty" ; /*classes style*/
+node [shape = rectangle, color="black"]; "och:PropertyCharacteristic" "och:RemoveObjectProperty" "och:RemoveCharacteristic" "och:RemoveIndividual" "och:AddIndividual" "och:RemoveEquivalentProperty" "och:DisjointPropertyChange" "och:PropertyRelationChange" "och:AddRelationToIndividual" "och:IndividualChange" "och:PropertyCharacteristicChange" "och:DataPropertyChange" "och:ClassChange" "och:RangeChange" "och:RemoveClass" "och:AddSubClass" "och:AddClass" "och:RemoveDataProperty" "och:RenameEntity" "och:PropertyChange" "och:RemoveDisjointClass" "och:EquivalentPropertyChange" "och:ObjectPropertyChange" "och:RevokeDeprecate" "och:EntityChange" "och:SubClassChange" "och:RemoveDisjointProperty" "och:AddRangeObjectProperty" "och:AddProperty" "och:ChangeSet" "och:AddEquivalentClass" "och:AddCharacteristic" "och:RemoveInverseProperty" "och:EntityAnnotationChange" "och:RemoveEquivalentClass" "och:DisjointClassChange" "och:RemoveDomain" "och:AddDisjointProperty" "och:Changelog" "och:RemoveSubClass" "och:AddInverseProperty" "och:DeprecateEntity" "och:RemoveRelationFromIndividual" "och:AddEquivalentProperty" "och:RemoveAnnotationFromEntity" "och:SubPropertyChange" "och:RemoveProperty" "och:AddDisjointClass" "och:ClassRelationChange" "och:AddDataProperty" "och:DomainChange" "och:AddAnnotationToEntity" "och:EquivalentClassChange" "och:IndividualRelationChange" "och:AddObjectProperty" "och:RemoveRange" "dcat:Dataset" "och:RemoveSubPropertyOf" "och:AddDomain" "och:AddSubPropertyOf" "och:AddRange" "och:InversePropertyChange" "och:OntologicalChange" "och:AddRangeDataProperty" "och:ObjectPropertyCharacteristic" "och:RemoveRangeObjectProperty" "och:RemoveRangeDataProperty" ; /*classes style*/
 	"och:RemoveDomain" -> "och:DomainChange" [ label = "rdfs:subClassOf" ];
 	"och:PropertyChange" -> "och:EntityChange" [ label = "rdfs:subClassOf" ];
 	"och:RemoveRangeObjectProperty" -> "och:RemoveRange" [ label = "rdfs:subClassOf" ];
@@ -43,9 +43,11 @@ node [shape = rectangle, color="black"]; "och:PropertyCharacteristic" "och:Remov
 	"och:RemoveEquivalentProperty" -> "och:EquivalentPropertyChange" [ label = "rdfs:subClassOf" ];
 	"och:SubPropertyChange" -> "och:PropertyRelationChange" [ label = "rdfs:subClassOf" ];
 	"och:RenameEntity" -> "och:EntityChange" [ label = "rdfs:subClassOf" ];
+	"och:AddDisjointClass" -> "och:DisjointClassChange" [ label = "rdfs:subClassOf" ];
 	"och:ObjectPropertyCharacteristic" -> "och:PropertyCharacteristic" [ label = "rdfs:subClassOf" ];
 	"och:PropertyCharacteristicChange" -> "och:PropertyChange" [ label = "rdfs:subClassOf" ];
 	"och:RemoveRangeDataProperty" -> "och:RemoveRange" [ label = "rdfs:subClassOf" ];
+	"och:RemoveDisjointClass" -> "och:DisjointClassChange" [ label = "rdfs:subClassOf" ];
 	"och:RevokeDeprecate" -> "och:EntityChange" [ label = "rdfs:subClassOf" ];
 	"och:DomainChange" -> "och:PropertyChange" [ label = "rdfs:subClassOf" ];
 	"och:RemoveObjectProperty" -> "och:ObjectPropertyChange" [ label = "rdfs:subClassOf" ];
@@ -67,5 +69,6 @@ node [shape = rectangle, color="black"]; "och:PropertyCharacteristic" "och:Remov
 	"och:ObjectPropertyChange" -> "och:PropertyChange" [ label = "rdfs:subClassOf" ];
 	"och:RemoveCharacteristic" -> "och:PropertyCharacteristicChange" [ label = "rdfs:subClassOf" ];
 	"och:EquivalentClassChange" -> "och:ClassRelationChange" [ label = "rdfs:subClassOf" ];
+	"och:DisjointClassChange" -> "och:ClassRelationChange" [ label = "rdfs:subClassOf" ];
 
 }
