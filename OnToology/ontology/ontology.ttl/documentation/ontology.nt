@@ -378,13 +378,21 @@
 <https://w3id.org/def/och#sourceAddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The Entity the annotation is added to" .
 <https://w3id.org/def/och#sourceAddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#label> "source add annotation to entity" .
 # 
+# https://w3id.org/def/och#sourceAddDisjointClass
+<https://w3id.org/def/och#sourceAddDisjointClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/och#sourceAddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/och#sourceClass> .
+<https://w3id.org/def/och#sourceAddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#AddDisjointClass> .
+<https://w3id.org/def/och#sourceAddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/och#sourceAddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the disjoint class relation being added" .
+<https://w3id.org/def/och#sourceAddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#label> "source add disjoint class" .
+# 
 # https://w3id.org/def/och#sourceAddDisjointProperty
 <https://w3id.org/def/och#sourceAddDisjointProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/och#sourceAddDisjointProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/och#sourceProperty> .
 <https://w3id.org/def/och#sourceAddDisjointProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#AddDisjointProperty> .
 <https://w3id.org/def/och#sourceAddDisjointProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/def/och#sourceAddDisjointProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the disjoint property relation being added" .
-<https://w3id.org/def/och#sourceAddDisjointProperty> <http://www.w3.org/2000/01/rdf-schema#label> "source AddDisjointProperty" .
+<https://w3id.org/def/och#sourceAddDisjointProperty> <http://www.w3.org/2000/01/rdf-schema#label> "source add disjoint property" .
 # 
 # https://w3id.org/def/och#sourceAddEquivalentClass
 <https://w3id.org/def/och#sourceAddEquivalentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -392,7 +400,7 @@
 <https://w3id.org/def/och#sourceAddEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#AddEquivalentClass> .
 <https://w3id.org/def/och#sourceAddEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/och#sourceAddEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the equivalent class relation being added" .
-<https://w3id.org/def/och#sourceAddEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#label> "source AddEquivalentClass" .
+<https://w3id.org/def/och#sourceAddEquivalentClass> <http://www.w3.org/2000/01/rdf-schema#label> "source add equivalent class" .
 # 
 # https://w3id.org/def/och#sourceAddEquivalentProperty
 <https://w3id.org/def/och#sourceAddEquivalentProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -461,6 +469,14 @@
 <https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The Entity the annotation is removed from" .
 <https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#label> "source remove annotation from entity" .
 # 
+# https://w3id.org/def/och#sourceRemoveDisjointClass
+<https://w3id.org/def/och#sourceRemoveDisjointClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/och#sourceRemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/och#sourceClass> .
+<https://w3id.org/def/och#sourceRemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#RemoveDisjointClass> .
+<https://w3id.org/def/och#sourceRemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/och#sourceRemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the disjoint class relation being removed" .
+<https://w3id.org/def/och#sourceRemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#label> "source remove disjoint class" .
+# 
 # https://w3id.org/def/och#sourceRemoveDisjointProperty
 <https://w3id.org/def/och#sourceRemoveDisjointProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/och#sourceRemoveDisjointProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/och#sourceProperty> .
@@ -522,6 +538,14 @@
 <https://w3id.org/def/och#targetAddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <https://w3id.org/def/och#targetAddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The content of the annotation being added to an entity." .
 <https://w3id.org/def/och#targetAddAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#label> "target add annotation to entity" .
+# 
+# https://w3id.org/def/och#targetAddDisjointClass
+<https://w3id.org/def/och#targetAddDisjointClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/och#targetAddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/och#targetClass> .
+<https://w3id.org/def/och#targetAddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#AddDisjointClass> .
+<https://w3id.org/def/och#targetAddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/och#targetAddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the disjoint class relation being added" .
+<https://w3id.org/def/och#targetAddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#label> "target add disjoint class" .
 # 
 # https://w3id.org/def/och#targetAddDisjointProperty
 <https://w3id.org/def/och#targetAddDisjointProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -598,6 +622,14 @@
 <https://w3id.org/def/och#targetRemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <https://w3id.org/def/och#targetRemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The content of the annotation being removed from an entity." .
 <https://w3id.org/def/och#targetRemoveAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#label> "target remove annotation from entity" .
+# 
+# https://w3id.org/def/och#targetRemoveDisjointClass
+<https://w3id.org/def/och#targetRemoveDisjointClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/och#targetRemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/def/och#targetClass> .
+<https://w3id.org/def/och#targetRemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#RemoveDisjointClass> .
+<https://w3id.org/def/och#targetRemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/och#targetRemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of the disjoint class relation being removed" .
+<https://w3id.org/def/och#targetRemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#label> "target remove disjoint class" .
 # 
 # https://w3id.org/def/och#targetRemoveDisjointProperty
 <https://w3id.org/def/och#targetRemoveDisjointProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -744,6 +776,12 @@
 <https://w3id.org/def/och#AddDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Add Data Property" .
 <https://w3id.org/def/och#AddDataProperty> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://omv.ontoware.org/2007/07/OWLChangesAddDataProperty> .
 # 
+# https://w3id.org/def/och#AddDisjointClass
+<https://w3id.org/def/och#AddDisjointClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/och#AddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/och#DisjointClassChange> .
+<https://w3id.org/def/och#AddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation corresponding to the addition of an disjoint class relation between two classes" .
+<https://w3id.org/def/och#AddDisjointClass> <http://www.w3.org/2000/01/rdf-schema#label> "Add Disjoint Class" .
+# 
 # https://w3id.org/def/och#AddDisjointProperty
 <https://w3id.org/def/och#AddDisjointProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/och#AddDisjointProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/och#DisjointPropertyChange> .
@@ -873,6 +911,12 @@
 <https://w3id.org/def/och#DeprecateEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation corresponding to the deprecation of an OWL Entity" .
 <https://w3id.org/def/och#DeprecateEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Deprecate Entity" .
 # 
+# https://w3id.org/def/och#DisjointClassChange
+<https://w3id.org/def/och#DisjointClassChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/och#DisjointClassChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/och#ClassRelationChange> .
+<https://w3id.org/def/och#DisjointClassChange> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation corresponding to the change of an disjoint class relation between two classes" .
+<https://w3id.org/def/och#DisjointClassChange> <http://www.w3.org/2000/01/rdf-schema#label> "Disjoint Class Change" .
+# 
 # https://w3id.org/def/och#DisjointPropertyChange
 <https://w3id.org/def/och#DisjointPropertyChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/och#DisjointPropertyChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/och#PropertyRelationChange> .
@@ -1001,6 +1045,12 @@
 <https://w3id.org/def/och#RemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation corresponding to the removal of a data property" .
 <https://w3id.org/def/och#RemoveDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Remove Data Property" .
 <https://w3id.org/def/och#RemoveDataProperty> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://omv.ontoware.org/2007/07/OWLChangesRemoveDataProperty> .
+# 
+# https://w3id.org/def/och#RemoveDisjointClass
+<https://w3id.org/def/och#RemoveDisjointClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/och#RemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/och#DisjointClassChange> .
+<https://w3id.org/def/och#RemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The change operation corresponding to the removal of the disjoint class relation between two classes" .
+<https://w3id.org/def/och#RemoveDisjointClass> <http://www.w3.org/2000/01/rdf-schema#label> "Remove Disjoint Class" .
 # 
 # https://w3id.org/def/och#RemoveDisjointProperty
 <https://w3id.org/def/och#RemoveDisjointProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

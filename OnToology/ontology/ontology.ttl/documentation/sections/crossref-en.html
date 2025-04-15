@@ -18,6 +18,9 @@ This section provides details for each class and property defined by OWL Change 
          <a href="#AddDataProperty" title="https://w3id.org/def/och#AddDataProperty">Add Data Property</a>
       </li>
       <li>
+         <a href="#AddDisjointClass" title="https://w3id.org/def/och#AddDisjointClass">Add Disjoint Class</a>
+      </li>
+      <li>
          <a href="#AddDisjointProperty" title="https://w3id.org/def/och#AddDisjointProperty">Add Disjoint Property</a>
       </li>
       <li>
@@ -80,6 +83,9 @@ This section provides details for each class and property defined by OWL Change 
       </li>
       <li>
          <a href="#DeprecateEntity" title="https://w3id.org/def/och#DeprecateEntity">Deprecate Entity</a>
+      </li>
+      <li>
+         <a href="#DisjointClassChange" title="https://w3id.org/def/och#DisjointClassChange">Disjoint Class Change</a>
       </li>
       <li>
          <a href="#DisjointPropertyChange" title="https://w3id.org/def/och#DisjointPropertyChange">Disjoint Property Change</a>
@@ -145,6 +151,9 @@ This section provides details for each class and property defined by OWL Change 
       </li>
       <li>
          <a href="#RemoveDataProperty" title="https://w3id.org/def/och#RemoveDataProperty">Remove Data Property</a>
+      </li>
+      <li>
+         <a href="#RemoveDisjointClass" title="https://w3id.org/def/och#RemoveDisjointClass">Remove Disjoint Class</a>
       </li>
       <li>
          <a href="#RemoveDisjointProperty" title="https://w3id.org/def/och#RemoveDisjointProperty">Remove Disjoint Property</a>
@@ -305,6 +314,30 @@ This section provides details for each class and property defined by OWL Change 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="AddDisjointClass">
+      <h3>Add Disjoint Class<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/och#AddDisjointClass</p>
+      <div class="comment">
+         <span class="markdown">The change operation corresponding to the addition of an disjoint class relation between two classes</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#DisjointClassChange" title="https://w3id.org/def/och#DisjointClassChange">Disjoint Class Change</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#sourceAddDisjointClass" title="https://w3id.org/def/och#sourceAddDisjointClass">source add disjoint class</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#targetAddDisjointClass" title="https://w3id.org/def/och#targetAddDisjointClass">target add disjoint class</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="AddDisjointProperty">
       <h3>Add Disjoint Property<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -324,7 +357,7 @@ This section provides details for each class and property defined by OWL Change 
          <dt>is in domain of</dt>
          <dd>
             <a href="#sourceAddDisjointProperty"
-               title="https://w3id.org/def/och#sourceAddDisjointProperty">source AddDisjointProperty</a>
+               title="https://w3id.org/def/och#sourceAddDisjointProperty">source add disjoint property</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#targetAddDisjointProperty"
                title="https://w3id.org/def/och#targetAddDisjointProperty">target AddDisjointProperty</a>
             <sup class="type-op" title="object property">op</sup>
@@ -374,7 +407,7 @@ This section provides details for each class and property defined by OWL Change 
          <dt>is in domain of</dt>
          <dd>
             <a href="#sourceAddEquivalentClass"
-               title="https://w3id.org/def/och#sourceAddEquivalentClass">source AddEquivalentClass</a>
+               title="https://w3id.org/def/och#sourceAddEquivalentClass">source add equivalent class</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#targetAddEquivalentClass"
                title="https://w3id.org/def/och#targetAddEquivalentClass">target AddEquivalentClass</a>
             <sup class="type-op" title="object property">op</sup>
@@ -784,7 +817,8 @@ This section provides details for each class and property defined by OWL Change 
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#EquivalentClassChange" title="https://w3id.org/def/och#EquivalentClassChange">Equivalent Class Change</a>
+            <a href="#DisjointClassChange" title="https://w3id.org/def/och#DisjointClassChange">Disjoint Class Change</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#EquivalentClassChange" title="https://w3id.org/def/och#EquivalentClassChange">Equivalent Class Change</a>
             <sup class="type-c" title="class">c</sup>, <a href="#SubClassChange" title="https://w3id.org/def/och#SubClassChange">Sub Class Change</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -840,6 +874,30 @@ This section provides details for each class and property defined by OWL Change 
          <dd>
             <a href="#deprecatedEntity" title="https://w3id.org/def/och#deprecatedEntity">deprecated entity</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DisjointClassChange">
+      <h3>Disjoint Class Change<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/och#DisjointClassChange</p>
+      <div class="comment">
+         <span class="markdown">The change operation corresponding to the change of an disjoint class relation between two classes</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ClassRelationChange" title="https://w3id.org/def/och#ClassRelationChange">Class Relation Change</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#AddDisjointClass" title="https://w3id.org/def/och#AddDisjointClass">Add Disjoint Class</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RemoveDisjointClass" title="https://w3id.org/def/och#RemoveDisjointClass">Remove Disjoint Class</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1379,6 +1437,32 @@ This section provides details for each class and property defined by OWL Change 
          <dt>is in domain of</dt>
          <dd>
             <a href="#removedDataProperty" title="https://w3id.org/def/och#removedDataProperty">removed data property</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RemoveDisjointClass">
+      <h3>Remove Disjoint Class<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/och#RemoveDisjointClass</p>
+      <div class="comment">
+         <span class="markdown">The change operation corresponding to the removal of the disjoint class relation between two classes</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#DisjointClassChange" title="https://w3id.org/def/och#DisjointClassChange">Disjoint Class Change</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#sourceRemoveDisjointClass"
+               title="https://w3id.org/def/och#sourceRemoveDisjointClass">source remove disjoint class</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#targetRemoveDisjointClass"
+               title="https://w3id.org/def/och#targetRemoveDisjointClass">target remove disjoint class</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1962,16 +2046,19 @@ This section provides details for each class and property defined by OWL Change 
             title="https://w3id.org/def/och#sourceAddAnnotationToEntity">source add annotation to entity</a>
       </li>
       <li>
-         <a href="#sourceAddRelationToIndividual"
-            title="https://w3id.org/def/och#sourceAddRelationToIndividual">source add relation to individuals</a>
+         <a href="#sourceAddDisjointClass" title="https://w3id.org/def/och#sourceAddDisjointClass">source add disjoint class</a>
       </li>
       <li>
          <a href="#sourceAddDisjointProperty"
-            title="https://w3id.org/def/och#sourceAddDisjointProperty">source AddDisjointProperty</a>
+            title="https://w3id.org/def/och#sourceAddDisjointProperty">source add disjoint property</a>
       </li>
       <li>
          <a href="#sourceAddEquivalentClass"
-            title="https://w3id.org/def/och#sourceAddEquivalentClass">source AddEquivalentClass</a>
+            title="https://w3id.org/def/och#sourceAddEquivalentClass">source add equivalent class</a>
+      </li>
+      <li>
+         <a href="#sourceAddRelationToIndividual"
+            title="https://w3id.org/def/och#sourceAddRelationToIndividual">source add relation to individuals</a>
       </li>
       <li>
          <a href="#sourceAddEquivalentProperty"
@@ -1999,6 +2086,10 @@ This section provides details for each class and property defined by OWL Change 
       <li>
          <a href="#sourceRemoveAnnotationFromEntity"
             title="https://w3id.org/def/och#sourceRemoveAnnotationFromEntity">source remove annotation from entity</a>
+      </li>
+      <li>
+         <a href="#sourceRemoveDisjointClass"
+            title="https://w3id.org/def/och#sourceRemoveDisjointClass">source remove disjoint class</a>
       </li>
       <li>
          <a href="#sourceRemoveRelationToIndividual"
@@ -2030,6 +2121,9 @@ This section provides details for each class and property defined by OWL Change 
       <li>
          <a href="#targetAddAnnotationToEntity"
             title="https://w3id.org/def/och#targetAddAnnotationToEntity">target add annotation to entity</a>
+      </li>
+      <li>
+         <a href="#targetAddDisjointClass" title="https://w3id.org/def/och#targetAddDisjointClass">target add disjoint class</a>
       </li>
       <li>
          <a href="#targetAddRelationToIndividual"
@@ -2069,6 +2163,10 @@ This section provides details for each class and property defined by OWL Change 
       <li>
          <a href="#targetRemoveAnnotationFromEntity"
             title="https://w3id.org/def/och#targetRemoveAnnotationFromEntity">target remove annotation from entity</a>
+      </li>
+      <li>
+         <a href="#targetRemoveDisjointClass"
+            title="https://w3id.org/def/och#targetRemoveDisjointClass">target remove disjoint class</a>
       </li>
       <li>
          <a href="#targetRemoveRelationToIndividual"
@@ -3220,36 +3318,40 @@ This section provides details for each class and property defined by OWL Change 
          </dl>
       </div>
    </div>
-   <div class="entity" id="sourceAddRelationToIndividual">
-      <h3>source add relation to individuals<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="sourceAddDisjointClass">
+      <h3>source add disjoint class<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/def/och#sourceAddRelationToIndividual</p>
+         <strong>IRI:</strong> https://w3id.org/def/och#sourceAddDisjointClass</p>
       <div class="comment">
-         <span class="markdown">The individual that is the subject of the relation being added in a change operation</span>
+         <span class="markdown">The subject of the disjoint class relation being added</span>
       </div>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#sourceClass" title="https://w3id.org/def/och#sourceClass">source class</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#AddRelationToIndividual"
-                  title="https://w3id.org/def/och#AddRelationToIndividual">Add Relation to Individual</a>
+               <a href="#AddDisjointClass" title="https://w3id.org/def/och#AddDisjointClass">Add Disjoint Class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2002/07/owl#NamedIndividual"
+               <a href="http://www.w3.org/2002/07/owl#Class"
                   target="_blank"
-                  title="http://www.w3.org/2002/07/owl#NamedIndividual">named individual</a>
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="sourceAddDisjointProperty">
-      <h3>source AddDisjointProperty<sup class="type-op" title="object property">op</sup>
+      <h3>source add disjoint property<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -3281,7 +3383,7 @@ This section provides details for each class and property defined by OWL Change 
       </div>
    </div>
    <div class="entity" id="sourceAddEquivalentClass">
-      <h3>source AddEquivalentClass<sup class="type-op" title="object property">op</sup>
+      <h3>source add equivalent class<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -3307,6 +3409,34 @@ This section provides details for each class and property defined by OWL Change 
                <a href="http://www.w3.org/2002/07/owl#Class"
                   target="_blank"
                   title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="sourceAddRelationToIndividual">
+      <h3>source add relation to individuals<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/och#sourceAddRelationToIndividual</p>
+      <div class="comment">
+         <span class="markdown">The individual that is the subject of the relation being added in a change operation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#AddRelationToIndividual"
+                  title="https://w3id.org/def/och#AddRelationToIndividual">Add Relation to Individual</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#NamedIndividual"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#NamedIndividual">named individual</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -3454,12 +3584,15 @@ This section provides details for each class and property defined by OWL Change 
          <dl>
             <dt>has sub-properties</dt>
             <dd>
-               <a href="#sourceAddEquivalentClass"
-                  title="https://w3id.org/def/och#sourceAddEquivalentClass">source AddEquivalentClass</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#sourceAddSubClass" title="https://w3id.org/def/och#sourceAddSubClass">source AddSubClass</a>
+               <a href="#sourceAddSubClass" title="https://w3id.org/def/och#sourceAddSubClass">source AddSubClass</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#sourceRemoveEquivalentClass"
                   title="https://w3id.org/def/och#sourceRemoveEquivalentClass">source RemoveEquivalentClass</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#sourceRemoveSubClass" title="https://w3id.org/def/och#sourceRemoveSubClass">source RemoveSubClass</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#sourceAddDisjointClass" title="https://w3id.org/def/och#sourceAddDisjointClass">source add disjoint class</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#sourceAddEquivalentClass"
+                  title="https://w3id.org/def/och#sourceAddEquivalentClass">source add equivalent class</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#sourceRemoveDisjointClass"
+                  title="https://w3id.org/def/och#sourceRemoveDisjointClass">source remove disjoint class</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -3519,9 +3652,7 @@ This section provides details for each class and property defined by OWL Change 
          <dl>
             <dt>has sub-properties</dt>
             <dd>
-               <a href="#sourceAddDisjointProperty"
-                  title="https://w3id.org/def/och#sourceAddDisjointProperty">source AddDisjointProperty</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#sourceAddEquivalentProperty"
+               <a href="#sourceAddEquivalentProperty"
                   title="https://w3id.org/def/och#sourceAddEquivalentProperty">source AddEquivalentProperty</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#sourceAddInverseProperty"
                   title="https://w3id.org/def/och#sourceAddInverseProperty">source AddInverseProperty</a>
@@ -3534,6 +3665,8 @@ This section provides details for each class and property defined by OWL Change 
                   title="https://w3id.org/def/och#sourceRemoveInverseProperty">source RemoveInverseProperty</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#sourceRemoveSubProperty"
                   title="https://w3id.org/def/och#sourceRemoveSubProperty">source RemoveSubProperty</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#sourceAddDisjointProperty"
+                  title="https://w3id.org/def/och#sourceAddDisjointProperty">source add disjoint property</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -3574,6 +3707,38 @@ This section provides details for each class and property defined by OWL Change 
                <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
                   target="_blank"
                   title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="sourceRemoveDisjointClass">
+      <h3>source remove disjoint class<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/och#sourceRemoveDisjointClass</p>
+      <div class="comment">
+         <span class="markdown">The subject of the disjoint class relation being removed</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#sourceClass" title="https://w3id.org/def/och#sourceClass">source class</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RemoveDisjointClass" title="https://w3id.org/def/och#RemoveDisjointClass">Remove Disjoint Class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -3828,6 +3993,38 @@ This section provides details for each class and property defined by OWL Change 
          </dl>
       </div>
    </div>
+   <div class="entity" id="targetAddDisjointClass">
+      <h3>target add disjoint class<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/och#targetAddDisjointClass</p>
+      <div class="comment">
+         <span class="markdown">The object of the disjoint class relation being added</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#targetClass" title="https://w3id.org/def/och#targetClass">target class</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#AddDisjointClass" title="https://w3id.org/def/och#AddDisjointClass">Add Disjoint Class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="targetAddRelationToIndividual">
       <h3>target add relation to individuals<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4068,6 +4265,9 @@ This section provides details for each class and property defined by OWL Change 
                <sup class="type-op" title="object property">op</sup>, <a href="#targetRemoveEquivalentClass"
                   title="https://w3id.org/def/och#targetRemoveEquivalentClass">target RemoveEquivalentClass</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#targetRemoveSubClass" title="https://w3id.org/def/och#targetRemoveSubClass">target RemovesubClass</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#targetAddDisjointClass" title="https://w3id.org/def/och#targetAddDisjointClass">target add disjoint class</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#targetRemoveDisjointClass"
+                  title="https://w3id.org/def/och#targetRemoveDisjointClass">target remove disjoint class</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -4182,6 +4382,38 @@ This section provides details for each class and property defined by OWL Change 
                <a href="http://www.w3.org/2000/01/rdf-schema#Resource"
                   target="_blank"
                   title="http://www.w3.org/2000/01/rdf-schema#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="targetRemoveDisjointClass">
+      <h3>target remove disjoint class<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/och#targetRemoveDisjointClass</p>
+      <div class="comment">
+         <span class="markdown">The object of the disjoint class relation being removed</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#targetClass" title="https://w3id.org/def/och#targetClass">target class</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RemoveDisjointClass" title="https://w3id.org/def/och#RemoveDisjointClass">Remove Disjoint Class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Class"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Class">class</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
