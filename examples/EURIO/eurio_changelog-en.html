@@ -1,0 +1,1599 @@
+<div id="changelog">
+<h2 id="changes" class="list">Changes from last version</h2>
+<h3 id="changeClass" class="list">Classes</h3>
+<details><summary><u>Modified classes</u></summary>
+<ul><li><a href="#Acronym">http://data.europa.eu/s66#Acronym</a>
+<ul>
+<li></ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "An abbreviation formed from the initial letters of other words and pronounced as a word. It can refer to any type of entities in the CORDIS conceptual framework, and may be stated explicitly or extracted automatically from text."@en</li>
+<li></ul>
+</li>
+<li><a href="#AdministrativeArea">http://data.europa.eu/s66#AdministrativeArea</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> http://data.europa.eu/m8g/AdminUnit</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> http://schema.org/AdministrativeArea</li>
+</ul>
+<ul>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#AdministrativeArea&gt; &lt;http://schema.org/AdministrativeArea&gt;)</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: a geographical region, typically under the jurisdiction of a particular government"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "An administrative geographical area that is typically managed by a public body. It can be a country, a region, a municipality, a province, a sub-municipality area, etc."@en</li>
+<li>Deleted: rdfs:isDefinedBy "http://schema.org/"@en</li>
+</ul>
+</li>
+<li><a href="#ContactPoint">http://data.europa.eu/s66#ContactPoint</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li></ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "A contact point of an organisation or a person."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: The mailing address."@en</li>
+</ul>
+</li>
+<li><a href="#Coordinates">http://data.europa.eu/s66#Coordinates</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#closeMatch> http://schema.org/GeoCoordinates</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> http://www.w3.org/ns/locn#Geometry</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#Coordinates&gt; &lt;http://schema.org/GeoCoordinates&gt;)</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Schema's definition: The geographic coordinates of a place or event."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The geo coordinates for a location of entities that participate in or form part of research projects."@en</li>
+</ul>
+</li>
+<li><a href="#Country">http://data.europa.eu/s66#Country</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> http://schema.org/Country</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: a country."^^xsd:string</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "A country"@en</li>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#Country&gt; &lt;http://schema.org/Country&gt;)</li>
+<li>Deleted: rdfs:isDefinedBy "http://schema.org/"@en</li>
+</ul>
+</li>
+<li><a href="#DetectedAcronym">http://data.europa.eu/s66#DetectedAcronym</a>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Any acronym that has been detected, automatically or manually, from the description of an entity or from any other form of natural language text."@en</li>
+</ul>
+</li>
+<li><a href="#FundingAgency">http://data.europa.eu/s66#FundingAgency</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#ForProfitOrganisation&gt; &lt;http://data.europa.eu/s66#FundingAgency&gt; &lt;http://data.europa.eu/s66#HigherOrSecondaryEducation&gt; &lt;http://data.europa.eu/s66#PublicBody&gt; &lt;http://data.europa.eu/s66#ResearchOrganisation&gt; &lt;http://data.europa.eu/s66#SME&gt;)</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> https://w3id.org/dingo#FundingAgency</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "An organisation that materially administrates funding schemes and disburses related grants. In the context of CORDIS, it represents the various European agencies responsible for funding research projects (e.g. ERC, EASME, REA, etc.)."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The class for funding agencies: organisation that materially disburse and administer the Grant process."@en</li>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#FundingAgency&gt; &lt;https://w3id.org/dingo#FundingAgency&gt;)</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#FundingScheme">http://data.europa.eu/s66#FundingScheme</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> https://w3id.org/dingo#FundingScheme</li>
+<li></ul>
+<ul>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#FundingScheme&gt; &lt;https://w3id.org/dingo#FundingScheme&gt;)</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The class for funding schemes: plans, designs, and/or programs that determines and organizes the funding."@en</li>
+<li>Deleted: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#FundingScheme&gt; &lt;http://data.europa.eu/s66#Grant&gt;)</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Set of rules and conditions which forms the basis for public funding of European research. In CORDIS, they represent the different legal frameworks (e.g. FP6, FP7, H2020). They can also be used to represent the different calls inside each framework by using the recursive relation “partOfScheme”."@en</li>
+<li></ul>
+</li>
+<li><a href="#Grant">http://data.europa.eu/s66#Grant</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> https://w3id.org/dingo#Grant</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li></ul>
+<ul>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#Grant&gt; &lt;https://w3id.org/dingo#Grant&gt;)</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The class for grant: a disbursed fund paid to a recipient or beneficiary (a Participant) and the process for it."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "A disbursed fund paid to a recipient or beneficiary within the context of a funded research project. In the context of CORDIS, it represents a grant of a specific EU programme (e.g. an H2020 grant)."@en</li>
+<li>Deleted: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#FundingScheme&gt; &lt;http://data.europa.eu/s66#Grant&gt;)</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#GrantPayment">http://data.europa.eu/s66#GrantPayment</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> https://w3id.org/dingo#GrantPayment</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#GrantPayment&gt; &lt;https://w3id.org/dingo#GrantPayment&gt;)</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The class for grant payments: a single payment to a recipient or beneficiary within a Grant."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "A single payment to a recipient or beneficiary of a Grant within a research project."@en</li>
+</ul>
+</li>
+<li><a href="#MonetaryAmount">http://data.europa.eu/s66#MonetaryAmount</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> http://schema.org/MonetaryAmount</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: A monetary value or range. This type can be used to describe an amount of money such as $50 USD, or a range as in describing a bank account being suitable for a balance between £1,000 and £1,000,000 GBP, or the value of a salary, etc."@en</li>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#MonetaryAmount&gt; &lt;http://schema.org/MonetaryAmount&gt;)</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "A monetary value or range. This type can be used to describe an amount of money such as $50 USD, or a range as in describing a bank account being suitable for a balance between £1,000 and £1,000,000 GBP, or the value of a salary, etc."@en</li>
+</ul>
+</li>
+<li><a href="#Organisation">http://data.europa.eu/s66#Organisation</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> https://w3id.org/dingo#Organisation</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> http://www.w3.org/ns/org#Organization</li>
+<li></ul>
+<ul>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#Organisation&gt; &lt;http://www.w3.org/ns/org#Organization&gt;)</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "ORG's definition: Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://www.w3.org/ns/org#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Represents a group of people, with the same purpose, organized together into a community or other social, commercial or political structure that participate in CORDIS projects."@en</li>
+</ul>
+</li>
+<li><a href="#OrganisationRole">http://data.europa.eu/s66#OrganisationRole</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> https://w3id.org/dingo#OrganisationRole</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li></ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Function assumed by or ascribed to an organisation that takes part in a particular project. In CORDIs, it represents roles such as coordinator, partner, consortium member, etc."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#OrganisationRole&gt; &lt;https://w3id.org/dingo#OrganisationRole&gt;)</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The class for organisation roles: function assumed by or ascribed to an organisation that takes part in something."@en</li>
+</ul>
+</li>
+<li><a href="#OrganisationUnit">http://data.europa.eu/s66#OrganisationUnit</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> http://www.w3.org/ns/org#OrganizationalUnit</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy http://www.w3.org/ns/org#</li>
+<li>Deleted: SubClass of http://data.europa.eu/s66#Organisation</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "A department or unit which is part of some larger Organization and only has full recognition within the context of that Organization. In CORDIS, it represents for instance the different departments of a university that participate in a particular project."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "ORG's definition: An Organization such as a department or support unit which is part of some larger Organization and only has full recognition within the context of that Organization."@en</li>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#OrganisationUnit&gt; &lt;http://www.w3.org/ns/org#OrganizationalUnit&gt;)</li>
+</ul>
+</li>
+<li><a href="#Person">http://data.europa.eu/s66#Person</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#closeMatch> http://www.w3.org/ns/person#Person</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#Person&gt; &lt;http://data.europa.eu/s66#PersonRole&gt;)</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> http://schema.org/Person</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> https://w3id.org/dingo#Person</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#Person&gt; &lt;https://w3id.org/dingo#Person&gt;)</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The class for persons: alive, dead, undead, or fictional."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "A physical person. In CORDIS, it represents the different people assuming roles in research projects (e.g. PhD students, PIs, administrative contacts, etc.)."@en</li>
+</ul>
+</li>
+<li><a href="#PersonRole">http://data.europa.eu/s66#PersonRole</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> https://w3id.org/dingo#PersonRole</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#Person&gt; &lt;http://data.europa.eu/s66#PersonRole&gt;)</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Function assumed by or ascribed to a person that takes part in a particular project. In CORDIS, it represents roles such as contact person, PI, etc."@en</li>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#PersonRole&gt; &lt;https://w3id.org/dingo#PersonRole&gt;)</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The class for person roles: function assumed by or ascribed to a person that takes part in something."@en</li>
+<li></ul>
+</li>
+<li><a href="#PostalAddress">http://data.europa.eu/s66#PostalAddress</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> http://schema.org/PostalAddress</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> http://www.w3.org/ns/locn#Address</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li></ul>
+<ul>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#PostalAddress&gt; &lt;http://schema.org/PostalAddress&gt;)</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: The mailing address."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The postal address of entities that participate in or form part of research projects."@en</li>
+<li></ul>
+</li>
+<li><a href="#Project">http://data.europa.eu/s66#Project</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> https://w3id.org/dingo#Project</li>
+<li></ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The class for projects: an organised endeavour (collective or individual) planned to reach a particular aim or achieve a result."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: rdfs:isDefinedBy http://purl.org/cerif/frapo/</li>
+<li>Deleted: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#Project&gt; &lt;http://data.europa.eu/s66#ProjectDivision&gt;)</li>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#Project&gt; &lt;https://w3id.org/dingo#Project&gt;)</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "A planned research work that has one or more objectives (divided or not into tasks) and is conducted by one or more organisations. In CORDIS, it represents a project funded by an EU programme."@en</li>
+</ul>
+</li>
+<li><a href="#Result">http://data.europa.eu/s66#Result</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "FRAPO's definition: Something that is created or produced as a result of a project or an endeavour. Examples include a building resulting from a building project, educated students graduating from an educational programme, and a journal article published as a result of a research project."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Any tangible or intangible output of the project (such as data, knowledge and information, whatever their form or nature, whether or not they can be protected), which are generated in the project."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://purl.org/cerif/frapo/</li>
+<li>Deleted: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#Event&gt; &lt;http://data.europa.eu/s66#Result&gt;)</li>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#Result&gt; &lt;http://purl.org/cerif/frapo/Output&gt;)</li>
+<li></ul>
+</li>
+<li><a href="#Role">http://data.europa.eu/s66#Role</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> https://w3id.org/dingo#Role</li>
+<li></ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: the function assumed by or ascribed to an entity (typically person, group of persons or organisation) in a particular situation."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The function assumed by or ascribed to an entity (typically a person or organisation) in a particular project. It can be used to precise or represent additional information about a relationship or property such as participation or membership. In CORDIS, it represents the participation of a person or organisation in a research project."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#Role&gt; &lt;https://w3id.org/dingo#Role&gt;)</li>
+<li></ul>
+</li>
+<li><a href="#Site">http://data.europa.eu/s66#Site</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#broadMatch> http://www.w3.org/ns/org#Site</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy http://www.w3.org/ns/org#</li>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;http://data.europa.eu/s66#Site&gt; &lt;http://www.w3.org/ns/org#Site&gt;)</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The physical extension of entities that participate in or form part of research projects."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "ORG's definition: An office or other premise at which the organization is located. Many organizations are spread across multiple sites and many sites will host multiple locations. In most cases a Site will be a physical location. However, we don't exclude the possibility of non-physical sites such as a virtual office with an associated post box and phone reception service. Extensions may provide sub-classes to denote particular types of site."@en</li>
+</ul>
+</li>
+<li><a href="#TitleAcronym">http://data.europa.eu/s66#TitleAcronym</a>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "An acronym explicitly defined as the title or name of another entity (e.g. Project, Organisation, Funding Scheme, etc.)."@en</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added classes</u></summary>
+<ul><li><a href="#Book">http://data.europa.eu/s66#Book</a>
+<ul>
+<li>Added: SubClass of http://data.europa.eu/s66#ProjectPublication</li>
+</ul>
+</li>
+<li><a href="#BookChapter">http://data.europa.eu/s66#BookChapter</a>
+<ul>
+<li>Added: SubClass of http://data.europa.eu/s66#ProjectPublication</li>
+</ul>
+</li>
+<li><a href="#ConferencePaper">http://data.europa.eu/s66#ConferencePaper</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#ConferencePaper&gt; &lt;http://data.europa.eu/s66#JournalPaper&gt; &lt;http://data.europa.eu/s66#WorkshopPaper&gt;)</li>
+<li>Added: SubClass of http://data.europa.eu/s66#ProjectPublication</li>
+</ul>
+</li>
+<li><a href="#ExploitableResult">http://data.europa.eu/s66#ExploitableResult</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#ExploitableResult&gt; &lt;http://data.europa.eu/s66#ProjectDeliverable&gt; &lt;http://data.europa.eu/s66#ProjectPublication&gt; &lt;http://data.europa.eu/s66#ProjectReportSummary&gt;)</li>
+<li>Added: SubClass of http://data.europa.eu/s66#Result</li>
+</ul>
+</li>
+<li><a href="#ForProfitOrganisation">http://data.europa.eu/s66#ForProfitOrganisation</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#ForProfitOrganisation&gt; &lt;http://data.europa.eu/s66#FundingAgency&gt; &lt;http://data.europa.eu/s66#HigherOrSecondaryEducation&gt; &lt;http://data.europa.eu/s66#PublicBody&gt; &lt;http://data.europa.eu/s66#ResearchOrganisation&gt; &lt;http://data.europa.eu/s66#SME&gt;)</li>
+<li>Added: SubClass of http://data.europa.eu/s66#Organisation</li>
+</ul>
+</li>
+<li><a href="#HigherOrSecondaryEducation">http://data.europa.eu/s66#HigherOrSecondaryEducation</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#ForProfitOrganisation&gt; &lt;http://data.europa.eu/s66#FundingAgency&gt; &lt;http://data.europa.eu/s66#HigherOrSecondaryEducation&gt; &lt;http://data.europa.eu/s66#PublicBody&gt; &lt;http://data.europa.eu/s66#ResearchOrganisation&gt; &lt;http://data.europa.eu/s66#SME&gt;)</li>
+<li>Added: SubClass of http://data.europa.eu/s66#Organisation</li>
+</ul>
+</li>
+<li><a href="#JournalPaper">http://data.europa.eu/s66#JournalPaper</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#ConferencePaper&gt; &lt;http://data.europa.eu/s66#JournalPaper&gt; &lt;http://data.europa.eu/s66#WorkshopPaper&gt;)</li>
+<li>Added: SubClass of http://data.europa.eu/s66#ProjectPublication</li>
+</ul>
+</li>
+<li><a href="#NonPeerReviewedPublication">http://data.europa.eu/s66#NonPeerReviewedPublication</a>
+<ul>
+<li>Added: SubClass of http://data.europa.eu/s66#ProjectPublication</li>
+</ul>
+</li>
+<li><a href="#ProjectDeliverable">http://data.europa.eu/s66#ProjectDeliverable</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#ExploitableResult&gt; &lt;http://data.europa.eu/s66#ProjectDeliverable&gt; &lt;http://data.europa.eu/s66#ProjectPublication&gt; &lt;http://data.europa.eu/s66#ProjectReportSummary&gt;)</li>
+<li>Added: SubClass of http://data.europa.eu/s66#Result</li>
+<li></ul>
+</li>
+<li><a href="#ProjectPublication">http://data.europa.eu/s66#ProjectPublication</a>
+<ul>
+<li>Added: SubClass of http://data.europa.eu/s66#Result</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#ExploitableResult&gt; &lt;http://data.europa.eu/s66#ProjectDeliverable&gt; &lt;http://data.europa.eu/s66#ProjectPublication&gt; &lt;http://data.europa.eu/s66#ProjectReportSummary&gt;)</li>
+<li></ul>
+</li>
+<li><a href="#ProjectReportSummary">http://data.europa.eu/s66#ProjectReportSummary</a>
+<ul>
+<li>Added: SubClass of http://data.europa.eu/s66#Result</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#ExploitableResult&gt; &lt;http://data.europa.eu/s66#ProjectDeliverable&gt; &lt;http://data.europa.eu/s66#ProjectPublication&gt; &lt;http://data.europa.eu/s66#ProjectReportSummary&gt;)</li>
+<li></ul>
+</li>
+<li><a href="#PublicBody">http://data.europa.eu/s66#PublicBody</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#ForProfitOrganisation&gt; &lt;http://data.europa.eu/s66#FundingAgency&gt; &lt;http://data.europa.eu/s66#HigherOrSecondaryEducation&gt; &lt;http://data.europa.eu/s66#PublicBody&gt; &lt;http://data.europa.eu/s66#ResearchOrganisation&gt; &lt;http://data.europa.eu/s66#SME&gt;)</li>
+<li>Added: SubClass of http://data.europa.eu/s66#Organisation</li>
+</ul>
+</li>
+<li><a href="#ResearchOrganisation">http://data.europa.eu/s66#ResearchOrganisation</a>
+<ul>
+<li>Added: SubClass of http://data.europa.eu/s66#Organisation</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#ForProfitOrganisation&gt; &lt;http://data.europa.eu/s66#FundingAgency&gt; &lt;http://data.europa.eu/s66#HigherOrSecondaryEducation&gt; &lt;http://data.europa.eu/s66#PublicBody&gt; &lt;http://data.europa.eu/s66#ResearchOrganisation&gt; &lt;http://data.europa.eu/s66#SME&gt;)</li>
+</ul>
+</li>
+<li><a href="#SME">http://data.europa.eu/s66#SME</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#ForProfitOrganisation&gt; &lt;http://data.europa.eu/s66#FundingAgency&gt; &lt;http://data.europa.eu/s66#HigherOrSecondaryEducation&gt; &lt;http://data.europa.eu/s66#PublicBody&gt; &lt;http://data.europa.eu/s66#ResearchOrganisation&gt; &lt;http://data.europa.eu/s66#SME&gt;)</li>
+<li>Added: SubClass of http://data.europa.eu/s66#Organisation</li>
+</ul>
+</li>
+<li><a href="#ThesisDissertation">http://data.europa.eu/s66#ThesisDissertation</a>
+<ul>
+<li>Added: SubClass of http://data.europa.eu/s66#ProjectPublication</li>
+</ul>
+</li>
+<li><a href="#WorkshopPaper">http://data.europa.eu/s66#WorkshopPaper</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://data.europa.eu/s66#ConferencePaper&gt; &lt;http://data.europa.eu/s66#JournalPaper&gt; &lt;http://data.europa.eu/s66#WorkshopPaper&gt;)</li>
+<li>Added: SubClass of http://data.europa.eu/s66#ProjectPublication</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/2002/07/owl#Thing">http://www.w3.org/2002/07/owl#Thing</a>
+</li>
+</ul></details><details><summary><u>Deleted classes</u></summary>
+<ul><li><a href="#Event">http://data.europa.eu/s66#Event</a>
+</li>
+<li><a href="#ProjectDivision">http://data.europa.eu/s66#ProjectDivision</a>
+</li>
+<li><a href="#PropertyValue">http://data.europa.eu/s66#PropertyValue</a>
+</li>
+<li><a href="#Task">http://data.europa.eu/s66#Task</a>
+</li>
+<li><a href="#WorkPackage">http://data.europa.eu/s66#WorkPackage</a>
+</li>
+<li><a href="#http://purl.org/cerif/frapo/Output">http://purl.org/cerif/frapo/Output</a>
+</li>
+<li><a href="#http://schema.org/AdministrativeArea">http://schema.org/AdministrativeArea</a>
+</li>
+<li><a href="#http://schema.org/Country">http://schema.org/Country</a>
+</li>
+<li><a href="#http://schema.org/Event">http://schema.org/Event</a>
+</li>
+<li><a href="#http://schema.org/GeoCoordinates">http://schema.org/GeoCoordinates</a>
+</li>
+<li><a href="#http://schema.org/MonetaryAmount">http://schema.org/MonetaryAmount</a>
+</li>
+<li><a href="#http://schema.org/PostalAddress">http://schema.org/PostalAddress</a>
+</li>
+<li><a href="#http://schema.org/PropertyValue">http://schema.org/PropertyValue</a>
+</li>
+<li><a href="#http://www.w3.org/ns/org#Organization">http://www.w3.org/ns/org#Organization</a>
+</li>
+<li><a href="#http://www.w3.org/ns/org#OrganizationalUnit">http://www.w3.org/ns/org#OrganizationalUnit</a>
+</li>
+<li><a href="#http://www.w3.org/ns/org#Site">http://www.w3.org/ns/org#Site</a>
+</li>
+<li><a href="#https://w3id.org/dingo#FundingAgency">https://w3id.org/dingo#FundingAgency</a>
+</li>
+<li><a href="#https://w3id.org/dingo#FundingScheme">https://w3id.org/dingo#FundingScheme</a>
+</li>
+<li><a href="#https://w3id.org/dingo#Grant">https://w3id.org/dingo#Grant</a>
+</li>
+<li><a href="#https://w3id.org/dingo#GrantPayment">https://w3id.org/dingo#GrantPayment</a>
+</li>
+<li><a href="#https://w3id.org/dingo#OrganisationRole">https://w3id.org/dingo#OrganisationRole</a>
+</li>
+<li><a href="#https://w3id.org/dingo#Person">https://w3id.org/dingo#Person</a>
+</li>
+<li><a href="#https://w3id.org/dingo#PersonRole">https://w3id.org/dingo#PersonRole</a>
+</li>
+<li><a href="#https://w3id.org/dingo#Project">https://w3id.org/dingo#Project</a>
+</li>
+<li><a href="#https://w3id.org/dingo#Role">https://w3id.org/dingo#Role</a>
+</li>
+<li><a href="#webode://droz.dia.fi.upm.es/Project+Ontology#Task">webode://droz.dia.fi.upm.es/Project+Ontology#Task</a>
+</li>
+<li><a href="#webode://droz.dia.fi.upm.es/Project+Ontology#Workpackage">webode://droz.dia.fi.upm.es/Project+Ontology#Workpackage</a>
+</li>
+</ul></details><h3 id="changeProp" class="list">Object Properties</h3>
+<details><summary><u>Modified object properties</u></summary>
+<ul><li><a href="#disburses">http://data.europa.eu/s66#disburses</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the funding agency to the grant(s) that it disburses."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse of disbursedBy."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relation between the funding agency (subject) and the disbursed grant (object)."@en</li>
+</ul>
+</li>
+<li><a href="#employs">http://data.europa.eu/s66#employs</a>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the organisation to the role representing a person that the organisation employs during a project in which both participate. "@en</li>
+</ul>
+</li>
+<li><a href="#funds">http://data.europa.eu/s66#funds</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the grant with the project(s) that are completely or partially funded by it."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse property of fundedBy."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relation between the Grant (subject) and the Project (object)."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#hasAcronym">http://data.europa.eu/s66#hasAcronym</a>
+<ul>
+<li>Added: rdfs:comment "Relates an entity (e.g. project, grant, etc.) with its acronym(s). This includes acronyms representing the entity’s title as well as any additional acronyms extracted from other attributes of the entity."@en</li>
+<li>Added: rdfs:label "has acronym"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "has Acronym"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates an entity (e.g. project, grant, event, etc.) with its acronym(s). This includes acronyms representing the entity’s title as well as any additional acronyms extracted from other attributes of the entity."@en</li>
+<li>Deleted: rdfs:comment "Relates an entity (e.g. project, grant, event, etc.) with its acronym(s). This includes acronyms representing the entity’s title as well as any additional acronyms extracted from other attributes of the entity."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse property of acronymOf"@en</li>
+</ul>
+</li>
+<li><a href="#hasAddress">http://data.europa.eu/s66#hasAddress</a>
+<ul>
+<li>Added: rdfs:comment "Relates a physical location to its registered address."@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: domain http://data.europa.eu/s66#Site</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "ORG's definition: Indicates an address for the site in a suitable encoding. Use of a well known address encoding such as the vCard [vcard-rdf] vocabulary is encouraged but the range is left open to allow other encodings to be used. The address may include email, telephone, and geo-location information and is not restricted to a physical address."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the office to its office registered address."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://www.w3.org/ns/org#</li>
+<li>Deleted: rdfs:comment "Relates the office to its office registered address."@en</li>
+</ul>
+</li>
+<li><a href="#hasBeneficiary">http://data.europa.eu/s66#hasBeneficiary</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "has beneficiary"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relation between the Grant (subject) and a (one of the) person(s) or organisation(s) receiving benefits from it identified by his/her/its role."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the grant to the organisation or person role(s) that are a beneficiary of the grant. "@en</li>
+<li>Deleted: rdfs:label "has Beneficiary"@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse of beneficiaryOf."@en</li>
+</ul>
+</li>
+<li><a href="#hasContactDetails">http://data.europa.eu/s66#hasContactDetails</a>
+<ul>
+<li>Added: rdfs:label "has contact details"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "has Contact Details"@en</li>
+<li>Deleted: domain http://data.europa.eu/s66#Role</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the role to the contact details of the entity taking the role (person or organisation) which are valid during the project of which the role forms a part."@en</li>
+</ul>
+</li>
+<li><a href="#hasCoordinates">http://data.europa.eu/s66#hasCoordinates</a>
+<ul>
+<li>Added: domain http://data.europa.eu/s66#Site</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "has coordinates"@en</li>
+<li>Added: rdfs:comment "The geo-coordinates of a place"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy "http://schema.org/"@en</li>
+<li>Deleted: rdfs:label "has Coordinates"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The numerical coordinates of a place"@en</li>
+<li>Deleted: rdfs:comment "The numerical coordinates of a place"@en</li>
+</ul>
+</li>
+<li><a href="#hasEUCountryCode">http://data.europa.eu/s66#hasEUCountryCode</a>
+<ul>
+<li>Added: rdfs:label "has EU country code"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "has EU Country Code"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The country code of the location or address according to the EU country codes."@en</li>
+</ul>
+</li>
+<li><a href="#hasEuroSciVocClassification">http://data.europa.eu/s66#hasEuroSciVocClassification</a>
+<ul>
+<li>Added: rdfs:label "has EuroSciVoc classification"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: domain http://data.europa.eu/s66#Project</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "One or more values from the EuroSciVoc taxonomy that represent the main fields of science of the project."@en</li>
+<li>Deleted: rdfs:label "has EuroSciVoc Classification"@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#hasFundingAmount">http://data.europa.eu/s66#hasFundingAmount</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "has funding amount"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the grant or funding scheme to the amount of money available for funding."@en</li>
+<li>Deleted: rdfs:label "has Funding Amount"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: Amount in a specific currency (relationship between the item and a value expressed in a currency unit)."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#hasFundingScheme">http://data.europa.eu/s66#hasFundingScheme</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "has funding scheme"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse property of grant"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relationship between the grant (subject) and the decision, plan, program (object) that the grant is the concrete realisation of."@en</li>
+<li>Deleted: rdfs:label "has Funding Scheme"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the grant to the funding scheme of which the grant forms a part."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#hasFundingSchemeCategory">http://data.europa.eu/s66#hasFundingSchemeCategory</a>
+<ul>
+<li>Added: rdfs:label "has funding scheme category"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "A list of terms specifying the different categories / types of funding schemes."@en</li>
+<li>Deleted: rdfs:label "has Funding Scheme Category"@en</li>
+</ul>
+</li>
+<li><a href="#hasGeographicalLocation">http://data.europa.eu/s66#hasGeographicalLocation</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "has geographical location"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "has Geographical Location"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "The basic containment relation between a place and one that contains it"@en</li>
+<li>Deleted: rdfs:isDefinedBy "http://schema.org/"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The basic containment relation between a place and one that contains it"@en</li>
+</ul>
+</li>
+<li><a href="#hasGrant">http://data.europa.eu/s66#hasGrant</a>
+<ul>
+<li>Added: rdfs:label "has grant"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relationship between the decision, plan, program (subject) and the grant (object) that the grant is the concrete realisation of."@en</li>
+<li>Deleted: rdfs:label "has Grant"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates a funding scheme with the grants that form part of it. "@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse property of fundingScheme"@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#hasInvolvedParty">http://data.europa.eu/s66#hasInvolvedParty</a>
+<ul>
+<li>Added: domain http://data.europa.eu/s66#Project</li>
+<li>Added: rdfs:comment "Relates the Project to the roles that are involved in the project."@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "has involved party"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the Project or Project Division to the roles that are involved in the project."@en</li>
+<li>Deleted: rdfs:comment "Relates the Project or Project Division to the roles that are involved in the project."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relation between the Project (subject) and a (one of the) person(s) or organisation(s) contributing to or taking part in it identified by his/her/its role."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse of involvedIn."@en</li>
+<li>Deleted: rdfs:label "has Involved Party"@en</li>
+</ul>
+</li>
+<li><a href="#hasNUTSCode">http://data.europa.eu/s66#hasNUTSCode</a>
+<ul>
+<li>Added: rdfs:comment "A value representing the NUTS code of the place or address."@en</li>
+<li>Added: rdfs:label "has NUTS code"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "A PropertyValue pair representing the NUTS-2 or NUTS-3 code of the place or address."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "A PropertyValue pair representing the NUTS-2 or NUTS-3 code of the place or address."@en</li>
+<li>Deleted: rdfs:label "has NUTS Code"@en</li>
+</ul>
+</li>
+<li><a href="#hasPayment">http://data.europa.eu/s66#hasPayment</a>
+<ul>
+<li>Added: rdfs:label "has payment"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the grant to its payment(s)."@en</li>
+<li>Deleted: rdfs:label "has Payment"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> " Inverse of isPaymentOf."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relation between a superset and its direct subset(s). Indicates an item that is a part (also in generalised sense) of the subject item."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#hasPaymentAmount">http://data.europa.eu/s66#hasPaymentAmount</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "has payment amount"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: Amount in a specific currency (relationship between the item and a value expressed in a currency unit)."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the payment to the amount of money that was given to the beneficiary of the payment."@en</li>
+<li>Deleted: rdfs:label "has Payment Amount"@en</li>
+</ul>
+</li>
+<li><a href="#hasRecipient">http://data.europa.eu/s66#hasRecipient</a>
+<ul>
+<li>Added: rdfs:label "has recipient"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Relates the grant payment to the organisation or person role(s) which have received the grant payment. Inverse property of isRecipientOf."@en</li>
+<li>Deleted: rdfs:label "has Recipient"@en</li>
+</ul>
+</li>
+<li><a href="#hasRelatedProject">http://data.europa.eu/s66#hasRelatedProject</a>
+<ul>
+<li>Added: rdfs:label "has related project"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "has Related Project"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Represents a generic non parent-child relation between two CORDIS projects."@en</li>
+</ul>
+</li>
+<li><a href="#hasRelatedScheme">http://data.europa.eu/s66#hasRelatedScheme</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "has related scheme"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Represents a generic non parent-child relation between two funding schemes."@en</li>
+<li>Deleted: rdfs:label "has Related Scheme"@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#hasResult">http://data.europa.eu/s66#hasResult</a>
+<ul>
+<li>Added: domain Union of (http://data.europa.eu/s66#Project)</li>
+<li>Added: rdfs:label "has result"@en</li>
+<li>Added: rdfs:comment "Relates the project with its result(s)."@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the project with its result(s). For the project division, Relates the project division to the result(s) stemming from the work contained in the division."@en</li>
+<li>Deleted: rdfs:comment "Relates the project with its result(s). For the project division, Relates the project division to the result(s) stemming from the work contained in the division. "@en</li>
+<li>Deleted: rdfs:label "has Result"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse of resultOf."@en</li>
+<li>Deleted: domain Union of (http://data.europa.eu/s66#Project, http://data.europa.eu/s66#ProjectDivision)</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: Material, product or outcome produced by a Project."@en</li>
+</ul>
+</li>
+<li><a href="#hasResultType">http://data.europa.eu/s66#hasResultType</a>
+<ul>
+<li>Added: rdfs:label "has result type"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "A list of terms specifying the types of results that can have a project."@en</li>
+<li>Deleted: rdfs:label "has Result Type"@en</li>
+</ul>
+</li>
+<li><a href="#hasRole">http://data.europa.eu/s66#hasRole</a>
+<ul>
+<li>Added: rdfs:label "has role"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "has Role"@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the person/organisation to the roles that the person/organisation takes."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The person or organisation or entity (object) assuming or to whom is assigned the role (subject)."@en</li>
+</ul>
+</li>
+<li><a href="#hasSite">http://data.europa.eu/s66#hasSite</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "has site"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "relates an organisation to its physical site"@en</li>
+<li>Deleted: rdfs:isDefinedBy "http://www.w3.org/ns/org#"@en</li>
+<li>Deleted: rdfs:label "has Site"@en</li>
+</ul>
+</li>
+<li><a href="#hasSubOrganisation">http://data.europa.eu/s66#hasSubOrganisation</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "has sub-organisation"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "has subOrganisation"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "ORG's definition: Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an organization which is a sub-part or child of this organization."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://www.w3.org/ns/org#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the organisation with another organisation which is a sub-part or child of it."@en</li>
+</ul>
+</li>
+<li><a href="#hasSubScheme">http://data.europa.eu/s66#hasSubScheme</a>
+<ul>
+<li>Added: rdfs:label "has subscheme"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relation between a superset and its direct subset(s). Indicates an item that is a part (also in generalised sense) of the subject item."@en</li>
+<li>Deleted: rdfs:label "has SubScheme"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the funding scheme to its sub-schemes."@en</li>
+</ul>
+</li>
+<li><a href="#hasTotalCost">http://data.europa.eu/s66#hasTotalCost</a>
+<ul>
+<li>Added: rdfs:label "has total cost"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "has Total Cost"@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: Amount of money necessary or planned for a determined project/activity."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the project with the amount of money expected, required, or given in payment for the project."@en</li>
+</ul>
+</li>
+<li><a href="#hasUnit">http://data.europa.eu/s66#hasUnit</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "has unit"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "ORG's definition: Indicates a unit which is part of this Organization, e.g. a Department within a larger Organization."@en</li>
+<li>Deleted: rdfs:label "has Unit"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the organisation with a unit or department that forms part of the organisation."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://www.w3.org/ns/org#</li>
+</ul>
+</li>
+<li><a href="#implements">http://data.europa.eu/s66#implements</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relationship between the funding agency (subject) and the decision, plan, program (object) that the funding agency implements and administers."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates a funding agency to the funding schemes that it implements and administers."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#isAcronymOf">http://data.europa.eu/s66#isAcronymOf</a>
+<ul>
+<li>Added: rdfs:label "is acronym of"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse property of acronym."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the acronym to the entity or entities to which it belongs."@en</li>
+<li>Deleted: rdfs:label "is Acronym Of"@en</li>
+</ul>
+</li>
+<li><a href="#isBeneficiaryOf">http://data.europa.eu/s66#isBeneficiaryOf</a>
+<ul>
+<li>Added: rdfs:label "is beneficiary of"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "is Beneficiary Of"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse of beneficiary."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relation between a (one of the) person(s) or organisation(s) receiving benefits from a Grant identified by his/her/its role (subject), and the Grant."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the role to the grant(s) of which the role is a beneficiary."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#isDisbursedBy">http://data.europa.eu/s66#isDisbursedBy</a>
+<ul>
+<li>Added: rdfs:label "is disbursed by"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relation between the disbursed grant (subject) and the funding agency (object)."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: rdfs:label "is Disbursed By"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse of disburses."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the grant to the funding agency that disburses the grant."@en</li>
+</ul>
+</li>
+<li><a href="#isEmployedBy">http://data.europa.eu/s66#isEmployedBy</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "is employed by"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the person role to the organisation in which the person holding the role is employed during the project."@en</li>
+<li>Deleted: rdfs:label "is Employed By"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: A person or company that provides a job (possibly paying wages or a salary) to the person taking the role."@en</li>
+</ul>
+</li>
+<li><a href="#isFundedBy">http://data.europa.eu/s66#isFundedBy</a>
+<ul>
+<li>Added: rdfs:label "is funded by"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse property of funds."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relation between the Grant (subject) and the Project (object)."@en</li>
+<li>Deleted: rdfs:label "is Funded By"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the project with the grant(s) that completely or partially fund the project."@en</li>
+</ul>
+</li>
+<li><a href="#isImplementedBy">http://data.europa.eu/s66#isImplementedBy</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "is implemented by"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relationship between the decision, plan, program (subject) and the funding agency (object) that the funding agency implements and administers."@en</li>
+<li>Deleted: rdfs:label "is Implemented By"@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the funding scheme with the funding agency that implements and administers the scheme."@en</li>
+</ul>
+</li>
+<li><a href="#isInvolvedIn">http://data.europa.eu/s66#isInvolvedIn</a>
+<ul>
+<li>Added: Range http://data.europa.eu/s66#Project</li>
+<li>Added: rdfs:label "is involved in"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:comment "Relates the role to the Project in which it is involved."@en</li>
+</ul>
+<ul>
+<li>Deleted: Range Union of (http://data.europa.eu/s66#Project, http://data.europa.eu/s66#ProjectDivision)</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse of involvedParty"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the role to the Project or Project Division in which it is involved."@en</li>
+<li>Deleted: rdfs:comment "Relates the role to the Project or Project Division in which it is involved."@en</li>
+<li>Deleted: rdfs:label "is Involved In"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relation between a (one of the) person(s) or organisation(s) participant of a Project identified by his/her/its role (subject), and the Project."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#isPaymentOf">http://data.europa.eu/s66#isPaymentOf</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "is payment of"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "is Payment Of"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse of payment."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relation between a subset and its direct superset(s). Indicates an item that is a part (also in generalised sense) of the object item."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates a payment to the grant of which it is a part."@en</li>
+</ul>
+</li>
+<li><a href="#isRecipientOf">http://data.europa.eu/s66#isRecipientOf</a>
+<ul>
+<li>Added: rdfs:label "is recipient of"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "is Recipient Of"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Relates the organisation or person role with the grant payment(s) which they have received. Inverse property of hasRecipient."@en</li>
+</ul>
+</li>
+<li><a href="#isResultOf">http://data.europa.eu/s66#isResultOf</a>
+<ul>
+<li>Added: rdfs:label "is result of"@en</li>
+<li>Added: Range Union of (http://data.europa.eu/s66#Project)</li>
+</ul>
+<ul>
+<li>Deleted: Range Union of (http://data.europa.eu/s66#Project, http://data.europa.eu/s66#ProjectDivision)</li>
+<li>Deleted: rdfs:label "is Result Of"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "Inverse property of result"@en</li>
+</ul>
+</li>
+<li><a href="#isRoleOf">http://data.europa.eu/s66#isRoleOf</a>
+<ul>
+<li>Added: rdfs:comment "Relates the person/organisation role to the person/organisation which assumes the role."@en</li>
+<li>Added: rdfs:label "is role of"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The person or organisation or entity (object) assuming or to whom is assigned the role (subject)."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the person/organisation role to the person/organisation which assumes the role."@en</li>
+<li>Deleted: rdfs:label "is Role Of"@en</li>
+<li>Deleted: rdfs:comment "Relates the person/organisation role to the person/organisation which assumes the role. ."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#isSiteOf">http://data.europa.eu/s66#isSiteOf</a>
+<ul>
+<li>Added: rdfs:label "is site of"@en</li>
+<li>Added: rdfs:comment "Indicates an entity which has presence at the given site"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "is Site Of"@en</li>
+<li>Deleted: rdfs:comment "Inidicates an entity which has presence at the given site"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Inidicates an entity which has presence at the given site"@en</li>
+<li>Deleted: rdfs:isDefinedBy "http://www.w3.org/ns/org#"@en</li>
+</ul>
+</li>
+<li><a href="#isSubOrganisationOf">http://data.europa.eu/s66#isSubOrganisationOf</a>
+<ul>
+<li>Added: rdfs:label "is sub-organisation of"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "is subOrganisation Of"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the organisation with another organisation of which it is a sub-part."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "ORG's definition: Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://www.w3.org/ns/org#</li>
+</ul>
+</li>
+<li><a href="#isSubSchemeOf">http://data.europa.eu/s66#isSubSchemeOf</a>
+<ul>
+<li>Added: rdfs:label "is subscheme of"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the funding scheme to its parent scheme of which this funding scheme forms a part. "@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The relation between a subset and its direct superset(s). Indicates an item that is a part (also in generalised sense) of the object item."@en</li>
+<li>Deleted: rdfs:label "is SubScheme Of"@en</li>
+</ul>
+</li>
+<li><a href="#isUnitOf">http://data.europa.eu/s66#isUnitOf</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "is unit of"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "is Unit Of"@en</li>
+<li>Deleted: rdfs:isDefinedBy http://www.w3.org/ns/org#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Relates the unit to the organisation of which the unit forms a part. "@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "ORG's definition: Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."@en</li>
+</ul>
+</li>
+<li><a href="#refersTo">http://data.europa.eu/s66#refersTo</a>
+<ul>
+<li>Added: rdfs:label "refers to"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "refersTo"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The entity to which this acronym refers. This can either be an entity inside of the knowledge graph or an external entity of any type."@en</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added object properties</u></summary>
+<ul><li><a href="#hasAssociatedFundingScheme">http://data.europa.eu/s66#hasAssociatedFundingScheme</a>
+<ul>
+<li>Added: Range http://data.europa.eu/s66#FundingScheme</li>
+</ul>
+</li>
+<li><a href="#hasFundingSchemeCall">http://data.europa.eu/s66#hasFundingSchemeCall</a>
+<ul>
+<li>Added: SubProperty of http://data.europa.eu/s66#hasFundingScheme</li>
+<li>Added: Range http://data.europa.eu/s66#FundingScheme</li>
+<li>Added: domain http://data.europa.eu/s66#Grant</li>
+</ul>
+</li>
+<li><a href="#hasFundingSchemeProgramme">http://data.europa.eu/s66#hasFundingSchemeProgramme</a>
+<ul>
+<li>Added: Range http://data.europa.eu/s66#FundingScheme</li>
+<li>Added: domain http://data.europa.eu/s66#Grant</li>
+<li>Added: SubProperty of http://data.europa.eu/s66#hasFundingScheme</li>
+</ul>
+</li>
+<li><a href="#hasFundingSchemeTopic">http://data.europa.eu/s66#hasFundingSchemeTopic</a>
+<ul>
+<li>Added: domain http://data.europa.eu/s66#Grant</li>
+<li>Added: Range http://data.europa.eu/s66#FundingScheme</li>
+<li>Added: SubProperty of http://data.europa.eu/s66#hasFundingScheme</li>
+</ul>
+</li>
+<li><a href="#hasFundingSchemeType">http://data.europa.eu/s66#hasFundingSchemeType</a>
+<ul>
+<li>Added: domain http://data.europa.eu/s66#Grant</li>
+<li>Added: Range http://data.europa.eu/s66#FundingScheme</li>
+<li>Added: SubProperty of http://data.europa.eu/s66#hasFundingScheme</li>
+</ul>
+</li>
+<li><a href="#hasISOCountryCode">http://data.europa.eu/s66#hasISOCountryCode</a>
+<ul>
+<li>Added: domain http://data.europa.eu/s66#Country</li>
+<li>Added: Range http://www.w3.org/2004/02/skos/core#Concept</li>
+</ul>
+</li>
+<li><a href="#hasNUTS0code">http://data.europa.eu/s66#hasNUTS0code</a>
+<ul>
+<li>Added: domain http://data.europa.eu/s66#AdministrativeArea</li>
+<li>Added: Range http://www.w3.org/2004/02/skos/core#Concept</li>
+<li>Added: SubProperty of http://data.europa.eu/s66#hasNUTSCode</li>
+</ul>
+</li>
+<li><a href="#hasNUTS1code">http://data.europa.eu/s66#hasNUTS1code</a>
+<ul>
+<li>Added: SubProperty of http://data.europa.eu/s66#hasNUTSCode</li>
+<li>Added: domain http://data.europa.eu/s66#AdministrativeArea</li>
+<li>Added: Range http://www.w3.org/2004/02/skos/core#Concept</li>
+</ul>
+</li>
+<li><a href="#hasNUTS2code">http://data.europa.eu/s66#hasNUTS2code</a>
+<ul>
+<li>Added: Range http://www.w3.org/2004/02/skos/core#Concept</li>
+<li>Added: domain http://data.europa.eu/s66#AdministrativeArea</li>
+<li>Added: SubProperty of http://data.europa.eu/s66#hasNUTSCode</li>
+</ul>
+</li>
+<li><a href="#hasNUTS3code">http://data.europa.eu/s66#hasNUTS3code</a>
+<ul>
+<li>Added: Range http://www.w3.org/2004/02/skos/core#Concept</li>
+<li>Added: SubProperty of http://data.europa.eu/s66#hasNUTSCode</li>
+<li>Added: domain http://data.europa.eu/s66#AdministrativeArea</li>
+</ul>
+</li>
+<li><a href="#hasNextFundingScheme">http://data.europa.eu/s66#hasNextFundingScheme</a>
+<ul>
+<li>Added: Range http://data.europa.eu/s66#FundingScheme</li>
+<li>Added: domain http://data.europa.eu/s66#FundingScheme</li>
+</ul>
+</li>
+<li><a href="#hasPreviousFundingScheme">http://data.europa.eu/s66#hasPreviousFundingScheme</a>
+<ul>
+<li>Added: domain http://data.europa.eu/s66#FundingScheme</li>
+<li>Added: Range http://data.europa.eu/s66#FundingScheme</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Deleted object properties</u></summary>
+<ul><li><a href="#address">http://data.europa.eu/s66#address</a>
+</li>
+<li><a href="#hasBusinessSector">http://data.europa.eu/s66#hasBusinessSector</a>
+</li>
+<li><a href="#hasEvent">http://data.europa.eu/s66#hasEvent</a>
+</li>
+<li><a href="#hasEventType">http://data.europa.eu/s66#hasEventType</a>
+</li>
+<li><a href="#hasIdentifier">http://data.europa.eu/s66#hasIdentifier</a>
+</li>
+<li><a href="#hasOrganisationCategory">http://data.europa.eu/s66#hasOrganisationCategory</a>
+</li>
+<li><a href="#hasProjectDivision">http://data.europa.eu/s66#hasProjectDivision</a>
+</li>
+<li><a href="#hasSubDivision">http://data.europa.eu/s66#hasSubDivision</a>
+</li>
+<li><a href="#hasTask">http://data.europa.eu/s66#hasTask</a>
+</li>
+<li><a href="#isDivisionOf">http://data.europa.eu/s66#isDivisionOf</a>
+</li>
+<li><a href="#isEventOf">http://data.europa.eu/s66#isEventOf</a>
+</li>
+<li><a href="#isHeldAt">http://data.europa.eu/s66#isHeldAt</a>
+</li>
+<li><a href="#isSubDivisionOf">http://data.europa.eu/s66#isSubDivisionOf</a>
+</li>
+<li><a href="#isTaskOf">http://data.europa.eu/s66#isTaskOf</a>
+</li>
+<li><a href="#refersToEntityType">http://data.europa.eu/s66#refersToEntityType</a>
+</li>
+</ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
+<details><summary><u>Modified data properties</u></summary>
+<ul><li><a href="#abstract">http://data.europa.eu/s66#abstract</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:comment "The general summary and ideas of a CORDIS entity, e.g., project, result."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "The general summary and ideas of a CORDIS project."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The general summary and ideas of a CORDIS project."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: Short summary description of a project."@en</li>
+</ul>
+</li>
+<li><a href="#additionalName">http://data.europa.eu/s66#additionalName</a>
+<ul>
+<li>Added: rdfs:label "additional name"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "additional Name"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: An additional name for a Person, can be used for a middle name."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "An additional name for a Person, can be used for a middle name."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#addressCountry">http://data.europa.eu/s66#addressCountry</a>
+<ul>
+<li>Added: rdfs:label "address country"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "address Country"@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The country of the place or address. You can also provide the two-letter ISO 3166-1 alpha-2 country code."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code."@en</li>
+</ul>
+</li>
+<li><a href="#addressLocality">http://data.europa.eu/s66#addressLocality</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "address locality"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition:  The locality in which the street address is, and which is in the region. For example, Mountain View."@en</li>
+<li>Deleted: rdfs:label "address Locality"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The locality, town or city of the place or address."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#currency">http://data.europa.eu/s66#currency</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The currency in which the monetary amount is expressed."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: The currency in which the monetary amount is expressed."@en</li>
+</ul>
+</li>
+<li><a href="#date">http://data.europa.eu/s66#date</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#date</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: Domain http://data.europa.eu/s66#GrantPayment</li>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#dateTime</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The date in which the grant payment took place."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The moment in time when an event occurs."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#definition">http://data.europa.eu/s66#definition</a>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The definition of the acronym."@en</li>
+</ul>
+</li>
+<li><a href="#description">http://data.europa.eu/s66#description</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:comment "A brief summary of the entity (project, etc.)."@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "A brief summary of the entity (project, event, etc.)."@en</li>
+<li>Deleted: rdfs:comment "A brief summary of the entity (project, event, etc.)."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's description: A description of the item"@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#duration">http://data.europa.eu/s66#duration</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#nonNegativeInteger</li>
+<li>Added: rdfs:comment "The period of time an entity (e.g. project, grant, etc.) has taken, represented as number of months."@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The period of time an entity (e.g. project, grant, event, etc.) has taken (use ISO 8601 duration format)."@en</li>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#integer</li>
+<li>Deleted: rdfs:comment "The period of time an entity (e.g. project, grant, event, etc.) has taken (use ISO 8601 duration format)."@en</li>
+</ul>
+</li>
+<li><a href="#email">http://data.europa.eu/s66#email</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Email address."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's description: Email address."@en</li>
+</ul>
+</li>
+<li><a href="#endDate">http://data.europa.eu/s66#endDate</a>
+<ul>
+<li>Added: rdfs:label "end date"@en</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#date</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: SubProperty of http://data.europa.eu/s66#date</li>
+<li>Added: rdfs:comment "The date on which an entity (e.g. project, grant, etc.) is finalized or ceases to exist."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "The date on which an entity (e.g. project, grant, event, etc.) is finalized or ceases to exist."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The date on which an entity (e.g. project, grant, event, etc.) is finalized or ceases to exist."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The time an item ceases to exist or a statement stops being valid."@en</li>
+<li>Deleted: rdfs:label "end Date"@en</li>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#dateTime</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+</ul>
+</li>
+<li><a href="#familyName">http://data.europa.eu/s66#familyName</a>
+<ul>
+<li>Added: rdfs:label "family name"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The family name (last name) of the person."@en</li>
+<li>Deleted: rdfs:label "family Name"@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property."@en</li>
+</ul>
+</li>
+<li><a href="#faxNumber">http://data.europa.eu/s66#faxNumber</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: rdfs:label "fax number"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's description: The fax number."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The fax number."@en</li>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Deleted: rdfs:label "fax Number"@en</li>
+</ul>
+</li>
+<li><a href="#fullAddress">http://data.europa.eu/s66#fullAddress</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "full address"@en</li>
+<li>Added: rdfs:comment "The full address of a physical location of an entity."@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The full address of a physical location of an entity"@en</li>
+<li>Deleted: rdfs:comment "The full address of a physical location of an entity"@en</li>
+<li>Deleted: rdfs:label "full Address"@en</li>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#givenName">http://data.europa.eu/s66#givenName</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "given name"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition:  Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The given name (first name) of the person."@en</li>
+<li>Deleted: rdfs:label "given Name"@en</li>
+</ul>
+</li>
+<li><a href="#honorificTitle">http://data.europa.eu/s66#honorificTitle</a>
+<ul>
+<li>Added: rdfs:label "honorific title"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "honorific Title"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "An honorific prefix preceding a Person's name such as Dr, Mrs, Mr."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: An honorific prefix preceding a Person's name such as Dr/Mrs/Mr."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#latitude">http://data.europa.eu/s66#latitude</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: The latitude of a location. For example 37.42242 (WGS 84)."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The latitude of a location. For example 37.42242 (WGS 84)."@en</li>
+</ul>
+</li>
+<li><a href="#legalName">http://data.europa.eu/s66#legalName</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "legal name"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The official name of the organization, e.g. the registered company name."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: rdfs:label "legal Name"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: The official name of the organization, e.g. the registered company name."@en</li>
+</ul>
+</li>
+<li><a href="#longitude">http://data.europa.eu/s66#longitude</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: The longitude of a location. For example -122.08585 (WGS 84)."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The longitude of a location. For example -122.08585 (WGS 84)."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#name">http://data.europa.eu/s66#name</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:comment "The name of an entity"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: The name of the item."@en</li>
+<li>Deleted: rdfs:comment "The name of the property in the pair."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The name of the property in the pair."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+<li><a href="#postOfficeBoxNumber">http://data.europa.eu/s66#postOfficeBoxNumber</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: rdfs:label "post office box number"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The post office box number for PO box addresses."@en</li>
+<li>Deleted: rdfs:label "post Office Box Number"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: The post office box number for PO box addresses."@en</li>
+</ul>
+</li>
+<li><a href="#postalCode">http://data.europa.eu/s66#postalCode</a>
+<ul>
+<li>Added: rdfs:label "postal code"@en</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: The postal code. For example, 94043."@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The postal code of the place or address."@en</li>
+<li>Deleted: rdfs:label "postal Code"@en</li>
+</ul>
+</li>
+<li><a href="#shortForm">http://data.europa.eu/s66#shortForm</a>
+<ul>
+<li>Added: rdfs:label "short form"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "has short form"@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The value of the acronym."@en</li>
+</ul>
+</li>
+<li><a href="#startDate">http://data.europa.eu/s66#startDate</a>
+<ul>
+<li>Added: rdfs:label "start date"@en</li>
+<li>Added: rdfs:comment "The time an entity (e.g. project, grant, etc.) is initialized or starts to take effect."@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: SubProperty of http://data.europa.eu/s66#date</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#date</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "The time an entity (e.g. project, grant, event, etc.) is initialized or starts to take effect."@en</li>
+<li>Deleted: rdfs:label "start Date"@en</li>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#dateTime</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The time an entity (e.g. project, grant, event, etc.) is initialized or starts to take effect."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: The time an item starts to exist/operate or a statement starts being valid."@en</li>
+</ul>
+</li>
+<li><a href="#streetAddress">http://data.europa.eu/s66#streetAddress</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: rdfs:label "street address"@en</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "street Address"@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The street name and number of the place or address."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: The street address. For example, 1600 Amphitheatre Pkwy."@en</li>
+</ul>
+</li>
+<li><a href="#title">http://data.europa.eu/s66#title</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "DINGO's definition: the title of a project (original or translated)."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The entity’s (e.g. project, work package, etc.) official name or title."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/dingo#</li>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#value">http://data.europa.eu/s66#value</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#decimal</li>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: The value of the quantitative value or property value node."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The value of amount being expressed."@en</li>
+</ul>
+</li>
+<li><a href="#vatNumber">http://data.europa.eu/s66#vatNumber</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/s66#</li>
+<li>Added: rdfs:label "VAT number"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "SCHEMA's definition: The Value-added Tax ID of the organization or person."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "The unique number that identifies a taxable organisation or non-taxable legal entity that is registered for VAT."@en</li>
+<li>Deleted: rdfs:label "VAT Number"@en</li>
+<li>Deleted: rdfs:isDefinedBy http://schema.org/</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added data properties</u></summary>
+<ul><li><a href="#authorList">http://data.europa.eu/s66#authorList</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#code">http://data.europa.eu/s66#code</a>
+<ul>
+<li>Added: FunctionalDataProperty FunctionalDataProperty(&lt;http://data.europa.eu/s66#code&gt;)</li>
+<li>Added: Domain http://data.europa.eu/s66#FundingScheme</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#doi">http://data.europa.eu/s66#doi</a>
+<ul>
+<li>Added: FunctionalDataProperty FunctionalDataProperty(&lt;http://data.europa.eu/s66#doi&gt;)</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+</ul>
+</li>
+<li><a href="#finalResults">http://data.europa.eu/s66#finalResults</a>
+<ul>
+<li>Added: Domain http://data.europa.eu/s66#ProjectReportSummary</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#identifier">http://data.europa.eu/s66#identifier</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: FunctionalDataProperty FunctionalDataProperty(&lt;http://data.europa.eu/s66#identifier&gt;)</li>
+</ul>
+</li>
+<li><a href="#isNet">http://data.europa.eu/s66#isNet</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#boolean</li>
+<li>Added: Domain http://data.europa.eu/s66#MonetaryAmount</li>
+</ul>
+</li>
+<li><a href="#isbn">http://data.europa.eu/s66#isbn</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://data.europa.eu/s66#ProjectPublication</li>
+<li>Added: FunctionalDataProperty FunctionalDataProperty(&lt;http://data.europa.eu/s66#isbn&gt;)</li>
+</ul>
+</li>
+<li><a href="#issn">http://data.europa.eu/s66#issn</a>
+<ul>
+<li>Added: FunctionalDataProperty FunctionalDataProperty(&lt;http://data.europa.eu/s66#issn&gt;)</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://data.europa.eu/s66#ProjectPublication</li>
+</ul>
+</li>
+<li><a href="#journalNumber">http://data.europa.eu/s66#journalNumber</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://data.europa.eu/s66#ProjectPublication</li>
+</ul>
+</li>
+<li><a href="#journalTitle">http://data.europa.eu/s66#journalTitle</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: Domain http://data.europa.eu/s66#ProjectPublication</li>
+</ul>
+</li>
+<li><a href="#keyword">http://data.europa.eu/s66#keyword</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#order">http://data.europa.eu/s66#order</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#nonNegativeInteger</li>
+<li>Added: Domain http://data.europa.eu/s66#OrganisationRole</li>
+</ul>
+</li>
+<li><a href="#periodNumber">http://data.europa.eu/s66#periodNumber</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#integer</li>
+<li>Added: Domain http://data.europa.eu/s66#ProjectReportSummary</li>
+</ul>
+</li>
+<li><a href="#projectStatus">http://data.europa.eu/s66#projectStatus</a>
+<ul>
+<li>Added: Domain http://data.europa.eu/s66#Project</li>
+<li></ul>
+</li>
+<li><a href="#publishedPages">http://data.europa.eu/s66#publishedPages</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://data.europa.eu/s66#ProjectPublication</li>
+</ul>
+</li>
+<li><a href="#publishedYear">http://data.europa.eu/s66#publishedYear</a>
+<ul>
+<li>Added: Domain http://data.europa.eu/s66#ProjectPublication</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#nonNegativeInteger</li>
+</ul>
+</li>
+<li><a href="#publisher">http://data.europa.eu/s66#publisher</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: Domain http://data.europa.eu/s66#ProjectPublication</li>
+</ul>
+</li>
+<li><a href="#rcn">http://data.europa.eu/s66#rcn</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#nonNegativeInteger</li>
+<li>Added: FunctionalDataProperty FunctionalDataProperty(&lt;http://data.europa.eu/s66#rcn&gt;)</li>
+</ul>
+</li>
+<li><a href="#roleLabel">http://data.europa.eu/s66#roleLabel</a>
+<ul>
+<li>Added: Domain http://data.europa.eu/s66#OrganisationRole</li>
+<li></ul>
+</li>
+<li><a href="#signatureDate">http://data.europa.eu/s66#signatureDate</a>
+<ul>
+<li>Added: Domain http://data.europa.eu/s66#Project</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#date</li>
+<li>Added: SubProperty of http://data.europa.eu/s66#date</li>
+</ul>
+</li>
+<li><a href="#telephoneNumber">http://data.europa.eu/s66#telephoneNumber</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: Domain http://data.europa.eu/s66#ContactPoint</li>
+</ul>
+</li>
+<li><a href="#terminationDate">http://data.europa.eu/s66#terminationDate</a>
+<ul>
+<li>Added: SubProperty of http://data.europa.eu/s66#date</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#date</li>
+</ul>
+</li>
+<li><a href="#url">http://data.europa.eu/s66#url</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+</ul>
+</li>
+<li><a href="#workPerformed">http://data.europa.eu/s66#workPerformed</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: Domain http://data.europa.eu/s66#ProjectReportSummary</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Deleted data properties</u></summary>
+<ul><li><a href="#addressRegion">http://data.europa.eu/s66#addressRegion</a>
+</li>
+<li><a href="#fullText">http://data.europa.eu/s66#fullText</a>
+</li>
+<li><a href="#hasAuthor">http://data.europa.eu/s66#hasAuthor</a>
+</li>
+<li><a href="#hasJournalNumber">http://data.europa.eu/s66#hasJournalNumber</a>
+</li>
+<li><a href="#hasJournalTitle">http://data.europa.eu/s66#hasJournalTitle</a>
+</li>
+<li><a href="#hasKeyword">http://data.europa.eu/s66#hasKeyword</a>
+</li>
+<li><a href="#hasProjectStatus">http://data.europa.eu/s66#hasProjectStatus</a>
+</li>
+<li><a href="#hasPublishedPages">http://data.europa.eu/s66#hasPublishedPages</a>
+</li>
+<li><a href="#hasPublishedYear">http://data.europa.eu/s66#hasPublishedYear</a>
+</li>
+<li><a href="#hasPublisher">http://data.europa.eu/s66#hasPublisher</a>
+</li>
+<li><a href="#hasResultCategory">http://data.europa.eu/s66#hasResultCategory</a>
+</li>
+<li><a href="#language">http://data.europa.eu/s66#language</a>
+</li>
+<li><a href="#officeName">http://data.europa.eu/s66#officeName</a>
+</li>
+<li><a href="#personMonths">http://data.europa.eu/s66#personMonths</a>
+</li>
+<li><a href="#profession">http://data.europa.eu/s66#profession</a>
+</li>
+<li><a href="#subject">http://data.europa.eu/s66#subject</a>
+</li>
+<li><a href="#telephone">http://data.europa.eu/s66#telephone</a>
+</li>
+<li><a href="#webLink">http://data.europa.eu/s66#webLink</a>
+</li>
+<li><a href="#webResource">http://data.europa.eu/s66#webResource</a>
+</li>
+</ul></details></div>

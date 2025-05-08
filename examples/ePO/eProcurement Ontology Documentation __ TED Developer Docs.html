@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://docs.ted.europa.eu/EPO/latest/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>eProcurement Ontology Documentation :: TED Developer Docs</title>
+    <link rel="canonical" href="https://docs.ted.europa.eu/EPO/latest/index.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="./eProcurement Ontology Documentation __ TED Developer Docs_files/site.css">
+    <link rel="stylesheet" href="./eProcurement Ontology Documentation __ TED Developer Docs_files/custom.css">
+    <link rel="stylesheet" href="./eProcurement Ontology Documentation __ TED Developer Docs_files/docsearch-2.6.3.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://docs.ted.europa.eu/_/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://docs.ted.europa.eu/_/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://docs.ted.europa.eu/_/img/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="https://docs.ted.europa.eu/_/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://docs.ted.europa.eu/_/img/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../../_/img/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./eProcurement Ontology Documentation __ TED Developer Docs_files/custom.css">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="google-site-verification" content="google8bce9cd167a02a39.html">
+<script async="" src="./eProcurement Ontology Documentation __ TED Developer Docs_files/363c8269-fce7-42d6-88eb-0abc9e22ea96.js.descarga"></script><script>var uiRootPath = '../../_'</script>
+<script defer="" src="./eProcurement Ontology Documentation __ TED Developer Docs_files/load.js.descarga" type="text/javascript"></script>  <link type="text/css" rel="stylesheet" media="all" href="./eProcurement Ontology Documentation __ TED Developer Docs_files/webtools.theme-eu.css"></head>
+  <body class="article"><div data-nosnippet="true" class="cck-banner" id="cookie-consent-banner" role="region" aria-label="Cookies policy"></div>
+ <!-- Piwik PRO Tracking Code -->
+ <!-- followed the istructions bellow -->
+<!-- citnet.tech.ec.europa.eu/CITnet/jira/secure/attachment/3485014/OP_PiwikPRO_TED-docs-installation-CCK-web-analytics_v1.txt -->
+  <script type="text/javascript">
+    (function (window, document, dataLayerName, id) {
+      window[dataLayerName] = window[dataLayerName] || [], window[dataLayerName].push({start: (new Date).getTime(), event: "stg.start"});
+      var scripts = document.getElementsByTagName('script')[0], tags = document.createElement('script');
+      function stgCreateCookie(a, b, c) {var d = ""; if (c) {var e = new Date; e.setTime(e.getTime() + 24 * c * 60 * 60 * 1e3), d = "; expires=" + e.toUTCString(); f = "; SameSite=Strict"} document.cookie = a + "=" + b + d + f + "; path=/"}
+      var isStgDebug = (window.location.href.match("stg_debug") || document.cookie.match("stg_debug")) && !window.location.href.match("stg_disable_debug"); stgCreateCookie("stg_debug", isStgDebug ? 1 : "", isStgDebug ? 14 : -1);
+      var qP = []; dataLayerName !== "dataLayer" && qP.push("data_layer_name=" + dataLayerName), isStgDebug && qP.push("stg_debug"); var qPString = qP.length > 0 ? ("?" + qP.join("&")) : "";
+      tags.async = !0, tags.src = "https://analytics.webanalytics.op.europa.eu/containers/" + id + ".js" + qPString, scripts.parentNode.insertBefore(tags, scripts);
+      !function (a, n, i) {a[n] = a[n] || {}; for (var c = 0; c < i.length; c++)!function (i) {a[n][i] = a[n][i] || {}, a[n][i].api = a[n][i].api || function () {var a = [].slice.call(arguments, 0); "string" == typeof a[0] && window[dataLayerName].push({event: n + "." + i + ":" + a[0], parameters: [].slice.call(arguments, 1)})}}(i[c])}(window, "ppms", ["tm", "cm"]);
+    })(window, document, 'dataLayer', '363c8269-fce7-42d6-88eb-0abc9e22ea96');
+  </script><script src="./eProcurement Ontology Documentation __ TED Developer Docs_files/moment.min.js.descarga" crossorigin="anonymous"></script>
+<script defer="" src="./eProcurement Ontology Documentation __ TED Developer Docs_files/load(1).js.descarga" type="text/javascript"></script>
+<div class="eu-flag">
+    <nav class="navbar-scrollable">
+        <div class="navbar-brand">
+
+            <div class="eu-emblem" style="display: inline-block;">
+                <!-- flag and logo-->
+                <a href="https://european-union.europa.eu/index_en" target="_blank">
+                    <div class="eu-emblem-std-en"><span></span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="sep-frame">
+            <div class="rect-grey"></div>
+        </div>
+    </nav>
+
+</div>
+
+<div class="eu-tenders">
+    <nav class="navbar">
+        <div class="text-eu-tenders">
+            <a href="https://ted.europa.eu/en/" target="_blank">EU tenders</a>
+        </div>
+        <div id="topbar-nav" class="navbar-menu">
+
+            <div class="text-eu-subtext-text">
+                <a href="https://docs.ted.europa.eu/">TED Developer Docs</a>
+            </div>
+            <div class="text-eu-subtext-label">
+                <a href="https://docs.ted.europa.eu/">Documentation for TED developers and eSenders</a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item search">
+                    <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input id="search-input" type="text" placeholder="Search docs" class="ds-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-label="search input" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Roboto, sans-serif; font-size: 17.1px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="body">
+<div class="nav-container" data-component="EPO" data-version="4.2">
+  <aside class="nav" style="height: 630px;">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu" style="height: 585px;">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="https://docs.ted.europa.eu/EPO/latest/index.html">eProcurement Ontology</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://docs.ted.europa.eu/epo-home/index.html">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text"><span class="separated"><strong>General Documentation</strong></span></span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://docs.ted.europa.eu/EPO/latest/business.html">Business Overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://docs.ted.europa.eu/epo-home/guide.html">User Guides</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="https://docs.ted.europa.eu/epo-home/stories.html">Ontology Requirements Specifications Documents</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="https://docs.ted.europa.eu/epo-home/stories_eAccess.html">eAccess (ESPD Request)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="https://docs.ted.europa.eu/epo-home/stories_eSubmission.html">eSubmission (ESPD Response)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="https://docs.ted.europa.eu/epo-home/stories_eInvoicing.html">eInvoicing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://docs.ted.europa.eu/EPO/latest/conceptual.html">Conceptual Models</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://docs.ted.europa.eu/EPO/latest/glossaries.html">Glossaries</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://docs.ted.europa.eu/EPO/latest/release-notes.html">Release Notes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://docs.ted.europa.eu/epo-home/showcase/index.html">The ePO in Other Projects</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text"><span class="separated"><strong>Reference Documentation</strong></span></span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://docs.ted.europa.eu/epo-home/methodology2024.html">Methodology</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://docs.ted.europa.eu/epo-home/versioning.html">ePO Versioning Rules</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://docs.ted.europa.eu/epo-home/REFreferences.html">Other Reference Documents</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://docs.ted.europa.eu/epo-home/history.html">History and Planned Developments</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text"><span class="separated"><strong>Working Group Documents</strong></span></span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://docs.ted.europa.eu/epo-wgm/wider.html">Wider Working Group Meetings</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://docs.ted.europa.eu/epo-wgm/cumulative.html">Cumulative Reports (by year)</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="https://docs.ted.europa.eu/epo-wgm/indiv.html">Individual Meeting Reports</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+      <div class="context">
+          <span class="title">eProcurement Ontology</span>
+          <span class="version">4.2.0</span>
+      </div>
+  <ul class="components">
+      <li class="component">
+        <a class="title" href="https://docs.ted.europa.eu/eforms/latest/index.html">eForms SDK</a>
+        <ul class="versions">
+            <li class="version is-latest">
+              <a href="https://docs.ted.europa.eu/eforms/latest/index.html">1.13</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/eforms/1.12/index.html">1.12</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/eforms/1.11/index.html">1.11</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/eforms/1.10/index.html">1.10</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/eforms/1.9/index.html">1.9</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/eforms/1.8/index.html">1.8</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/eforms/1.7/index.html">1.7</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/eforms/1.6/index.html">1.6</a>
+            </li>
+        </ul>
+      </li>
+      <li class="component is-current">
+        <a class="title" href="https://docs.ted.europa.eu/EPO/latest/index.html">eProcurement Ontology</a>
+        <ul class="versions">
+            <li class="version is-current is-latest">
+              <a href="https://docs.ted.europa.eu/EPO/latest/index.html">4.2.0</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/EPO/4.1/index.html">4.1.0</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/EPO/4/index.html">4.0.0</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/EPO/3.1/index.html">3.1.0</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/EPO/3.0.1/index.html">3.0.1</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/EPO/2.0.1/index.html">2.0.1</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/EPO/2.0.0/index.html">2.0.0</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/EPO/1.0.0/index.html">1.0.0</a>
+            </li>
+        </ul>
+      </li>
+      <li class="component">
+        <a class="title" href="https://docs.ted.europa.eu/ESPD-EDM/latest/index.html">ESPD EDM</a>
+        <ul class="versions">
+            <li class="version is-latest">
+              <a href="https://docs.ted.europa.eu/ESPD-EDM/latest/index.html">4.0.0</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/ESPD-EDM/3.3.0/index.html">3.3.0</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/ESPD-EDM/3.2.0/index.html">3.2.0</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/ESPD-EDM/3.1.0/index.html">3.1.0</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/ESPD-EDM/3.0.1/index.html">3.0.1</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/ESPD-EDM/2.1.1/index.html">2.1.1</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/ESPD-EDM/2.0.2/index.html">2.0.2</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/ESPD-EDM/1.0.2/index.html">1.0.2</a>
+            </li>
+        </ul>
+      </li>
+      <li class="component">
+        <a class="title" href="https://docs.ted.europa.eu/M2O/latest/index.html">Model2Owl Documentation</a>
+        <ul class="versions">
+            <li class="version is-latest">
+              <a href="https://docs.ted.europa.eu/M2O/latest/index.html">3.0.0</a>
+            </li>
+        </ul>
+      </li>
+      <li class="component">
+        <a class="title" href="https://docs.ted.europa.eu/api/latest/index.html">TED API</a>
+        <ul class="versions">
+            <li class="version is-latest">
+              <a href="https://docs.ted.europa.eu/api/latest/index.html">3.0</a>
+            </li>
+            <li class="version">
+              <a href="https://docs.ted.europa.eu/api/2.0/index.html">2.0</a>
+            </li>
+        </ul>
+      </li>
+      <li class="component">
+        <a class="title" href="https://docs.ted.europa.eu/ODS/latest/index.html">TED Open Data</a>
+        <ul class="versions">
+            <li class="version is-latest">
+              <a href="https://docs.ted.europa.eu/ODS/latest/index.html">1.0</a>
+            </li>
+        </ul>
+      </li>
+  </ul>
+</div>    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="https://docs.ted.europa.eu/home/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="https://docs.ted.europa.eu/EPO/latest/index.html">eProcurement Ontology</a></li>
+    <li><a href="https://docs.ted.europa.eu/EPO/latest/index.html">eProcurement Ontology Documentation</a></li>
+  </ul>
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">4.2.0</button>
+  <div class="version-menu">
+    <a class="version is-current" href="https://docs.ted.europa.eu/EPO/latest/index.html">4.2.0</a>
+    <a class="version" href="https://docs.ted.europa.eu/EPO/4.1/index.html">4.1.0</a>
+    <a class="version" href="https://docs.ted.europa.eu/EPO/4/index.html">4.0.0</a>
+    <a class="version" href="https://docs.ted.europa.eu/EPO/3.1/index.html">3.1.0</a>
+    <a class="version" href="https://docs.ted.europa.eu/EPO/3.0.1/index.html">3.0.1</a>
+    <a class="version" href="https://docs.ted.europa.eu/EPO/2.0.1/index.html">2.0.1</a>
+    <a class="version" href="https://docs.ted.europa.eu/EPO/2.0.0/index.html">2.0.0</a>
+    <a class="version" href="https://docs.ted.europa.eu/EPO/1.0.0/index.html">1.0.0</a>
+  </div>
+</div>
+</div>
+  <div class="content">
+    <aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"><h3>Contents</h3><ul><li data-level="1"><a href="https://docs.ted.europa.eu/EPO/latest/index.html#_general_documentation" class="">General Documentation</a></li><li data-level="1"><a href="https://docs.ted.europa.eu/EPO/latest/index.html#_reference_documentation">Reference Documentation</a></li><li data-level="1"><a href="https://docs.ted.europa.eu/EPO/latest/index.html#_working_group_documents">Working Group Documents</a></li></ul></div>
+</aside>
+    <article class="doc">
+<h1 class="page">eProcurement Ontology Documentation</h1>
+<aside class="toc embedded"><div class="toc-menu"><h3>Contents</h3><ul><li data-level="1"><a href="https://docs.ted.europa.eu/EPO/latest/index.html#_general_documentation">General Documentation</a></li><li data-level="1"><a href="https://docs.ted.europa.eu/EPO/latest/index.html#_reference_documentation">Reference Documentation</a></li><li data-level="1"><a href="https://docs.ted.europa.eu/EPO/latest/index.html#_working_group_documents">Working Group Documents</a></li></ul></div></aside><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The eProcurement Ontology (ePO) defines and develops the semantic ontology related to EU public procurement. It creates and maintains the ontology according to EU regulations and directives.</p>
+</div>
+<div class="paragraph">
+<p>The following topics are included in this version of the eProcurement Ontology documentation:</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_general_documentation"><a class="anchor" href="https://docs.ted.europa.eu/EPO/latest/index.html#_general_documentation"></a>General Documentation</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.ted.europa.eu/EPO/latest/business.html" class="xref page">Business Overview</a><br>
+Business Overview of this release</p>
+</li>
+<li>
+<p><a href="https://docs.ted.europa.eu/EPO/latest/conceptual.html" class="xref page">Conceptual Models</a><br>
+The release specific conceptual Model(s)</p>
+</li>
+<li>
+<p><a href="https://docs.ted.europa.eu/EPO/latest/glossaries.html" class="xref page">Glossaries</a><br>
+The release specific glossaries</p>
+</li>
+<li>
+<p><a href="https://docs.ted.europa.eu/EPO/latest/release-notes.html" class="xref page">Release Notes</a><br>
+The release notes as on GitHub</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reference_documentation"><a class="anchor" href="https://docs.ted.europa.eu/EPO/latest/index.html#_reference_documentation"></a>Reference Documentation</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.ted.europa.eu/epo-home/REFreferences.html" class="xref page">Reference Documents</a><br>
+Useful reference documents in the development of the ePO</p>
+</li>
+<li>
+<p><a href="https://docs.ted.europa.eu/epo-home/history.html" class="xref page">History and Planned Developments</a><br>
+Milestones in the project and future development plans</p>
+</li>
+<li>
+<p><a href="https://docs.ted.europa.eu/epo-home/versioning.html" class="xref page">ePO Versioning Rules</a><br>
+An overview of the versioning rules for releases</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_working_group_documents"><a class="anchor" href="https://docs.ted.europa.eu/EPO/latest/index.html#_working_group_documents"></a>Working Group Documents</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.ted.europa.eu/epo-wgm/wider.html" class="xref page">Quarterly Meetings</a><br>
+Minutes, Presentations etc from the quarterly Working Group Meetings</p>
+</li>
+<li>
+<p><a href="https://docs.ted.europa.eu/epo-wgm/cumulative.html" class="xref page">Cumulative Reports (by year)</a><br>
+All weekly meetings minutes collated into yearly documents</p>
+</li>
+<li>
+<p><a href="https://docs.ted.europa.eu/epo-wgm/indiv.html" class="xref page">Individual Meeting Reports</a><br>
+All the weekly meeting minutes and documents saved individually</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+    <div id="widgetContainer" style="display: none;">
+      <article class="widget">
+<div class="widget-title">
+    <p>Access other sites in the TED family</p>
+  </div>
+  <div class="links">
+    <a href="https://enotices2.ted.europa.eu/" target="_blank">eNotices2</a>
+    <a href="https://developer.ted.europa.eu/" target="_blank">TED Developer Portal</a>
+    <a href="https://ted.europa.eu/" target="_blank">TED Website</a>
+  </div>
+</article>
+    </div>
+  </div>
+</main>
+
+<script>
+  // Get the current URL
+  var url = window.location.href;
+
+  // Check if the URL ends with 'home/index.html'
+  if (!url.endsWith('/home/index.html')) {
+    // If it doesn't, hide the widget
+    document.getElementById('widgetContainer').style.display = 'none';
+  }
+</script></div>
+<script src="./eProcurement Ontology Documentation __ TED Developer Docs_files/site.js.descarga"></script>
+<script async="" src="./eProcurement Ontology Documentation __ TED Developer Docs_files/highlight.js.descarga"></script>
+<script src="./eProcurement Ontology Documentation __ TED Developer Docs_files/docsearch-2.6.3.js.descarga"></script>
+<script src="./eProcurement Ontology Documentation __ TED Developer Docs_files/search-algolia.js.descarga" id="search-script" data-api-key="7bd6f4bbe2cb3188cd99f1625cb00f75" data-api-id="BE8MR7O2G7" data-index-name="ted-docs-idx"></script>
+<!-- Cookie Consent Kit -->
+  <script type="application/json" data-process="true">
+    {
+      "utility" : "cck",
+      "url": {
+        "en": "https://ted.europa.eu/en/cookie-choice",
+        "fr": "https://ted.europa.eu/fr/cookie-choice"
+      },
+      "appendix": {
+        "en": "We use cookies to improve your experience and analyze our traffic.",
+        "fr": "Nous utilisons des cookies pour améliorer votre expérience et analyser notre trafic."
+      },
+      "target": true
+    }
+    </script>
+    
+  <!-- Cookie Consent Kit -->
+  <script>
+    window.addEventListener("cck_all_accepted", function () {
+      var consentAccepted = {consents: {analytics: {status: 1}}};
+      ppms.cm.api('setComplianceSettings', consentAccepted, function (new_consent) { });
+    });
+    window.addEventListener("cck_technical_accepted", function () {
+      var consentRejected = {consents: {analytics: {status: 0}}};
+      ppms.cm.api('setComplianceSettings', consentRejected, function (new_consent) { });
+    });
+  </script>
+<div class="footer">
+    <div class="three-columns">
+
+        <div class="col-md-12 col-lg-4">
+            <div class="ls-footer-logo-DD"><a href="https://docs.ted.europa.eu/home/index.html"><img alt="TED Developer Docs" class="ls-op" src="./eProcurement Ontology Documentation __ TED Developer Docs_files/ted-logo-footer2.png" height="48"></a></div>
+            <span class="ted-footer__title ted-footer__title--main"></span>
+            <div class="ted-footer__rich-text">
+                <p>This website is managed by:
+                    <u>
+                        <a href="https://op.europa.eu/en/home" target="_blank">Publications Office of the European
+                            Union</a>
+                    </u>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="col-md-12 col-lg-4">
+
+            <h3 class="ted-footer__title">Need Help?</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="https://ted.europa.eu/en/help-page">Help</a></li>
+                <li class="li-footer"><a href="https://ted.europa.eu/en/contact">Contact the TED Helpdesk</a></li>
+            </ul>
+
+            <h3 class="ted-footer__title">Follow us</h3>
+            <ul class="ul-footer">
+                <li class="li-footer">
+                    <a href="https://twitter.com/EUTenders"> <img src="./eProcurement Ontology Documentation __ TED Developer Docs_files/twitter.svg" class="icon-footer"><span>X/Twitter</span></a>
+                    <a href="https://www.youtube.com/playlist?list=PLT5rARDev_rkQdFimoHlpv2Och1H0uBLs"><img src="./eProcurement Ontology Documentation __ TED Developer Docs_files/youtube.svg" class="icon-footer-2nd"><span>YouTube</span></a>
+                </li>
+            </ul>
+
+            <h3 class="ted-footer__title">Legal</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="https://ted.europa.eu/en/legal-notice" target="_blank">Legal Notice</a>
+                </li>
+                <li class="li-footer"><a href="https://ted.europa.eu/en/cookie-choice" target="_blank">Cookies</a>
+                </li>
+                <li class="li-footer"><a href="https://ted.europa.eu/en/accessibility" target="_blank">Accessibility</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="col-md-12 col-lg-4">
+
+            <h3 class="ted-footer__title">About us</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="https://ted.europa.eu/">About TED</a></li>
+            </ul>
+
+            <h3 class="ted-footer__title">Other services</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="https://ted.europa.eu/TED/main/HomePage.do">EU tenders</a></li>
+                <li class="li-footer"><a href="https://data.europa.eu/en">European data</a></li>
+                <li class="li-footer"><a href="https://op.europa.eu/en/web/eu-vocabularies">EU vocabularies</a></li>
+                <li class="li-footer"><a href="https://cordis.europa.eu/">EU research results</a></li>
+                <li class="li-footer"><a href="https://op.europa.eu/en/web/who-is-who">EU Whoiswho</a></li>
+                <li class="li-footer"><a href="https://docs.ted.europa.eu/web/librarians-corner">EU publications</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="three-columns">
+        <div class="col-md-12 col-lg-4">
+            <!--<h2 class="sr-only" id="section-title-op">Publications Office of the European Union</h2> -->
+
+            <div class="ls-footer-logo"><a aria-labelledby="section-title-op" href="https://docs.ted.europa.eu/"><img alt="European Union" class="ls-op"></a></div>
+            <span class="ted-footer__title ted-footer__title--main"></span>
+           
+            <div class="ted-footer__rich-text">
+                <p class="byline-footer">Discover more on <a class="ls-underline" href="https://europa.eu/en/home"><span style="word-break: keep-all; white-space: nowrap; text-decoration: underline!important">europa.eu</span></a>
+                </p>
+
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+            <h3 class="ted-footer__title">Contact the EU</h3>
+
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="tel:0080067891011">Call us 00 800 6 7 8 9 10 11</a></li>
+                <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/call-us_en">Use other
+                        Telephone options</a></li>
+                <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/write-us_en">Write to us via
+                        our contact forms</a></li>
+                <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/meet-us_en">Meet us at one of
+                        the EU centres</a></li>
+
+            </ul>
+
+        </div>
+        <div class="col-md-12 col-lg-4">
+             <h3 class="ted-footer__title">Social Media</h3>
+            <ul class="ul-footer">
+                <li class="li-footer"><a href="https://european-union.europa.eu/contact-eu/social-media-channels_en#/search"><i aria-hidden="true" class="gs-icon-twitter"></i>Search of EU social media channels</a></li>
+
+            </ul>
+            <h3 class="ted-footer__title">EU institutions and bodies</h3>
+
+            <ul class="ul-footer">
+                <li class="li-footer institutions"><a href="https://european-union.europa.eu/institutions-law-budget/institutions-and-bodies/search-all-eu-institutions-and-bodies_en">Search all EU institutions and bodies</a></li>
+               
+            </ul>
+        </div>
+    </div>
+</div>  
+
+<script type="text/javascript" src="./eProcurement Ontology Documentation __ TED Developer Docs_files/webtools.cck.js.descarga"></script><script type="text/javascript">
+
+function allCookies() {
+	try {
+        all_cookies= document.cookie.split(";");
+		return all_cookies;
+	} catch (e) {
+	}
+}
+
+function cookieDelete(cookieName) {
+	document.cookie = cookieName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}
+
+function deletePiwikWebStorage() {
+	window.localStorage.removeItem("ppms_webstorage");
+}
+
+function deletePiwikCookies(allCookies) {
+	for (var cookie = 0;  cookie < allCookies.length; cookie++) {
+		if (allCookies[cookie].indexOf("_pk") !== -1) {
+			var cookieName = allCookies[cookie].split("=")[0];
+			cookieDelete(cookieName);
+		}
+	}
+}
+
+function clearOnReject() {
+	deletePiwikCookies(allCookies());
+	deletePiwikWebStorage();
+}
+
+function readingCCK1 (pre_cck1) {
+	var checkedjson;
+	try {
+		var cck1= pre_cck1.replace(/%7B/g, '{').replace(/%7D/g, '}').replace(/%22/g, '"').replace(/%3A/g, ':').replace(/%2C/g, ',');
+		checkedjson = JSON.parse(cck1.split("=")[1]);
+	} catch (e) {
+	}
+	return checkedjson ;
+}
+  
+function euOptout(allCookies) {
+	for (var cookie = 0;  cookie < allCookies.length; cookie++) {
+		if (allCookies[cookie].indexOf("cck1")  !== -1) {
+			var cck1 = readingCCK1(allCookies[cookie]);
+            if (typeof cck1 !== 'undefined')
+				if (cck1.cm == true && cck1.all1st == false){
+					return "0";
+				}
+				else if (cck1.cm == true && cck1.all1st == true){
+					return "1";
+				}else{ 
+					return "-1";
+				}
+			else{
+				return "undefined"
+            }
+		}
+	}
+}
+  
+function getSettings() {
+	ppms.cm.api('getComplianceSettings', function(settings){consentStatus = settings.consents.analytics.status},function(error){consentStatus="undefined";});
+	return consentStatus;
+}
+
+function pushDatalayerTrue(){
+	dataLayer.push({
+		event: "optedOut",
+		optedOut: true,
+	});
+}
+
+function pushDatalayerFalse(){
+	dataLayer.push({
+		event: "optedOut",
+		optedOut: false,
+	});
+}
+
+function pushDatalayerFalseWithParams(param_init, param_status){
+	dataLayer.push({
+		event: "optedOut",
+		optedOut: false,
+		init: param_init,
+		status: param_status,
+	});
+}
+  
+function pushDatalayerTrueWithParams(param_init, param_status){
+	dataLayer.push({
+		event: "optedOut",
+		optedOut: true,
+		init: param_init,
+		status: param_status,
+	});
+}
+
+function setConsent0(){
+	consentRejected = {consents: {analytics: {status: 0}}};
+    ppms.cm.api('setComplianceSettings', consentRejected, function(consentRejected){});
+}
+
+function setConsent1(){
+	consentAccepted = {consents: {analytics: {status: 1}}};
+    ppms.cm.api('setComplianceSettings', consentAccepted, function(consentAccepted){});
+
+}
+
+function setConsentMinus1(){
+	initialConsent = {consents: ['analytics']};
+    ppms.cm.api('setInitialComplianceSettings', initialConsent, function(initialConsent){});
+}
+
+function optedOut() {
+	if (getSettings() == "undefined"){
+		var cck1 = euOptout(allCookies());     
+		switch (cck1) {
+			case '0':            
+				pushDatalayerTrueWithParams("undefined",cck1);
+				clearOnReject();
+				setConsent0();
+				break;
+			case '1':
+				pushDatalayerFalse();
+				break;
+			default:
+				pushDatalayerFalseWithParams("undefined",cck1);
+				setConsentMinus1();
+				break;
+		}
+	}else if (getSettings() == 0){ 
+		var cck1 = euOptout(allCookies());
+		switch (cck1) {
+			case '0':
+				pushDatalayerTrue();
+				clearOnReject();
+				break;
+			case '1':
+				pushDatalayerFalseWithParams("0",cck1);
+				setConsent1();
+				break;
+			default:
+				pushDatalayerFalseWithParams("0",cck1);
+				setConsentMinus1();
+				break;
+		}
+	}else if (getSettings() == 1){ 
+		var cck1 = euOptout(allCookies());
+		switch (cck1) {
+			case '0':
+				pushDatalayerTrueWithParams("undefined",cck1);
+				clearOnReject();
+				setConsent0();
+				break;
+			case '1':
+				pushDatalayerFalse();
+				break;
+			default:
+				pushDatalayerFalseWithParams("1",cck1);
+				setConsentMinus1();
+				break;
+		}
+	}else if (getSettings() == -1){ 
+		var cck1 = euOptout(allCookies());
+		switch (cck1) {
+			case '0':
+				pushDatalayerTrueWithParams("-1",cck1);
+				clearOnReject();
+				setConsent0();
+				break;
+			case '1':
+				pushDatalayerFalseWithParams("-1",cck1);
+				setConsent1();
+				break;
+			default:
+				pushDatalayerFalse();
+				break;
+		}
+	}
+  else {
+		pushDatalayerFalse();
+    }
+  }
+
+try {
+	
+  var cmApiCheck = setInterval(function() {
+    if (typeof ppms.cm.api!=='undefined') {
+      optedOut();
+      clearInterval(cmApiCheck);
+    }
+  },500);
+  setTimeout(function(){
+    if (cmApiCheck){
+      clearInterval(cmApiCheck);
+      getSettings();
+    }
+  },15000);
+} catch (e) {}
+</script></body></html>

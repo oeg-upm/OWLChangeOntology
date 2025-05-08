@@ -1,0 +1,2597 @@
+<div id="changelog">
+<h2 id="changes" class="list">Changes from last version</h2>
+<h3 id="changeClass" class="list">Classes</h3>
+<details><summary><u>Modified classes</u></summary>
+<ul><li><a href="#Certificate">http://data.europa.eu/949/Certificate</a>
+<ul>
+<li>Added: rdfs:comment "Certificate of a vehicle type. Can be in one of the following states: Amended, New, Suspended, Withdrawn."@en</li>
+</ul>
+</li>
+<li><a href="#Feature">http://data.europa.eu/949/Feature</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/created> "2022-07-07"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/created> "2022-07-07"@en</li>
+</ul>
+</li>
+<li><a href="#InfrastructureObject">http://data.europa.eu/949/InfrastructureObject</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/created> "2022-07-07"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/created> "2022-07-07"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#LineReference">http://data.europa.eu/949/LineReference</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#altLabel> "Line reference"^^xsd:string</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Railway location"^^xsd:string</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#altLabel> "Linear reference"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#MaximumSpeedAndCantDeficiency">http://data.europa.eu/949/MaximumSpeedAndCantDeficiency</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/created> "2023-04-05"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/created> "2023-04-05"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#MinAxleLoadVehicleCategory">http://data.europa.eu/949/MinAxleLoadVehicleCategory</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"@en</li>
+</ul>
+</li>
+<li><a href="#OperationalPoint">http://data.europa.eu/949/OperationalPoint</a>
+<ul>
+<li>Added: rdfs:comment "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point also means any location at boundaries between Member States or infrastructure managers."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "An operational point (OP) means any location for train service operations, where train services may begin and end or change route, and where passenger or freight services may be provided; operational point also means any location at boundaries between Member States or infrastructure managers.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.1.2 Principal locations (stations, yards, junctions, freight terminals)."@en</li>
+</ul>
+</li>
+<li><a href="#RaisedPantographsDistanceAndSpeed">http://data.europa.eu/949/RaisedPantographsDistanceAndSpeed</a>
+<ul>
+<li>Added: rdfs:comment "Indication of maximum number of raised pantographs per train allowed and minimum spacing centre line to centre line of adjacent pantograph heads, expressed in metres, at the given speed.
+Each track can have several raised pantographs per train allowed (structured) values, and each one has values for number of pantographs, minimum distance between pantographs, in metres, and speed considered in km/h."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Indication of maximum number of raised pantographs per train allowed and minimum spacing centre line to centre line of adjacent pantograph heads, expressed in metres, at the given speed.
+Each track can have several raised pantographs per train allowed (structured) values, and each one has values for number of pantographs, minimum distance between pantographs, in metres, and speed considered in km/h."@en</li>
+</ul>
+</li>
+<li><a href="#SectionOfLine">http://data.europa.eu/949/SectionOfLine</a>
+<ul>
+<li>Added: rdfs:comment "A section of line means the part of line between adjacent operational points and may consist of several tracks."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "A section of line means the part of line between adjacent operational points and may consist of several tracks.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.1.1 Line sections."@en</li>
+</ul>
+</li>
+<li><a href="#SpecialArea">http://data.europa.eu/949/SpecialArea</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/created> "2022-10-27"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/created> "2022-10-27"@en</li>
+</ul>
+</li>
+<li><a href="#SpecialTunnelArea">http://data.europa.eu/949/SpecialTunnelArea</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/created> "2022-10-27"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/created> "2022-10-27"@en</li>
+</ul>
+</li>
+<li><a href="#SystemSeparationInfo">http://data.europa.eu/949/SystemSeparationInfo</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/949/</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy "http://data.europa.eu/949/"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/2004/02/skos/core#Concept">http://www.w3.org/2004/02/skos/core#Concept</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://www.w3.org/2004/02/skos/core#Concept&gt; &lt;http://www.w3.org/2004/02/skos/core#ConceptScheme&gt;)</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#definition> "An idea or notion; a unit of thought."@en</li>
+<li>Added: rdfs:isDefinedBy http://www.w3.org/2004/02/skos/core</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://www.w3.org/2004/02/skos/core#Collection&gt; &lt;http://www.w3.org/2004/02/skos/core#Concept&gt;)</li>
+<li>Added: rdfs:label "Concept"@en</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/ns/org#Organization">http://www.w3.org/ns/org#Organization</a>
+<ul>
+<li>Added: rdfs:comment "Grupo de personas que se organiza en una comunidad u otro tipo de estructura social, comercial o política. Dicho grupo tiene un objetivo o motivo común para su existencia que va más allá del conjunto de personas que lo forman y que puede actuar como “agente”. A menudo las organizaciones se pueden agrupar en estructuras jerárquicas. Se recomienda el uso de etiquetas de SKOS para denominar a cada “organización”. En concreto, `skos:prefLabel` para la denominación principal o recomendada (aquella reconocida legalmente, siempre que sea posible), `skos:altLabel` para denominaciones alternativas (nombre comercial, sigla, denominación por la que se conoce a la organización coloquialmente) y `skos:notation` para referirse al código que identifique a la organización en una lista de códigos. Denominaciones alternativas: _colectivo_ _corporación_ _grupo_"@es</li>
+<li>Added: rdfs:isDefinedBy http://www.w3.org/ns/org</li>
+<li>Added: rdfs:comment "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_"@en</li>
+<li>Added: rdfs:label "Organization"@en</li>
+<li>Added: rdfs:comment "Rappresenta una collezione di persone organizzate all'interno di una communità o di una qualche struttura sociale, commerciale o politica. Il gruppo condivide un obiettivo o una ragione d'essere che va oltre gli stessi membri appartenenti al gruppo e  può agire come un Agent. Le organizzazioni si possono spesso suddividere in strutture gerarchiche. Si raccomanda di usare le label per l'Organization mediante le proprietà di SKOS. In particolare, `skos:prefLabel` per il nome principale (possibilmente un nome legalmente riconosciuto)”, `skos:altLabel` come nome alternativo (denominazione commerciale, denominazione colloquiale) e `skos:notation` per indicare un codice di una lista di codici."@it</li>
+<li>Added: rdfs:label "organización"@es</li>
+<li>Added: SubClass of http://xmlns.com/foaf/0.1/Agent</li>
+<li>Added: rdfs:comment "コミュニティー、その他の社会、商業、政治的な構造に共に編入された人々の集合を表わします。グループには、そこに属する人々を超えた、存在に対するある共通の目的や理由があり、エージェント（代理）を務めることができます。組織は、多くの場合、階層構造に分割できます。"@ja</li>
+<li>Added: rdfs:comment "Représente un groupe de personnes organisées en communauté où tout autre forme de structure sociale, commerciale ou politique. Le groupe a un but commun ou une raison d'être qui va au-delà de la somme des personnes qui en font partie et peut agir en tant que \"Agent\". Les organisations sont souvent décomposables en structures hiérarchisées. Il est recommandé que des labels lexicaux SKOS soient utilisés pour nommer l'Organisation. En particulier `skos:prefLabel` pour le nom principal (en général le nom légal), `skos:altLabel` pour les noms alternatifs (marques, sigles, appellations familières) et `skos:notation` pour indiquer un code provenant d'une liste de code."@fr</li>
+<li>Added: rdfs:label "Organisation"@fr</li>
+<li>Added: rdfs:label "Organizzazione"@it</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added classes</u></summary>
+<ul><li><a href="#Document">http://data.europa.eu/949/Document</a>
+<ul>
+<li>Added: SubClass of http://xmlns.com/foaf/0.1/Document</li>
+</ul>
+</li>
+<li><a href="#PlatformEdge">http://data.europa.eu/949/PlatformEdge</a>
+<ul>
+<li>Added: SubClass of http://data.europa.eu/949/InfrastructureObject</li>
+</ul>
+</li>
+<li><a href="#http://schema.org/CreativeWork">http://schema.org/CreativeWork</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;http://schema.org/CreativeWork&gt; &lt;http://xmlns.com/foaf/0.1/Document&gt;)</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/2002/07/owl#Thing">http://www.w3.org/2002/07/owl#Thing</a>
+</li>
+<li><a href="#http://www.w3.org/2004/02/skos/core#Collection">http://www.w3.org/2004/02/skos/core#Collection</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://www.w3.org/2004/02/skos/core#Collection&gt; &lt;http://www.w3.org/2004/02/skos/core#Concept&gt;)</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme">http://www.w3.org/2004/02/skos/core#ConceptScheme</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://www.w3.org/2004/02/skos/core#Concept&gt; &lt;http://www.w3.org/2004/02/skos/core#ConceptScheme&gt;)</li>
+</ul>
+</li>
+<li><a href="#http://xmlns.com/foaf/0.1/Agent">http://xmlns.com/foaf/0.1/Agent</a>
+</li>
+<li><a href="#http://xmlns.com/foaf/0.1/Document">http://xmlns.com/foaf/0.1/Document</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://xmlns.com/foaf/0.1/Document&gt; &lt;http://xmlns.com/foaf/0.1/Organization&gt;)</li>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;http://schema.org/CreativeWork&gt; &lt;http://xmlns.com/foaf/0.1/Document&gt;)</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://xmlns.com/foaf/0.1/Document&gt; &lt;http://xmlns.com/foaf/0.1/Project&gt;)</li>
+</ul>
+</li>
+<li><a href="#http://xmlns.com/foaf/0.1/Organization">http://xmlns.com/foaf/0.1/Organization</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://xmlns.com/foaf/0.1/Document&gt; &lt;http://xmlns.com/foaf/0.1/Organization&gt;)</li>
+</ul>
+</li>
+<li><a href="#http://xmlns.com/foaf/0.1/Project">http://xmlns.com/foaf/0.1/Project</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;http://xmlns.com/foaf/0.1/Document&gt; &lt;http://xmlns.com/foaf/0.1/Project&gt;)</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Deleted classes</u></summary>
+<ul><li><a href="#Border">http://data.europa.eu/949/Border</a>
+</li>
+<li><a href="#Platform">http://data.europa.eu/949/Platform</a>
+</li>
+</ul></details><h3 id="changeProp" class="list">Object Properties</h3>
+<details><summary><u>Modified object properties</u></summary>
+<ul><li><a href="#TSIMagneticFields">http://data.europa.eu/949/TSIMagneticFields</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-04-25"^^xsd:date</li>
+<li>Added: rdfs:comment "Indication whether rules exist and are compliant with the TSI."@en</li>
+<li>Added: <http://data.europa.eu/949/inSkosConceptScheme> http://data.europa.eu/949/concepts/tsi-existence-and-compliances/TSIExistenceAndCompliances</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication whether rules exist and are compliant with the TSI. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances."@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date</li>
+<li>Deleted: <http://data.europa.eu/949/inSkosConceptScheme> http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances</li>
+</ul>
+</li>
+<li><a href="#TSITractionHarmonics">http://data.europa.eu/949/TSITractionHarmonics</a>
+<ul>
+<li>Added: rdfs:comment "Indication whether rules exist and are compliant with the TSI."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-04-25"^^xsd:date</li>
+<li>Added: <http://data.europa.eu/949/inSkosConceptScheme> http://data.europa.eu/949/concepts/tsi-existence-and-compliances/TSIExistenceAndCompliances</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication whether rules exist and are compliant with the TSI. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances."@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date</li>
+<li>Deleted: <http://data.europa.eu/949/inSkosConceptScheme> http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances</li>
+</ul>
+</li>
+<li><a href="#atoCommunicationSystem">http://data.europa.eu/949/atoCommunicationSystem</a>
+<ul>
+<li>Added: rdfs:comment "Supported ATO communication systems from trackside."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Supported ATO communication systems from trackside.
+The allowed values for this property belong to a SKOS Concept Scheme."@en</li>
+</ul>
+</li>
+<li><a href="#atoGradeAutomation">http://data.europa.eu/949/atoGradeAutomation</a>
+<ul>
+<li>Added: rdfs:comment "ATO grade of automation installed lineside."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "ATO grade of automation installed lineside.
+The allowed values for this property belong to a SKOS Concept Scheme."@en</li>
+</ul>
+</li>
+<li><a href="#atoSystemVersion">http://data.europa.eu/949/atoSystemVersion</a>
+<ul>
+<li>Added: rdfs:comment "ATO system version according to the specification referenced in Appendix A-1, index [C]."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "ATO system version according to the specification referenced in Appendix A-1, index [C].
+The allowed values for this property belong to a SKOS Concept Scheme."@en</li>
+</ul>
+</li>
+<li><a href="#authorizedCountry">http://data.europa.eu/949/authorizedCountry</a>
+<ul>
+<li>Added: rdfs:comment "Indicates the country(ies) in where a vehicle type has been authorized to operate."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indicates the country(ies) in where a vehicle type has been authorized to operate. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country"@en</li>
+</ul>
+</li>
+<li><a href="#axleBearingConditionMonitoring">http://data.europa.eu/949/axleBearingConditionMonitoring</a>
+<ul>
+<li>Added: rdfs:comment "Axle bearing condition monitoring."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Axle bearing condition monitoring. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/axle-monitoring/AxleBearingMonitoring"@en</li>
+</ul>
+</li>
+<li><a href="#cantDeficiencyBasicSSP">http://data.europa.eu/949/cantDeficiencyBasicSSP</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Essential information for drivers of trains with a worse (lower) tolerated cant deficiency than those for which the ETCS trackside provides SSP (Static Speed Profiles) in conjunction with  parameter \"Other Cant Deficiency train categories for which the ETCS trackside is configured to provide SSP\".
+According to the specification referenced in Appendix A-1, index [C]."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Essential information for drivers of trains with a worse (lower) tolerated cant deficiency than those for which the ETCS trackside provides SSP (Static Speed Profiles) in conjunction with 1.1.1.3.2.14.1 
+According to the specification referenced in Appendix A-1, index [C]."@en</li>
+</ul>
+</li>
+<li><a href="#category">http://data.europa.eu/949/category</a>
+<ul>
+<li>Added: rdfs:comment "Vehicle category."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Vehicle category. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/vehicle-types/Categories."@en</li>
+</ul>
+</li>
+<li><a href="#companyCodeCategory">http://data.europa.eu/949/companyCodeCategory</a>
+<ul>
+<li>Added: rdfs:comment "Category of a Railway company. Can be Infrastructure, Freight or Passenger."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Category of a Railway company. Can be Infrastructure, Freight or Passenger.
+The allowed values for this property belong to the SKOS concept scheme http://data.europa.eu/949/concepts/company-code-categories/CompanyCodeCategories"@en</li>
+</ul>
+</li>
+<li><a href="#conditionsUseReflectivePlates">http://data.europa.eu/949/conditionsUseReflectivePlates</a>
+<ul>
+<li>Added: rdfs:comment "Details of any conditions for using the reflective plates on freight corridors. Specific case for Portugal and Spain until 1.1.2025 and Belgium and France until 1.1.2026."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Details of any conditions for using the reflective plates on freight corridors. Specific case for Portugal and Spain until 1.1.2025 and Belgium and France until 1.1.2026.
+The allowed values for this property belong to a SKOS Concept Scheme."@en</li>
+</ul>
+</li>
+<li><a href="#contactLineSystemType">http://data.europa.eu/949/contactLineSystemType</a>
+<ul>
+<li>Added: rdfs:comment "Indication of the type of the contact line system."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of the type of the contact line system. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/contact-line-systems/ContactLineSystems"@en</li>
+</ul>
+</li>
+<li><a href="#contactStripMaterial">http://data.europa.eu/949/contactStripMaterial</a>
+<ul>
+<li>Added: rdfs:comment "Indication of which contact strip materials are permitted to be used."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of which contact strip materials are permitted to be used. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/contact-strip-materials/ContactStripMaterials"@en</li>
+</ul>
+</li>
+<li><a href="#dataGSMRNetwork">http://data.europa.eu/949/dataGSMRNetwork</a>
+<ul>
+<li>Added: rdfs:comment "Data SIM Card GSM-R Home Network."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Data SIM Card GSM-R Home Network. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-networks/GSMRNetworks"@en</li>
+</ul>
+</li>
+<li><a href="#dataRadioCompatible">http://data.europa.eu/949/dataRadioCompatible</a>
+<ul>
+<li>Added: rdfs:comment "Radio requirements used for demonstrating technical compatibility data."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Radio requirements used for demonstrating technical compatibility data.
+ The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/radio-system-compatibilities-data/RadioSystemCompatibilitiesData."@en</li>
+</ul>
+</li>
+<li><a href="#eddyCurrentBraking">http://data.europa.eu/949/eddyCurrentBraking</a>
+<ul>
+<li>Added: rdfs:comment "Indication of limitations on the use of eddy current brakes."@en</li>
+<li>Added: rdfs:comment "This property has been modified to be a RINF parameter (its eratvIndex is deleted). It is treated as a SKOS by RINF and as a boolean by ERATV. A new ERATV datatype property has been defined, eddyCurrentBrakingFitted with boolean values."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of limitations on the use of eddy current brakes. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/eddy-current-braking/EddyCurrentBraking
+This property has been modified to be a RINF parameter (its eratvIndex is deleted). It is treated as a SKOS by RINF and as a boolean by ERATV. A new ERATV datatype property has been defined, eddyCurrentBrakingFitted with boolean values.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.4.5 Permissibility to use Eddy-current brake."@en</li>
+</ul>
+</li>
+<li><a href="#endCouplingType">http://data.europa.eu/949/endCouplingType</a>
+<ul>
+<li>Added: rdfs:comment "Type of end coupling (indicating tensile and compressive forces)."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Type of end coupling (indicating tensile and compressive forces). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/end-coupling-type/EndCouplingType."@en</li>
+</ul>
+</li>
+<li><a href="#endLocation">http://data.europa.eu/949/endLocation</a>
+<ul>
+<li>Added: rdfs:comment "Part of the End of tunnel that indicates the Geographical coordinates according to the standard World Geodetic System (WGS). Precision for both geographical latitude and geographical longitude is assumed as [NN.NNNNNNN] in degrees with decimals what gives discretion of 10 m cm in the network.
+The End of tunnel is the Geographical coordinates in decimal degrees and km of the line at the end of a tunnel."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-02-05"^^xsd:date</li>
+<li>Added: rdfs:label "End of tunnel location"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "End of tunnel"@en</li>
+<li>Deleted: rdfs:comment "Geographical coordinates in decimal degrees and km of the line at the end of a tunnel."@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-11"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#energySupplySystem">http://data.europa.eu/949/energySupplySystem</a>
+<ul>
+<li>Added: rdfs:label "Energy supply system (Voltage and frequency)"@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Indication of the traction supply system (nominal voltage
+and frequency)."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Energy supply system"@en</li>
+<li>Deleted: rdfs:comment "Indication of the traction supply system (nominal voltage and frequency). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/energy-supply-systems/EnergySupplySystems
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.3.1 Energy supply system (voltage and frequency)."@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-06"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#etcsBaseline">http://data.europa.eu/949/etcsBaseline</a>
+<ul>
+<li>Added: rdfs:comment "ETCS baseline installed lineside."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "ETCS baseline installed lineside. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-baselines/ETCSBaselines"@en</li>
+</ul>
+</li>
+<li><a href="#etcsDegradedSituation">http://data.europa.eu/949/etcsDegradedSituation</a>
+<ul>
+<li>Added: rdfs:comment "ERTMS / ETCS application level for degraded situation related to the track side equipment."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "ERTMS / ETCS application level for degraded situation related to the track side equipment. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-situation/ETCSSituations
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.1.7 Means of Communication with the traffic management/control centre in normal, degraded and emergency situation."@en</li>
+</ul>
+</li>
+<li><a href="#etcsEquipmentOnBoardLevel">http://data.europa.eu/949/etcsEquipmentOnBoardLevel</a>
+<ul>
+<li>Added: rdfs:comment "ETCS equipment on-board and its level."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "ETCS equipment on-board and its level. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-equipment-on-board-level/ETCSEquipmentLevels."@en</li>
+</ul>
+</li>
+<li><a href="#etcsInfill">http://data.europa.eu/949/etcsInfill</a>
+<ul>
+<li>Added: rdfs:label "ETCS infill installed line-side"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "ETCS infill installed lineside"@en</li>
+</ul>
+</li>
+<li><a href="#etcsLevel">http://data.europa.eu/949/etcsLevel</a>
+<ul>
+<li>Added: rdfs:label "European Train Control System (ETCS) level"@en</li>
+<li>Added: rdfs:comment "ETCS application level related to the track side equipment."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Etcs level"@en</li>
+<li>Deleted: rdfs:comment "ETCS application level related to the track side equipment. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-levels/ETCSLevels"@en</li>
+</ul>
+</li>
+<li><a href="#etcsLevelType">http://data.europa.eu/949/etcsLevelType</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "ETCS application level related to the track side equipment."@en</li>
+<li>Added: rdfs:label "European Train Control System (ETCS) level"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-07"^^xsd:date</li>
+<li>Deleted: rdfs:comment "ETCS application level related to the track side equipment. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-levels/ETCSLevels"@en</li>
+<li>Deleted: rdfs:label "ETCS level type"@en</li>
+</ul>
+</li>
+<li><a href="#etcsMVersion">http://data.europa.eu/949/etcsMVersion</a>
+<ul>
+<li>Added: rdfs:comment "ETCS M_version according to the specification referenced in Appendix A-1, index [C]."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "ETCS M_version according to the specification referenced in Appendix A-1, index [C]. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-m-versions/ETCSMVersions"@en</li>
+</ul>
+</li>
+<li><a href="#etcsSystemCompatibility">http://data.europa.eu/949/etcsSystemCompatibility</a>
+<ul>
+<li>Added: rdfs:comment "ETCS requirements used for demonstrating technical compatibility."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "ETCS requirements used for demonstrating technical compatibility. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/etcs-system-compatibilities/ETCSSystemCompatibilities"@en</li>
+</ul>
+</li>
+<li><a href="#etcsTransmittedTrackConditions">http://data.europa.eu/949/etcsTransmittedTrackConditions</a>
+<ul>
+<li>Added: rdfs:comment "According to the specification referenced in Appendix A-1, index [C]. 
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+Chapter 5, section 5.18.1.1."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "According to the specification referenced in Appendix A-1, index [C]. 
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+Chapter 5, section 5.18.1.1.
+The allowed values for this property belong to a SKOS Concept Scheme."@en</li>
+</ul>
+</li>
+<li><a href="#fireSafetyCategory">http://data.europa.eu/949/fireSafetyCategory</a>
+<ul>
+<li>Added: rdfs:comment "Fire safety category for tunnels."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Fire safety category for tunnels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rolling-stock-fire/Categories."@en</li>
+</ul>
+</li>
+<li><a href="#freightCorridor">http://data.europa.eu/949/freightCorridor</a>
+<ul>
+<li>Added: rdfs:comment "Indication whether the line is designated to a Railway Freight Corridor."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:label "Part of a Railway Freight Corridor"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Indication whether the line is designated to a Railway Freight Corridor. 
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/freight-corridor/FreightCorridors"@en</li>
+<li>Deleted: rdfs:label "Part of a Railway freight corridor"@en</li>
+</ul>
+</li>
+<li><a href="#frenchTrainDetectionSystemLimitation">http://data.europa.eu/949/frenchTrainDetectionSystemLimitation</a>
+<ul>
+<li>Added: rdfs:comment "Specific for route compatibility check on French network.The reason for deprecation is because of replacement by a class, an object property and two datatype properties. The reason is that the property is composed of two values: A boolean [Y/N] and  a number N is between 1 and 8."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Specific for route compatibility check on French network. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-detection/FrenchTrainDetectionSystemLimitations.
+Deprecated because of replacement by a class, an object property and two datatype properties. The reason is that the property is composed of two values: A boolean [Y/N] and  a number N is between 1 and 8."@en</li>
+</ul>
+</li>
+<li><a href="#frenchTrainDetectionSystemLimitationNumber">http://data.europa.eu/949/frenchTrainDetectionSystemLimitationNumber</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/rinfIndex> "1.2.1.1.6.3"^^xsd:string</li>
+<li>Added: rdfs:comment "Part of the section with train detection limitation that indicates the type of train detection limitation."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Part of the section with train detection limitation that indicates the type of train detection limitation.
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-detection-numbers/FrenchTrainDetectionSystemLimitationNumbers."@en</li>
+</ul>
+</li>
+<li><a href="#frequencyBandsForDetection">http://data.europa.eu/949/frequencyBandsForDetection</a>
+<ul>
+<li>Added: rdfs:comment "Bands of the frequency management of the train detection systems as defined in the specification referenced in Appendix A-1, index [D], and in the specific cases or technical documents referred to in Article 13 of TSI CCS when they are available."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Bands of the frequency management of the train detection systems as defined in the specification referenced in Appendix A-1, index [D], and in the specific cases or technical documents referred to in Article 13 of TSI CCS when they are available.
+The allowed values for this property belong to a SKOS Concept Scheme."@en</li>
+</ul>
+</li>
+<li><a href="#gaugingProfile">http://data.europa.eu/949/gaugingProfile</a>
+<ul>
+<li>Added: rdfs:comment "Gauges as defined in European standard or other local gauges, including lower or upper part.
+In accordance with point 7.3.2.2 of LOC&PAS TSI, sections of lines of the United Kingdom of Great Britain network may not have gauge reference profile."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Gauges as defined in European standard or other local gauges, including lower or upper part.
+In accordance with point 7.3.2.2 of LOC&PAS TSI, sections of lines of the United Kingdom of Great Britain network may not have gauge reference profile.
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gaugings/GaugingProfiles"@en</li>
+</ul>
+</li>
+<li><a href="#gsmRActiveMobiles">http://data.europa.eu/949/gsmRActiveMobiles</a>
+<ul>
+<li>Added: rdfs:comment "Number of simultaneous communication session on board for ETCS level R required for a smooth running of the train. This relates to the radio block centre (RBC) handling of communication sessions. Not safety critical and no matter of interoperability."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Number of simultaneous communication session on board for ETCS level R required for a smooth running of the train. This relates to the radio block centre (RBC) handling of communication sessions. Not safety critical and no matter of interoperability.
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-number-active-mobiles/NumberActiveMobiles"@en</li>
+</ul>
+</li>
+<li><a href="#gsmROptionalFunctions">http://data.europa.eu/949/gsmROptionalFunctions</a>
+<ul>
+<li>Added: rdfs:comment "Use of optional GSM-R functions which might improve operation on the line. They are for information only and not for network access criteria."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Use of optional GSM-R functions which might improve operation on the line. They are for information only and not for network access criteria. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-optional-functions/OptionalFunctions"@en</li>
+</ul>
+</li>
+<li><a href="#gsmRRadioDataCommunication">http://data.europa.eu/949/gsmRRadioDataCommunication</a>
+<ul>
+<li>Added: rdfs:comment "GSM-R Radio Data communication on board and its Baseline."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "GSM-R Radio Data communication on board and its Baseline. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsm-r-radio-data-communication/GSMRRadioDataCommunications."@en</li>
+</ul>
+</li>
+<li><a href="#gsmRVersion">http://data.europa.eu/949/gsmRVersion</a>
+<ul>
+<li>Added: rdfs:comment "GSM-R functional requirements specification and system requirements specification in accordance with the specification respectively referenced in Appendix A-1, index [E] and index [F], version number installed lineside."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "GSM-R functional requirements specification and system requirements specification in accordance with the specification respectively referenced in Appendix A-1, index [E] and index [F], version number installed lineside. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-versions/GSMRVersions"@en</li>
+</ul>
+</li>
+<li><a href="#gsmrConstraintsOperateOnlyInCircuitSwitch">http://data.europa.eu/949/gsmrConstraintsOperateOnlyInCircuitSwitch</a>
+<ul>
+<li>Added: rdfs:comment "These constraints, where applicable, are meant to manage the limited number of circuit-switched radio connections that can be handled simultaneously by a Radio Block Center.
+"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "These constraints, where applicable, are meant to manage the limited number of circuit-switched radio connections that can be handled simultaneously by a Radio Block Center.
+The allowed values for this property are taken from a SKOS concept scheme."@en</li>
+</ul>
+</li>
+<li><a href="#gsmrNetworkCoverage">http://data.europa.eu/949/gsmrNetworkCoverage</a>
+<ul>
+<li>Added: rdfs:comment "List of GSM-R networks which are covered by a roaming agreement."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "List of GSM-R networks which are covered by a roaming agreement. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/gsmr-networks/GSMRNetworks"@en</li>
+</ul>
+</li>
+<li><a href="#hasAbstraction">http://data.europa.eu/949/hasAbstraction</a>
+<ul>
+<li>Deleted: InverseObjectProperties InverseObjectProperties(&lt;http://data.europa.eu/949/hasAbstraction&gt; &lt;http://data.europa.eu/949/hasImplementation&gt;)</li>
+</ul>
+</li>
+<li><a href="#hasImplementation">http://data.europa.eu/949/hasImplementation</a>
+<ul>
+<li>Deleted: InverseObjectProperties InverseObjectProperties(&lt;http://data.europa.eu/949/hasAbstraction&gt; &lt;http://data.europa.eu/949/hasImplementation&gt;)</li>
+</ul>
+</li>
+<li><a href="#hotAxleBoxDetectorDirection">http://data.europa.eu/949/hotAxleBoxDetectorDirection</a>
+<ul>
+<li>Added: rdfs:comment "Specific for the French Italian and Swedish networks.
+Applicable if trackside HABD is not TSI compliant, direction of measurement of trackside Hot Axle Box Detector.
+If the direction of measurement is:
+—	the same as the direction defined by the start and end of the SoL: (N)
+—	the opposite to the direction defined by the start and end of the SoL: (O)
+—	both directions: (B)."@en</li>
+<li>Added: rdfs:label "Direction of measurement of trackside HABD"@en</li>
+<li>Added: rdfs:comment "This property was previously a datatype property with domain Track and range string. As its values are a list of three predefined values, it is now a SKOS."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Specific for the French Italian and Swedish networks.
+Applicable if trackside HABD is not TSI compliant, direction of measurement of trackside Hot Axle Box Detector.
+If the direction of measurement is:
+—	the same as the direction defined by the start and end of the SoL: (N)
+—	the opposite to the direction defined by the start and end of the SoL: (O)
+—	both directions: (B).
+This property was previously a datatype property with domain Track and range string. As its values are a list of three predefined values, it is now a SKOS. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/hot-axle/HotAxleBoxDetectorDirections"@en</li>
+<li>Deleted: rdfs:label "Hot axle box detector direction"@en</li>
+</ul>
+</li>
+<li><a href="#inCountry">http://data.europa.eu/949/inCountry</a>
+<ul>
+<li>Added: rdfs:comment "Indicates the country in which an entity resides."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indicates the country in which an entity resides. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country"@en</li>
+</ul>
+</li>
+<li><a href="#legacyRadioSystem">http://data.europa.eu/949/legacyRadioSystem</a>
+<ul>
+<li>Added: rdfs:comment "Indication of radio legacy systems installed."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of radio legacy systems installed. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/legacy-radio-systems/LegacyRadioSystems
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.2.8 Type of track to train radio equipment."@en</li>
+</ul>
+</li>
+<li><a href="#lineCategory">http://data.europa.eu/949/lineCategory</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Classification of a line according to the TSI INF."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Classification of a line according to the INF TSI. – Commission Regulation (EU) No 1299/2014. 
+In https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019R0777&from=EN#ntr3-LI2019139EN.01031601-E0003
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/line-category/LineCategories"@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#lineReference">http://data.europa.eu/949/lineReference</a>
+<ul>
+<li>Added: rdfs:label "Railway location of an infrastructure object"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Railway location of Operational point"@en</li>
+</ul>
+</li>
+<li><a href="#linesideDistanceIndicationAppearance">http://data.europa.eu/949/linesideDistanceIndicationAppearance</a>
+<ul>
+<li>Added: rdfs:comment "Indication of types of appearance of track lineside distance indications."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of types of appearance of track lineside distance indications. 
+The allowed values for this property are taken from a SKOS concept scheme.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.1.3 Lineside indications of distance (frequency, appearance and positioning)."@en</li>
+</ul>
+</li>
+<li><a href="#linesideDistanceIndicationPositioning">http://data.europa.eu/949/linesideDistanceIndicationPositioning</a>
+<ul>
+<li>Added: rdfs:comment "Indication of the side along the track where the lineside indication is positioned (left or right)."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of the side along the track where the lineside indication is positioned (left or right).
+The allowed values for this property are taken from a SKOS concept scheme.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.1.3 Lineside indications of distance (frequency, appearance and positioning)."@en</li>
+</ul>
+</li>
+<li><a href="#loadCapability">http://data.europa.eu/949/loadCapability</a>
+<ul>
+<li>Added: rdfs:comment "A combination of the line category and speed at the weakest point of the track.The reason for deprecation is that the load capability property 1.1.1.1.2.4 was defined incorrectly as a SKOS property. It is composed of two values: (1)  line category, and (2) speed. Only line category is a list of predefined values (SKOS), whereas speed is an integer (according to the RINF application guide)."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "A combination of the line category and speed at the weakest point of the track. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/load-capabilities/LoadCapabilities. The reason for deprecation is that the load capability property 1.1.1.1.2.4 was defined incorrectly as a SKOS property. It is composed of two values: (1)  line category, and (2) speed. Only line category is a list of predefined values (SKOS), whereas speed is an integer (according to the RINF application guide)."@en</li>
+</ul>
+</li>
+<li><a href="#loadCapabilityLineCategory">http://data.europa.eu/949/loadCapabilityLineCategory</a>
+<ul>
+<li>Added: rdfs:comment "Part of the load capability of a track that corresponds to the line category of the load model. 
+The load capability is a value selected from the list of load models representing: line category which is amended by value of speed [km/h] permitted for a specific load model. The list of values may also be Route Availability which is amended by value of speed [miles/h] permitted for a specific load model."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Part of the load capability of a track that corresponds to the line category of the load model. 
+The load capability is a value selected from the list of load models representing: line category which is amended by value of speed [km/h] permitted for a specific load model. The list of values may also be Route Availability which is amended by value of speed [miles/h] permitted for a specific load model.
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/load-capability-line-categories/LoadCapabilityLineCategories"@en</li>
+</ul>
+</li>
+<li><a href="#mNvcontact">http://data.europa.eu/949/mNvcontact</a>
+<ul>
+<li>Added: rdfs:comment "On-Board system reaction when T_NVCONTACT expires.  
+According to the specification referenced in Appendix A-1, index [C]. 
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+ Subset 26, chapter 7. 7.5.1.74 M_NVCONTACT."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "On-Board system reaction when T_NVCONTACT expires.  
+According to the specification referenced in Appendix A-1, index [C]. 
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+ Subset 26, chapter 7. 7.5.1.74 M_NVCONTACT.
+The allowed values for this concept belong to a SKOS concept scheme."@en</li>
+</ul>
+</li>
+<li><a href="#magneticBraking">http://data.europa.eu/949/magneticBraking</a>
+<ul>
+<li>Added: rdfs:comment "This property has been modified to be a RINF parameter (its eratvIndex is deleted). It is treated as a SKOS by RINF and as a boolean by ERATV. A new ERATV datatype property has been defined, magneticBrakingFitted with boolean values."@en</li>
+<li>Added: rdfs:comment "Indication of limitations on the use of magnetic brakes."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of limitations on the use of magnetic brakes. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/magnetic-braking/MagneticBraking.
+This property has been modified to be a RINF parameter (its eratvIndex is deleted). It is treated as a SKOS by RINF and as a boolean by ERATV. A new ERATV datatype property has been defined, magneticBrakingFitted with boolean values.
+In 3.4.6 https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj Permissibility to use magnetic brake."@en</li>
+</ul>
+</li>
+<li><a href="#manufacturingCountry">http://data.europa.eu/949/manufacturingCountry</a>
+<ul>
+<li>Added: rdfs:comment "Indicates the country in which a vehicle or vehicle type is manufactured."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indicates the country in which a vehicle or vehicle type is manufactured. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country"@en</li>
+</ul>
+</li>
+<li><a href="#maxSandingOutput">http://data.europa.eu/949/maxSandingOutput</a>
+<ul>
+<li>Added: rdfs:comment "Maximum amount of sand accepted on the track within value of sanding output for 30s, given in grams.
+Deprecated according to the ammendment to the Regulation (EU) 2019/777."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. Maximum amount of sand accepted on the track within value of sanding output for 30s, given in grams. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/max-amount-sandings/MaxAmountSandings"@en</li>
+</ul>
+</li>
+<li><a href="#minAxleLoadVehicleCategory">http://data.europa.eu/949/minAxleLoadVehicleCategory</a>
+<ul>
+<li>Added: rdfs:comment "Represents the category of vehicle which is amended by value of minimum permitted axle load [tons] (property minAxleLoad).
+Deprecated according to the ammendment to the Regulation (EU) 2019/777."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. Represents the category of vehicle which is amended by value of minimum permitted axle load [tons] (property minAxleLoad). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/min-axle-load-vehicle-categories/MinAxleLoadVehicleCategories."@en</li>
+</ul>
+</li>
+<li><a href="#navigability">http://data.europa.eu/949/navigability</a>
+<ul>
+<li>Added: rdfs:comment "Indicates the navigation possibilities between two related topological objects."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indicates the navigation possibilities between two related topological objects. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/navigabilities/Navigabilities."@en</li>
+</ul>
+</li>
+<li><a href="#notYetAvailable">http://data.europa.eu/949/notYetAvailable</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2023-10-11"^^xsd:date</li>
+<li>Added: rdfs:label "Not provided"@en</li>
+<li>Added: rdfs:comment "Reference to a property that is not provided."@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-13"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Reference to a property that is not yet available."@en</li>
+<li>Deleted: rdfs:label "Not yet available"@en</li>
+</ul>
+</li>
+<li><a href="#opEnd">http://data.europa.eu/949/opEnd</a>
+<ul>
+<li>Added: rdfs:label "Operational point at end of section of line"@en</li>
+<li>Added: rdfs:comment "Unique OP ID at end of section of line (kilometres increasing from start OP to the end OP)."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Operational Point at end of Section of Line"@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Unique OP ID at end of section of line (kilometres increasing from start OP to the end OP).
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.1.2 Line segment extremity 2."@en</li>
+</ul>
+</li>
+<li><a href="#opStart">http://data.europa.eu/949/opStart</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:label "Operational point at start of section of line"@en</li>
+<li>Added: rdfs:comment "Unique OP ID at start of section of line (kilometres increasing from start OP to the end OP)."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Unique OP ID at start of section of line (kilometres increasing from start OP to the end OP).
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.1.1 Line segment extremity 1."@en</li>
+<li>Deleted: rdfs:label "Operational Point at start of Section of Line"@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#opType">http://data.europa.eu/949/opType</a>
+<ul>
+<li>Added: rdfs:comment "Type of facility in relation to the dominating operational functions."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Type of facility in relation to the dominating operational functions. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/op-types/OperationalPointTypes.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.3.2 Type of location passenger terminal, freight terminal, yard, depot."@en</li>
+</ul>
+</li>
+<li><a href="#operatingLanguage">http://data.europa.eu/949/operatingLanguage</a>
+<ul>
+<li>Added: rdfs:comment "The language or languages used in daily operation by infrastructure manager and published in its Network Statement, for the communication of operational or safety related messages between the staff of the infrastructure manager and the railway undertaking."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "The language or languages used in daily operation by infrastructure manager and published in its Network Statement, for the communication of operational or safety related messages between the staff of the infrastructure manager and the railway undertaking.
+The allowed values for this property belong to a SKOS Concept Scheme.
+In 3.5.1 https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj  Operating language."@en</li>
+</ul>
+</li>
+<li><a href="#operationalRegimeType">http://data.europa.eu/949/operationalRegimeType</a>
+<ul>
+<li>Added: rdfs:comment "Double track type."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:label "Operational regime"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+<li>Deleted: rdfs:label "Operational regime type"@en</li>
+<li>Deleted: rdfs:comment "Double track type. The allowed values for this property belong to a SKOS Concept Scheme.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.2.7 Type of signalling system and corresponding operational regime (double track, reversible working, left or right hand running, etc.)."@en</li>
+</ul>
+</li>
+<li><a href="#operationalRestriction">http://data.europa.eu/949/operationalRestriction</a>
+<ul>
+<li>Added: rdfs:comment "Indicates an operational restriction of vehicle or wagon. Parking brake type (if the vehicle is fitted with it)."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indicates an operational restriction of vehicle or wagon. Parking brake type (if the vehicle is fitted with it). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/restrictions/Restrictions."@en</li>
+</ul>
+</li>
+<li><a href="#osmClass">http://data.europa.eu/949/osmClass</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#definition> "Additional concept class according to OpenStreetMap."@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Additional concept class according to OpenStreetMap. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/osmclass/OSMClasses."@en</li>
+</ul>
+</li>
+<li><a href="#otherCantDeficiencyBasicSSP">http://data.europa.eu/949/otherCantDeficiencyBasicSSP</a>
+<ul>
+<li>Added: rdfs:comment "Essential information for drivers of trains with a worse (lower) tolerated cant deficiency than those for which the ETCS trackside provides SSP (Static Speed Profiles) in conjunction with parameter \"Cant Deficiency used for the basic SSP\". 
+According to the specification referenced in Appendix A-1, index [C]."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Essential information for drivers of trains with a worse (lower) tolerated cant deficiency than those for which the ETCS trackside provides SSP (Static Speed Profiles) in conjunction with 1.1.1.3.2.14. 
+According to the specification referenced in Appendix A-1, index [C]."@en</li>
+</ul>
+</li>
+<li><a href="#otherPantographHead">http://data.europa.eu/949/otherPantographHead</a>
+<ul>
+<li>Added: rdfs:comment "Indication of pantograph heads which are allowed to be used."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of pantograph heads which are allowed to be used.
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/other-pantograph-heads/OtherPantographHeads."@en</li>
+</ul>
+</li>
+<li><a href="#otherTrainProtection">http://data.europa.eu/949/otherTrainProtection</a>
+<ul>
+<li>Added: rdfs:comment "Indication of existence of other system than ETCS for degraded situation."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of existence of other system than ETCS for degraded situation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/other-protection-control-warning/OtherProtectionControlWarnings"@en</li>
+</ul>
+</li>
+<li><a href="#parkingBrakeType">http://data.europa.eu/949/parkingBrakeType</a>
+<ul>
+<li>Added: rdfs:comment "Parking brake type (if the vehicle is fitted with it)."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Parking brake type (if the vehicle is fitted with it). The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/brake-parking-type/BrakeParkingType."@en</li>
+</ul>
+</li>
+<li><a href="#platformHeight">http://data.europa.eu/949/platformHeight</a>
+<ul>
+<li>Added: domain http://data.europa.eu/949/PlatformEdge</li>
+<li>Added: rdfs:comment "Distance between the upper surface of platform and running surface of the neighbouring track. It is the nominal value expressed in millimetres."@en</li>
+</ul>
+<ul>
+<li>Deleted: domain http://data.europa.eu/949/Platform</li>
+<li>Deleted: rdfs:comment "Distance between the upper surface of platform and running surface of the neighbouring track. It is the nominal value expressed in millimetres. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/platform-heights/PlatformHeights
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.3.7 Height of platforms."@en</li>
+</ul>
+</li>
+<li><a href="#positionOnA">http://data.europa.eu/949/positionOnA</a>
+<ul>
+<li>Added: rdfs:comment "Determines the position of the topological object A in a relation."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Determines the position of the topological object A in a relation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/relation-positions/RelationPositions."@en</li>
+</ul>
+</li>
+<li><a href="#positionOnB">http://data.europa.eu/949/positionOnB</a>
+<ul>
+<li>Added: rdfs:comment "Determines the position of the topological object B in a relation."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Determines the position of the topological object B in a relation. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/relation-positions/RelationPositions."@en</li>
+</ul>
+</li>
+<li><a href="#profileNumberSemiTrailers">http://data.europa.eu/949/profileNumberSemiTrailers</a>
+<ul>
+<li>Added: rdfs:comment "Coding for combined transport for semi-trailers (for all freight and mixed-traffic lines) in accordance with the specification referenced in Appendix A-1, index [B]."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Coding for combined transport for semi-trailers (for all freight and mixed-traffic lines) in accordance with the specification referenced in Appendix A-1, index [B].
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/profile-num-semi-trailers/ProfileNumbersSemiTrailers"@en</li>
+</ul>
+</li>
+<li><a href="#protectionLegacySystem">http://data.europa.eu/949/protectionLegacySystem</a>
+<ul>
+<li>Added: rdfs:comment "Indication of which class B system is installed."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of which class B system is installed. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-protection-legacy-systems/TrainProtectionLegacySystems"@en</li>
+</ul>
+</li>
+<li><a href="#qNvdriverAdhes">http://data.europa.eu/949/qNvdriverAdhes</a>
+<ul>
+<li>Added: rdfs:comment "Qualifier determining whether the driver is allowed to modify the adhesion factor used by the ETCS on-board to calculate the braking curves. 
+According to the specification referenced in Appendix A-1, index [C]. 
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+ Subset 26, chapter 7. 7.5.1.122 Q_NVDRIVER_ADHES."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Qualifier determining whether the driver is allowed to modify the adhesion factor used by the ETCS on-board to calculate the braking curves. 
+According to the specification referenced in Appendix A-1, index [C]. 
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+ Subset 26, chapter 7. 7.5.1.122 Q_NVDRIVER_ADHES.
+The allowed values for this property belong to a SKOS Concept Scheme."@en</li>
+</ul>
+</li>
+<li><a href="#qNvemrrls">http://data.europa.eu/949/qNvemrrls</a>
+<ul>
+<li>Added: rdfs:comment "Qualifier defining whether the application of the emergency brake for reasons other than a trip can be revoked as soon as the conditions for it have disappeared or after the train has come to a complete standstill.
+According to the specification referenced in Appendix A-1, index [C]. 
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+Subset 26, chapter 7. 7.5.1.123 Q_NVEMRRLS."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Qualifier defining whether the application of the emergency brake for reasons other than a trip can be revoked as soon as the conditions for it have disappeared or after the train has come to a complete standstill.
+According to the specification referenced in Appendix A-1, index [C]. 
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+Subset 26, chapter 7. 7.5.1.123 Q_NVEMRRLS.
+The allowed values for this property belong to a SKOS Concept Scheme."@en</li>
+</ul>
+</li>
+<li><a href="#quieterRoutesExemptedCountry">http://data.europa.eu/949/quieterRoutesExemptedCountry</a>
+<ul>
+<li>Added: rdfs:comment "Country where a vehicle may operate without noise restrictions."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Country where a vehicle may operate without noise restrictions. The allowed values for this property belong to the SKOS Concept Scheme http://publications.europa.eu/resource/authority/country"@en</li>
+</ul>
+</li>
+<li><a href="#railInclination">http://data.europa.eu/949/railInclination</a>
+<ul>
+<li>Added: rdfs:comment "An angle defining the inclination of the head of a rail relative to the running surface."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "An angle defining the inclination of the head of a rail relative to the running surface. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rail-inclinations/RailInclinations
+This property has been changed, its rinfIndex has been deleted. RINF treats this parameter as an integer. A new datatype property for RINF has been defined called railInclinationMeasurement.
+This change was rolled back, RINF index was again added."@en</li>
+</ul>
+</li>
+<li><a href="#reasonsEtcsRadioBlockCenterReject">http://data.europa.eu/949/reasonsEtcsRadioBlockCenterReject</a>
+<ul>
+<li>Added: rdfs:comment "List of cases subject to system design choices made by the infrastructure manager according to the specification referenced in Appendix A-1, index [C]. 
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+Subset 26, Chapter 5 5.4 Procedure start of mission."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "List of cases subject to system design choices made by the infrastructure manager according to the specification referenced in Appendix A-1, index [C]. 
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+Subset 26, Chapter 5 5.4 Procedure start of mission.
+The allowed values for this property belong to a SKOS Concept Scheme."@en</li>
+</ul>
+</li>
+<li><a href="#rollingStockFireCategory">http://data.europa.eu/949/rollingStockFireCategory</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Categorisation how a passenger train with a fire on board will continue to operate for a defined time period. 
+Passenger train fire category in accordance with point 4.1.4 of TSI LOC&PAS."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Categorisation how a passenger train with a fire on board will continue to operate for a defined time period. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/rolling-stock-fire/Categories.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.2.3 Tunnels: location, name, length, specific information such as the existence of walkways and points of safe egress as well as the location of safe areas where evacuation of passengers may take place; fire safety categorisation."@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-10"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#safeConsistLengthInformationNecessary">http://data.europa.eu/949/safeConsistLengthInformationNecessary</a>
+<ul>
+<li>Added: rdfs:comment "Indication whether safe consist train length information from on-board is required to access the line for safety reasons and the required safety integrity level.
+"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication whether safe consist train length information from on-board is required to access the line for safety reasons and the required safety integrity level.
+The allowed values for this property belong to a SKOS Concept Scheme."@en</li>
+</ul>
+</li>
+<li><a href="#signalOrientation">http://data.europa.eu/949/signalOrientation</a>
+<ul>
+<li>Added: rdfs:comment "indication if the signal refers to normal or opposite track direction."@en</li>
+</ul>
+<ul>
+<li>Deleted: owl:versionURI "indication if the signal refers to normal or opposite track direction.
+The allowed values for this property belong to a SKOS Concept Scheme."@en</li>
+</ul>
+</li>
+<li><a href="#signalType">http://data.europa.eu/949/signalType</a>
+<ul>
+<li>Added: rdfs:comment "Signalling information for Route Book compilation."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Location, type and name of all fixed signals relevant for trains.
+The allowed values for this property belong to a SKOS Concept Scheme.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.3 Location, type and name of all fixed signals relevant for trains."@en</li>
+</ul>
+</li>
+<li><a href="#signallingSystemType">http://data.europa.eu/949/signallingSystemType</a>
+<ul>
+<li>Added: rdfs:comment "Indication of the signalling system type of the signalling system. 
+The reason for deprecation is that this property has the same RINF index than \"operational regime\" and this property is part of the definition."@en</li>
+<li>Added: owl:deprecated "true"^^xsd:boolean</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of the signalling system type of the signalling system. The allowed values for this property belong to a SKOS Concept Scheme.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.2.7 Type of signalling system and corresponding operational regime (double track, reversible working, left or right hand running, etc.).
+The allowed values for this property belong to a SKOS Concept Scheme."@en</li>
+</ul>
+</li>
+<li><a href="#snowIceHailConditions">http://data.europa.eu/949/snowIceHailConditions</a>
+<ul>
+<li>Added: rdfs:comment "Snow, ice and hail conditions."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Snow, ice and hail conditions. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/ice-conditions/IceConditions"@en</li>
+</ul>
+</li>
+<li><a href="#solNature">http://data.europa.eu/949/solNature</a>
+<ul>
+<li>Added: rdfs:comment "Kind of section of line expressing size of presented data which depends on fact whether it connects OPs generated by division of a big node into several OPs or not."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Kind of section of line expressing size of presented data which depends on fact whether it connects OPs generated by division of a big node into several OPs or not.
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/sol-natures/SoLNatures"@en</li>
+</ul>
+</li>
+<li><a href="#specialAreaType">http://data.europa.eu/949/specialAreaType</a>
+<ul>
+<li>Added: rdfs:comment "Indicates the special area or location types such as safe areas and restricted area types."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indicates the special area or location types such as safe areas and restricted area types.
+The allowed values of this property belong to a SKOS concept scheme.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 
+3.2.3 Tunnels: location, name, length, specific information such as the existence of walkways and points of safe egress as well as the location of safe areas where evacuation of passengers may take place; fire safety categorisation.
+3.2.4 Non-stopping areas: identification, location, type.
+3.2.5 Industrial risks — locations where it is dangerous for the driver to step out.
+3.2.6 Locations of areas designated for testing the sanding equipment (if existing).
+3.3.5 Location of neutral sections.
+3.3.6 Location of areas that shall be passed with lowered pantographs."@en</li>
+</ul>
+</li>
+<li><a href="#specialTunnelArea">http://data.europa.eu/949/specialTunnelArea</a>
+<ul>
+<li>Added: rdfs:comment "Relates a tunnel with a special area or location."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Relates a tunnel with a special area or location.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.2.3 Tunnels: location, name, length, specific information such as the existence of walkways and points of safe egress as well as the location of safe areas where evacuation of passengers may take place; fire safety categorisation."@en</li>
+</ul>
+</li>
+<li><a href="#standardCombinedTransporRollerUnits">http://data.europa.eu/949/standardCombinedTransporRollerUnits</a>
+<ul>
+<li>Added: rdfs:comment "Coding for combined transport for roller units (for all freight and mixed-traffic lines) in accordance with the specification referenced in Appendix A-1, index [B]. 
+"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Coding for combined transport for roller units (for all freight and mixed-traffic lines) in accordance with the specification referenced in Appendix A-1, index [B]. 
+The allowed values for this property belong to a SKOS Concept Scheme."@en</li>
+</ul>
+</li>
+<li><a href="#standardCombinedTransportContainers">http://data.europa.eu/949/standardCombinedTransportContainers</a>
+<ul>
+<li>Added: rdfs:comment "Coding for combined transport for containers (for all freight and mixed-traffic lines) in accordance with the specification referenced in Appendix A-1, index [B].
+"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Coding for combined transport for containers (for all freight and mixed-traffic lines) in accordance with the specification referenced in Appendix A-1, index [B].
+The allowed values for this property belong to a SKOS Concept Scheme."@en</li>
+</ul>
+</li>
+<li><a href="#startLocation">http://data.europa.eu/949/startLocation</a>
+<ul>
+<li>Added: rdfs:label "Start of tunnel location"@en</li>
+<li>Added: rdfs:comment "Part of the Start of tunnel that indicates the Geographical coordinates according to the standard World Geodetic System (WGS). Precision for both geographical latitude and geographical longitude is assumed as [NN.NNNNNNN] in degrees with decimals what gives discretion of 10 cm in the network.
+The Start of tunnel is the Geographical coordinates in decimal degrees and km of the line at the beginning of a tunnel."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-02-05"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "References the geolocation of the start of a tunnel."@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-11"^^xsd:date</li>
+<li>Deleted: rdfs:label "Start of tunnel"@en</li>
+</ul>
+</li>
+<li><a href="#state">http://data.europa.eu/949/state</a>
+<ul>
+<li>Added: rdfs:comment "Denoting the state of the certificate Can be in one of the following: Amended, New, Suspended, Withdrawn."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Denoting the state of the certificate and range the following instances. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/states/States."@en</li>
+</ul>
+</li>
+<li><a href="#subCategory">http://data.europa.eu/949/subCategory</a>
+<ul>
+<li>Added: rdfs:comment "Vehicle subcategory."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Vehicle subcategory. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/vehicle-types/Categories."@en</li>
+</ul>
+</li>
+<li><a href="#supportedPlatformHeight">http://data.europa.eu/949/supportedPlatformHeight</a>
+<ul>
+<li>Added: rdfs:comment "Platform height for which the vehicle is designed."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Platform height for which the vehicle is de­signed. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/platform-heights/PlatformHeights"@en</li>
+</ul>
+</li>
+<li><a href="#tdsFrenchTrainDetectionSystemLimitation">http://data.europa.eu/949/tdsFrenchTrainDetectionSystemLimitation</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/rinfIndex> "1.2.1.1.6.3"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#tdsMaximumMagneticField">http://data.europa.eu/949/tdsMaximumMagneticField</a>
+<ul>
+<li>Added: rdfs:label "Maximum magnetic field"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Train detection system maximum magnetic field"@en</li>
+</ul>
+</li>
+<li><a href="#tdsMinAxleLoadVehicleCategory">http://data.europa.eu/949/tdsMinAxleLoadVehicleCategory</a>
+<ul>
+<li>Added: rdfs:comment "Indication of load given in tons depending of the category of vehicle. Deprecated according to the ammendment to the Regulation (EU) 2019/777."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. Indication of load given in tons depending of the category of vehicle."@en</li>
+</ul>
+</li>
+<li><a href="#temperatureRange">http://data.europa.eu/949/temperatureRange</a>
+<ul>
+<li>Added: rdfs:comment "Temperature range for unrestricted access to the line according European standard."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Temperature range for unrestricted access to the line according European standard. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/temperature-ranges/TemperatureRanges"@en</li>
+</ul>
+</li>
+<li><a href="#tenClassification">http://data.europa.eu/949/tenClassification</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Indicates the part of the trans-European network the (track, platform, siding) belongs to."@en</li>
+<li>Added: rdfs:label "Trans-European Network (TEN) classification (of track, of platform, of siding)"@en</li>
+<li>Added: domain Union of (http://data.europa.eu/949/PlatformEdge, http://data.europa.eu/949/Siding, http://data.europa.eu/949/Track)</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of the part of the trans-European network the line belongs to. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/ten-classifications/TENClassifications."@en</li>
+<li>Deleted: rdfs:label "TEN classification (of track, of platform, of siding)"@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date</li>
+<li>Deleted: domain Union of (http://data.europa.eu/949/Platform, http://data.europa.eu/949/Siding, http://data.europa.eu/949/Track)</li>
+</ul>
+</li>
+<li><a href="#thermalCapacityTSIReference">http://data.europa.eu/949/thermalCapacityTSIReference</a>
+<ul>
+<li>Added: rdfs:comment "Reference case of a TSI thermal capacity."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Reference case of a TSI thermal capacity. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/thermal-capacity/ThermalCapacityTSIReferences"@en</li>
+</ul>
+</li>
+<li><a href="#trackDirection">http://data.europa.eu/949/trackDirection</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "The normal running direction is:
+- the same as the direction defined by the start and end of the SoL: (N)
+- the opposite to the direction defined by the start and end of the SoL: (O)
+- both directions: (B)"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "The normal running direction is:
+- The same as the direction defined by the start and end of the SoL: (N)
+- The opposite to the direction defined by the start and end of the SoL: (O)
+- Both directions: (B)
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/track-running-directions/TrackRunningDirections."@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#trackRaisedPantographsDistanceAndSpeed">http://data.europa.eu/949/trackRaisedPantographsDistanceAndSpeed</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/created> "2023-04-05"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/created> "2023-04-05"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#trainDetectionSystemSpecificCheck">http://data.europa.eu/949/trainDetectionSystemSpecificCheck</a>
+<ul>
+<li>Added: rdfs:comment "Reference to the technical specification of train detection system, in accordance with the specification referenced in Appendix A-1, index [D]."@en</li>
+<li>Added: rdfs:label "Type of track circuits or axle counters to which specific checks are needed"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Type of track circuits to which specific checks are needed"@en</li>
+<li>Deleted: rdfs:comment "Reference to the technical specification of train detection system, in accordance with the specification referenced in Appendix A-1, index [D]. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-detection-specific-checks/TrainDetectionSystemsSpecificChecks"@en</li>
+</ul>
+</li>
+<li><a href="#trainDetectionSystemType">http://data.europa.eu/949/trainDetectionSystemType</a>
+<ul>
+<li>Added: rdfs:comment "Indication of types of train detection systems installed."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of types of train detection systems installed. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/train-detection/TrainDetectionSystems"@en</li>
+</ul>
+</li>
+<li><a href="#tsiCompliantCompositeBrakeBlocks">http://data.europa.eu/949/tsiCompliantCompositeBrakeBlocks</a>
+<ul>
+<li>Added: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. TSI compliance of rules on the use of composite brake blocks."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. TSI compliance of rules on the use of composite brake blocks. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances."@en</li>
+</ul>
+</li>
+<li><a href="#tsiCompliantFerromagneticWheel">http://data.europa.eu/949/tsiCompliantFerromagneticWheel</a>
+<ul>
+<li>Added: rdfs:comment "TSI compliance of Ferromagnetic characteristics of wheel material required. Deprecated according to the ammendment to the Regulation (EU) 2019/777."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777.TSI compliance of Ferromagnetic characteristics of wheel material required. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances.
+
+The concept scheme is temporarily non-deferenceable."@en</li>
+</ul>
+</li>
+<li><a href="#tsiCompliantMaxDistConsecutiveAxles">http://data.europa.eu/949/tsiCompliantMaxDistConsecutiveAxles</a>
+<ul>
+<li>Added: rdfs:comment "Indication whether required distance between two consecutive axles is compliant with the TSI. Deprecated according to the ammendment to the Regulation (EU) 2019/777."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. Indication whether required distance between two consecutive axles is compliant with the TSI. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances."@en</li>
+</ul>
+</li>
+<li><a href="#tsiCompliantMaxImpedanceWheelset">http://data.europa.eu/949/tsiCompliantMaxImpedanceWheelset</a>
+<ul>
+<li>Added: rdfs:comment "TSI compliance of maximum permitted impedance between opposite wheels of a wheelset. Deprecated according to the ammendment to the Regulation (EU) 2019/777."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. TSI compliance of maximum permitted impedance between opposite wheels of a wheelset. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances."@en</li>
+</ul>
+</li>
+<li><a href="#tsiCompliantMetalConstruction">http://data.europa.eu/949/tsiCompliantMetalConstruction</a>
+<ul>
+<li>Added: rdfs:comment "TSI compliance of rules for vehicle metal construction. Deprecated according to the ammendment to the Regulation (EU) 2019/777."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. TSI compliance of rules for vehicle metal construction. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances."@en</li>
+</ul>
+</li>
+<li><a href="#tsiCompliantMetalFreeSpace">http://data.europa.eu/949/tsiCompliantMetalFreeSpace</a>
+<ul>
+<li>Added: rdfs:comment "TSI compliance of rules for metal-free space around wheels. Deprecated according to the ammendment to the Regulation (EU) 2019/777."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. TSI compliance of rules for metal-free space around wheels. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances."@en</li>
+</ul>
+</li>
+<li><a href="#tsiCompliantRSTShuntImpedance">http://data.europa.eu/949/tsiCompliantRSTShuntImpedance</a>
+<ul>
+<li>Added: rdfs:comment "TSI compliance of rules on combination of RST characteristics influencing shunting impedance. Deprecated according to the ammendment to the Regulation (EU) 2019/777."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. TSI compliance of rules on combination of RST characteristics influencing shunting impedance. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances."@en</li>
+</ul>
+</li>
+<li><a href="#tsiCompliantSandCharacteristics">http://data.europa.eu/949/tsiCompliantSandCharacteristics</a>
+<ul>
+<li>Added: rdfs:comment "TSI Compliance of rules on sand characteristics. Deprecated according to the ammendment to the Regulation (EU) 2019/777."^^xsd:string</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. TSI Compliance of rules on sand characteristics. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances."@en</li>
+</ul>
+</li>
+<li><a href="#tsiCompliantSanding">http://data.europa.eu/949/tsiCompliantSanding</a>
+<ul>
+<li>Added: rdfs:comment "TSI compliance of sanding rules to allow compatibility with track circuits. Too much sand brings the risk of not detecting trains in tracks equipped with track circuits. Deprecated according to the ammendment to the Regulation (EU) 2019/777."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. TSI compliance of sanding rules to allow compatibility with track circuits. Too much sand brings the risk of not detecting trains in tracks equipped with track circuits. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances."@en</li>
+</ul>
+</li>
+<li><a href="#tsiCompliantShuntDevices">http://data.europa.eu/949/tsiCompliantShuntDevices</a>
+<ul>
+<li>Added: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. TSI compliance of rules on shunt assisting devices."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. TSI compliance of rules on shunt assisting devices. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/tsi-compliances/TSICompliances."@en</li>
+</ul>
+</li>
+<li><a href="#wheelSetGauge">http://data.europa.eu/949/wheelSetGauge</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Value expressed in millimetres that identifies the track gauge.
+The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/nominal-track-gauges/NominalTrackGauges"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date</li>
+<li>Deleted: rdfs:comment "A single value expressed in millimetres that identifies the track and vehicle wheel set gauge. The allowed values for this property belong to the SKOS Concept Scheme http://data.europa.eu/949/concepts/nominal-track-gauges/NominalTrackGauges"@en</li>
+</ul>
+</li>
+<li><a href="#http://www.opengis.net/ont/geosparql#hasGeometry">http://www.opengis.net/ont/geosparql#hasGeometry</a>
+<ul>
+<li>Added: <http://purl.org/dc/elements/1.1/contributor> "Matthew Perry"^^xsd:string</li>
+<li>Added: <http://purl.org/dc/elements/1.1/date> "2011-06-16"^^xsd:date</li>
+<li>Added: rdfs:isDefinedBy http://www.opengis.net/ont/geosparql</li>
+<li>Added: <http://purl.org/dc/elements/1.1/description> "
+      A spatial representation for a given feature.
+    "@en</li>
+<li>Added: domain http://www.opengis.net/ont/geosparql#Feature</li>
+<li>Added: <http://purl.org/dc/elements/1.1/creator> "OGC GeoSPARQL 1.0 Standard Working Group"^^xsd:string</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#prefLabel> "hasGeometry"@en</li>
+<li>Added: rdfs:isDefinedBy http://www.opengis.net/spec/geosparql/1.0</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#definition> "
+      A spatial representation for a given feature.
+    "@en</li>
+<li>Added: Range http://www.opengis.net/ont/geosparql#Geometry</li>
+<li>Added: rdfs:comment "
+      A spatial representation for a given feature.
+    "@en</li>
+<li>Added: rdfs:label "hasGeometry"@en</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added object properties</u></summary>
+<ul><li><a href="#additionalBrakingInformationDocument">http://data.europa.eu/949/additionalBrakingInformationDocument</a>
+<ul>
+<li>Added: Range http://data.europa.eu/949/Document</li>
+<li>Added: domain Union of (http://data.europa.eu/949/SubsetWithCommonCharacteristics, http://data.europa.eu/949/Track)</li>
+</ul>
+</li>
+<li><a href="#compatibilityProcedureDocument">http://data.europa.eu/949/compatibilityProcedureDocument</a>
+<ul>
+<li>Added: Range http://data.europa.eu/949/Document</li>
+<li>Added: domain Union of (http://data.europa.eu/949/SubsetWithCommonCharacteristics, http://data.europa.eu/949/Track)</li>
+</ul>
+</li>
+<li><a href="#eddyCurrentBrakingConditionsDocument">http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument</a>
+<ul>
+<li>Added: domain Union of (http://data.europa.eu/949/SubsetWithCommonCharacteristics, http://data.europa.eu/949/Track)</li>
+<li>Added: Range http://data.europa.eu/949/Document</li>
+</ul>
+</li>
+<li><a href="#gaugingTransversalDocument">http://data.europa.eu/949/gaugingTransversalDocument</a>
+<ul>
+<li>Added: Range http://data.europa.eu/949/Document</li>
+<li>Added: domain Union of (http://data.europa.eu/949/SubsetWithCommonCharacteristics, http://data.europa.eu/949/Track)</li>
+</ul>
+</li>
+<li><a href="#gsmRAdditionalInfo">http://data.europa.eu/949/gsmRAdditionalInfo</a>
+<ul>
+<li>Added: Range http://data.europa.eu/949/Document</li>
+<li>Added: domain Union of (http://data.europa.eu/949/SubsetWithCommonCharacteristics, http://data.europa.eu/949/Track)</li>
+</ul>
+</li>
+<li><a href="#lineReferenceTunnelEnd">http://data.europa.eu/949/lineReferenceTunnelEnd</a>
+<ul>
+<li>Added: SubProperty of http://data.europa.eu/949/lineReference</li>
+<li>Added: domain http://data.europa.eu/949/Tunnel</li>
+<li>Added: Range http://data.europa.eu/949/LineReference</li>
+</ul>
+</li>
+<li><a href="#lineReferenceTunnelStart">http://data.europa.eu/949/lineReferenceTunnelStart</a>
+<ul>
+<li>Added: Range http://data.europa.eu/949/LineReference</li>
+<li>Added: SubProperty of http://data.europa.eu/949/lineReference</li>
+<li>Added: domain http://data.europa.eu/949/Tunnel</li>
+</ul>
+</li>
+<li><a href="#localRulesOrRestrictionsDoc">http://data.europa.eu/949/localRulesOrRestrictionsDoc</a>
+<ul>
+<li>Added: domain Union of (http://data.europa.eu/949/OperationalPoint, http://data.europa.eu/949/Track)</li>
+<li>Added: Range http://data.europa.eu/949/Document</li>
+</ul>
+</li>
+<li><a href="#magneticBrakingConditionsDocument">http://data.europa.eu/949/magneticBrakingConditionsDocument</a>
+<ul>
+<li>Added: Range http://data.europa.eu/949/Document</li>
+<li>Added: domain Union of (http://data.europa.eu/949/SubsetWithCommonCharacteristics, http://data.europa.eu/949/Track)</li>
+</ul>
+</li>
+<li><a href="#platformEdge">http://data.europa.eu/949/platformEdge</a>
+<ul>
+<li>Added: domain Union of (http://data.europa.eu/949/SubsetWithCommonCharacteristics, http://data.europa.eu/949/Track)</li>
+<li>Added: Range http://data.europa.eu/949/PlatformEdge</li>
+</ul>
+</li>
+<li><a href="#trainDetectionSystemSpecificCheckDocument">http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument</a>
+<ul>
+<li>Added: domain http://data.europa.eu/949/TrainDetectionSystem</li>
+<li>Added: Range http://data.europa.eu/949/Document</li>
+</ul>
+</li>
+<li><a href="#tunnelDocRef">http://data.europa.eu/949/tunnelDocRef</a>
+<ul>
+<li>Added: domain http://data.europa.eu/949/Tunnel</li>
+<li>Added: Range http://data.europa.eu/949/Document</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Deleted object properties</u></summary>
+<ul><li><a href="#hasSignal">http://data.europa.eu/949/hasSignal</a>
+</li>
+<li><a href="#platform">http://data.europa.eu/949/platform</a>
+</li>
+</ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
+<details><summary><u>Modified data properties</u></summary>
+<ul><li><a href="#accelerationLevelCrossing">http://data.europa.eu/949/accelerationLevelCrossing</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:label "Acceleration allowed near level crossing"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-11"^^xsd:date</li>
+<li>Deleted: rdfs:label "Acceleration allowed at level crossing"@en</li>
+</ul>
+</li>
+<li><a href="#areaBoardingAid">http://data.europa.eu/949/areaBoardingAid</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/MilliM</li>
+<li>Added: rdfs:label "Range of use of the platform boarding aid"@en</li>
+<li>Added: Domain http://data.europa.eu/949/PlatformEdge</li>
+</ul>
+<ul>
+<li>Deleted: Domain http://data.europa.eu/949/Platform</li>
+<li>Deleted: rdfs:label "Information of the train access level for which the boarding aid can be used."@en</li>
+</ul>
+</li>
+<li><a href="#assistanceStartingTrain">http://data.europa.eu/949/assistanceStartingTrain</a>
+<ul>
+<li>Added: Domain http://data.europa.eu/949/PlatformEdge</li>
+</ul>
+<ul>
+<li>Deleted: Domain http://data.europa.eu/949/Platform</li>
+</ul>
+</li>
+<li><a href="#bigMetalMass">http://data.europa.eu/949/bigMetalMass</a>
+<ul>
+<li>Added: rdfs:label "Big Metal Mass"@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Big metal mass"@en</li>
+</ul>
+</li>
+<li><a href="#cantDeficiency">http://data.europa.eu/949/cantDeficiency</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/MilliM</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#integer</li>
+</ul>
+<ul>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#int</li>
+</ul>
+</li>
+<li><a href="#complianceInfTsi">http://data.europa.eu/949/complianceInfTsi</a>
+<ul>
+<li>Added: rdfs:label "Compliance of the tunnel with TSI INF"@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Compliance of the tunnel with TSI INF at the maximum permitted speed."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Compliance of the tunnel with INF TSI"@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-03"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Compliance of the tunnel with INF TSI at the maximum permitted speed."@en</li>
+</ul>
+</li>
+<li><a href="#conditionsAppliedRegenerativeBraking">http://data.europa.eu/949/conditionsAppliedRegenerativeBraking</a>
+<ul>
+<li>Added: rdfs:comment "Name and/or reference of the document specifying the conditions applying in regards to regenerative braking."@en</li>
+<li>Added: <http://purl.org/dc/terms/source> https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019R0777&from=EN</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Name and/or reference of the document specifying the conditions applying in regards to regenerative braking.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.3.7 Conditions applying with regard to regenerative braking."@en</li>
+</ul>
+</li>
+<li><a href="#conditionsSwitchClassBSystems">http://data.europa.eu/949/conditionsSwitchClassBSystems</a>
+<ul>
+<li>Added: rdfs:comment "Name and/or reference of the document specifying the Special technical conditions required to switch over between ERTMS/ETCS and Class B systems."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Name and/or reference of the document specifying the Special technical conditions required to switch over between ERTMS/ETCS and Class B systems.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.4.3 Special technical conditions required to switch over between ERTMS/ETCS and Class B systems."@en</li>
+</ul>
+</li>
+<li><a href="#conditionsSwitchTrainProtectionSystems">http://data.europa.eu/949/conditionsSwitchTrainProtectionSystems</a>
+<ul>
+<li>Added: rdfs:comment "Conditions to switch over between different class B train protection, control and warning systems."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Conditions to switch over between different class B train protection, control and warning systems.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.4.2 Special conditions to switch over between different class B train protection, control and warning systems."@en</li>
+</ul>
+</li>
+<li><a href="#crossSectionArea">http://data.europa.eu/949/crossSectionArea</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/M2</li>
+</ul>
+</li>
+<li><a href="#dNvovtrp">http://data.europa.eu/949/dNvovtrp</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/rinfIndex> "1.2.1.1.1.16.5"^^xsd:string</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#dNvpotrp">http://data.europa.eu/949/dNvpotrp</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#dNvroll">http://data.europa.eu/949/dNvroll</a>
+<ul>
+<li>Added: rdfs:comment "Parameter used by the ETCS on-board to supervise the distance allowed to be travelled under the roll-away protection and the reverse movement protection, in metres.
+According to the specification referenced in Appendix A-1, index [C].
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+ Subset 26, chapter 7. 7.5.1.17 D_NVROLL."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Parameter used by the ETCS on-board to supervise the distance allowed to be travelled under the roll-away protection and the reverse movement protection, in metres
+According to the specification referenced in Appendix A-1, index [C].
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+ Subset 26, chapter 7. 7.5.1.17 D_NVROLL."@en</li>
+</ul>
+</li>
+<li><a href="#demonstrationENE">http://data.europa.eu/949/demonstrationENE</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:label "EI declaration of demonstration (as defined Recommendation 2014/881/EU) for track relating to compliance with the requirements from TSIs applicable to energy subsystem"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "EI declaration of demonstration for track (ENE)"@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-11"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#demonstrationINF">http://data.europa.eu/949/demonstrationINF</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:label "EI declaration of demonstration (as defined Commission 2014/881/EU) for track relating to compliance with the requirements from TSIs applicable to infrastructure subsystem"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "EI declaration of demonstration for track/siding [INF]"@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#demonstrationSRT">http://data.europa.eu/949/demonstrationSRT</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:label "EI declaration of demonstration (as defined in Recommendation 2014/881/EU) relating to compliance with the requirements from TSIs applicable to railway tunnel"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "EI declaration of demonstration for tunnel (SRT)"@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-11"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#distSignToPhaseEnd">http://data.europa.eu/949/distSignToPhaseEnd</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/M</li>
+</ul>
+</li>
+<li><a href="#documentRestrictionPositionContactLineSeparation">http://data.europa.eu/949/documentRestrictionPositionContactLineSeparation</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/created> "2023-03-14"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/created> "2023-03-14"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#documentRestrictionPowerConsumption">http://data.europa.eu/949/documentRestrictionPowerConsumption</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/created> "2023-03-14"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/created> "2023-03-14"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#eddyCurrentBrakingFitted">http://data.europa.eu/949/eddyCurrentBrakingFitted</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/949/</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy "http://data.europa.eu/949/"^^xsd:anyURI</li>
+</ul>
+</li>
+<li><a href="#etcsErrorCorrectionsOnboard">http://data.europa.eu/949/etcsErrorCorrectionsOnboard</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: <http://data.europa.eu/949/rinfIndex> "1.2.1.1.1.19"^^xsd:string</li>
+</ul>
+<ul>
+<li>Deleted: <http://data.europa.eu/949/rinfIndex> "1.1.1.3.1.2"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#etcsSystemFunctionalitiesNextFiveYears">http://data.europa.eu/949/etcsSystemFunctionalitiesNextFiveYears</a>
+<ul>
+<li>Added: rdfs:comment "List of ETCS system version 2.2 or 3.0 functionalities to be required in the next 5 years according to TSI CCS point 6.1.1.2 and Appendix G."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "List of ETCS system version 2.2 or 3.0 functionalities to be required in the next 5 years according to CCS TSI point 6.1.1.2 and Appendix G."@en</li>
+</ul>
+</li>
+<li><a href="#flangeLubeForbidden">http://data.europa.eu/949/flangeLubeForbidden</a>
+<ul>
+<li>Added: rdfs:comment "Indication whether the use of on-board device for flange lubrication is forbidden."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication whether the use of on-board device for flange lubrication is forbidden"@en</li>
+</ul>
+</li>
+<li><a href="#frenchTrainDetectionSystemLimitationApplicable">http://data.europa.eu/949/frenchTrainDetectionSystemLimitationApplicable</a>
+<ul>
+<li>Added: rdfs:label "Section with train detection limitation"@en</li>
+<li>Added: <http://data.europa.eu/949/rinfIndex> "1.2.1.1.6.3"^^rdfs:Literal</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Section with train detection limitation is applicable, only for the French network"@en</li>
+</ul>
+</li>
+<li><a href="#gaugingCheckLocation">http://data.europa.eu/949/gaugingCheckLocation</a>
+<ul>
+<li>Added: rdfs:comment "Location of particular points requiring specific checks due to deviations from gauging referred to in parameter \"Gauging\"."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Location of particular points requiring specific checks due to deviations from gauging referred to in 1.1.1.1.3.1.1."@en</li>
+</ul>
+</li>
+<li><a href="#gradient">http://data.europa.eu/949/gradient</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/MilliM-PER-M</li>
+</ul>
+</li>
+<li><a href="#gradientProfile">http://data.europa.eu/949/gradientProfile</a>
+<ul>
+<li>Added: rdfs:comment "Sequence of gradient values and locations of change in gradient."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Sequence of gradient values and locations of change in gradient.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.2.1 Gradient percentage, 3.2.2 Gradient location."@en</li>
+</ul>
+</li>
+<li><a href="#gsmRNoCoverage">http://data.europa.eu/949/gsmRNoCoverage</a>
+<ul>
+<li>Added: rdfs:label "No GSMR coverage"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "No GSM-R coverage"@en</li>
+</ul>
+</li>
+<li><a href="#gsmrErrorCorrectionsOnboard">http://data.europa.eu/949/gsmrErrorCorrectionsOnboard</a>
+<ul>
+<li>Added: owl:deprecated "true"^^xsd:boolean</li>
+<li>Added: rdfs:comment "List of unacceptable errors impacting the IM network that are required to be solved in the on-board according to the CCS TSI point 7.2.10.3 specification maintenance point.
+The reason for deprecation is that this parameter does not appear in the latest legal text."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "List of unacceptable errors impacting the IM network that are required to be solved in the on-board according to the CCS TSI point 7.2.10.3 specification maintenance point."@en</li>
+<li>Deleted: <http://data.europa.eu/949/rinfIndex> "1.1.1.3.3.11"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#hasAdditionalBrakingInformation">http://data.europa.eu/949/hasAdditionalBrakingInformation</a>
+<ul>
+<li>Added: rdfs:comment "Availability by the IM of additional information as defined in point (2) of point 4.2.2.6.2 of TSI OPE."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Availability by the IM of additional information as defined in point (2) of point 4.2.2.6.2 of OPE TSI."@en</li>
+</ul>
+</li>
+<li><a href="#hasETCSRestrictionsConditions">http://data.europa.eu/949/hasETCSRestrictionsConditions</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Indication whether restrictions or conditions due to partial compliance with the TSI CCS exist."@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Indication whether restrictions or conditions due to partial compliance with the CCS TSI – Commission Regulation (EU) 2016/919 (5) exist."@en</li>
+</ul>
+</li>
+<li><a href="#hasEvacuationAndRescuePoints">http://data.europa.eu/949/hasEvacuationAndRescuePoints</a>
+<ul>
+<li>Added: rdfs:comment "Indication of existence of evacuation and rescue points."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of existence of evacuation and rescue points.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.2.3 Tunnels: location, name, length, specific information such as the existence of walkways and points of safe egress as well as the location of safe areas where evacuation of passengers may take place; fire safety categorisation."@en</li>
+</ul>
+</li>
+<li><a href="#hasExternalCleaning">http://data.europa.eu/949/hasExternalCleaning</a>
+<ul>
+<li>Added: rdfs:comment "Indication whether exists an installation for external cleaning facility (fixed installation for servicing trains) as defined in TSI INF."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-10"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Indication whether exists an installation for external cleaning facility (fixed installation for servicing trains) as defined in INF TSIs."@en</li>
+</ul>
+</li>
+<li><a href="#hasHotAxleBoxDetector">http://data.europa.eu/949/hasHotAxleBoxDetector</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Existence of trackside HABD."@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-11"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Existence of trackside hot axle box detector (HABD)."@en</li>
+</ul>
+</li>
+<li><a href="#hasPlatformCurvature">http://data.europa.eu/949/hasPlatformCurvature</a>
+<ul>
+<li>Added: Domain http://data.europa.eu/949/PlatformEdge</li>
+<li>Added: rdfs:label "Curvature of the platform"@en</li>
+<li>Added: rdfs:comment "Indication of the existence of the curvature of the platform."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Existence of  platform curvature"@en</li>
+<li>Deleted: Domain http://data.europa.eu/949/Platform</li>
+<li>Deleted: rdfs:comment "Indication of the existence of the curvature of the platform.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.3.8 Curvature of platforms."@en</li>
+</ul>
+</li>
+<li><a href="#hasRefuelling">http://data.europa.eu/949/hasRefuelling</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Indication whether exists an installation for refuelling (fixed installation for servicing trains) as defined in TSI INF."@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-10"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Indication whether exists an installation for refuelling (fixed installation for servicing trains) as defined in INF TSIs."@en</li>
+</ul>
+</li>
+<li><a href="#hasSchematicOverviewOPDigitalForm">http://data.europa.eu/949/hasSchematicOverviewOPDigitalForm</a>
+<ul>
+<li>Added: rdfs:label "Schematic overview of the operational point in digital form"@en</li>
+<li>Added: rdfs:comment "The existence of a schematic overview of the operational point in digital form."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Has schematic overview in digital form"@en</li>
+<li>Deleted: rdfs:comment "The existence of a schematic overview of the operational point in digital form"@en</li>
+</ul>
+</li>
+<li><a href="#hasTSITrainDetection">http://data.europa.eu/949/hasTSITrainDetection</a>
+<ul>
+<li>Added: rdfs:comment "Indication if there is any train detection system installed and fully compliant with the TSI CCS."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication if there is any train detection system installed and fully compliant with the CCS TSI."@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#hasToiletDischarge">http://data.europa.eu/949/hasToiletDischarge</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Indication whether exists an installation for toilet discharge (fixed installation for servicing trains) as defined in TSI INF."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication whether exists an installation for toilet discharge (fixed installation for servicing trains) as defined in INF TSIs."@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-10"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#hasWalkway">http://data.europa.eu/949/hasWalkway</a>
+<ul>
+<li>Added: rdfs:comment "Indication of existence of walkways."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of existence of walkways.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.2.3 Tunnels: location, name, length, specific information such as the existence of walkways and points of safe egress as well as the location of safe areas where evacuation of passengers may take place; fire safety categorisation"@en</li>
+</ul>
+</li>
+<li><a href="#hasWaterRestocking">http://data.europa.eu/949/hasWaterRestocking</a>
+<ul>
+<li>Added: rdfs:comment "Indication whether exists an installation for water restocking (fixed installation for servicing trains) as defined in TSI INF."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-10"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Indication whether exists an installation for water restocking (fixed installation for servicing trains) as defined in INF TSIs."@en</li>
+</ul>
+</li>
+<li><a href="#highSpeedLoadModelCompliance">http://data.europa.eu/949/highSpeedLoadModelCompliance</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:label "Compliance of structures with the High Speed Load Model (HSLM)"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Compliance of structures with the High Speed Load Model (HSLM) dynamic load model"@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#hotAxleBoxDetectorIdentification">http://data.europa.eu/949/hotAxleBoxDetectorIdentification</a>
+<ul>
+<li>Added: rdfs:comment "Specific for the French, Italian and Swedish networks.
+Applicable if trackside HABD is not TSI compliant, identification of trackside hot axle box detector."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "ISpecific for the French, Italian and Swedish networks.
+Applicable if trackside HABD is not TSI compliant, identification of trackside hot axle box detector."@en</li>
+</ul>
+</li>
+<li><a href="#imCode">http://data.europa.eu/949/imCode</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:label "Infrastructure manager (IM)'s code"@en</li>
+<li>Added: rdfs:comment "Infrastructure manager means anybody or undertaking that is responsible in particular for establishing and maintaining railway infrastructure or a part thereof."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Infrastructure manager means anybody or undertaking that is responsible in particular for establishing and maintaining railway infrastructure or a part thereof.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj  1.1 infrastructure manager's Name."@en</li>
+<li>Deleted: rdfs:label "IM's code"@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#instructionsSwitchRadioSystems">http://data.europa.eu/949/instructionsSwitchRadioSystems</a>
+<ul>
+<li>Added: rdfs:comment "Name and/or reference of the document specifying the Special instructions to switch over between different radio systems."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Name and/or reference of the document specifying the Special instructions to switch over between different radio systems.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.4.4 Special instructions (location) to switch over between different radio systems."@en</li>
+</ul>
+</li>
+<li><a href="#isQuietRoute">http://data.europa.eu/949/isQuietRoute</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Belonging to a ‘quieter route’ in accordance with Article 5b of TSI NOI."@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Belonging to a ‘quieter route’ in accordance with Article 5b of NOI TSI."@en</li>
+</ul>
+</li>
+<li><a href="#kilometer">http://data.europa.eu/949/kilometer</a>
+<ul>
+<li>Added: rdfs:comment "Distance measured in kilometers from the origin of a national railway line."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Distance measured in kilometers from the origin of a national railway line.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations (stations, yards, junctions, freight terminals) and their position relative to the line."@en</li>
+</ul>
+</li>
+<li><a href="#length">http://data.europa.eu/949/length</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/M</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Length of an infrastructure object which can be a section of line, a tunnel, a platform, a siding, and length of other areas such as a non-stopping area, a walkway, an evacuation and rescue point.
+Vehicle length."@en</li>
+<li>Added: Domain Union of (http://data.europa.eu/949/Feature, http://data.europa.eu/949/Vehicle)</li>
+</ul>
+<ul>
+<li>Deleted: Domain http://data.europa.eu/949/Feature</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-11"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Length of a physical object, which can be a section of line, a tunnel, a platform, etc.
+Length of section of line (1.1.0.0.0.5), length between operational points at start and end of section of line.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.3.6 Length of platforms."@en</li>
+</ul>
+</li>
+<li><a href="#linearCoordinate">http://data.europa.eu/949/linearCoordinate</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2023-11-10"^^xsd:date</li>
+<li>Added: rdfs:comment "Indicates the position of an object within a linear positioning system. For example, relative to a national railway line.
+The reason for deprecation is that this property is not specified in the latest legal text nor the RINF application guide. Also, no data has been provided for this property."@en</li>
+<li>Added: owl:deprecated "true"^^xsd:boolean</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indicates the position of an object within a linear positioning system. For example, relative to a national railway line."@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-04-01"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#linesideDistanceIndicationFrequency">http://data.europa.eu/949/linesideDistanceIndicationFrequency</a>
+<ul>
+<li>Added: rdfs:comment "Frequency of track lineside distance indications."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Frequency of track lineside distance indications.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.1.3 Lineside indications of distance (frequency, appearance and positioning)."@en</li>
+</ul>
+</li>
+<li><a href="#loadCapabilitySpeed">http://data.europa.eu/949/loadCapabilitySpeed</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/KiloM-PER-HR</li>
+</ul>
+</li>
+<li><a href="#localRulesOrRestrictions">http://data.europa.eu/949/localRulesOrRestrictions</a>
+<ul>
+<li>Added: rdfs:label "Existence of rules and restrictions of a strictly local nature"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Existence of rules and restrictions of a strictly local nature."@en</li>
+</ul>
+</li>
+<li><a href="#maxCurrentStandstillPantograph">http://data.europa.eu/949/maxCurrentStandstillPantograph</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/A</li>
+<li>Added: rdfs:comment "Indication of the maximum allowable train current at standstill expressed in amperes."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of the maximum allowable train current at standstill expressed in amperes. 
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.3.8 Maximum current at standstill per pantograph."@en</li>
+</ul>
+</li>
+<li><a href="#maxDistConsecutiveAxles">http://data.europa.eu/949/maxDistConsecutiveAxles</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/MilliM</li>
+</ul>
+</li>
+<li><a href="#maxDistEndTrainFirstAxle">http://data.europa.eu/949/maxDistEndTrainFirstAxle</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/MilliM</li>
+</ul>
+</li>
+<li><a href="#maxFlangeHeight">http://data.europa.eu/949/maxFlangeHeight</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/MilliM</li>
+</ul>
+</li>
+<li><a href="#maxTrainCurrent">http://data.europa.eu/949/maxTrainCurrent</a>
+<ul>
+<li>Added: rdfs:comment "Indication of the maximum allowable train current expressed in amperes."@en</li>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/A</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of the maximum allowable train current expressed in amperes.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.3.2 Maximum train current."@en</li>
+</ul>
+</li>
+<li><a href="#maximumAltitude">http://data.europa.eu/949/maximumAltitude</a>
+<ul>
+<li>Added: rdfs:comment "Highest point of the section of line above sea level in reference to Normal Amsterdam's Peil (NAP)."@en</li>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/M</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "HighFest point of the section of line above sea level in reference to Normal Amsterdam's Peil (NAP)."@en</li>
+</ul>
+</li>
+<li><a href="#maximumBrakingDistance">http://data.europa.eu/949/maximumBrakingDistance</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/M</li>
+</ul>
+</li>
+<li><a href="#maximumContactWireHeight">http://data.europa.eu/949/maximumContactWireHeight</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/M</li>
+</ul>
+</li>
+<li><a href="#maximumPermittedSpeed">http://data.europa.eu/949/maximumPermittedSpeed</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/KiloM-PER-HR</li>
+<li>Added: rdfs:comment "Nominal maximum operational speed on the line as a result of infrastructure, energy and control, command and signalling subsystem characteristics expressed in kilometres/hour."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Nominal maximum operational speed on the line as a result of infrastructure, energy and control, command and signalling subsystem characteristics expressed in kilometres/hour.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.1.4 Maximum permissible speed for each track, including, if necessary, differential speeds relating to certain types of train."@en</li>
+</ul>
+</li>
+<li><a href="#maximumTemperature">http://data.europa.eu/949/maximumTemperature</a>
+<ul>
+<li>Added: rdfs:comment "Maximum temperature allowed for unrestricted operation access, according to European standard."@en</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#integer</li>
+</ul>
+<ul>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#int</li>
+<li>Deleted: rdfs:comment "Maximum tempertaure allowed for unrestricted operation access, according to European standard."@en</li>
+</ul>
+</li>
+<li><a href="#minAxleLoad">http://data.europa.eu/949/minAxleLoad</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/TONNE</li>
+</ul>
+</li>
+<li><a href="#minDistConsecutiveAxles">http://data.europa.eu/949/minDistConsecutiveAxles</a>
+<ul>
+<li>Added: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. However, the parameter remains as it is also an ERATV parameter."@en</li>
+<li>Added: Domain Union of (http://data.europa.eu/949/SubsetWithCommonCharacteristics, http://data.europa.eu/949/Track, http://data.europa.eu/949/VehicleType)</li>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/MilliM</li>
+</ul>
+<ul>
+<li>Deleted: Domain http://data.europa.eu/949/VehicleType</li>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. However, the parameter remains as it is also an ERATV parameter. RINF index has been deleted."@en</li>
+</ul>
+</li>
+<li><a href="#minDistFirstLastAxle">http://data.europa.eu/949/minDistFirstLastAxle</a>
+<ul>
+<li>Added: Domain Union of (http://data.europa.eu/949/SubsetWithCommonCharacteristics, http://data.europa.eu/949/Track, http://data.europa.eu/949/VehicleType)</li>
+<li>Added: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. However, the parameter remains as it is also an ERATV parameter."@en</li>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/MilliM</li>
+</ul>
+<ul>
+<li>Deleted: Domain http://data.europa.eu/949/VehicleType</li>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. However, the parameter remains as it is also an ERATV parameter. RINF index has been deleted"@en</li>
+</ul>
+</li>
+<li><a href="#minFlangeHeight">http://data.europa.eu/949/minFlangeHeight</a>
+<ul>
+<li>Added: Domain Union of (http://data.europa.eu/949/SubsetWithCommonCharacteristics, http://data.europa.eu/949/Track, http://data.europa.eu/949/VehicleType)</li>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/MilliM</li>
+<li>Added: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. However, the parameter remains as it is also an ERATV parameter."@en</li>
+</ul>
+<ul>
+<li>Deleted: Domain http://data.europa.eu/949/VehicleType</li>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. However, the parameter remains as it is also an ERATV parameter. RINF index has been deleted"@en</li>
+</ul>
+</li>
+<li><a href="#minFlangeThickness">http://data.europa.eu/949/minFlangeThickness</a>
+<ul>
+<li>Added: Domain Union of (http://data.europa.eu/949/SubsetWithCommonCharacteristics, http://data.europa.eu/949/Track, http://data.europa.eu/949/VehicleType)</li>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/MilliM</li>
+<li>Added: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. However, the parameter remains as it is also an ERATV parameter."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. However, the parameter remains as it is also an ERATV parameter. RINF index has been deleted"@en</li>
+<li>Deleted: Domain http://data.europa.eu/949/VehicleType</li>
+</ul>
+</li>
+<li><a href="#minRimWidth">http://data.europa.eu/949/minRimWidth</a>
+<ul>
+<li>Added: Domain Union of (http://data.europa.eu/949/SubsetWithCommonCharacteristics, http://data.europa.eu/949/Track, http://data.europa.eu/949/VehicleType)</li>
+<li>Added: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. However, the parameter remains as it is also an ERATV parameter."@en</li>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/MilliM</li>
+</ul>
+<ul>
+<li>Deleted: Domain http://data.europa.eu/949/VehicleType</li>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. However, the parameter remains as it is also an ERATV parameter. RINF index has been deleted."@en</li>
+</ul>
+</li>
+<li><a href="#minVehicleImpedance">http://data.europa.eu/949/minVehicleImpedance</a>
+<ul>
+<li>Added: rdfs:comment "Impedance as defined in the specification referenced in Appendix A-1, index [D].
+
+Minimum vehicle impedance (between wheels and pantograph) (only for vehicles equipped for 1500V or 3000V DC)."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Impedance as defined in the specification referenced in Appendix A-1, index [D].
+Impedance as defined in point 3.2.2.1 of ERA/ERTMS/033281 V5.
+Minimum vehicle impedance (between wheels and pantograph) (only for vehicles equipped for 1500V or 3000V DC)."@en</li>
+</ul>
+</li>
+<li><a href="#minWheelDiameter">http://data.europa.eu/949/minWheelDiameter</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/MilliM</li>
+<li>Added: Domain Union of (http://data.europa.eu/949/SubsetWithCommonCharacteristics, http://data.europa.eu/949/Track, http://data.europa.eu/949/VehicleType)</li>
+<li>Added: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. However, the parameter remains as it is also an ERATV parameter."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. However, the parameter remains as it is also an ERATV parameter. RINF index has been deleted."@en</li>
+<li>Deleted: Domain http://data.europa.eu/949/VehicleType</li>
+</ul>
+</li>
+<li><a href="#minimumContactWireHeight">http://data.europa.eu/949/minimumContactWireHeight</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/M</li>
+</ul>
+</li>
+<li><a href="#minimumHorizontalRadius">http://data.europa.eu/949/minimumHorizontalRadius</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/M</li>
+</ul>
+</li>
+<li><a href="#minimumTemperature">http://data.europa.eu/949/minimumTemperature</a>
+<ul>
+<li>Added: rdfs:comment "Minimum temperature allowed for unrestricted operation access, according to European standard."@en</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#integer</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Minimum tempertaure allowed for unrestricted operation access, according to European standard."@en</li>
+<li>Deleted: Range http://www.w3.org/2001/XMLSchema#int</li>
+</ul>
+</li>
+<li><a href="#minimumVerticalRadius">http://data.europa.eu/949/minimumVerticalRadius</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/M</li>
+</ul>
+</li>
+<li><a href="#minimumVerticalRadiusCrest">http://data.europa.eu/949/minimumVerticalRadiusCrest</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/created> "2023-04-05"^^xsd:date</li>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/M</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/created> "2023-04-05"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#minimumVerticalRadiusHollow">http://data.europa.eu/949/minimumVerticalRadiusHollow</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/M</li>
+<li>Added: <http://purl.org/dc/terms/created> "2023-04-05"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/created> "2023-04-05"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#minimumWheelDiameter">http://data.europa.eu/949/minimumWheelDiameter</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/MilliM</li>
+</ul>
+</li>
+<li><a href="#nationalRollingStockFireCategory">http://data.europa.eu/949/nationalRollingStockFireCategory</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Categorisation how a passenger train with a fire on board will continue to operate for a defined time period - according to national rules if they exist."@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-10"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Categorisation how a passenger train with a fire on board will continue to operate for a defined time period — according to national rules if they exist"@en</li>
+</ul>
+</li>
+<li><a href="#nationalValuesBrakeModel">http://data.europa.eu/949/nationalValuesBrakeModel</a>
+<ul>
+<li>Added: rdfs:isDefinedBy http://data.europa.eu/949/</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Set of parameters for adapting the braking curves calculated by the ETCS on-board system to match accuracy, performance and safety margins imposed by the infrastructure manager.
+It copies the content of Packet 3 or of Packet 203 as defined in the specification referenced in Appendix A-1, index [C]."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy "http://data.europa.eu/949/"^^xsd:string</li>
+<li>Deleted: rdfs:comment "Set of parameters for adapting the braking curves calculated by the ETCS on-board system to match accuracy, performance and safety margins imposed by the infrastructure manager.
+It copies the content of Packet 3 or of Packet 203 as defined in the specification referenced in Appendix A-1, index [C]. 
+It copies the content of Packet 3 (for M_VERSION above 2.0) as defined in SRS 7.4.2.1.1 or of Packet 203 (for M_VERSION 1.1) , as defined in SRS 6.5.1.5.22,"@en</li>
+</ul>
+</li>
+<li><a href="#opName">http://data.europa.eu/949/opName</a>
+<ul>
+<li>Added: rdfs:comment "Name normally related to the town or village or to traffic control purpose."@en</li>
+<li>Added: rdfs:label "Name of operational point"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Name of Operational point"@en</li>
+<li>Deleted: rdfs:comment "Name normally related to the town or village or to traffic control purpose.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.3.1 Name of location."@en</li>
+</ul>
+</li>
+<li><a href="#permittedContactForce">http://data.europa.eu/949/permittedContactForce</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/N</li>
+<li>Added: rdfs:comment "Indication of contact force allowed expressed in newton."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of contact force allowed expressed in newtons."@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#phaseInfoLength">http://data.europa.eu/949/phaseInfoLength</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/M</li>
+</ul>
+</li>
+<li><a href="#platformId">http://data.europa.eu/949/platformId</a>
+<ul>
+<li>Added: rdfs:comment "Unique platform identification or platform number within an Operational Point."@en</li>
+<li>Added: Domain http://data.europa.eu/949/PlatformEdge</li>
+<li>Added: rdfs:label "Identification of platform"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Unique platform identification or platform number within an Operational Point.
+In 2.3.5 https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj Identification of platforms."@en</li>
+<li>Deleted: rdfs:label "Platform id"@en</li>
+<li>Deleted: Domain http://data.europa.eu/949/Platform</li>
+</ul>
+</li>
+<li><a href="#publicNetworkRoaming">http://data.europa.eu/949/publicNetworkRoaming</a>
+<ul>
+<li>Added: rdfs:label "Existence of GSM-R roaming to public networks"@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Existence of roaming to a public network.
+In case of Y, provide the name of the public network under parameter \"Details on GSM-R roaming to public networks\"."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Existence of roaming to a public network 
+In case of Y, provide the name of the public network under parameter 1.1.1.3.3.7."@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date</li>
+<li>Deleted: rdfs:label "GSM-R existence of roaming to public networks"@en</li>
+</ul>
+</li>
+<li><a href="#publicNetworkRoamingDetails">http://data.europa.eu/949/publicNetworkRoamingDetails</a>
+<ul>
+<li>Added: rdfs:label "Details on GSM-R roaming to public networks"@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: owl:deprecated "true"^^xsd:boolean</li>
+<li>Deleted: rdfs:label "GSM-R details on roaming to public networks"@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-04-05"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#raisedPantographsDistance">http://data.europa.eu/949/raisedPantographsDistance</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/M</li>
+</ul>
+</li>
+<li><a href="#raisedPantographsDistanceAndSpeed">http://data.europa.eu/949/raisedPantographsDistanceAndSpeed</a>
+<ul>
+<li>Added: rdfs:comment "Indication of maximum number of raised pantographs per train allowed and minimum spacing centre line to centre line of adjacent pantograph heads, expressed in metres, at the given speed.
+Deprecated because of replacement by a class and three integer properties The reason is that the property is composed of three values: [N] is number of pantographs; [NNN] is minimum distance between pantographs, in metres; [NNN] is the speed considered in km/h."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Indication of maximum number of raised pantographs per train allowed and minimum spacing centre line to centre line of adjacent pantograph heads, expressed in metres, at the given speed.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.3.4 Restriction related to the position of Multiple Traction unit(s) to comply with contact line separation (position of pantograph).
+Deprecated because of replacement by a class and three integer properties The reason is that the property is composed of three values: [N] is number of pantographs; [NNN] is minimum distance between pantographs, in metres; [NNN] is the speed considered in km/h."@en</li>
+</ul>
+</li>
+<li><a href="#raisedPantographsNumber">http://data.europa.eu/949/raisedPantographsNumber</a>
+<ul>
+<li>Added: rdfs:label "Number of pantographs."@en</li>
+<li>Added: rdfs:comment "Part of the raised pantographs distance and speed of a track that corresponds to the number of pantographs. 
+The raised pantographs distance and speed is  the indication of maximum number of raised pantographs per train allowed and minimum spacing centre line to centre line of adjacent pantograph heads, expressed in metres, at the given speed."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Number of pantographs."@en</li>
+<li>Deleted: rdfs:label "Part of the raised pantographs distance and speed of a track that corresponds to the number of pantographs. 
+The raised pantographs distance and speed is  the indication of maximum number of raised pantographs per train allowed and minimum spacing centre line to centre line of adjacent pantograph heads, expressed in metres, at the given speed"@en</li>
+</ul>
+</li>
+<li><a href="#raisedPantographsSpeed">http://data.europa.eu/949/raisedPantographsSpeed</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/KiloM-PER-HR</li>
+</ul>
+</li>
+<li><a href="#redLightsRequired">http://data.europa.eu/949/redLightsRequired</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:comment "Sections where two steady red lights are required in accordance with TSI OPE."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Sections where two steady red lights are required in accordance with OPE TSI"@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-12"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#relativePosition">http://data.europa.eu/949/relativePosition</a>
+<ul>
+<li>Added: rdfs:comment "Indicates the position of an object relative to the linear coordinates of the associated topological object.
+The reason for deprecation is that this property is not specified in the latest legal text nor the RINF application guide. Also, no data has been provided for this property."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2023-11-10"^^xsd:date</li>
+<li>Added: owl:deprecated "true"^^xsd:boolean</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-04-01"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Indicates the position of an object relative to the linear coordinates of the associated topological object."@en</li>
+</ul>
+</li>
+<li><a href="#requiredSandingOverride">http://data.europa.eu/949/requiredSandingOverride</a>
+<ul>
+<li>Added: rdfs:comment "Indication whether possibility to activate/deactivate sanding devices by driver, according to instructions from the Infrastructure Manager, is required or not. Deprecated according to the ammendment to the Regulation (EU) 2019/777."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Deprecated according to the ammendment to the Regulation (EU) 2019/777. Indication whether possibility to activate/deactivate sanding devices by driver, according to instructions from the Infrastructure Manager, is required or not.
+In  https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.2.6 Locations of areas designated for testing the sanding equipment (if existing)."@en</li>
+</ul>
+</li>
+<li><a href="#sidingId">http://data.europa.eu/949/sidingId</a>
+<ul>
+<li>Added: rdfs:comment "Unique siding identification or number within an Operational Point."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Unique siding identification or number within an Operational Point.
+IN https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.1 Indication of running lines, loops catch/trap points and access to sidings."@en</li>
+</ul>
+</li>
+<li><a href="#systemSeparationInfoKm">http://data.europa.eu/949/systemSeparationInfoKm</a>
+<ul>
+<li>Added: Domain http://data.europa.eu/949/SystemSeparationInfo</li>
+</ul>
+<ul>
+<li>Deleted: Domain http://data.europa.eu/949/PhaseInfo</li>
+</ul>
+</li>
+<li><a href="#systemSeparationInfoLength">http://data.europa.eu/949/systemSeparationInfoLength</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/M</li>
+</ul>
+</li>
+<li><a href="#tafTAPCode">http://data.europa.eu/949/tafTAPCode</a>
+<ul>
+<li>Added: rdfs:comment "Primary location code developed for information exchange in accordance with the TSIs relating to the telematics applications subsystem."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:label "OP primary location code"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "Primary location code developed for information exchange in accordance with the TSIs relating to telematics applications."@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-11"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Primary code developed for TAF/TAP."@en</li>
+</ul>
+</li>
+<li><a href="#tenGISId">http://data.europa.eu/949/tenGISId</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+<li>Added: rdfs:label "TEN geographic information system identity (GIS ID)"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-10"^^xsd:date</li>
+<li>Deleted: rdfs:label "TEN GIS identity"@en</li>
+</ul>
+</li>
+<li><a href="#trackId">http://data.europa.eu/949/trackId</a>
+<ul>
+<li>Added: rdfs:comment "Unique track identification or unique track number within an OP or a section of line."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Unique track identification or unique track number within a Section of Line.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.1 Indication of running lines, loops catch/trap points and access to sidings, 2.3.4 Identification and plan of tracks, including switches, 2.3.9 Identification of loops."@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-09"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#tsiCompliant">http://data.europa.eu/949/tsiCompliant</a>
+<ul>
+<li>Added: rdfs:comment "Indicates if a certain property is TSI compliant.The reason for deprecation is that it is used in SKOS \"OtherPantographHeads\" and \"TsiPantographHeads\" to indicate in the first case if a SKOS concept is not tsiCompliant (false) and in the second case that the concept is tsiCompliant (true). These two SKOS were originally one SKOS, \"PantographHeads\". Currently with the two SKOS the property is redundant."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "The reason for deprecation is that it is used in SKOS \"OtherPantographHeads\" and \"TsiPantographHeads\" to indicate in the first case if a SKOS concept is not tsiCompliant (false) and in the second case that the concept is tsiCompliant (true). These two SKOS were originally one SKOS, \"PantographHeads\". Currently with the two SKOS the property is redundant."@en</li>
+<li>Deleted: rdfs:comment "Indicates if a certain property is TSI compliant."@en</li>
+</ul>
+</li>
+<li><a href="#tunnelIdentification">http://data.europa.eu/949/tunnelIdentification</a>
+<ul>
+<li>Added: rdfs:comment "Unique tunnel identification or unique number within Member State."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Unique tunnel identification or unique number within Member State.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 3.2.3 Tunnels: location, name, length, specific information such as the existence of walkways and points of safe egress as well as the location of safe areas where evacuation of passengers may take place; fire safety categorisation."@en</li>
+</ul>
+</li>
+<li><a href="#tunnelKilometerEnd">http://data.europa.eu/949/tunnelKilometerEnd</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/created> "2023-03-29"^^xsd:date</li>
+<li>Added: <http://purl.org/dc/terms/isReplacedBy> http://data.europa.eu/949/lineReferenceTunnelEnd</li>
+<li>Added: owl:deprecated "true"^^xsd:boolean</li>
+<li>Added: rdfs:comment "Part of the End of tunnel that indicates the km of the line at the end of a tunnel.
+The End of tunnel is the Geographical coordinates in decimal degrees and km of the line at the end of a tunnel. The reason for deprecation is that the property is now a subproperty of lineReference in order to represent the kilometer in relation to a national railway line"@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-02-05"^^xsd:string</li>
+<li>Added: rdfs:label "End of tunnel kilometer"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/created> "2023-03-14"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Kilometer of the line at the end of a tunnel."@en</li>
+<li>Deleted: rdfs:label "Tunnel kilometer end"@en</li>
+</ul>
+</li>
+<li><a href="#tunnelKilometerStart">http://data.europa.eu/949/tunnelKilometerStart</a>
+<ul>
+<li>Added: <http://data.europa.eu/949/rinfIndex> "1.1.1.1.8.4"^^xsd:string</li>
+<li>Added: rdfs:comment "Part of the Start of tunnel that indicates the km of the line at the beginning of a tunnel.
+The Start of tunnel is the Geographical coordinates in decimal degrees and km of the line at the beginning of a tunnel. The reason for deprecation is that the property is now a subproperty of lineReference in order to represent the kilometer in relation to a national railway line"@en</li>
+<li>Added: rdfs:label "Start of tunnel kilometer"@en</li>
+<li>Added: <http://data.europa.eu/949/XMLName> "SOLTunnelEnd"^^xsd:string</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-02-05"^^xsd:string</li>
+<li>Added: <http://purl.org/dc/terms/isReplacedBy> http://data.europa.eu/949/lineReferenceTunnelStart</li>
+<li>Added: owl:deprecated "true"^^xsd:boolean</li>
+<li>Added: <http://purl.org/dc/terms/created> "2023-03-29"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/created> "2023-03-14"^^xsd:date</li>
+<li>Deleted: rdfs:label "Tunnel kilometer start"@en</li>
+<li>Deleted: <http://data.europa.eu/949/XMLName> "SOLTunnelStart"^^xsd:string</li>
+<li>Deleted: rdfs:comment "Geographical coordinates in decimal degrees and km of the line at the beginning of a tunnel."@en</li>
+<li>Deleted: <http://data.europa.eu/949/rinfIndex> "1.1.1.1.8.3"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#umax2">http://data.europa.eu/949/umax2</a>
+<ul>
+<li>Added: rdfs:label "Umax2 for the French network"@en</li>
+<li>Added: <http://data.europa.eu/949/unitOfMeasure> http://qudt.org/vocab/unit/V</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-06"^^xsd:date</li>
+<li>Deleted: rdfs:label "Umax2 for lines referred to in sections 7.4.2.2.1 and 7.4.2.11.1 of Regulation (EU)1301/2014."@en</li>
+</ul>
+</li>
+<li><a href="#uopid">http://data.europa.eu/949/uopid</a>
+<ul>
+<li>Added: rdfs:comment "Code composed of country code and alphanumeric operational point code."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-08-11"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Code composed of country code and alphanumeric operational point code, as defined in RINF.
+In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations (stations, yards, junctions, freight terminals) and their position relative to the line."@en</li>
+</ul>
+</li>
+<li><a href="#vNvallowovtrp">http://data.europa.eu/949/vNvallowovtrp</a>
+<ul>
+<li>Added: rdfs:comment "Speed limit allowing the driver to select the “override” function in km/h.
+According to the specification referenced in Appendix A-1, index [C]. 
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+ Chapter 7. 7.5.1.161"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Speed limit allowing the driver to select the “override” function
+in km/h
+According to the specification referenced in Appendix A-1, index [C]. 
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+ Chapter 7. 7.5.1.161"@en</li>
+</ul>
+</li>
+<li><a href="#vNvsupovtrp">http://data.europa.eu/949/vNvsupovtrp</a>
+<ul>
+<li>Added: rdfs:comment "Override speed limit to be supervised when the “override” function is active  in km/h.
+According to the specification referenced in Appendix A-1, index [C]. 
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+ Subset 26, chapter 7. 7.5.1.163 V_NVSUPOVTRP."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Override speed limit to be supervised when the “override” function is active  in km/h
+According to the specification referenced in Appendix A-1, index [C]. 
+In https://www.era.europa.eu/sites/default/files/filesystem/ertms/ccs_tsi_annex_a_-_mandatory_specifications/set_of_specifications_3_etcs_b3_r2_gsm-r_b1/index004_-_subset-026_v360.zip
+ Subset 26, chapter 7. 7.5.1.163 V_NVSUPOVTRP."@en</li>
+</ul>
+</li>
+<li><a href="#vehicleKinematicGaugeOther">http://data.europa.eu/949/vehicleKinematicGaugeOther</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/created> "2022-05-30"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/created> "2022-05-30"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#verificationCCS">http://data.europa.eu/949/verificationCCS</a>
+<ul>
+<li>Added: rdfs:label "EC declaration of verification for track relating to compliance with the requirements from TSIs applicable to control, command signalling subsystem"@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2022-07-28"^^xsd:date</li>
+<li>Deleted: rdfs:label "EC declaration of verification for track (CCS)"@en</li>
+</ul>
+</li>
+<li><a href="#verificationENE">http://data.europa.eu/949/verificationENE</a>
+<ul>
+<li>Added: rdfs:label "EC declaration of verification for track relating to compliance with the requirements from TSIs applicable to energy subsystem"@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-11"^^xsd:date</li>
+<li>Deleted: rdfs:label "EC declaration of verification for track (ENE)"@en</li>
+</ul>
+</li>
+<li><a href="#verificationINF">http://data.europa.eu/949/verificationINF</a>
+<ul>
+<li>Added: rdfs:label "EC declaration of verification for track relating to compliance with the requirements from TSIs applicable to infrastructure subsystem"@en</li>
+<li>Added: rdfs:comment "Unique number for EC declarations in accordance with Commission Implementing Regulation (EU) 2019/250.
+In https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019R0777&from=EN."@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "EC declaration of verification for track/siding [INF]"@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2023-03-14"^^xsd:date</li>
+<li>Deleted: rdfs:comment "Unique number for EC declarations in accordance with Commission Implementing Regulation (EU) 2019/250.
+In https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019R0777&from=EN"@en</li>
+</ul>
+</li>
+<li><a href="#verificationSRT">http://data.europa.eu/949/verificationSRT</a>
+<ul>
+<li>Added: rdfs:label "EC declaration of verification relating to compliance with the requirements from TSIs applicable to railway tunnel"@en</li>
+<li>Added: <http://purl.org/dc/terms/modified> "2024-01-08"^^xsd:date</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "EC declaration of verification for tunnel (SRT)"@en</li>
+<li>Deleted: <http://purl.org/dc/terms/modified> "2021-09-02"^^xsd:date</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/dc/terms/identifier">http://purl.org/dc/terms/identifier</a>
+<ul>
+<li>Added: <http://purl.org/dc/terms/description> "Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs."@en</li>
+<li>Added: rdfs:comment "An unambiguous reference to the resource within a given context."@en</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: rdfs:isDefinedBy http://purl.org/dc/terms/</li>
+<li>Added: rdfs:label "Identifier"@en</li>
+</ul>
+</li>
+<li><a href="#http://schema.org/url">http://schema.org/url</a>
+<ul>
+<li>Added: rdfs:label "url"@en</li>
+<li>Added: rdfs:comment "URL of the item."@en</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/ns/org#identifier">http://www.w3.org/ns/org#identifier</a>
+<ul>
+<li>Added: rdfs:comment "Código o identificador, como por ejemplo el CIF de una empresa, que permite identificar de forma inequívoca a una organización. Existen muchos códigos de identificación tanto nacionales como internacionales. Esta ontología no obliga al uso de ningún esquema en concreto. Los códigos de identificación utilizados en cada caso se deberían indicar mediante el uso de la propiedad “datatype” del valor del identificador. El uso de la propiedad “datatype” para especificar el esquema de notación utilizado está en consonancia con las buenas prácticas recomendadas para el uso de la propiedad `skos:notation`, de la que esta propiedad es una especialización."@es</li>
+<li>Added: rdfs:label "identificatore"@it</li>
+<li>Added: rdfs:comment "Donne un identifiant, comme par exemple le numéro d'enregistrement d'une entreprise, qui peut être utilisé comme identifiant unique pour l'Organisation. De nombreux schémas nationaux et internationaux sont disponibles. Cette ontologie reste neutre par rapport au schéma utilisé. Le schéma particulier utilisé devrait être indiqué par le `datatype` de la valeur de l'identifiant. Utiliser les datatypes pour distinguer les schémas de notation est cohérent avec les bonnes pratiques pour `skos:notation` dont cette propriété est une spécialisation."@fr</li>
+<li>Added: rdfs:comment "組織を一意に識別するために使用できる会社登録番号などの識別子を与えます。"@ja</li>
+<li>Added: rdfs:label "identifier"@en</li>
+<li>Added: rdfs:comment "Indica un identificatore univoco per l'organizzazione, come ad esempio la partita IVA di un'azienda. Molti schemi di identificazione a livello nazionale e internazionale sono disponibili allo scopo. L'ontologia ORG è neutrale rispetto allo schema da utilizzare. Lo schema di identificazione dovrebbe essere indicato dal datatype del valore dell'identificatore. L'uso del datatype per distinguere lo schema di identificazione è coerente con le best practice per `skos:notation`, di cui questa proprietà è una specializzazione."@it</li>
+<li>Added: rdfs:label "identifiant"@fr</li>
+<li>Added: rdfs:isDefinedBy http://www.w3.org/ns/org</li>
+<li>Added: Domain http://www.w3.org/ns/org#Organization</li>
+<li>Added: rdfs:comment "Gives an identifier, such as a company registration number, that can be used to used to uniquely identify the organization. Many different national and international identier schemes are available. The org ontology is neutral to which schemes are used. The particular identifier scheme should be indicated by the datatype of the identifier value.  Using datatypes to distinguish the notation scheme used is consistent with recommended best practice for `skos:notation` of which this property is a specialization."@en</li>
+<li>Added: SubProperty of http://www.w3.org/2004/02/skos/core#notation</li>
+<li>Added: rdfs:label "tiene identificador"@es</li>
+</ul>
+</li>
+<li><a href="#http://xmlns.com/foaf/0.1/name">http://xmlns.com/foaf/0.1/name</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Literal</li>
+<li>Added: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string</li>
+<li>Added: rdfs:comment "A name for some thing."^^xsd:string</li>
+<li>Added: rdfs:isDefinedBy http://xmlns.com/foaf/0.1/</li>
+<li>Added: Domain http://www.w3.org/2002/07/owl#Thing</li>
+<li>Added: rdfs:label "name"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#http://xmlns.com/foaf/0.1/nick">http://xmlns.com/foaf/0.1/nick</a>
+<ul>
+<li>Added: rdfs:comment "A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames)."^^xsd:string</li>
+<li>Added: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string</li>
+<li>Added: rdfs:isDefinedBy http://xmlns.com/foaf/0.1/</li>
+<li>Added: rdfs:label "nickname"^^xsd:string</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added data properties</u></summary>
+<ul><li><a href="#documentUrl">http://data.europa.eu/949/documentUrl</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+<li>Added: Domain http://data.europa.eu/949/Document</li>
+</ul>
+</li>
+<li><a href="#ertmsErrorCorrectionsOnBoard">http://data.europa.eu/949/ertmsErrorCorrectionsOnBoard</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#anyURI</li>
+<li>Added: Domain Union of (http://data.europa.eu/949/SubsetWithCommonCharacteristics, http://data.europa.eu/949/Track)</li>
+</ul>
+</li>
+<li><a href="#lengthOfPlatform">http://data.europa.eu/949/lengthOfPlatform</a>
+<ul>
+<li>Added: SubProperty of http://data.europa.eu/949/length</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#double</li>
+<li>Added: Domain http://data.europa.eu/949/PlatformEdge</li>
+</ul>
+</li>
+<li><a href="#lengthOfSectionOfLine">http://data.europa.eu/949/lengthOfSectionOfLine</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#double</li>
+<li>Added: SubProperty of http://data.europa.eu/949/length</li>
+<li>Added: Domain http://data.europa.eu/949/SectionOfLine</li>
+</ul>
+</li>
+<li><a href="#lengthOfSiding">http://data.europa.eu/949/lengthOfSiding</a>
+<ul>
+<li>Added: SubProperty of http://data.europa.eu/949/length</li>
+<li>Added: Domain http://data.europa.eu/949/Siding</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#double</li>
+</ul>
+</li>
+<li><a href="#lengthOfTunnel">http://data.europa.eu/949/lengthOfTunnel</a>
+<ul>
+<li>Added: Domain http://data.europa.eu/949/Tunnel</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#double</li>
+<li>Added: SubProperty of http://data.europa.eu/949/length</li>
+</ul>
+</li>
+<li><a href="#phaseInfoChangeSupplySystem">http://data.europa.eu/949/phaseInfoChangeSupplySystem</a>
+<ul>
+<li>Added: Domain http://data.europa.eu/949/PhaseInfo</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#boolean</li>
+</ul>
+</li>
+<li><a href="#phaseInfoDistanceType">http://data.europa.eu/949/phaseInfoDistanceType</a>
+<ul>
+<li>Added: Domain http://data.europa.eu/949/PhaseInfo</li>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#http://www.opengis.net/ont/geosparql#asWKT">http://www.opengis.net/ont/geosparql#asWKT</a>
+<ul>
+<li>Added: Domain http://www.opengis.net/ont/geosparql#Geometry</li>
+<li>Added: SubProperty of http://www.opengis.net/ont/geosparql#hasSerialization</li>
+<li>Added: Range http://www.opengis.net/ont/geosparql#wktLiteral</li>
+</ul>
+</li>
+<li><a href="#http://www.opengis.net/ont/geosparql#hasSerialization">http://www.opengis.net/ont/geosparql#hasSerialization</a>
+</li>
+<li><a href="#http://www.w3.org/2004/02/skos/core#notation">http://www.w3.org/2004/02/skos/core#notation</a>
+</li>
+</ul></details><details><summary><u>Deleted data properties</u></summary>
+<ul><li><a href="#additionalBrakingInformationDocument">http://data.europa.eu/949/additionalBrakingInformationDocument</a>
+</li>
+<li><a href="#compatibilityProcedureDocument">http://data.europa.eu/949/compatibilityProcedureDocument</a>
+</li>
+<li><a href="#eddyCurrentBrakingConditionsDocument">http://data.europa.eu/949/eddyCurrentBrakingConditionsDocument</a>
+</li>
+<li><a href="#gaugingTransversalDocument">http://data.europa.eu/949/gaugingTransversalDocument</a>
+</li>
+<li><a href="#gsmRAdditionalInfo">http://data.europa.eu/949/gsmRAdditionalInfo</a>
+</li>
+<li><a href="#localRulesOrRestrictionsDoc">http://data.europa.eu/949/localRulesOrRestrictionsDoc</a>
+</li>
+<li><a href="#magneticBrakingConditionsDocument">http://data.europa.eu/949/magneticBrakingConditionsDocument</a>
+</li>
+<li><a href="#railInclinationMeasurement">http://data.europa.eu/949/railInclinationMeasurement</a>
+</li>
+<li><a href="#trainDetectionSystemSpecificCheckDocument">http://data.europa.eu/949/trainDetectionSystemSpecificCheckDocument</a>
+</li>
+<li><a href="#tunnelDocRef">http://data.europa.eu/949/tunnelDocRef</a>
+</li>
+</ul></details></div>
