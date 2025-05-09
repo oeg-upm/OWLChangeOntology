@@ -1,11 +1,11 @@
 @prefix eli: <http://data.europa.eu/eli/ontology#> .
 @prefix och: <https://w3id.org/def/och#> .
 
-<http://example.org/Change_718015692231000>
+<http://example.org/eli/change/718015692231000>
         a                             och:RemoveDomain ;
         och:removeDomainFromProperty  eli:number .
 
-<http://example.org/Change_718015683595800>
+<http://example.org/eli/change/718015683595800>
         a       och:RemoveAnnotationFromEntity ;
         och:removedAnnotationFromEntity
                 <http://www.w3.org/2004/02/skos/core#historyNote> ;
@@ -14,7 +14,7 @@
         och:targetRemoveAnnotationFromEntity
                 "\"v1.2 : improved definition\"@en" .
 
-<http://example.org/Change_718015690226200>
+<http://example.org/eli/change/718015690226200>
         a                            och:AddAnnotationToEntity ;
         och:addedAnnotationToEntity  <http://www.w3.org/2004/02/skos/core#historyNote> ;
         och:sourceAddAnnotationToEntity
@@ -22,17 +22,17 @@
         och:targetAddAnnotationToEntity
                 "\"v1.5 : was made a subproperty of eli:is_referred_to_by\"@en" .
 
-<http://example.org/Change_718015691708200>
+<http://example.org/eli/change/718015691708200>
         a                         och:AddRangeObjectProperty ;
         och:addedObjectRange      <http://www.w3.org/2002/07/owl#Thing> ;
         och:addedRangeToProperty  eli:refers_to .
 
-<http://example.org/Change_718015690359500>
+<http://example.org/eli/change/718015690359500>
         a                         och:AddSubProperty ;
         och:sourceAddSubProperty  eli:cited_by_case_law ;
         och:targetAddSubProperty  eli:is_referred_to_by .
 
-<http://example.org/Change_718015690138000>
+<http://example.org/eli/change/718015690138000>
         a                            och:AddAnnotationToEntity ;
         och:addedAnnotationToEntity  <http://www.w3.org/2002/07/owl#versionInfo> ;
         och:sourceAddAnnotationToEntity
@@ -40,7 +40,7 @@
         och:targetAddAnnotationToEntity
                 "\"modified in v1.5\"^^xsd:string" .
 
-<http://example.org/Change_718015690491800>
+<http://example.org/eli/change/718015690491800>
         a                            och:AddAnnotationToEntity ;
         och:addedAnnotationToEntity  <http://www.w3.org/2004/02/skos/core#historyNote> ;
         och:sourceAddAnnotationToEntity
@@ -48,7 +48,7 @@
         och:targetAddAnnotationToEntity
                 "\"v1.5 : was made a subproperty of eli:refers_to\"@en" .
 
-<http://example.org/Change_718015689520400>
+<http://example.org/eli/change/718015689520400>
         a                            och:AddAnnotationToEntity ;
         och:addedAnnotationToEntity  <http://www.w3.org/2004/02/skos/core#historyNote> ;
         och:sourceAddAnnotationToEntity
@@ -56,12 +56,12 @@
         och:targetAddAnnotationToEntity
                 "\"v1.5 : was made a subproperty of eli:is_referred_to_by\nv1.2 : improved definition\"@en" .
 
-<http://example.org/Change_718015689866600>
+<http://example.org/eli/change/718015689866600>
         a                         och:AddSubProperty ;
         och:sourceAddSubProperty  eli:cited_by ;
         och:targetAddSubProperty  eli:is_referred_to_by .
 
-<http://example.org/Change_718015692058700>
+<http://example.org/eli/change/718015692058700>
         a       och:RemoveAnnotationFromEntity ;
         och:removedAnnotationFromEntity
                 <http://www.w3.org/2000/01/rdf-schema#comment> ;
@@ -70,11 +70,11 @@
         och:targetRemoveAnnotationFromEntity
                 "\"An identifier or other disambiguating feature for a legal resource or legal expression. This can be the number of a legislation, the number of an article, or the issue number of an official journal.\"@en" .
 
-<http://example.org/Change_718015691544200>
+<http://example.org/eli/change/718015691544200>
         a                        och:AddObjectProperty ;
         och:addedObjectProperty  eli:refers_to .
 
-<http://example.org/Change_718015689156700>
+<http://example.org/eli/change/718015689156700>
         a       och:RemoveAnnotationFromEntity ;
         och:removedAnnotationFromEntity
                 <http://www.w3.org/2002/07/owl#versionInfo> ;
@@ -83,12 +83,12 @@
         och:targetRemoveAnnotationFromEntity
                 "\"modified in v1.2\"^^xsd:string" .
 
-<http://example.org/Change_718015690424700>
+<http://example.org/eli/change/718015690424700>
         a                         och:AddSubProperty ;
         och:sourceAddSubProperty  eli:cites ;
         och:targetAddSubProperty  eli:refers_to .
 
-<http://example.org/Change_718015693227900>
+<http://example.org/eli/change/718015693227900>
         a                            och:AddAnnotationToEntity ;
         och:addedAnnotationToEntity  <http://www.w3.org/2000/01/rdf-schema#comment> ;
         och:sourceAddAnnotationToEntity
@@ -96,7 +96,7 @@
         och:targetAddAnnotationToEntity
                 "\"An identifier or other disambiguating feature for a work or expression. This can be the number of a legislation, the number of an article, or the issue number of an official journal.\"@en" .
 
-<http://example.org/Change_718015692633600>
+<http://example.org/eli/change/718015692633600>
         a                            och:AddAnnotationToEntity ;
         och:addedAnnotationToEntity  <http://www.w3.org/2004/02/skos/core#historyNote> ;
         och:sourceAddAnnotationToEntity
@@ -104,16 +104,16 @@
         och:targetAddAnnotationToEntity
                 "\"v1.5 : broaden the domain to Work or Expression instead of LegalResource or LegalExpression.\"@en" .
 
-<http://example.org/Change_718015690973100>
+<http://example.org/eli/change/718015690973100>
         a                         och:AddRangeObjectProperty ;
         och:addedRangeToProperty  eli:is_referred_to_by .
 
-<http://example.org/Change_718015690818800>
+<http://example.org/eli/change/718015690818800>
         a                          och:AddDomain ;
         och:addedDomain            <http://www.w3.org/2002/07/owl#Thing> ;
         och:addedDomainToProperty  eli:is_referred_to_by .
 
-<http://example.org/Change_718015692833200>
+<http://example.org/eli/change/718015692833200>
         a                            och:AddAnnotationToEntity ;
         och:addedAnnotationToEntity  <http://www.w3.org/2002/07/owl#versionInfo> ;
         och:sourceAddAnnotationToEntity
@@ -121,7 +121,7 @@
         och:targetAddAnnotationToEntity
                 "\"modified in v1.5\"@en" .
 
-<http://example.org/Change_718015690587900>
+<http://example.org/eli/change/718015690587900>
         a                            och:AddAnnotationToEntity ;
         och:addedAnnotationToEntity  <http://www.w3.org/2002/07/owl#versionInfo> ;
         och:sourceAddAnnotationToEntity
@@ -129,7 +129,7 @@
         och:targetAddAnnotationToEntity
                 "\"modified in v1.5\"@en" .
 
-<http://example.org/Change_718015690302600>
+<http://example.org/eli/change/718015690302600>
         a                            och:AddAnnotationToEntity ;
         och:addedAnnotationToEntity  <http://www.w3.org/2002/07/owl#versionInfo> ;
         och:sourceAddAnnotationToEntity
@@ -137,14 +137,14 @@
         och:targetAddAnnotationToEntity
                 "\"modified in v1.5\"@en" .
 
-<http://example.org/Change_718015692900100>
+<http://example.org/eli/change/718015692900100>
         a                          och:AddDomain ;
         och:addedDomainToProperty  eli:number .
 
-<http://example.org/Change_718015690668300>
+<http://example.org/eli/change/718015690668300>
         a                        och:AddObjectProperty ;
         och:addedObjectProperty  eli:is_referred_to_by .
 
-<http://example.org/Change_718015691778700>
+<http://example.org/eli/change/718015691778700>
         a                          och:AddDomain ;
         och:addedDomainToProperty  eli:refers_to .
