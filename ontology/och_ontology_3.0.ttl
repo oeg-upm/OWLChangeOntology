@@ -990,3 +990,9 @@ och:targetRemoveAnnotationFromEntity a owl:ObjectProperty;
     rdfs:comment "The content of the annotation being removed from an entity.";
     rdfs:domain och:RemoveAnnotationFromEntity ;
     rdfs:range rdfs:Resource .
+
+och:justification a owl:DatatypeProperty;
+    rdfs:label "justification" ;
+    rdfs:comment "The reasons and justifications behind a particular change.";
+    rdfs:domain och:OntologicalChange ;
+    rdfs:range xsd:string .
