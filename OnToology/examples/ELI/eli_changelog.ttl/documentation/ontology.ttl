@@ -1,0 +1,275 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/def/och#addedAnnotationToEntity
+<https://w3id.org/def/och#addedAnnotationToEntity> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/och#addedDomain
+<https://w3id.org/def/och#addedDomain> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/och#addedDomainToProperty
+<https://w3id.org/def/och#addedDomainToProperty> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/och#addedObjectProperty
+<https://w3id.org/def/och#addedObjectProperty> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/och#addedObjectRange
+<https://w3id.org/def/och#addedObjectRange> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/och#addedRangeToProperty
+<https://w3id.org/def/och#addedRangeToProperty> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/och#removeDomainFromProperty
+<https://w3id.org/def/och#removeDomainFromProperty> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/och#removedAnnotationFromEntity
+<https://w3id.org/def/och#removedAnnotationFromEntity> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/och#sourceAddAnnotationToEntity
+<https://w3id.org/def/och#sourceAddAnnotationToEntity> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/och#sourceAddSubProperty
+<https://w3id.org/def/och#sourceAddSubProperty> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/och#sourceRemoveAnnotationFromEntity
+<https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/och#targetAddAnnotationToEntity
+<https://w3id.org/def/och#targetAddAnnotationToEntity> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/och#targetAddSubProperty
+<https://w3id.org/def/och#targetAddSubProperty> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/och#targetRemoveAnnotationFromEntity
+<https://w3id.org/def/och#targetRemoveAnnotationFromEntity> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/def/och#AddAnnotationToEntity
+<https://w3id.org/def/och#AddAnnotationToEntity> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/och#AddDomain
+<https://w3id.org/def/och#AddDomain> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/och#AddObjectProperty
+<https://w3id.org/def/och#AddObjectProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/och#AddRangeObjectProperty
+<https://w3id.org/def/och#AddRangeObjectProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/och#AddSubProperty
+<https://w3id.org/def/och#AddSubProperty> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/och#RemoveAnnotationFromEntity
+<https://w3id.org/def/och#RemoveAnnotationFromEntity> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/och#RemoveDomain
+<https://w3id.org/def/och#RemoveDomain> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.org/eli/change/718015683595800
+<http://example.org/eli/change/718015683595800> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#RemoveAnnotationFromEntity> ;
+                                                <https://w3id.org/def/och#removedAnnotationFromEntity> <http://www.w3.org/2004/02/skos/core#historyNote> ;
+                                                <https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> <Optional[http://data.europa.eu/eli/ontology#cited_by]> ;
+                                                <https://w3id.org/def/och#targetRemoveAnnotationFromEntity> "\"v1.2 : improved definition\"@en" .
+
+
+###  http://example.org/eli/change/718015689156700
+<http://example.org/eli/change/718015689156700> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#RemoveAnnotationFromEntity> ;
+                                                <https://w3id.org/def/och#removedAnnotationFromEntity> owl:versionInfo ;
+                                                <https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> <Optional[http://data.europa.eu/eli/ontology#cited_by]> ;
+                                                <https://w3id.org/def/och#targetRemoveAnnotationFromEntity> "\"modified in v1.2\"^^xsd:string" .
+
+
+###  http://example.org/eli/change/718015689520400
+<http://example.org/eli/change/718015689520400> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddAnnotationToEntity> ;
+                                                <https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2004/02/skos/core#historyNote> ;
+                                                <https://w3id.org/def/och#sourceAddAnnotationToEntity> <Optional[http://data.europa.eu/eli/ontology#cited_by]> ;
+                                                <https://w3id.org/def/och#targetAddAnnotationToEntity> """\"v1.5 : was made a subproperty of eli:is_referred_to_by
+v1.2 : improved definition\"@en""" .
+
+
+###  http://example.org/eli/change/718015689866600
+<http://example.org/eli/change/718015689866600> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddSubProperty> ;
+                                                <https://w3id.org/def/och#sourceAddSubProperty> <http://data.europa.eu/eli/ontology#cited_by> ;
+                                                <https://w3id.org/def/och#targetAddSubProperty> <http://data.europa.eu/eli/ontology#is_referred_to_by> .
+
+
+###  http://example.org/eli/change/718015690138000
+<http://example.org/eli/change/718015690138000> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddAnnotationToEntity> ;
+                                                <https://w3id.org/def/och#addedAnnotationToEntity> owl:versionInfo ;
+                                                <https://w3id.org/def/och#sourceAddAnnotationToEntity> <Optional[http://data.europa.eu/eli/ontology#cited_by]> ;
+                                                <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"modified in v1.5\"^^xsd:string" .
+
+
+###  http://example.org/eli/change/718015690226200
+<http://example.org/eli/change/718015690226200> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddAnnotationToEntity> ;
+                                                <https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2004/02/skos/core#historyNote> ;
+                                                <https://w3id.org/def/och#sourceAddAnnotationToEntity> <Optional[http://data.europa.eu/eli/ontology#cited_by_case_law]> ;
+                                                <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"v1.5 : was made a subproperty of eli:is_referred_to_by\"@en" .
+
+
+###  http://example.org/eli/change/718015690302600
+<http://example.org/eli/change/718015690302600> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddAnnotationToEntity> ;
+                                                <https://w3id.org/def/och#addedAnnotationToEntity> owl:versionInfo ;
+                                                <https://w3id.org/def/och#sourceAddAnnotationToEntity> <Optional[http://data.europa.eu/eli/ontology#cited_by_case_law]> ;
+                                                <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"modified in v1.5\"@en" .
+
+
+###  http://example.org/eli/change/718015690359500
+<http://example.org/eli/change/718015690359500> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddSubProperty> ;
+                                                <https://w3id.org/def/och#sourceAddSubProperty> <http://data.europa.eu/eli/ontology#cited_by_case_law> ;
+                                                <https://w3id.org/def/och#targetAddSubProperty> <http://data.europa.eu/eli/ontology#is_referred_to_by> .
+
+
+###  http://example.org/eli/change/718015690424700
+<http://example.org/eli/change/718015690424700> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddSubProperty> ;
+                                                <https://w3id.org/def/och#sourceAddSubProperty> <http://data.europa.eu/eli/ontology#cites> ;
+                                                <https://w3id.org/def/och#targetAddSubProperty> <http://data.europa.eu/eli/ontology#refers_to> .
+
+
+###  http://example.org/eli/change/718015690491800
+<http://example.org/eli/change/718015690491800> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddAnnotationToEntity> ;
+                                                <https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2004/02/skos/core#historyNote> ;
+                                                <https://w3id.org/def/och#sourceAddAnnotationToEntity> <Optional[http://data.europa.eu/eli/ontology#cites]> ;
+                                                <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"v1.5 : was made a subproperty of eli:refers_to\"@en" .
+
+
+###  http://example.org/eli/change/718015690587900
+<http://example.org/eli/change/718015690587900> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddAnnotationToEntity> ;
+                                                <https://w3id.org/def/och#addedAnnotationToEntity> owl:versionInfo ;
+                                                <https://w3id.org/def/och#sourceAddAnnotationToEntity> <Optional[http://data.europa.eu/eli/ontology#cites]> ;
+                                                <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"modified in v1.5\"@en" .
+
+
+###  http://example.org/eli/change/718015690668300
+<http://example.org/eli/change/718015690668300> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddObjectProperty> ;
+                                                <https://w3id.org/def/och#addedObjectProperty> <http://data.europa.eu/eli/ontology#is_referred_to_by> .
+
+
+###  http://example.org/eli/change/718015690818800
+<http://example.org/eli/change/718015690818800> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddDomain> ;
+                                                <https://w3id.org/def/och#addedDomain> owl:Thing ;
+                                                <https://w3id.org/def/och#addedDomainToProperty> <http://data.europa.eu/eli/ontology#is_referred_to_by> .
+
+
+###  http://example.org/eli/change/718015690973100
+<http://example.org/eli/change/718015690973100> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddRangeObjectProperty> ;
+                                                <https://w3id.org/def/och#addedRangeToProperty> <http://data.europa.eu/eli/ontology#is_referred_to_by> .
+
+
+###  http://example.org/eli/change/718015691544200
+<http://example.org/eli/change/718015691544200> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddObjectProperty> ;
+                                                <https://w3id.org/def/och#addedObjectProperty> <http://data.europa.eu/eli/ontology#refers_to> .
+
+
+###  http://example.org/eli/change/718015691708200
+<http://example.org/eli/change/718015691708200> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddRangeObjectProperty> ;
+                                                <https://w3id.org/def/och#addedObjectRange> owl:Thing ;
+                                                <https://w3id.org/def/och#addedRangeToProperty> <http://data.europa.eu/eli/ontology#refers_to> .
+
+
+###  http://example.org/eli/change/718015691778700
+<http://example.org/eli/change/718015691778700> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddDomain> ;
+                                                <https://w3id.org/def/och#addedDomainToProperty> <http://data.europa.eu/eli/ontology#refers_to> .
+
+
+###  http://example.org/eli/change/718015692058700
+<http://example.org/eli/change/718015692058700> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#RemoveAnnotationFromEntity> ;
+                                                <https://w3id.org/def/och#removedAnnotationFromEntity> rdfs:comment ;
+                                                <https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> <Optional[http://data.europa.eu/eli/ontology#number]> ;
+                                                <https://w3id.org/def/och#targetRemoveAnnotationFromEntity> "\"An identifier or other disambiguating feature for a legal resource or legal expression. This can be the number of a legislation, the number of an article, or the issue number of an official journal.\"@en" .
+
+
+###  http://example.org/eli/change/718015692231000
+<http://example.org/eli/change/718015692231000> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#RemoveDomain> ;
+                                                <https://w3id.org/def/och#removeDomainFromProperty> <http://data.europa.eu/eli/ontology#number> .
+
+
+###  http://example.org/eli/change/718015692633600
+<http://example.org/eli/change/718015692633600> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddAnnotationToEntity> ;
+                                                <https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2004/02/skos/core#historyNote> ;
+                                                <https://w3id.org/def/och#sourceAddAnnotationToEntity> <Optional[http://data.europa.eu/eli/ontology#number]> ;
+                                                <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"v1.5 : broaden the domain to Work or Expression instead of LegalResource or LegalExpression.\"@en" .
+
+
+###  http://example.org/eli/change/718015692833200
+<http://example.org/eli/change/718015692833200> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddAnnotationToEntity> ;
+                                                <https://w3id.org/def/och#addedAnnotationToEntity> owl:versionInfo ;
+                                                <https://w3id.org/def/och#sourceAddAnnotationToEntity> <Optional[http://data.europa.eu/eli/ontology#number]> ;
+                                                <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"modified in v1.5\"@en" .
+
+
+###  http://example.org/eli/change/718015692900100
+<http://example.org/eli/change/718015692900100> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddDomain> ;
+                                                <https://w3id.org/def/och#addedDomainToProperty> <http://data.europa.eu/eli/ontology#number> .
+
+
+###  http://example.org/eli/change/718015693227900
+<http://example.org/eli/change/718015693227900> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/def/och#AddAnnotationToEntity> ;
+                                                <https://w3id.org/def/och#addedAnnotationToEntity> rdfs:comment ;
+                                                <https://w3id.org/def/och#sourceAddAnnotationToEntity> <Optional[http://data.europa.eu/eli/ontology#number]> ;
+                                                <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"An identifier or other disambiguating feature for a work or expression. This can be the number of a legislation, the number of an article, or the issue number of an official journal.\"@en" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

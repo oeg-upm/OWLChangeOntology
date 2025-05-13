@@ -1,0 +1,30 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "eli:LegalResourceSubdivision" "eli:LegalValue" "eli:Expression" "eli:SubdivisionType" "eli:Language" "eli:ResourceType" "eli:WorkSubdivision" "eli:Organization" "eli:ComplexWork" "eli:LegalResource" "eli:Manifestation" "eli:WorkType" "frbroo:F22_Self-Contained_Expression" "frbroo:F11_Corporate_Body" "eli:Work" "eli:Person" "frbroo:F3_Manifestation_Product_Type" "eli:Format" "frbroo:F10_Person" "eli:AdministrativeArea" "eli:LegalExpression" "eli:InForce" "eli:Agent" "eli:Version" "crm:E39_Actor" "eli:FormatType" "frbroo:F1_Work" ; /*classes style*/
+	"eli:Language" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
+	"eli:Manifestation" -> "frbroo:F3_Manifestation_Product_Type" [ label = "rdfs:subClassOf" ];
+	"eli:WorkType" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
+	"eli:LegalValue" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
+	"eli:InForce" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
+	"eli:WorkSubdivision" -> "eli:Work" [ label = "rdfs:subClassOf" ];
+	"eli:Version" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
+	"eli:FormatType" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
+	"eli:LegalResource" -> "eli:Work" [ label = "rdfs:subClassOf" ];
+	"eli:LegalExpression" -> "eli:Expression" [ label = "rdfs:subClassOf" ];
+	"eli:Organization" -> "frbroo:F11_Corporate_Body" [ label = "rdfs:subClassOf" ];
+	"eli:Organization" -> "eli:Agent" [ label = "rdfs:subClassOf" ];
+	"eli:AdministrativeArea" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
+	"eli:Work" -> "frbroo:F1_Work" [ label = "rdfs:subClassOf" ];
+	"eli:Expression" -> "frbroo:F22_Self-Contained_Expression" [ label = "rdfs:subClassOf" ];
+	"eli:LegalResourceSubdivision" -> "eli:WorkSubdivision" [ label = "rdfs:subClassOf" ];
+	"eli:LegalResourceSubdivision" -> "eli:LegalResource" [ label = "rdfs:subClassOf" ];
+	"eli:ResourceType" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
+	"eli:ComplexWork" -> "eli:Work" [ label = "rdfs:subClassOf" ];
+	"eli:SubdivisionType" -> "skos:Concept" [ label = "rdfs:subClassOf" ];
+	"eli:Person" -> "frbroo:F10_Person" [ label = "rdfs:subClassOf" ];
+	"eli:Person" -> "eli:Agent" [ label = "rdfs:subClassOf" ];
+	"eli:Format" -> "eli:Manifestation" [ label = "rdfs:subClassOf" ];
+	"eli:Agent" -> "crm:E39_Actor" [ label = "rdfs:subClassOf" ];
+
+}

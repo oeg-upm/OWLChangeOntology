@@ -1,0 +1,139 @@
+{
+  "@context" : {
+    "AddClass" : {
+      "@id" : "https://w3id.org/def/och#AddClass"
+    },
+    "targetRemoveAnnotationFromEntity" : {
+      "@id" : "https://w3id.org/def/och#targetRemoveAnnotationFromEntity"
+    },
+    "addedDataRange" : {
+      "@id" : "https://w3id.org/def/och#addedDataRange"
+    },
+    "RemoveDataProperty" : {
+      "@id" : "https://w3id.org/def/och#RemoveDataProperty"
+    },
+    "removeDomainFromProperty" : {
+      "@id" : "https://w3id.org/def/och#removeDomainFromProperty"
+    },
+    "addedAnnotationToEntity" : {
+      "@id" : "https://w3id.org/def/och#addedAnnotationToEntity"
+    },
+    "RemoveAnnotationFromEntity" : {
+      "@id" : "https://w3id.org/def/och#RemoveAnnotationFromEntity"
+    },
+    "RemoveObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#RemoveObjectProperty"
+    },
+    "RemoveSubClass" : {
+      "@id" : "https://w3id.org/def/och#RemoveSubClass"
+    },
+    "targetRemoveSubClass" : {
+      "@id" : "https://w3id.org/def/och#targetRemoveSubClass"
+    },
+    "AddAnnotationToEntity" : {
+      "@id" : "https://w3id.org/def/och#AddAnnotationToEntity"
+    },
+    "AddSubProperty" : {
+      "@id" : "https://w3id.org/def/och#AddSubProperty"
+    },
+    "sourceAddSubClass" : {
+      "@id" : "https://w3id.org/def/och#sourceAddSubClass"
+    },
+    "addedDomainToProperty" : {
+      "@id" : "https://w3id.org/def/och#addedDomainToProperty"
+    },
+    "sourceRemoveSubClass" : {
+      "@id" : "https://w3id.org/def/och#sourceRemoveSubClass"
+    },
+    "addedRangeToProperty" : {
+      "@id" : "https://w3id.org/def/och#addedRangeToProperty"
+    },
+    "removedDomain" : {
+      "@id" : "https://w3id.org/def/och#removedDomain"
+    },
+    "RemoveClass" : {
+      "@id" : "https://w3id.org/def/och#RemoveClass"
+    },
+    "addedClass" : {
+      "@id" : "https://w3id.org/def/och#addedClass"
+    },
+    "RemoveRangeDataProperty" : {
+      "@id" : "https://w3id.org/def/och#RemoveRangeDataProperty"
+    },
+    "addedDataProperty" : {
+      "@id" : "https://w3id.org/def/och#addedDataProperty"
+    },
+    "AddObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#AddObjectProperty"
+    },
+    "addedObjectRange" : {
+      "@id" : "https://w3id.org/def/och#addedObjectRange"
+    },
+    "RemoveRangeObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#RemoveRangeObjectProperty"
+    },
+    "addedObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#addedObjectProperty"
+    },
+    "targetAddSubClass" : {
+      "@id" : "https://w3id.org/def/och#targetAddSubClass"
+    },
+    "removedDataRange" : {
+      "@id" : "https://w3id.org/def/och#removedDataRange"
+    },
+    "AddRangeObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#AddRangeObjectProperty"
+    },
+    "AddDomain" : {
+      "@id" : "https://w3id.org/def/och#AddDomain"
+    },
+    "sourceAddSubProperty" : {
+      "@id" : "https://w3id.org/def/och#sourceAddSubProperty"
+    },
+    "AddSubClass" : {
+      "@id" : "https://w3id.org/def/och#AddSubClass"
+    },
+    "removedObjectRange" : {
+      "@id" : "https://w3id.org/def/och#removedObjectRange"
+    },
+    "AddRangeDataProperty" : {
+      "@id" : "https://w3id.org/def/och#AddRangeDataProperty"
+    },
+    "sourceAddAnnotationToEntity" : {
+      "@id" : "https://w3id.org/def/och#sourceAddAnnotationToEntity"
+    },
+    "removedClass" : {
+      "@id" : "https://w3id.org/def/och#removedClass"
+    },
+    "removedDataProperty" : {
+      "@id" : "https://w3id.org/def/och#removedDataProperty"
+    },
+    "removedRangeFromProperty" : {
+      "@id" : "https://w3id.org/def/och#removedRangeFromProperty"
+    },
+    "targetAddSubProperty" : {
+      "@id" : "https://w3id.org/def/och#targetAddSubProperty"
+    },
+    "removedObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#removedObjectProperty"
+    },
+    "removedAnnotationFromEntity" : {
+      "@id" : "https://w3id.org/def/och#removedAnnotationFromEntity"
+    },
+    "targetAddAnnotationToEntity" : {
+      "@id" : "https://w3id.org/def/och#targetAddAnnotationToEntity"
+    },
+    "AddDataProperty" : {
+      "@id" : "https://w3id.org/def/och#AddDataProperty"
+    },
+    "addedDomain" : {
+      "@id" : "https://w3id.org/def/och#addedDomain"
+    },
+    "RemoveDomain" : {
+      "@id" : "https://w3id.org/def/och#RemoveDomain"
+    },
+    "sourceRemoveAnnotationFromEntity" : {
+      "@id" : "https://w3id.org/def/och#sourceRemoveAnnotationFromEntity"
+    }
+  }
+}

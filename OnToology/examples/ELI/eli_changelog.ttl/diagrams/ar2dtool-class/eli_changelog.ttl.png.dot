@@ -1,0 +1,45 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"http://example.org/eli/change/718015690668300" -> "eli:is_referred_to_by" [ label = "och:addedObjectProperty" ];
+	"http://example.org/eli/change/718015692900100" -> "eli:number" [ label = "och:addedDomainToProperty" ];
+	"http://example.org/eli/change/718015691778700" -> "eli:refers_to" [ label = "och:addedDomainToProperty" ];
+	"http://example.org/eli/change/718015692231000" -> "eli:number" [ label = "och:removeDomainFromProperty" ];
+	"http://example.org/eli/change/718015683595800" -> "Optional[http://data.europa.eu/eli/ontology#cited_by]" [ label = "och:sourceRemoveAnnotationFromEntity" ];
+	"http://example.org/eli/change/718015683595800" -> "http://www.w3.org/2004/02/skos/core#historyNote" [ label = "och:removedAnnotationFromEntity" ];
+	"http://example.org/eli/change/718015690226200" -> "Optional[http://data.europa.eu/eli/ontology#cited_by_case_law]" [ label = "och:sourceAddAnnotationToEntity" ];
+	"http://example.org/eli/change/718015690226200" -> "http://www.w3.org/2004/02/skos/core#historyNote" [ label = "och:addedAnnotationToEntity" ];
+	"http://example.org/eli/change/718015691708200" -> "eli:refers_to" [ label = "och:addedRangeToProperty" ];
+	"http://example.org/eli/change/718015691708200" -> "owl:Thing" [ label = "och:addedObjectRange" ];
+	"http://example.org/eli/change/718015690138000" -> "Optional[http://data.europa.eu/eli/ontology#cited_by]" [ label = "och:sourceAddAnnotationToEntity" ];
+	"http://example.org/eli/change/718015690138000" -> "owl:versionInfo" [ label = "och:addedAnnotationToEntity" ];
+	"http://example.org/eli/change/718015690491800" -> "Optional[http://data.europa.eu/eli/ontology#cites]" [ label = "och:sourceAddAnnotationToEntity" ];
+	"http://example.org/eli/change/718015690491800" -> "http://www.w3.org/2004/02/skos/core#historyNote" [ label = "och:addedAnnotationToEntity" ];
+	"http://example.org/eli/change/718015689520400" -> "Optional[http://data.europa.eu/eli/ontology#cited_by]" [ label = "och:sourceAddAnnotationToEntity" ];
+	"http://example.org/eli/change/718015689520400" -> "http://www.w3.org/2004/02/skos/core#historyNote" [ label = "och:addedAnnotationToEntity" ];
+	"http://example.org/eli/change/718015689866600" -> "eli:is_referred_to_by" [ label = "och:targetAddSubProperty" ];
+	"http://example.org/eli/change/718015689866600" -> "eli:cited_by" [ label = "och:sourceAddSubProperty" ];
+	"http://example.org/eli/change/718015692058700" -> "Optional[http://data.europa.eu/eli/ontology#number]" [ label = "och:sourceRemoveAnnotationFromEntity" ];
+	"http://example.org/eli/change/718015692058700" -> "rdfs:comment" [ label = "och:removedAnnotationFromEntity" ];
+	"http://example.org/eli/change/718015691544200" -> "eli:refers_to" [ label = "och:addedObjectProperty" ];
+	"http://example.org/eli/change/718015689156700" -> "Optional[http://data.europa.eu/eli/ontology#cited_by]" [ label = "och:sourceRemoveAnnotationFromEntity" ];
+	"http://example.org/eli/change/718015689156700" -> "owl:versionInfo" [ label = "och:removedAnnotationFromEntity" ];
+	"http://example.org/eli/change/718015690424700" -> "eli:refers_to" [ label = "och:targetAddSubProperty" ];
+	"http://example.org/eli/change/718015690424700" -> "eli:cites" [ label = "och:sourceAddSubProperty" ];
+	"http://example.org/eli/change/718015693227900" -> "Optional[http://data.europa.eu/eli/ontology#number]" [ label = "och:sourceAddAnnotationToEntity" ];
+	"http://example.org/eli/change/718015693227900" -> "rdfs:comment" [ label = "och:addedAnnotationToEntity" ];
+	"http://example.org/eli/change/718015692633600" -> "Optional[http://data.europa.eu/eli/ontology#number]" [ label = "och:sourceAddAnnotationToEntity" ];
+	"http://example.org/eli/change/718015692633600" -> "http://www.w3.org/2004/02/skos/core#historyNote" [ label = "och:addedAnnotationToEntity" ];
+	"http://example.org/eli/change/718015690973100" -> "eli:is_referred_to_by" [ label = "och:addedRangeToProperty" ];
+	"http://example.org/eli/change/718015690818800" -> "eli:is_referred_to_by" [ label = "och:addedDomainToProperty" ];
+	"http://example.org/eli/change/718015690818800" -> "owl:Thing" [ label = "och:addedDomain" ];
+	"http://example.org/eli/change/718015692833200" -> "Optional[http://data.europa.eu/eli/ontology#number]" [ label = "och:sourceAddAnnotationToEntity" ];
+	"http://example.org/eli/change/718015692833200" -> "owl:versionInfo" [ label = "och:addedAnnotationToEntity" ];
+	"http://example.org/eli/change/718015690587900" -> "Optional[http://data.europa.eu/eli/ontology#cites]" [ label = "och:sourceAddAnnotationToEntity" ];
+	"http://example.org/eli/change/718015690587900" -> "owl:versionInfo" [ label = "och:addedAnnotationToEntity" ];
+	"http://example.org/eli/change/718015690302600" -> "Optional[http://data.europa.eu/eli/ontology#cited_by_case_law]" [ label = "och:sourceAddAnnotationToEntity" ];
+	"http://example.org/eli/change/718015690302600" -> "owl:versionInfo" [ label = "och:addedAnnotationToEntity" ];
+	"http://example.org/eli/change/718015690359500" -> "eli:is_referred_to_by" [ label = "och:targetAddSubProperty" ];
+	"http://example.org/eli/change/718015690359500" -> "eli:cited_by_case_law" [ label = "och:sourceAddSubProperty" ];
+
+}

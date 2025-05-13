@@ -1,0 +1,15 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:AdministrativeArea" "base:FundingAgency" "base:TitleAcronym" "base:Role" "base:DetectedAcronym" "base:Acronym" "base:Country" "base:Organisation" "base:ProjectDivision" "base:OrganisationRole" "base:Task" "base:WorkPackage" "base:OrganisationUnit" "base:PersonRole" ; /*classes style*/
+	"base:OrganisationRole" -> "base:Role" [ label = "rdfs:subClassOf" ];
+	"base:DetectedAcronym" -> "base:Acronym" [ label = "rdfs:subClassOf" ];
+	"base:OrganisationUnit" -> "base:Organisation" [ label = "rdfs:subClassOf" ];
+	"base:Country" -> "base:AdministrativeArea" [ label = "rdfs:subClassOf" ];
+	"base:PersonRole" -> "base:Role" [ label = "rdfs:subClassOf" ];
+	"base:WorkPackage" -> "base:ProjectDivision" [ label = "rdfs:subClassOf" ];
+	"base:FundingAgency" -> "base:Organisation" [ label = "rdfs:subClassOf" ];
+	"base:TitleAcronym" -> "base:Acronym" [ label = "rdfs:subClassOf" ];
+	"base:Task" -> "base:ProjectDivision" [ label = "rdfs:subClassOf" ];
+
+}

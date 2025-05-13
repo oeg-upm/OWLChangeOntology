@@ -1,0 +1,64 @@
+{
+  "@context" : {
+    "AddClass" : {
+      "@id" : "https://w3id.org/def/och#AddClass"
+    },
+    "addedDataRange" : {
+      "@id" : "https://w3id.org/def/och#addedDataRange"
+    },
+    "AddSubProperty" : {
+      "@id" : "https://w3id.org/def/och#AddSubProperty"
+    },
+    "sourceAddSubClass" : {
+      "@id" : "https://w3id.org/def/och#sourceAddSubClass"
+    },
+    "addedDomainToProperty" : {
+      "@id" : "https://w3id.org/def/och#addedDomainToProperty"
+    },
+    "addedRangeToProperty" : {
+      "@id" : "https://w3id.org/def/och#addedRangeToProperty"
+    },
+    "addedClass" : {
+      "@id" : "https://w3id.org/def/och#addedClass"
+    },
+    "addedDataProperty" : {
+      "@id" : "https://w3id.org/def/och#addedDataProperty"
+    },
+    "AddObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#AddObjectProperty"
+    },
+    "addedObjectRange" : {
+      "@id" : "https://w3id.org/def/och#addedObjectRange"
+    },
+    "addedObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#addedObjectProperty"
+    },
+    "targetAddSubClass" : {
+      "@id" : "https://w3id.org/def/och#targetAddSubClass"
+    },
+    "AddRangeObjectProperty" : {
+      "@id" : "https://w3id.org/def/och#AddRangeObjectProperty"
+    },
+    "AddDomain" : {
+      "@id" : "https://w3id.org/def/och#AddDomain"
+    },
+    "sourceAddSubProperty" : {
+      "@id" : "https://w3id.org/def/och#sourceAddSubProperty"
+    },
+    "AddSubClass" : {
+      "@id" : "https://w3id.org/def/och#AddSubClass"
+    },
+    "AddRangeDataProperty" : {
+      "@id" : "https://w3id.org/def/och#AddRangeDataProperty"
+    },
+    "targetAddSubProperty" : {
+      "@id" : "https://w3id.org/def/och#targetAddSubProperty"
+    },
+    "AddDataProperty" : {
+      "@id" : "https://w3id.org/def/och#AddDataProperty"
+    },
+    "addedDomain" : {
+      "@id" : "https://w3id.org/def/och#addedDomain"
+    }
+  }
+}

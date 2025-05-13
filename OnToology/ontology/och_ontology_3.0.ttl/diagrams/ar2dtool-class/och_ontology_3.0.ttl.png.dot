@@ -128,6 +128,7 @@ node [shape = rectangle, color="orange"]; "och:PropertyCharacteristic" "och:Remo
 	"och:RemoveDisjointProperty" -> "rdf:Property" [ label = "och:sourceRemoveDisjointProperty" ];
 	"och:RemoveAnnotationFromEntity" -> "rdf:Property" [ label = "och:removedAnnotationFromEntity" ];
 	"och:AddDisjointClass" -> "owl:Class" [ label = "och:targetAddDisjointClass" ];
+	"och:OntologicalChange" -> "xsd:string" [ label = "och:justification" ];
 	"och:RemoveCharacteristic" -> "och:PropertyCharacteristic" [ label = "och:removedCharacteristic" ];
 	"och:AddRelationToIndividual" -> "owl:NamedIndividual" [ label = "och:sourceAddRelationToIndividual" ];
 	"och:AddCharacteristic" -> "rdf:Property" [ label = "och:addedCharacteristicToProperty" ];

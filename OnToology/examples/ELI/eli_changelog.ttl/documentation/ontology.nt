@@ -1,0 +1,236 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/och#addedAnnotationToEntity
+<https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/och#addedDomain
+<https://w3id.org/def/och#addedDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/och#addedDomainToProperty
+<https://w3id.org/def/och#addedDomainToProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/och#addedObjectProperty
+<https://w3id.org/def/och#addedObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/och#addedObjectRange
+<https://w3id.org/def/och#addedObjectRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/och#addedRangeToProperty
+<https://w3id.org/def/och#addedRangeToProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/och#removeDomainFromProperty
+<https://w3id.org/def/och#removeDomainFromProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/och#removedAnnotationFromEntity
+<https://w3id.org/def/och#removedAnnotationFromEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/och#sourceAddAnnotationToEntity
+<https://w3id.org/def/och#sourceAddAnnotationToEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/och#sourceAddSubProperty
+<https://w3id.org/def/och#sourceAddSubProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/och#sourceRemoveAnnotationFromEntity
+<https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/och#targetAddAnnotationToEntity
+<https://w3id.org/def/och#targetAddAnnotationToEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/och#targetAddSubProperty
+<https://w3id.org/def/och#targetAddSubProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/och#targetRemoveAnnotationFromEntity
+<https://w3id.org/def/och#targetRemoveAnnotationFromEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/och#AddAnnotationToEntity
+<https://w3id.org/def/och#AddAnnotationToEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/och#AddDomain
+<https://w3id.org/def/och#AddDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/och#AddObjectProperty
+<https://w3id.org/def/och#AddObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/och#AddRangeObjectProperty
+<https://w3id.org/def/och#AddRangeObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/och#AddSubProperty
+<https://w3id.org/def/och#AddSubProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/och#RemoveAnnotationFromEntity
+<https://w3id.org/def/och#RemoveAnnotationFromEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/och#RemoveDomain
+<https://w3id.org/def/och#RemoveDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://example.org/eli/change/718015683595800
+<http://example.org/eli/change/718015683595800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015683595800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#RemoveAnnotationFromEntity> .
+<http://example.org/eli/change/718015683595800> <https://w3id.org/def/och#removedAnnotationFromEntity> <http://www.w3.org/2004/02/skos/core#historyNote> .
+<http://example.org/eli/change/718015683595800> <https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> <urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cited_by]> .
+<http://example.org/eli/change/718015683595800> <https://w3id.org/def/och#targetRemoveAnnotationFromEntity> "\"v1.2 : improved definition\"@en" .
+# 
+# http://example.org/eli/change/718015689156700
+<http://example.org/eli/change/718015689156700> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015689156700> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#RemoveAnnotationFromEntity> .
+<http://example.org/eli/change/718015689156700> <https://w3id.org/def/och#removedAnnotationFromEntity> <http://www.w3.org/2002/07/owl#versionInfo> .
+<http://example.org/eli/change/718015689156700> <https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> <urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cited_by]> .
+<http://example.org/eli/change/718015689156700> <https://w3id.org/def/och#targetRemoveAnnotationFromEntity> "\"modified in v1.2\"^^xsd:string" .
+# 
+# http://example.org/eli/change/718015689520400
+<http://example.org/eli/change/718015689520400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015689520400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddAnnotationToEntity> .
+<http://example.org/eli/change/718015689520400> <https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2004/02/skos/core#historyNote> .
+<http://example.org/eli/change/718015689520400> <https://w3id.org/def/och#sourceAddAnnotationToEntity> <urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cited_by]> .
+<http://example.org/eli/change/718015689520400> <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"v1.5 : was made a subproperty of eli:is_referred_to_by\nv1.2 : improved definition\"@en" .
+# 
+# http://example.org/eli/change/718015689866600
+<http://example.org/eli/change/718015689866600> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015689866600> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddSubProperty> .
+<http://example.org/eli/change/718015689866600> <https://w3id.org/def/och#sourceAddSubProperty> <http://data.europa.eu/eli/ontology#cited_by> .
+<http://example.org/eli/change/718015689866600> <https://w3id.org/def/och#targetAddSubProperty> <http://data.europa.eu/eli/ontology#is_referred_to_by> .
+# 
+# http://example.org/eli/change/718015690138000
+<http://example.org/eli/change/718015690138000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015690138000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddAnnotationToEntity> .
+<http://example.org/eli/change/718015690138000> <https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2002/07/owl#versionInfo> .
+<http://example.org/eli/change/718015690138000> <https://w3id.org/def/och#sourceAddAnnotationToEntity> <urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cited_by]> .
+<http://example.org/eli/change/718015690138000> <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"modified in v1.5\"^^xsd:string" .
+# 
+# http://example.org/eli/change/718015690226200
+<http://example.org/eli/change/718015690226200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015690226200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddAnnotationToEntity> .
+<http://example.org/eli/change/718015690226200> <https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2004/02/skos/core#historyNote> .
+<http://example.org/eli/change/718015690226200> <https://w3id.org/def/och#sourceAddAnnotationToEntity> <urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cited_by_case_law]> .
+<http://example.org/eli/change/718015690226200> <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"v1.5 : was made a subproperty of eli:is_referred_to_by\"@en" .
+# 
+# http://example.org/eli/change/718015690302600
+<http://example.org/eli/change/718015690302600> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015690302600> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddAnnotationToEntity> .
+<http://example.org/eli/change/718015690302600> <https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2002/07/owl#versionInfo> .
+<http://example.org/eli/change/718015690302600> <https://w3id.org/def/och#sourceAddAnnotationToEntity> <urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cited_by_case_law]> .
+<http://example.org/eli/change/718015690302600> <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"modified in v1.5\"@en" .
+# 
+# http://example.org/eli/change/718015690359500
+<http://example.org/eli/change/718015690359500> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015690359500> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddSubProperty> .
+<http://example.org/eli/change/718015690359500> <https://w3id.org/def/och#sourceAddSubProperty> <http://data.europa.eu/eli/ontology#cited_by_case_law> .
+<http://example.org/eli/change/718015690359500> <https://w3id.org/def/och#targetAddSubProperty> <http://data.europa.eu/eli/ontology#is_referred_to_by> .
+# 
+# http://example.org/eli/change/718015690424700
+<http://example.org/eli/change/718015690424700> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015690424700> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddSubProperty> .
+<http://example.org/eli/change/718015690424700> <https://w3id.org/def/och#sourceAddSubProperty> <http://data.europa.eu/eli/ontology#cites> .
+<http://example.org/eli/change/718015690424700> <https://w3id.org/def/och#targetAddSubProperty> <http://data.europa.eu/eli/ontology#refers_to> .
+# 
+# http://example.org/eli/change/718015690491800
+<http://example.org/eli/change/718015690491800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015690491800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddAnnotationToEntity> .
+<http://example.org/eli/change/718015690491800> <https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2004/02/skos/core#historyNote> .
+<http://example.org/eli/change/718015690491800> <https://w3id.org/def/och#sourceAddAnnotationToEntity> <urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cites]> .
+<http://example.org/eli/change/718015690491800> <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"v1.5 : was made a subproperty of eli:refers_to\"@en" .
+# 
+# http://example.org/eli/change/718015690587900
+<http://example.org/eli/change/718015690587900> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015690587900> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddAnnotationToEntity> .
+<http://example.org/eli/change/718015690587900> <https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2002/07/owl#versionInfo> .
+<http://example.org/eli/change/718015690587900> <https://w3id.org/def/och#sourceAddAnnotationToEntity> <urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cites]> .
+<http://example.org/eli/change/718015690587900> <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"modified in v1.5\"@en" .
+# 
+# http://example.org/eli/change/718015690668300
+<http://example.org/eli/change/718015690668300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015690668300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddObjectProperty> .
+<http://example.org/eli/change/718015690668300> <https://w3id.org/def/och#addedObjectProperty> <http://data.europa.eu/eli/ontology#is_referred_to_by> .
+# 
+# http://example.org/eli/change/718015690818800
+<http://example.org/eli/change/718015690818800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015690818800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddDomain> .
+<http://example.org/eli/change/718015690818800> <https://w3id.org/def/och#addedDomain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/eli/change/718015690818800> <https://w3id.org/def/och#addedDomainToProperty> <http://data.europa.eu/eli/ontology#is_referred_to_by> .
+# 
+# http://example.org/eli/change/718015690973100
+<http://example.org/eli/change/718015690973100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015690973100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddRangeObjectProperty> .
+<http://example.org/eli/change/718015690973100> <https://w3id.org/def/och#addedRangeToProperty> <http://data.europa.eu/eli/ontology#is_referred_to_by> .
+# 
+# http://example.org/eli/change/718015691544200
+<http://example.org/eli/change/718015691544200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015691544200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddObjectProperty> .
+<http://example.org/eli/change/718015691544200> <https://w3id.org/def/och#addedObjectProperty> <http://data.europa.eu/eli/ontology#refers_to> .
+# 
+# http://example.org/eli/change/718015691708200
+<http://example.org/eli/change/718015691708200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015691708200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddRangeObjectProperty> .
+<http://example.org/eli/change/718015691708200> <https://w3id.org/def/och#addedObjectRange> <http://www.w3.org/2002/07/owl#Thing> .
+<http://example.org/eli/change/718015691708200> <https://w3id.org/def/och#addedRangeToProperty> <http://data.europa.eu/eli/ontology#refers_to> .
+# 
+# http://example.org/eli/change/718015691778700
+<http://example.org/eli/change/718015691778700> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015691778700> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddDomain> .
+<http://example.org/eli/change/718015691778700> <https://w3id.org/def/och#addedDomainToProperty> <http://data.europa.eu/eli/ontology#refers_to> .
+# 
+# http://example.org/eli/change/718015692058700
+<http://example.org/eli/change/718015692058700> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015692058700> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#RemoveAnnotationFromEntity> .
+<http://example.org/eli/change/718015692058700> <https://w3id.org/def/och#removedAnnotationFromEntity> <http://www.w3.org/2000/01/rdf-schema#comment> .
+<http://example.org/eli/change/718015692058700> <https://w3id.org/def/och#sourceRemoveAnnotationFromEntity> <urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#number]> .
+<http://example.org/eli/change/718015692058700> <https://w3id.org/def/och#targetRemoveAnnotationFromEntity> "\"An identifier or other disambiguating feature for a legal resource or legal expression. This can be the number of a legislation, the number of an article, or the issue number of an official journal.\"@en" .
+# 
+# http://example.org/eli/change/718015692231000
+<http://example.org/eli/change/718015692231000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015692231000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#RemoveDomain> .
+<http://example.org/eli/change/718015692231000> <https://w3id.org/def/och#removeDomainFromProperty> <http://data.europa.eu/eli/ontology#number> .
+# 
+# http://example.org/eli/change/718015692633600
+<http://example.org/eli/change/718015692633600> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015692633600> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddAnnotationToEntity> .
+<http://example.org/eli/change/718015692633600> <https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2004/02/skos/core#historyNote> .
+<http://example.org/eli/change/718015692633600> <https://w3id.org/def/och#sourceAddAnnotationToEntity> <urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#number]> .
+<http://example.org/eli/change/718015692633600> <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"v1.5 : broaden the domain to Work or Expression instead of LegalResource or LegalExpression.\"@en" .
+# 
+# http://example.org/eli/change/718015692833200
+<http://example.org/eli/change/718015692833200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015692833200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddAnnotationToEntity> .
+<http://example.org/eli/change/718015692833200> <https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2002/07/owl#versionInfo> .
+<http://example.org/eli/change/718015692833200> <https://w3id.org/def/och#sourceAddAnnotationToEntity> <urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#number]> .
+<http://example.org/eli/change/718015692833200> <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"modified in v1.5\"@en" .
+# 
+# http://example.org/eli/change/718015692900100
+<http://example.org/eli/change/718015692900100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015692900100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddDomain> .
+<http://example.org/eli/change/718015692900100> <https://w3id.org/def/och#addedDomainToProperty> <http://data.europa.eu/eli/ontology#number> .
+# 
+# http://example.org/eli/change/718015693227900
+<http://example.org/eli/change/718015693227900> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/eli/change/718015693227900> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/och#AddAnnotationToEntity> .
+<http://example.org/eli/change/718015693227900> <https://w3id.org/def/och#addedAnnotationToEntity> <http://www.w3.org/2000/01/rdf-schema#comment> .
+<http://example.org/eli/change/718015693227900> <https://w3id.org/def/och#sourceAddAnnotationToEntity> <urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#number]> .
+<http://example.org/eli/change/718015693227900> <https://w3id.org/def/och#targetAddAnnotationToEntity> "\"An identifier or other disambiguating feature for a work or expression. This can be the number of a legislation, the number of an article, or the issue number of an official journal.\"@en" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

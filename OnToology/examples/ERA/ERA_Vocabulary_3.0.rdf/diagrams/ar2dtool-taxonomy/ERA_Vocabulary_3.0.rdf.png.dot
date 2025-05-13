@@ -1,0 +1,30 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "data:Platform" "data:NetRelation" "data:TopologicalObject" "data:Tunnel" "http://www.w3.org/ns/org#Organization" "data:Feature" "data:InfrastructureObject" "data:Signal" "data:InfrastructureManager" "wgs84_pos:SpatialThing" "data:Border" "data:NetElement" "data:Siding" "data:SpecialArea" "data:SectionOfLine" "http://www.opengis.net/ont/geosparql#Geometry" "wgs84_pos:Point" "data:Manufacturer" "data:SpecialTunnelArea" "data:OperationalPoint" "http://www.opengis.net/ont/geosparql#Feature" "data:Track" "data:VehicleKeeper" "http://www.opengis.net/ont/geosparql#SpatialObjectCollection" "http://www.opengis.net/ont/geosparql#SpatialObject" "http://www.opengis.net/ont/geosparql#GeometryCollection" "http://www.opengis.net/ont/geosparql#FeatureCollection" ; /*classes style*/
+	"data:InfrastructureObject" -> "data:Feature" [ label = "rdfs:subClassOf" ];
+	"data:Platform" -> "data:InfrastructureObject" [ label = "rdfs:subClassOf" ];
+	"data:SpecialArea" -> "data:InfrastructureObject" [ label = "rdfs:subClassOf" ];
+	"data:Signal" -> "data:InfrastructureObject" [ label = "rdfs:subClassOf" ];
+	"data:Siding" -> "data:Track" [ label = "rdfs:subClassOf" ];
+	"data:Feature" -> "http://www.opengis.net/ont/geosparql#Feature" [ label = "rdfs:subClassOf" ];
+	"wgs84_pos:Point" -> "wgs84_pos:SpatialThing" [ label = "rdfs:subClassOf" ];
+	"data:Manufacturer" -> "http://www.w3.org/ns/org#Organization" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/geosparql#Feature" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "rdfs:subClassOf" ];
+	"data:NetElement" -> "data:TopologicalObject" [ label = "rdfs:subClassOf" ];
+	"data:OperationalPoint" -> "data:InfrastructureObject" [ label = "rdfs:subClassOf" ];
+	"data:TopologicalObject" -> "data:Feature" [ label = "rdfs:subClassOf" ];
+	"data:InfrastructureManager" -> "http://www.w3.org/ns/org#Organization" [ label = "rdfs:subClassOf" ];
+	"data:Border" -> "data:OperationalPoint" [ label = "rdfs:subClassOf" ];
+	"data:SectionOfLine" -> "data:InfrastructureObject" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/geosparql#GeometryCollection" -> "http://www.opengis.net/ont/geosparql#SpatialObjectCollection" [ label = "rdfs:subClassOf" ];
+	"data:Tunnel" -> "data:InfrastructureObject" [ label = "rdfs:subClassOf" ];
+	"data:NetRelation" -> "data:TopologicalObject" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/geosparql#FeatureCollection" -> "http://www.opengis.net/ont/geosparql#SpatialObjectCollection" [ label = "rdfs:subClassOf" ];
+	"data:VehicleKeeper" -> "http://www.w3.org/ns/org#Organization" [ label = "rdfs:subClassOf" ];
+	"data:Track" -> "data:InfrastructureObject" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/geosparql#SpatialObjectCollection" -> "rdfs:Container" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/geosparql#Geometry" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "rdfs:subClassOf" ];
+	"data:SpecialTunnelArea" -> "data:SpecialArea" [ label = "rdfs:subClassOf" ];
+
+}

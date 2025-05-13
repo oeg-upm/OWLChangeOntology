@@ -1,0 +1,28 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "eurio^^http://www.w3.org/2001/XMLSchema#string:AdministrativeArea" "eurio^^http://www.w3.org/2001/XMLSchema#string:NonPeerReviewedPublication" "eurio^^http://www.w3.org/2001/XMLSchema#string:ProjectReportSummary" "eurio^^http://www.w3.org/2001/XMLSchema#string:ThesisDissertation" "eurio^^http://www.w3.org/2001/XMLSchema#string:ForProfitOrganisation" "eurio^^http://www.w3.org/2001/XMLSchema#string:ConferencePaper" "eurio^^http://www.w3.org/2001/XMLSchema#string:FundingAgency" "eurio^^http://www.w3.org/2001/XMLSchema#string:ProjectPublication" "eurio^^http://www.w3.org/2001/XMLSchema#string:TitleAcronym" "eurio^^http://www.w3.org/2001/XMLSchema#string:ProjectDeliverable" "eurio^^http://www.w3.org/2001/XMLSchema#string:Role" "eurio^^http://www.w3.org/2001/XMLSchema#string:SME" "eurio^^http://www.w3.org/2001/XMLSchema#string:DetectedAcronym" "eurio^^http://www.w3.org/2001/XMLSchema#string:JournalPaper" "eurio^^http://www.w3.org/2001/XMLSchema#string:BookChapter" "eurio^^http://www.w3.org/2001/XMLSchema#string:ExploitableResult" "eurio^^http://www.w3.org/2001/XMLSchema#string:Book" "eurio^^http://www.w3.org/2001/XMLSchema#string:PublicBody" "eurio^^http://www.w3.org/2001/XMLSchema#string:Acronym" "eurio^^http://www.w3.org/2001/XMLSchema#string:Country" "eurio^^http://www.w3.org/2001/XMLSchema#string:Organisation" "eurio^^http://www.w3.org/2001/XMLSchema#string:HigherOrSecondaryEducation" "eurio^^http://www.w3.org/2001/XMLSchema#string:OrganisationRole" "eurio^^http://www.w3.org/2001/XMLSchema#string:ResearchOrganisation" "eurio^^http://www.w3.org/2001/XMLSchema#string:Result" "eurio^^http://www.w3.org/2001/XMLSchema#string:PersonRole" "eurio^^http://www.w3.org/2001/XMLSchema#string:WorkshopPaper" ; /*classes style*/
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:ConferencePaper" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:ProjectPublication" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:HigherOrSecondaryEducation" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:Organisation" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:PublicBody" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:Organisation" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:BookChapter" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:ProjectPublication" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:ThesisDissertation" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:ProjectPublication" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:NonPeerReviewedPublication" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:ProjectPublication" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:ProjectReportSummary" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:Result" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:Book" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:ProjectPublication" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:SME" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:Organisation" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:DetectedAcronym" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:Acronym" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:OrganisationRole" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:Role" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:ForProfitOrganisation" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:Organisation" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:ExploitableResult" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:Result" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:Country" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:AdministrativeArea" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:ProjectPublication" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:Result" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:ResearchOrganisation" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:Organisation" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:PersonRole" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:Role" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:FundingAgency" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:Organisation" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:TitleAcronym" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:Acronym" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:WorkshopPaper" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:ProjectPublication" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:ProjectDeliverable" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:Result" [ label = "rdfs:subClassOf" ];
+	"eurio^^http://www.w3.org/2001/XMLSchema#string:JournalPaper" -> "eurio^^http://www.w3.org/2001/XMLSchema#string:ProjectPublication" [ label = "rdfs:subClassOf" ];
+
+}

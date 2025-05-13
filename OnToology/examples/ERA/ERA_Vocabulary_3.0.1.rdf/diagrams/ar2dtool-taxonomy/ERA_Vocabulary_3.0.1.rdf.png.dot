@@ -1,0 +1,31 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "era:NetRelation" "era:TopologicalObject" "era:Tunnel" "org:Organization" "era:Feature" "era:InfrastructureObject" "era:Signal" "era:InfrastructureManager" "wgs:SpatialThing" "foaf:Agent" "foaf:Document" "era:PlatformEdge" "era:Document" "era:NetElement" "era:Siding" "era:SpecialArea" "era:SectionOfLine" "gsp:Geometry" "wgs:Point" "era:Manufacturer" "era:SpecialTunnelArea" "era:OperationalPoint" "gsp:Feature" "era:Track" "era:VehicleKeeper" "gsp:SpatialObjectCollection" "gsp:SpatialObject" "gsp:GeometryCollection" "gsp:FeatureCollection" ; /*classes style*/
+	"era:Document" -> "foaf:Document" [ label = "rdfs:subClassOf" ];
+	"era:InfrastructureObject" -> "era:Feature" [ label = "rdfs:subClassOf" ];
+	"era:SpecialArea" -> "era:InfrastructureObject" [ label = "rdfs:subClassOf" ];
+	"era:Signal" -> "era:InfrastructureObject" [ label = "rdfs:subClassOf" ];
+	"org:Organization" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"era:Siding" -> "era:Track" [ label = "rdfs:subClassOf" ];
+	"era:Feature" -> "gsp:Feature" [ label = "rdfs:subClassOf" ];
+	"wgs:Point" -> "wgs:SpatialThing" [ label = "rdfs:subClassOf" ];
+	"era:Manufacturer" -> "org:Organization" [ label = "rdfs:subClassOf" ];
+	"gsp:Feature" -> "gsp:SpatialObject" [ label = "rdfs:subClassOf" ];
+	"era:NetElement" -> "era:TopologicalObject" [ label = "rdfs:subClassOf" ];
+	"era:OperationalPoint" -> "era:InfrastructureObject" [ label = "rdfs:subClassOf" ];
+	"era:TopologicalObject" -> "era:Feature" [ label = "rdfs:subClassOf" ];
+	"era:InfrastructureManager" -> "org:Organization" [ label = "rdfs:subClassOf" ];
+	"era:PlatformEdge" -> "era:InfrastructureObject" [ label = "rdfs:subClassOf" ];
+	"era:SectionOfLine" -> "era:InfrastructureObject" [ label = "rdfs:subClassOf" ];
+	"era:NetRelation" -> "era:TopologicalObject" [ label = "rdfs:subClassOf" ];
+	"gsp:GeometryCollection" -> "gsp:SpatialObjectCollection" [ label = "rdfs:subClassOf" ];
+	"era:Tunnel" -> "era:InfrastructureObject" [ label = "rdfs:subClassOf" ];
+	"gsp:FeatureCollection" -> "gsp:SpatialObjectCollection" [ label = "rdfs:subClassOf" ];
+	"era:VehicleKeeper" -> "org:Organization" [ label = "rdfs:subClassOf" ];
+	"era:Track" -> "era:InfrastructureObject" [ label = "rdfs:subClassOf" ];
+	"gsp:SpatialObjectCollection" -> "rdfs:Container" [ label = "rdfs:subClassOf" ];
+	"gsp:Geometry" -> "gsp:SpatialObject" [ label = "rdfs:subClassOf" ];
+	"era:SpecialTunnelArea" -> "era:SpecialArea" [ label = "rdfs:subClassOf" ];
+
+}

@@ -797,6 +797,14 @@ xsd:date rdf:type rdfs:Datatype .
 <http://purl.org/dc/terms/issued> rdf:type owl:DatatypeProperty .
 
 
+###  https://w3id.org/def/och#justification
+:justification rdf:type owl:DatatypeProperty ;
+               rdfs:domain :OntologicalChange ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The reasons and justifications behind a particular change." ;
+               rdfs:label "justification" .
+
+
 #################################################################
 #    Classes
 #################################################################

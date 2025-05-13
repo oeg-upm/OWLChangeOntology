@@ -609,6 +609,10 @@
     "Ontology" : {
       "@id" : "http://www.w3.org/2002/07/owl#Ontology"
     },
+    "justification" : {
+      "@id" : "https://w3id.org/def/och#justification",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "DisjointClassChange" : {
       "@id" : "https://w3id.org/def/och#DisjointClassChange"
     }

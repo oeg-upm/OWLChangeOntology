@@ -1,0 +1,617 @@
+{
+  "@context" : {
+    "isSiteOf" : {
+      "@id" : "http://data.europa.eu/s66#isSiteOf",
+      "@type" : "@id"
+    },
+    "implements" : {
+      "@id" : "http://data.europa.eu/s66#implements",
+      "@type" : "@id"
+    },
+    "isFundedBy" : {
+      "@id" : "http://data.europa.eu/s66#isFundedBy",
+      "@type" : "@id"
+    },
+    "honorificTitle" : {
+      "@id" : "http://data.europa.eu/s66#honorificTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "abstract" : {
+      "@id" : "http://data.europa.eu/s66#abstract",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasFundingSchemeCall" : {
+      "@id" : "http://data.europa.eu/s66#hasFundingSchemeCall",
+      "@type" : "@id"
+    },
+    "OrganisationRole" : {
+      "@id" : "http://data.europa.eu/s66#OrganisationRole"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "hasFundingSchemeTopic" : {
+      "@id" : "http://data.europa.eu/s66#hasFundingSchemeTopic",
+      "@type" : "@id"
+    },
+    "isUnitOf" : {
+      "@id" : "http://data.europa.eu/s66#isUnitOf",
+      "@type" : "@id"
+    },
+    "hasRecipient" : {
+      "@id" : "http://data.europa.eu/s66#hasRecipient",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "hasPayment" : {
+      "@id" : "http://data.europa.eu/s66#hasPayment",
+      "@type" : "@id"
+    },
+    "url" : {
+      "@id" : "http://data.europa.eu/s66#url",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "BookChapter" : {
+      "@id" : "http://data.europa.eu/s66#BookChapter"
+    },
+    "Country" : {
+      "@id" : "http://data.europa.eu/s66#Country"
+    },
+    "startDate" : {
+      "@id" : "http://data.europa.eu/s66#startDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "Organisation" : {
+      "@id" : "http://data.europa.eu/s66#Organisation"
+    },
+    "refersTo" : {
+      "@id" : "http://data.europa.eu/s66#refersTo",
+      "@type" : "@id"
+    },
+    "isBeneficiaryOf" : {
+      "@id" : "http://data.europa.eu/s66#isBeneficiaryOf",
+      "@type" : "@id"
+    },
+    "hasNUTSCode" : {
+      "@id" : "http://data.europa.eu/s66#hasNUTSCode",
+      "@type" : "@id"
+    },
+    "isDisbursedBy" : {
+      "@id" : "http://data.europa.eu/s66#isDisbursedBy",
+      "@type" : "@id"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "ConferencePaper" : {
+      "@id" : "http://data.europa.eu/s66#ConferencePaper"
+    },
+    "distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#distribution"
+    },
+    "downloadURL" : {
+      "@id" : "http://www.w3.org/ns/dcat#downloadURL"
+    },
+    "postOfficeBoxNumber" : {
+      "@id" : "http://data.europa.eu/s66#postOfficeBoxNumber",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "isImplementedBy" : {
+      "@id" : "http://data.europa.eu/s66#isImplementedBy",
+      "@type" : "@id"
+    },
+    "hasEUCountryCode" : {
+      "@id" : "http://data.europa.eu/s66#hasEUCountryCode",
+      "@type" : "@id"
+    },
+    "hasRole" : {
+      "@id" : "http://data.europa.eu/s66#hasRole",
+      "@type" : "@id"
+    },
+    "currency" : {
+      "@id" : "http://data.europa.eu/s66#currency",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasAddress" : {
+      "@id" : "http://data.europa.eu/s66#hasAddress",
+      "@type" : "@id"
+    },
+    "faxNumber" : {
+      "@id" : "http://data.europa.eu/s66#faxNumber",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasISOCountryCode" : {
+      "@id" : "http://data.europa.eu/s66#hasISOCountryCode",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasCoordinates" : {
+      "@id" : "http://data.europa.eu/s66#hasCoordinates",
+      "@type" : "@id"
+    },
+    "isSubSchemeOf" : {
+      "@id" : "http://data.europa.eu/s66#isSubSchemeOf",
+      "@type" : "@id"
+    },
+    "OrganisationUnit" : {
+      "@id" : "http://data.europa.eu/s66#OrganisationUnit"
+    },
+    "doi" : {
+      "@id" : "http://data.europa.eu/s66#doi",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "telephoneNumber" : {
+      "@id" : "http://data.europa.eu/s66#telephoneNumber",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "longitude" : {
+      "@id" : "http://data.europa.eu/s66#longitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "hasResultType" : {
+      "@id" : "http://data.europa.eu/s66#hasResultType",
+      "@type" : "@id"
+    },
+    "TitleAcronym" : {
+      "@id" : "http://data.europa.eu/s66#TitleAcronym"
+    },
+    "familyName" : {
+      "@id" : "http://data.europa.eu/s66#familyName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "NonPeerReviewedPublication" : {
+      "@id" : "http://data.europa.eu/s66#NonPeerReviewedPublication"
+    },
+    "Result" : {
+      "@id" : "http://data.europa.eu/s66#Result"
+    },
+    "hasGrant" : {
+      "@id" : "http://data.europa.eu/s66#hasGrant",
+      "@type" : "@id"
+    },
+    "PublicBody" : {
+      "@id" : "http://data.europa.eu/s66#PublicBody"
+    },
+    "ProjectDeliverable" : {
+      "@id" : "http://data.europa.eu/s66#ProjectDeliverable"
+    },
+    "projectStatus" : {
+      "@id" : "http://data.europa.eu/s66#projectStatus"
+    },
+    "email" : {
+      "@id" : "http://data.europa.eu/s66#email",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "ResearchOrganisation" : {
+      "@id" : "http://data.europa.eu/s66#ResearchOrganisation"
+    },
+    "exactMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#exactMatch"
+    },
+    "Person" : {
+      "@id" : "http://data.europa.eu/s66#Person"
+    },
+    "employs" : {
+      "@id" : "http://data.europa.eu/s66#employs",
+      "@type" : "@id"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "closeMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch"
+    },
+    "SME" : {
+      "@id" : "http://data.europa.eu/s66#SME"
+    },
+    "DetectedAcronym" : {
+      "@id" : "http://data.europa.eu/s66#DetectedAcronym"
+    },
+    "rcn" : {
+      "@id" : "http://data.europa.eu/s66#rcn",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "latitude" : {
+      "@id" : "http://data.europa.eu/s66#latitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasPaymentAmount" : {
+      "@id" : "http://data.europa.eu/s66#hasPaymentAmount",
+      "@type" : "@id"
+    },
+    "hasAssociatedFundingScheme" : {
+      "@id" : "http://data.europa.eu/s66#hasAssociatedFundingScheme",
+      "@type" : "@id"
+    },
+    "Book" : {
+      "@id" : "http://data.europa.eu/s66#Book"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "givenName" : {
+      "@id" : "http://data.europa.eu/s66#givenName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "name" : {
+      "@id" : "http://data.europa.eu/s66#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "postalCode" : {
+      "@id" : "http://data.europa.eu/s66#postalCode",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "ProjectReportSummary" : {
+      "@id" : "http://data.europa.eu/s66#ProjectReportSummary"
+    },
+    "Role" : {
+      "@id" : "http://data.europa.eu/s66#Role"
+    },
+    "FundingAgency" : {
+      "@id" : "http://data.europa.eu/s66#FundingAgency"
+    },
+    "ContactPoint" : {
+      "@id" : "http://data.europa.eu/s66#ContactPoint"
+    },
+    "hasTotalCost" : {
+      "@id" : "http://data.europa.eu/s66#hasTotalCost",
+      "@type" : "@id"
+    },
+    "Grant" : {
+      "@id" : "http://data.europa.eu/s66#Grant"
+    },
+    "isEmployedBy" : {
+      "@id" : "http://data.europa.eu/s66#isEmployedBy",
+      "@type" : "@id"
+    },
+    "value" : {
+      "@id" : "http://data.europa.eu/s66#value",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasFundingSchemeCategory" : {
+      "@id" : "http://data.europa.eu/s66#hasFundingSchemeCategory",
+      "@type" : "@id"
+    },
+    "hasContactDetails" : {
+      "@id" : "http://data.europa.eu/s66#hasContactDetails",
+      "@type" : "@id"
+    },
+    "Coordinates" : {
+      "@id" : "http://data.europa.eu/s66#Coordinates"
+    },
+    "GrantPayment" : {
+      "@id" : "http://data.europa.eu/s66#GrantPayment"
+    },
+    "shortForm" : {
+      "@id" : "http://data.europa.eu/s66#shortForm",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isRoleOf" : {
+      "@id" : "http://data.europa.eu/s66#isRoleOf",
+      "@type" : "@id"
+    },
+    "ExploitableResult" : {
+      "@id" : "http://data.europa.eu/s66#ExploitableResult"
+    },
+    "hasSite" : {
+      "@id" : "http://data.europa.eu/s66#hasSite",
+      "@type" : "@id"
+    },
+    "hasAcronym" : {
+      "@id" : "http://data.europa.eu/s66#hasAcronym",
+      "@type" : "@id"
+    },
+    "isResultOf" : {
+      "@id" : "http://data.europa.eu/s66#isResultOf",
+      "@type" : "@id"
+    },
+    "hasBeneficiary" : {
+      "@id" : "http://data.europa.eu/s66#hasBeneficiary",
+      "@type" : "@id"
+    },
+    "JournalPaper" : {
+      "@id" : "http://data.europa.eu/s66#JournalPaper"
+    },
+    "PostalAddress" : {
+      "@id" : "http://data.europa.eu/s66#PostalAddress"
+    },
+    "identifier" : {
+      "@id" : "http://data.europa.eu/s66#identifier",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "keyword" : {
+      "@id" : "http://data.europa.eu/s66#keyword",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Acronym" : {
+      "@id" : "http://data.europa.eu/s66#Acronym"
+    },
+    "hasNUTS3code" : {
+      "@id" : "http://data.europa.eu/s66#hasNUTS3code",
+      "@type" : "@id"
+    },
+    "hasPreviousFundingScheme" : {
+      "@id" : "http://data.europa.eu/s66#hasPreviousFundingScheme",
+      "@type" : "@id"
+    },
+    "workPerformed" : {
+      "@id" : "http://data.europa.eu/s66#workPerformed",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "ForProfitOrganisation" : {
+      "@id" : "http://data.europa.eu/s66#ForProfitOrganisation"
+    },
+    "isRecipientOf" : {
+      "@id" : "http://data.europa.eu/s66#isRecipientOf",
+      "@type" : "@id"
+    },
+    "isAcronymOf" : {
+      "@id" : "http://data.europa.eu/s66#isAcronymOf",
+      "@type" : "@id"
+    },
+    "hasNUTS1code" : {
+      "@id" : "http://data.europa.eu/s66#hasNUTS1code",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "hasFundingScheme" : {
+      "@id" : "http://data.europa.eu/s66#hasFundingScheme",
+      "@type" : "@id"
+    },
+    "authorList" : {
+      "@id" : "http://data.europa.eu/s66#authorList",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "definition" : {
+      "@id" : "http://data.europa.eu/s66#definition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasSubOrganisation" : {
+      "@id" : "http://data.europa.eu/s66#hasSubOrganisation",
+      "@type" : "@id"
+    },
+    "journalTitle" : {
+      "@id" : "http://data.europa.eu/s66#journalTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasFundingSchemeProgramme" : {
+      "@id" : "http://data.europa.eu/s66#hasFundingSchemeProgramme",
+      "@type" : "@id"
+    },
+    "isInvolvedIn" : {
+      "@id" : "http://data.europa.eu/s66#isInvolvedIn",
+      "@type" : "@id"
+    },
+    "Project" : {
+      "@id" : "http://data.europa.eu/s66#Project"
+    },
+    "hasResult" : {
+      "@id" : "http://data.europa.eu/s66#hasResult",
+      "@type" : "@id"
+    },
+    "periodNumber" : {
+      "@id" : "http://data.europa.eu/s66#periodNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "order" : {
+      "@id" : "http://data.europa.eu/s66#order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "streetAddress" : {
+      "@id" : "http://data.europa.eu/s66#streetAddress",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "duration" : {
+      "@id" : "http://data.europa.eu/s66#duration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "title" : {
+      "@id" : "http://data.europa.eu/s66#title",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "issn" : {
+      "@id" : "http://data.europa.eu/s66#issn",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "fullAddress" : {
+      "@id" : "http://data.europa.eu/s66#fullAddress",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "publisher" : {
+      "@id" : "http://data.europa.eu/s66#publisher",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasEuroSciVocClassification" : {
+      "@id" : "http://data.europa.eu/s66#hasEuroSciVocClassification",
+      "@type" : "@id"
+    },
+    "Site" : {
+      "@id" : "http://data.europa.eu/s66#Site"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "broadMatch" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#broadMatch"
+    },
+    "hasRelatedScheme" : {
+      "@id" : "http://data.europa.eu/s66#hasRelatedScheme",
+      "@type" : "@id"
+    },
+    "publishedYear" : {
+      "@id" : "http://data.europa.eu/s66#publishedYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "hasUnit" : {
+      "@id" : "http://data.europa.eu/s66#hasUnit",
+      "@type" : "@id"
+    },
+    "finalResults" : {
+      "@id" : "http://data.europa.eu/s66#finalResults",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "legalName" : {
+      "@id" : "http://data.europa.eu/s66#legalName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasNUTS0code" : {
+      "@id" : "http://data.europa.eu/s66#hasNUTS0code",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://data.europa.eu/s66#date",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "publishedPages" : {
+      "@id" : "http://data.europa.eu/s66#publishedPages",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasSubScheme" : {
+      "@id" : "http://data.europa.eu/s66#hasSubScheme",
+      "@type" : "@id"
+    },
+    "hasInvolvedParty" : {
+      "@id" : "http://data.europa.eu/s66#hasInvolvedParty",
+      "@type" : "@id"
+    },
+    "funds" : {
+      "@id" : "http://data.europa.eu/s66#funds",
+      "@type" : "@id"
+    },
+    "isPaymentOf" : {
+      "@id" : "http://data.europa.eu/s66#isPaymentOf",
+      "@type" : "@id"
+    },
+    "ProjectPublication" : {
+      "@id" : "http://data.europa.eu/s66#ProjectPublication"
+    },
+    "signatureDate" : {
+      "@id" : "http://data.europa.eu/s66#signatureDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "isNet" : {
+      "@id" : "http://data.europa.eu/s66#isNet",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "HigherOrSecondaryEducation" : {
+      "@id" : "http://data.europa.eu/s66#HigherOrSecondaryEducation"
+    },
+    "addressLocality" : {
+      "@id" : "http://data.europa.eu/s66#addressLocality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "disburses" : {
+      "@id" : "http://data.europa.eu/s66#disburses",
+      "@type" : "@id"
+    },
+    "hasNextFundingScheme" : {
+      "@id" : "http://data.europa.eu/s66#hasNextFundingScheme",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "roleLabel" : {
+      "@id" : "http://data.europa.eu/s66#roleLabel"
+    },
+    "hasFundingAmount" : {
+      "@id" : "http://data.europa.eu/s66#hasFundingAmount",
+      "@type" : "@id"
+    },
+    "journalNumber" : {
+      "@id" : "http://data.europa.eu/s66#journalNumber",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "FundingScheme" : {
+      "@id" : "http://data.europa.eu/s66#FundingScheme"
+    },
+    "ThesisDissertation" : {
+      "@id" : "http://data.europa.eu/s66#ThesisDissertation"
+    },
+    "WorkshopPaper" : {
+      "@id" : "http://data.europa.eu/s66#WorkshopPaper"
+    },
+    "isSubOrganisationOf" : {
+      "@id" : "http://data.europa.eu/s66#isSubOrganisationOf",
+      "@type" : "@id"
+    },
+    "vatNumber" : {
+      "@id" : "http://data.europa.eu/s66#vatNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "endDate" : {
+      "@id" : "http://data.europa.eu/s66#endDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "MonetaryAmount" : {
+      "@id" : "http://data.europa.eu/s66#MonetaryAmount"
+    },
+    "hasRelatedProject" : {
+      "@id" : "http://data.europa.eu/s66#hasRelatedProject",
+      "@type" : "@id"
+    },
+    "AdministrativeArea" : {
+      "@id" : "http://data.europa.eu/s66#AdministrativeArea"
+    },
+    "hasGeographicalLocation" : {
+      "@id" : "http://data.europa.eu/s66#hasGeographicalLocation",
+      "@type" : "@id"
+    },
+    "code" : {
+      "@id" : "http://data.europa.eu/s66#code",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "additionalName" : {
+      "@id" : "http://data.europa.eu/s66#additionalName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "addressCountry" : {
+      "@id" : "http://data.europa.eu/s66#addressCountry",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isbn" : {
+      "@id" : "http://data.europa.eu/s66#isbn",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "description" : {
+      "@id" : "http://data.europa.eu/s66#description",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasNUTS2code" : {
+      "@id" : "http://data.europa.eu/s66#hasNUTS2code",
+      "@type" : "@id"
+    },
+    "PersonRole" : {
+      "@id" : "http://data.europa.eu/s66#PersonRole"
+    },
+    "accessURL" : {
+      "@id" : "http://www.w3.org/ns/dcat#accessURL"
+    },
+    "hasFundingSchemeType" : {
+      "@id" : "http://data.europa.eu/s66#hasFundingSchemeType",
+      "@type" : "@id"
+    },
+    "terminationDate" : {
+      "@id" : "http://data.europa.eu/s66#terminationDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    }
+  }
+}

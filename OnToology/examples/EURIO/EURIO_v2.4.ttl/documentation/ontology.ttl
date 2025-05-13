@@ -1,0 +1,1931 @@
+@prefix : <http://data.europa.eu/s66#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://data.europa.eu/s66#> .
+
+<http://data.europa.eu/s66#> rdf:type owl:Ontology ;
+                              owl:versionIRI <http://data.europa.eu/s66/v2.4#> ;
+                              <http://purl.org/dc/elements/1.1/contributor> "Cognizone" ,
+                                                                            "NTT Data" ;
+                              <http://purl.org/dc/elements/1.1/creator> "Publications Office of the European Commission"@en ;
+                              <http://purl.org/dc/elements/1.1/description> "The EUropean Research Information Ontology (EURIO) conceptualises, formally encodes and makes available in an open, structured and machine-readable format data about research projects funded by the EU's framework programmes for research and innovation."@en ;
+                              <http://purl.org/dc/elements/1.1/publisher> "Publications Office of the European Commission"@en ;
+                              <http://purl.org/dc/elements/1.1/title> "EURIO: EUropean Research Information Ontology"@en ;
+                              <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+                              <http://purl.org/dc/terms/modified> "2023-09-28"^^xsd:date ;
+                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "eurio" ;
+                              rdfs:comment "CORDIS is the portal responsible for publishing the results of EU-funded research and innovation projects. EURIO (EUropean Research Information Ontology) is the conceptual data model developed by the Publications Office of the European Commission to represent and structure the CORDIS content in a semantic format improving its transparency, reusability and accessibility."@en ;
+                              owl:versionInfo "v2.4"@en ;
+                              <http://www.w3.org/ns/dcat#distribution> [ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#broadMatch
+<http://www.w3.org/2004/02/skos/core#broadMatch> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+<http://www.w3.org/2004/02/skos/core#exactMatch> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#accessURL
+<http://www.w3.org/ns/dcat#accessURL> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#distribution
+<http://www.w3.org/ns/dcat#distribution> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#downloadURL
+<http://www.w3.org/ns/dcat#downloadURL> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://data.europa.eu/s66#disburses
+:disburses rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isDisbursedBy ;
+           rdfs:domain :FundingAgency ;
+           rdfs:range :Grant ;
+           rdfs:comment "Relates the funding agency to the grant(s) that it disburses."@en ;
+           rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+           rdfs:label "disburses"@en .
+
+
+###  http://data.europa.eu/s66#employs
+:employs rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isEmployedBy ;
+         rdfs:domain :Organisation ;
+         rdfs:range :PersonRole ;
+         rdfs:comment "Relates the organisation to the role representing a person that the organisation employs during a project in which both participate. "@en ;
+         rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+         rdfs:label "employs"@en .
+
+
+###  http://data.europa.eu/s66#funds
+:funds rdf:type owl:ObjectProperty ;
+       owl:inverseOf :isFundedBy ;
+       rdfs:domain :Grant ;
+       rdfs:range :Project ;
+       rdfs:comment "Relates the grant with the project(s) that are completely or partially funded by it."@en ;
+       rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+       rdfs:label "funds"@en .
+
+
+###  http://data.europa.eu/s66#hasAcronym
+:hasAcronym rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isAcronymOf ;
+            rdfs:range :Acronym ;
+            rdfs:comment "Relates an entity (e.g. project, grant, etc.) with its acronym(s). This includes acronyms representing the entity’s title as well as any additional acronyms extracted from other attributes of the entity."@en ;
+            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+            rdfs:label "has acronym"@en .
+
+
+###  http://data.europa.eu/s66#hasAddress
+:hasAddress rdf:type owl:ObjectProperty ;
+            rdfs:domain :Site ;
+            rdfs:range :PostalAddress ;
+            rdfs:comment "Relates a physical location to its registered address."@en ;
+            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+            rdfs:label "has address"@en .
+
+
+###  http://data.europa.eu/s66#hasAssociatedFundingScheme
+:hasAssociatedFundingScheme rdf:type owl:ObjectProperty ;
+                            rdfs:range :FundingScheme ;
+                            rdfs:comment "Relates an entity other than funding scheme (e.g., result, etc.) with associated funding schemes."@en ;
+                            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                            rdfs:label "has associated funding scheme"@en .
+
+
+###  http://data.europa.eu/s66#hasBeneficiary
+:hasBeneficiary rdf:type owl:ObjectProperty ;
+                owl:inverseOf :isBeneficiaryOf ;
+                rdfs:domain :Grant ;
+                rdfs:range :Role ;
+                rdfs:comment "Relates the grant to the organisation or person role(s) that are a beneficiary of the grant. "@en ;
+                rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                rdfs:label "has beneficiary"@en .
+
+
+###  http://data.europa.eu/s66#hasContactDetails
+:hasContactDetails rdf:type owl:ObjectProperty ;
+                   rdfs:range :ContactPoint ;
+                   rdfs:comment "Relates the role to the contact details of the entity taking the role (person or organisation) which are valid during the project of which the role forms a part."@en ;
+                   rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                   rdfs:label "has contact details"@en .
+
+
+###  http://data.europa.eu/s66#hasCoordinates
+:hasCoordinates rdf:type owl:ObjectProperty ;
+                rdfs:domain :Site ;
+                rdfs:range :Coordinates ;
+                rdfs:comment "The geo-coordinates of a place"@en ;
+                rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                rdfs:label "has coordinates"@en .
+
+
+###  http://data.europa.eu/s66#hasEUCountryCode
+:hasEUCountryCode rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Country ;
+                  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                  rdfs:comment "The country code of the location or address according to the EU country codes."@en ;
+                  rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                  rdfs:label "has EU country code"@en .
+
+
+###  http://data.europa.eu/s66#hasEuroSciVocClassification
+:hasEuroSciVocClassification rdf:type owl:ObjectProperty ;
+                             rdfs:domain :Project ;
+                             rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                             rdfs:comment "One or more values from the EuroSciVoc taxonomy that represent the main fields of science of the project."@en ;
+                             rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                             rdfs:label "has EuroSciVoc classification"@en .
+
+
+###  http://data.europa.eu/s66#hasFundingAmount
+:hasFundingAmount rdf:type owl:ObjectProperty ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( :FundingScheme
+                                              :Grant
+                                            )
+                              ] ;
+                  rdfs:range :MonetaryAmount ;
+                  rdfs:comment "Relates the grant or funding scheme to the amount of money available for funding."@en ;
+                  rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                  rdfs:label "has funding amount"@en .
+
+
+###  http://data.europa.eu/s66#hasFundingScheme
+:hasFundingScheme rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :hasGrant ;
+                  rdfs:domain :Grant ;
+                  rdfs:range :FundingScheme ;
+                  rdfs:comment "Relates the grant to the funding scheme of which the grant forms a part."@en ;
+                  rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                  rdfs:label "has funding scheme"@en .
+
+
+###  http://data.europa.eu/s66#hasFundingSchemeCall
+:hasFundingSchemeCall rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasFundingScheme ;
+                      rdfs:domain :Grant ;
+                      rdfs:range :FundingScheme ;
+                      rdfs:comment "Indicates the Call under which a project has been funded."@en ;
+                      rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                      rdfs:label "has funding scheme call"@en .
+
+
+###  http://data.europa.eu/s66#hasFundingSchemeCategory
+:hasFundingSchemeCategory rdf:type owl:ObjectProperty ;
+                          rdfs:domain :FundingScheme ;
+                          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                          rdfs:comment "A list of terms specifying the different categories / types of funding schemes."@en ;
+                          rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                          rdfs:label "has funding scheme category"@en .
+
+
+###  http://data.europa.eu/s66#hasFundingSchemeProgramme
+:hasFundingSchemeProgramme rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :hasFundingScheme ;
+                           rdfs:domain :Grant ;
+                           rdfs:range :FundingScheme ;
+                           rdfs:comment "Indicates the legal basis under which a project has been funded."@en ;
+                           rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                           rdfs:label "has funding scheme programme"@en .
+
+
+###  http://data.europa.eu/s66#hasFundingSchemeTopic
+:hasFundingSchemeTopic rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :hasFundingScheme ;
+                       rdfs:domain :Grant ;
+                       rdfs:range :FundingScheme ;
+                       rdfs:comment "Indicates the Topic under which a project has been funded."@en ;
+                       rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                       rdfs:label "has funding scheme topic"@en .
+
+
+###  http://data.europa.eu/s66#hasFundingSchemeType
+:hasFundingSchemeType rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasFundingScheme ;
+                      rdfs:domain :Grant ;
+                      rdfs:range :FundingScheme ;
+                      rdfs:comment "Indicates the type of action under which a project has been funded."@en ;
+                      rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                      rdfs:label "has funding scheme type"@en .
+
+
+###  http://data.europa.eu/s66#hasGeographicalLocation
+:hasGeographicalLocation rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Site ;
+                         rdfs:range :AdministrativeArea ;
+                         rdfs:comment "The basic containment relation between a place and one that contains it"@en ;
+                         rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                         rdfs:label "has geographical location"@en .
+
+
+###  http://data.europa.eu/s66#hasGrant
+:hasGrant rdf:type owl:ObjectProperty ;
+          rdfs:domain :FundingScheme ;
+          rdfs:range :Grant ;
+          rdfs:comment "Relates a funding scheme with the grants that form part of it. "@en ;
+          rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+          rdfs:label "has grant"@en .
+
+
+###  http://data.europa.eu/s66#hasISOCountryCode
+:hasISOCountryCode rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Country ;
+                   rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                   rdfs:comment "The 2-digit ISO country code."@en ;
+                   rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                   rdfs:label "has ISO country code"@en .
+
+
+###  http://data.europa.eu/s66#hasInvolvedParty
+:hasInvolvedParty rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :isInvolvedIn ;
+                  rdfs:domain :Project ;
+                  rdfs:range :Role ;
+                  rdfs:comment "Relates the Project to the roles that are involved in the project."@en ;
+                  rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                  rdfs:label "has involved party"@en .
+
+
+###  http://data.europa.eu/s66#hasNUTS0code
+:hasNUTS0code rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasNUTSCode ;
+              rdfs:domain :AdministrativeArea ;
+              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+              rdfs:comment "A value representing the NUTS-0 code of the place or address."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "has NUTS 0 code"@en .
+
+
+###  http://data.europa.eu/s66#hasNUTS1code
+:hasNUTS1code rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasNUTSCode ;
+              rdfs:domain :AdministrativeArea ;
+              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+              rdfs:comment "A value representing the NUTS-1 code of the place or address."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "has NUTS 1 code"@en .
+
+
+###  http://data.europa.eu/s66#hasNUTS2code
+:hasNUTS2code rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasNUTSCode ;
+              rdfs:domain :AdministrativeArea ;
+              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+              rdfs:comment "A value representing the NUTS-2 code of the place or address."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "has NUTS 2 code"@en .
+
+
+###  http://data.europa.eu/s66#hasNUTS3code
+:hasNUTS3code rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasNUTSCode ;
+              rdfs:domain :AdministrativeArea ;
+              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+              rdfs:comment "A value representing the NUTS-3 code of the place or address."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "has NUTS 3 code"@en .
+
+
+###  http://data.europa.eu/s66#hasNUTSCode
+:hasNUTSCode rdf:type owl:ObjectProperty ;
+             rdfs:domain :AdministrativeArea ;
+             rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+             rdfs:comment "A value representing the NUTS code of the place or address."@en ;
+             rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+             rdfs:label "has NUTS code"@en .
+
+
+###  http://data.europa.eu/s66#hasNextFundingScheme
+:hasNextFundingScheme rdf:type owl:ObjectProperty ;
+                      rdfs:domain :FundingScheme ;
+                      rdfs:range :FundingScheme ;
+                      rdfs:comment "Relates a funding scheme with the next funding scheme."@en ;
+                      rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                      rdfs:label "has next funding scheme"@en .
+
+
+###  http://data.europa.eu/s66#hasPayment
+:hasPayment rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isPaymentOf ;
+            rdfs:domain :Grant ;
+            rdfs:range :GrantPayment ;
+            rdfs:comment "Relates the grant to its payment(s)."@en ;
+            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+            rdfs:label "has payment"@en .
+
+
+###  http://data.europa.eu/s66#hasPaymentAmount
+:hasPaymentAmount rdf:type owl:ObjectProperty ;
+                  rdfs:domain :GrantPayment ;
+                  rdfs:range :MonetaryAmount ;
+                  rdfs:comment "Relates the payment to the amount of money that was given to the beneficiary of the payment."@en ;
+                  rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                  rdfs:label "has payment amount"@en .
+
+
+###  http://data.europa.eu/s66#hasPreviousFundingScheme
+:hasPreviousFundingScheme rdf:type owl:ObjectProperty ;
+                          rdfs:domain :FundingScheme ;
+                          rdfs:range :FundingScheme ;
+                          rdfs:comment "Relates a funding scheme with the previous funding scheme."@en ;
+                          rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                          rdfs:label "has previous funding scheme"@en .
+
+
+###  http://data.europa.eu/s66#hasRecipient
+:hasRecipient rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isRecipientOf ;
+              rdfs:domain :GrantPayment ;
+              rdfs:range :Role ;
+              rdfs:comment "Relates the grant payment to the organisation or person role(s) which have received the grant payment. Inverse property of isRecipientOf."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "has recipient"@en .
+
+
+###  http://data.europa.eu/s66#hasRelatedProject
+:hasRelatedProject rdf:type owl:ObjectProperty ,
+                            owl:SymmetricProperty ;
+                   rdfs:domain :Project ;
+                   rdfs:range :Project ;
+                   rdfs:comment "Represents a generic non parent-child relation between two CORDIS projects."@en ;
+                   rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                   rdfs:label "has related project"@en .
+
+
+###  http://data.europa.eu/s66#hasRelatedScheme
+:hasRelatedScheme rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty ;
+                  rdfs:domain :FundingScheme ;
+                  rdfs:range :FundingScheme ;
+                  rdfs:comment "Represents a generic non parent-child relation between two funding schemes."@en ;
+                  rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                  rdfs:label "has related scheme"@en .
+
+
+###  http://data.europa.eu/s66#hasResult
+:hasResult rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isResultOf ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Project
+                                     )
+                       ] ;
+           rdfs:range :Result ;
+           rdfs:comment "Relates the project with its result(s)."@en ;
+           rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+           rdfs:label "has result"@en .
+
+
+###  http://data.europa.eu/s66#hasResultType
+:hasResultType rdf:type owl:ObjectProperty ;
+               rdfs:domain :Result ;
+               rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+               rdfs:comment "A list of terms specifying the types of results that can have a project."@en ;
+               rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+               rdfs:label "has result type"@en .
+
+
+###  http://data.europa.eu/s66#hasRole
+:hasRole rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isRoleOf ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :Organisation
+                                     :Person
+                                   )
+                     ] ;
+         rdfs:range :Role ;
+         rdfs:comment "Relates the person/organisation to the roles that the person/organisation takes."@en ;
+         rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+         rdfs:label "has role"@en .
+
+
+###  http://data.europa.eu/s66#hasSite
+:hasSite rdf:type owl:ObjectProperty ;
+         rdfs:domain :Organisation ;
+         rdfs:range :Site ;
+         rdfs:comment "relates an organisation to its physical site"@en ;
+         rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+         rdfs:label "has site"@en .
+
+
+###  http://data.europa.eu/s66#hasSubOrganisation
+:hasSubOrganisation rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :isSubOrganisationOf ;
+                    rdfs:domain :Organisation ;
+                    rdfs:range :Organisation ;
+                    rdfs:comment "Relates the organisation with another organisation which is a sub-part or child of it."@en ;
+                    rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                    rdfs:label "has sub-organisation"@en .
+
+
+###  http://data.europa.eu/s66#hasSubScheme
+:hasSubScheme rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isSubSchemeOf ;
+              rdfs:domain :FundingScheme ;
+              rdfs:range :FundingScheme ;
+              rdfs:comment "Relates the funding scheme to its sub-schemes."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "has subscheme"@en .
+
+
+###  http://data.europa.eu/s66#hasTotalCost
+:hasTotalCost rdf:type owl:ObjectProperty ;
+              rdfs:domain :Project ;
+              rdfs:range :MonetaryAmount ;
+              rdfs:comment "Relates the project with the amount of money expected, required, or given in payment for the project."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "has total cost"@en .
+
+
+###  http://data.europa.eu/s66#hasUnit
+:hasUnit rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isUnitOf ;
+         rdfs:domain :Organisation ;
+         rdfs:range :OrganisationUnit ;
+         rdfs:comment "Relates the organisation with a unit or department that forms part of the organisation."@en ;
+         rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+         rdfs:label "has unit"@en .
+
+
+###  http://data.europa.eu/s66#implements
+:implements rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isImplementedBy ;
+            rdfs:domain :FundingAgency ;
+            rdfs:range :FundingScheme ;
+            rdfs:comment "Relates a funding agency to the funding schemes that it implements and administers."@en ;
+            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+            rdfs:label "implements"@en .
+
+
+###  http://data.europa.eu/s66#isAcronymOf
+:isAcronymOf rdf:type owl:ObjectProperty ;
+             rdfs:domain :Acronym ;
+             rdfs:comment "Relates the acronym to the entity or entities to which it belongs."@en ;
+             rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+             rdfs:label "is acronym of"@en .
+
+
+###  http://data.europa.eu/s66#isBeneficiaryOf
+:isBeneficiaryOf rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Role ;
+                 rdfs:range :Grant ;
+                 rdfs:comment "Relates the role to the grant(s) of which the role is a beneficiary."@en ;
+                 rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                 rdfs:label "is beneficiary of"@en .
+
+
+###  http://data.europa.eu/s66#isDisbursedBy
+:isDisbursedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain :Grant ;
+               rdfs:range :FundingAgency ;
+               rdfs:comment "Relates the grant to the funding agency that disburses the grant."@en ;
+               rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+               rdfs:label "is disbursed by"@en .
+
+
+###  http://data.europa.eu/s66#isEmployedBy
+:isEmployedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :PersonRole ;
+              rdfs:range :Organisation ;
+              rdfs:comment "Relates the person role to the organisation in which the person holding the role is employed during the project."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "is employed by"@en .
+
+
+###  http://data.europa.eu/s66#isFundedBy
+:isFundedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Project ;
+            rdfs:range :Grant ;
+            rdfs:comment "Relates the project with the grant(s) that completely or partially fund the project."@en ;
+            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+            rdfs:label "is funded by"@en .
+
+
+###  http://data.europa.eu/s66#isImplementedBy
+:isImplementedBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain :FundingScheme ;
+                 rdfs:range :FundingAgency ;
+                 rdfs:comment "Relates the funding scheme with the funding agency that implements and administers the scheme."@en ;
+                 rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                 rdfs:label "is implemented by"@en .
+
+
+###  http://data.europa.eu/s66#isInvolvedIn
+:isInvolvedIn rdf:type owl:ObjectProperty ;
+              rdfs:domain :Role ;
+              rdfs:range :Project ;
+              rdfs:comment "Relates the role to the Project in which it is involved."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "is involved in"@en .
+
+
+###  http://data.europa.eu/s66#isPaymentOf
+:isPaymentOf rdf:type owl:ObjectProperty ;
+             rdfs:domain :GrantPayment ;
+             rdfs:range :Grant ;
+             rdfs:comment "Relates a payment to the grant of which it is a part."@en ;
+             rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+             rdfs:label "is payment of"@en .
+
+
+###  http://data.europa.eu/s66#isRecipientOf
+:isRecipientOf rdf:type owl:ObjectProperty ;
+               rdfs:domain :Role ;
+               rdfs:range :GrantPayment ;
+               rdfs:comment "Relates the organisation or person role with the grant payment(s) which they have received. Inverse property of hasRecipient."@en ;
+               rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+               rdfs:label "is recipient of"@en .
+
+
+###  http://data.europa.eu/s66#isResultOf
+:isResultOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Result ;
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( :Project
+                                     )
+                       ] ;
+            rdfs:comment "Relates the results with the Project(s) involved."@en ;
+            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+            rdfs:label "is result of"@en .
+
+
+###  http://data.europa.eu/s66#isRoleOf
+:isRoleOf rdf:type owl:ObjectProperty ;
+          rdfs:domain :Role ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Organisation
+                                     :Person
+                                   )
+                     ] ;
+          rdfs:comment "Relates the person/organisation role to the person/organisation which assumes the role."@en ;
+          rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+          rdfs:label "is role of"@en .
+
+
+###  http://data.europa.eu/s66#isSiteOf
+:isSiteOf rdf:type owl:ObjectProperty ;
+          rdfs:domain :Site ;
+          rdfs:range :Organisation ;
+          rdfs:comment "Indicates an entity which has presence at the given site"@en ;
+          rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+          rdfs:label "is site of"@en .
+
+
+###  http://data.europa.eu/s66#isSubOrganisationOf
+:isSubOrganisationOf rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Organisation ;
+                     rdfs:range :Organisation ;
+                     rdfs:comment "Relates the organisation with another organisation of which it is a sub-part."@en ;
+                     rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                     rdfs:label "is sub-organisation of"@en .
+
+
+###  http://data.europa.eu/s66#isSubSchemeOf
+:isSubSchemeOf rdf:type owl:ObjectProperty ;
+               rdfs:domain :FundingScheme ;
+               rdfs:range :FundingScheme ;
+               rdfs:comment "Relates the funding scheme to its parent scheme of which this funding scheme forms a part. "@en ;
+               rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+               rdfs:label "is subscheme of"@en .
+
+
+###  http://data.europa.eu/s66#isUnitOf
+:isUnitOf rdf:type owl:ObjectProperty ;
+          rdfs:domain :OrganisationUnit ;
+          rdfs:range :Organisation ;
+          rdfs:comment "Relates the unit to the organisation of which the unit forms a part. "@en ;
+          rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+          rdfs:label "is unit of"@en .
+
+
+###  http://data.europa.eu/s66#refersTo
+:refersTo rdf:type owl:ObjectProperty ;
+          rdfs:domain :Acronym ;
+          rdfs:comment "The entity to which this acronym refers. This can either be an entity inside of the knowledge graph or an external entity of any type."@en ;
+          rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+          rdfs:label "refers to"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://data.europa.eu/s66#abstract
+:abstract rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The general summary and ideas of a CORDIS entity, e.g., project, result."@en ;
+          rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+          rdfs:label "abstract"@en .
+
+
+###  http://data.europa.eu/s66#additionalName
+:additionalName rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Person ;
+                rdfs:range xsd:string ;
+                rdfs:comment "An additional name for a Person, can be used for a middle name."@en ;
+                rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                rdfs:label "additional name"@en .
+
+
+###  http://data.europa.eu/s66#addressCountry
+:addressCountry rdf:type owl:DatatypeProperty ;
+                rdfs:domain :PostalAddress ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The country of the place or address. You can also provide the two-letter ISO 3166-1 alpha-2 country code."@en ;
+                rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                rdfs:label "address country"@en .
+
+
+###  http://data.europa.eu/s66#addressLocality
+:addressLocality rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :PostalAddress ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "The locality, town or city of the place or address."@en ;
+                 rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                 rdfs:label "address locality"@en .
+
+
+###  http://data.europa.eu/s66#authorList
+:authorList rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The list of authors."@en ;
+            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+            rdfs:label "author list"@en .
+
+
+###  http://data.europa.eu/s66#code
+:code rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :FundingScheme ;
+      rdfs:range xsd:string ;
+      rdfs:comment "A CORDA code."@en ;
+      rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+      rdfs:label "code"@en .
+
+
+###  http://data.europa.eu/s66#currency
+:currency rdf:type owl:DatatypeProperty ;
+          rdfs:domain :MonetaryAmount ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The currency in which the monetary amount is expressed."@en ;
+          rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+          rdfs:label "currency"@en .
+
+
+###  http://data.europa.eu/s66#date
+:date rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:date ;
+      rdfs:comment "The date in which the grant payment took place."@en ;
+      rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+      rdfs:label "date"@en .
+
+
+###  http://data.europa.eu/s66#definition
+:definition rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Acronym ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The definition of the acronym."@en ;
+            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+            rdfs:label "definition"@en .
+
+
+###  http://data.europa.eu/s66#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:string ;
+             rdfs:comment "A brief summary of the entity (project, etc.)."@en ;
+             rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+             rdfs:label "description"@en .
+
+
+###  http://data.europa.eu/s66#doi
+:doi rdf:type owl:DatatypeProperty ,
+              owl:FunctionalProperty ;
+     rdfs:range xsd:anyURI ;
+     rdfs:comment "The digital object identifier of a publication."@en ;
+     rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+     rdfs:label "doi"@en .
+
+
+###  http://data.europa.eu/s66#duration
+:duration rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:nonNegativeInteger ;
+          rdfs:comment "The period of time an entity (e.g. project, grant, etc.) has taken, represented as number of months."@en ;
+          rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+          rdfs:label "duration"@en .
+
+
+###  http://data.europa.eu/s66#email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:domain :ContactPoint ;
+       rdfs:range xsd:anyURI ;
+       rdfs:comment "Email address."@en ;
+       rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+       rdfs:label "email"@en .
+
+
+###  http://data.europa.eu/s66#endDate
+:endDate rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :date ;
+         rdfs:range xsd:date ;
+         rdfs:comment "The date on which an entity (e.g. project, grant, etc.) is finalized or ceases to exist."@en ;
+         rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+         rdfs:label "end date"@en .
+
+
+###  http://data.europa.eu/s66#familyName
+:familyName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Person ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The family name (last name) of the person."@en ;
+            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+            rdfs:label "family name"@en .
+
+
+###  http://data.europa.eu/s66#faxNumber
+:faxNumber rdf:type owl:DatatypeProperty ;
+           rdfs:domain :ContactPoint ;
+           rdfs:range rdfs:Literal ;
+           rdfs:comment "The fax number."@en ;
+           rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+           rdfs:label "fax number"@en .
+
+
+###  http://data.europa.eu/s66#finalResults
+:finalResults rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ProjectReportSummary ;
+              rdfs:range xsd:string ;
+              rdfs:comment "A brief description of the project findings."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "final results"@en .
+
+
+###  http://data.europa.eu/s66#fullAddress
+:fullAddress rdf:type owl:DatatypeProperty ;
+             rdfs:domain :PostalAddress ;
+             rdfs:range rdfs:Literal ;
+             rdfs:comment "The full address of a physical location of an entity."@en ;
+             rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+             rdfs:label "full address"@en .
+
+
+###  http://data.europa.eu/s66#givenName
+:givenName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Person ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The given name (first name) of the person."@en ;
+           rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+           rdfs:label "given name"@en .
+
+
+###  http://data.europa.eu/s66#honorificTitle
+:honorificTitle rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Person ;
+                rdfs:range xsd:string ;
+                rdfs:comment "An honorific prefix preceding a Person's name such as Dr, Mrs, Mr."@en ;
+                rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                rdfs:label "honorific title"@en .
+
+
+###  http://data.europa.eu/s66#identifier
+:identifier rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:range rdfs:Literal ;
+            rdfs:comment "The internal CORDA identifier."@en ;
+            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+            rdfs:label "identifier"@en .
+
+
+###  http://data.europa.eu/s66#isNet
+:isNet rdf:type owl:DatatypeProperty ;
+       rdfs:domain :MonetaryAmount ;
+       rdfs:range xsd:boolean ;
+       rdfs:comment "Represents whether the monetary amount has deducted taxes or not. "@en ;
+       rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+       rdfs:label "is net"@en .
+
+
+###  http://data.europa.eu/s66#isbn
+:isbn rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :ProjectPublication ;
+      rdfs:range rdfs:Literal ;
+      rdfs:comment "The international standard book number of book publications."@en ;
+      rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+      rdfs:label "isbn"@en .
+
+
+###  http://data.europa.eu/s66#issn
+:issn rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :ProjectPublication ;
+      rdfs:range rdfs:Literal ;
+      rdfs:comment "The international standard serial number of journal publications."@en ;
+      rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+      rdfs:label "issn"@en .
+
+
+###  http://data.europa.eu/s66#journalNumber
+:journalNumber rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ProjectPublication ;
+               rdfs:range rdfs:Literal ;
+               rdfs:comment "The journal number of a published result."@en ;
+               rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+               rdfs:label "journal number"@en .
+
+
+###  http://data.europa.eu/s66#journalTitle
+:journalTitle rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ProjectPublication ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The title of the journal of a published result."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "journal title"@en .
+
+
+###  http://data.europa.eu/s66#keyword
+:keyword rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Word or words that represent the main idea of a referred entity (e.g., project. project result, etc.)"@en ;
+         rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+         rdfs:label "keyword"@en .
+
+
+###  http://data.europa.eu/s66#latitude
+:latitude rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Coordinates ;
+          rdfs:range xsd:decimal ;
+          rdfs:comment "The latitude of a location. For example 37.42242 (WGS 84)."@en ;
+          rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+          rdfs:label "latitude"@en .
+
+
+###  http://data.europa.eu/s66#legalName
+:legalName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Organisation ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The official name of the organization, e.g. the registered company name."@en ;
+           rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+           rdfs:label "legal name"@en .
+
+
+###  http://data.europa.eu/s66#longitude
+:longitude rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Coordinates ;
+           rdfs:range xsd:decimal ;
+           rdfs:comment "The longitude of a location. For example -122.08585 (WGS 84)."@en ;
+           rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+           rdfs:label "longitude"@en .
+
+
+###  http://data.europa.eu/s66#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:string ;
+      rdfs:comment "The name of an entity"@en ;
+      rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+      rdfs:label "name"@en .
+
+
+###  http://data.europa.eu/s66#order
+:order rdf:type owl:DatatypeProperty ;
+       rdfs:domain :OrganisationRole ;
+       rdfs:range xsd:nonNegativeInteger .
+
+
+###  http://data.europa.eu/s66#periodNumber
+:periodNumber rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ProjectReportSummary ;
+              rdfs:range xsd:integer ;
+              rdfs:comment "The number of the reporting period."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "period number"@en .
+
+
+###  http://data.europa.eu/s66#postOfficeBoxNumber
+:postOfficeBoxNumber rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :PostalAddress ;
+                     rdfs:range rdfs:Literal ;
+                     rdfs:comment "The post office box number for PO box addresses."@en ;
+                     rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                     rdfs:label "post office box number"@en .
+
+
+###  http://data.europa.eu/s66#postalCode
+:postalCode rdf:type owl:DatatypeProperty ;
+            rdfs:domain :PostalAddress ;
+            rdfs:range rdfs:Literal ;
+            rdfs:comment "The postal code of the place or address."@en ;
+            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+            rdfs:label "postal code"@en .
+
+
+###  http://data.europa.eu/s66#projectStatus
+:projectStatus rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Project ;
+               rdfs:range [ rdf:type rdfs:Datatype ;
+                            owl:oneOf [ rdf:type rdf:List ;
+                                        rdf:first "CANCEL" ;
+                                        rdf:rest [ rdf:type rdf:List ;
+                                                   rdf:first "CLOSED" ;
+                                                   rdf:rest [ rdf:type rdf:List ;
+                                                              rdf:first "ONGOING" ;
+                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                         rdf:first "SIGNED" ;
+                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                    rdf:first "TERMINATED" ;
+                                                                                    rdf:rest rdf:nil
+                                                                                  ]
+                                                                       ]
+                                                            ]
+                                                 ]
+                                      ]
+                          ] ;
+               rdfs:comment "The current status (signed, ongoing, terminated, etc.) of the project."@en ;
+               rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+               rdfs:label "project status"@en .
+
+
+###  http://data.europa.eu/s66#publishedPages
+:publishedPages rdf:type owl:DatatypeProperty ;
+                rdfs:domain :ProjectPublication ;
+                rdfs:range rdfs:Literal ;
+                rdfs:comment "The pages of a published result."@en ;
+                rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                rdfs:label "published pages"@en .
+
+
+###  http://data.europa.eu/s66#publishedYear
+:publishedYear rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ProjectPublication ;
+               rdfs:range xsd:nonNegativeInteger ;
+               rdfs:comment "The year of publication."@en ;
+               rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+               rdfs:label "published year"@en .
+
+
+###  http://data.europa.eu/s66#publisher
+:publisher rdf:type owl:DatatypeProperty ;
+           rdfs:domain :ProjectPublication ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Represents the publishing body of a published result."@en ;
+           rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+           rdfs:label "publisher"@en .
+
+
+###  http://data.europa.eu/s66#rcn
+:rcn rdf:type owl:DatatypeProperty ,
+              owl:FunctionalProperty ;
+     rdfs:range xsd:nonNegativeInteger ;
+     rdfs:comment "Internal CORDIS identifier used for the identification of the domain entities (e.g., projects, project results, organisations, funding schemes, etc.). Stands for Resource Control Number."@en ;
+     rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+     rdfs:label "rcn"@en .
+
+
+###  http://data.europa.eu/s66#roleLabel
+:roleLabel rdf:type owl:DatatypeProperty ;
+           rdfs:domain :OrganisationRole ;
+           rdfs:range [ rdf:type rdfs:Datatype ;
+                        owl:oneOf [ rdf:type rdf:List ;
+                                    rdf:first "coordinator" ;
+                                    rdf:rest [ rdf:type rdf:List ;
+                                               rdf:first "international partner" ;
+                                               rdf:rest [ rdf:type rdf:List ;
+                                                          rdf:first "participant" ;
+                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                     rdf:first "partner" ;
+                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                rdf:first "third party" ;
+                                                                                rdf:rest rdf:nil
+                                                                              ]
+                                                                   ]
+                                                        ]
+                                             ]
+                                  ]
+                      ] ;
+           rdfs:comment "Title for capturing the role of an organisation."@en ;
+           rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+           rdfs:label "role label"@en .
+
+
+###  http://data.europa.eu/s66#shortForm
+:shortForm rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Acronym ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The value of the acronym."@en ;
+           rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+           rdfs:label "short form"@en .
+
+
+###  http://data.europa.eu/s66#signatureDate
+:signatureDate rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :date ;
+               rdfs:domain :Project ;
+               rdfs:range xsd:date ;
+               rdfs:comment "The day a grant agreement has been signed."@en ;
+               rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+               rdfs:label "signature date"@en .
+
+
+###  http://data.europa.eu/s66#startDate
+:startDate rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :date ;
+           rdfs:range xsd:date ;
+           rdfs:comment "The time an entity (e.g. project, grant, etc.) is initialized or starts to take effect."@en ;
+           rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+           rdfs:label "start date"@en .
+
+
+###  http://data.europa.eu/s66#streetAddress
+:streetAddress rdf:type owl:DatatypeProperty ;
+               rdfs:domain :PostalAddress ;
+               rdfs:range rdfs:Literal ;
+               rdfs:comment "The street name and number of the place or address."@en ;
+               rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+               rdfs:label "street address"@en .
+
+
+###  http://data.europa.eu/s66#telephoneNumber
+:telephoneNumber rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ContactPoint ;
+                 rdfs:range rdfs:Literal ;
+                 rdfs:comment "The telephone number."@en ;
+                 rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                 rdfs:label "telephone number"@en .
+
+
+###  http://data.europa.eu/s66#terminationDate
+:terminationDate rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :date ;
+                 rdfs:range xsd:date ;
+                 rdfs:comment "The termination date of a project."@en ;
+                 rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                 rdfs:label "termination date"@en .
+
+
+###  http://data.europa.eu/s66#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:range rdfs:Literal ;
+       rdfs:comment "The entity’s (e.g. project, work package, etc.) official name or title."@en ;
+       rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+       rdfs:label "title"@en .
+
+
+###  http://data.europa.eu/s66#url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:range xsd:anyURI ;
+     rdfs:comment "A URL that links internet resources related to a CORDIS entity."@en ;
+     rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+     rdfs:label "URL"@en .
+
+
+###  http://data.europa.eu/s66#value
+:value rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:decimal ;
+       rdfs:comment "The value of amount being expressed."@en ;
+       rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+       rdfs:label "value"@en .
+
+
+###  http://data.europa.eu/s66#vatNumber
+:vatNumber rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Organisation ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The unique number that identifies a taxable organisation or non-taxable legal entity that is registered for VAT."@en ;
+           rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+           rdfs:label "VAT number"@en .
+
+
+###  http://data.europa.eu/s66#workPerformed
+:workPerformed rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ProjectReportSummary ;
+               rdfs:range xsd:string ;
+               rdfs:comment "A summary of the work carried out during the development of the project."@en ;
+               rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+               rdfs:label "work performed"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://data.europa.eu/s66#Acronym
+:Acronym rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :definition ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :shortForm ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ;
+         rdfs:comment "An abbreviation formed from the initial letters of other words and pronounced as a word. It can refer to any type of entities in the CORDIS conceptual framework, and may be stated explicitly or extracted automatically from text."@en ;
+         rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+         rdfs:label "Acronym"@en .
+
+
+###  http://data.europa.eu/s66#AdministrativeArea
+:AdministrativeArea rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :name ;
+                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                    ] ;
+                    rdfs:comment "An administrative geographical area that is typically managed by a public body. It can be a country, a region, a municipality, a province, a sub-municipality area, etc."@en ;
+                    rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                    rdfs:label "Administrative Area"@en ;
+                    <http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.europa.eu/m8g/AdminUnit> ,
+                                                                     <http://schema.org/AdministrativeArea> .
+
+
+###  http://data.europa.eu/s66#Book
+:Book rdf:type owl:Class ;
+      rdfs:subClassOf :ProjectPublication ;
+      rdfs:comment "A non-serial document that is complete in one volume or a designated finite number of volumes. A book published by a publisher is usually identified by an International Standard Book Number (ISBN), and may be manifested as a physical printed publication on paper bound in a hard or soft cover, or in electronic format as an 'e-book'."@en ;
+      rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+      rdfs:label "Book"@en ;
+      <http://www.w3.org/2004/02/skos/core#broadMatch> <http://purl.org/spar/fabio/Book> .
+
+
+###  http://data.europa.eu/s66#BookChapter
+:BookChapter rdf:type owl:Class ;
+             rdfs:subClassOf :ProjectPublication ;
+             rdfs:comment "A defined chapter of a book, usually with a separate title or number."@en ;
+             rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+             rdfs:label "Book Chapter"@en ;
+             <http://www.w3.org/2004/02/skos/core#broadMatch> <http://purl.org/spar/fabio/BookChapter> .
+
+
+###  http://data.europa.eu/s66#ConferencePaper
+:ConferencePaper rdf:type owl:Class ;
+                 rdfs:subClassOf :ProjectPublication ;
+                 rdfs:comment "A paper, typically the realization of a research paper reporting original research findings, usually published within a conference proceedings volume."@en ;
+                 rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                 rdfs:label "Conference Paper"@en ;
+                 <http://www.w3.org/2004/02/skos/core#broadMatch> <http://purl.org/spar/fabio/ConferencePaper> .
+
+
+###  http://data.europa.eu/s66#ContactPoint
+:ContactPoint rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :faxNumber ;
+                                owl:allValuesFrom xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :telephoneNumber ;
+                                owl:allValuesFrom xsd:string
+                              ] ;
+              rdfs:comment "A contact point of an organisation or a person."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "Contact Point"@en .
+
+
+###  http://data.europa.eu/s66#Coordinates
+:Coordinates rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :latitude ;
+                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :longitude ;
+                               owl:cardinality "1"^^xsd:nonNegativeInteger
+                             ] ;
+             rdfs:comment "The geo coordinates for a location of entities that participate in or form part of research projects."@en ;
+             rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+             rdfs:label "Coordinates"@en ;
+             <http://www.w3.org/2004/02/skos/core#broadMatch> <http://www.w3.org/ns/locn#Geometry> ;
+             <http://www.w3.org/2004/02/skos/core#closeMatch> <http://schema.org/GeoCoordinates> .
+
+
+###  http://data.europa.eu/s66#Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :AdministrativeArea ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasEUCountryCode ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ;
+         rdfs:comment "A country"@en ;
+         rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+         rdfs:label "Country"@en ;
+         <http://www.w3.org/2004/02/skos/core#broadMatch> <http://schema.org/Country> .
+
+
+###  http://data.europa.eu/s66#DetectedAcronym
+:DetectedAcronym rdf:type owl:Class ;
+                 rdfs:subClassOf :Acronym ;
+                 owl:disjointWith :TitleAcronym ;
+                 rdfs:comment "Any acronym that has been detected, automatically or manually, from the description of an entity or from any other form of natural language text."@en ;
+                 rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                 rdfs:label "Detected Acronym"@en .
+
+
+###  http://data.europa.eu/s66#ExploitableResult
+:ExploitableResult rdf:type owl:Class ;
+                   rdfs:subClassOf :Result ;
+                   rdfs:comment "An exploitable project result, e.g., a patent."@en ;
+                   rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                   rdfs:label "Exploitable Result"@en ;
+                   <http://www.w3.org/2004/02/skos/core#broadMatch> <http://purl.org/spar/fabio/PatentDocument> .
+
+
+###  http://data.europa.eu/s66#ForProfitOrganisation
+:ForProfitOrganisation rdf:type owl:Class ;
+                       rdfs:subClassOf :Organisation ;
+                       rdfs:comment "A for profit entity"@en ;
+                       rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                       rdfs:label "For Profit Organisation"@en ;
+                       <http://www.w3.org/2004/02/skos/core#broadMatch> <https://w3id.org/dingo#ForProfitOrganisation> .
+
+
+###  http://data.europa.eu/s66#FundingAgency
+:FundingAgency rdf:type owl:Class ;
+               rdfs:subClassOf :Organisation ;
+               rdfs:comment "An organisation that materially administrates funding schemes and disburses related grants. In the context of CORDIS, it represents the various European agencies responsible for funding research projects (e.g. ERC, EASME, REA, etc.)."@en ;
+               rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+               rdfs:label "Funding Agency"@en ;
+               <http://www.w3.org/2004/02/skos/core#broadMatch> <https://w3id.org/dingo#FundingAgency> .
+
+
+###  http://data.europa.eu/s66#FundingScheme
+:FundingScheme rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasFundingSchemeCategory ;
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :isImplementedBy ;
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :duration ;
+                                 owl:allValuesFrom xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :title ;
+                                 owl:allValuesFrom xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :url ;
+                                 owl:minCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :title ;
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                               ] ;
+               rdfs:comment "Set of rules and conditions which forms the basis for public funding of European research. In CORDIS, they represent the different legal frameworks (e.g. FP6, FP7, H2020). They can also be used to represent the different calls inside each framework by using the recursive relation “partOfScheme”."@en ;
+               rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+               rdfs:label "Funding Scheme"@en ;
+               <http://www.w3.org/2004/02/skos/core#broadMatch> <https://w3id.org/dingo#FundingScheme> .
+
+
+###  http://data.europa.eu/s66#Grant
+:Grant rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :funds ;
+                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasBeneficiary ;
+                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasFundingScheme ;
+                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPayment ;
+                         owl:minCardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasFundingAmount ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :isDisbursedBy ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :duration ;
+                         owl:someValuesFrom xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :endDate ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :identifier ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :startDate ;
+                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                       ] ;
+       rdfs:comment "A disbursed fund paid to a recipient or beneficiary within the context of a funded research project. In the context of CORDIS, it represents a grant of a specific EU programme (e.g. an H2020 grant)."@en ;
+       rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+       rdfs:label "Grant"@en ;
+       <http://www.w3.org/2004/02/skos/core#broadMatch> <https://w3id.org/dingo#Grant> .
+
+
+###  http://data.europa.eu/s66#GrantPayment
+:GrantPayment rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasPaymentAmount ;
+                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                              ] ;
+              rdfs:comment "A single payment to a recipient or beneficiary of a Grant within a research project."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "Grant Payment"@en ;
+              <http://www.w3.org/2004/02/skos/core#broadMatch> <https://w3id.org/dingo#GrantPayment> .
+
+
+###  http://data.europa.eu/s66#HigherOrSecondaryEducation
+:HigherOrSecondaryEducation rdf:type owl:Class ;
+                            rdfs:subClassOf :Organisation ;
+                            rdfs:comment "Institution that provides education."@en ;
+                            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                            rdfs:label "Higher Or Secondary Education"@en ;
+                            <http://www.w3.org/2004/02/skos/core#broadMatch> <http://schema.org/EducationalOrganization> ,
+                                                                             <https://w3id.org/dingo#EducationOrganisation> .
+
+
+###  http://data.europa.eu/s66#JournalPaper
+:JournalPaper rdf:type owl:Class ;
+              rdfs:subClassOf :ProjectPublication ;
+              rdfs:comment "An article, typically the realization of a research paper reporting original research findings, published in a journal issue."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "Journal Paper"@en ;
+              <http://www.w3.org/2004/02/skos/core#broadMatch> <http://purl.org/spar/fabio/JournalArticle> .
+
+
+###  http://data.europa.eu/s66#MonetaryAmount
+:MonetaryAmount rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty :value ;
+                                  owl:cardinality "1"^^xsd:nonNegativeInteger
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :isNet ;
+                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                ] ;
+                rdfs:comment "A monetary value or range. This type can be used to describe an amount of money such as $50 USD, or a range as in describing a bank account being suitable for a balance between £1,000 and £1,000,000 GBP, or the value of a salary, etc."@en ;
+                rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                rdfs:label "Monetary Amount"@en ;
+                <http://www.w3.org/2004/02/skos/core#broadMatch> <http://schema.org/MonetaryAmount> .
+
+
+###  http://data.europa.eu/s66#NonPeerReviewedPublication
+:NonPeerReviewedPublication rdf:type owl:Class ;
+                            rdfs:subClassOf :ProjectPublication ;
+                            rdfs:comment "A work that hasn't undergone peer reviewing prior to its publication."@en ;
+                            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                            rdfs:label "Non Peer-Reviewed Publication"@en .
+
+
+###  http://data.europa.eu/s66#Organisation
+:Organisation rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasRole ;
+                                owl:allValuesFrom :OrganisationRole
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasSite ;
+                                owl:minCardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :identifier ;
+                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :legalName ;
+                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :rcn ;
+                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :vatNumber ;
+                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :url ;
+                                owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                              ] ;
+              owl:disjointWith :Person ;
+              rdfs:comment "Represents a group of people, with the same purpose, organized together into a community or other social, commercial or political structure that participate in CORDIS projects."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "Organisation"@en ;
+              <http://www.w3.org/2004/02/skos/core#broadMatch> <http://www.w3.org/ns/org#Organization> ,
+                                                               <https://w3id.org/dingo#Organisation> .
+
+
+###  http://data.europa.eu/s66#OrganisationRole
+:OrganisationRole rdf:type owl:Class ;
+                  rdfs:subClassOf :Role ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :isRoleOf ;
+                                    owl:allValuesFrom :Organisation
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :isRoleOf ;
+                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                  ] ;
+                  owl:disjointWith :PersonRole ;
+                  rdfs:comment "Function assumed by or ascribed to an organisation that takes part in a particular project. In CORDIs, it represents roles such as coordinator, partner, consortium member, etc."@en ;
+                  rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                  rdfs:label "Organisation Role"@en ;
+                  <http://www.w3.org/2004/02/skos/core#broadMatch> <https://w3id.org/dingo#OrganisationRole> .
+
+
+###  http://data.europa.eu/s66#OrganisationUnit
+:OrganisationUnit rdf:type owl:Class ;
+                  rdfs:comment "A department or unit which is part of some larger Organization and only has full recognition within the context of that Organization. In CORDIS, it represents for instance the different departments of a university that participate in a particular project."@en ;
+                  rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                  rdfs:label "Organisation Unit"@en ;
+                  <http://www.w3.org/2004/02/skos/core#broadMatch> <http://www.w3.org/ns/org#OrganizationalUnit> .
+
+
+###  http://data.europa.eu/s66#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasRole ;
+                          owl:allValuesFrom :PersonRole
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :familyName ;
+                          owl:cardinality "1"^^xsd:nonNegativeInteger
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :givenName ;
+                          owl:cardinality "1"^^xsd:nonNegativeInteger
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :additionalName ;
+                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                        ] ;
+        owl:disjointWith :PersonRole ;
+        rdfs:comment "A physical person. In CORDIS, it represents the different people assuming roles in research projects (e.g. PhD students, PIs, administrative contacts, etc.)."@en ;
+        rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+        rdfs:label "Person"@en ;
+        <http://www.w3.org/2004/02/skos/core#broadMatch> <http://schema.org/Person> ,
+                                                         <https://w3id.org/dingo#Person> ;
+        <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/ns/person#Person> .
+
+
+###  http://data.europa.eu/s66#PersonRole
+:PersonRole rdf:type owl:Class ;
+            rdfs:subClassOf :Role ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isRoleOf ;
+                              owl:allValuesFrom :Person
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isRoleOf ;
+                              owl:cardinality "1"^^xsd:nonNegativeInteger
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isEmployedBy ;
+                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                            ] ;
+            rdfs:comment "Function assumed by or ascribed to a person that takes part in a particular project. In CORDIS, it represents roles such as contact person, PI, etc."@en ;
+            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+            rdfs:label "Person Role"@en ;
+            <http://www.w3.org/2004/02/skos/core#broadMatch> <https://w3id.org/dingo#PersonRole> .
+
+
+###  http://data.europa.eu/s66#PostalAddress
+:PostalAddress rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :fullAddress ;
+                                 owl:allValuesFrom xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :postalCode ;
+                                 owl:allValuesFrom xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :streetAddress ;
+                                 owl:allValuesFrom xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :addressCountry ;
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :addressLocality ;
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :fullAddress ;
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :postalCode ;
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :streetAddress ;
+                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                               ] ;
+               rdfs:comment "The postal address of entities that participate in or form part of research projects."@en ;
+               rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+               rdfs:label "Postal Address"@en ;
+               <http://www.w3.org/2004/02/skos/core#broadMatch> <http://schema.org/PostalAddress> ,
+                                                                <http://www.w3.org/ns/locn#Address> .
+
+
+###  http://data.europa.eu/s66#Project
+:Project rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasInvolvedParty ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :isFundedBy ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasTotalCost ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :title ;
+                           owl:allValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :abstract ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :duration ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :endDate ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :identifier ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :projectStatus ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :rcn ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :signatureDate ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :startDate ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :title ;
+                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :url ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ;
+         rdfs:comment "A planned research work that has one or more objectives (divided or not into tasks) and is conducted by one or more organisations. In CORDIS, it represents a project funded by an EU programme."@en ;
+         rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+         rdfs:label "Project"@en ;
+         <http://www.w3.org/2004/02/skos/core#broadMatch> <https://w3id.org/dingo#Project> .
+
+
+###  http://data.europa.eu/s66#ProjectDeliverable
+:ProjectDeliverable rdf:type owl:Class ;
+                    rdfs:subClassOf :Result ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasResultType ;
+                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :description ;
+                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                    ] ;
+                    rdfs:comment "A document referring to the results obtained during the development of a project."@en ;
+                    rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                    rdfs:label "Project Deliverable"@en ;
+                    <http://www.w3.org/2004/02/skos/core#broadMatch> <http://purl.org/spar/fabio/ProjectReportDocument> .
+
+
+###  http://data.europa.eu/s66#ProjectPublication
+:ProjectPublication rdf:type owl:Class ;
+                    rdfs:subClassOf :Result ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :journalNumber ;
+                                      owl:allValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :publishedPages ;
+                                      owl:allValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :authorList ;
+                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :journalNumber ;
+                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :journalTitle ;
+                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :publishedYear ;
+                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :publisher ;
+                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :publishedPages ;
+                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                    ] ;
+                    rdfs:comment "A scientific publication (e.g., journal article, conference paper, thesis dissertation, book, etc.) that resulted from the project activities."@en ;
+                    rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                    rdfs:label "Project Publication"@en ;
+                    <http://www.w3.org/2004/02/skos/core#broadMatch> <http://purl.org/spar/fabio/Expression> .
+
+
+###  http://data.europa.eu/s66#ProjectReportSummary
+:ProjectReportSummary rdf:type owl:Class ;
+                      rdfs:subClassOf :Result ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :abstract ;
+                                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :endDate ;
+                                        owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :finalResults ;
+                                        owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :startDate ;
+                                        owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :workPerformed ;
+                                        owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                      ] ;
+                      rdfs:comment "A document reporting on the progress of an on-going or completed project at a given period.."@en ;
+                      rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                      rdfs:label "Project Report Summary"@en ;
+                      <http://www.w3.org/2004/02/skos/core#broadMatch> <http://purl.org/spar/fabio/ProjectReportSummary> .
+
+
+###  http://data.europa.eu/s66#PublicBody
+:PublicBody rdf:type owl:Class ;
+            rdfs:subClassOf :Organisation ;
+            rdfs:comment "Organisation or agency depending on a government, State or other supranational organisation and mainly operated by the government."@en ;
+            rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+            rdfs:label "Public Body"@en ;
+            <http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.org/cerif/frapo/NotForProfitOrganization> ,
+                                                             <https://w3id.org/dingo#GovernamentalOrganisation> .
+
+
+###  http://data.europa.eu/s66#ResearchOrganisation
+:ResearchOrganisation rdf:type owl:Class ;
+                      rdfs:subClassOf :Organisation ;
+                      rdfs:comment "Organisations devoted to research activities."@en ;
+                      rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                      rdfs:label "Research Organisation"@en ;
+                      <http://www.w3.org/2004/02/skos/core#broadMatch> <https://w3id.org/dingo#ResearchPerformingOrganisation> .
+
+
+###  http://data.europa.eu/s66#Result
+:Result rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :title ;
+                          owl:allValuesFrom xsd:string
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :title ;
+                          owl:cardinality "1"^^xsd:nonNegativeInteger
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :url ;
+                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                        ] ;
+        rdfs:comment "Any tangible or intangible output of the project (such as data, knowledge and information, whatever their form or nature, whether or not they can be protected), which are generated in the project."@en ;
+        rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+        rdfs:label "Result"@en .
+
+
+###  http://data.europa.eu/s66#Role
+:Role rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :isInvolvedIn ;
+                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :endDate ;
+                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :roleLabel ;
+                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :startDate ;
+                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                      ] ;
+      rdfs:comment "The function assumed by or ascribed to an entity (typically a person or organisation) in a particular project. It can be used to precise or represent additional information about a relationship or property such as participation or membership. In CORDIS, it represents the participation of a person or organisation in a research project."@en ;
+      rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+      rdfs:label "Role"@en ;
+      <http://www.w3.org/2004/02/skos/core#broadMatch> <https://w3id.org/dingo#Role> .
+
+
+###  http://data.europa.eu/s66#SME
+:SME rdf:type owl:Class ;
+     rdfs:subClassOf :Organisation ;
+     rdfs:comment "Small and Medium Enterprises."@en ;
+     rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+     rdfs:label "SME"@en ;
+     <http://www.w3.org/2004/02/skos/core#broadMatch> <http://purl.org/cerif/frapo/SME> .
+
+
+###  http://data.europa.eu/s66#Site
+:Site rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasGeographicalLocation ;
+                        owl:minCardinality "1"^^xsd:nonNegativeInteger
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasAddress ;
+                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasCoordinates ;
+                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :isSiteOf ;
+                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :name ;
+                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                      ] ;
+      rdfs:comment "The physical extension of entities that participate in or form part of research projects."@en ;
+      rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+      rdfs:label "Site"@en ;
+      <http://www.w3.org/2004/02/skos/core#broadMatch> <http://www.w3.org/ns/org#Site> .
+
+
+###  http://data.europa.eu/s66#ThesisDissertation
+:ThesisDissertation rdf:type owl:Class ;
+                    rdfs:subClassOf :ProjectPublication ;
+                    rdfs:comment "A book authored by a student containing a formal presentations of research outputs submitted for examination in completion of a course of study at an institution of higher education, to fulfil the requirements for an academic degree. Also know as a dissertation."@en ;
+                    rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+                    rdfs:label "Thesis"@en ;
+                    <http://www.w3.org/2004/02/skos/core#broadMatch> <http://purl.org/spar/fabio/Thesis> .
+
+
+###  http://data.europa.eu/s66#TitleAcronym
+:TitleAcronym rdf:type owl:Class ;
+              rdfs:subClassOf :Acronym ;
+              rdfs:comment "An acronym explicitly defined as the title or name of another entity (e.g. Project, Organisation, Funding Scheme, etc.)."@en ;
+              rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+              rdfs:label "Title Acronym"@en .
+
+
+###  http://data.europa.eu/s66#WorkshopPaper
+:WorkshopPaper rdf:type owl:Class ;
+               rdfs:subClassOf :ProjectPublication ;
+               rdfs:comment "A paper, typically the realization of a research paper reporting original research findings, usually presented at a workshop and published within a workshop proceedings volume."@en ;
+               rdfs:isDefinedBy <http://data.europa.eu/s66#> ;
+               rdfs:label "Workshop Paper"@en ;
+               <http://www.w3.org/2004/02/skos/core#broadMatch> <http://purl.org/spar/fabio/WorkshopPaper> .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+_:genid119 <http://www.w3.org/ns/dcat#accessURL> <http://data.europa.eu/s66#> ;
+           <http://www.w3.org/ns/dcat#downloadURL> <http://data.europa.eu/s66#> .
+
+[ <http://xmlns.com/foaf/0.1/mbox> "cordis@publications.europa.eu"
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://w3id.org/dingo#EducationOrganisation> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://schema.org/EducationalOrganization> .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ConferencePaper
+                :JournalPaper
+                :WorkshopPaper
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ExploitableResult
+                :ProjectDeliverable
+                :ProjectPublication
+                :ProjectReportSummary
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ForProfitOrganisation
+                :FundingAgency
+                :HigherOrSecondaryEducation
+                :PublicBody
+                :ResearchOrganisation
+                :SME
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

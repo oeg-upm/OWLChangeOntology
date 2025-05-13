@@ -1,0 +1,361 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://example.org/eli/change/718015683595800",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#RemoveAnnotationFromEntity"
+  } ],
+  "https://w3id.org/def/och#removedAnnotationFromEntity" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#historyNote"
+  } ],
+  "https://w3id.org/def/och#sourceRemoveAnnotationFromEntity" : [ {
+    "@id" : "urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cited_by]"
+  } ],
+  "https://w3id.org/def/och#targetRemoveAnnotationFromEntity" : [ {
+    "@value" : "\"v1.2 : improved definition\"@en"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015689156700",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#RemoveAnnotationFromEntity"
+  } ],
+  "https://w3id.org/def/och#removedAnnotationFromEntity" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+  } ],
+  "https://w3id.org/def/och#sourceRemoveAnnotationFromEntity" : [ {
+    "@id" : "urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cited_by]"
+  } ],
+  "https://w3id.org/def/och#targetRemoveAnnotationFromEntity" : [ {
+    "@value" : "\"modified in v1.2\"^^xsd:string"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015689520400",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddAnnotationToEntity"
+  } ],
+  "https://w3id.org/def/och#addedAnnotationToEntity" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#historyNote"
+  } ],
+  "https://w3id.org/def/och#sourceAddAnnotationToEntity" : [ {
+    "@id" : "urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cited_by]"
+  } ],
+  "https://w3id.org/def/och#targetAddAnnotationToEntity" : [ {
+    "@value" : "\"v1.5 : was made a subproperty of eli:is_referred_to_by\nv1.2 : improved definition\"@en"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015689866600",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddSubProperty"
+  } ],
+  "https://w3id.org/def/och#sourceAddSubProperty" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#cited_by"
+  } ],
+  "https://w3id.org/def/och#targetAddSubProperty" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#is_referred_to_by"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015690138000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddAnnotationToEntity"
+  } ],
+  "https://w3id.org/def/och#addedAnnotationToEntity" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+  } ],
+  "https://w3id.org/def/och#sourceAddAnnotationToEntity" : [ {
+    "@id" : "urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cited_by]"
+  } ],
+  "https://w3id.org/def/och#targetAddAnnotationToEntity" : [ {
+    "@value" : "\"modified in v1.5\"^^xsd:string"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015690226200",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddAnnotationToEntity"
+  } ],
+  "https://w3id.org/def/och#addedAnnotationToEntity" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#historyNote"
+  } ],
+  "https://w3id.org/def/och#sourceAddAnnotationToEntity" : [ {
+    "@id" : "urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cited_by_case_law]"
+  } ],
+  "https://w3id.org/def/och#targetAddAnnotationToEntity" : [ {
+    "@value" : "\"v1.5 : was made a subproperty of eli:is_referred_to_by\"@en"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015690302600",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddAnnotationToEntity"
+  } ],
+  "https://w3id.org/def/och#addedAnnotationToEntity" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+  } ],
+  "https://w3id.org/def/och#sourceAddAnnotationToEntity" : [ {
+    "@id" : "urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cited_by_case_law]"
+  } ],
+  "https://w3id.org/def/och#targetAddAnnotationToEntity" : [ {
+    "@value" : "\"modified in v1.5\"@en"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015690359500",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddSubProperty"
+  } ],
+  "https://w3id.org/def/och#sourceAddSubProperty" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#cited_by_case_law"
+  } ],
+  "https://w3id.org/def/och#targetAddSubProperty" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#is_referred_to_by"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015690424700",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddSubProperty"
+  } ],
+  "https://w3id.org/def/och#sourceAddSubProperty" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#cites"
+  } ],
+  "https://w3id.org/def/och#targetAddSubProperty" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#refers_to"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015690491800",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddAnnotationToEntity"
+  } ],
+  "https://w3id.org/def/och#addedAnnotationToEntity" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#historyNote"
+  } ],
+  "https://w3id.org/def/och#sourceAddAnnotationToEntity" : [ {
+    "@id" : "urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cites]"
+  } ],
+  "https://w3id.org/def/och#targetAddAnnotationToEntity" : [ {
+    "@value" : "\"v1.5 : was made a subproperty of eli:refers_to\"@en"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015690587900",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddAnnotationToEntity"
+  } ],
+  "https://w3id.org/def/och#addedAnnotationToEntity" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+  } ],
+  "https://w3id.org/def/och#sourceAddAnnotationToEntity" : [ {
+    "@id" : "urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#cites]"
+  } ],
+  "https://w3id.org/def/och#targetAddAnnotationToEntity" : [ {
+    "@value" : "\"modified in v1.5\"@en"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015690668300",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddObjectProperty"
+  } ],
+  "https://w3id.org/def/och#addedObjectProperty" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#is_referred_to_by"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015690818800",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddDomain"
+  } ],
+  "https://w3id.org/def/och#addedDomain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://w3id.org/def/och#addedDomainToProperty" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#is_referred_to_by"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015690973100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddRangeObjectProperty"
+  } ],
+  "https://w3id.org/def/och#addedRangeToProperty" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#is_referred_to_by"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015691544200",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddObjectProperty"
+  } ],
+  "https://w3id.org/def/och#addedObjectProperty" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#refers_to"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015691708200",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddRangeObjectProperty"
+  } ],
+  "https://w3id.org/def/och#addedObjectRange" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "https://w3id.org/def/och#addedRangeToProperty" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#refers_to"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015691778700",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddDomain"
+  } ],
+  "https://w3id.org/def/och#addedDomainToProperty" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#refers_to"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015692058700",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#RemoveAnnotationFromEntity"
+  } ],
+  "https://w3id.org/def/och#removedAnnotationFromEntity" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ],
+  "https://w3id.org/def/och#sourceRemoveAnnotationFromEntity" : [ {
+    "@id" : "urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#number]"
+  } ],
+  "https://w3id.org/def/och#targetRemoveAnnotationFromEntity" : [ {
+    "@value" : "\"An identifier or other disambiguating feature for a legal resource or legal expression. This can be the number of a legislation, the number of an article, or the issue number of an official journal.\"@en"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015692231000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#RemoveDomain"
+  } ],
+  "https://w3id.org/def/och#removeDomainFromProperty" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#number"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015692633600",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddAnnotationToEntity"
+  } ],
+  "https://w3id.org/def/och#addedAnnotationToEntity" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#historyNote"
+  } ],
+  "https://w3id.org/def/och#sourceAddAnnotationToEntity" : [ {
+    "@id" : "urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#number]"
+  } ],
+  "https://w3id.org/def/och#targetAddAnnotationToEntity" : [ {
+    "@value" : "\"v1.5 : broaden the domain to Work or Expression instead of LegalResource or LegalExpression.\"@en"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015692833200",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddAnnotationToEntity"
+  } ],
+  "https://w3id.org/def/och#addedAnnotationToEntity" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+  } ],
+  "https://w3id.org/def/och#sourceAddAnnotationToEntity" : [ {
+    "@id" : "urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#number]"
+  } ],
+  "https://w3id.org/def/och#targetAddAnnotationToEntity" : [ {
+    "@value" : "\"modified in v1.5\"@en"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015692900100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddDomain"
+  } ],
+  "https://w3id.org/def/och#addedDomainToProperty" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#number"
+  } ]
+}, {
+  "@id" : "http://example.org/eli/change/718015693227900",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/och#AddAnnotationToEntity"
+  } ],
+  "https://w3id.org/def/och#addedAnnotationToEntity" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ],
+  "https://w3id.org/def/och#sourceAddAnnotationToEntity" : [ {
+    "@id" : "urn:absoluteiri:defaultvalue#Optional[http://data.europa.eu/eli/ontology#number]"
+  } ],
+  "https://w3id.org/def/och#targetAddAnnotationToEntity" : [ {
+    "@value" : "\"An identifier or other disambiguating feature for a work or expression. This can be the number of a legislation, the number of an article, or the issue number of an official journal.\"@en"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/och#AddAnnotationToEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/och#AddDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/och#AddObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/och#AddRangeObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/och#AddSubProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/och#RemoveAnnotationFromEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/och#RemoveDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/och#addedAnnotationToEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/och#addedDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/och#addedDomainToProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/och#addedObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/och#addedObjectRange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/och#addedRangeToProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/och#removeDomainFromProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/och#removedAnnotationFromEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/och#sourceAddAnnotationToEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/och#sourceAddSubProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/och#sourceRemoveAnnotationFromEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/och#targetAddAnnotationToEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/och#targetAddSubProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/och#targetRemoveAnnotationFromEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

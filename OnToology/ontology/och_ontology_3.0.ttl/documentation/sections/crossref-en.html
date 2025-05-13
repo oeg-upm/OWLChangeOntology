@@ -1188,7 +1188,8 @@ This section provides details for each class and property defined by OWL Change 
          <dd>
             <a href="#fromChangelog" title="https://w3id.org/def/och#fromChangelog">from changelog</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#issuedBy" title="https://w3id.org/def/och#issuedBy">issued by</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#relatedChange" title="https://w3id.org/def/och#relatedChange">related change</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#justification" title="https://w3id.org/def/och#justification">justification</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#relatedChange" title="https://w3id.org/def/och#relatedChange">related change</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -4670,6 +4671,41 @@ This section provides details for each class and property defined by OWL Change 
    </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#justification" title="https://w3id.org/def/och#justification">justification</a>
+      </li>
+   </ul>
+   <div class="entity" id="justification">
+      <h3>justification<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/och#justification</p>
+      <div class="comment">
+         <span class="markdown">The reasons and justifications behind a particular change.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#OntologicalChange" title="https://w3id.org/def/och#OntologicalChange">Ontological Change</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
@@ -4838,6 +4874,7 @@ This section provides details for each class and property defined by OWL Change 
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
