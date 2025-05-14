@@ -712,6 +712,13 @@
 # http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
+# https://w3id.org/def/och#justification
+<https://w3id.org/def/och#justification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/och#justification> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/och#OntologicalChange> .
+<https://w3id.org/def/och#justification> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/def/och#justification> <http://www.w3.org/2000/01/rdf-schema#comment> "The reasons and justifications behind a particular change." .
+<https://w3id.org/def/och#justification> <http://www.w3.org/2000/01/rdf-schema#label> "justification" .
+# 
 # 
 # 
 # #################################################################
