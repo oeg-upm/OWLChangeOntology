@@ -16,6 +16,10 @@
       "@id" : "https://w3id.org/def/och#newVersion",
       "@type" : "@id"
     },
+    "targetRemoveAnnotationFromEntity" : {
+      "@id" : "https://w3id.org/def/och#targetRemoveAnnotationFromEntity",
+      "@type" : "@id"
+    },
     "addedDataRange" : {
       "@id" : "https://w3id.org/def/och#addedDataRange",
       "@type" : "@id"
@@ -26,8 +30,15 @@
     "EquivalentClassChange" : {
       "@id" : "https://w3id.org/def/och#EquivalentClassChange"
     },
+    "addedAnnotationToEntity" : {
+      "@id" : "https://w3id.org/def/och#addedAnnotationToEntity",
+      "@type" : "@id"
+    },
     "EquivalentPropertyChange" : {
       "@id" : "https://w3id.org/def/och#EquivalentPropertyChange"
+    },
+    "RemoveAnnotationFromEntity" : {
+      "@id" : "https://w3id.org/def/och#RemoveAnnotationFromEntity"
     },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
@@ -116,6 +127,13 @@
     "priorVersion" : {
       "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
     },
+    "RemoveDisjointClass" : {
+      "@id" : "https://w3id.org/def/och#RemoveDisjointClass"
+    },
+    "sourceAddDisjointClass" : {
+      "@id" : "https://w3id.org/def/och#sourceAddDisjointClass",
+      "@type" : "@id"
+    },
     "targetRemoveRelationToIndividual" : {
       "@id" : "https://w3id.org/def/och#targetRemoveRelationToIndividual",
       "@type" : "@id"
@@ -150,6 +168,10 @@
     "SubPropertyChange" : {
       "@id" : "https://w3id.org/def/och#SubPropertyChange"
     },
+    "targetRemoveDisjointClass" : {
+      "@id" : "https://w3id.org/def/och#targetRemoveDisjointClass",
+      "@type" : "@id"
+    },
     "RemoveProperty" : {
       "@id" : "https://w3id.org/def/och#RemoveProperty"
     },
@@ -162,6 +184,9 @@
     "addedRelationToIndividual" : {
       "@id" : "https://w3id.org/def/och#addedRelationToIndividual",
       "@type" : "@id"
+    },
+    "AddAnnotationToEntity" : {
+      "@id" : "https://w3id.org/def/och#AddAnnotationToEntity"
     },
     "addedCharacteristicToProperty" : {
       "@id" : "https://w3id.org/def/och#addedCharacteristicToProperty",
@@ -181,10 +206,6 @@
     },
     "targetAddEquivalentProperty" : {
       "@id" : "https://w3id.org/def/och#targetAddEquivalentProperty",
-      "@type" : "@id"
-    },
-    "addedAnnotation" : {
-      "@id" : "https://w3id.org/def/och#addedAnnotation",
       "@type" : "@id"
     },
     "AddEquivalentProperty" : {
@@ -215,6 +236,9 @@
       "@id" : "https://w3id.org/def/och#sourceRemoveInverseProperty",
       "@type" : "@id"
     },
+    "EntityAnnotationChange" : {
+      "@id" : "https://w3id.org/def/och#EntityAnnotationChange"
+    },
     "RemoveRelationFromIndividual" : {
       "@id" : "https://w3id.org/def/och#RemoveRelationFromIndividual"
     },
@@ -239,10 +263,6 @@
     },
     "ObjectPropertyChange" : {
       "@id" : "https://w3id.org/def/och#ObjectPropertyChange"
-    },
-    "removedAnnotation" : {
-      "@id" : "https://w3id.org/def/och#removedAnnotation",
-      "@type" : "@id"
     },
     "targetAddDisjointProperty" : {
       "@id" : "https://w3id.org/def/och#targetAddDisjointProperty",
@@ -364,9 +384,6 @@
     "AddObjectProperty" : {
       "@id" : "https://w3id.org/def/och#AddObjectProperty"
     },
-    "AddAnnotation" : {
-      "@id" : "https://w3id.org/def/och#AddAnnotation"
-    },
     "targetRemoveInverseProperty" : {
       "@id" : "https://w3id.org/def/och#targetRemoveInverseProperty",
       "@type" : "@id"
@@ -460,12 +477,11 @@
       "@id" : "https://w3id.org/def/och#sourceAddInverseProperty",
       "@type" : "@id"
     },
-    "addedAnnotationType" : {
-      "@id" : "https://w3id.org/def/och#addedAnnotationType",
-      "@type" : "@id"
-    },
     "AddRangeDataProperty" : {
       "@id" : "https://w3id.org/def/och#AddRangeDataProperty"
+    },
+    "AddDisjointClass" : {
+      "@id" : "https://w3id.org/def/och#AddDisjointClass"
     },
     "PropertyCharacteristic" : {
       "@id" : "https://w3id.org/def/och#PropertyCharacteristic"
@@ -477,8 +493,9 @@
       "@id" : "https://w3id.org/def/och#fromChangelog",
       "@type" : "@id"
     },
-    "AnnotationChange" : {
-      "@id" : "https://w3id.org/def/och#AnnotationChange"
+    "sourceAddAnnotationToEntity" : {
+      "@id" : "https://w3id.org/def/och#sourceAddAnnotationToEntity",
+      "@type" : "@id"
     },
     "targetRemoveEquivalentClass" : {
       "@id" : "https://w3id.org/def/och#targetRemoveEquivalentClass",
@@ -507,8 +524,9 @@
     "Resource" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
     },
-    "RemoveAnnotation" : {
-      "@id" : "https://w3id.org/def/och#RemoveAnnotation"
+    "sourceRemoveDisjointClass" : {
+      "@id" : "https://w3id.org/def/och#sourceRemoveDisjointClass",
+      "@type" : "@id"
     },
     "AddRange" : {
       "@id" : "https://w3id.org/def/och#AddRange"
@@ -526,16 +544,16 @@
     "EntityChange" : {
       "@id" : "https://w3id.org/def/och#EntityChange"
     },
-    "removedAnnotationFromResource" : {
-      "@id" : "https://w3id.org/def/och#removedAnnotationFromResource",
-      "@type" : "@id"
-    },
-    "addAnnotationToResource" : {
-      "@id" : "https://w3id.org/def/och#addAnnotationToResource",
+    "removedAnnotationFromEntity" : {
+      "@id" : "https://w3id.org/def/och#removedAnnotationFromEntity",
       "@type" : "@id"
     },
     "contributor" : {
       "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "targetAddAnnotationToEntity" : {
+      "@id" : "https://w3id.org/def/och#targetAddAnnotationToEntity",
+      "@type" : "@id"
     },
     "targetResource" : {
       "@id" : "https://w3id.org/def/och#targetResource",
@@ -560,6 +578,10 @@
     "InversePropertyChange" : {
       "@id" : "https://w3id.org/def/och#InversePropertyChange"
     },
+    "targetAddDisjointClass" : {
+      "@id" : "https://w3id.org/def/och#targetAddDisjointClass",
+      "@type" : "@id"
+    },
     "DatatypeProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
     },
@@ -577,15 +599,18 @@
       "@id" : "https://w3id.org/def/och#addedDomain",
       "@type" : "@id"
     },
-    "removedAnnotationType" : {
-      "@id" : "https://w3id.org/def/och#removedAnnotationType",
-      "@type" : "@id"
-    },
     "RemoveDomain" : {
       "@id" : "https://w3id.org/def/och#RemoveDomain"
     },
+    "sourceRemoveAnnotationFromEntity" : {
+      "@id" : "https://w3id.org/def/och#sourceRemoveAnnotationFromEntity",
+      "@type" : "@id"
+    },
     "Ontology" : {
       "@id" : "http://www.w3.org/2002/07/owl#Ontology"
+    },
+    "DisjointClassChange" : {
+      "@id" : "https://w3id.org/def/och#DisjointClassChange"
     }
   }
 }

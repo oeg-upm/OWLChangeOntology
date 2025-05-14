@@ -2,48 +2,125 @@
 <h2 id="changes" class="list">Changes from last version</h2>
 <h3 id="changeClass" class="list">Classes</h3>
 <details><summary><u>Added classes</u></summary>
-<ul><li><a href="#AddAnnotation">https://w3id.org/def/och#AddAnnotation</a>
+<ul><li><a href="#AddAnnotationToEntity">https://w3id.org/def/och#AddAnnotationToEntity</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/def/och#EntityAnnotationChange</li>
+</ul>
 </li>
-<li><a href="#AnnotationChange">https://w3id.org/def/och#AnnotationChange</a>
+<li><a href="#AddDisjointClass">https://w3id.org/def/och#AddDisjointClass</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/def/och#DisjointClassChange</li>
+</ul>
 </li>
-<li><a href="#RemoveAnnotation">https://w3id.org/def/och#RemoveAnnotation</a>
+<li><a href="#DisjointClassChange">https://w3id.org/def/och#DisjointClassChange</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/def/och#ClassRelationChange</li>
+</ul>
+</li>
+<li><a href="#EntityAnnotationChange">https://w3id.org/def/och#EntityAnnotationChange</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/def/och#EntityChange</li>
+</ul>
+</li>
+<li><a href="#RemoveAnnotationFromEntity">https://w3id.org/def/och#RemoveAnnotationFromEntity</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/def/och#EntityAnnotationChange</li>
+</ul>
+</li>
+<li><a href="#RemoveDisjointClass">https://w3id.org/def/och#RemoveDisjointClass</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/def/och#DisjointClassChange</li>
+</ul>
 </li>
 </ul></details><h3 id="changeProp" class="list">Object Properties</h3>
-<details><summary><u>Added object properties</u></summary>
-<ul><li><a href="#addAnnotationToResource">https://w3id.org/def/och#addAnnotationToResource</a>
+<details><summary><u>Modified object properties</u></summary>
+<ul><li><a href="#sourceAddDisjointProperty">https://w3id.org/def/och#sourceAddDisjointProperty</a>
 <ul>
-<li>Added: domain https://w3id.org/def/och#AddAnnotation</li>
-<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Resource</li>
+<li>Added: rdfs:label "source add disjoint property"^^xsd:string</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "source AddDisjointProperty"^^xsd:string</li>
 </ul>
 </li>
-<li><a href="#addedAnnotation">https://w3id.org/def/och#addedAnnotation</a>
+<li><a href="#sourceAddEquivalentClass">https://w3id.org/def/och#sourceAddEquivalentClass</a>
 <ul>
-<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Resource</li>
-<li>Added: domain https://w3id.org/def/och#AddAnnotation</li>
+<li>Added: rdfs:label "source add equivalent class"^^xsd:string</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:label "source AddEquivalentClass"^^xsd:string</li>
 </ul>
 </li>
-<li><a href="#addedAnnotationType">https://w3id.org/def/och#addedAnnotationType</a>
+</ul></details><details><summary><u>Added object properties</u></summary>
+<ul><li><a href="#addedAnnotationToEntity">https://w3id.org/def/och#addedAnnotationToEntity</a>
 <ul>
+<li>Added: domain https://w3id.org/def/och#AddAnnotationToEntity</li>
 <li>Added: Range http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</li>
-<li>Added: domain https://w3id.org/def/och#AddAnnotation</li>
 </ul>
 </li>
-<li><a href="#removedAnnotation">https://w3id.org/def/och#removedAnnotation</a>
+<li><a href="#removedAnnotationFromEntity">https://w3id.org/def/och#removedAnnotationFromEntity</a>
 <ul>
-<li>Added: domain https://w3id.org/def/och#RemoveAnnotation</li>
-<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Resource</li>
-</ul>
-</li>
-<li><a href="#removedAnnotationFromResource">https://w3id.org/def/och#removedAnnotationFromResource</a>
-<ul>
-<li>Added: domain https://w3id.org/def/och#RemoveAnnotation</li>
-<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Resource</li>
-</ul>
-</li>
-<li><a href="#removedAnnotationType">https://w3id.org/def/och#removedAnnotationType</a>
-<ul>
-<li>Added: domain https://w3id.org/def/och#RemoveAnnotation</li>
+<li>Added: domain https://w3id.org/def/och#RemoveAnnotationFromEntity</li>
 <li>Added: Range http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</li>
+</ul>
+</li>
+<li><a href="#sourceAddAnnotationToEntity">https://w3id.org/def/och#sourceAddAnnotationToEntity</a>
+<ul>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Resource</li>
+<li>Added: domain https://w3id.org/def/och#AddAnnotationToEntity</li>
+</ul>
+</li>
+<li><a href="#sourceAddDisjointClass">https://w3id.org/def/och#sourceAddDisjointClass</a>
+<ul>
+<li>Added: Range http://www.w3.org/2002/07/owl#Class</li>
+<li>Added: domain https://w3id.org/def/och#AddDisjointClass</li>
+<li>Added: SubProperty of https://w3id.org/def/och#sourceClass</li>
+</ul>
+</li>
+<li><a href="#sourceRemoveAnnotationFromEntity">https://w3id.org/def/och#sourceRemoveAnnotationFromEntity</a>
+<ul>
+<li>Added: domain https://w3id.org/def/och#RemoveAnnotationFromEntity</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Resource</li>
+</ul>
+</li>
+<li><a href="#sourceRemoveDisjointClass">https://w3id.org/def/och#sourceRemoveDisjointClass</a>
+<ul>
+<li>Added: SubProperty of https://w3id.org/def/och#sourceClass</li>
+<li>Added: domain https://w3id.org/def/och#RemoveDisjointClass</li>
+<li>Added: Range http://www.w3.org/2002/07/owl#Class</li>
+</ul>
+</li>
+<li><a href="#targetAddAnnotationToEntity">https://w3id.org/def/och#targetAddAnnotationToEntity</a>
+<ul>
+<li>Added: domain https://w3id.org/def/och#AddAnnotationToEntity</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Resource</li>
+</ul>
+</li>
+<li><a href="#targetAddDisjointClass">https://w3id.org/def/och#targetAddDisjointClass</a>
+<ul>
+<li>Added: domain https://w3id.org/def/och#AddDisjointClass</li>
+<li>Added: Range http://www.w3.org/2002/07/owl#Class</li>
+<li>Added: SubProperty of https://w3id.org/def/och#targetClass</li>
+</ul>
+</li>
+<li><a href="#targetRemoveAnnotationFromEntity">https://w3id.org/def/och#targetRemoveAnnotationFromEntity</a>
+<ul>
+<li>Added: domain https://w3id.org/def/och#RemoveAnnotationFromEntity</li>
+<li>Added: Range http://www.w3.org/2000/01/rdf-schema#Resource</li>
+</ul>
+</li>
+<li><a href="#targetRemoveDisjointClass">https://w3id.org/def/och#targetRemoveDisjointClass</a>
+<ul>
+<li>Added: domain https://w3id.org/def/och#RemoveDisjointClass</li>
+<li>Added: Range http://www.w3.org/2002/07/owl#Class</li>
+<li>Added: SubProperty of https://w3id.org/def/och#targetClass</li>
+</ul>
+</li>
+</ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
+<details><summary><u>Added data properties</u></summary>
+<ul><li><a href="#justification">https://w3id.org/def/och#justification</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: Domain https://w3id.org/def/och#OntologicalChange</li>
 </ul>
 </li>
 </ul></details></div>

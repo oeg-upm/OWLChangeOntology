@@ -183,38 +183,14 @@
     
 
 
-    <!-- https://w3id.org/def/och#addAnnotationToResource -->
+    <!-- https://w3id.org/def/och#addedAnnotationToEntity -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#addAnnotationToResource">
-        <rdfs:domain rdf:resource="https://w3id.org/def/och#AddAnnotation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:comment>The Entity the annotation is added to</rdfs:comment>
-        <rdfs:label>add annotation to resource</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/och#addedAnnotation -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#addedAnnotation">
-        <rdfs:domain rdf:resource="https://w3id.org/def/och#AddAnnotation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:comment>The annotation being added to an entity.</rdfs:comment>
-        <rdfs:label>added annotation</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/och#addedAnnotationType -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#addedAnnotationType">
-        <rdfs:domain rdf:resource="https://w3id.org/def/och#AddAnnotation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#addedAnnotationToEntity">
+        <rdfs:domain rdf:resource="https://w3id.org/def/och#AddAnnotationToEntity"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <rdfs:comment>The type of the annotation property being added to an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations.</rdfs:comment>
-        <rdfs:label>added annotation type</rdfs:label>
+        <rdfs:comment>The annotation property being added to an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations.</rdfs:comment>
+        <rdfs:label>added annotation to entity</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -476,38 +452,14 @@
     
 
 
-    <!-- https://w3id.org/def/och#removedAnnotation -->
+    <!-- https://w3id.org/def/och#removedAnnotationFromEntity -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#removedAnnotation">
-        <rdfs:domain rdf:resource="https://w3id.org/def/och#RemoveAnnotation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:comment>The annotation being removed from an entity.</rdfs:comment>
-        <rdfs:label>removed annotation</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/och#removedAnnotationFromResource -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#removedAnnotationFromResource">
-        <rdfs:domain rdf:resource="https://w3id.org/def/och#RemoveAnnotation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:comment>The Entity the annotation is removed from</rdfs:comment>
-        <rdfs:label>remove annotation from resource</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/def/och#removedAnnotationType -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#removedAnnotationType">
-        <rdfs:domain rdf:resource="https://w3id.org/def/och#RemoveAnnotation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#removedAnnotationFromEntity">
+        <rdfs:domain rdf:resource="https://w3id.org/def/och#RemoveAnnotationFromEntity"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <rdfs:comment>The type of the annotation property being removed from an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations.</rdfs:comment>
-        <rdfs:label>removed annotation type</rdfs:label>
+        <rdfs:comment>The annotation property being removed from an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations.</rdfs:comment>
+        <rdfs:label>removed annotation from entity</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -697,6 +649,31 @@
     
 
 
+    <!-- https://w3id.org/def/och#sourceAddAnnotationToEntity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#sourceAddAnnotationToEntity">
+        <rdfs:domain rdf:resource="https://w3id.org/def/och#AddAnnotationToEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment>The Entity the annotation is added to</rdfs:comment>
+        <rdfs:label>source add annotation to entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/och#sourceAddDisjointClass -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#sourceAddDisjointClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/och#sourceClass"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/och#AddDisjointClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The subject of the disjoint class relation being added</rdfs:comment>
+        <rdfs:label>source add disjoint class</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/def/och#sourceAddDisjointProperty -->
 
 
@@ -705,7 +682,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/def/och#AddDisjointProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
         <rdfs:comment>The subject of the disjoint property relation being added</rdfs:comment>
-        <rdfs:label>source AddDisjointProperty</rdfs:label>
+        <rdfs:label>source add disjoint property</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -718,7 +695,7 @@
         <rdfs:domain rdf:resource="https://w3id.org/def/och#AddEquivalentClass"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <rdfs:comment>The subject of the equivalent class relation being added</rdfs:comment>
-        <rdfs:label>source AddEquivalentClass</rdfs:label>
+        <rdfs:label>source add equivalent class</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -823,6 +800,31 @@
     
 
 
+    <!-- https://w3id.org/def/och#sourceRemoveAnnotationFromEntity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#sourceRemoveAnnotationFromEntity">
+        <rdfs:domain rdf:resource="https://w3id.org/def/och#RemoveAnnotationFromEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment>The Entity the annotation is removed from</rdfs:comment>
+        <rdfs:label>source remove annotation from entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/och#sourceRemoveDisjointClass -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#sourceRemoveDisjointClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/och#sourceClass"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/och#RemoveDisjointClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The subject of the disjoint class relation being removed</rdfs:comment>
+        <rdfs:label>source remove disjoint class</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/def/och#sourceRemoveDisjointProperty -->
 
 
@@ -909,6 +911,31 @@
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
         <rdfs:comment>The subject of the subProperty relation being removed</rdfs:comment>
         <rdfs:label>source RemoveSubProperty</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/och#targetAddAnnotationToEntity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#targetAddAnnotationToEntity">
+        <rdfs:domain rdf:resource="https://w3id.org/def/och#AddAnnotationToEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment>The content of the annotation being added to an entity.</rdfs:comment>
+        <rdfs:label>target add annotation to entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/och#targetAddDisjointClass -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#targetAddDisjointClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/och#targetClass"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/och#AddDisjointClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The object of the disjoint class relation being added</rdfs:comment>
+        <rdfs:label>target add disjoint class</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1023,6 +1050,31 @@
         <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
         <rdfs:comment>The property that is the object of the property relations being changed in a change operation</rdfs:comment>
         <rdfs:label>target Property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/och#targetRemoveAnnotationFromEntity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#targetRemoveAnnotationFromEntity">
+        <rdfs:domain rdf:resource="https://w3id.org/def/och#RemoveAnnotationFromEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment>The content of the annotation being removed from an entity.</rdfs:comment>
+        <rdfs:label>target remove annotation from entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/och#targetRemoveDisjointClass -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/och#targetRemoveDisjointClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/och#targetClass"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/och#RemoveDisjointClass"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:comment>The object of the disjoint class relation being removed</rdfs:comment>
+        <rdfs:label>target remove disjoint class</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1160,6 +1212,18 @@
     
 
 
+    <!-- https://w3id.org/def/och#justification -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/och#justification">
+        <rdfs:domain rdf:resource="https://w3id.org/def/och#OntologicalChange"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The reasons and justifications behind a particular change.</rdfs:comment>
+        <rdfs:label>justification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1242,12 +1306,13 @@
     
 
 
-    <!-- https://w3id.org/def/och#AddAnnotation -->
+    <!-- https://w3id.org/def/och#AddAnnotationToEntity -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/och#AddAnnotation">
+    <owl:Class rdf:about="https://w3id.org/def/och#AddAnnotationToEntity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/och#EntityAnnotationChange"/>
         <rdfs:comment>The change operation that corresponds to the addition of the annotation of an entity</rdfs:comment>
-        <rdfs:label>Add Annotation</rdfs:label>
+        <rdfs:label>Add Annotation to Entity</rdfs:label>
     </owl:Class>
     
 
@@ -1283,6 +1348,17 @@
         <rdfs:comment>The change operation corresponding to the addition of a data property</rdfs:comment>
         <rdfs:label>Add Data Property</rdfs:label>
         <prov:wasDerivedFrom rdf:resource="http://omv.ontoware.org/2007/07/OWLChangesAddDataProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/och#AddDisjointClass -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/och#AddDisjointClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/och#DisjointClassChange"/>
+        <rdfs:comment>The change operation corresponding to the addition of an disjoint class relation between two classes</rdfs:comment>
+        <rdfs:label>Add Disjoint Class</rdfs:label>
     </owl:Class>
     
 
@@ -1448,16 +1524,6 @@
     
 
 
-    <!-- https://w3id.org/def/och#AnnotationChange -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/och#AnnotationChange">
-        <rdfs:comment>The change operation that corresponds to the change of the annotation of an entity</rdfs:comment>
-        <rdfs:label>Change to Annotation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/def/och#ChangeSet -->
 
 
@@ -1526,6 +1592,17 @@
     
 
 
+    <!-- https://w3id.org/def/och#DisjointClassChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/och#DisjointClassChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/och#ClassRelationChange"/>
+        <rdfs:comment>The change operation corresponding to the change of an disjoint class relation between two classes</rdfs:comment>
+        <rdfs:label>Disjoint Class Change</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/def/och#DisjointPropertyChange -->
 
 
@@ -1544,6 +1621,17 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/och#PropertyChange"/>
         <rdfs:comment>The change operation corresponding to the change of the domain of a given property</rdfs:comment>
         <rdfs:label>Domain Change</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/och#EntityAnnotationChange -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/och#EntityAnnotationChange">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/och#EntityChange"/>
+        <rdfs:comment>The change operation that corresponds to the change of the annotation of an entity</rdfs:comment>
+        <rdfs:label>Change to the Annotation of an Entity</rdfs:label>
     </owl:Class>
     
 
@@ -1703,12 +1791,13 @@
     
 
 
-    <!-- https://w3id.org/def/och#RemoveAnnotation -->
+    <!-- https://w3id.org/def/och#RemoveAnnotationFromEntity -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/och#RemoveAnnotation">
+    <owl:Class rdf:about="https://w3id.org/def/och#RemoveAnnotationFromEntity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/och#EntityAnnotationChange"/>
         <rdfs:comment>The change operation that corresponds to the removal of the annotation of an entity</rdfs:comment>
-        <rdfs:label>Remove Annotation</rdfs:label>
+        <rdfs:label>Remove Annotation from Entity</rdfs:label>
     </owl:Class>
     
 
@@ -1744,6 +1833,17 @@
         <rdfs:comment>The change operation corresponding to the removal of a data property</rdfs:comment>
         <rdfs:label>Remove Data Property</rdfs:label>
         <prov:wasDerivedFrom rdf:resource="http://omv.ontoware.org/2007/07/OWLChangesRemoveDataProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/och#RemoveDisjointClass -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/och#RemoveDisjointClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/och#DisjointClassChange"/>
+        <rdfs:comment>The change operation corresponding to the removal of the disjoint class relation between two classes</rdfs:comment>
+        <rdfs:label>Remove Disjoint Class</rdfs:label>
     </owl:Class>
     
 

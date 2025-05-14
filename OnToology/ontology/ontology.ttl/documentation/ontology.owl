@@ -1212,6 +1212,18 @@
     
 
 
+    <!-- https://w3id.org/def/och#justification -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/och#justification">
+        <rdfs:domain rdf:resource="https://w3id.org/def/och#OntologicalChange"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The reasons and justifications behind a particular change.</rdfs:comment>
+        <rdfs:label>justification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

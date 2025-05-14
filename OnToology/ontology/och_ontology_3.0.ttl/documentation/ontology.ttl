@@ -103,28 +103,12 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/def/och#addAnnotationToResource
-:addAnnotationToResource rdf:type owl:ObjectProperty ;
-                         rdfs:domain :AddAnnotation ;
-                         rdfs:range rdfs:Resource ;
-                         rdfs:comment "The Entity the annotation is added to" ;
-                         rdfs:label "add annotation to resource" .
-
-
-###  https://w3id.org/def/och#addedAnnotation
-:addedAnnotation rdf:type owl:ObjectProperty ;
-                 rdfs:domain :AddAnnotation ;
-                 rdfs:range rdfs:Resource ;
-                 rdfs:comment "The annotation being added to an entity." ;
-                 rdfs:label "added annotation" .
-
-
-###  https://w3id.org/def/och#addedAnnotationType
-:addedAnnotationType rdf:type owl:ObjectProperty ;
-                     rdfs:domain :AddAnnotation ;
-                     rdfs:range rdf:Property ;
-                     rdfs:comment "The type of the annotation property being added to an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations." ;
-                     rdfs:label "added annotation type" .
+###  https://w3id.org/def/och#addedAnnotationToEntity
+:addedAnnotationToEntity rdf:type owl:ObjectProperty ;
+                         rdfs:domain :AddAnnotationToEntity ;
+                         rdfs:range rdf:Property ;
+                         rdfs:comment "The annotation property being added to an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations." ;
+                         rdfs:label "added annotation to entity" .
 
 
 ###  https://w3id.org/def/och#addedCharacteristic
@@ -300,28 +284,12 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:label "related change" .
 
 
-###  https://w3id.org/def/och#removedAnnotation
-:removedAnnotation rdf:type owl:ObjectProperty ;
-                   rdfs:domain :RemoveAnnotation ;
-                   rdfs:range rdfs:Resource ;
-                   rdfs:comment "The annotation being removed from an entity." ;
-                   rdfs:label "removed annotation" .
-
-
-###  https://w3id.org/def/och#removedAnnotationFromResource
-:removedAnnotationFromResource rdf:type owl:ObjectProperty ;
-                               rdfs:domain :RemoveAnnotation ;
-                               rdfs:range rdfs:Resource ;
-                               rdfs:comment "The Entity the annotation is removed from" ;
-                               rdfs:label "remove annotation from resource" .
-
-
-###  https://w3id.org/def/och#removedAnnotationType
-:removedAnnotationType rdf:type owl:ObjectProperty ;
-                       rdfs:domain :RemoveAnnotation ;
-                       rdfs:range rdf:Property ;
-                       rdfs:comment "The type of the annotation property being removed from an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations." ;
-                       rdfs:label "removed annotation type" .
+###  https://w3id.org/def/och#removedAnnotationFromEntity
+:removedAnnotationFromEntity rdf:type owl:ObjectProperty ;
+                             rdfs:domain :RemoveAnnotationFromEntity ;
+                             rdfs:range rdf:Property ;
+                             rdfs:comment "The annotation property being removed from an entity. Its range is rdf:Property to include both owl:AnnotationProperty and other annotations." ;
+                             rdfs:label "removed annotation from entity" .
 
 
 ###  https://w3id.org/def/och#removedCharacteristic
@@ -449,13 +417,30 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:label "renamed entity name" .
 
 
+###  https://w3id.org/def/och#sourceAddAnnotationToEntity
+:sourceAddAnnotationToEntity rdf:type owl:ObjectProperty ;
+                             rdfs:domain :AddAnnotationToEntity ;
+                             rdfs:range rdfs:Resource ;
+                             rdfs:comment "The Entity the annotation is added to" ;
+                             rdfs:label "source add annotation to entity" .
+
+
+###  https://w3id.org/def/och#sourceAddDisjointClass
+:sourceAddDisjointClass rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :sourceClass ;
+                        rdfs:domain :AddDisjointClass ;
+                        rdfs:range owl:Class ;
+                        rdfs:comment "The subject of the disjoint class relation being added" ;
+                        rdfs:label "source add disjoint class" .
+
+
 ###  https://w3id.org/def/och#sourceAddDisjointProperty
 :sourceAddDisjointProperty rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :sourceProperty ;
                            rdfs:domain :AddDisjointProperty ;
                            rdfs:range rdf:Property ;
                            rdfs:comment "The subject of the disjoint property relation being added" ;
-                           rdfs:label "source AddDisjointProperty" .
+                           rdfs:label "source add disjoint property" .
 
 
 ###  https://w3id.org/def/och#sourceAddEquivalentClass
@@ -464,7 +449,7 @@ xsd:date rdf:type rdfs:Datatype .
                           rdfs:domain :AddEquivalentClass ;
                           rdfs:range owl:Class ;
                           rdfs:comment "The subject of the equivalent class relation being added" ;
-                          rdfs:label "source AddEquivalentClass" .
+                          rdfs:label "source add equivalent class" .
 
 
 ###  https://w3id.org/def/och#sourceAddEquivalentProperty
@@ -535,6 +520,23 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "source property" .
 
 
+###  https://w3id.org/def/och#sourceRemoveAnnotationFromEntity
+:sourceRemoveAnnotationFromEntity rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :RemoveAnnotationFromEntity ;
+                                  rdfs:range rdfs:Resource ;
+                                  rdfs:comment "The Entity the annotation is removed from" ;
+                                  rdfs:label "source remove annotation from entity" .
+
+
+###  https://w3id.org/def/och#sourceRemoveDisjointClass
+:sourceRemoveDisjointClass rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :sourceClass ;
+                           rdfs:domain :RemoveDisjointClass ;
+                           rdfs:range owl:Class ;
+                           rdfs:comment "The subject of the disjoint class relation being removed" ;
+                           rdfs:label "source remove disjoint class" .
+
+
 ###  https://w3id.org/def/och#sourceRemoveDisjointProperty
 :sourceRemoveDisjointProperty rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf :sourceProperty ;
@@ -595,6 +597,23 @@ xsd:date rdf:type rdfs:Datatype .
                          rdfs:range rdf:Property ;
                          rdfs:comment "The subject of the subProperty relation being removed" ;
                          rdfs:label "source RemoveSubProperty" .
+
+
+###  https://w3id.org/def/och#targetAddAnnotationToEntity
+:targetAddAnnotationToEntity rdf:type owl:ObjectProperty ;
+                             rdfs:domain :AddAnnotationToEntity ;
+                             rdfs:range rdfs:Resource ;
+                             rdfs:comment "The content of the annotation being added to an entity." ;
+                             rdfs:label "target add annotation to entity" .
+
+
+###  https://w3id.org/def/och#targetAddDisjointClass
+:targetAddDisjointClass rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :targetClass ;
+                        rdfs:domain :AddDisjointClass ;
+                        rdfs:range owl:Class ;
+                        rdfs:comment "The object of the disjoint class relation being added" ;
+                        rdfs:label "target add disjoint class" .
 
 
 ###  https://w3id.org/def/och#targetAddDisjointProperty
@@ -673,6 +692,23 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:range rdf:Property ;
                 rdfs:comment "The property that is the object of the property relations being changed in a change operation" ;
                 rdfs:label "target Property" .
+
+
+###  https://w3id.org/def/och#targetRemoveAnnotationFromEntity
+:targetRemoveAnnotationFromEntity rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :RemoveAnnotationFromEntity ;
+                                  rdfs:range rdfs:Resource ;
+                                  rdfs:comment "The content of the annotation being removed from an entity." ;
+                                  rdfs:label "target remove annotation from entity" .
+
+
+###  https://w3id.org/def/och#targetRemoveDisjointClass
+:targetRemoveDisjointClass rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :targetClass ;
+                           rdfs:domain :RemoveDisjointClass ;
+                           rdfs:range owl:Class ;
+                           rdfs:comment "The object of the disjoint class relation being removed" ;
+                           rdfs:label "target remove disjoint class" .
 
 
 ###  https://w3id.org/def/och#targetRemoveDisjointProperty
@@ -761,6 +797,14 @@ xsd:date rdf:type rdfs:Datatype .
 <http://purl.org/dc/terms/issued> rdf:type owl:DatatypeProperty .
 
 
+###  https://w3id.org/def/och#justification
+:justification rdf:type owl:DatatypeProperty ;
+               rdfs:domain :OntologicalChange ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The reasons and justifications behind a particular change." ;
+               rdfs:label "justification" .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -805,10 +849,11 @@ owl:Ontology rdf:type owl:Class .
 <http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
 
 
-###  https://w3id.org/def/och#AddAnnotation
-:AddAnnotation rdf:type owl:Class ;
-               rdfs:comment "The change operation that corresponds to the addition of the annotation of an entity" ;
-               rdfs:label "Add Annotation" .
+###  https://w3id.org/def/och#AddAnnotationToEntity
+:AddAnnotationToEntity rdf:type owl:Class ;
+                       rdfs:subClassOf :EntityAnnotationChange ;
+                       rdfs:comment "The change operation that corresponds to the addition of the annotation of an entity" ;
+                       rdfs:label "Add Annotation to Entity" .
 
 
 ###  https://w3id.org/def/och#AddCharacteristic
@@ -832,6 +877,13 @@ owl:Ontology rdf:type owl:Class .
                  rdfs:comment "The change operation corresponding to the addition of a data property" ;
                  rdfs:label "Add Data Property" ;
                  <http://www.w3.org/ns/prov#wasDerivedFrom> <http://omv.ontoware.org/2007/07/OWLChangesAddDataProperty> .
+
+
+###  https://w3id.org/def/och#AddDisjointClass
+:AddDisjointClass rdf:type owl:Class ;
+                  rdfs:subClassOf :DisjointClassChange ;
+                  rdfs:comment "The change operation corresponding to the addition of an disjoint class relation between two classes" ;
+                  rdfs:label "Add Disjoint Class" .
 
 
 ###  https://w3id.org/def/och#AddDisjointProperty
@@ -939,12 +991,6 @@ owl:Ontology rdf:type owl:Class .
                   <http://www.w3.org/ns/prov#wasDerivedFrom> <http://omv.ontoware.org/2007/07/OWLChangesAddSubPropertyOf> .
 
 
-###  https://w3id.org/def/och#AnnotationChange
-:AnnotationChange rdf:type owl:Class ;
-                  rdfs:comment "The change operation that corresponds to the change of the annotation of an entity" ;
-                  rdfs:label "Change to Annotation" .
-
-
 ###  https://w3id.org/def/och#ChangeSet
 :ChangeSet rdf:type owl:Class ;
            rdfs:subClassOf :Changelog ;
@@ -989,6 +1035,13 @@ owl:Ontology rdf:type owl:Class .
                  rdfs:label "Deprecate Entity" .
 
 
+###  https://w3id.org/def/och#DisjointClassChange
+:DisjointClassChange rdf:type owl:Class ;
+                     rdfs:subClassOf :ClassRelationChange ;
+                     rdfs:comment "The change operation corresponding to the change of an disjoint class relation between two classes" ;
+                     rdfs:label "Disjoint Class Change" .
+
+
 ###  https://w3id.org/def/och#DisjointPropertyChange
 :DisjointPropertyChange rdf:type owl:Class ;
                         rdfs:subClassOf :PropertyRelationChange ;
@@ -1001,6 +1054,13 @@ owl:Ontology rdf:type owl:Class .
               rdfs:subClassOf :PropertyChange ;
               rdfs:comment "The change operation corresponding to the change of the domain of a given property" ;
               rdfs:label "Domain Change" .
+
+
+###  https://w3id.org/def/och#EntityAnnotationChange
+:EntityAnnotationChange rdf:type owl:Class ;
+                        rdfs:subClassOf :EntityChange ;
+                        rdfs:comment "The change operation that corresponds to the change of the annotation of an entity" ;
+                        rdfs:label "Change to the Annotation of an Entity" .
 
 
 ###  https://w3id.org/def/och#EntityChange
@@ -1102,10 +1162,11 @@ owl:Ontology rdf:type owl:Class .
              rdfs:label "Range Change" .
 
 
-###  https://w3id.org/def/och#RemoveAnnotation
-:RemoveAnnotation rdf:type owl:Class ;
-                  rdfs:comment "The change operation that corresponds to the removal of the annotation of an entity" ;
-                  rdfs:label "Remove Annotation" .
+###  https://w3id.org/def/och#RemoveAnnotationFromEntity
+:RemoveAnnotationFromEntity rdf:type owl:Class ;
+                            rdfs:subClassOf :EntityAnnotationChange ;
+                            rdfs:comment "The change operation that corresponds to the removal of the annotation of an entity" ;
+                            rdfs:label "Remove Annotation from Entity" .
 
 
 ###  https://w3id.org/def/och#RemoveCharacteristic
@@ -1129,6 +1190,13 @@ owl:Ontology rdf:type owl:Class .
                     rdfs:comment "The change operation corresponding to the removal of a data property" ;
                     rdfs:label "Remove Data Property" ;
                     <http://www.w3.org/ns/prov#wasDerivedFrom> <http://omv.ontoware.org/2007/07/OWLChangesRemoveDataProperty> .
+
+
+###  https://w3id.org/def/och#RemoveDisjointClass
+:RemoveDisjointClass rdf:type owl:Class ;
+                     rdfs:subClassOf :DisjointClassChange ;
+                     rdfs:comment "The change operation corresponding to the removal of the disjoint class relation between two classes" ;
+                     rdfs:label "Remove Disjoint Class" .
 
 
 ###  https://w3id.org/def/och#RemoveDisjointProperty

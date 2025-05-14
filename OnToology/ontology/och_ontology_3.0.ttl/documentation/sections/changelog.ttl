@@ -1,0 +1,263 @@
+@prefix och: <https://w3id.org/def/och#> .
+
+<https://w3id.org/def/och##Change_435335059851200>
+        a                          och:AddDomain ;
+        och:addedDomain            och:RemoveDisjointClass ;
+        och:addedDomainToProperty  och:sourceRemoveDisjointClass .
+
+<https://w3id.org/def/och##Change_435335055987600>
+        a               och:AddClass ;
+        och:addedClass  och:RemoveDisjointClass .
+
+<https://w3id.org/def/och##Change_435335059901300>
+        a                         och:AddRangeObjectProperty ;
+        och:addedObjectRange      <http://www.w3.org/2002/07/owl#Class> ;
+        och:addedRangeToProperty  och:sourceRemoveDisjointClass .
+
+<https://w3id.org/def/och##Change_435335060274700>
+        a                        och:AddObjectProperty ;
+        och:addedObjectProperty  och:targetRemoveAnnotationFromEntity .
+
+<https://w3id.org/def/och##Change_435335060669500>
+        a                      och:AddDataProperty ;
+        och:addedDataProperty  och:justification .
+
+<https://w3id.org/def/och##Change_435335060074200>
+        a                        och:AddObjectProperty ;
+        och:addedObjectProperty  och:targetAddDisjointClass .
+
+<https://w3id.org/def/och##Change_435335055847400>
+        a                      och:AddSubClass ;
+        och:sourceAddSubClass  och:EntityAnnotationChange ;
+        och:targetAddSubClass  och:EntityChange .
+
+<https://w3id.org/def/och##Change_435335060184900>
+        a                         och:AddRangeObjectProperty ;
+        och:addedObjectRange      <http://www.w3.org/2002/07/owl#Class> ;
+        och:addedRangeToProperty  och:targetAddDisjointClass .
+
+<https://w3id.org/def/och##Change_435335060226200>
+        a                         och:AddSubProperty ;
+        och:sourceAddSubProperty  och:targetAddDisjointClass ;
+        och:targetAddSubProperty  och:targetClass .
+
+<https://w3id.org/def/och##Change_435335059397300>
+        a                         och:AddRangeObjectProperty ;
+        och:addedObjectRange      <http://www.w3.org/2002/07/owl#Class> ;
+        och:addedRangeToProperty  och:sourceAddDisjointClass .
+
+<https://w3id.org/def/och##Change_435335060305600>
+        a                          och:AddDomain ;
+        och:addedDomain            och:RemoveAnnotationFromEntity ;
+        och:addedDomainToProperty  och:targetRemoveAnnotationFromEntity .
+
+<https://w3id.org/def/och##Change_435335059670100>
+        a                          och:AddDomain ;
+        och:addedDomain            och:RemoveAnnotationFromEntity ;
+        och:addedDomainToProperty  och:sourceRemoveAnnotationFromEntity .
+
+<https://w3id.org/def/och##Change_435335060617300>
+        a                         och:AddSubProperty ;
+        och:sourceAddSubProperty  och:targetRemoveDisjointClass ;
+        och:targetAddSubProperty  och:targetClass .
+
+<https://w3id.org/def/och##Change_435335059625800>
+        a                        och:AddObjectProperty ;
+        och:addedObjectProperty  och:sourceRemoveAnnotationFromEntity .
+
+<https://w3id.org/def/och##Change_435335059113400>
+        a                          och:AddDomain ;
+        och:addedDomain            och:RemoveAnnotationFromEntity ;
+        och:addedDomainToProperty  och:removedAnnotationFromEntity .
+
+<https://w3id.org/def/och##Change_435335055764000>
+        a                      och:AddSubClass ;
+        och:sourceAddSubClass  och:DisjointClassChange ;
+        och:targetAddSubClass  och:ClassRelationChange .
+
+<https://w3id.org/def/och##Change_435335056103000>
+        a       och:RemoveAnnotationFromEntity ;
+        och:removedAnnotationFromEntity
+                <http://www.w3.org/2000/01/rdf-schema#label> ;
+        och:sourceRemoveAnnotationFromEntity
+                <Optional[https://w3id.org/def/och#sourceAddDisjointProperty]> ;
+        och:targetRemoveAnnotationFromEntity
+                "\"source AddDisjointProperty\"^^xsd:string" .
+
+<https://w3id.org/def/och##Change_435335060545800>
+        a                         och:AddRangeObjectProperty ;
+        och:addedObjectRange      <http://www.w3.org/2002/07/owl#Class> ;
+        och:addedRangeToProperty  och:targetRemoveDisjointClass .
+
+<https://w3id.org/def/och##Change_435335058845500>
+        a                          och:AddDomain ;
+        och:addedDomain            och:AddAnnotationToEntity ;
+        och:addedDomainToProperty  och:addedAnnotationToEntity .
+
+<https://w3id.org/def/och##Change_435335055651500>
+        a                      och:AddSubClass ;
+        och:sourceAddSubClass  och:AddDisjointClass ;
+        och:targetAddSubClass  och:DisjointClassChange .
+
+<https://w3id.org/def/och##Change_435335060464600>
+        a                          och:AddDomain ;
+        och:addedDomain            och:RemoveDisjointClass ;
+        och:addedDomainToProperty  och:targetRemoveDisjointClass .
+
+<https://w3id.org/def/och##Change_435335058973600>
+        a                         och:AddRangeObjectProperty ;
+        och:addedObjectRange      <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        och:addedRangeToProperty  och:addedAnnotationToEntity .
+
+<https://w3id.org/def/och##Change_435335059808000>
+        a                         och:AddSubProperty ;
+        och:sourceAddSubProperty  och:sourceRemoveDisjointClass ;
+        och:targetAddSubProperty  och:sourceClass .
+
+<https://w3id.org/def/och##Change_435335055812300>
+        a               och:AddClass ;
+        och:addedClass  och:EntityAnnotationChange .
+
+<https://w3id.org/def/och##Change_435335059303000>
+        a                          och:AddDomain ;
+        och:addedDomain            och:AddAnnotationToEntity ;
+        och:addedDomainToProperty  och:sourceAddAnnotationToEntity .
+
+<https://w3id.org/def/och##Change_435335059214000>
+        a                        och:AddObjectProperty ;
+        och:addedObjectProperty  och:sourceAddAnnotationToEntity .
+
+<https://w3id.org/def/och##Change_435335056038700>
+        a                      och:AddSubClass ;
+        och:sourceAddSubClass  och:RemoveDisjointClass ;
+        och:targetAddSubClass  och:DisjointClassChange .
+
+<https://w3id.org/def/och##Change_435335060363100>
+        a                         och:AddRangeObjectProperty ;
+        och:addedObjectRange      <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        och:addedRangeToProperty  och:targetRemoveAnnotationFromEntity .
+
+<https://w3id.org/def/och##Change_435335059485100>
+        a                         och:AddSubProperty ;
+        och:sourceAddSubProperty  och:sourceAddDisjointClass ;
+        och:targetAddSubProperty  och:sourceClass .
+
+<https://w3id.org/def/och##Change_435335060130500>
+        a                          och:AddDomain ;
+        och:addedDomain            och:AddDisjointClass ;
+        och:addedDomainToProperty  och:targetAddDisjointClass .
+
+<https://w3id.org/def/och##Change_435335058691300>
+        a                        och:AddObjectProperty ;
+        och:addedObjectProperty  och:addedAnnotationToEntity .
+
+<https://w3id.org/def/och##Change_435335059767000>
+        a                        och:AddObjectProperty ;
+        och:addedObjectProperty  och:sourceRemoveDisjointClass .
+
+<https://w3id.org/def/och##Change_435335059249900>
+        a                         och:AddRangeObjectProperty ;
+        och:addedObjectRange      <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        och:addedRangeToProperty  och:sourceAddAnnotationToEntity .
+
+<https://w3id.org/def/och##Change_435335059078600>
+        a                        och:AddObjectProperty ;
+        och:addedObjectProperty  och:removedAnnotationFromEntity .
+
+<https://w3id.org/def/och##Change_435335055719500>
+        a               och:AddClass ;
+        och:addedClass  och:DisjointClassChange .
+
+<https://w3id.org/def/och##Change_435335059450700>
+        a                          och:AddDomain ;
+        och:addedDomain            och:AddDisjointClass ;
+        och:addedDomainToProperty  och:sourceAddDisjointClass .
+
+<https://w3id.org/def/och##Change_435335055938900>
+        a                      och:AddSubClass ;
+        och:sourceAddSubClass  och:RemoveAnnotationFromEntity ;
+        och:targetAddSubClass  och:EntityAnnotationChange .
+
+<https://w3id.org/def/och##Change_435335060826000>
+        a                         och:AddRangeDataProperty ;
+        och:addedDataRange        <http://www.w3.org/2001/XMLSchema#string> ;
+        och:addedRangeToProperty  och:justification .
+
+<https://w3id.org/def/och##Change_435335052799600>
+        a               och:AddClass ;
+        och:addedClass  och:AddAnnotationToEntity .
+
+<https://w3id.org/def/och##Change_435335058226000>
+        a                            och:AddAnnotationToEntity ;
+        och:addedAnnotationToEntity  <http://www.w3.org/2000/01/rdf-schema#label> ;
+        och:sourceAddAnnotationToEntity
+                <Optional[https://w3id.org/def/och#sourceAddDisjointProperty]> ;
+        och:targetAddAnnotationToEntity
+                "\"source add disjoint property\"^^xsd:string" .
+
+<https://w3id.org/def/och##Change_435335058528400>
+        a       och:RemoveAnnotationFromEntity ;
+        och:removedAnnotationFromEntity
+                <http://www.w3.org/2000/01/rdf-schema#label> ;
+        och:sourceRemoveAnnotationFromEntity
+                <Optional[https://w3id.org/def/och#sourceAddEquivalentClass]> ;
+        och:targetRemoveAnnotationFromEntity
+                "\"source AddEquivalentClass\"^^xsd:string" .
+
+<https://w3id.org/def/och##Change_435335059723500>
+        a                         och:AddRangeObjectProperty ;
+        och:addedObjectRange      <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        och:addedRangeToProperty  och:sourceRemoveAnnotationFromEntity .
+
+<https://w3id.org/def/och##Change_435335060962900>
+        a                          och:AddDomain ;
+        och:addedDomain            och:OntologicalChange ;
+        och:addedDomainToProperty  och:justification .
+
+<https://w3id.org/def/och##Change_435335055597500>
+        a               och:AddClass ;
+        och:addedClass  och:AddDisjointClass .
+
+<https://w3id.org/def/och##Change_435335055326100>
+        a                      och:AddSubClass ;
+        och:sourceAddSubClass  och:AddAnnotationToEntity ;
+        och:targetAddSubClass  och:EntityAnnotationChange .
+
+<https://w3id.org/def/och##Change_435335059347500>
+        a                        och:AddObjectProperty ;
+        och:addedObjectProperty  och:sourceAddDisjointClass .
+
+<https://w3id.org/def/och##Change_435335059973100>
+        a                          och:AddDomain ;
+        och:addedDomain            och:AddAnnotationToEntity ;
+        och:addedDomainToProperty  och:targetAddAnnotationToEntity .
+
+<https://w3id.org/def/och##Change_435335059943100>
+        a                        och:AddObjectProperty ;
+        och:addedObjectProperty  och:targetAddAnnotationToEntity .
+
+<https://w3id.org/def/och##Change_435335055898100>
+        a               och:AddClass ;
+        och:addedClass  och:RemoveAnnotationFromEntity .
+
+<https://w3id.org/def/och##Change_435335058628300>
+        a                            och:AddAnnotationToEntity ;
+        och:addedAnnotationToEntity  <http://www.w3.org/2000/01/rdf-schema#label> ;
+        och:sourceAddAnnotationToEntity
+                <Optional[https://w3id.org/def/och#sourceAddEquivalentClass]> ;
+        och:targetAddAnnotationToEntity
+                "\"source add equivalent class\"^^xsd:string" .
+
+<https://w3id.org/def/och##Change_435335060024700>
+        a                         och:AddRangeObjectProperty ;
+        och:addedObjectRange      <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+        och:addedRangeToProperty  och:targetAddAnnotationToEntity .
+
+<https://w3id.org/def/och##Change_435335060409300>
+        a                        och:AddObjectProperty ;
+        och:addedObjectProperty  och:targetRemoveDisjointClass .
+
+<https://w3id.org/def/och##Change_435335059167200>
+        a                         och:AddRangeObjectProperty ;
+        och:addedObjectRange      <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+        och:addedRangeToProperty  och:removedAnnotationFromEntity .

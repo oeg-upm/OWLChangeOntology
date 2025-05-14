@@ -11,7 +11,7 @@ AddType application/ld+json .jsonld
 # Rewrite engine setup
 RewriteEngine On
 #Change the path to the folder here
-RewriteBase /documentation 
+RewriteBase /och_ontology_3.0.ttl 
 
 # Rewrite rule to serve JSON-LD content from the vocabulary URI if requested
 # Placed before HTML to support serving JSON-LD from a browser (e.g., JSON Playground)
