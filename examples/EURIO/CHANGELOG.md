@@ -1,0 +1,2085 @@
+# EURIO ontological changelog
+
+> Generated from `/Users/dchavesf/Documents/proyectos/student-thesis/diego/OWLChangeOntology/examples/EURIO/eurio_changelog.ttl`. **1003 ontological changes.**
+
+## Added (429)
+
+### Annotations
+
+- <a id="change-720552369274100"></a>**[abstract](http://data.europa.eu/s66#abstract)** `Add Annotation to Entity` [permalink](#change-720552369274100)
+  - Added annotation on [eurio:abstract](http://data.europa.eu/s66#abstract): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552369288800"></a>**[abstract](http://data.europa.eu/s66#abstract)** `Add Annotation to Entity` [permalink](#change-720552369288800)
+  - Added annotation on [eurio:abstract](http://data.europa.eu/s66#abstract): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "The general summary and ideas of a CORDIS entity, e.g., project, result."@en
+- <a id="change-720552369371800"></a>**[additionalName](http://data.europa.eu/s66#additionalName)** `Add Annotation to Entity` [permalink](#change-720552369371800)
+  - Added annotation on [eurio:additionalName](http://data.europa.eu/s66#additionalName): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "additional name"@en
+- <a id="change-720552369382300"></a>**[additionalName](http://data.europa.eu/s66#additionalName)** `Add Annotation to Entity` [permalink](#change-720552369382300)
+  - Added annotation on [eurio:additionalName](http://data.europa.eu/s66#additionalName): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552369473100"></a>**[addressCountry](http://data.europa.eu/s66#addressCountry)** `Add Annotation to Entity` [permalink](#change-720552369473100)
+  - Added annotation on [eurio:addressCountry](http://data.europa.eu/s66#addressCountry): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "address country"@en
+- <a id="change-720552369485500"></a>**[addressCountry](http://data.europa.eu/s66#addressCountry)** `Add Annotation to Entity` [permalink](#change-720552369485500)
+  - Added annotation on [eurio:addressCountry](http://data.europa.eu/s66#addressCountry): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552369587700"></a>**[addressLocality](http://data.europa.eu/s66#addressLocality)** `Add Annotation to Entity` [permalink](#change-720552369587700)
+  - Added annotation on [eurio:addressLocality](http://data.europa.eu/s66#addressLocality): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552369599000"></a>**[addressLocality](http://data.europa.eu/s66#addressLocality)** `Add Annotation to Entity` [permalink](#change-720552369599000)
+  - Added annotation on [eurio:addressLocality](http://data.europa.eu/s66#addressLocality): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "address locality"@en
+- <a id="change-720552299833300"></a>**[AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea)** `Add Annotation to Entity` [permalink](#change-720552299833300)
+  - Added annotation on [eurio:AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "http://data.europa.eu/m8g/AdminUnit"
+- <a id="change-720552300067700"></a>**[AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea)** `Add Annotation to Entity` [permalink](#change-720552300067700)
+  - Added annotation on [eurio:AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552300208200"></a>**[AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea)** `Add Annotation to Entity` [permalink](#change-720552300208200)
+  - Added annotation on [eurio:AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "http://schema.org/AdministrativeArea"
+- <a id="change-720552301184600"></a>**[ContactPoint](http://data.europa.eu/s66#ContactPoint)** `Add Annotation to Entity` [permalink](#change-720552301184600)
+  - Added annotation on [eurio:ContactPoint](http://data.europa.eu/s66#ContactPoint): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552303259900"></a>**[Coordinates](http://data.europa.eu/s66#Coordinates)** `Add Annotation to Entity` [permalink](#change-720552303259900)
+  - Added annotation on [eurio:Coordinates](http://data.europa.eu/s66#Coordinates): [skos:closeMatch](http://www.w3.org/2004/02/skos/core#closeMatch) = "http://schema.org/GeoCoordinates"
+- <a id="change-720552303395100"></a>**[Coordinates](http://data.europa.eu/s66#Coordinates)** `Add Annotation to Entity` [permalink](#change-720552303395100)
+  - Added annotation on [eurio:Coordinates](http://data.europa.eu/s66#Coordinates): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "http://www.w3.org/ns/locn#Geometry"
+- <a id="change-720552303462600"></a>**[Coordinates](http://data.europa.eu/s66#Coordinates)** `Add Annotation to Entity` [permalink](#change-720552303462600)
+  - Added annotation on [eurio:Coordinates](http://data.europa.eu/s66#Coordinates): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552304138800"></a>**[Country](http://data.europa.eu/s66#Country)** `Add Annotation to Entity` [permalink](#change-720552304138800)
+  - Added annotation on [eurio:Country](http://data.europa.eu/s66#Country): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552304588200"></a>**[Country](http://data.europa.eu/s66#Country)** `Add Annotation to Entity` [permalink](#change-720552304588200)
+  - Added annotation on [eurio:Country](http://data.europa.eu/s66#Country): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "http://schema.org/Country"
+- <a id="change-720552369987000"></a>**[currency](http://data.europa.eu/s66#currency)** `Add Annotation to Entity` [permalink](#change-720552369987000)
+  - Added annotation on [eurio:currency](http://data.europa.eu/s66#currency): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552370528600"></a>**[date](http://data.europa.eu/s66#date)** `Add Annotation to Entity` [permalink](#change-720552370528600)
+  - Added annotation on [eurio:date](http://data.europa.eu/s66#date): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552370644700"></a>**[description](http://data.europa.eu/s66#description)** `Add Annotation to Entity` [permalink](#change-720552370644700)
+  - Added annotation on [eurio:description](http://data.europa.eu/s66#description): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552370654800"></a>**[description](http://data.europa.eu/s66#description)** `Add Annotation to Entity` [permalink](#change-720552370654800)
+  - Added annotation on [eurio:description](http://data.europa.eu/s66#description): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "A brief summary of the entity (project, etc.)."@en
+- <a id="change-720552350230000"></a>**[disburses](http://data.europa.eu/s66#disburses)** `Add Annotation to Entity` [permalink](#change-720552350230000)
+  - Added annotation on [eurio:disburses](http://data.europa.eu/s66#disburses): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552370730300"></a>**[duration](http://data.europa.eu/s66#duration)** `Add Annotation to Entity` [permalink](#change-720552370730300)
+  - Added annotation on [eurio:duration](http://data.europa.eu/s66#duration): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "The period of time an entity (e.g. project, grant, etc.) has taken, represented as number of months."@en
+- <a id="change-720552370788000"></a>**[email](http://data.europa.eu/s66#email)** `Add Annotation to Entity` [permalink](#change-720552370788000)
+  - Added annotation on [eurio:email](http://data.europa.eu/s66#email): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552370894900"></a>**[endDate](http://data.europa.eu/s66#endDate)** `Add Annotation to Entity` [permalink](#change-720552370894900)
+  - Added annotation on [eurio:endDate](http://data.europa.eu/s66#endDate): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "end date"@en
+- <a id="change-720552370937700"></a>**[endDate](http://data.europa.eu/s66#endDate)** `Add Annotation to Entity` [permalink](#change-720552370937700)
+  - Added annotation on [eurio:endDate](http://data.europa.eu/s66#endDate): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552370965600"></a>**[endDate](http://data.europa.eu/s66#endDate)** `Add Annotation to Entity` [permalink](#change-720552370965600)
+  - Added annotation on [eurio:endDate](http://data.europa.eu/s66#endDate): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "The date on which an entity (e.g. project, grant, etc.) is finalized or ceases to exist."@en
+- <a id="change-720552371037800"></a>**[familyName](http://data.europa.eu/s66#familyName)** `Add Annotation to Entity` [permalink](#change-720552371037800)
+  - Added annotation on [eurio:familyName](http://data.europa.eu/s66#familyName): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "family name"@en
+- <a id="change-720552371055700"></a>**[familyName](http://data.europa.eu/s66#familyName)** `Add Annotation to Entity` [permalink](#change-720552371055700)
+  - Added annotation on [eurio:familyName](http://data.europa.eu/s66#familyName): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552371143700"></a>**[faxNumber](http://data.europa.eu/s66#faxNumber)** `Add Annotation to Entity` [permalink](#change-720552371143700)
+  - Added annotation on [eurio:faxNumber](http://data.europa.eu/s66#faxNumber): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "fax number"@en
+- <a id="change-720552371159400"></a>**[faxNumber](http://data.europa.eu/s66#faxNumber)** `Add Annotation to Entity` [permalink](#change-720552371159400)
+  - Added annotation on [eurio:faxNumber](http://data.europa.eu/s66#faxNumber): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552371238600"></a>**[fullAddress](http://data.europa.eu/s66#fullAddress)** `Add Annotation to Entity` [permalink](#change-720552371238600)
+  - Added annotation on [eurio:fullAddress](http://data.europa.eu/s66#fullAddress): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552371248800"></a>**[fullAddress](http://data.europa.eu/s66#fullAddress)** `Add Annotation to Entity` [permalink](#change-720552371248800)
+  - Added annotation on [eurio:fullAddress](http://data.europa.eu/s66#fullAddress): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "full address"@en
+- <a id="change-720552371263500"></a>**[fullAddress](http://data.europa.eu/s66#fullAddress)** `Add Annotation to Entity` [permalink](#change-720552371263500)
+  - Added annotation on [eurio:fullAddress](http://data.europa.eu/s66#fullAddress): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "The full address of a physical location of an entity."@en
+- <a id="change-720552305061900"></a>**[FundingAgency](http://data.europa.eu/s66#FundingAgency)** `Add Annotation to Entity` [permalink](#change-720552305061900)
+  - Added annotation on [eurio:FundingAgency](http://data.europa.eu/s66#FundingAgency): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552305128900"></a>**[FundingAgency](http://data.europa.eu/s66#FundingAgency)** `Add Annotation to Entity` [permalink](#change-720552305128900)
+  - Added annotation on [eurio:FundingAgency](http://data.europa.eu/s66#FundingAgency): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "https://w3id.org/dingo#FundingAgency"
+- <a id="change-720552308829600"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Add Annotation to Entity` [permalink](#change-720552308829600)
+  - Added annotation on [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552308951800"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Add Annotation to Entity` [permalink](#change-720552308951800)
+  - Added annotation on [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "https://w3id.org/dingo#FundingScheme"
+- <a id="change-720552350521300"></a>**[funds](http://data.europa.eu/s66#funds)** `Add Annotation to Entity` [permalink](#change-720552350521300)
+  - Added annotation on [eurio:funds](http://data.europa.eu/s66#funds): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552371334700"></a>**[givenName](http://data.europa.eu/s66#givenName)** `Add Annotation to Entity` [permalink](#change-720552371334700)
+  - Added annotation on [eurio:givenName](http://data.europa.eu/s66#givenName): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552371347300"></a>**[givenName](http://data.europa.eu/s66#givenName)** `Add Annotation to Entity` [permalink](#change-720552371347300)
+  - Added annotation on [eurio:givenName](http://data.europa.eu/s66#givenName): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "given name"@en
+- <a id="change-720552313212700"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Add Annotation to Entity` [permalink](#change-720552313212700)
+  - Added annotation on [eurio:Grant](http://data.europa.eu/s66#Grant): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "https://w3id.org/dingo#Grant"
+- <a id="change-720552313861400"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Add Annotation to Entity` [permalink](#change-720552313861400)
+  - Added annotation on [eurio:Grant](http://data.europa.eu/s66#Grant): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552315197700"></a>**[GrantPayment](http://data.europa.eu/s66#GrantPayment)** `Add Annotation to Entity` [permalink](#change-720552315197700)
+  - Added annotation on [eurio:GrantPayment](http://data.europa.eu/s66#GrantPayment): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552315305600"></a>**[GrantPayment](http://data.europa.eu/s66#GrantPayment)** `Add Annotation to Entity` [permalink](#change-720552315305600)
+  - Added annotation on [eurio:GrantPayment](http://data.europa.eu/s66#GrantPayment): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "https://w3id.org/dingo#GrantPayment"
+- <a id="change-720552350649400"></a>**[hasAcronym](http://data.europa.eu/s66#hasAcronym)** `Add Annotation to Entity` [permalink](#change-720552350649400)
+  - Added annotation on [eurio:hasAcronym](http://data.europa.eu/s66#hasAcronym): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "Relates an entity (e.g. project, grant, etc.) with its acronym(s). This includes acronyms representing the entity’s title as well as any additional acronyms extracted from other attributes of the entity."@en
+- <a id="change-720552350681100"></a>**[hasAcronym](http://data.europa.eu/s66#hasAcronym)** `Add Annotation to Entity` [permalink](#change-720552350681100)
+  - Added annotation on [eurio:hasAcronym](http://data.europa.eu/s66#hasAcronym): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has acronym"@en
+- <a id="change-720552350750500"></a>**[hasAddress](http://data.europa.eu/s66#hasAddress)** `Add Annotation to Entity` [permalink](#change-720552350750500)
+  - Added annotation on [eurio:hasAddress](http://data.europa.eu/s66#hasAddress): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "Relates a physical location to its registered address."@en
+- <a id="change-720552350763900"></a>**[hasAddress](http://data.europa.eu/s66#hasAddress)** `Add Annotation to Entity` [permalink](#change-720552350763900)
+  - Added annotation on [eurio:hasAddress](http://data.europa.eu/s66#hasAddress): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552351094900"></a>**[hasBeneficiary](http://data.europa.eu/s66#hasBeneficiary)** `Add Annotation to Entity` [permalink](#change-720552351094900)
+  - Added annotation on [eurio:hasBeneficiary](http://data.europa.eu/s66#hasBeneficiary): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552351108100"></a>**[hasBeneficiary](http://data.europa.eu/s66#hasBeneficiary)** `Add Annotation to Entity` [permalink](#change-720552351108100)
+  - Added annotation on [eurio:hasBeneficiary](http://data.europa.eu/s66#hasBeneficiary): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has beneficiary"@en
+- <a id="change-720552351302000"></a>**[hasContactDetails](http://data.europa.eu/s66#hasContactDetails)** `Add Annotation to Entity` [permalink](#change-720552351302000)
+  - Added annotation on [eurio:hasContactDetails](http://data.europa.eu/s66#hasContactDetails): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has contact details"@en
+- <a id="change-720552351407000"></a>**[hasCoordinates](http://data.europa.eu/s66#hasCoordinates)** `Add Annotation to Entity` [permalink](#change-720552351407000)
+  - Added annotation on [eurio:hasCoordinates](http://data.europa.eu/s66#hasCoordinates): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552351418100"></a>**[hasCoordinates](http://data.europa.eu/s66#hasCoordinates)** `Add Annotation to Entity` [permalink](#change-720552351418100)
+  - Added annotation on [eurio:hasCoordinates](http://data.europa.eu/s66#hasCoordinates): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has coordinates"@en
+- <a id="change-720552351432500"></a>**[hasCoordinates](http://data.europa.eu/s66#hasCoordinates)** `Add Annotation to Entity` [permalink](#change-720552351432500)
+  - Added annotation on [eurio:hasCoordinates](http://data.europa.eu/s66#hasCoordinates): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "The geo-coordinates of a place"@en
+- <a id="change-720552351475800"></a>**[hasEUCountryCode](http://data.europa.eu/s66#hasEUCountryCode)** `Add Annotation to Entity` [permalink](#change-720552351475800)
+  - Added annotation on [eurio:hasEUCountryCode](http://data.europa.eu/s66#hasEUCountryCode): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has EU country code"@en
+- <a id="change-720552351537100"></a>**[hasEuroSciVocClassification](http://data.europa.eu/s66#hasEuroSciVocClassification)** `Add Annotation to Entity` [permalink](#change-720552351537100)
+  - Added annotation on [eurio:hasEuroSciVocClassification](http://data.europa.eu/s66#hasEuroSciVocClassification): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has EuroSciVoc classification"@en
+- <a id="change-720552351550400"></a>**[hasEuroSciVocClassification](http://data.europa.eu/s66#hasEuroSciVocClassification)** `Add Annotation to Entity` [permalink](#change-720552351550400)
+  - Added annotation on [eurio:hasEuroSciVocClassification](http://data.europa.eu/s66#hasEuroSciVocClassification): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552351644500"></a>**[hasFundingAmount](http://data.europa.eu/s66#hasFundingAmount)** `Add Annotation to Entity` [permalink](#change-720552351644500)
+  - Added annotation on [eurio:hasFundingAmount](http://data.europa.eu/s66#hasFundingAmount): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552351655100"></a>**[hasFundingAmount](http://data.europa.eu/s66#hasFundingAmount)** `Add Annotation to Entity` [permalink](#change-720552351655100)
+  - Added annotation on [eurio:hasFundingAmount](http://data.europa.eu/s66#hasFundingAmount): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has funding amount"@en
+- <a id="change-720552351735600"></a>**[hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme)** `Add Annotation to Entity` [permalink](#change-720552351735600)
+  - Added annotation on [eurio:hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552351748600"></a>**[hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme)** `Add Annotation to Entity` [permalink](#change-720552351748600)
+  - Added annotation on [eurio:hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has funding scheme"@en
+- <a id="change-720552351788000"></a>**[hasFundingSchemeCategory](http://data.europa.eu/s66#hasFundingSchemeCategory)** `Add Annotation to Entity` [permalink](#change-720552351788000)
+  - Added annotation on [eurio:hasFundingSchemeCategory](http://data.europa.eu/s66#hasFundingSchemeCategory): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has funding scheme category"@en
+- <a id="change-720552351866700"></a>**[hasGeographicalLocation](http://data.europa.eu/s66#hasGeographicalLocation)** `Add Annotation to Entity` [permalink](#change-720552351866700)
+  - Added annotation on [eurio:hasGeographicalLocation](http://data.europa.eu/s66#hasGeographicalLocation): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552351877600"></a>**[hasGeographicalLocation](http://data.europa.eu/s66#hasGeographicalLocation)** `Add Annotation to Entity` [permalink](#change-720552351877600)
+  - Added annotation on [eurio:hasGeographicalLocation](http://data.europa.eu/s66#hasGeographicalLocation): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has geographical location"@en
+- <a id="change-720552351986900"></a>**[hasGrant](http://data.europa.eu/s66#hasGrant)** `Add Annotation to Entity` [permalink](#change-720552351986900)
+  - Added annotation on [eurio:hasGrant](http://data.europa.eu/s66#hasGrant): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has grant"@en
+- <a id="change-720552352004900"></a>**[hasGrant](http://data.europa.eu/s66#hasGrant)** `Add Annotation to Entity` [permalink](#change-720552352004900)
+  - Added annotation on [eurio:hasGrant](http://data.europa.eu/s66#hasGrant): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552352146800"></a>**[hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty)** `Add Annotation to Entity` [permalink](#change-720552352146800)
+  - Added annotation on [eurio:hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "Relates the Project to the roles that are involved in the project."@en
+- <a id="change-720552352162400"></a>**[hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty)** `Add Annotation to Entity` [permalink](#change-720552352162400)
+  - Added annotation on [eurio:hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552352174100"></a>**[hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty)** `Add Annotation to Entity` [permalink](#change-720552352174100)
+  - Added annotation on [eurio:hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has involved party"@en
+- <a id="change-720552352245100"></a>**[hasNUTSCode](http://data.europa.eu/s66#hasNUTSCode)** `Add Annotation to Entity` [permalink](#change-720552352245100)
+  - Added annotation on [eurio:hasNUTSCode](http://data.europa.eu/s66#hasNUTSCode): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "A value representing the NUTS code of the place or address."@en
+- <a id="change-720552352269900"></a>**[hasNUTSCode](http://data.europa.eu/s66#hasNUTSCode)** `Add Annotation to Entity` [permalink](#change-720552352269900)
+  - Added annotation on [eurio:hasNUTSCode](http://data.europa.eu/s66#hasNUTSCode): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has NUTS code"@en
+- <a id="change-720552352644400"></a>**[hasPayment](http://data.europa.eu/s66#hasPayment)** `Add Annotation to Entity` [permalink](#change-720552352644400)
+  - Added annotation on [eurio:hasPayment](http://data.europa.eu/s66#hasPayment): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has payment"@en
+- <a id="change-720552352688200"></a>**[hasPayment](http://data.europa.eu/s66#hasPayment)** `Add Annotation to Entity` [permalink](#change-720552352688200)
+  - Added annotation on [eurio:hasPayment](http://data.europa.eu/s66#hasPayment): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552352912200"></a>**[hasPaymentAmount](http://data.europa.eu/s66#hasPaymentAmount)** `Add Annotation to Entity` [permalink](#change-720552352912200)
+  - Added annotation on [eurio:hasPaymentAmount](http://data.europa.eu/s66#hasPaymentAmount): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552352946200"></a>**[hasPaymentAmount](http://data.europa.eu/s66#hasPaymentAmount)** `Add Annotation to Entity` [permalink](#change-720552352946200)
+  - Added annotation on [eurio:hasPaymentAmount](http://data.europa.eu/s66#hasPaymentAmount): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has payment amount"@en
+- <a id="change-720552353068600"></a>**[hasRecipient](http://data.europa.eu/s66#hasRecipient)** `Add Annotation to Entity` [permalink](#change-720552353068600)
+  - Added annotation on [eurio:hasRecipient](http://data.europa.eu/s66#hasRecipient): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has recipient"@en
+- <a id="change-720552353179400"></a>**[hasRelatedProject](http://data.europa.eu/s66#hasRelatedProject)** `Add Annotation to Entity` [permalink](#change-720552353179400)
+  - Added annotation on [eurio:hasRelatedProject](http://data.europa.eu/s66#hasRelatedProject): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has related project"@en
+- <a id="change-720552353348500"></a>**[hasRelatedScheme](http://data.europa.eu/s66#hasRelatedScheme)** `Add Annotation to Entity` [permalink](#change-720552353348500)
+  - Added annotation on [eurio:hasRelatedScheme](http://data.europa.eu/s66#hasRelatedScheme): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552353407900"></a>**[hasRelatedScheme](http://data.europa.eu/s66#hasRelatedScheme)** `Add Annotation to Entity` [permalink](#change-720552353407900)
+  - Added annotation on [eurio:hasRelatedScheme](http://data.europa.eu/s66#hasRelatedScheme): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has related scheme"@en
+- <a id="change-720552354437000"></a>**[hasResult](http://data.europa.eu/s66#hasResult)** `Add Annotation to Entity` [permalink](#change-720552354437000)
+  - Added annotation on [eurio:hasResult](http://data.europa.eu/s66#hasResult): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has result"@en
+- <a id="change-720552354538600"></a>**[hasResult](http://data.europa.eu/s66#hasResult)** `Add Annotation to Entity` [permalink](#change-720552354538600)
+  - Added annotation on [eurio:hasResult](http://data.europa.eu/s66#hasResult): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "Relates the project with its result(s)."@en
+- <a id="change-720552354592900"></a>**[hasResult](http://data.europa.eu/s66#hasResult)** `Add Annotation to Entity` [permalink](#change-720552354592900)
+  - Added annotation on [eurio:hasResult](http://data.europa.eu/s66#hasResult): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552354653800"></a>**[hasResultType](http://data.europa.eu/s66#hasResultType)** `Add Annotation to Entity` [permalink](#change-720552354653800)
+  - Added annotation on [eurio:hasResultType](http://data.europa.eu/s66#hasResultType): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has result type"@en
+- <a id="change-720552354742700"></a>**[hasRole](http://data.europa.eu/s66#hasRole)** `Add Annotation to Entity` [permalink](#change-720552354742700)
+  - Added annotation on [eurio:hasRole](http://data.europa.eu/s66#hasRole): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has role"@en
+- <a id="change-720552354770000"></a>**[hasRole](http://data.europa.eu/s66#hasRole)** `Add Annotation to Entity` [permalink](#change-720552354770000)
+  - Added annotation on [eurio:hasRole](http://data.europa.eu/s66#hasRole): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552354940600"></a>**[hasSite](http://data.europa.eu/s66#hasSite)** `Add Annotation to Entity` [permalink](#change-720552354940600)
+  - Added annotation on [eurio:hasSite](http://data.europa.eu/s66#hasSite): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552354964000"></a>**[hasSite](http://data.europa.eu/s66#hasSite)** `Add Annotation to Entity` [permalink](#change-720552354964000)
+  - Added annotation on [eurio:hasSite](http://data.europa.eu/s66#hasSite): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has site"@en
+- <a id="change-720552355034800"></a>**[hasSubOrganisation](http://data.europa.eu/s66#hasSubOrganisation)** `Add Annotation to Entity` [permalink](#change-720552355034800)
+  - Added annotation on [eurio:hasSubOrganisation](http://data.europa.eu/s66#hasSubOrganisation): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552355045700"></a>**[hasSubOrganisation](http://data.europa.eu/s66#hasSubOrganisation)** `Add Annotation to Entity` [permalink](#change-720552355045700)
+  - Added annotation on [eurio:hasSubOrganisation](http://data.europa.eu/s66#hasSubOrganisation): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has sub-organisation"@en
+- <a id="change-720552355149200"></a>**[hasSubScheme](http://data.europa.eu/s66#hasSubScheme)** `Add Annotation to Entity` [permalink](#change-720552355149200)
+  - Added annotation on [eurio:hasSubScheme](http://data.europa.eu/s66#hasSubScheme): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has subscheme"@en
+- <a id="change-720552355220100"></a>**[hasSubScheme](http://data.europa.eu/s66#hasSubScheme)** `Add Annotation to Entity` [permalink](#change-720552355220100)
+  - Added annotation on [eurio:hasSubScheme](http://data.europa.eu/s66#hasSubScheme): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552355300600"></a>**[hasTotalCost](http://data.europa.eu/s66#hasTotalCost)** `Add Annotation to Entity` [permalink](#change-720552355300600)
+  - Added annotation on [eurio:hasTotalCost](http://data.europa.eu/s66#hasTotalCost): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has total cost"@en
+- <a id="change-720552355312700"></a>**[hasTotalCost](http://data.europa.eu/s66#hasTotalCost)** `Add Annotation to Entity` [permalink](#change-720552355312700)
+  - Added annotation on [eurio:hasTotalCost](http://data.europa.eu/s66#hasTotalCost): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552355450700"></a>**[hasUnit](http://data.europa.eu/s66#hasUnit)** `Add Annotation to Entity` [permalink](#change-720552355450700)
+  - Added annotation on [eurio:hasUnit](http://data.europa.eu/s66#hasUnit): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552355473400"></a>**[hasUnit](http://data.europa.eu/s66#hasUnit)** `Add Annotation to Entity` [permalink](#change-720552355473400)
+  - Added annotation on [eurio:hasUnit](http://data.europa.eu/s66#hasUnit): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has unit"@en
+- <a id="change-720552371420200"></a>**[honorificTitle](http://data.europa.eu/s66#honorificTitle)** `Add Annotation to Entity` [permalink](#change-720552371420200)
+  - Added annotation on [eurio:honorificTitle](http://data.europa.eu/s66#honorificTitle): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "honorific title"@en
+- <a id="change-720552371531000"></a>**[honorificTitle](http://data.europa.eu/s66#honorificTitle)** `Add Annotation to Entity` [permalink](#change-720552371531000)
+  - Added annotation on [eurio:honorificTitle](http://data.europa.eu/s66#honorificTitle): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552355535600"></a>**[implements](http://data.europa.eu/s66#implements)** `Add Annotation to Entity` [permalink](#change-720552355535600)
+  - Added annotation on [eurio:implements](http://data.europa.eu/s66#implements): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552355599300"></a>**[isAcronymOf](http://data.europa.eu/s66#isAcronymOf)** `Add Annotation to Entity` [permalink](#change-720552355599300)
+  - Added annotation on [eurio:isAcronymOf](http://data.europa.eu/s66#isAcronymOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is acronym of"@en
+- <a id="change-720552355675000"></a>**[isBeneficiaryOf](http://data.europa.eu/s66#isBeneficiaryOf)** `Add Annotation to Entity` [permalink](#change-720552355675000)
+  - Added annotation on [eurio:isBeneficiaryOf](http://data.europa.eu/s66#isBeneficiaryOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is beneficiary of"@en
+- <a id="change-720552355690700"></a>**[isBeneficiaryOf](http://data.europa.eu/s66#isBeneficiaryOf)** `Add Annotation to Entity` [permalink](#change-720552355690700)
+  - Added annotation on [eurio:isBeneficiaryOf](http://data.europa.eu/s66#isBeneficiaryOf): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552355765300"></a>**[isDisbursedBy](http://data.europa.eu/s66#isDisbursedBy)** `Add Annotation to Entity` [permalink](#change-720552355765300)
+  - Added annotation on [eurio:isDisbursedBy](http://data.europa.eu/s66#isDisbursedBy): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is disbursed by"@en
+- <a id="change-720552355779300"></a>**[isDisbursedBy](http://data.europa.eu/s66#isDisbursedBy)** `Add Annotation to Entity` [permalink](#change-720552355779300)
+  - Added annotation on [eurio:isDisbursedBy](http://data.europa.eu/s66#isDisbursedBy): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552355860900"></a>**[isEmployedBy](http://data.europa.eu/s66#isEmployedBy)** `Add Annotation to Entity` [permalink](#change-720552355860900)
+  - Added annotation on [eurio:isEmployedBy](http://data.europa.eu/s66#isEmployedBy): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552355878500"></a>**[isEmployedBy](http://data.europa.eu/s66#isEmployedBy)** `Add Annotation to Entity` [permalink](#change-720552355878500)
+  - Added annotation on [eurio:isEmployedBy](http://data.europa.eu/s66#isEmployedBy): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is employed by"@en
+- <a id="change-720552355991000"></a>**[isFundedBy](http://data.europa.eu/s66#isFundedBy)** `Add Annotation to Entity` [permalink](#change-720552355991000)
+  - Added annotation on [eurio:isFundedBy](http://data.europa.eu/s66#isFundedBy): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is funded by"@en
+- <a id="change-720552356004600"></a>**[isFundedBy](http://data.europa.eu/s66#isFundedBy)** `Add Annotation to Entity` [permalink](#change-720552356004600)
+  - Added annotation on [eurio:isFundedBy](http://data.europa.eu/s66#isFundedBy): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552356070500"></a>**[isImplementedBy](http://data.europa.eu/s66#isImplementedBy)** `Add Annotation to Entity` [permalink](#change-720552356070500)
+  - Added annotation on [eurio:isImplementedBy](http://data.europa.eu/s66#isImplementedBy): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552356080800"></a>**[isImplementedBy](http://data.europa.eu/s66#isImplementedBy)** `Add Annotation to Entity` [permalink](#change-720552356080800)
+  - Added annotation on [eurio:isImplementedBy](http://data.europa.eu/s66#isImplementedBy): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is implemented by"@en
+- <a id="change-720552356889600"></a>**[isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn)** `Add Annotation to Entity` [permalink](#change-720552356889600)
+  - Added annotation on [eurio:isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is involved in"@en
+- <a id="change-720552356912000"></a>**[isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn)** `Add Annotation to Entity` [permalink](#change-720552356912000)
+  - Added annotation on [eurio:isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552356925800"></a>**[isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn)** `Add Annotation to Entity` [permalink](#change-720552356925800)
+  - Added annotation on [eurio:isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "Relates the role to the Project in which it is involved."@en
+- <a id="change-720552357008200"></a>**[isPaymentOf](http://data.europa.eu/s66#isPaymentOf)** `Add Annotation to Entity` [permalink](#change-720552357008200)
+  - Added annotation on [eurio:isPaymentOf](http://data.europa.eu/s66#isPaymentOf): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552357019700"></a>**[isPaymentOf](http://data.europa.eu/s66#isPaymentOf)** `Add Annotation to Entity` [permalink](#change-720552357019700)
+  - Added annotation on [eurio:isPaymentOf](http://data.europa.eu/s66#isPaymentOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is payment of"@en
+- <a id="change-720552357100300"></a>**[isRecipientOf](http://data.europa.eu/s66#isRecipientOf)** `Add Annotation to Entity` [permalink](#change-720552357100300)
+  - Added annotation on [eurio:isRecipientOf](http://data.europa.eu/s66#isRecipientOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is recipient of"@en
+- <a id="change-720552357407900"></a>**[isResultOf](http://data.europa.eu/s66#isResultOf)** `Add Annotation to Entity` [permalink](#change-720552357407900)
+  - Added annotation on [eurio:isResultOf](http://data.europa.eu/s66#isResultOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is result of"@en
+- <a id="change-720552357893300"></a>**[isRoleOf](http://data.europa.eu/s66#isRoleOf)** `Add Annotation to Entity` [permalink](#change-720552357893300)
+  - Added annotation on [eurio:isRoleOf](http://data.europa.eu/s66#isRoleOf): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "Relates the person/organisation role to the person/organisation which assumes the role."@en
+- <a id="change-720552357927700"></a>**[isRoleOf](http://data.europa.eu/s66#isRoleOf)** `Add Annotation to Entity` [permalink](#change-720552357927700)
+  - Added annotation on [eurio:isRoleOf](http://data.europa.eu/s66#isRoleOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is role of"@en
+- <a id="change-720552357960900"></a>**[isRoleOf](http://data.europa.eu/s66#isRoleOf)** `Add Annotation to Entity` [permalink](#change-720552357960900)
+  - Added annotation on [eurio:isRoleOf](http://data.europa.eu/s66#isRoleOf): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552358251000"></a>**[isSiteOf](http://data.europa.eu/s66#isSiteOf)** `Add Annotation to Entity` [permalink](#change-720552358251000)
+  - Added annotation on [eurio:isSiteOf](http://data.europa.eu/s66#isSiteOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is site of"@en
+- <a id="change-720552358290200"></a>**[isSiteOf](http://data.europa.eu/s66#isSiteOf)** `Add Annotation to Entity` [permalink](#change-720552358290200)
+  - Added annotation on [eurio:isSiteOf](http://data.europa.eu/s66#isSiteOf): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "Indicates an entity which has presence at the given site"@en
+- <a id="change-720552358346700"></a>**[isSiteOf](http://data.europa.eu/s66#isSiteOf)** `Add Annotation to Entity` [permalink](#change-720552358346700)
+  - Added annotation on [eurio:isSiteOf](http://data.europa.eu/s66#isSiteOf): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552358539500"></a>**[isSubOrganisationOf](http://data.europa.eu/s66#isSubOrganisationOf)** `Add Annotation to Entity` [permalink](#change-720552358539500)
+  - Added annotation on [eurio:isSubOrganisationOf](http://data.europa.eu/s66#isSubOrganisationOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is sub-organisation of"@en
+- <a id="change-720552358588200"></a>**[isSubOrganisationOf](http://data.europa.eu/s66#isSubOrganisationOf)** `Add Annotation to Entity` [permalink](#change-720552358588200)
+  - Added annotation on [eurio:isSubOrganisationOf](http://data.europa.eu/s66#isSubOrganisationOf): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552359126500"></a>**[isSubSchemeOf](http://data.europa.eu/s66#isSubSchemeOf)** `Add Annotation to Entity` [permalink](#change-720552359126500)
+  - Added annotation on [eurio:isSubSchemeOf](http://data.europa.eu/s66#isSubSchemeOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is subscheme of"@en
+- <a id="change-720552359170900"></a>**[isSubSchemeOf](http://data.europa.eu/s66#isSubSchemeOf)** `Add Annotation to Entity` [permalink](#change-720552359170900)
+  - Added annotation on [eurio:isSubSchemeOf](http://data.europa.eu/s66#isSubSchemeOf): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552359394400"></a>**[isUnitOf](http://data.europa.eu/s66#isUnitOf)** `Add Annotation to Entity` [permalink](#change-720552359394400)
+  - Added annotation on [eurio:isUnitOf](http://data.europa.eu/s66#isUnitOf): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552359427300"></a>**[isUnitOf](http://data.europa.eu/s66#isUnitOf)** `Add Annotation to Entity` [permalink](#change-720552359427300)
+  - Added annotation on [eurio:isUnitOf](http://data.europa.eu/s66#isUnitOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is unit of"@en
+- <a id="change-720552371600700"></a>**[latitude](http://data.europa.eu/s66#latitude)** `Add Annotation to Entity` [permalink](#change-720552371600700)
+  - Added annotation on [eurio:latitude](http://data.europa.eu/s66#latitude): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552371676400"></a>**[legalName](http://data.europa.eu/s66#legalName)** `Add Annotation to Entity` [permalink](#change-720552371676400)
+  - Added annotation on [eurio:legalName](http://data.europa.eu/s66#legalName): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552371690400"></a>**[legalName](http://data.europa.eu/s66#legalName)** `Add Annotation to Entity` [permalink](#change-720552371690400)
+  - Added annotation on [eurio:legalName](http://data.europa.eu/s66#legalName): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "legal name"@en
+- <a id="change-720552371787200"></a>**[longitude](http://data.europa.eu/s66#longitude)** `Add Annotation to Entity` [permalink](#change-720552371787200)
+  - Added annotation on [eurio:longitude](http://data.europa.eu/s66#longitude): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552315940600"></a>**[MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount)** `Add Annotation to Entity` [permalink](#change-720552315940600)
+  - Added annotation on [eurio:MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "http://schema.org/MonetaryAmount"
+- <a id="change-720552316277100"></a>**[MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount)** `Add Annotation to Entity` [permalink](#change-720552316277100)
+  - Added annotation on [eurio:MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552371895500"></a>**[name](http://data.europa.eu/s66#name)** `Add Annotation to Entity` [permalink](#change-720552371895500)
+  - Added annotation on [eurio:name](http://data.europa.eu/s66#name): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552371908500"></a>**[name](http://data.europa.eu/s66#name)** `Add Annotation to Entity` [permalink](#change-720552371908500)
+  - Added annotation on [eurio:name](http://data.europa.eu/s66#name): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "The name of an entity"@en
+- <a id="change-720552317937300"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Add Annotation to Entity` [permalink](#change-720552317937300)
+  - Added annotation on [eurio:Organisation](http://data.europa.eu/s66#Organisation): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "https://w3id.org/dingo#Organisation"
+- <a id="change-720552318181400"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Add Annotation to Entity` [permalink](#change-720552318181400)
+  - Added annotation on [eurio:Organisation](http://data.europa.eu/s66#Organisation): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552318484300"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Add Annotation to Entity` [permalink](#change-720552318484300)
+  - Added annotation on [eurio:Organisation](http://data.europa.eu/s66#Organisation): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "http://www.w3.org/ns/org#Organization"
+- <a id="change-720552319771100"></a>**[OrganisationRole](http://data.europa.eu/s66#OrganisationRole)** `Add Annotation to Entity` [permalink](#change-720552319771100)
+  - Added annotation on [eurio:OrganisationRole](http://data.europa.eu/s66#OrganisationRole): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "https://w3id.org/dingo#OrganisationRole"
+- <a id="change-720552319820200"></a>**[OrganisationRole](http://data.europa.eu/s66#OrganisationRole)** `Add Annotation to Entity` [permalink](#change-720552319820200)
+  - Added annotation on [eurio:OrganisationRole](http://data.europa.eu/s66#OrganisationRole): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552320929600"></a>**[OrganisationUnit](http://data.europa.eu/s66#OrganisationUnit)** `Add Annotation to Entity` [permalink](#change-720552320929600)
+  - Added annotation on [eurio:OrganisationUnit](http://data.europa.eu/s66#OrganisationUnit): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "http://www.w3.org/ns/org#OrganizationalUnit"
+- <a id="change-720552320979900"></a>**[OrganisationUnit](http://data.europa.eu/s66#OrganisationUnit)** `Add Annotation to Entity` [permalink](#change-720552320979900)
+  - Added annotation on [eurio:OrganisationUnit](http://data.europa.eu/s66#OrganisationUnit): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552322909000"></a>**[Person](http://data.europa.eu/s66#Person)** `Add Annotation to Entity` [permalink](#change-720552322909000)
+  - Added annotation on [eurio:Person](http://data.europa.eu/s66#Person): [skos:closeMatch](http://www.w3.org/2004/02/skos/core#closeMatch) = "http://www.w3.org/ns/person#Person"
+- <a id="change-720552323018500"></a>**[Person](http://data.europa.eu/s66#Person)** `Add Annotation to Entity` [permalink](#change-720552323018500)
+  - Added annotation on [eurio:Person](http://data.europa.eu/s66#Person): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "http://schema.org/Person"
+- <a id="change-720552323545000"></a>**[Person](http://data.europa.eu/s66#Person)** `Add Annotation to Entity` [permalink](#change-720552323545000)
+  - Added annotation on [eurio:Person](http://data.europa.eu/s66#Person): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "https://w3id.org/dingo#Person"
+- <a id="change-720552323641300"></a>**[Person](http://data.europa.eu/s66#Person)** `Add Annotation to Entity` [permalink](#change-720552323641300)
+  - Added annotation on [eurio:Person](http://data.europa.eu/s66#Person): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552324234700"></a>**[PersonRole](http://data.europa.eu/s66#PersonRole)** `Add Annotation to Entity` [permalink](#change-720552324234700)
+  - Added annotation on [eurio:PersonRole](http://data.europa.eu/s66#PersonRole): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "https://w3id.org/dingo#PersonRole"
+- <a id="change-720552324948800"></a>**[PersonRole](http://data.europa.eu/s66#PersonRole)** `Add Annotation to Entity` [permalink](#change-720552324948800)
+  - Added annotation on [eurio:PersonRole](http://data.europa.eu/s66#PersonRole): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552327250300"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Add Annotation to Entity` [permalink](#change-720552327250300)
+  - Added annotation on [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "http://schema.org/PostalAddress"
+- <a id="change-720552327335600"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Add Annotation to Entity` [permalink](#change-720552327335600)
+  - Added annotation on [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "http://www.w3.org/ns/locn#Address"
+- <a id="change-720552328476700"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Add Annotation to Entity` [permalink](#change-720552328476700)
+  - Added annotation on [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552372325200"></a>**[postalCode](http://data.europa.eu/s66#postalCode)** `Add Annotation to Entity` [permalink](#change-720552372325200)
+  - Added annotation on [eurio:postalCode](http://data.europa.eu/s66#postalCode): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "postal code"@en
+- <a id="change-720552372346200"></a>**[postalCode](http://data.europa.eu/s66#postalCode)** `Add Annotation to Entity` [permalink](#change-720552372346200)
+  - Added annotation on [eurio:postalCode](http://data.europa.eu/s66#postalCode): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552372211400"></a>**[postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber)** `Add Annotation to Entity` [permalink](#change-720552372211400)
+  - Added annotation on [eurio:postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552372235200"></a>**[postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber)** `Add Annotation to Entity` [permalink](#change-720552372235200)
+  - Added annotation on [eurio:postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "post office box number"@en
+- <a id="change-720552333427800"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Annotation to Entity` [permalink](#change-720552333427800)
+  - Added annotation on [eurio:Project](http://data.europa.eu/s66#Project): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552335226600"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Annotation to Entity` [permalink](#change-720552335226600)
+  - Added annotation on [eurio:Project](http://data.europa.eu/s66#Project): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "https://w3id.org/dingo#Project"
+- <a id="change-720552359561900"></a>**[refersTo](http://data.europa.eu/s66#refersTo)** `Add Annotation to Entity` [permalink](#change-720552359561900)
+  - Added annotation on [eurio:refersTo](http://data.europa.eu/s66#refersTo): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "refers to"@en
+- <a id="change-720552338289200"></a>**[Result](http://data.europa.eu/s66#Result)** `Add Annotation to Entity` [permalink](#change-720552338289200)
+  - Added annotation on [eurio:Result](http://data.europa.eu/s66#Result): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552339795600"></a>**[Role](http://data.europa.eu/s66#Role)** `Add Annotation to Entity` [permalink](#change-720552339795600)
+  - Added annotation on [eurio:Role](http://data.europa.eu/s66#Role): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552339886500"></a>**[Role](http://data.europa.eu/s66#Role)** `Add Annotation to Entity` [permalink](#change-720552339886500)
+  - Added annotation on [eurio:Role](http://data.europa.eu/s66#Role): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "https://w3id.org/dingo#Role"
+- <a id="change-720552372393700"></a>**[shortForm](http://data.europa.eu/s66#shortForm)** `Add Annotation to Entity` [permalink](#change-720552372393700)
+  - Added annotation on [eurio:shortForm](http://data.europa.eu/s66#shortForm): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "short form"@en
+- <a id="change-720552341377000"></a>**[Site](http://data.europa.eu/s66#Site)** `Add Annotation to Entity` [permalink](#change-720552341377000)
+  - Added annotation on [eurio:Site](http://data.europa.eu/s66#Site): [skos:broadMatch](http://www.w3.org/2004/02/skos/core#broadMatch) = "http://www.w3.org/ns/org#Site"
+- <a id="change-720552342127700"></a>**[Site](http://data.europa.eu/s66#Site)** `Add Annotation to Entity` [permalink](#change-720552342127700)
+  - Added annotation on [eurio:Site](http://data.europa.eu/s66#Site): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552372496100"></a>**[startDate](http://data.europa.eu/s66#startDate)** `Add Annotation to Entity` [permalink](#change-720552372496100)
+  - Added annotation on [eurio:startDate](http://data.europa.eu/s66#startDate): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "start date"@en
+- <a id="change-720552372510300"></a>**[startDate](http://data.europa.eu/s66#startDate)** `Add Annotation to Entity` [permalink](#change-720552372510300)
+  - Added annotation on [eurio:startDate](http://data.europa.eu/s66#startDate): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "The time an entity (e.g. project, grant, etc.) is initialized or starts to take effect."@en
+- <a id="change-720552372523400"></a>**[startDate](http://data.europa.eu/s66#startDate)** `Add Annotation to Entity` [permalink](#change-720552372523400)
+  - Added annotation on [eurio:startDate](http://data.europa.eu/s66#startDate): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552372682900"></a>**[streetAddress](http://data.europa.eu/s66#streetAddress)** `Add Annotation to Entity` [permalink](#change-720552372682900)
+  - Added annotation on [eurio:streetAddress](http://data.europa.eu/s66#streetAddress): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "street address"@en
+- <a id="change-720552372696300"></a>**[streetAddress](http://data.europa.eu/s66#streetAddress)** `Add Annotation to Entity` [permalink](#change-720552372696300)
+  - Added annotation on [eurio:streetAddress](http://data.europa.eu/s66#streetAddress): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552372866200"></a>**[title](http://data.europa.eu/s66#title)** `Add Annotation to Entity` [permalink](#change-720552372866200)
+  - Added annotation on [eurio:title](http://data.europa.eu/s66#title): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552372951700"></a>**[value](http://data.europa.eu/s66#value)** `Add Annotation to Entity` [permalink](#change-720552372951700)
+  - Added annotation on [eurio:value](http://data.europa.eu/s66#value): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552373042700"></a>**[vatNumber](http://data.europa.eu/s66#vatNumber)** `Add Annotation to Entity` [permalink](#change-720552373042700)
+  - Added annotation on [eurio:vatNumber](http://data.europa.eu/s66#vatNumber): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://data.europa.eu/s66#"
+- <a id="change-720552373053200"></a>**[vatNumber](http://data.europa.eu/s66#vatNumber)** `Add Annotation to Entity` [permalink](#change-720552373053200)
+  - Added annotation on [eurio:vatNumber](http://data.europa.eu/s66#vatNumber): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "VAT number"@en
+
+### Class relations
+
+- <a id="change-720552298000700"></a>**[Acronym](http://data.europa.eu/s66#Acronym)** `Add Sub Class` [permalink](#change-720552298000700)
+  - Added subclass relation: [eurio:Acronym](http://data.europa.eu/s66#Acronym) subclass of not specified
+- <a id="change-720552298453300"></a>**[Acronym](http://data.europa.eu/s66#Acronym)** `Add Sub Class` [permalink](#change-720552298453300)
+  - Added subclass relation: [eurio:Acronym](http://data.europa.eu/s66#Acronym) subclass of not specified
+- <a id="change-720552299635400"></a>**[AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea)** `Add Sub Class` [permalink](#change-720552299635400)
+  - Added subclass relation: [eurio:AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea) subclass of not specified
+- <a id="change-720552342497400"></a>**[Book](http://data.europa.eu/s66#Book)** `Add Sub Class` [permalink](#change-720552342497400)
+  - Added subclass relation: [eurio:Book](http://data.europa.eu/s66#Book) subclass of [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication)
+- <a id="change-720552342538200"></a>**[BookChapter](http://data.europa.eu/s66#BookChapter)** `Add Sub Class` [permalink](#change-720552342538200)
+  - Added subclass relation: [eurio:BookChapter](http://data.europa.eu/s66#BookChapter) subclass of [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication)
+- <a id="change-720552342572500"></a>**[ConferencePaper](http://data.europa.eu/s66#ConferencePaper)** `Add Sub Class` [permalink](#change-720552342572500)
+  - Added subclass relation: [eurio:ConferencePaper](http://data.europa.eu/s66#ConferencePaper) subclass of [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication)
+- <a id="change-720552301243800"></a>**[ContactPoint](http://data.europa.eu/s66#ContactPoint)** `Add Sub Class` [permalink](#change-720552301243800)
+  - Added subclass relation: [eurio:ContactPoint](http://data.europa.eu/s66#ContactPoint) subclass of not specified
+- <a id="change-720552301457300"></a>**[ContactPoint](http://data.europa.eu/s66#ContactPoint)** `Add Sub Class` [permalink](#change-720552301457300)
+  - Added subclass relation: [eurio:ContactPoint](http://data.europa.eu/s66#ContactPoint) subclass of not specified
+- <a id="change-720552302852200"></a>**[Coordinates](http://data.europa.eu/s66#Coordinates)** `Add Sub Class` [permalink](#change-720552302852200)
+  - Added subclass relation: [eurio:Coordinates](http://data.europa.eu/s66#Coordinates) subclass of not specified
+- <a id="change-720552303066300"></a>**[Coordinates](http://data.europa.eu/s66#Coordinates)** `Add Sub Class` [permalink](#change-720552303066300)
+  - Added subclass relation: [eurio:Coordinates](http://data.europa.eu/s66#Coordinates) subclass of not specified
+- <a id="change-720552304250500"></a>**[Country](http://data.europa.eu/s66#Country)** `Add Sub Class` [permalink](#change-720552304250500)
+  - Added subclass relation: [eurio:Country](http://data.europa.eu/s66#Country) subclass of not specified
+- <a id="change-720552342603200"></a>**[ExploitableResult](http://data.europa.eu/s66#ExploitableResult)** `Add Sub Class` [permalink](#change-720552342603200)
+  - Added subclass relation: [eurio:ExploitableResult](http://data.europa.eu/s66#ExploitableResult) subclass of [eurio:Result](http://data.europa.eu/s66#Result)
+- <a id="change-720552342636800"></a>**[ForProfitOrganisation](http://data.europa.eu/s66#ForProfitOrganisation)** `Add Sub Class` [permalink](#change-720552342636800)
+  - Added subclass relation: [eurio:ForProfitOrganisation](http://data.europa.eu/s66#ForProfitOrganisation) subclass of [eurio:Organisation](http://data.europa.eu/s66#Organisation)
+- <a id="change-720552308048900"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Add Sub Class` [permalink](#change-720552308048900)
+  - Added subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552308241900"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Add Sub Class` [permalink](#change-720552308241900)
+  - Added subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552308471100"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Add Sub Class` [permalink](#change-720552308471100)
+  - Added subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552308647500"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Add Sub Class` [permalink](#change-720552308647500)
+  - Added subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552308994500"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Add Sub Class` [permalink](#change-720552308994500)
+  - Added subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552309134100"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Add Sub Class` [permalink](#change-720552309134100)
+  - Added subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552311820500"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Add Sub Class` [permalink](#change-720552311820500)
+  - Added subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552312019000"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Add Sub Class` [permalink](#change-720552312019000)
+  - Added subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552312298300"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Add Sub Class` [permalink](#change-720552312298300)
+  - Added subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552312529300"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Add Sub Class` [permalink](#change-720552312529300)
+  - Added subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552312742000"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Add Sub Class` [permalink](#change-720552312742000)
+  - Added subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552312987000"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Add Sub Class` [permalink](#change-720552312987000)
+  - Added subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552313305400"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Add Sub Class` [permalink](#change-720552313305400)
+  - Added subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552313442500"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Add Sub Class` [permalink](#change-720552313442500)
+  - Added subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552313635300"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Add Sub Class` [permalink](#change-720552313635300)
+  - Added subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552313958000"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Add Sub Class` [permalink](#change-720552313958000)
+  - Added subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552315024100"></a>**[GrantPayment](http://data.europa.eu/s66#GrantPayment)** `Add Sub Class` [permalink](#change-720552315024100)
+  - Added subclass relation: [eurio:GrantPayment](http://data.europa.eu/s66#GrantPayment) subclass of not specified
+- <a id="change-720552342719200"></a>**[HigherOrSecondaryEducation](http://data.europa.eu/s66#HigherOrSecondaryEducation)** `Add Sub Class` [permalink](#change-720552342719200)
+  - Added subclass relation: [eurio:HigherOrSecondaryEducation](http://data.europa.eu/s66#HigherOrSecondaryEducation) subclass of [eurio:Organisation](http://data.europa.eu/s66#Organisation)
+- <a id="change-720552342774600"></a>**[JournalPaper](http://data.europa.eu/s66#JournalPaper)** `Add Sub Class` [permalink](#change-720552342774600)
+  - Added subclass relation: [eurio:JournalPaper](http://data.europa.eu/s66#JournalPaper) subclass of [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication)
+- <a id="change-720552315750400"></a>**[MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount)** `Add Sub Class` [permalink](#change-720552315750400)
+  - Added subclass relation: [eurio:MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount) subclass of not specified
+- <a id="change-720552316059000"></a>**[MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount)** `Add Sub Class` [permalink](#change-720552316059000)
+  - Added subclass relation: [eurio:MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount) subclass of not specified
+- <a id="change-720552342818100"></a>**[NonPeerReviewedPublication](http://data.europa.eu/s66#NonPeerReviewedPublication)** `Add Sub Class` [permalink](#change-720552342818100)
+  - Added subclass relation: [eurio:NonPeerReviewedPublication](http://data.europa.eu/s66#NonPeerReviewedPublication) subclass of [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication)
+- <a id="change-720552317810000"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Add Sub Class` [permalink](#change-720552317810000)
+  - Added subclass relation: [eurio:Organisation](http://data.europa.eu/s66#Organisation) subclass of not specified
+- <a id="change-720552318037900"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Add Sub Class` [permalink](#change-720552318037900)
+  - Added subclass relation: [eurio:Organisation](http://data.europa.eu/s66#Organisation) subclass of not specified
+- <a id="change-720552318278700"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Add Sub Class` [permalink](#change-720552318278700)
+  - Added subclass relation: [eurio:Organisation](http://data.europa.eu/s66#Organisation) subclass of not specified
+- <a id="change-720552318557100"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Add Sub Class` [permalink](#change-720552318557100)
+  - Added subclass relation: [eurio:Organisation](http://data.europa.eu/s66#Organisation) subclass of not specified
+- <a id="change-720552318716100"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Add Sub Class` [permalink](#change-720552318716100)
+  - Added subclass relation: [eurio:Organisation](http://data.europa.eu/s66#Organisation) subclass of not specified
+- <a id="change-720552318921100"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Add Sub Class` [permalink](#change-720552318921100)
+  - Added subclass relation: [eurio:Organisation](http://data.europa.eu/s66#Organisation) subclass of not specified
+- <a id="change-720552319859100"></a>**[OrganisationRole](http://data.europa.eu/s66#OrganisationRole)** `Add Sub Class` [permalink](#change-720552319859100)
+  - Added subclass relation: [eurio:OrganisationRole](http://data.europa.eu/s66#OrganisationRole) subclass of not specified
+- <a id="change-720552320065100"></a>**[OrganisationRole](http://data.europa.eu/s66#OrganisationRole)** `Add Sub Class` [permalink](#change-720552320065100)
+  - Added subclass relation: [eurio:OrganisationRole](http://data.europa.eu/s66#OrganisationRole) subclass of not specified
+- <a id="change-720552322767900"></a>**[Person](http://data.europa.eu/s66#Person)** `Add Sub Class` [permalink](#change-720552322767900)
+  - Added subclass relation: [eurio:Person](http://data.europa.eu/s66#Person) subclass of not specified
+- <a id="change-720552323044600"></a>**[Person](http://data.europa.eu/s66#Person)** `Add Sub Class` [permalink](#change-720552323044600)
+  - Added subclass relation: [eurio:Person](http://data.europa.eu/s66#Person) subclass of not specified
+- <a id="change-720552323230100"></a>**[Person](http://data.europa.eu/s66#Person)** `Add Sub Class` [permalink](#change-720552323230100)
+  - Added subclass relation: [eurio:Person](http://data.europa.eu/s66#Person) subclass of not specified
+- <a id="change-720552323406400"></a>**[Person](http://data.europa.eu/s66#Person)** `Add Sub Class` [permalink](#change-720552323406400)
+  - Added subclass relation: [eurio:Person](http://data.europa.eu/s66#Person) subclass of not specified
+- <a id="change-720552324322200"></a>**[PersonRole](http://data.europa.eu/s66#PersonRole)** `Add Sub Class` [permalink](#change-720552324322200)
+  - Added subclass relation: [eurio:PersonRole](http://data.europa.eu/s66#PersonRole) subclass of not specified
+- <a id="change-720552324514900"></a>**[PersonRole](http://data.europa.eu/s66#PersonRole)** `Add Sub Class` [permalink](#change-720552324514900)
+  - Added subclass relation: [eurio:PersonRole](http://data.europa.eu/s66#PersonRole) subclass of not specified
+- <a id="change-720552324749100"></a>**[PersonRole](http://data.europa.eu/s66#PersonRole)** `Add Sub Class` [permalink](#change-720552324749100)
+  - Added subclass relation: [eurio:PersonRole](http://data.europa.eu/s66#PersonRole) subclass of not specified
+- <a id="change-720552326318600"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Add Sub Class` [permalink](#change-720552326318600)
+  - Added subclass relation: [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) subclass of not specified
+- <a id="change-720552326816000"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Add Sub Class` [permalink](#change-720552326816000)
+  - Added subclass relation: [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) subclass of not specified
+- <a id="change-720552327068300"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Add Sub Class` [permalink](#change-720552327068300)
+  - Added subclass relation: [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) subclass of not specified
+- <a id="change-720552327374700"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Add Sub Class` [permalink](#change-720552327374700)
+  - Added subclass relation: [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) subclass of not specified
+- <a id="change-720552327690200"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Add Sub Class` [permalink](#change-720552327690200)
+  - Added subclass relation: [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) subclass of not specified
+- <a id="change-720552327957200"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Add Sub Class` [permalink](#change-720552327957200)
+  - Added subclass relation: [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) subclass of not specified
+- <a id="change-720552328223500"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Add Sub Class` [permalink](#change-720552328223500)
+  - Added subclass relation: [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) subclass of not specified
+- <a id="change-720552328613900"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Add Sub Class` [permalink](#change-720552328613900)
+  - Added subclass relation: [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) subclass of not specified
+- <a id="change-720552332942600"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Sub Class` [permalink](#change-720552332942600)
+  - Added subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552333104200"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Sub Class` [permalink](#change-720552333104200)
+  - Added subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552333264900"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Sub Class` [permalink](#change-720552333264900)
+  - Added subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552333500400"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Sub Class` [permalink](#change-720552333500400)
+  - Added subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552333703000"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Sub Class` [permalink](#change-720552333703000)
+  - Added subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552333873000"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Sub Class` [permalink](#change-720552333873000)
+  - Added subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552334037700"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Sub Class` [permalink](#change-720552334037700)
+  - Added subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552334220700"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Sub Class` [permalink](#change-720552334220700)
+  - Added subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552334465800"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Sub Class` [permalink](#change-720552334465800)
+  - Added subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552334653200"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Sub Class` [permalink](#change-720552334653200)
+  - Added subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552334844800"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Sub Class` [permalink](#change-720552334844800)
+  - Added subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552335036700"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Sub Class` [permalink](#change-720552335036700)
+  - Added subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552335340500"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Sub Class` [permalink](#change-720552335340500)
+  - Added subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552335521300"></a>**[Project](http://data.europa.eu/s66#Project)** `Add Sub Class` [permalink](#change-720552335521300)
+  - Added subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552342851500"></a>**[ProjectDeliverable](http://data.europa.eu/s66#ProjectDeliverable)** `Add Sub Class` [permalink](#change-720552342851500)
+  - Added subclass relation: [eurio:ProjectDeliverable](http://data.europa.eu/s66#ProjectDeliverable) subclass of [eurio:Result](http://data.europa.eu/s66#Result)
+- <a id="change-720552342866600"></a>**[ProjectDeliverable](http://data.europa.eu/s66#ProjectDeliverable)** `Add Sub Class` [permalink](#change-720552342866600)
+  - Added subclass relation: [eurio:ProjectDeliverable](http://data.europa.eu/s66#ProjectDeliverable) subclass of not specified
+- <a id="change-720552343020500"></a>**[ProjectDeliverable](http://data.europa.eu/s66#ProjectDeliverable)** `Add Sub Class` [permalink](#change-720552343020500)
+  - Added subclass relation: [eurio:ProjectDeliverable](http://data.europa.eu/s66#ProjectDeliverable) subclass of not specified
+- <a id="change-720552343273600"></a>**[ProjectPublication](http://data.europa.eu/s66#ProjectPublication)** `Add Sub Class` [permalink](#change-720552343273600)
+  - Added subclass relation: [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) subclass of not specified
+- <a id="change-720552343461000"></a>**[ProjectPublication](http://data.europa.eu/s66#ProjectPublication)** `Add Sub Class` [permalink](#change-720552343461000)
+  - Added subclass relation: [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) subclass of [eurio:Result](http://data.europa.eu/s66#Result)
+- <a id="change-720552343526500"></a>**[ProjectPublication](http://data.europa.eu/s66#ProjectPublication)** `Add Sub Class` [permalink](#change-720552343526500)
+  - Added subclass relation: [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) subclass of not specified
+- <a id="change-720552343703400"></a>**[ProjectPublication](http://data.europa.eu/s66#ProjectPublication)** `Add Sub Class` [permalink](#change-720552343703400)
+  - Added subclass relation: [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) subclass of not specified
+- <a id="change-720552343926600"></a>**[ProjectPublication](http://data.europa.eu/s66#ProjectPublication)** `Add Sub Class` [permalink](#change-720552343926600)
+  - Added subclass relation: [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) subclass of not specified
+- <a id="change-720552344213500"></a>**[ProjectPublication](http://data.europa.eu/s66#ProjectPublication)** `Add Sub Class` [permalink](#change-720552344213500)
+  - Added subclass relation: [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) subclass of not specified
+- <a id="change-720552344397900"></a>**[ProjectPublication](http://data.europa.eu/s66#ProjectPublication)** `Add Sub Class` [permalink](#change-720552344397900)
+  - Added subclass relation: [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) subclass of not specified
+- <a id="change-720552344586100"></a>**[ProjectPublication](http://data.europa.eu/s66#ProjectPublication)** `Add Sub Class` [permalink](#change-720552344586100)
+  - Added subclass relation: [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) subclass of not specified
+- <a id="change-720552344767300"></a>**[ProjectPublication](http://data.europa.eu/s66#ProjectPublication)** `Add Sub Class` [permalink](#change-720552344767300)
+  - Added subclass relation: [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) subclass of not specified
+- <a id="change-720552345060900"></a>**[ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary)** `Add Sub Class` [permalink](#change-720552345060900)
+  - Added subclass relation: [eurio:ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary) subclass of [eurio:Result](http://data.europa.eu/s66#Result)
+- <a id="change-720552345120100"></a>**[ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary)** `Add Sub Class` [permalink](#change-720552345120100)
+  - Added subclass relation: [eurio:ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary) subclass of not specified
+- <a id="change-720552345334200"></a>**[ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary)** `Add Sub Class` [permalink](#change-720552345334200)
+  - Added subclass relation: [eurio:ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary) subclass of not specified
+- <a id="change-720552345522700"></a>**[ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary)** `Add Sub Class` [permalink](#change-720552345522700)
+  - Added subclass relation: [eurio:ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary) subclass of not specified
+- <a id="change-720552345697000"></a>**[ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary)** `Add Sub Class` [permalink](#change-720552345697000)
+  - Added subclass relation: [eurio:ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary) subclass of not specified
+- <a id="change-720552345950800"></a>**[ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary)** `Add Sub Class` [permalink](#change-720552345950800)
+  - Added subclass relation: [eurio:ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary) subclass of not specified
+- <a id="change-720552346211800"></a>**[PublicBody](http://data.europa.eu/s66#PublicBody)** `Add Sub Class` [permalink](#change-720552346211800)
+  - Added subclass relation: [eurio:PublicBody](http://data.europa.eu/s66#PublicBody) subclass of [eurio:Organisation](http://data.europa.eu/s66#Organisation)
+- <a id="change-720552346395700"></a>**[ResearchOrganisation](http://data.europa.eu/s66#ResearchOrganisation)** `Add Sub Class` [permalink](#change-720552346395700)
+  - Added subclass relation: [eurio:ResearchOrganisation](http://data.europa.eu/s66#ResearchOrganisation) subclass of [eurio:Organisation](http://data.europa.eu/s66#Organisation)
+- <a id="change-720552337749500"></a>**[Result](http://data.europa.eu/s66#Result)** `Add Sub Class` [permalink](#change-720552337749500)
+  - Added subclass relation: [eurio:Result](http://data.europa.eu/s66#Result) subclass of not specified
+- <a id="change-720552337959600"></a>**[Result](http://data.europa.eu/s66#Result)** `Add Sub Class` [permalink](#change-720552337959600)
+  - Added subclass relation: [eurio:Result](http://data.europa.eu/s66#Result) subclass of not specified
+- <a id="change-720552338117600"></a>**[Result](http://data.europa.eu/s66#Result)** `Add Sub Class` [permalink](#change-720552338117600)
+  - Added subclass relation: [eurio:Result](http://data.europa.eu/s66#Result) subclass of not specified
+- <a id="change-720552339374100"></a>**[Role](http://data.europa.eu/s66#Role)** `Add Sub Class` [permalink](#change-720552339374100)
+  - Added subclass relation: [eurio:Role](http://data.europa.eu/s66#Role) subclass of not specified
+- <a id="change-720552339515500"></a>**[Role](http://data.europa.eu/s66#Role)** `Add Sub Class` [permalink](#change-720552339515500)
+  - Added subclass relation: [eurio:Role](http://data.europa.eu/s66#Role) subclass of not specified
+- <a id="change-720552339658900"></a>**[Role](http://data.europa.eu/s66#Role)** `Add Sub Class` [permalink](#change-720552339658900)
+  - Added subclass relation: [eurio:Role](http://data.europa.eu/s66#Role) subclass of not specified
+- <a id="change-720552339958100"></a>**[Role](http://data.europa.eu/s66#Role)** `Add Sub Class` [permalink](#change-720552339958100)
+  - Added subclass relation: [eurio:Role](http://data.europa.eu/s66#Role) subclass of not specified
+- <a id="change-720552341188700"></a>**[Site](http://data.europa.eu/s66#Site)** `Add Sub Class` [permalink](#change-720552341188700)
+  - Added subclass relation: [eurio:Site](http://data.europa.eu/s66#Site) subclass of not specified
+- <a id="change-720552341432100"></a>**[Site](http://data.europa.eu/s66#Site)** `Add Sub Class` [permalink](#change-720552341432100)
+  - Added subclass relation: [eurio:Site](http://data.europa.eu/s66#Site) subclass of not specified
+- <a id="change-720552341573300"></a>**[Site](http://data.europa.eu/s66#Site)** `Add Sub Class` [permalink](#change-720552341573300)
+  - Added subclass relation: [eurio:Site](http://data.europa.eu/s66#Site) subclass of not specified
+- <a id="change-720552341713000"></a>**[Site](http://data.europa.eu/s66#Site)** `Add Sub Class` [permalink](#change-720552341713000)
+  - Added subclass relation: [eurio:Site](http://data.europa.eu/s66#Site) subclass of not specified
+- <a id="change-720552341914900"></a>**[Site](http://data.europa.eu/s66#Site)** `Add Sub Class` [permalink](#change-720552341914900)
+  - Added subclass relation: [eurio:Site](http://data.europa.eu/s66#Site) subclass of not specified
+- <a id="change-720552346433100"></a>**[SME](http://data.europa.eu/s66#SME)** `Add Sub Class` [permalink](#change-720552346433100)
+  - Added subclass relation: [eurio:SME](http://data.europa.eu/s66#SME) subclass of [eurio:Organisation](http://data.europa.eu/s66#Organisation)
+- <a id="change-720552346470700"></a>**[ThesisDissertation](http://data.europa.eu/s66#ThesisDissertation)** `Add Sub Class` [permalink](#change-720552346470700)
+  - Added subclass relation: [eurio:ThesisDissertation](http://data.europa.eu/s66#ThesisDissertation) subclass of [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication)
+- <a id="change-720552346504700"></a>**[WorkshopPaper](http://data.europa.eu/s66#WorkshopPaper)** `Add Sub Class` [permalink](#change-720552346504700)
+  - Added subclass relation: [eurio:WorkshopPaper](http://data.europa.eu/s66#WorkshopPaper) subclass of [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication)
+
+### Classes
+
+- <a id="change-720552342276500"></a>**[Book](http://data.europa.eu/s66#Book)** `Add Class` [permalink](#change-720552342276500)
+  - Added class: [eurio:Book](http://data.europa.eu/s66#Book)
+- <a id="change-720552342520500"></a>**[BookChapter](http://data.europa.eu/s66#BookChapter)** `Add Class` [permalink](#change-720552342520500)
+  - Added class: [eurio:BookChapter](http://data.europa.eu/s66#BookChapter)
+- <a id="change-720552342553000"></a>**[ConferencePaper](http://data.europa.eu/s66#ConferencePaper)** `Add Class` [permalink](#change-720552342553000)
+  - Added class: [eurio:ConferencePaper](http://data.europa.eu/s66#ConferencePaper)
+- <a id="change-720552342586900"></a>**[ExploitableResult](http://data.europa.eu/s66#ExploitableResult)** `Add Class` [permalink](#change-720552342586900)
+  - Added class: [eurio:ExploitableResult](http://data.europa.eu/s66#ExploitableResult)
+- <a id="change-720552342617400"></a>**[ForProfitOrganisation](http://data.europa.eu/s66#ForProfitOrganisation)** `Add Class` [permalink](#change-720552342617400)
+  - Added class: [eurio:ForProfitOrganisation](http://data.europa.eu/s66#ForProfitOrganisation)
+- <a id="change-720552342673100"></a>**[HigherOrSecondaryEducation](http://data.europa.eu/s66#HigherOrSecondaryEducation)** `Add Class` [permalink](#change-720552342673100)
+  - Added class: [eurio:HigherOrSecondaryEducation](http://data.europa.eu/s66#HigherOrSecondaryEducation)
+- <a id="change-720552342736900"></a>**[JournalPaper](http://data.europa.eu/s66#JournalPaper)** `Add Class` [permalink](#change-720552342736900)
+  - Added class: [eurio:JournalPaper](http://data.europa.eu/s66#JournalPaper)
+- <a id="change-720552342789100"></a>**[NonPeerReviewedPublication](http://data.europa.eu/s66#NonPeerReviewedPublication)** `Add Class` [permalink](#change-720552342789100)
+  - Added class: [eurio:NonPeerReviewedPublication](http://data.europa.eu/s66#NonPeerReviewedPublication)
+- <a id="change-720552342834600"></a>**[ProjectDeliverable](http://data.europa.eu/s66#ProjectDeliverable)** `Add Class` [permalink](#change-720552342834600)
+  - Added class: [eurio:ProjectDeliverable](http://data.europa.eu/s66#ProjectDeliverable)
+- <a id="change-720552343200300"></a>**[ProjectPublication](http://data.europa.eu/s66#ProjectPublication)** `Add Class` [permalink](#change-720552343200300)
+  - Added class: [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication)
+- <a id="change-720552345007800"></a>**[ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary)** `Add Class` [permalink](#change-720552345007800)
+  - Added class: [eurio:ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary)
+- <a id="change-720552346161100"></a>**[PublicBody](http://data.europa.eu/s66#PublicBody)** `Add Class` [permalink](#change-720552346161100)
+  - Added class: [eurio:PublicBody](http://data.europa.eu/s66#PublicBody)
+- <a id="change-720552346332300"></a>**[ResearchOrganisation](http://data.europa.eu/s66#ResearchOrganisation)** `Add Class` [permalink](#change-720552346332300)
+  - Added class: [eurio:ResearchOrganisation](http://data.europa.eu/s66#ResearchOrganisation)
+- <a id="change-720552346414100"></a>**[SME](http://data.europa.eu/s66#SME)** `Add Class` [permalink](#change-720552346414100)
+  - Added class: [eurio:SME](http://data.europa.eu/s66#SME)
+- <a id="change-720552346450000"></a>**[ThesisDissertation](http://data.europa.eu/s66#ThesisDissertation)** `Add Class` [permalink](#change-720552346450000)
+  - Added class: [eurio:ThesisDissertation](http://data.europa.eu/s66#ThesisDissertation)
+- <a id="change-720552346519700"></a>**[owl:Thing](http://www.w3.org/2002/07/owl#Thing)** `Add Class` [permalink](#change-720552346519700)
+  - Added class: [owl:Thing](http://www.w3.org/2002/07/owl#Thing)
+- <a id="change-720552346486300"></a>**[WorkshopPaper](http://data.europa.eu/s66#WorkshopPaper)** `Add Class` [permalink](#change-720552346486300)
+  - Added class: [eurio:WorkshopPaper](http://data.europa.eu/s66#WorkshopPaper)
+
+### Data properties
+
+- <a id="change-720552373068600"></a>**[authorList](http://data.europa.eu/s66#authorList)** `Add Data Property` [permalink](#change-720552373068600)
+  - Added data property: [eurio:authorList](http://data.europa.eu/s66#authorList)
+- <a id="change-720552373242300"></a>**[authorList](http://data.europa.eu/s66#authorList)** `Add Range Data Property` [permalink](#change-720552373242300)
+  - Added data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) to [eurio:authorList](http://data.europa.eu/s66#authorList)
+- <a id="change-720552373260700"></a>**[code](http://data.europa.eu/s66#code)** `Add Data Property` [permalink](#change-720552373260700)
+  - Added data property: [eurio:code](http://data.europa.eu/s66#code)
+- <a id="change-720552373366600"></a>**[code](http://data.europa.eu/s66#code)** `Add Range Data Property` [permalink](#change-720552373366600)
+  - Added data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) to [eurio:code](http://data.europa.eu/s66#code)
+- <a id="change-720552370447900"></a>**[date](http://data.europa.eu/s66#date)** `Add Range Data Property` [permalink](#change-720552370447900)
+  - Added data range [xsd:date](http://www.w3.org/2001/XMLSchema#date) to [eurio:date](http://data.europa.eu/s66#date)
+- <a id="change-720552373376700"></a>**[doi](http://data.europa.eu/s66#doi)** `Add Data Property` [permalink](#change-720552373376700)
+  - Added data property: [eurio:doi](http://data.europa.eu/s66#doi)
+- <a id="change-720552373389000"></a>**[doi](http://data.europa.eu/s66#doi)** `Add Range Data Property` [permalink](#change-720552373389000)
+  - Added data range [xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI) to [eurio:doi](http://data.europa.eu/s66#doi)
+- <a id="change-720552370718900"></a>**[duration](http://data.europa.eu/s66#duration)** `Add Range Data Property` [permalink](#change-720552370718900)
+  - Added data range [xsd:nonNegativeInteger](http://www.w3.org/2001/XMLSchema#nonNegativeInteger) to [eurio:duration](http://data.europa.eu/s66#duration)
+- <a id="change-720552370922300"></a>**[endDate](http://data.europa.eu/s66#endDate)** `Add Range Data Property` [permalink](#change-720552370922300)
+  - Added data range [xsd:date](http://www.w3.org/2001/XMLSchema#date) to [eurio:endDate](http://data.europa.eu/s66#endDate)
+- <a id="change-720552371131000"></a>**[faxNumber](http://data.europa.eu/s66#faxNumber)** `Add Range Data Property` [permalink](#change-720552371131000)
+  - Added data range [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal) to [eurio:faxNumber](http://data.europa.eu/s66#faxNumber)
+- <a id="change-720552373399500"></a>**[finalResults](http://data.europa.eu/s66#finalResults)** `Add Data Property` [permalink](#change-720552373399500)
+  - Added data property: [eurio:finalResults](http://data.europa.eu/s66#finalResults)
+- <a id="change-720552373419900"></a>**[finalResults](http://data.europa.eu/s66#finalResults)** `Add Range Data Property` [permalink](#change-720552373419900)
+  - Added data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) to [eurio:finalResults](http://data.europa.eu/s66#finalResults)
+- <a id="change-720552371231400"></a>**[fullAddress](http://data.europa.eu/s66#fullAddress)** `Add Range Data Property` [permalink](#change-720552371231400)
+  - Added data range [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal) to [eurio:fullAddress](http://data.europa.eu/s66#fullAddress)
+- <a id="change-720552373428400"></a>**[identifier](http://data.europa.eu/s66#identifier)** `Add Data Property` [permalink](#change-720552373428400)
+  - Added data property: [eurio:identifier](http://data.europa.eu/s66#identifier)
+- <a id="change-720552373438100"></a>**[identifier](http://data.europa.eu/s66#identifier)** `Add Range Data Property` [permalink](#change-720552373438100)
+  - Added data range [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal) to [eurio:identifier](http://data.europa.eu/s66#identifier)
+- <a id="change-720552373480200"></a>**[isbn](http://data.europa.eu/s66#isbn)** `Add Data Property` [permalink](#change-720552373480200)
+  - Added data property: [eurio:isbn](http://data.europa.eu/s66#isbn)
+- <a id="change-720552373489500"></a>**[isbn](http://data.europa.eu/s66#isbn)** `Add Range Data Property` [permalink](#change-720552373489500)
+  - Added data range [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal) to [eurio:isbn](http://data.europa.eu/s66#isbn)
+- <a id="change-720552373446800"></a>**[isNet](http://data.europa.eu/s66#isNet)** `Add Data Property` [permalink](#change-720552373446800)
+  - Added data property: [eurio:isNet](http://data.europa.eu/s66#isNet)
+- <a id="change-720552373459500"></a>**[isNet](http://data.europa.eu/s66#isNet)** `Add Range Data Property` [permalink](#change-720552373459500)
+  - Added data range [xsd:boolean](http://www.w3.org/2001/XMLSchema#boolean) to [eurio:isNet](http://data.europa.eu/s66#isNet)
+- <a id="change-720552373518600"></a>**[issn](http://data.europa.eu/s66#issn)** `Add Data Property` [permalink](#change-720552373518600)
+  - Added data property: [eurio:issn](http://data.europa.eu/s66#issn)
+- <a id="change-720552373529200"></a>**[issn](http://data.europa.eu/s66#issn)** `Add Range Data Property` [permalink](#change-720552373529200)
+  - Added data range [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal) to [eurio:issn](http://data.europa.eu/s66#issn)
+- <a id="change-720552373544400"></a>**[journalNumber](http://data.europa.eu/s66#journalNumber)** `Add Data Property` [permalink](#change-720552373544400)
+  - Added data property: [eurio:journalNumber](http://data.europa.eu/s66#journalNumber)
+- <a id="change-720552373554500"></a>**[journalNumber](http://data.europa.eu/s66#journalNumber)** `Add Range Data Property` [permalink](#change-720552373554500)
+  - Added data range [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal) to [eurio:journalNumber](http://data.europa.eu/s66#journalNumber)
+- <a id="change-720552373582100"></a>**[journalTitle](http://data.europa.eu/s66#journalTitle)** `Add Data Property` [permalink](#change-720552373582100)
+  - Added data property: [eurio:journalTitle](http://data.europa.eu/s66#journalTitle)
+- <a id="change-720552373603400"></a>**[journalTitle](http://data.europa.eu/s66#journalTitle)** `Add Range Data Property` [permalink](#change-720552373603400)
+  - Added data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) to [eurio:journalTitle](http://data.europa.eu/s66#journalTitle)
+- <a id="change-720552373622400"></a>**[keyword](http://data.europa.eu/s66#keyword)** `Add Data Property` [permalink](#change-720552373622400)
+  - Added data property: [eurio:keyword](http://data.europa.eu/s66#keyword)
+- <a id="change-720552373633400"></a>**[keyword](http://data.europa.eu/s66#keyword)** `Add Range Data Property` [permalink](#change-720552373633400)
+  - Added data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) to [eurio:keyword](http://data.europa.eu/s66#keyword)
+- <a id="change-720552373640800"></a>**[order](http://data.europa.eu/s66#order)** `Add Data Property` [permalink](#change-720552373640800)
+  - Added data property: [eurio:order](http://data.europa.eu/s66#order)
+- <a id="change-720552373652900"></a>**[order](http://data.europa.eu/s66#order)** `Add Range Data Property` [permalink](#change-720552373652900)
+  - Added data range [xsd:nonNegativeInteger](http://www.w3.org/2001/XMLSchema#nonNegativeInteger) to [eurio:order](http://data.europa.eu/s66#order)
+- <a id="change-720552373672400"></a>**[periodNumber](http://data.europa.eu/s66#periodNumber)** `Add Data Property` [permalink](#change-720552373672400)
+  - Added data property: [eurio:periodNumber](http://data.europa.eu/s66#periodNumber)
+- <a id="change-720552373680500"></a>**[periodNumber](http://data.europa.eu/s66#periodNumber)** `Add Range Data Property` [permalink](#change-720552373680500)
+  - Added data range [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) to [eurio:periodNumber](http://data.europa.eu/s66#periodNumber)
+- <a id="change-720552372337300"></a>**[postalCode](http://data.europa.eu/s66#postalCode)** `Add Range Data Property` [permalink](#change-720552372337300)
+  - Added data range [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal) to [eurio:postalCode](http://data.europa.eu/s66#postalCode)
+- <a id="change-720552372225100"></a>**[postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber)** `Add Range Data Property` [permalink](#change-720552372225100)
+  - Added data range [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal) to [eurio:postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber)
+- <a id="change-720552373695200"></a>**[projectStatus](http://data.europa.eu/s66#projectStatus)** `Add Data Property` [permalink](#change-720552373695200)
+  - Added data property: [eurio:projectStatus](http://data.europa.eu/s66#projectStatus)
+- <a id="change-720552373711500"></a>**[projectStatus](http://data.europa.eu/s66#projectStatus)** `Add Range Data Property` [permalink](#change-720552373711500)
+  - Added data range not specified to [eurio:projectStatus](http://data.europa.eu/s66#projectStatus)
+- <a id="change-720552374077900"></a>**[publishedPages](http://data.europa.eu/s66#publishedPages)** `Add Data Property` [permalink](#change-720552374077900)
+  - Added data property: [eurio:publishedPages](http://data.europa.eu/s66#publishedPages)
+- <a id="change-720552374157100"></a>**[publishedPages](http://data.europa.eu/s66#publishedPages)** `Add Range Data Property` [permalink](#change-720552374157100)
+  - Added data range [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal) to [eurio:publishedPages](http://data.europa.eu/s66#publishedPages)
+- <a id="change-720552374229800"></a>**[publishedYear](http://data.europa.eu/s66#publishedYear)** `Add Data Property` [permalink](#change-720552374229800)
+  - Added data property: [eurio:publishedYear](http://data.europa.eu/s66#publishedYear)
+- <a id="change-720552374273400"></a>**[publishedYear](http://data.europa.eu/s66#publishedYear)** `Add Range Data Property` [permalink](#change-720552374273400)
+  - Added data range [xsd:nonNegativeInteger](http://www.w3.org/2001/XMLSchema#nonNegativeInteger) to [eurio:publishedYear](http://data.europa.eu/s66#publishedYear)
+- <a id="change-720552374294700"></a>**[publisher](http://data.europa.eu/s66#publisher)** `Add Data Property` [permalink](#change-720552374294700)
+  - Added data property: [eurio:publisher](http://data.europa.eu/s66#publisher)
+- <a id="change-720552374362100"></a>**[publisher](http://data.europa.eu/s66#publisher)** `Add Range Data Property` [permalink](#change-720552374362100)
+  - Added data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) to [eurio:publisher](http://data.europa.eu/s66#publisher)
+- <a id="change-720552374428000"></a>**[rcn](http://data.europa.eu/s66#rcn)** `Add Data Property` [permalink](#change-720552374428000)
+  - Added data property: [eurio:rcn](http://data.europa.eu/s66#rcn)
+- <a id="change-720552374443800"></a>**[rcn](http://data.europa.eu/s66#rcn)** `Add Range Data Property` [permalink](#change-720552374443800)
+  - Added data range [xsd:nonNegativeInteger](http://www.w3.org/2001/XMLSchema#nonNegativeInteger) to [eurio:rcn](http://data.europa.eu/s66#rcn)
+- <a id="change-720552374453700"></a>**[roleLabel](http://data.europa.eu/s66#roleLabel)** `Add Data Property` [permalink](#change-720552374453700)
+  - Added data property: [eurio:roleLabel](http://data.europa.eu/s66#roleLabel)
+- <a id="change-720552374474100"></a>**[roleLabel](http://data.europa.eu/s66#roleLabel)** `Add Range Data Property` [permalink](#change-720552374474100)
+  - Added data range not specified to [eurio:roleLabel](http://data.europa.eu/s66#roleLabel)
+- <a id="change-720552374673000"></a>**[signatureDate](http://data.europa.eu/s66#signatureDate)** `Add Data Property` [permalink](#change-720552374673000)
+  - Added data property: [eurio:signatureDate](http://data.europa.eu/s66#signatureDate)
+- <a id="change-720552374755800"></a>**[signatureDate](http://data.europa.eu/s66#signatureDate)** `Add Range Data Property` [permalink](#change-720552374755800)
+  - Added data range [xsd:date](http://www.w3.org/2001/XMLSchema#date) to [eurio:signatureDate](http://data.europa.eu/s66#signatureDate)
+- <a id="change-720552372559700"></a>**[startDate](http://data.europa.eu/s66#startDate)** `Add Range Data Property` [permalink](#change-720552372559700)
+  - Added data range [xsd:date](http://www.w3.org/2001/XMLSchema#date) to [eurio:startDate](http://data.europa.eu/s66#startDate)
+- <a id="change-720552372674100"></a>**[streetAddress](http://data.europa.eu/s66#streetAddress)** `Add Range Data Property` [permalink](#change-720552372674100)
+  - Added data range [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal) to [eurio:streetAddress](http://data.europa.eu/s66#streetAddress)
+- <a id="change-720552374807900"></a>**[telephoneNumber](http://data.europa.eu/s66#telephoneNumber)** `Add Data Property` [permalink](#change-720552374807900)
+  - Added data property: [eurio:telephoneNumber](http://data.europa.eu/s66#telephoneNumber)
+- <a id="change-720552374838200"></a>**[telephoneNumber](http://data.europa.eu/s66#telephoneNumber)** `Add Range Data Property` [permalink](#change-720552374838200)
+  - Added data range [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal) to [eurio:telephoneNumber](http://data.europa.eu/s66#telephoneNumber)
+- <a id="change-720552374888400"></a>**[terminationDate](http://data.europa.eu/s66#terminationDate)** `Add Data Property` [permalink](#change-720552374888400)
+  - Added data property: [eurio:terminationDate](http://data.europa.eu/s66#terminationDate)
+- <a id="change-720552374932000"></a>**[terminationDate](http://data.europa.eu/s66#terminationDate)** `Add Range Data Property` [permalink](#change-720552374932000)
+  - Added data range [xsd:date](http://www.w3.org/2001/XMLSchema#date) to [eurio:terminationDate](http://data.europa.eu/s66#terminationDate)
+- <a id="change-720552372851700"></a>**[title](http://data.europa.eu/s66#title)** `Add Range Data Property` [permalink](#change-720552372851700)
+  - Added data range [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal) to [eurio:title](http://data.europa.eu/s66#title)
+- <a id="change-720552374953300"></a>**[url](http://data.europa.eu/s66#url)** `Add Data Property` [permalink](#change-720552374953300)
+  - Added data property: [eurio:url](http://data.europa.eu/s66#url)
+- <a id="change-720552374993200"></a>**[url](http://data.europa.eu/s66#url)** `Add Range Data Property` [permalink](#change-720552374993200)
+  - Added data range [xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI) to [eurio:url](http://data.europa.eu/s66#url)
+- <a id="change-720552372935800"></a>**[value](http://data.europa.eu/s66#value)** `Add Range Data Property` [permalink](#change-720552372935800)
+  - Added data range [xsd:decimal](http://www.w3.org/2001/XMLSchema#decimal) to [eurio:value](http://data.europa.eu/s66#value)
+- <a id="change-720552375034500"></a>**[workPerformed](http://data.europa.eu/s66#workPerformed)** `Add Data Property` [permalink](#change-720552375034500)
+  - Added data property: [eurio:workPerformed](http://data.europa.eu/s66#workPerformed)
+- <a id="change-720552375056000"></a>**[workPerformed](http://data.europa.eu/s66#workPerformed)** `Add Range Data Property` [permalink](#change-720552375056000)
+  - Added data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) to [eurio:workPerformed](http://data.europa.eu/s66#workPerformed)
+
+### Domains
+
+- <a id="change-720552373274600"></a>**[code](http://data.europa.eu/s66#code)** `Add Domain` [permalink](#change-720552373274600)
+  - Added domain [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) to [eurio:code](http://data.europa.eu/s66#code)
+- <a id="change-720552373410100"></a>**[finalResults](http://data.europa.eu/s66#finalResults)** `Add Domain` [permalink](#change-720552373410100)
+  - Added domain [eurio:ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary) to [eurio:finalResults](http://data.europa.eu/s66#finalResults)
+- <a id="change-720552350776400"></a>**[hasAddress](http://data.europa.eu/s66#hasAddress)** `Add Domain` [permalink](#change-720552350776400)
+  - Added domain [eurio:Site](http://data.europa.eu/s66#Site) to [eurio:hasAddress](http://data.europa.eu/s66#hasAddress)
+- <a id="change-720552351397500"></a>**[hasCoordinates](http://data.europa.eu/s66#hasCoordinates)** `Add Domain` [permalink](#change-720552351397500)
+  - Added domain [eurio:Site](http://data.europa.eu/s66#Site) to [eurio:hasCoordinates](http://data.europa.eu/s66#hasCoordinates)
+- <a id="change-720552351560800"></a>**[hasEuroSciVocClassification](http://data.europa.eu/s66#hasEuroSciVocClassification)** `Add Domain` [permalink](#change-720552351560800)
+  - Added domain [eurio:Project](http://data.europa.eu/s66#Project) to [eurio:hasEuroSciVocClassification](http://data.europa.eu/s66#hasEuroSciVocClassification)
+- <a id="change-720552360147600"></a>**[hasFundingSchemeCall](http://data.europa.eu/s66#hasFundingSchemeCall)** `Add Domain` [permalink](#change-720552360147600)
+  - Added domain [eurio:Grant](http://data.europa.eu/s66#Grant) to [eurio:hasFundingSchemeCall](http://data.europa.eu/s66#hasFundingSchemeCall)
+- <a id="change-720552360192100"></a>**[hasFundingSchemeProgramme](http://data.europa.eu/s66#hasFundingSchemeProgramme)** `Add Domain` [permalink](#change-720552360192100)
+  - Added domain [eurio:Grant](http://data.europa.eu/s66#Grant) to [eurio:hasFundingSchemeProgramme](http://data.europa.eu/s66#hasFundingSchemeProgramme)
+- <a id="change-720552360227600"></a>**[hasFundingSchemeTopic](http://data.europa.eu/s66#hasFundingSchemeTopic)** `Add Domain` [permalink](#change-720552360227600)
+  - Added domain [eurio:Grant](http://data.europa.eu/s66#Grant) to [eurio:hasFundingSchemeTopic](http://data.europa.eu/s66#hasFundingSchemeTopic)
+- <a id="change-720552360304200"></a>**[hasFundingSchemeType](http://data.europa.eu/s66#hasFundingSchemeType)** `Add Domain` [permalink](#change-720552360304200)
+  - Added domain [eurio:Grant](http://data.europa.eu/s66#Grant) to [eurio:hasFundingSchemeType](http://data.europa.eu/s66#hasFundingSchemeType)
+- <a id="change-720552352133200"></a>**[hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty)** `Add Domain` [permalink](#change-720552352133200)
+  - Added domain [eurio:Project](http://data.europa.eu/s66#Project) to [eurio:hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty)
+- <a id="change-720552360356900"></a>**[hasISOCountryCode](http://data.europa.eu/s66#hasISOCountryCode)** `Add Domain` [permalink](#change-720552360356900)
+  - Added domain [eurio:Country](http://data.europa.eu/s66#Country) to [eurio:hasISOCountryCode](http://data.europa.eu/s66#hasISOCountryCode)
+- <a id="change-720552368493600"></a>**[hasNextFundingScheme](http://data.europa.eu/s66#hasNextFundingScheme)** `Add Domain` [permalink](#change-720552368493600)
+  - Added domain [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) to [eurio:hasNextFundingScheme](http://data.europa.eu/s66#hasNextFundingScheme)
+- <a id="change-720552360423300"></a>**[hasNUTS0code](http://data.europa.eu/s66#hasNUTS0code)** `Add Domain` [permalink](#change-720552360423300)
+  - Added domain [eurio:AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea) to [eurio:hasNUTS0code](http://data.europa.eu/s66#hasNUTS0code)
+- <a id="change-720552360495200"></a>**[hasNUTS1code](http://data.europa.eu/s66#hasNUTS1code)** `Add Domain` [permalink](#change-720552360495200)
+  - Added domain [eurio:AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea) to [eurio:hasNUTS1code](http://data.europa.eu/s66#hasNUTS1code)
+- <a id="change-720552368396200"></a>**[hasNUTS2code](http://data.europa.eu/s66#hasNUTS2code)** `Add Domain` [permalink](#change-720552368396200)
+  - Added domain [eurio:AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea) to [eurio:hasNUTS2code](http://data.europa.eu/s66#hasNUTS2code)
+- <a id="change-720552368478000"></a>**[hasNUTS3code](http://data.europa.eu/s66#hasNUTS3code)** `Add Domain` [permalink](#change-720552368478000)
+  - Added domain [eurio:AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea) to [eurio:hasNUTS3code](http://data.europa.eu/s66#hasNUTS3code)
+- <a id="change-720552368507900"></a>**[hasPreviousFundingScheme](http://data.europa.eu/s66#hasPreviousFundingScheme)** `Add Domain` [permalink](#change-720552368507900)
+  - Added domain [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) to [eurio:hasPreviousFundingScheme](http://data.europa.eu/s66#hasPreviousFundingScheme)
+- <a id="change-720552354233100"></a>**[hasResult](http://data.europa.eu/s66#hasResult)** `Add Domain` [permalink](#change-720552354233100)
+  - Added domain not specified to [eurio:hasResult](http://data.europa.eu/s66#hasResult)
+- <a id="change-720552373498700"></a>**[isbn](http://data.europa.eu/s66#isbn)** `Add Domain` [permalink](#change-720552373498700)
+  - Added domain [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) to [eurio:isbn](http://data.europa.eu/s66#isbn)
+- <a id="change-720552373470900"></a>**[isNet](http://data.europa.eu/s66#isNet)** `Add Domain` [permalink](#change-720552373470900)
+  - Added domain [eurio:MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount) to [eurio:isNet](http://data.europa.eu/s66#isNet)
+- <a id="change-720552373536600"></a>**[issn](http://data.europa.eu/s66#issn)** `Add Domain` [permalink](#change-720552373536600)
+  - Added domain [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) to [eurio:issn](http://data.europa.eu/s66#issn)
+- <a id="change-720552373570200"></a>**[journalNumber](http://data.europa.eu/s66#journalNumber)** `Add Domain` [permalink](#change-720552373570200)
+  - Added domain [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) to [eurio:journalNumber](http://data.europa.eu/s66#journalNumber)
+- <a id="change-720552373614300"></a>**[journalTitle](http://data.europa.eu/s66#journalTitle)** `Add Domain` [permalink](#change-720552373614300)
+  - Added domain [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) to [eurio:journalTitle](http://data.europa.eu/s66#journalTitle)
+- <a id="change-720552373660400"></a>**[order](http://data.europa.eu/s66#order)** `Add Domain` [permalink](#change-720552373660400)
+  - Added domain [eurio:OrganisationRole](http://data.europa.eu/s66#OrganisationRole) to [eurio:order](http://data.europa.eu/s66#order)
+- <a id="change-720552373687900"></a>**[periodNumber](http://data.europa.eu/s66#periodNumber)** `Add Domain` [permalink](#change-720552373687900)
+  - Added domain [eurio:ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary) to [eurio:periodNumber](http://data.europa.eu/s66#periodNumber)
+- <a id="change-720552373703600"></a>**[projectStatus](http://data.europa.eu/s66#projectStatus)** `Add Domain` [permalink](#change-720552373703600)
+  - Added domain [eurio:Project](http://data.europa.eu/s66#Project) to [eurio:projectStatus](http://data.europa.eu/s66#projectStatus)
+- <a id="change-720552374200300"></a>**[publishedPages](http://data.europa.eu/s66#publishedPages)** `Add Domain` [permalink](#change-720552374200300)
+  - Added domain [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) to [eurio:publishedPages](http://data.europa.eu/s66#publishedPages)
+- <a id="change-720552374256500"></a>**[publishedYear](http://data.europa.eu/s66#publishedYear)** `Add Domain` [permalink](#change-720552374256500)
+  - Added domain [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) to [eurio:publishedYear](http://data.europa.eu/s66#publishedYear)
+- <a id="change-720552374391400"></a>**[publisher](http://data.europa.eu/s66#publisher)** `Add Domain` [permalink](#change-720552374391400)
+  - Added domain [eurio:ProjectPublication](http://data.europa.eu/s66#ProjectPublication) to [eurio:publisher](http://data.europa.eu/s66#publisher)
+- <a id="change-720552374463800"></a>**[roleLabel](http://data.europa.eu/s66#roleLabel)** `Add Domain` [permalink](#change-720552374463800)
+  - Added domain [eurio:OrganisationRole](http://data.europa.eu/s66#OrganisationRole) to [eurio:roleLabel](http://data.europa.eu/s66#roleLabel)
+- <a id="change-720552374728900"></a>**[signatureDate](http://data.europa.eu/s66#signatureDate)** `Add Domain` [permalink](#change-720552374728900)
+  - Added domain [eurio:Project](http://data.europa.eu/s66#Project) to [eurio:signatureDate](http://data.europa.eu/s66#signatureDate)
+- <a id="change-720552374859000"></a>**[telephoneNumber](http://data.europa.eu/s66#telephoneNumber)** `Add Domain` [permalink](#change-720552374859000)
+  - Added domain [eurio:ContactPoint](http://data.europa.eu/s66#ContactPoint) to [eurio:telephoneNumber](http://data.europa.eu/s66#telephoneNumber)
+- <a id="change-720552375066900"></a>**[workPerformed](http://data.europa.eu/s66#workPerformed)** `Add Domain` [permalink](#change-720552375066900)
+  - Added domain [eurio:ProjectReportSummary](http://data.europa.eu/s66#ProjectReportSummary) to [eurio:workPerformed](http://data.europa.eu/s66#workPerformed)
+
+### Object properties
+
+- <a id="change-720552359598300"></a>**[hasAssociatedFundingScheme](http://data.europa.eu/s66#hasAssociatedFundingScheme)** `Add Object Property` [permalink](#change-720552359598300)
+  - Added object property: [eurio:hasAssociatedFundingScheme](http://data.europa.eu/s66#hasAssociatedFundingScheme)
+- <a id="change-720552359861900"></a>**[hasAssociatedFundingScheme](http://data.europa.eu/s66#hasAssociatedFundingScheme)** `Add Range Object Property` [permalink](#change-720552359861900)
+  - Added object range [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) to [eurio:hasAssociatedFundingScheme](http://data.europa.eu/s66#hasAssociatedFundingScheme)
+- <a id="change-720552359889600"></a>**[hasFundingSchemeCall](http://data.europa.eu/s66#hasFundingSchemeCall)** `Add Object Property` [permalink](#change-720552359889600)
+  - Added object property: [eurio:hasFundingSchemeCall](http://data.europa.eu/s66#hasFundingSchemeCall)
+- <a id="change-720552360125900"></a>**[hasFundingSchemeCall](http://data.europa.eu/s66#hasFundingSchemeCall)** `Add Range Object Property` [permalink](#change-720552360125900)
+  - Added object range [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) to [eurio:hasFundingSchemeCall](http://data.europa.eu/s66#hasFundingSchemeCall)
+- <a id="change-720552360168200"></a>**[hasFundingSchemeProgramme](http://data.europa.eu/s66#hasFundingSchemeProgramme)** `Add Object Property` [permalink](#change-720552360168200)
+  - Added object property: [eurio:hasFundingSchemeProgramme](http://data.europa.eu/s66#hasFundingSchemeProgramme)
+- <a id="change-720552360181000"></a>**[hasFundingSchemeProgramme](http://data.europa.eu/s66#hasFundingSchemeProgramme)** `Add Range Object Property` [permalink](#change-720552360181000)
+  - Added object range [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) to [eurio:hasFundingSchemeProgramme](http://data.europa.eu/s66#hasFundingSchemeProgramme)
+- <a id="change-720552360215600"></a>**[hasFundingSchemeTopic](http://data.europa.eu/s66#hasFundingSchemeTopic)** `Add Object Property` [permalink](#change-720552360215600)
+  - Added object property: [eurio:hasFundingSchemeTopic](http://data.europa.eu/s66#hasFundingSchemeTopic)
+- <a id="change-720552360239900"></a>**[hasFundingSchemeTopic](http://data.europa.eu/s66#hasFundingSchemeTopic)** `Add Range Object Property` [permalink](#change-720552360239900)
+  - Added object range [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) to [eurio:hasFundingSchemeTopic](http://data.europa.eu/s66#hasFundingSchemeTopic)
+- <a id="change-720552360291300"></a>**[hasFundingSchemeType](http://data.europa.eu/s66#hasFundingSchemeType)** `Add Object Property` [permalink](#change-720552360291300)
+  - Added object property: [eurio:hasFundingSchemeType](http://data.europa.eu/s66#hasFundingSchemeType)
+- <a id="change-720552360317200"></a>**[hasFundingSchemeType](http://data.europa.eu/s66#hasFundingSchemeType)** `Add Range Object Property` [permalink](#change-720552360317200)
+  - Added object range [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) to [eurio:hasFundingSchemeType](http://data.europa.eu/s66#hasFundingSchemeType)
+- <a id="change-720552360343900"></a>**[hasISOCountryCode](http://data.europa.eu/s66#hasISOCountryCode)** `Add Object Property` [permalink](#change-720552360343900)
+  - Added object property: [eurio:hasISOCountryCode](http://data.europa.eu/s66#hasISOCountryCode)
+- <a id="change-720552360389500"></a>**[hasISOCountryCode](http://data.europa.eu/s66#hasISOCountryCode)** `Add Range Object Property` [permalink](#change-720552360389500)
+  - Added object range [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept) to [eurio:hasISOCountryCode](http://data.europa.eu/s66#hasISOCountryCode)
+- <a id="change-720552368483200"></a>**[hasNextFundingScheme](http://data.europa.eu/s66#hasNextFundingScheme)** `Add Object Property` [permalink](#change-720552368483200)
+  - Added object property: [eurio:hasNextFundingScheme](http://data.europa.eu/s66#hasNextFundingScheme)
+- <a id="change-720552368487900"></a>**[hasNextFundingScheme](http://data.europa.eu/s66#hasNextFundingScheme)** `Add Range Object Property` [permalink](#change-720552368487900)
+  - Added object range [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) to [eurio:hasNextFundingScheme](http://data.europa.eu/s66#hasNextFundingScheme)
+- <a id="change-720552360411500"></a>**[hasNUTS0code](http://data.europa.eu/s66#hasNUTS0code)** `Add Object Property` [permalink](#change-720552360411500)
+  - Added object property: [eurio:hasNUTS0code](http://data.europa.eu/s66#hasNUTS0code)
+- <a id="change-720552360444700"></a>**[hasNUTS0code](http://data.europa.eu/s66#hasNUTS0code)** `Add Range Object Property` [permalink](#change-720552360444700)
+  - Added object range [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept) to [eurio:hasNUTS0code](http://data.europa.eu/s66#hasNUTS0code)
+- <a id="change-720552360469600"></a>**[hasNUTS1code](http://data.europa.eu/s66#hasNUTS1code)** `Add Object Property` [permalink](#change-720552360469600)
+  - Added object property: [eurio:hasNUTS1code](http://data.europa.eu/s66#hasNUTS1code)
+- <a id="change-720552368325800"></a>**[hasNUTS1code](http://data.europa.eu/s66#hasNUTS1code)** `Add Range Object Property` [permalink](#change-720552368325800)
+  - Added object range [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept) to [eurio:hasNUTS1code](http://data.europa.eu/s66#hasNUTS1code)
+- <a id="change-720552368377700"></a>**[hasNUTS2code](http://data.europa.eu/s66#hasNUTS2code)** `Add Object Property` [permalink](#change-720552368377700)
+  - Added object property: [eurio:hasNUTS2code](http://data.europa.eu/s66#hasNUTS2code)
+- <a id="change-720552368387800"></a>**[hasNUTS2code](http://data.europa.eu/s66#hasNUTS2code)** `Add Range Object Property` [permalink](#change-720552368387800)
+  - Added object range [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept) to [eurio:hasNUTS2code](http://data.europa.eu/s66#hasNUTS2code)
+- <a id="change-720552368454400"></a>**[hasNUTS3code](http://data.europa.eu/s66#hasNUTS3code)** `Add Object Property` [permalink](#change-720552368454400)
+  - Added object property: [eurio:hasNUTS3code](http://data.europa.eu/s66#hasNUTS3code)
+- <a id="change-720552368467000"></a>**[hasNUTS3code](http://data.europa.eu/s66#hasNUTS3code)** `Add Range Object Property` [permalink](#change-720552368467000)
+  - Added object range [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept) to [eurio:hasNUTS3code](http://data.europa.eu/s66#hasNUTS3code)
+- <a id="change-720552368499900"></a>**[hasPreviousFundingScheme](http://data.europa.eu/s66#hasPreviousFundingScheme)** `Add Object Property` [permalink](#change-720552368499900)
+  - Added object property: [eurio:hasPreviousFundingScheme](http://data.europa.eu/s66#hasPreviousFundingScheme)
+- <a id="change-720552368515200"></a>**[hasPreviousFundingScheme](http://data.europa.eu/s66#hasPreviousFundingScheme)** `Add Range Object Property` [permalink](#change-720552368515200)
+  - Added object range [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) to [eurio:hasPreviousFundingScheme](http://data.europa.eu/s66#hasPreviousFundingScheme)
+- <a id="change-720552356755300"></a>**[isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn)** `Add Range Object Property` [permalink](#change-720552356755300)
+  - Added object range [eurio:Project](http://data.europa.eu/s66#Project) to [eurio:isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn)
+- <a id="change-720552357427500"></a>**[isResultOf](http://data.europa.eu/s66#isResultOf)** `Add Range Object Property` [permalink](#change-720552357427500)
+  - Added object range not specified to [eurio:isResultOf](http://data.europa.eu/s66#isResultOf)
+
+### Property relations
+
+- <a id="change-720552370952400"></a>**[endDate](http://data.europa.eu/s66#endDate)** `Add Sub Property` [permalink](#change-720552370952400)
+  - Added subproperty relation: [eurio:endDate](http://data.europa.eu/s66#endDate) subproperty of [eurio:date](http://data.europa.eu/s66#date)
+- <a id="change-720552359903500"></a>**[hasFundingSchemeCall](http://data.europa.eu/s66#hasFundingSchemeCall)** `Add Sub Property` [permalink](#change-720552359903500)
+  - Added subproperty relation: [eurio:hasFundingSchemeCall](http://data.europa.eu/s66#hasFundingSchemeCall) subproperty of [eurio:hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme)
+- <a id="change-720552360204200"></a>**[hasFundingSchemeProgramme](http://data.europa.eu/s66#hasFundingSchemeProgramme)** `Add Sub Property` [permalink](#change-720552360204200)
+  - Added subproperty relation: [eurio:hasFundingSchemeProgramme](http://data.europa.eu/s66#hasFundingSchemeProgramme) subproperty of [eurio:hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme)
+- <a id="change-720552360253300"></a>**[hasFundingSchemeTopic](http://data.europa.eu/s66#hasFundingSchemeTopic)** `Add Sub Property` [permalink](#change-720552360253300)
+  - Added subproperty relation: [eurio:hasFundingSchemeTopic](http://data.europa.eu/s66#hasFundingSchemeTopic) subproperty of [eurio:hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme)
+- <a id="change-720552360330600"></a>**[hasFundingSchemeType](http://data.europa.eu/s66#hasFundingSchemeType)** `Add Sub Property` [permalink](#change-720552360330600)
+  - Added subproperty relation: [eurio:hasFundingSchemeType](http://data.europa.eu/s66#hasFundingSchemeType) subproperty of [eurio:hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme)
+- <a id="change-720552360456200"></a>**[hasNUTS0code](http://data.europa.eu/s66#hasNUTS0code)** `Add Sub Property` [permalink](#change-720552360456200)
+  - Added subproperty relation: [eurio:hasNUTS0code](http://data.europa.eu/s66#hasNUTS0code) subproperty of [eurio:hasNUTSCode](http://data.europa.eu/s66#hasNUTSCode)
+- <a id="change-720552360479900"></a>**[hasNUTS1code](http://data.europa.eu/s66#hasNUTS1code)** `Add Sub Property` [permalink](#change-720552360479900)
+  - Added subproperty relation: [eurio:hasNUTS1code](http://data.europa.eu/s66#hasNUTS1code) subproperty of [eurio:hasNUTSCode](http://data.europa.eu/s66#hasNUTSCode)
+- <a id="change-720552368445800"></a>**[hasNUTS2code](http://data.europa.eu/s66#hasNUTS2code)** `Add Sub Property` [permalink](#change-720552368445800)
+  - Added subproperty relation: [eurio:hasNUTS2code](http://data.europa.eu/s66#hasNUTS2code) subproperty of [eurio:hasNUTSCode](http://data.europa.eu/s66#hasNUTSCode)
+- <a id="change-720552368472500"></a>**[hasNUTS3code](http://data.europa.eu/s66#hasNUTS3code)** `Add Sub Property` [permalink](#change-720552368472500)
+  - Added subproperty relation: [eurio:hasNUTS3code](http://data.europa.eu/s66#hasNUTS3code) subproperty of [eurio:hasNUTSCode](http://data.europa.eu/s66#hasNUTSCode)
+- <a id="change-720552374778500"></a>**[signatureDate](http://data.europa.eu/s66#signatureDate)** `Add Sub Property` [permalink](#change-720552374778500)
+  - Added subproperty relation: [eurio:signatureDate](http://data.europa.eu/s66#signatureDate) subproperty of [eurio:date](http://data.europa.eu/s66#date)
+- <a id="change-720552372535300"></a>**[startDate](http://data.europa.eu/s66#startDate)** `Add Sub Property` [permalink](#change-720552372535300)
+  - Added subproperty relation: [eurio:startDate](http://data.europa.eu/s66#startDate) subproperty of [eurio:date](http://data.europa.eu/s66#date)
+- <a id="change-720552374911500"></a>**[terminationDate](http://data.europa.eu/s66#terminationDate)** `Add Sub Property` [permalink](#change-720552374911500)
+  - Added subproperty relation: [eurio:terminationDate](http://data.europa.eu/s66#terminationDate) subproperty of [eurio:date](http://data.europa.eu/s66#date)
+
+## Removed (574)
+
+### Annotations
+
+- <a id="change-720552369078600"></a>**[abstract](http://data.europa.eu/s66#abstract)** `Remove Annotation from Entity` [permalink](#change-720552369078600)
+  - Removed annotation from [eurio:abstract](http://data.europa.eu/s66#abstract): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "The general summary and ideas of a CORDIS project."@en
+- <a id="change-720552369167100"></a>**[abstract](http://data.europa.eu/s66#abstract)** `Remove Annotation from Entity` [permalink](#change-720552369167100)
+  - Removed annotation from [eurio:abstract](http://data.europa.eu/s66#abstract): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The general summary and ideas of a CORDIS project."@en
+- <a id="change-720552369202900"></a>**[abstract](http://data.europa.eu/s66#abstract)** `Remove Annotation from Entity` [permalink](#change-720552369202900)
+  - Removed annotation from [eurio:abstract](http://data.europa.eu/s66#abstract): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552369251600"></a>**[abstract](http://data.europa.eu/s66#abstract)** `Remove Annotation from Entity` [permalink](#change-720552369251600)
+  - Removed annotation from [eurio:abstract](http://data.europa.eu/s66#abstract): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: Short summary description of a project."@en
+- <a id="change-720552295805200"></a>**[Acronym](http://data.europa.eu/s66#Acronym)** `Remove Annotation from Entity` [permalink](#change-720552295805200)
+  - Removed annotation from [eurio:Acronym](http://data.europa.eu/s66#Acronym): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "An abbreviation formed from the initial letters of other words and pronounced as a word. It can refer to any type of entities in the CORDIS conceptual framework, and may be stated explicitly or extracted automatically from text."@en
+- <a id="change-720552369304500"></a>**[additionalName](http://data.europa.eu/s66#additionalName)** `Remove Annotation from Entity` [permalink](#change-720552369304500)
+  - Removed annotation from [eurio:additionalName](http://data.europa.eu/s66#additionalName): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "additional Name"@en
+- <a id="change-720552369334700"></a>**[additionalName](http://data.europa.eu/s66#additionalName)** `Remove Annotation from Entity` [permalink](#change-720552369334700)
+  - Removed annotation from [eurio:additionalName](http://data.europa.eu/s66#additionalName): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: An additional name for a Person, can be used for a middle name."@en
+- <a id="change-720552369349000"></a>**[additionalName](http://data.europa.eu/s66#additionalName)** `Remove Annotation from Entity` [permalink](#change-720552369349000)
+  - Removed annotation from [eurio:additionalName](http://data.europa.eu/s66#additionalName): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "An additional name for a Person, can be used for a middle name."@en
+- <a id="change-720552369361000"></a>**[additionalName](http://data.europa.eu/s66#additionalName)** `Remove Annotation from Entity` [permalink](#change-720552369361000)
+  - Removed annotation from [eurio:additionalName](http://data.europa.eu/s66#additionalName): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552369395100"></a>**[addressCountry](http://data.europa.eu/s66#addressCountry)** `Remove Annotation from Entity` [permalink](#change-720552369395100)
+  - Removed annotation from [eurio:addressCountry](http://data.europa.eu/s66#addressCountry): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "address Country"@en
+- <a id="change-720552369416400"></a>**[addressCountry](http://data.europa.eu/s66#addressCountry)** `Remove Annotation from Entity` [permalink](#change-720552369416400)
+  - Removed annotation from [eurio:addressCountry](http://data.europa.eu/s66#addressCountry): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552369432700"></a>**[addressCountry](http://data.europa.eu/s66#addressCountry)** `Remove Annotation from Entity` [permalink](#change-720552369432700)
+  - Removed annotation from [eurio:addressCountry](http://data.europa.eu/s66#addressCountry): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The country of the place or address. You can also provide the two-letter ISO 3166-1 alpha-2 country code."@en
+- <a id="change-720552369451700"></a>**[addressCountry](http://data.europa.eu/s66#addressCountry)** `Remove Annotation from Entity` [permalink](#change-720552369451700)
+  - Removed annotation from [eurio:addressCountry](http://data.europa.eu/s66#addressCountry): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code."@en
+- <a id="change-720552369511600"></a>**[addressLocality](http://data.europa.eu/s66#addressLocality)** `Remove Annotation from Entity` [permalink](#change-720552369511600)
+  - Removed annotation from [eurio:addressLocality](http://data.europa.eu/s66#addressLocality): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition:  The locality in which the street address is, and which is in the region. For example, Mountain View."@en
+- <a id="change-720552369527200"></a>**[addressLocality](http://data.europa.eu/s66#addressLocality)** `Remove Annotation from Entity` [permalink](#change-720552369527200)
+  - Removed annotation from [eurio:addressLocality](http://data.europa.eu/s66#addressLocality): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "address Locality"@en
+- <a id="change-720552369553600"></a>**[addressLocality](http://data.europa.eu/s66#addressLocality)** `Remove Annotation from Entity` [permalink](#change-720552369553600)
+  - Removed annotation from [eurio:addressLocality](http://data.europa.eu/s66#addressLocality): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The locality, town or city of the place or address."@en
+- <a id="change-720552369573700"></a>**[addressLocality](http://data.europa.eu/s66#addressLocality)** `Remove Annotation from Entity` [permalink](#change-720552369573700)
+  - Removed annotation from [eurio:addressLocality](http://data.europa.eu/s66#addressLocality): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552298774000"></a>**[AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea)** `Remove Annotation from Entity` [permalink](#change-720552298774000)
+  - Removed annotation from [eurio:AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: a geographical region, typically under the jurisdiction of a particular government"@en
+- <a id="change-720552298939100"></a>**[AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea)** `Remove Annotation from Entity` [permalink](#change-720552298939100)
+  - Removed annotation from [eurio:AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "An administrative geographical area that is typically managed by a public body. It can be a country, a region, a municipality, a province, a sub-municipality area, etc."@en
+- <a id="change-720552299489600"></a>**[AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea)** `Remove Annotation from Entity` [permalink](#change-720552299489600)
+  - Removed annotation from [eurio:AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"@en
+- <a id="change-720552300701900"></a>**[ContactPoint](http://data.europa.eu/s66#ContactPoint)** `Remove Annotation from Entity` [permalink](#change-720552300701900)
+  - Removed annotation from [eurio:ContactPoint](http://data.europa.eu/s66#ContactPoint): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552300803200"></a>**[ContactPoint](http://data.europa.eu/s66#ContactPoint)** `Remove Annotation from Entity` [permalink](#change-720552300803200)
+  - Removed annotation from [eurio:ContactPoint](http://data.europa.eu/s66#ContactPoint): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "A contact point of an organisation or a person."@en
+- <a id="change-720552301076300"></a>**[ContactPoint](http://data.europa.eu/s66#ContactPoint)** `Remove Annotation from Entity` [permalink](#change-720552301076300)
+  - Removed annotation from [eurio:ContactPoint](http://data.europa.eu/s66#ContactPoint): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: The mailing address."@en
+- <a id="change-720552301701000"></a>**[Coordinates](http://data.europa.eu/s66#Coordinates)** `Remove Annotation from Entity` [permalink](#change-720552301701000)
+  - Removed annotation from [eurio:Coordinates](http://data.europa.eu/s66#Coordinates): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Schema's definition: The geographic coordinates of a place or event."@en
+- <a id="change-720552302531900"></a>**[Coordinates](http://data.europa.eu/s66#Coordinates)** `Remove Annotation from Entity` [permalink](#change-720552302531900)
+  - Removed annotation from [eurio:Coordinates](http://data.europa.eu/s66#Coordinates): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552302696800"></a>**[Coordinates](http://data.europa.eu/s66#Coordinates)** `Remove Annotation from Entity` [permalink](#change-720552302696800)
+  - Removed annotation from [eurio:Coordinates](http://data.europa.eu/s66#Coordinates): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The geo coordinates for a location of entities that participate in or form part of research projects."@en
+- <a id="change-720552303509900"></a>**[Country](http://data.europa.eu/s66#Country)** `Remove Annotation from Entity` [permalink](#change-720552303509900)
+  - Removed annotation from [eurio:Country](http://data.europa.eu/s66#Country): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: a country."^^[xsd:string](http://www.w3.org/2001/XMLSchema#string)
+- <a id="change-720552303583700"></a>**[Country](http://data.europa.eu/s66#Country)** `Remove Annotation from Entity` [permalink](#change-720552303583700)
+  - Removed annotation from [eurio:Country](http://data.europa.eu/s66#Country): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "A country"@en
+- <a id="change-720552303916100"></a>**[Country](http://data.europa.eu/s66#Country)** `Remove Annotation from Entity` [permalink](#change-720552303916100)
+  - Removed annotation from [eurio:Country](http://data.europa.eu/s66#Country): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"@en
+- <a id="change-720552369617700"></a>**[currency](http://data.europa.eu/s66#currency)** `Remove Annotation from Entity` [permalink](#change-720552369617700)
+  - Removed annotation from [eurio:currency](http://data.europa.eu/s66#currency): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552369829100"></a>**[currency](http://data.europa.eu/s66#currency)** `Remove Annotation from Entity` [permalink](#change-720552369829100)
+  - Removed annotation from [eurio:currency](http://data.europa.eu/s66#currency): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The currency in which the monetary amount is expressed."@en
+- <a id="change-720552369891800"></a>**[currency](http://data.europa.eu/s66#currency)** `Remove Annotation from Entity` [permalink](#change-720552369891800)
+  - Removed annotation from [eurio:currency](http://data.europa.eu/s66#currency): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: The currency in which the monetary amount is expressed."@en
+- <a id="change-720552370346000"></a>**[date](http://data.europa.eu/s66#date)** `Remove Annotation from Entity` [permalink](#change-720552370346000)
+  - Removed annotation from [eurio:date](http://data.europa.eu/s66#date): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The date in which the grant payment took place."@en
+- <a id="change-720552370402200"></a>**[date](http://data.europa.eu/s66#date)** `Remove Annotation from Entity` [permalink](#change-720552370402200)
+  - Removed annotation from [eurio:date](http://data.europa.eu/s66#date): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The moment in time when an event occurs."@en
+- <a id="change-720552370418600"></a>**[date](http://data.europa.eu/s66#date)** `Remove Annotation from Entity` [permalink](#change-720552370418600)
+  - Removed annotation from [eurio:date](http://data.europa.eu/s66#date): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552370568400"></a>**[definition](http://data.europa.eu/s66#definition)** `Remove Annotation from Entity` [permalink](#change-720552370568400)
+  - Removed annotation from [eurio:definition](http://data.europa.eu/s66#definition): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The definition of the acronym."@en
+- <a id="change-720552370587400"></a>**[description](http://data.europa.eu/s66#description)** `Remove Annotation from Entity` [permalink](#change-720552370587400)
+  - Removed annotation from [eurio:description](http://data.europa.eu/s66#description): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "A brief summary of the entity (project, event, etc.)."@en
+- <a id="change-720552370602200"></a>**[description](http://data.europa.eu/s66#description)** `Remove Annotation from Entity` [permalink](#change-720552370602200)
+  - Removed annotation from [eurio:description](http://data.europa.eu/s66#description): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "A brief summary of the entity (project, event, etc.)."@en
+- <a id="change-720552370615400"></a>**[description](http://data.europa.eu/s66#description)** `Remove Annotation from Entity` [permalink](#change-720552370615400)
+  - Removed annotation from [eurio:description](http://data.europa.eu/s66#description): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's description: A description of the item"@en
+- <a id="change-720552370634100"></a>**[description](http://data.europa.eu/s66#description)** `Remove Annotation from Entity` [permalink](#change-720552370634100)
+  - Removed annotation from [eurio:description](http://data.europa.eu/s66#description): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552304727300"></a>**[DetectedAcronym](http://data.europa.eu/s66#DetectedAcronym)** `Remove Annotation from Entity` [permalink](#change-720552304727300)
+  - Removed annotation from [eurio:DetectedAcronym](http://data.europa.eu/s66#DetectedAcronym): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Any acronym that has been detected, automatically or manually, from the description of an entity or from any other form of natural language text."@en
+- <a id="change-720552350097200"></a>**[disburses](http://data.europa.eu/s66#disburses)** `Remove Annotation from Entity` [permalink](#change-720552350097200)
+  - Removed annotation from [eurio:disburses](http://data.europa.eu/s66#disburses): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552350169800"></a>**[disburses](http://data.europa.eu/s66#disburses)** `Remove Annotation from Entity` [permalink](#change-720552350169800)
+  - Removed annotation from [eurio:disburses](http://data.europa.eu/s66#disburses): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the funding agency to the grant(s) that it disburses."@en
+- <a id="change-720552350198200"></a>**[disburses](http://data.europa.eu/s66#disburses)** `Remove Annotation from Entity` [permalink](#change-720552350198200)
+  - Removed annotation from [eurio:disburses](http://data.europa.eu/s66#disburses): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse of disbursedBy."@en
+- <a id="change-720552350214300"></a>**[disburses](http://data.europa.eu/s66#disburses)** `Remove Annotation from Entity` [permalink](#change-720552350214300)
+  - Removed annotation from [eurio:disburses](http://data.europa.eu/s66#disburses): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relation between the funding agency (subject) and the disbursed grant (object)."@en
+- <a id="change-720552370679000"></a>**[duration](http://data.europa.eu/s66#duration)** `Remove Annotation from Entity` [permalink](#change-720552370679000)
+  - Removed annotation from [eurio:duration](http://data.europa.eu/s66#duration): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The period of time an entity (e.g. project, grant, event, etc.) has taken (use ISO 8601 duration format)."@en
+- <a id="change-720552370706200"></a>**[duration](http://data.europa.eu/s66#duration)** `Remove Annotation from Entity` [permalink](#change-720552370706200)
+  - Removed annotation from [eurio:duration](http://data.europa.eu/s66#duration): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "The period of time an entity (e.g. project, grant, event, etc.) has taken (use ISO 8601 duration format)."@en
+- <a id="change-720552370743200"></a>**[email](http://data.europa.eu/s66#email)** `Remove Annotation from Entity` [permalink](#change-720552370743200)
+  - Removed annotation from [eurio:email](http://data.europa.eu/s66#email): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552370763500"></a>**[email](http://data.europa.eu/s66#email)** `Remove Annotation from Entity` [permalink](#change-720552370763500)
+  - Removed annotation from [eurio:email](http://data.europa.eu/s66#email): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Email address."@en
+- <a id="change-720552370775700"></a>**[email](http://data.europa.eu/s66#email)** `Remove Annotation from Entity` [permalink](#change-720552370775700)
+  - Removed annotation from [eurio:email](http://data.europa.eu/s66#email): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's description: Email address."@en
+- <a id="change-720552350383200"></a>**[employs](http://data.europa.eu/s66#employs)** `Remove Annotation from Entity` [permalink](#change-720552350383200)
+  - Removed annotation from [eurio:employs](http://data.europa.eu/s66#employs): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the organisation to the role representing a person that the organisation employs during a project in which both participate. "@en
+- <a id="change-720552370818400"></a>**[endDate](http://data.europa.eu/s66#endDate)** `Remove Annotation from Entity` [permalink](#change-720552370818400)
+  - Removed annotation from [eurio:endDate](http://data.europa.eu/s66#endDate): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "The date on which an entity (e.g. project, grant, event, etc.) is finalized or ceases to exist."@en
+- <a id="change-720552370836600"></a>**[endDate](http://data.europa.eu/s66#endDate)** `Remove Annotation from Entity` [permalink](#change-720552370836600)
+  - Removed annotation from [eurio:endDate](http://data.europa.eu/s66#endDate): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The date on which an entity (e.g. project, grant, event, etc.) is finalized or ceases to exist."@en
+- <a id="change-720552370851200"></a>**[endDate](http://data.europa.eu/s66#endDate)** `Remove Annotation from Entity` [permalink](#change-720552370851200)
+  - Removed annotation from [eurio:endDate](http://data.europa.eu/s66#endDate): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The time an item ceases to exist or a statement stops being valid."@en
+- <a id="change-720552370862800"></a>**[endDate](http://data.europa.eu/s66#endDate)** `Remove Annotation from Entity` [permalink](#change-720552370862800)
+  - Removed annotation from [eurio:endDate](http://data.europa.eu/s66#endDate): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "end Date"@en
+- <a id="change-720552370883000"></a>**[endDate](http://data.europa.eu/s66#endDate)** `Remove Annotation from Entity` [permalink](#change-720552370883000)
+  - Removed annotation from [eurio:endDate](http://data.europa.eu/s66#endDate): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552370987600"></a>**[familyName](http://data.europa.eu/s66#familyName)** `Remove Annotation from Entity` [permalink](#change-720552370987600)
+  - Removed annotation from [eurio:familyName](http://data.europa.eu/s66#familyName): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The family name (last name) of the person."@en
+- <a id="change-720552371002100"></a>**[familyName](http://data.europa.eu/s66#familyName)** `Remove Annotation from Entity` [permalink](#change-720552371002100)
+  - Removed annotation from [eurio:familyName](http://data.europa.eu/s66#familyName): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "family Name"@en
+- <a id="change-720552371015400"></a>**[familyName](http://data.europa.eu/s66#familyName)** `Remove Annotation from Entity` [permalink](#change-720552371015400)
+  - Removed annotation from [eurio:familyName](http://data.europa.eu/s66#familyName): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552371024600"></a>**[familyName](http://data.europa.eu/s66#familyName)** `Remove Annotation from Entity` [permalink](#change-720552371024600)
+  - Removed annotation from [eurio:familyName](http://data.europa.eu/s66#familyName): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: Family name. In the U.S., the last name of an Person. This can be used along with givenName instead of the name property."@en
+- <a id="change-720552371072100"></a>**[faxNumber](http://data.europa.eu/s66#faxNumber)** `Remove Annotation from Entity` [permalink](#change-720552371072100)
+  - Removed annotation from [eurio:faxNumber](http://data.europa.eu/s66#faxNumber): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's description: The fax number."@en
+- <a id="change-720552371085300"></a>**[faxNumber](http://data.europa.eu/s66#faxNumber)** `Remove Annotation from Entity` [permalink](#change-720552371085300)
+  - Removed annotation from [eurio:faxNumber](http://data.europa.eu/s66#faxNumber): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552371094000"></a>**[faxNumber](http://data.europa.eu/s66#faxNumber)** `Remove Annotation from Entity` [permalink](#change-720552371094000)
+  - Removed annotation from [eurio:faxNumber](http://data.europa.eu/s66#faxNumber): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The fax number."@en
+- <a id="change-720552371119500"></a>**[faxNumber](http://data.europa.eu/s66#faxNumber)** `Remove Annotation from Entity` [permalink](#change-720552371119500)
+  - Removed annotation from [eurio:faxNumber](http://data.europa.eu/s66#faxNumber): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "fax Number"@en
+- <a id="change-720552371174200"></a>**[fullAddress](http://data.europa.eu/s66#fullAddress)** `Remove Annotation from Entity` [permalink](#change-720552371174200)
+  - Removed annotation from [eurio:fullAddress](http://data.europa.eu/s66#fullAddress): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The full address of a physical location of an entity"@en
+- <a id="change-720552371194100"></a>**[fullAddress](http://data.europa.eu/s66#fullAddress)** `Remove Annotation from Entity` [permalink](#change-720552371194100)
+  - Removed annotation from [eurio:fullAddress](http://data.europa.eu/s66#fullAddress): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "The full address of a physical location of an entity"@en
+- <a id="change-720552371205500"></a>**[fullAddress](http://data.europa.eu/s66#fullAddress)** `Remove Annotation from Entity` [permalink](#change-720552371205500)
+  - Removed annotation from [eurio:fullAddress](http://data.europa.eu/s66#fullAddress): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "full Address"@en
+- <a id="change-720552304840400"></a>**[FundingAgency](http://data.europa.eu/s66#FundingAgency)** `Remove Annotation from Entity` [permalink](#change-720552304840400)
+  - Removed annotation from [eurio:FundingAgency](http://data.europa.eu/s66#FundingAgency): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "An organisation that materially administrates funding schemes and disburses related grants. In the context of CORDIS, it represents the various European agencies responsible for funding research projects (e.g. ERC, EASME, REA, etc.)."@en
+- <a id="change-720552304942500"></a>**[FundingAgency](http://data.europa.eu/s66#FundingAgency)** `Remove Annotation from Entity` [permalink](#change-720552304942500)
+  - Removed annotation from [eurio:FundingAgency](http://data.europa.eu/s66#FundingAgency): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The class for funding agencies: organisation that materially disburse and administer the Grant process."@en
+- <a id="change-720552305014500"></a>**[FundingAgency](http://data.europa.eu/s66#FundingAgency)** `Remove Annotation from Entity` [permalink](#change-720552305014500)
+  - Removed annotation from [eurio:FundingAgency](http://data.europa.eu/s66#FundingAgency): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552305691300"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Remove Annotation from Entity` [permalink](#change-720552305691300)
+  - Removed annotation from [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The class for funding schemes: plans, designs, and/or programs that determines and organizes the funding."@en
+- <a id="change-720552307333900"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Remove Annotation from Entity` [permalink](#change-720552307333900)
+  - Removed annotation from [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552307477400"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Remove Annotation from Entity` [permalink](#change-720552307477400)
+  - Removed annotation from [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Set of rules and conditions which forms the basis for public funding of European research. In CORDIS, they represent the different legal frameworks (e.g. FP6, FP7, H2020). They can also be used to represent the different calls inside each framework by using the recursive relation “partOfScheme”."@en
+- <a id="change-720552350429800"></a>**[funds](http://data.europa.eu/s66#funds)** `Remove Annotation from Entity` [permalink](#change-720552350429800)
+  - Removed annotation from [eurio:funds](http://data.europa.eu/s66#funds): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the grant with the project(s) that are completely or partially funded by it."@en
+- <a id="change-720552350476900"></a>**[funds](http://data.europa.eu/s66#funds)** `Remove Annotation from Entity` [permalink](#change-720552350476900)
+  - Removed annotation from [eurio:funds](http://data.europa.eu/s66#funds): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse property of fundedBy."@en
+- <a id="change-720552350492900"></a>**[funds](http://data.europa.eu/s66#funds)** `Remove Annotation from Entity` [permalink](#change-720552350492900)
+  - Removed annotation from [eurio:funds](http://data.europa.eu/s66#funds): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relation between the Grant (subject) and the Project (object)."@en
+- <a id="change-720552350509700"></a>**[funds](http://data.europa.eu/s66#funds)** `Remove Annotation from Entity` [permalink](#change-720552350509700)
+  - Removed annotation from [eurio:funds](http://data.europa.eu/s66#funds): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552371277600"></a>**[givenName](http://data.europa.eu/s66#givenName)** `Remove Annotation from Entity` [permalink](#change-720552371277600)
+  - Removed annotation from [eurio:givenName](http://data.europa.eu/s66#givenName): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552371293800"></a>**[givenName](http://data.europa.eu/s66#givenName)** `Remove Annotation from Entity` [permalink](#change-720552371293800)
+  - Removed annotation from [eurio:givenName](http://data.europa.eu/s66#givenName): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition:  Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property."@en
+- <a id="change-720552371307700"></a>**[givenName](http://data.europa.eu/s66#givenName)** `Remove Annotation from Entity` [permalink](#change-720552371307700)
+  - Removed annotation from [eurio:givenName](http://data.europa.eu/s66#givenName): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The given name (first name) of the person."@en
+- <a id="change-720552371319800"></a>**[givenName](http://data.europa.eu/s66#givenName)** `Remove Annotation from Entity` [permalink](#change-720552371319800)
+  - Removed annotation from [eurio:givenName](http://data.europa.eu/s66#givenName): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "given Name"@en
+- <a id="change-720552310476800"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Remove Annotation from Entity` [permalink](#change-720552310476800)
+  - Removed annotation from [eurio:Grant](http://data.europa.eu/s66#Grant): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The class for grant: a disbursed fund paid to a recipient or beneficiary (a Participant) and the process for it."@en
+- <a id="change-720552310938100"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Remove Annotation from Entity` [permalink](#change-720552310938100)
+  - Removed annotation from [eurio:Grant](http://data.europa.eu/s66#Grant): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "A disbursed fund paid to a recipient or beneficiary within the context of a funded research project. In the context of CORDIS, it represents a grant of a specific EU programme (e.g. an H2020 grant)."@en
+- <a id="change-720552311725300"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Remove Annotation from Entity` [permalink](#change-720552311725300)
+  - Removed annotation from [eurio:Grant](http://data.europa.eu/s66#Grant): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552314565700"></a>**[GrantPayment](http://data.europa.eu/s66#GrantPayment)** `Remove Annotation from Entity` [permalink](#change-720552314565700)
+  - Removed annotation from [eurio:GrantPayment](http://data.europa.eu/s66#GrantPayment): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552314786700"></a>**[GrantPayment](http://data.europa.eu/s66#GrantPayment)** `Remove Annotation from Entity` [permalink](#change-720552314786700)
+  - Removed annotation from [eurio:GrantPayment](http://data.europa.eu/s66#GrantPayment): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The class for grant payments: a single payment to a recipient or beneficiary within a Grant."@en
+- <a id="change-720552314904100"></a>**[GrantPayment](http://data.europa.eu/s66#GrantPayment)** `Remove Annotation from Entity` [permalink](#change-720552314904100)
+  - Removed annotation from [eurio:GrantPayment](http://data.europa.eu/s66#GrantPayment): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "A single payment to a recipient or beneficiary of a Grant within a research project."@en
+- <a id="change-720552350533700"></a>**[hasAcronym](http://data.europa.eu/s66#hasAcronym)** `Remove Annotation from Entity` [permalink](#change-720552350533700)
+  - Removed annotation from [eurio:hasAcronym](http://data.europa.eu/s66#hasAcronym): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Acronym"@en
+- <a id="change-720552350551000"></a>**[hasAcronym](http://data.europa.eu/s66#hasAcronym)** `Remove Annotation from Entity` [permalink](#change-720552350551000)
+  - Removed annotation from [eurio:hasAcronym](http://data.europa.eu/s66#hasAcronym): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates an entity (e.g. project, grant, event, etc.) with its acronym(s). This includes acronyms representing the entity’s title as well as any additional acronyms extracted from other attributes of the entity."@en
+- <a id="change-720552350595600"></a>**[hasAcronym](http://data.europa.eu/s66#hasAcronym)** `Remove Annotation from Entity` [permalink](#change-720552350595600)
+  - Removed annotation from [eurio:hasAcronym](http://data.europa.eu/s66#hasAcronym): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "Relates an entity (e.g. project, grant, event, etc.) with its acronym(s). This includes acronyms representing the entity’s title as well as any additional acronyms extracted from other attributes of the entity."@en
+- <a id="change-720552350634100"></a>**[hasAcronym](http://data.europa.eu/s66#hasAcronym)** `Remove Annotation from Entity` [permalink](#change-720552350634100)
+  - Removed annotation from [eurio:hasAcronym](http://data.europa.eu/s66#hasAcronym): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse property of acronymOf"@en
+- <a id="change-720552350697200"></a>**[hasAddress](http://data.europa.eu/s66#hasAddress)** `Remove Annotation from Entity` [permalink](#change-720552350697200)
+  - Removed annotation from [eurio:hasAddress](http://data.europa.eu/s66#hasAddress): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "ORG's definition: Indicates an address for the site in a suitable encoding. Use of a well known address encoding such as the vCard [vcard-rdf] vocabulary is encouraged but the range is left open to allow other encodings to be used. The address may include email, telephone, and geo-location information and is not restricted to a physical address."@en
+- <a id="change-720552350712700"></a>**[hasAddress](http://data.europa.eu/s66#hasAddress)** `Remove Annotation from Entity` [permalink](#change-720552350712700)
+  - Removed annotation from [eurio:hasAddress](http://data.europa.eu/s66#hasAddress): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the office to its office registered address."@en
+- <a id="change-720552350725400"></a>**[hasAddress](http://data.europa.eu/s66#hasAddress)** `Remove Annotation from Entity` [permalink](#change-720552350725400)
+  - Removed annotation from [eurio:hasAddress](http://data.europa.eu/s66#hasAddress): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://www.w3.org/ns/org#"
+- <a id="change-720552350736500"></a>**[hasAddress](http://data.europa.eu/s66#hasAddress)** `Remove Annotation from Entity` [permalink](#change-720552350736500)
+  - Removed annotation from [eurio:hasAddress](http://data.europa.eu/s66#hasAddress): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "Relates the office to its office registered address."@en
+- <a id="change-720552350957600"></a>**[hasBeneficiary](http://data.europa.eu/s66#hasBeneficiary)** `Remove Annotation from Entity` [permalink](#change-720552350957600)
+  - Removed annotation from [eurio:hasBeneficiary](http://data.europa.eu/s66#hasBeneficiary): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relation between the Grant (subject) and a (one of the) person(s) or organisation(s) receiving benefits from it identified by his/her/its role."@en
+- <a id="change-720552351002900"></a>**[hasBeneficiary](http://data.europa.eu/s66#hasBeneficiary)** `Remove Annotation from Entity` [permalink](#change-720552351002900)
+  - Removed annotation from [eurio:hasBeneficiary](http://data.europa.eu/s66#hasBeneficiary): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the grant to the organisation or person role(s) that are a beneficiary of the grant. "@en
+- <a id="change-720552351046300"></a>**[hasBeneficiary](http://data.europa.eu/s66#hasBeneficiary)** `Remove Annotation from Entity` [permalink](#change-720552351046300)
+  - Removed annotation from [eurio:hasBeneficiary](http://data.europa.eu/s66#hasBeneficiary): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Beneficiary"@en
+- <a id="change-720552351062600"></a>**[hasBeneficiary](http://data.europa.eu/s66#hasBeneficiary)** `Remove Annotation from Entity` [permalink](#change-720552351062600)
+  - Removed annotation from [eurio:hasBeneficiary](http://data.europa.eu/s66#hasBeneficiary): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552351080400"></a>**[hasBeneficiary](http://data.europa.eu/s66#hasBeneficiary)** `Remove Annotation from Entity` [permalink](#change-720552351080400)
+  - Removed annotation from [eurio:hasBeneficiary](http://data.europa.eu/s66#hasBeneficiary): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse of beneficiaryOf."@en
+- <a id="change-720552351121400"></a>**[hasContactDetails](http://data.europa.eu/s66#hasContactDetails)** `Remove Annotation from Entity` [permalink](#change-720552351121400)
+  - Removed annotation from [eurio:hasContactDetails](http://data.europa.eu/s66#hasContactDetails): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Contact Details"@en
+- <a id="change-720552351279000"></a>**[hasContactDetails](http://data.europa.eu/s66#hasContactDetails)** `Remove Annotation from Entity` [permalink](#change-720552351279000)
+  - Removed annotation from [eurio:hasContactDetails](http://data.europa.eu/s66#hasContactDetails): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the role to the contact details of the entity taking the role (person or organisation) which are valid during the project of which the role forms a part."@en
+- <a id="change-720552351328800"></a>**[hasCoordinates](http://data.europa.eu/s66#hasCoordinates)** `Remove Annotation from Entity` [permalink](#change-720552351328800)
+  - Removed annotation from [eurio:hasCoordinates](http://data.europa.eu/s66#hasCoordinates): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"@en
+- <a id="change-720552351355500"></a>**[hasCoordinates](http://data.europa.eu/s66#hasCoordinates)** `Remove Annotation from Entity` [permalink](#change-720552351355500)
+  - Removed annotation from [eurio:hasCoordinates](http://data.europa.eu/s66#hasCoordinates): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Coordinates"@en
+- <a id="change-720552351370300"></a>**[hasCoordinates](http://data.europa.eu/s66#hasCoordinates)** `Remove Annotation from Entity` [permalink](#change-720552351370300)
+  - Removed annotation from [eurio:hasCoordinates](http://data.europa.eu/s66#hasCoordinates): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The numerical coordinates of a place"@en
+- <a id="change-720552351383900"></a>**[hasCoordinates](http://data.europa.eu/s66#hasCoordinates)** `Remove Annotation from Entity` [permalink](#change-720552351383900)
+  - Removed annotation from [eurio:hasCoordinates](http://data.europa.eu/s66#hasCoordinates): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "The numerical coordinates of a place"@en
+- <a id="change-720552351448000"></a>**[hasEUCountryCode](http://data.europa.eu/s66#hasEUCountryCode)** `Remove Annotation from Entity` [permalink](#change-720552351448000)
+  - Removed annotation from [eurio:hasEUCountryCode](http://data.europa.eu/s66#hasEUCountryCode): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has EU Country Code"@en
+- <a id="change-720552351463100"></a>**[hasEUCountryCode](http://data.europa.eu/s66#hasEUCountryCode)** `Remove Annotation from Entity` [permalink](#change-720552351463100)
+  - Removed annotation from [eurio:hasEUCountryCode](http://data.europa.eu/s66#hasEUCountryCode): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The country code of the location or address according to the EU country codes."@en
+- <a id="change-720552351493800"></a>**[hasEuroSciVocClassification](http://data.europa.eu/s66#hasEuroSciVocClassification)** `Remove Annotation from Entity` [permalink](#change-720552351493800)
+  - Removed annotation from [eurio:hasEuroSciVocClassification](http://data.europa.eu/s66#hasEuroSciVocClassification): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "One or more values from the EuroSciVoc taxonomy that represent the main fields of science of the project."@en
+- <a id="change-720552351512800"></a>**[hasEuroSciVocClassification](http://data.europa.eu/s66#hasEuroSciVocClassification)** `Remove Annotation from Entity` [permalink](#change-720552351512800)
+  - Removed annotation from [eurio:hasEuroSciVocClassification](http://data.europa.eu/s66#hasEuroSciVocClassification): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has EuroSciVoc Classification"@en
+- <a id="change-720552351525700"></a>**[hasEuroSciVocClassification](http://data.europa.eu/s66#hasEuroSciVocClassification)** `Remove Annotation from Entity` [permalink](#change-720552351525700)
+  - Removed annotation from [eurio:hasEuroSciVocClassification](http://data.europa.eu/s66#hasEuroSciVocClassification): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552351583200"></a>**[hasFundingAmount](http://data.europa.eu/s66#hasFundingAmount)** `Remove Annotation from Entity` [permalink](#change-720552351583200)
+  - Removed annotation from [eurio:hasFundingAmount](http://data.europa.eu/s66#hasFundingAmount): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the grant or funding scheme to the amount of money available for funding."@en
+- <a id="change-720552351606800"></a>**[hasFundingAmount](http://data.europa.eu/s66#hasFundingAmount)** `Remove Annotation from Entity` [permalink](#change-720552351606800)
+  - Removed annotation from [eurio:hasFundingAmount](http://data.europa.eu/s66#hasFundingAmount): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Funding Amount"@en
+- <a id="change-720552351622300"></a>**[hasFundingAmount](http://data.europa.eu/s66#hasFundingAmount)** `Remove Annotation from Entity` [permalink](#change-720552351622300)
+  - Removed annotation from [eurio:hasFundingAmount](http://data.europa.eu/s66#hasFundingAmount): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: Amount in a specific currency (relationship between the item and a value expressed in a currency unit)."@en
+- <a id="change-720552351634000"></a>**[hasFundingAmount](http://data.europa.eu/s66#hasFundingAmount)** `Remove Annotation from Entity` [permalink](#change-720552351634000)
+  - Removed annotation from [eurio:hasFundingAmount](http://data.europa.eu/s66#hasFundingAmount): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552351673500"></a>**[hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme)** `Remove Annotation from Entity` [permalink](#change-720552351673500)
+  - Removed annotation from [eurio:hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse property of grant"@en
+- <a id="change-720552351687000"></a>**[hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme)** `Remove Annotation from Entity` [permalink](#change-720552351687000)
+  - Removed annotation from [eurio:hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relationship between the grant (subject) and the decision, plan, program (object) that the grant is the concrete realisation of."@en
+- <a id="change-720552351700500"></a>**[hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme)** `Remove Annotation from Entity` [permalink](#change-720552351700500)
+  - Removed annotation from [eurio:hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Funding Scheme"@en
+- <a id="change-720552351712600"></a>**[hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme)** `Remove Annotation from Entity` [permalink](#change-720552351712600)
+  - Removed annotation from [eurio:hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the grant to the funding scheme of which the grant forms a part."@en
+- <a id="change-720552351724200"></a>**[hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme)** `Remove Annotation from Entity` [permalink](#change-720552351724200)
+  - Removed annotation from [eurio:hasFundingScheme](http://data.europa.eu/s66#hasFundingScheme): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552351760800"></a>**[hasFundingSchemeCategory](http://data.europa.eu/s66#hasFundingSchemeCategory)** `Remove Annotation from Entity` [permalink](#change-720552351760800)
+  - Removed annotation from [eurio:hasFundingSchemeCategory](http://data.europa.eu/s66#hasFundingSchemeCategory): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "A list of terms specifying the different categories / types of funding schemes."@en
+- <a id="change-720552351776000"></a>**[hasFundingSchemeCategory](http://data.europa.eu/s66#hasFundingSchemeCategory)** `Remove Annotation from Entity` [permalink](#change-720552351776000)
+  - Removed annotation from [eurio:hasFundingSchemeCategory](http://data.europa.eu/s66#hasFundingSchemeCategory): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Funding Scheme Category"@en
+- <a id="change-720552351799900"></a>**[hasGeographicalLocation](http://data.europa.eu/s66#hasGeographicalLocation)** `Remove Annotation from Entity` [permalink](#change-720552351799900)
+  - Removed annotation from [eurio:hasGeographicalLocation](http://data.europa.eu/s66#hasGeographicalLocation): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Geographical Location"@en
+- <a id="change-720552351823900"></a>**[hasGeographicalLocation](http://data.europa.eu/s66#hasGeographicalLocation)** `Remove Annotation from Entity` [permalink](#change-720552351823900)
+  - Removed annotation from [eurio:hasGeographicalLocation](http://data.europa.eu/s66#hasGeographicalLocation): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "The basic containment relation between a place and one that contains it"@en
+- <a id="change-720552351840300"></a>**[hasGeographicalLocation](http://data.europa.eu/s66#hasGeographicalLocation)** `Remove Annotation from Entity` [permalink](#change-720552351840300)
+  - Removed annotation from [eurio:hasGeographicalLocation](http://data.europa.eu/s66#hasGeographicalLocation): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"@en
+- <a id="change-720552351854000"></a>**[hasGeographicalLocation](http://data.europa.eu/s66#hasGeographicalLocation)** `Remove Annotation from Entity` [permalink](#change-720552351854000)
+  - Removed annotation from [eurio:hasGeographicalLocation](http://data.europa.eu/s66#hasGeographicalLocation): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The basic containment relation between a place and one that contains it"@en
+- <a id="change-720552351892100"></a>**[hasGrant](http://data.europa.eu/s66#hasGrant)** `Remove Annotation from Entity` [permalink](#change-720552351892100)
+  - Removed annotation from [eurio:hasGrant](http://data.europa.eu/s66#hasGrant): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relationship between the decision, plan, program (subject) and the grant (object) that the grant is the concrete realisation of."@en
+- <a id="change-720552351910400"></a>**[hasGrant](http://data.europa.eu/s66#hasGrant)** `Remove Annotation from Entity` [permalink](#change-720552351910400)
+  - Removed annotation from [eurio:hasGrant](http://data.europa.eu/s66#hasGrant): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Grant"@en
+- <a id="change-720552351922700"></a>**[hasGrant](http://data.europa.eu/s66#hasGrant)** `Remove Annotation from Entity` [permalink](#change-720552351922700)
+  - Removed annotation from [eurio:hasGrant](http://data.europa.eu/s66#hasGrant): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates a funding scheme with the grants that form part of it. "@en
+- <a id="change-720552351948800"></a>**[hasGrant](http://data.europa.eu/s66#hasGrant)** `Remove Annotation from Entity` [permalink](#change-720552351948800)
+  - Removed annotation from [eurio:hasGrant](http://data.europa.eu/s66#hasGrant): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse property of fundingScheme"@en
+- <a id="change-720552351970800"></a>**[hasGrant](http://data.europa.eu/s66#hasGrant)** `Remove Annotation from Entity` [permalink](#change-720552351970800)
+  - Removed annotation from [eurio:hasGrant](http://data.europa.eu/s66#hasGrant): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552352019500"></a>**[hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty)** `Remove Annotation from Entity` [permalink](#change-720552352019500)
+  - Removed annotation from [eurio:hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552352038000"></a>**[hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty)** `Remove Annotation from Entity` [permalink](#change-720552352038000)
+  - Removed annotation from [eurio:hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the Project or Project Division to the roles that are involved in the project."@en
+- <a id="change-720552352055400"></a>**[hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty)** `Remove Annotation from Entity` [permalink](#change-720552352055400)
+  - Removed annotation from [eurio:hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "Relates the Project or Project Division to the roles that are involved in the project."@en
+- <a id="change-720552352072200"></a>**[hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty)** `Remove Annotation from Entity` [permalink](#change-720552352072200)
+  - Removed annotation from [eurio:hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relation between the Project (subject) and a (one of the) person(s) or organisation(s) contributing to or taking part in it identified by his/her/its role."@en
+- <a id="change-720552352088100"></a>**[hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty)** `Remove Annotation from Entity` [permalink](#change-720552352088100)
+  - Removed annotation from [eurio:hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse of involvedIn."@en
+- <a id="change-720552352114600"></a>**[hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty)** `Remove Annotation from Entity` [permalink](#change-720552352114600)
+  - Removed annotation from [eurio:hasInvolvedParty](http://data.europa.eu/s66#hasInvolvedParty): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Involved Party"@en
+- <a id="change-720552352192100"></a>**[hasNUTSCode](http://data.europa.eu/s66#hasNUTSCode)** `Remove Annotation from Entity` [permalink](#change-720552352192100)
+  - Removed annotation from [eurio:hasNUTSCode](http://data.europa.eu/s66#hasNUTSCode): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "A PropertyValue pair representing the NUTS-2 or NUTS-3 code of the place or address."@en
+- <a id="change-720552352210900"></a>**[hasNUTSCode](http://data.europa.eu/s66#hasNUTSCode)** `Remove Annotation from Entity` [permalink](#change-720552352210900)
+  - Removed annotation from [eurio:hasNUTSCode](http://data.europa.eu/s66#hasNUTSCode): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "A PropertyValue pair representing the NUTS-2 or NUTS-3 code of the place or address."@en
+- <a id="change-720552352227900"></a>**[hasNUTSCode](http://data.europa.eu/s66#hasNUTSCode)** `Remove Annotation from Entity` [permalink](#change-720552352227900)
+  - Removed annotation from [eurio:hasNUTSCode](http://data.europa.eu/s66#hasNUTSCode): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has NUTS Code"@en
+- <a id="change-720552352284000"></a>**[hasPayment](http://data.europa.eu/s66#hasPayment)** `Remove Annotation from Entity` [permalink](#change-720552352284000)
+  - Removed annotation from [eurio:hasPayment](http://data.europa.eu/s66#hasPayment): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the grant to its payment(s)."@en
+- <a id="change-720552352379800"></a>**[hasPayment](http://data.europa.eu/s66#hasPayment)** `Remove Annotation from Entity` [permalink](#change-720552352379800)
+  - Removed annotation from [eurio:hasPayment](http://data.europa.eu/s66#hasPayment): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Payment"@en
+- <a id="change-720552352486100"></a>**[hasPayment](http://data.europa.eu/s66#hasPayment)** `Remove Annotation from Entity` [permalink](#change-720552352486100)
+  - Removed annotation from [eurio:hasPayment](http://data.europa.eu/s66#hasPayment): [skos:note](http://www.w3.org/2004/02/skos/core#note) = " Inverse of isPaymentOf."@en
+- <a id="change-720552352564900"></a>**[hasPayment](http://data.europa.eu/s66#hasPayment)** `Remove Annotation from Entity` [permalink](#change-720552352564900)
+  - Removed annotation from [eurio:hasPayment](http://data.europa.eu/s66#hasPayment): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relation between a superset and its direct subset(s). Indicates an item that is a part (also in generalised sense) of the subject item."@en
+- <a id="change-720552352605000"></a>**[hasPayment](http://data.europa.eu/s66#hasPayment)** `Remove Annotation from Entity` [permalink](#change-720552352605000)
+  - Removed annotation from [eurio:hasPayment](http://data.europa.eu/s66#hasPayment): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552352741300"></a>**[hasPaymentAmount](http://data.europa.eu/s66#hasPaymentAmount)** `Remove Annotation from Entity` [permalink](#change-720552352741300)
+  - Removed annotation from [eurio:hasPaymentAmount](http://data.europa.eu/s66#hasPaymentAmount): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552352784300"></a>**[hasPaymentAmount](http://data.europa.eu/s66#hasPaymentAmount)** `Remove Annotation from Entity` [permalink](#change-720552352784300)
+  - Removed annotation from [eurio:hasPaymentAmount](http://data.europa.eu/s66#hasPaymentAmount): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: Amount in a specific currency (relationship between the item and a value expressed in a currency unit)."@en
+- <a id="change-720552352829600"></a>**[hasPaymentAmount](http://data.europa.eu/s66#hasPaymentAmount)** `Remove Annotation from Entity` [permalink](#change-720552352829600)
+  - Removed annotation from [eurio:hasPaymentAmount](http://data.europa.eu/s66#hasPaymentAmount): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the payment to the amount of money that was given to the beneficiary of the payment."@en
+- <a id="change-720552352869900"></a>**[hasPaymentAmount](http://data.europa.eu/s66#hasPaymentAmount)** `Remove Annotation from Entity` [permalink](#change-720552352869900)
+  - Removed annotation from [eurio:hasPaymentAmount](http://data.europa.eu/s66#hasPaymentAmount): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Payment Amount"@en
+- <a id="change-720552352990300"></a>**[hasRecipient](http://data.europa.eu/s66#hasRecipient)** `Remove Annotation from Entity` [permalink](#change-720552352990300)
+  - Removed annotation from [eurio:hasRecipient](http://data.europa.eu/s66#hasRecipient): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Relates the grant payment to the organisation or person role(s) which have received the grant payment. Inverse property of isRecipientOf."@en
+- <a id="change-720552353031700"></a>**[hasRecipient](http://data.europa.eu/s66#hasRecipient)** `Remove Annotation from Entity` [permalink](#change-720552353031700)
+  - Removed annotation from [eurio:hasRecipient](http://data.europa.eu/s66#hasRecipient): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Recipient"@en
+- <a id="change-720552353103600"></a>**[hasRelatedProject](http://data.europa.eu/s66#hasRelatedProject)** `Remove Annotation from Entity` [permalink](#change-720552353103600)
+  - Removed annotation from [eurio:hasRelatedProject](http://data.europa.eu/s66#hasRelatedProject): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Related Project"@en
+- <a id="change-720552353147600"></a>**[hasRelatedProject](http://data.europa.eu/s66#hasRelatedProject)** `Remove Annotation from Entity` [permalink](#change-720552353147600)
+  - Removed annotation from [eurio:hasRelatedProject](http://data.europa.eu/s66#hasRelatedProject): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Represents a generic non parent-child relation between two CORDIS projects."@en
+- <a id="change-720552353227000"></a>**[hasRelatedScheme](http://data.europa.eu/s66#hasRelatedScheme)** `Remove Annotation from Entity` [permalink](#change-720552353227000)
+  - Removed annotation from [eurio:hasRelatedScheme](http://data.europa.eu/s66#hasRelatedScheme): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Represents a generic non parent-child relation between two funding schemes."@en
+- <a id="change-720552353280100"></a>**[hasRelatedScheme](http://data.europa.eu/s66#hasRelatedScheme)** `Remove Annotation from Entity` [permalink](#change-720552353280100)
+  - Removed annotation from [eurio:hasRelatedScheme](http://data.europa.eu/s66#hasRelatedScheme): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Related Scheme"@en
+- <a id="change-720552353317000"></a>**[hasRelatedScheme](http://data.europa.eu/s66#hasRelatedScheme)** `Remove Annotation from Entity` [permalink](#change-720552353317000)
+  - Removed annotation from [eurio:hasRelatedScheme](http://data.europa.eu/s66#hasRelatedScheme): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552353463300"></a>**[hasResult](http://data.europa.eu/s66#hasResult)** `Remove Annotation from Entity` [permalink](#change-720552353463300)
+  - Removed annotation from [eurio:hasResult](http://data.europa.eu/s66#hasResult): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the project with its result(s). For the project division, Relates the project division to the result(s) stemming from the work contained in the division."@en
+- <a id="change-720552353506800"></a>**[hasResult](http://data.europa.eu/s66#hasResult)** `Remove Annotation from Entity` [permalink](#change-720552353506800)
+  - Removed annotation from [eurio:hasResult](http://data.europa.eu/s66#hasResult): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "Relates the project with its result(s). For the project division, Relates the project division to the result(s) stemming from the work contained in the division. "@en
+- <a id="change-720552353541300"></a>**[hasResult](http://data.europa.eu/s66#hasResult)** `Remove Annotation from Entity` [permalink](#change-720552353541300)
+  - Removed annotation from [eurio:hasResult](http://data.europa.eu/s66#hasResult): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Result"@en
+- <a id="change-720552353573700"></a>**[hasResult](http://data.europa.eu/s66#hasResult)** `Remove Annotation from Entity` [permalink](#change-720552353573700)
+  - Removed annotation from [eurio:hasResult](http://data.europa.eu/s66#hasResult): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse of resultOf."@en
+- <a id="change-720552354047800"></a>**[hasResult](http://data.europa.eu/s66#hasResult)** `Remove Annotation from Entity` [permalink](#change-720552354047800)
+  - Removed annotation from [eurio:hasResult](http://data.europa.eu/s66#hasResult): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552354133900"></a>**[hasResult](http://data.europa.eu/s66#hasResult)** `Remove Annotation from Entity` [permalink](#change-720552354133900)
+  - Removed annotation from [eurio:hasResult](http://data.europa.eu/s66#hasResult): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: Material, product or outcome produced by a Project."@en
+- <a id="change-720552354613800"></a>**[hasResultType](http://data.europa.eu/s66#hasResultType)** `Remove Annotation from Entity` [permalink](#change-720552354613800)
+  - Removed annotation from [eurio:hasResultType](http://data.europa.eu/s66#hasResultType): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "A list of terms specifying the types of results that can have a project."@en
+- <a id="change-720552354634900"></a>**[hasResultType](http://data.europa.eu/s66#hasResultType)** `Remove Annotation from Entity` [permalink](#change-720552354634900)
+  - Removed annotation from [eurio:hasResultType](http://data.europa.eu/s66#hasResultType): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Result Type"@en
+- <a id="change-720552354681800"></a>**[hasRole](http://data.europa.eu/s66#hasRole)** `Remove Annotation from Entity` [permalink](#change-720552354681800)
+  - Removed annotation from [eurio:hasRole](http://data.europa.eu/s66#hasRole): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Role"@en
+- <a id="change-720552354702700"></a>**[hasRole](http://data.europa.eu/s66#hasRole)** `Remove Annotation from Entity` [permalink](#change-720552354702700)
+  - Removed annotation from [eurio:hasRole](http://data.europa.eu/s66#hasRole): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552354715300"></a>**[hasRole](http://data.europa.eu/s66#hasRole)** `Remove Annotation from Entity` [permalink](#change-720552354715300)
+  - Removed annotation from [eurio:hasRole](http://data.europa.eu/s66#hasRole): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the person/organisation to the roles that the person/organisation takes."@en
+- <a id="change-720552354729600"></a>**[hasRole](http://data.europa.eu/s66#hasRole)** `Remove Annotation from Entity` [permalink](#change-720552354729600)
+  - Removed annotation from [eurio:hasRole](http://data.europa.eu/s66#hasRole): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The person or organisation or entity (object) assuming or to whom is assigned the role (subject)."@en
+- <a id="change-720552354801200"></a>**[hasSite](http://data.europa.eu/s66#hasSite)** `Remove Annotation from Entity` [permalink](#change-720552354801200)
+  - Removed annotation from [eurio:hasSite](http://data.europa.eu/s66#hasSite): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "relates an organisation to its physical site"@en
+- <a id="change-720552354817500"></a>**[hasSite](http://data.europa.eu/s66#hasSite)** `Remove Annotation from Entity` [permalink](#change-720552354817500)
+  - Removed annotation from [eurio:hasSite](http://data.europa.eu/s66#hasSite): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://www.w3.org/ns/org#"@en
+- <a id="change-720552354831100"></a>**[hasSite](http://data.europa.eu/s66#hasSite)** `Remove Annotation from Entity` [permalink](#change-720552354831100)
+  - Removed annotation from [eurio:hasSite](http://data.europa.eu/s66#hasSite): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Site"@en
+- <a id="change-720552354981500"></a>**[hasSubOrganisation](http://data.europa.eu/s66#hasSubOrganisation)** `Remove Annotation from Entity` [permalink](#change-720552354981500)
+  - Removed annotation from [eurio:hasSubOrganisation](http://data.europa.eu/s66#hasSubOrganisation): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has subOrganisation"@en
+- <a id="change-720552354996700"></a>**[hasSubOrganisation](http://data.europa.eu/s66#hasSubOrganisation)** `Remove Annotation from Entity` [permalink](#change-720552354996700)
+  - Removed annotation from [eurio:hasSubOrganisation](http://data.europa.eu/s66#hasSubOrganisation): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "ORG's definition: Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an organization which is a sub-part or child of this organization."@en
+- <a id="change-720552355009700"></a>**[hasSubOrganisation](http://data.europa.eu/s66#hasSubOrganisation)** `Remove Annotation from Entity` [permalink](#change-720552355009700)
+  - Removed annotation from [eurio:hasSubOrganisation](http://data.europa.eu/s66#hasSubOrganisation): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://www.w3.org/ns/org#"
+- <a id="change-720552355019800"></a>**[hasSubOrganisation](http://data.europa.eu/s66#hasSubOrganisation)** `Remove Annotation from Entity` [permalink](#change-720552355019800)
+  - Removed annotation from [eurio:hasSubOrganisation](http://data.europa.eu/s66#hasSubOrganisation): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the organisation with another organisation which is a sub-part or child of it."@en
+- <a id="change-720552355059900"></a>**[hasSubScheme](http://data.europa.eu/s66#hasSubScheme)** `Remove Annotation from Entity` [permalink](#change-720552355059900)
+  - Removed annotation from [eurio:hasSubScheme](http://data.europa.eu/s66#hasSubScheme): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552355072800"></a>**[hasSubScheme](http://data.europa.eu/s66#hasSubScheme)** `Remove Annotation from Entity` [permalink](#change-720552355072800)
+  - Removed annotation from [eurio:hasSubScheme](http://data.europa.eu/s66#hasSubScheme): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relation between a superset and its direct subset(s). Indicates an item that is a part (also in generalised sense) of the subject item."@en
+- <a id="change-720552355096700"></a>**[hasSubScheme](http://data.europa.eu/s66#hasSubScheme)** `Remove Annotation from Entity` [permalink](#change-720552355096700)
+  - Removed annotation from [eurio:hasSubScheme](http://data.europa.eu/s66#hasSubScheme): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has SubScheme"@en
+- <a id="change-720552355131000"></a>**[hasSubScheme](http://data.europa.eu/s66#hasSubScheme)** `Remove Annotation from Entity` [permalink](#change-720552355131000)
+  - Removed annotation from [eurio:hasSubScheme](http://data.europa.eu/s66#hasSubScheme): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the funding scheme to its sub-schemes."@en
+- <a id="change-720552355238500"></a>**[hasTotalCost](http://data.europa.eu/s66#hasTotalCost)** `Remove Annotation from Entity` [permalink](#change-720552355238500)
+  - Removed annotation from [eurio:hasTotalCost](http://data.europa.eu/s66#hasTotalCost): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Total Cost"@en
+- <a id="change-720552355257300"></a>**[hasTotalCost](http://data.europa.eu/s66#hasTotalCost)** `Remove Annotation from Entity` [permalink](#change-720552355257300)
+  - Removed annotation from [eurio:hasTotalCost](http://data.europa.eu/s66#hasTotalCost): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552355267200"></a>**[hasTotalCost](http://data.europa.eu/s66#hasTotalCost)** `Remove Annotation from Entity` [permalink](#change-720552355267200)
+  - Removed annotation from [eurio:hasTotalCost](http://data.europa.eu/s66#hasTotalCost): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: Amount of money necessary or planned for a determined project/activity."@en
+- <a id="change-720552355287300"></a>**[hasTotalCost](http://data.europa.eu/s66#hasTotalCost)** `Remove Annotation from Entity` [permalink](#change-720552355287300)
+  - Removed annotation from [eurio:hasTotalCost](http://data.europa.eu/s66#hasTotalCost): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the project with the amount of money expected, required, or given in payment for the project."@en
+- <a id="change-720552355324900"></a>**[hasUnit](http://data.europa.eu/s66#hasUnit)** `Remove Annotation from Entity` [permalink](#change-720552355324900)
+  - Removed annotation from [eurio:hasUnit](http://data.europa.eu/s66#hasUnit): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "ORG's definition: Indicates a unit which is part of this Organization, e.g. a Department within a larger Organization."@en
+- <a id="change-720552355397400"></a>**[hasUnit](http://data.europa.eu/s66#hasUnit)** `Remove Annotation from Entity` [permalink](#change-720552355397400)
+  - Removed annotation from [eurio:hasUnit](http://data.europa.eu/s66#hasUnit): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has Unit"@en
+- <a id="change-720552355419900"></a>**[hasUnit](http://data.europa.eu/s66#hasUnit)** `Remove Annotation from Entity` [permalink](#change-720552355419900)
+  - Removed annotation from [eurio:hasUnit](http://data.europa.eu/s66#hasUnit): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the organisation with a unit or department that forms part of the organisation."@en
+- <a id="change-720552355435900"></a>**[hasUnit](http://data.europa.eu/s66#hasUnit)** `Remove Annotation from Entity` [permalink](#change-720552355435900)
+  - Removed annotation from [eurio:hasUnit](http://data.europa.eu/s66#hasUnit): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://www.w3.org/ns/org#"
+- <a id="change-720552371360300"></a>**[honorificTitle](http://data.europa.eu/s66#honorificTitle)** `Remove Annotation from Entity` [permalink](#change-720552371360300)
+  - Removed annotation from [eurio:honorificTitle](http://data.europa.eu/s66#honorificTitle): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "honorific Title"@en
+- <a id="change-720552371374500"></a>**[honorificTitle](http://data.europa.eu/s66#honorificTitle)** `Remove Annotation from Entity` [permalink](#change-720552371374500)
+  - Removed annotation from [eurio:honorificTitle](http://data.europa.eu/s66#honorificTitle): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "An honorific prefix preceding a Person's name such as Dr, Mrs, Mr."@en
+- <a id="change-720552371391400"></a>**[honorificTitle](http://data.europa.eu/s66#honorificTitle)** `Remove Annotation from Entity` [permalink](#change-720552371391400)
+  - Removed annotation from [eurio:honorificTitle](http://data.europa.eu/s66#honorificTitle): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: An honorific prefix preceding a Person's name such as Dr/Mrs/Mr."@en
+- <a id="change-720552371407000"></a>**[honorificTitle](http://data.europa.eu/s66#honorificTitle)** `Remove Annotation from Entity` [permalink](#change-720552371407000)
+  - Removed annotation from [eurio:honorificTitle](http://data.europa.eu/s66#honorificTitle): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552355491400"></a>**[implements](http://data.europa.eu/s66#implements)** `Remove Annotation from Entity` [permalink](#change-720552355491400)
+  - Removed annotation from [eurio:implements](http://data.europa.eu/s66#implements): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relationship between the funding agency (subject) and the decision, plan, program (object) that the funding agency implements and administers."@en
+- <a id="change-720552355509500"></a>**[implements](http://data.europa.eu/s66#implements)** `Remove Annotation from Entity` [permalink](#change-720552355509500)
+  - Removed annotation from [eurio:implements](http://data.europa.eu/s66#implements): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates a funding agency to the funding schemes that it implements and administers."@en
+- <a id="change-720552355523400"></a>**[implements](http://data.europa.eu/s66#implements)** `Remove Annotation from Entity` [permalink](#change-720552355523400)
+  - Removed annotation from [eurio:implements](http://data.europa.eu/s66#implements): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552355550500"></a>**[isAcronymOf](http://data.europa.eu/s66#isAcronymOf)** `Remove Annotation from Entity` [permalink](#change-720552355550500)
+  - Removed annotation from [eurio:isAcronymOf](http://data.europa.eu/s66#isAcronymOf): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse property of acronym."@en
+- <a id="change-720552355571800"></a>**[isAcronymOf](http://data.europa.eu/s66#isAcronymOf)** `Remove Annotation from Entity` [permalink](#change-720552355571800)
+  - Removed annotation from [eurio:isAcronymOf](http://data.europa.eu/s66#isAcronymOf): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the acronym to the entity or entities to which it belongs."@en
+- <a id="change-720552355586500"></a>**[isAcronymOf](http://data.europa.eu/s66#isAcronymOf)** `Remove Annotation from Entity` [permalink](#change-720552355586500)
+  - Removed annotation from [eurio:isAcronymOf](http://data.europa.eu/s66#isAcronymOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is Acronym Of"@en
+- <a id="change-720552355611400"></a>**[isBeneficiaryOf](http://data.europa.eu/s66#isBeneficiaryOf)** `Remove Annotation from Entity` [permalink](#change-720552355611400)
+  - Removed annotation from [eurio:isBeneficiaryOf](http://data.europa.eu/s66#isBeneficiaryOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is Beneficiary Of"@en
+- <a id="change-720552355624900"></a>**[isBeneficiaryOf](http://data.europa.eu/s66#isBeneficiaryOf)** `Remove Annotation from Entity` [permalink](#change-720552355624900)
+  - Removed annotation from [eurio:isBeneficiaryOf](http://data.europa.eu/s66#isBeneficiaryOf): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse of beneficiary."@en
+- <a id="change-720552355637800"></a>**[isBeneficiaryOf](http://data.europa.eu/s66#isBeneficiaryOf)** `Remove Annotation from Entity` [permalink](#change-720552355637800)
+  - Removed annotation from [eurio:isBeneficiaryOf](http://data.europa.eu/s66#isBeneficiaryOf): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relation between a (one of the) person(s) or organisation(s) receiving benefits from a Grant identified by his/her/its role (subject), and the Grant."@en
+- <a id="change-720552355651300"></a>**[isBeneficiaryOf](http://data.europa.eu/s66#isBeneficiaryOf)** `Remove Annotation from Entity` [permalink](#change-720552355651300)
+  - Removed annotation from [eurio:isBeneficiaryOf](http://data.europa.eu/s66#isBeneficiaryOf): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the role to the grant(s) of which the role is a beneficiary."@en
+- <a id="change-720552355664300"></a>**[isBeneficiaryOf](http://data.europa.eu/s66#isBeneficiaryOf)** `Remove Annotation from Entity` [permalink](#change-720552355664300)
+  - Removed annotation from [eurio:isBeneficiaryOf](http://data.europa.eu/s66#isBeneficiaryOf): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552355702100"></a>**[isDisbursedBy](http://data.europa.eu/s66#isDisbursedBy)** `Remove Annotation from Entity` [permalink](#change-720552355702100)
+  - Removed annotation from [eurio:isDisbursedBy](http://data.europa.eu/s66#isDisbursedBy): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relation between the disbursed grant (subject) and the funding agency (object)."@en
+- <a id="change-720552355719000"></a>**[isDisbursedBy](http://data.europa.eu/s66#isDisbursedBy)** `Remove Annotation from Entity` [permalink](#change-720552355719000)
+  - Removed annotation from [eurio:isDisbursedBy](http://data.europa.eu/s66#isDisbursedBy): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552355730000"></a>**[isDisbursedBy](http://data.europa.eu/s66#isDisbursedBy)** `Remove Annotation from Entity` [permalink](#change-720552355730000)
+  - Removed annotation from [eurio:isDisbursedBy](http://data.europa.eu/s66#isDisbursedBy): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is Disbursed By"@en
+- <a id="change-720552355742500"></a>**[isDisbursedBy](http://data.europa.eu/s66#isDisbursedBy)** `Remove Annotation from Entity` [permalink](#change-720552355742500)
+  - Removed annotation from [eurio:isDisbursedBy](http://data.europa.eu/s66#isDisbursedBy): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse of disburses."@en
+- <a id="change-720552355754300"></a>**[isDisbursedBy](http://data.europa.eu/s66#isDisbursedBy)** `Remove Annotation from Entity` [permalink](#change-720552355754300)
+  - Removed annotation from [eurio:isDisbursedBy](http://data.europa.eu/s66#isDisbursedBy): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the grant to the funding agency that disburses the grant."@en
+- <a id="change-720552355790300"></a>**[isEmployedBy](http://data.europa.eu/s66#isEmployedBy)** `Remove Annotation from Entity` [permalink](#change-720552355790300)
+  - Removed annotation from [eurio:isEmployedBy](http://data.europa.eu/s66#isEmployedBy): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552355800700"></a>**[isEmployedBy](http://data.europa.eu/s66#isEmployedBy)** `Remove Annotation from Entity` [permalink](#change-720552355800700)
+  - Removed annotation from [eurio:isEmployedBy](http://data.europa.eu/s66#isEmployedBy): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the person role to the organisation in which the person holding the role is employed during the project."@en
+- <a id="change-720552355811700"></a>**[isEmployedBy](http://data.europa.eu/s66#isEmployedBy)** `Remove Annotation from Entity` [permalink](#change-720552355811700)
+  - Removed annotation from [eurio:isEmployedBy](http://data.europa.eu/s66#isEmployedBy): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is Employed By"@en
+- <a id="change-720552355842200"></a>**[isEmployedBy](http://data.europa.eu/s66#isEmployedBy)** `Remove Annotation from Entity` [permalink](#change-720552355842200)
+  - Removed annotation from [eurio:isEmployedBy](http://data.europa.eu/s66#isEmployedBy): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: A person or company that provides a job (possibly paying wages or a salary) to the person taking the role."@en
+- <a id="change-720552355894400"></a>**[isFundedBy](http://data.europa.eu/s66#isFundedBy)** `Remove Annotation from Entity` [permalink](#change-720552355894400)
+  - Removed annotation from [eurio:isFundedBy](http://data.europa.eu/s66#isFundedBy): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552355934900"></a>**[isFundedBy](http://data.europa.eu/s66#isFundedBy)** `Remove Annotation from Entity` [permalink](#change-720552355934900)
+  - Removed annotation from [eurio:isFundedBy](http://data.europa.eu/s66#isFundedBy): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse property of funds."@en
+- <a id="change-720552355951100"></a>**[isFundedBy](http://data.europa.eu/s66#isFundedBy)** `Remove Annotation from Entity` [permalink](#change-720552355951100)
+  - Removed annotation from [eurio:isFundedBy](http://data.europa.eu/s66#isFundedBy): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relation between the Grant (subject) and the Project (object)."@en
+- <a id="change-720552355964700"></a>**[isFundedBy](http://data.europa.eu/s66#isFundedBy)** `Remove Annotation from Entity` [permalink](#change-720552355964700)
+  - Removed annotation from [eurio:isFundedBy](http://data.europa.eu/s66#isFundedBy): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is Funded By"@en
+- <a id="change-720552355977700"></a>**[isFundedBy](http://data.europa.eu/s66#isFundedBy)** `Remove Annotation from Entity` [permalink](#change-720552355977700)
+  - Removed annotation from [eurio:isFundedBy](http://data.europa.eu/s66#isFundedBy): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the project with the grant(s) that completely or partially fund the project."@en
+- <a id="change-720552356016900"></a>**[isImplementedBy](http://data.europa.eu/s66#isImplementedBy)** `Remove Annotation from Entity` [permalink](#change-720552356016900)
+  - Removed annotation from [eurio:isImplementedBy](http://data.europa.eu/s66#isImplementedBy): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relationship between the decision, plan, program (subject) and the funding agency (object) that the funding agency implements and administers."@en
+- <a id="change-720552356036700"></a>**[isImplementedBy](http://data.europa.eu/s66#isImplementedBy)** `Remove Annotation from Entity` [permalink](#change-720552356036700)
+  - Removed annotation from [eurio:isImplementedBy](http://data.europa.eu/s66#isImplementedBy): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is Implemented By"@en
+- <a id="change-720552356047900"></a>**[isImplementedBy](http://data.europa.eu/s66#isImplementedBy)** `Remove Annotation from Entity` [permalink](#change-720552356047900)
+  - Removed annotation from [eurio:isImplementedBy](http://data.europa.eu/s66#isImplementedBy): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552356058200"></a>**[isImplementedBy](http://data.europa.eu/s66#isImplementedBy)** `Remove Annotation from Entity` [permalink](#change-720552356058200)
+  - Removed annotation from [eurio:isImplementedBy](http://data.europa.eu/s66#isImplementedBy): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the funding scheme with the funding agency that implements and administers the scheme."@en
+- <a id="change-720552356486200"></a>**[isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn)** `Remove Annotation from Entity` [permalink](#change-720552356486200)
+  - Removed annotation from [eurio:isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse of involvedParty"@en
+- <a id="change-720552356617600"></a>**[isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn)** `Remove Annotation from Entity` [permalink](#change-720552356617600)
+  - Removed annotation from [eurio:isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the role to the Project or Project Division in which it is involved."@en
+- <a id="change-720552356666300"></a>**[isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn)** `Remove Annotation from Entity` [permalink](#change-720552356666300)
+  - Removed annotation from [eurio:isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "Relates the role to the Project or Project Division in which it is involved."@en
+- <a id="change-720552356692200"></a>**[isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn)** `Remove Annotation from Entity` [permalink](#change-720552356692200)
+  - Removed annotation from [eurio:isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is Involved In"@en
+- <a id="change-720552356711300"></a>**[isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn)** `Remove Annotation from Entity` [permalink](#change-720552356711300)
+  - Removed annotation from [eurio:isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relation between a (one of the) person(s) or organisation(s) participant of a Project identified by his/her/its role (subject), and the Project."@en
+- <a id="change-720552356735100"></a>**[isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn)** `Remove Annotation from Entity` [permalink](#change-720552356735100)
+  - Removed annotation from [eurio:isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552356940800"></a>**[isPaymentOf](http://data.europa.eu/s66#isPaymentOf)** `Remove Annotation from Entity` [permalink](#change-720552356940800)
+  - Removed annotation from [eurio:isPaymentOf](http://data.europa.eu/s66#isPaymentOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is Payment Of"@en
+- <a id="change-720552356958800"></a>**[isPaymentOf](http://data.europa.eu/s66#isPaymentOf)** `Remove Annotation from Entity` [permalink](#change-720552356958800)
+  - Removed annotation from [eurio:isPaymentOf](http://data.europa.eu/s66#isPaymentOf): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse of payment."@en
+- <a id="change-720552356970800"></a>**[isPaymentOf](http://data.europa.eu/s66#isPaymentOf)** `Remove Annotation from Entity` [permalink](#change-720552356970800)
+  - Removed annotation from [eurio:isPaymentOf](http://data.europa.eu/s66#isPaymentOf): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552356984400"></a>**[isPaymentOf](http://data.europa.eu/s66#isPaymentOf)** `Remove Annotation from Entity` [permalink](#change-720552356984400)
+  - Removed annotation from [eurio:isPaymentOf](http://data.europa.eu/s66#isPaymentOf): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relation between a subset and its direct superset(s). Indicates an item that is a part (also in generalised sense) of the object item."@en
+- <a id="change-720552356996500"></a>**[isPaymentOf](http://data.europa.eu/s66#isPaymentOf)** `Remove Annotation from Entity` [permalink](#change-720552356996500)
+  - Removed annotation from [eurio:isPaymentOf](http://data.europa.eu/s66#isPaymentOf): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates a payment to the grant of which it is a part."@en
+- <a id="change-720552357032800"></a>**[isRecipientOf](http://data.europa.eu/s66#isRecipientOf)** `Remove Annotation from Entity` [permalink](#change-720552357032800)
+  - Removed annotation from [eurio:isRecipientOf](http://data.europa.eu/s66#isRecipientOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is Recipient Of"@en
+- <a id="change-720552357049500"></a>**[isRecipientOf](http://data.europa.eu/s66#isRecipientOf)** `Remove Annotation from Entity` [permalink](#change-720552357049500)
+  - Removed annotation from [eurio:isRecipientOf](http://data.europa.eu/s66#isRecipientOf): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Relates the organisation or person role with the grant payment(s) which they have received. Inverse property of hasRecipient."@en
+- <a id="change-720552357324900"></a>**[isResultOf](http://data.europa.eu/s66#isResultOf)** `Remove Annotation from Entity` [permalink](#change-720552357324900)
+  - Removed annotation from [eurio:isResultOf](http://data.europa.eu/s66#isResultOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is Result Of"@en
+- <a id="change-720552357385700"></a>**[isResultOf](http://data.europa.eu/s66#isResultOf)** `Remove Annotation from Entity` [permalink](#change-720552357385700)
+  - Removed annotation from [eurio:isResultOf](http://data.europa.eu/s66#isResultOf): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "Inverse property of result"@en
+- <a id="change-720552357586100"></a>**[isRoleOf](http://data.europa.eu/s66#isRoleOf)** `Remove Annotation from Entity` [permalink](#change-720552357586100)
+  - Removed annotation from [eurio:isRoleOf](http://data.europa.eu/s66#isRoleOf): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The person or organisation or entity (object) assuming or to whom is assigned the role (subject)."@en
+- <a id="change-720552357681800"></a>**[isRoleOf](http://data.europa.eu/s66#isRoleOf)** `Remove Annotation from Entity` [permalink](#change-720552357681800)
+  - Removed annotation from [eurio:isRoleOf](http://data.europa.eu/s66#isRoleOf): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the person/organisation role to the person/organisation which assumes the role."@en
+- <a id="change-720552357788400"></a>**[isRoleOf](http://data.europa.eu/s66#isRoleOf)** `Remove Annotation from Entity` [permalink](#change-720552357788400)
+  - Removed annotation from [eurio:isRoleOf](http://data.europa.eu/s66#isRoleOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is Role Of"@en
+- <a id="change-720552357832400"></a>**[isRoleOf](http://data.europa.eu/s66#isRoleOf)** `Remove Annotation from Entity` [permalink](#change-720552357832400)
+  - Removed annotation from [eurio:isRoleOf](http://data.europa.eu/s66#isRoleOf): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "Relates the person/organisation role to the person/organisation which assumes the role. ."@en
+- <a id="change-720552357864800"></a>**[isRoleOf](http://data.europa.eu/s66#isRoleOf)** `Remove Annotation from Entity` [permalink](#change-720552357864800)
+  - Removed annotation from [eurio:isRoleOf](http://data.europa.eu/s66#isRoleOf): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552357989400"></a>**[isSiteOf](http://data.europa.eu/s66#isSiteOf)** `Remove Annotation from Entity` [permalink](#change-720552357989400)
+  - Removed annotation from [eurio:isSiteOf](http://data.europa.eu/s66#isSiteOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is Site Of"@en
+- <a id="change-720552358117700"></a>**[isSiteOf](http://data.europa.eu/s66#isSiteOf)** `Remove Annotation from Entity` [permalink](#change-720552358117700)
+  - Removed annotation from [eurio:isSiteOf](http://data.europa.eu/s66#isSiteOf): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "Inidicates an entity which has presence at the given site"@en
+- <a id="change-720552358181300"></a>**[isSiteOf](http://data.europa.eu/s66#isSiteOf)** `Remove Annotation from Entity` [permalink](#change-720552358181300)
+  - Removed annotation from [eurio:isSiteOf](http://data.europa.eu/s66#isSiteOf): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Inidicates an entity which has presence at the given site"@en
+- <a id="change-720552358213400"></a>**[isSiteOf](http://data.europa.eu/s66#isSiteOf)** `Remove Annotation from Entity` [permalink](#change-720552358213400)
+  - Removed annotation from [eurio:isSiteOf](http://data.europa.eu/s66#isSiteOf): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://www.w3.org/ns/org#"@en
+- <a id="change-720552358384700"></a>**[isSubOrganisationOf](http://data.europa.eu/s66#isSubOrganisationOf)** `Remove Annotation from Entity` [permalink](#change-720552358384700)
+  - Removed annotation from [eurio:isSubOrganisationOf](http://data.europa.eu/s66#isSubOrganisationOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is subOrganisation Of"@en
+- <a id="change-720552358419100"></a>**[isSubOrganisationOf](http://data.europa.eu/s66#isSubOrganisationOf)** `Remove Annotation from Entity` [permalink](#change-720552358419100)
+  - Removed annotation from [eurio:isSubOrganisationOf](http://data.europa.eu/s66#isSubOrganisationOf): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the organisation with another organisation of which it is a sub-part."@en
+- <a id="change-720552358458600"></a>**[isSubOrganisationOf](http://data.europa.eu/s66#isSubOrganisationOf)** `Remove Annotation from Entity` [permalink](#change-720552358458600)
+  - Removed annotation from [eurio:isSubOrganisationOf](http://data.europa.eu/s66#isSubOrganisationOf): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "ORG's definition: Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization."@en
+- <a id="change-720552358500200"></a>**[isSubOrganisationOf](http://data.europa.eu/s66#isSubOrganisationOf)** `Remove Annotation from Entity` [permalink](#change-720552358500200)
+  - Removed annotation from [eurio:isSubOrganisationOf](http://data.europa.eu/s66#isSubOrganisationOf): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://www.w3.org/ns/org#"
+- <a id="change-720552358628000"></a>**[isSubSchemeOf](http://data.europa.eu/s66#isSubSchemeOf)** `Remove Annotation from Entity` [permalink](#change-720552358628000)
+  - Removed annotation from [eurio:isSubSchemeOf](http://data.europa.eu/s66#isSubSchemeOf): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the funding scheme to its parent scheme of which this funding scheme forms a part. "@en
+- <a id="change-720552358687000"></a>**[isSubSchemeOf](http://data.europa.eu/s66#isSubSchemeOf)** `Remove Annotation from Entity` [permalink](#change-720552358687000)
+  - Removed annotation from [eurio:isSubSchemeOf](http://data.europa.eu/s66#isSubSchemeOf): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552358744800"></a>**[isSubSchemeOf](http://data.europa.eu/s66#isSubSchemeOf)** `Remove Annotation from Entity` [permalink](#change-720552358744800)
+  - Removed annotation from [eurio:isSubSchemeOf](http://data.europa.eu/s66#isSubSchemeOf): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The relation between a subset and its direct superset(s). Indicates an item that is a part (also in generalised sense) of the object item."@en
+- <a id="change-720552358967400"></a>**[isSubSchemeOf](http://data.europa.eu/s66#isSubSchemeOf)** `Remove Annotation from Entity` [permalink](#change-720552358967400)
+  - Removed annotation from [eurio:isSubSchemeOf](http://data.europa.eu/s66#isSubSchemeOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is SubScheme Of"@en
+- <a id="change-720552359207900"></a>**[isUnitOf](http://data.europa.eu/s66#isUnitOf)** `Remove Annotation from Entity` [permalink](#change-720552359207900)
+  - Removed annotation from [eurio:isUnitOf](http://data.europa.eu/s66#isUnitOf): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "is Unit Of"@en
+- <a id="change-720552359246600"></a>**[isUnitOf](http://data.europa.eu/s66#isUnitOf)** `Remove Annotation from Entity` [permalink](#change-720552359246600)
+  - Removed annotation from [eurio:isUnitOf](http://data.europa.eu/s66#isUnitOf): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://www.w3.org/ns/org#"
+- <a id="change-720552359274300"></a>**[isUnitOf](http://data.europa.eu/s66#isUnitOf)** `Remove Annotation from Entity` [permalink](#change-720552359274300)
+  - Removed annotation from [eurio:isUnitOf](http://data.europa.eu/s66#isUnitOf): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Relates the unit to the organisation of which the unit forms a part. "@en
+- <a id="change-720552359346000"></a>**[isUnitOf](http://data.europa.eu/s66#isUnitOf)** `Remove Annotation from Entity` [permalink](#change-720552359346000)
+  - Removed annotation from [eurio:isUnitOf](http://data.europa.eu/s66#isUnitOf): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "ORG's definition: Indicates an Organization of which this Unit is a part, e.g. a Department within a larger Organization."@en
+- <a id="change-720552371549600"></a>**[latitude](http://data.europa.eu/s66#latitude)** `Remove Annotation from Entity` [permalink](#change-720552371549600)
+  - Removed annotation from [eurio:latitude](http://data.europa.eu/s66#latitude): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: The latitude of a location. For example 37.42242 (WGS 84)."@en
+- <a id="change-720552371568300"></a>**[latitude](http://data.europa.eu/s66#latitude)** `Remove Annotation from Entity` [permalink](#change-720552371568300)
+  - Removed annotation from [eurio:latitude](http://data.europa.eu/s66#latitude): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552371582600"></a>**[latitude](http://data.europa.eu/s66#latitude)** `Remove Annotation from Entity` [permalink](#change-720552371582600)
+  - Removed annotation from [eurio:latitude](http://data.europa.eu/s66#latitude): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The latitude of a location. For example 37.42242 (WGS 84)."@en
+- <a id="change-720552371614900"></a>**[legalName](http://data.europa.eu/s66#legalName)** `Remove Annotation from Entity` [permalink](#change-720552371614900)
+  - Removed annotation from [eurio:legalName](http://data.europa.eu/s66#legalName): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The official name of the organization, e.g. the registered company name."@en
+- <a id="change-720552371632600"></a>**[legalName](http://data.europa.eu/s66#legalName)** `Remove Annotation from Entity` [permalink](#change-720552371632600)
+  - Removed annotation from [eurio:legalName](http://data.europa.eu/s66#legalName): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552371643200"></a>**[legalName](http://data.europa.eu/s66#legalName)** `Remove Annotation from Entity` [permalink](#change-720552371643200)
+  - Removed annotation from [eurio:legalName](http://data.europa.eu/s66#legalName): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "legal Name"@en
+- <a id="change-720552371659800"></a>**[legalName](http://data.europa.eu/s66#legalName)** `Remove Annotation from Entity` [permalink](#change-720552371659800)
+  - Removed annotation from [eurio:legalName](http://data.europa.eu/s66#legalName): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: The official name of the organization, e.g. the registered company name."@en
+- <a id="change-720552371729300"></a>**[longitude](http://data.europa.eu/s66#longitude)** `Remove Annotation from Entity` [permalink](#change-720552371729300)
+  - Removed annotation from [eurio:longitude](http://data.europa.eu/s66#longitude): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: The longitude of a location. For example -122.08585 (WGS 84)."@en
+- <a id="change-720552371756600"></a>**[longitude](http://data.europa.eu/s66#longitude)** `Remove Annotation from Entity` [permalink](#change-720552371756600)
+  - Removed annotation from [eurio:longitude](http://data.europa.eu/s66#longitude): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The longitude of a location. For example -122.08585 (WGS 84)."@en
+- <a id="change-720552371774100"></a>**[longitude](http://data.europa.eu/s66#longitude)** `Remove Annotation from Entity` [permalink](#change-720552371774100)
+  - Removed annotation from [eurio:longitude](http://data.europa.eu/s66#longitude): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552315474900"></a>**[MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount)** `Remove Annotation from Entity` [permalink](#change-720552315474900)
+  - Removed annotation from [eurio:MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552315562200"></a>**[MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount)** `Remove Annotation from Entity` [permalink](#change-720552315562200)
+  - Removed annotation from [eurio:MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: A monetary value or range. This type can be used to describe an amount of money such as $50 USD, or a range as in describing a bank account being suitable for a balance between £1,000 and £1,000,000 GBP, or the value of a salary, etc."@en
+- <a id="change-720552315673100"></a>**[MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount)** `Remove Annotation from Entity` [permalink](#change-720552315673100)
+  - Removed annotation from [eurio:MonetaryAmount](http://data.europa.eu/s66#MonetaryAmount): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "A monetary value or range. This type can be used to describe an amount of money such as $50 USD, or a range as in describing a bank account being suitable for a balance between £1,000 and £1,000,000 GBP, or the value of a salary, etc."@en
+- <a id="change-720552371808200"></a>**[name](http://data.europa.eu/s66#name)** `Remove Annotation from Entity` [permalink](#change-720552371808200)
+  - Removed annotation from [eurio:name](http://data.europa.eu/s66#name): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: The name of the item."@en
+- <a id="change-720552371834300"></a>**[name](http://data.europa.eu/s66#name)** `Remove Annotation from Entity` [permalink](#change-720552371834300)
+  - Removed annotation from [eurio:name](http://data.europa.eu/s66#name): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "The name of the property in the pair."@en
+- <a id="change-720552371849600"></a>**[name](http://data.europa.eu/s66#name)** `Remove Annotation from Entity` [permalink](#change-720552371849600)
+  - Removed annotation from [eurio:name](http://data.europa.eu/s66#name): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The name of the property in the pair."@en
+- <a id="change-720552371878500"></a>**[name](http://data.europa.eu/s66#name)** `Remove Annotation from Entity` [permalink](#change-720552371878500)
+  - Removed annotation from [eurio:name](http://data.europa.eu/s66#name): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552317605200"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Remove Annotation from Entity` [permalink](#change-720552317605200)
+  - Removed annotation from [eurio:Organisation](http://data.europa.eu/s66#Organisation): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "ORG's definition: Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures."@en
+- <a id="change-720552317731000"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Remove Annotation from Entity` [permalink](#change-720552317731000)
+  - Removed annotation from [eurio:Organisation](http://data.europa.eu/s66#Organisation): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://www.w3.org/ns/org#"
+- <a id="change-720552317771700"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Remove Annotation from Entity` [permalink](#change-720552317771700)
+  - Removed annotation from [eurio:Organisation](http://data.europa.eu/s66#Organisation): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Represents a group of people, with the same purpose, organized together into a community or other social, commercial or political structure that participate in CORDIS projects."@en
+- <a id="change-720552319133800"></a>**[OrganisationRole](http://data.europa.eu/s66#OrganisationRole)** `Remove Annotation from Entity` [permalink](#change-720552319133800)
+  - Removed annotation from [eurio:OrganisationRole](http://data.europa.eu/s66#OrganisationRole): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Function assumed by or ascribed to an organisation that takes part in a particular project. In CORDIs, it represents roles such as coordinator, partner, consortium member, etc."@en
+- <a id="change-720552319314800"></a>**[OrganisationRole](http://data.europa.eu/s66#OrganisationRole)** `Remove Annotation from Entity` [permalink](#change-720552319314800)
+  - Removed annotation from [eurio:OrganisationRole](http://data.europa.eu/s66#OrganisationRole): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552319638700"></a>**[OrganisationRole](http://data.europa.eu/s66#OrganisationRole)** `Remove Annotation from Entity` [permalink](#change-720552319638700)
+  - Removed annotation from [eurio:OrganisationRole](http://data.europa.eu/s66#OrganisationRole): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The class for organisation roles: function assumed by or ascribed to an organisation that takes part in something."@en
+- <a id="change-720552320288100"></a>**[OrganisationUnit](http://data.europa.eu/s66#OrganisationUnit)** `Remove Annotation from Entity` [permalink](#change-720552320288100)
+  - Removed annotation from [eurio:OrganisationUnit](http://data.europa.eu/s66#OrganisationUnit): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://www.w3.org/ns/org#"
+- <a id="change-720552320701600"></a>**[OrganisationUnit](http://data.europa.eu/s66#OrganisationUnit)** `Remove Annotation from Entity` [permalink](#change-720552320701600)
+  - Removed annotation from [eurio:OrganisationUnit](http://data.europa.eu/s66#OrganisationUnit): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "A department or unit which is part of some larger Organization and only has full recognition within the context of that Organization. In CORDIS, it represents for instance the different departments of a university that participate in a particular project."@en
+- <a id="change-720552320817500"></a>**[OrganisationUnit](http://data.europa.eu/s66#OrganisationUnit)** `Remove Annotation from Entity` [permalink](#change-720552320817500)
+  - Removed annotation from [eurio:OrganisationUnit](http://data.europa.eu/s66#OrganisationUnit): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "ORG's definition: An Organization such as a department or support unit which is part of some larger Organization and only has full recognition within the context of that Organization."@en
+- <a id="change-720552321712900"></a>**[Person](http://data.europa.eu/s66#Person)** `Remove Annotation from Entity` [permalink](#change-720552321712900)
+  - Removed annotation from [eurio:Person](http://data.europa.eu/s66#Person): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The class for persons: alive, dead, undead, or fictional."@en
+- <a id="change-720552322581500"></a>**[Person](http://data.europa.eu/s66#Person)** `Remove Annotation from Entity` [permalink](#change-720552322581500)
+  - Removed annotation from [eurio:Person](http://data.europa.eu/s66#Person): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552322730000"></a>**[Person](http://data.europa.eu/s66#Person)** `Remove Annotation from Entity` [permalink](#change-720552322730000)
+  - Removed annotation from [eurio:Person](http://data.europa.eu/s66#Person): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "A physical person. In CORDIS, it represents the different people assuming roles in research projects (e.g. PhD students, PIs, administrative contacts, etc.)."@en
+- <a id="change-720552323673800"></a>**[PersonRole](http://data.europa.eu/s66#PersonRole)** `Remove Annotation from Entity` [permalink](#change-720552323673800)
+  - Removed annotation from [eurio:PersonRole](http://data.europa.eu/s66#PersonRole): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552323701900"></a>**[PersonRole](http://data.europa.eu/s66#PersonRole)** `Remove Annotation from Entity` [permalink](#change-720552323701900)
+  - Removed annotation from [eurio:PersonRole](http://data.europa.eu/s66#PersonRole): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Function assumed by or ascribed to a person that takes part in a particular project. In CORDIS, it represents roles such as contact person, PI, etc."@en
+- <a id="change-720552323913500"></a>**[PersonRole](http://data.europa.eu/s66#PersonRole)** `Remove Annotation from Entity` [permalink](#change-720552323913500)
+  - Removed annotation from [eurio:PersonRole](http://data.europa.eu/s66#PersonRole): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The class for person roles: function assumed by or ascribed to a person that takes part in something."@en
+- <a id="change-720552325744700"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Remove Annotation from Entity` [permalink](#change-720552325744700)
+  - Removed annotation from [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: The mailing address."@en
+- <a id="change-720552325846400"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Remove Annotation from Entity` [permalink](#change-720552325846400)
+  - Removed annotation from [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552326047000"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Remove Annotation from Entity` [permalink](#change-720552326047000)
+  - Removed annotation from [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The postal address of entities that participate in or form part of research projects."@en
+- <a id="change-720552372252200"></a>**[postalCode](http://data.europa.eu/s66#postalCode)** `Remove Annotation from Entity` [permalink](#change-720552372252200)
+  - Removed annotation from [eurio:postalCode](http://data.europa.eu/s66#postalCode): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: The postal code. For example, 94043."@en
+- <a id="change-720552372271200"></a>**[postalCode](http://data.europa.eu/s66#postalCode)** `Remove Annotation from Entity` [permalink](#change-720552372271200)
+  - Removed annotation from [eurio:postalCode](http://data.europa.eu/s66#postalCode): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552372296900"></a>**[postalCode](http://data.europa.eu/s66#postalCode)** `Remove Annotation from Entity` [permalink](#change-720552372296900)
+  - Removed annotation from [eurio:postalCode](http://data.europa.eu/s66#postalCode): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The postal code of the place or address."@en
+- <a id="change-720552372311700"></a>**[postalCode](http://data.europa.eu/s66#postalCode)** `Remove Annotation from Entity` [permalink](#change-720552372311700)
+  - Removed annotation from [eurio:postalCode](http://data.europa.eu/s66#postalCode): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "postal Code"@en
+- <a id="change-720552371925900"></a>**[postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber)** `Remove Annotation from Entity` [permalink](#change-720552371925900)
+  - Removed annotation from [eurio:postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552371960000"></a>**[postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber)** `Remove Annotation from Entity` [permalink](#change-720552371960000)
+  - Removed annotation from [eurio:postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The post office box number for PO box addresses."@en
+- <a id="change-720552372155100"></a>**[postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber)** `Remove Annotation from Entity` [permalink](#change-720552372155100)
+  - Removed annotation from [eurio:postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "post Office Box Number"@en
+- <a id="change-720552372193100"></a>**[postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber)** `Remove Annotation from Entity` [permalink](#change-720552372193100)
+  - Removed annotation from [eurio:postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: The post office box number for PO box addresses."@en
+- <a id="change-720552329728800"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Annotation from Entity` [permalink](#change-720552329728800)
+  - Removed annotation from [eurio:Project](http://data.europa.eu/s66#Project): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The class for projects: an organised endeavour (collective or individual) planned to reach a particular aim or achieve a result."@en
+- <a id="change-720552330690600"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Annotation from Entity` [permalink](#change-720552330690600)
+  - Removed annotation from [eurio:Project](http://data.europa.eu/s66#Project): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552331422500"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Annotation from Entity` [permalink](#change-720552331422500)
+  - Removed annotation from [eurio:Project](http://data.europa.eu/s66#Project): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://purl.org/cerif/frapo/"
+- <a id="change-720552332843000"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Annotation from Entity` [permalink](#change-720552332843000)
+  - Removed annotation from [eurio:Project](http://data.europa.eu/s66#Project): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "A planned research work that has one or more objectives (divided or not into tasks) and is conducted by one or more organisations. In CORDIS, it represents a project funded by an EU programme."@en
+- <a id="change-720552359471300"></a>**[refersTo](http://data.europa.eu/s66#refersTo)** `Remove Annotation from Entity` [permalink](#change-720552359471300)
+  - Removed annotation from [eurio:refersTo](http://data.europa.eu/s66#refersTo): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "refersTo"@en
+- <a id="change-720552359526000"></a>**[refersTo](http://data.europa.eu/s66#refersTo)** `Remove Annotation from Entity` [permalink](#change-720552359526000)
+  - Removed annotation from [eurio:refersTo](http://data.europa.eu/s66#refersTo): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The entity to which this acronym refers. This can either be an entity inside of the knowledge graph or an external entity of any type."@en
+- <a id="change-720552335730100"></a>**[Result](http://data.europa.eu/s66#Result)** `Remove Annotation from Entity` [permalink](#change-720552335730100)
+  - Removed annotation from [eurio:Result](http://data.europa.eu/s66#Result): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "FRAPO's definition: Something that is created or produced as a result of a project or an endeavour. Examples include a building resulting from a building project, educated students graduating from an educational programme, and a journal article published as a result of a research project."@en
+- <a id="change-720552335913900"></a>**[Result](http://data.europa.eu/s66#Result)** `Remove Annotation from Entity` [permalink](#change-720552335913900)
+  - Removed annotation from [eurio:Result](http://data.europa.eu/s66#Result): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "Any tangible or intangible output of the project (such as data, knowledge and information, whatever their form or nature, whether or not they can be protected), which are generated in the project."@en
+- <a id="change-720552335950700"></a>**[Result](http://data.europa.eu/s66#Result)** `Remove Annotation from Entity` [permalink](#change-720552335950700)
+  - Removed annotation from [eurio:Result](http://data.europa.eu/s66#Result): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://purl.org/cerif/frapo/"
+- <a id="change-720552338404000"></a>**[Role](http://data.europa.eu/s66#Role)** `Remove Annotation from Entity` [permalink](#change-720552338404000)
+  - Removed annotation from [eurio:Role](http://data.europa.eu/s66#Role): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: the function assumed by or ascribed to an entity (typically person, group of persons or organisation) in a particular situation."@en
+- <a id="change-720552338472500"></a>**[Role](http://data.europa.eu/s66#Role)** `Remove Annotation from Entity` [permalink](#change-720552338472500)
+  - Removed annotation from [eurio:Role](http://data.europa.eu/s66#Role): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The function assumed by or ascribed to an entity (typically a person or organisation) in a particular project. It can be used to precise or represent additional information about a relationship or property such as participation or membership. In CORDIS, it represents the participation of a person or organisation in a research project."@en
+- <a id="change-720552338514700"></a>**[Role](http://data.europa.eu/s66#Role)** `Remove Annotation from Entity` [permalink](#change-720552338514700)
+  - Removed annotation from [eurio:Role](http://data.europa.eu/s66#Role): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552372361300"></a>**[shortForm](http://data.europa.eu/s66#shortForm)** `Remove Annotation from Entity` [permalink](#change-720552372361300)
+  - Removed annotation from [eurio:shortForm](http://data.europa.eu/s66#shortForm): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "has short form"@en
+- <a id="change-720552372380100"></a>**[shortForm](http://data.europa.eu/s66#shortForm)** `Remove Annotation from Entity` [permalink](#change-720552372380100)
+  - Removed annotation from [eurio:shortForm](http://data.europa.eu/s66#shortForm): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The value of the acronym."@en
+- <a id="change-720552340372000"></a>**[Site](http://data.europa.eu/s66#Site)** `Remove Annotation from Entity` [permalink](#change-720552340372000)
+  - Removed annotation from [eurio:Site](http://data.europa.eu/s66#Site): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://www.w3.org/ns/org#"
+- <a id="change-720552341067100"></a>**[Site](http://data.europa.eu/s66#Site)** `Remove Annotation from Entity` [permalink](#change-720552341067100)
+  - Removed annotation from [eurio:Site](http://data.europa.eu/s66#Site): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The physical extension of entities that participate in or form part of research projects."@en
+- <a id="change-720552341145600"></a>**[Site](http://data.europa.eu/s66#Site)** `Remove Annotation from Entity` [permalink](#change-720552341145600)
+  - Removed annotation from [eurio:Site](http://data.europa.eu/s66#Site): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "ORG's definition: An office or other premise at which the organization is located. Many organizations are spread across multiple sites and many sites will host multiple locations. In most cases a Site will be a physical location. However, we don't exclude the possibility of non-physical sites such as a virtual office with an associated post box and phone reception service. Extensions may provide sub-classes to denote particular types of site."@en
+- <a id="change-720552372410200"></a>**[startDate](http://data.europa.eu/s66#startDate)** `Remove Annotation from Entity` [permalink](#change-720552372410200)
+  - Removed annotation from [eurio:startDate](http://data.europa.eu/s66#startDate): [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) = "The time an entity (e.g. project, grant, event, etc.) is initialized or starts to take effect."@en
+- <a id="change-720552372429000"></a>**[startDate](http://data.europa.eu/s66#startDate)** `Remove Annotation from Entity` [permalink](#change-720552372429000)
+  - Removed annotation from [eurio:startDate](http://data.europa.eu/s66#startDate): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "start Date"@en
+- <a id="change-720552372455500"></a>**[startDate](http://data.europa.eu/s66#startDate)** `Remove Annotation from Entity` [permalink](#change-720552372455500)
+  - Removed annotation from [eurio:startDate](http://data.europa.eu/s66#startDate): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552372468200"></a>**[startDate](http://data.europa.eu/s66#startDate)** `Remove Annotation from Entity` [permalink](#change-720552372468200)
+  - Removed annotation from [eurio:startDate](http://data.europa.eu/s66#startDate): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The time an entity (e.g. project, grant, event, etc.) is initialized or starts to take effect."@en
+- <a id="change-720552372481200"></a>**[startDate](http://data.europa.eu/s66#startDate)** `Remove Annotation from Entity` [permalink](#change-720552372481200)
+  - Removed annotation from [eurio:startDate](http://data.europa.eu/s66#startDate): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: The time an item starts to exist/operate or a statement starts being valid."@en
+- <a id="change-720552372571300"></a>**[streetAddress](http://data.europa.eu/s66#streetAddress)** `Remove Annotation from Entity` [permalink](#change-720552372571300)
+  - Removed annotation from [eurio:streetAddress](http://data.europa.eu/s66#streetAddress): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "street Address"@en
+- <a id="change-720552372613300"></a>**[streetAddress](http://data.europa.eu/s66#streetAddress)** `Remove Annotation from Entity` [permalink](#change-720552372613300)
+  - Removed annotation from [eurio:streetAddress](http://data.europa.eu/s66#streetAddress): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552372640400"></a>**[streetAddress](http://data.europa.eu/s66#streetAddress)** `Remove Annotation from Entity` [permalink](#change-720552372640400)
+  - Removed annotation from [eurio:streetAddress](http://data.europa.eu/s66#streetAddress): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The street name and number of the place or address."@en
+- <a id="change-720552372656100"></a>**[streetAddress](http://data.europa.eu/s66#streetAddress)** `Remove Annotation from Entity` [permalink](#change-720552372656100)
+  - Removed annotation from [eurio:streetAddress](http://data.europa.eu/s66#streetAddress): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: The street address. For example, 1600 Amphitheatre Pkwy."@en
+- <a id="change-720552372710800"></a>**[title](http://data.europa.eu/s66#title)** `Remove Annotation from Entity` [permalink](#change-720552372710800)
+  - Removed annotation from [eurio:title](http://data.europa.eu/s66#title): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "DINGO's definition: the title of a project (original or translated)."@en
+- <a id="change-720552372731300"></a>**[title](http://data.europa.eu/s66#title)** `Remove Annotation from Entity` [permalink](#change-720552372731300)
+  - Removed annotation from [eurio:title](http://data.europa.eu/s66#title): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The entity’s (e.g. project, work package, etc.) official name or title."@en
+- <a id="change-720552372761900"></a>**[title](http://data.europa.eu/s66#title)** `Remove Annotation from Entity` [permalink](#change-720552372761900)
+  - Removed annotation from [eurio:title](http://data.europa.eu/s66#title): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "https://w3id.org/dingo#"
+- <a id="change-720552342212900"></a>**[TitleAcronym](http://data.europa.eu/s66#TitleAcronym)** `Remove Annotation from Entity` [permalink](#change-720552342212900)
+  - Removed annotation from [eurio:TitleAcronym](http://data.europa.eu/s66#TitleAcronym): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "An acronym explicitly defined as the title or name of another entity (e.g. Project, Organisation, Funding Scheme, etc.)."@en
+- <a id="change-720552372883300"></a>**[value](http://data.europa.eu/s66#value)** `Remove Annotation from Entity` [permalink](#change-720552372883300)
+  - Removed annotation from [eurio:value](http://data.europa.eu/s66#value): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+- <a id="change-720552372900900"></a>**[value](http://data.europa.eu/s66#value)** `Remove Annotation from Entity` [permalink](#change-720552372900900)
+  - Removed annotation from [eurio:value](http://data.europa.eu/s66#value): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: The value of the quantitative value or property value node."@en
+- <a id="change-720552372918500"></a>**[value](http://data.europa.eu/s66#value)** `Remove Annotation from Entity` [permalink](#change-720552372918500)
+  - Removed annotation from [eurio:value](http://data.europa.eu/s66#value): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The value of amount being expressed."@en
+- <a id="change-720552372982700"></a>**[vatNumber](http://data.europa.eu/s66#vatNumber)** `Remove Annotation from Entity` [permalink](#change-720552372982700)
+  - Removed annotation from [eurio:vatNumber](http://data.europa.eu/s66#vatNumber): [skos:note](http://www.w3.org/2004/02/skos/core#note) = "SCHEMA's definition: The Value-added Tax ID of the organization or person."@en
+- <a id="change-720552373002300"></a>**[vatNumber](http://data.europa.eu/s66#vatNumber)** `Remove Annotation from Entity` [permalink](#change-720552373002300)
+  - Removed annotation from [eurio:vatNumber](http://data.europa.eu/s66#vatNumber): [skos:definition](http://www.w3.org/2004/02/skos/core#definition) = "The unique number that identifies a taxable organisation or non-taxable legal entity that is registered for VAT."@en
+- <a id="change-720552373017000"></a>**[vatNumber](http://data.europa.eu/s66#vatNumber)** `Remove Annotation from Entity` [permalink](#change-720552373017000)
+  - Removed annotation from [eurio:vatNumber](http://data.europa.eu/s66#vatNumber): [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) = "VAT Number"@en
+- <a id="change-720552373030700"></a>**[vatNumber](http://data.europa.eu/s66#vatNumber)** `Remove Annotation from Entity` [permalink](#change-720552373030700)
+  - Removed annotation from [eurio:vatNumber](http://data.europa.eu/s66#vatNumber): [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) = "http://schema.org/"
+
+### Class relations
+
+- <a id="change-720552293353200"></a>**[Acronym](http://data.europa.eu/s66#Acronym)** `Remove Sub Class` [permalink](#change-720552293353200)
+  - Removed subclass relation: [eurio:Acronym](http://data.europa.eu/s66#Acronym) subclass of not specified
+- <a id="change-720552297686100"></a>**[Acronym](http://data.europa.eu/s66#Acronym)** `Remove Sub Class` [permalink](#change-720552297686100)
+  - Removed subclass relation: [eurio:Acronym](http://data.europa.eu/s66#Acronym) subclass of not specified
+- <a id="change-720552299001100"></a>**[AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea)** `Remove Sub Class` [permalink](#change-720552299001100)
+  - Removed subclass relation: [eurio:AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea) subclass of not specified
+- <a id="change-720552299246100"></a>**[AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea)** `Remove Sub Class` [permalink](#change-720552299246100)
+  - Removed subclass relation: [eurio:AdministrativeArea](http://data.europa.eu/s66#AdministrativeArea) subclass of not specified
+- <a id="change-720552300272400"></a>**[ContactPoint](http://data.europa.eu/s66#ContactPoint)** `Remove Sub Class` [permalink](#change-720552300272400)
+  - Removed subclass relation: [eurio:ContactPoint](http://data.europa.eu/s66#ContactPoint) subclass of not specified
+- <a id="change-720552300464700"></a>**[ContactPoint](http://data.europa.eu/s66#ContactPoint)** `Remove Sub Class` [permalink](#change-720552300464700)
+  - Removed subclass relation: [eurio:ContactPoint](http://data.europa.eu/s66#ContactPoint) subclass of not specified
+- <a id="change-720552300876000"></a>**[ContactPoint](http://data.europa.eu/s66#ContactPoint)** `Remove Sub Class` [permalink](#change-720552300876000)
+  - Removed subclass relation: [eurio:ContactPoint](http://data.europa.eu/s66#ContactPoint) subclass of not specified
+- <a id="change-720552301829300"></a>**[Coordinates](http://data.europa.eu/s66#Coordinates)** `Remove Sub Class` [permalink](#change-720552301829300)
+  - Removed subclass relation: [eurio:Coordinates](http://data.europa.eu/s66#Coordinates) subclass of not specified
+- <a id="change-720552302201800"></a>**[Coordinates](http://data.europa.eu/s66#Coordinates)** `Remove Sub Class` [permalink](#change-720552302201800)
+  - Removed subclass relation: [eurio:Coordinates](http://data.europa.eu/s66#Coordinates) subclass of not specified
+- <a id="change-720552303650100"></a>**[Country](http://data.europa.eu/s66#Country)** `Remove Sub Class` [permalink](#change-720552303650100)
+  - Removed subclass relation: [eurio:Country](http://data.europa.eu/s66#Country) subclass of not specified
+- <a id="change-720552346862400"></a>**[Event](http://data.europa.eu/s66#Event)** `Remove Sub Class` [permalink](#change-720552346862400)
+  - Removed subclass relation: [eurio:Event](http://data.europa.eu/s66#Event) subclass of not specified
+- <a id="change-720552347205700"></a>**[Event](http://data.europa.eu/s66#Event)** `Remove Sub Class` [permalink](#change-720552347205700)
+  - Removed subclass relation: [eurio:Event](http://data.europa.eu/s66#Event) subclass of not specified
+- <a id="change-720552347470800"></a>**[Event](http://data.europa.eu/s66#Event)** `Remove Sub Class` [permalink](#change-720552347470800)
+  - Removed subclass relation: [eurio:Event](http://data.europa.eu/s66#Event) subclass of not specified
+- <a id="change-720552347671800"></a>**[Event](http://data.europa.eu/s66#Event)** `Remove Sub Class` [permalink](#change-720552347671800)
+  - Removed subclass relation: [eurio:Event](http://data.europa.eu/s66#Event) subclass of not specified
+- <a id="change-720552347857300"></a>**[Event](http://data.europa.eu/s66#Event)** `Remove Sub Class` [permalink](#change-720552347857300)
+  - Removed subclass relation: [eurio:Event](http://data.europa.eu/s66#Event) subclass of not specified
+- <a id="change-720552305176000"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Remove Sub Class` [permalink](#change-720552305176000)
+  - Removed subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552305401600"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Remove Sub Class` [permalink](#change-720552305401600)
+  - Removed subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552305913600"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Remove Sub Class` [permalink](#change-720552305913600)
+  - Removed subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552306192700"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Remove Sub Class` [permalink](#change-720552306192700)
+  - Removed subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552306620700"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Remove Sub Class` [permalink](#change-720552306620700)
+  - Removed subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552306896300"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Remove Sub Class` [permalink](#change-720552306896300)
+  - Removed subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552307151000"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Remove Sub Class` [permalink](#change-720552307151000)
+  - Removed subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552307608300"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Remove Sub Class` [permalink](#change-720552307608300)
+  - Removed subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552307825400"></a>**[FundingScheme](http://data.europa.eu/s66#FundingScheme)** `Remove Sub Class` [permalink](#change-720552307825400)
+  - Removed subclass relation: [eurio:FundingScheme](http://data.europa.eu/s66#FundingScheme) subclass of not specified
+- <a id="change-720552309316100"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Remove Sub Class` [permalink](#change-720552309316100)
+  - Removed subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552309553700"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Remove Sub Class` [permalink](#change-720552309553700)
+  - Removed subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552309731700"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Remove Sub Class` [permalink](#change-720552309731700)
+  - Removed subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552309894700"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Remove Sub Class` [permalink](#change-720552309894700)
+  - Removed subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552310087500"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Remove Sub Class` [permalink](#change-720552310087500)
+  - Removed subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552310268600"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Remove Sub Class` [permalink](#change-720552310268600)
+  - Removed subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552310688900"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Remove Sub Class` [permalink](#change-720552310688900)
+  - Removed subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552311168100"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Remove Sub Class` [permalink](#change-720552311168100)
+  - Removed subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552311461600"></a>**[Grant](http://data.europa.eu/s66#Grant)** `Remove Sub Class` [permalink](#change-720552311461600)
+  - Removed subclass relation: [eurio:Grant](http://data.europa.eu/s66#Grant) subclass of not specified
+- <a id="change-720552314153700"></a>**[GrantPayment](http://data.europa.eu/s66#GrantPayment)** `Remove Sub Class` [permalink](#change-720552314153700)
+  - Removed subclass relation: [eurio:GrantPayment](http://data.europa.eu/s66#GrantPayment) subclass of not specified
+- <a id="change-720552314287400"></a>**[GrantPayment](http://data.europa.eu/s66#GrantPayment)** `Remove Sub Class` [permalink](#change-720552314287400)
+  - Removed subclass relation: [eurio:GrantPayment](http://data.europa.eu/s66#GrantPayment) subclass of not specified
+- <a id="change-720552314447200"></a>**[GrantPayment](http://data.europa.eu/s66#GrantPayment)** `Remove Sub Class` [permalink](#change-720552314447200)
+  - Removed subclass relation: [eurio:GrantPayment](http://data.europa.eu/s66#GrantPayment) subclass of not specified
+- <a id="change-720552314634200"></a>**[GrantPayment](http://data.europa.eu/s66#GrantPayment)** `Remove Sub Class` [permalink](#change-720552314634200)
+  - Removed subclass relation: [eurio:GrantPayment](http://data.europa.eu/s66#GrantPayment) subclass of not specified
+- <a id="change-720552316456700"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Remove Sub Class` [permalink](#change-720552316456700)
+  - Removed subclass relation: [eurio:Organisation](http://data.europa.eu/s66#Organisation) subclass of not specified
+- <a id="change-720552316667400"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Remove Sub Class` [permalink](#change-720552316667400)
+  - Removed subclass relation: [eurio:Organisation](http://data.europa.eu/s66#Organisation) subclass of not specified
+- <a id="change-720552316857500"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Remove Sub Class` [permalink](#change-720552316857500)
+  - Removed subclass relation: [eurio:Organisation](http://data.europa.eu/s66#Organisation) subclass of not specified
+- <a id="change-720552317182500"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Remove Sub Class` [permalink](#change-720552317182500)
+  - Removed subclass relation: [eurio:Organisation](http://data.europa.eu/s66#Organisation) subclass of not specified
+- <a id="change-720552317411600"></a>**[Organisation](http://data.europa.eu/s66#Organisation)** `Remove Sub Class` [permalink](#change-720552317411600)
+  - Removed subclass relation: [eurio:Organisation](http://data.europa.eu/s66#Organisation) subclass of not specified
+- <a id="change-720552319383600"></a>**[OrganisationRole](http://data.europa.eu/s66#OrganisationRole)** `Remove Sub Class` [permalink](#change-720552319383600)
+  - Removed subclass relation: [eurio:OrganisationRole](http://data.europa.eu/s66#OrganisationRole) subclass of not specified
+- <a id="change-720552320397400"></a>**[OrganisationUnit](http://data.europa.eu/s66#OrganisationUnit)** `Remove Sub Class` [permalink](#change-720552320397400)
+  - Removed subclass relation: [eurio:OrganisationUnit](http://data.europa.eu/s66#OrganisationUnit) subclass of [eurio:Organisation](http://data.europa.eu/s66#Organisation)
+- <a id="change-720552320443800"></a>**[OrganisationUnit](http://data.europa.eu/s66#OrganisationUnit)** `Remove Sub Class` [permalink](#change-720552320443800)
+  - Removed subclass relation: [eurio:OrganisationUnit](http://data.europa.eu/s66#OrganisationUnit) subclass of not specified
+- <a id="change-720552321022500"></a>**[Person](http://data.europa.eu/s66#Person)** `Remove Sub Class` [permalink](#change-720552321022500)
+  - Removed subclass relation: [eurio:Person](http://data.europa.eu/s66#Person) subclass of not specified
+- <a id="change-720552321328900"></a>**[Person](http://data.europa.eu/s66#Person)** `Remove Sub Class` [permalink](#change-720552321328900)
+  - Removed subclass relation: [eurio:Person](http://data.europa.eu/s66#Person) subclass of not specified
+- <a id="change-720552321522300"></a>**[Person](http://data.europa.eu/s66#Person)** `Remove Sub Class` [permalink](#change-720552321522300)
+  - Removed subclass relation: [eurio:Person](http://data.europa.eu/s66#Person) subclass of not specified
+- <a id="change-720552321830600"></a>**[Person](http://data.europa.eu/s66#Person)** `Remove Sub Class` [permalink](#change-720552321830600)
+  - Removed subclass relation: [eurio:Person](http://data.europa.eu/s66#Person) subclass of not specified
+- <a id="change-720552322005500"></a>**[Person](http://data.europa.eu/s66#Person)** `Remove Sub Class` [permalink](#change-720552322005500)
+  - Removed subclass relation: [eurio:Person](http://data.europa.eu/s66#Person) subclass of not specified
+- <a id="change-720552322213400"></a>**[Person](http://data.europa.eu/s66#Person)** `Remove Sub Class` [permalink](#change-720552322213400)
+  - Removed subclass relation: [eurio:Person](http://data.europa.eu/s66#Person) subclass of not specified
+- <a id="change-720552322407700"></a>**[Person](http://data.europa.eu/s66#Person)** `Remove Sub Class` [permalink](#change-720552322407700)
+  - Removed subclass relation: [eurio:Person](http://data.europa.eu/s66#Person) subclass of not specified
+- <a id="change-720552323751400"></a>**[PersonRole](http://data.europa.eu/s66#PersonRole)** `Remove Sub Class` [permalink](#change-720552323751400)
+  - Removed subclass relation: [eurio:PersonRole](http://data.europa.eu/s66#PersonRole) subclass of not specified
+- <a id="change-720552324052500"></a>**[PersonRole](http://data.europa.eu/s66#PersonRole)** `Remove Sub Class` [permalink](#change-720552324052500)
+  - Removed subclass relation: [eurio:PersonRole](http://data.europa.eu/s66#PersonRole) subclass of not specified
+- <a id="change-720552325051300"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Remove Sub Class` [permalink](#change-720552325051300)
+  - Removed subclass relation: [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) subclass of not specified
+- <a id="change-720552325199300"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Remove Sub Class` [permalink](#change-720552325199300)
+  - Removed subclass relation: [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) subclass of not specified
+- <a id="change-720552325371600"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Remove Sub Class` [permalink](#change-720552325371600)
+  - Removed subclass relation: [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) subclass of not specified
+- <a id="change-720552325563700"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Remove Sub Class` [permalink](#change-720552325563700)
+  - Removed subclass relation: [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) subclass of not specified
+- <a id="change-720552325886700"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Remove Sub Class` [permalink](#change-720552325886700)
+  - Removed subclass relation: [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) subclass of not specified
+- <a id="change-720552326137400"></a>**[PostalAddress](http://data.europa.eu/s66#PostalAddress)** `Remove Sub Class` [permalink](#change-720552326137400)
+  - Removed subclass relation: [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) subclass of not specified
+- <a id="change-720552328880200"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552328880200)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552329171400"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552329171400)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552329430500"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552329430500)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552329892000"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552329892000)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552330086300"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552330086300)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552330291100"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552330291100)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552330811600"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552330811600)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552331004100"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552331004100)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552331208700"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552331208700)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552331511900"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552331511900)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552331719000"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552331719000)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552331914300"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552331914300)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552332134200"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552332134200)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552332292300"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552332292300)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552332483700"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552332483700)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552332664500"></a>**[Project](http://data.europa.eu/s66#Project)** `Remove Sub Class` [permalink](#change-720552332664500)
+  - Removed subclass relation: [eurio:Project](http://data.europa.eu/s66#Project) subclass of not specified
+- <a id="change-720552348070800"></a>**[ProjectDivision](http://data.europa.eu/s66#ProjectDivision)** `Remove Sub Class` [permalink](#change-720552348070800)
+  - Removed subclass relation: [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision) subclass of not specified
+- <a id="change-720552348205600"></a>**[ProjectDivision](http://data.europa.eu/s66#ProjectDivision)** `Remove Sub Class` [permalink](#change-720552348205600)
+  - Removed subclass relation: [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision) subclass of not specified
+- <a id="change-720552348391500"></a>**[ProjectDivision](http://data.europa.eu/s66#ProjectDivision)** `Remove Sub Class` [permalink](#change-720552348391500)
+  - Removed subclass relation: [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision) subclass of not specified
+- <a id="change-720552348720700"></a>**[ProjectDivision](http://data.europa.eu/s66#ProjectDivision)** `Remove Sub Class` [permalink](#change-720552348720700)
+  - Removed subclass relation: [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision) subclass of not specified
+- <a id="change-720552348900600"></a>**[ProjectDivision](http://data.europa.eu/s66#ProjectDivision)** `Remove Sub Class` [permalink](#change-720552348900600)
+  - Removed subclass relation: [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision) subclass of not specified
+- <a id="change-720552349139500"></a>**[ProjectDivision](http://data.europa.eu/s66#ProjectDivision)** `Remove Sub Class` [permalink](#change-720552349139500)
+  - Removed subclass relation: [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision) subclass of not specified
+- <a id="change-720552335974800"></a>**[Result](http://data.europa.eu/s66#Result)** `Remove Sub Class` [permalink](#change-720552335974800)
+  - Removed subclass relation: [eurio:Result](http://data.europa.eu/s66#Result) subclass of not specified
+- <a id="change-720552336154400"></a>**[Result](http://data.europa.eu/s66#Result)** `Remove Sub Class` [permalink](#change-720552336154400)
+  - Removed subclass relation: [eurio:Result](http://data.europa.eu/s66#Result) subclass of not specified
+- <a id="change-720552336368300"></a>**[Result](http://data.europa.eu/s66#Result)** `Remove Sub Class` [permalink](#change-720552336368300)
+  - Removed subclass relation: [eurio:Result](http://data.europa.eu/s66#Result) subclass of not specified
+- <a id="change-720552336552500"></a>**[Result](http://data.europa.eu/s66#Result)** `Remove Sub Class` [permalink](#change-720552336552500)
+  - Removed subclass relation: [eurio:Result](http://data.europa.eu/s66#Result) subclass of not specified
+- <a id="change-720552336792300"></a>**[Result](http://data.europa.eu/s66#Result)** `Remove Sub Class` [permalink](#change-720552336792300)
+  - Removed subclass relation: [eurio:Result](http://data.europa.eu/s66#Result) subclass of not specified
+- <a id="change-720552336995100"></a>**[Result](http://data.europa.eu/s66#Result)** `Remove Sub Class` [permalink](#change-720552336995100)
+  - Removed subclass relation: [eurio:Result](http://data.europa.eu/s66#Result) subclass of not specified
+- <a id="change-720552337197000"></a>**[Result](http://data.europa.eu/s66#Result)** `Remove Sub Class` [permalink](#change-720552337197000)
+  - Removed subclass relation: [eurio:Result](http://data.europa.eu/s66#Result) subclass of not specified
+- <a id="change-720552337375600"></a>**[Result](http://data.europa.eu/s66#Result)** `Remove Sub Class` [permalink](#change-720552337375600)
+  - Removed subclass relation: [eurio:Result](http://data.europa.eu/s66#Result) subclass of not specified
+- <a id="change-720552337583600"></a>**[Result](http://data.europa.eu/s66#Result)** `Remove Sub Class` [permalink](#change-720552337583600)
+  - Removed subclass relation: [eurio:Result](http://data.europa.eu/s66#Result) subclass of not specified
+- <a id="change-720552338555300"></a>**[Role](http://data.europa.eu/s66#Role)** `Remove Sub Class` [permalink](#change-720552338555300)
+  - Removed subclass relation: [eurio:Role](http://data.europa.eu/s66#Role) subclass of not specified
+- <a id="change-720552338736900"></a>**[Role](http://data.europa.eu/s66#Role)** `Remove Sub Class` [permalink](#change-720552338736900)
+  - Removed subclass relation: [eurio:Role](http://data.europa.eu/s66#Role) subclass of not specified
+- <a id="change-720552338910800"></a>**[Role](http://data.europa.eu/s66#Role)** `Remove Sub Class` [permalink](#change-720552338910800)
+  - Removed subclass relation: [eurio:Role](http://data.europa.eu/s66#Role) subclass of not specified
+- <a id="change-720552339044400"></a>**[Role](http://data.europa.eu/s66#Role)** `Remove Sub Class` [permalink](#change-720552339044400)
+  - Removed subclass relation: [eurio:Role](http://data.europa.eu/s66#Role) subclass of not specified
+- <a id="change-720552339229300"></a>**[Role](http://data.europa.eu/s66#Role)** `Remove Sub Class` [permalink](#change-720552339229300)
+  - Removed subclass relation: [eurio:Role](http://data.europa.eu/s66#Role) subclass of not specified
+- <a id="change-720552340158800"></a>**[Site](http://data.europa.eu/s66#Site)** `Remove Sub Class` [permalink](#change-720552340158800)
+  - Removed subclass relation: [eurio:Site](http://data.europa.eu/s66#Site) subclass of not specified
+- <a id="change-720552340442100"></a>**[Site](http://data.europa.eu/s66#Site)** `Remove Sub Class` [permalink](#change-720552340442100)
+  - Removed subclass relation: [eurio:Site](http://data.europa.eu/s66#Site) subclass of not specified
+- <a id="change-720552340607700"></a>**[Site](http://data.europa.eu/s66#Site)** `Remove Sub Class` [permalink](#change-720552340607700)
+  - Removed subclass relation: [eurio:Site](http://data.europa.eu/s66#Site) subclass of not specified
+- <a id="change-720552340779400"></a>**[Site](http://data.europa.eu/s66#Site)** `Remove Sub Class` [permalink](#change-720552340779400)
+  - Removed subclass relation: [eurio:Site](http://data.europa.eu/s66#Site) subclass of not specified
+- <a id="change-720552340941700"></a>**[Site](http://data.europa.eu/s66#Site)** `Remove Sub Class` [permalink](#change-720552340941700)
+  - Removed subclass relation: [eurio:Site](http://data.europa.eu/s66#Site) subclass of not specified
+- <a id="change-720552349386200"></a>**[Task](http://data.europa.eu/s66#Task)** `Remove Sub Class` [permalink](#change-720552349386200)
+  - Removed subclass relation: [eurio:Task](http://data.europa.eu/s66#Task) subclass of [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision)
+- <a id="change-720552349481600"></a>**[WorkPackage](http://data.europa.eu/s66#WorkPackage)** `Remove Sub Class` [permalink](#change-720552349481600)
+  - Removed subclass relation: [eurio:WorkPackage](http://data.europa.eu/s66#WorkPackage) subclass of not specified
+- <a id="change-720552349689800"></a>**[WorkPackage](http://data.europa.eu/s66#WorkPackage)** `Remove Sub Class` [permalink](#change-720552349689800)
+  - Removed subclass relation: [eurio:WorkPackage](http://data.europa.eu/s66#WorkPackage) subclass of [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision)
+
+### Classes
+
+- <a id="change-720552350078800"></a>**`//droz.dia.fi.upm.es/Project+Ontology#Task`** `Remove Class` [permalink](#change-720552350078800)
+  - Removed class: <webode://droz.dia.fi.upm.es/Project+Ontology#Task>
+- <a id="change-720552350085600"></a>**`//droz.dia.fi.upm.es/Project+Ontology#Workpackage`** `Remove Class` [permalink](#change-720552350085600)
+  - Removed class: <webode://droz.dia.fi.upm.es/Project+Ontology#Workpackage>
+- <a id="change-720552349750000"></a>**[<http://schema.org/AdministrativeArea>](http://schema.org/AdministrativeArea)** `Remove Class` [permalink](#change-720552349750000)
+  - Removed class: [<http://schema.org/AdministrativeArea>](http://schema.org/AdministrativeArea)
+- <a id="change-720552349769500"></a>**[<http://schema.org/Country>](http://schema.org/Country)** `Remove Class` [permalink](#change-720552349769500)
+  - Removed class: [<http://schema.org/Country>](http://schema.org/Country)
+- <a id="change-720552346565900"></a>**[Event](http://data.europa.eu/s66#Event)** `Remove Class` [permalink](#change-720552346565900)
+  - Removed class: [eurio:Event](http://data.europa.eu/s66#Event)
+- <a id="change-720552349786500"></a>**[<http://schema.org/Event>](http://schema.org/Event)** `Remove Class` [permalink](#change-720552349786500)
+  - Removed class: [<http://schema.org/Event>](http://schema.org/Event)
+- <a id="change-720552350012900"></a>**[<https://w3id.org/dingo#FundingAgency>](https://w3id.org/dingo#FundingAgency)** `Remove Class` [permalink](#change-720552350012900)
+  - Removed class: [<https://w3id.org/dingo#FundingAgency>](https://w3id.org/dingo#FundingAgency)
+- <a id="change-720552350021300"></a>**[<https://w3id.org/dingo#FundingScheme>](https://w3id.org/dingo#FundingScheme)** `Remove Class` [permalink](#change-720552350021300)
+  - Removed class: [<https://w3id.org/dingo#FundingScheme>](https://w3id.org/dingo#FundingScheme)
+- <a id="change-720552349799900"></a>**[<http://schema.org/GeoCoordinates>](http://schema.org/GeoCoordinates)** `Remove Class` [permalink](#change-720552349799900)
+  - Removed class: [<http://schema.org/GeoCoordinates>](http://schema.org/GeoCoordinates)
+- <a id="change-720552350028000"></a>**[<https://w3id.org/dingo#Grant>](https://w3id.org/dingo#Grant)** `Remove Class` [permalink](#change-720552350028000)
+  - Removed class: [<https://w3id.org/dingo#Grant>](https://w3id.org/dingo#Grant)
+- <a id="change-720552350036600"></a>**[<https://w3id.org/dingo#GrantPayment>](https://w3id.org/dingo#GrantPayment)** `Remove Class` [permalink](#change-720552350036600)
+  - Removed class: [<https://w3id.org/dingo#GrantPayment>](https://w3id.org/dingo#GrantPayment)
+- <a id="change-720552349833000"></a>**[<http://schema.org/MonetaryAmount>](http://schema.org/MonetaryAmount)** `Remove Class` [permalink](#change-720552349833000)
+  - Removed class: [<http://schema.org/MonetaryAmount>](http://schema.org/MonetaryAmount)
+- <a id="change-720552350043500"></a>**[<https://w3id.org/dingo#OrganisationRole>](https://w3id.org/dingo#OrganisationRole)** `Remove Class` [permalink](#change-720552350043500)
+  - Removed class: [<https://w3id.org/dingo#OrganisationRole>](https://w3id.org/dingo#OrganisationRole)
+- <a id="change-720552349907500"></a>**[<http://www.w3.org/ns/org#Organization>](http://www.w3.org/ns/org#Organization)** `Remove Class` [permalink](#change-720552349907500)
+  - Removed class: [<http://www.w3.org/ns/org#Organization>](http://www.w3.org/ns/org#Organization)
+- <a id="change-720552349951900"></a>**[<http://www.w3.org/ns/org#OrganizationalUnit>](http://www.w3.org/ns/org#OrganizationalUnit)** `Remove Class` [permalink](#change-720552349951900)
+  - Removed class: [<http://www.w3.org/ns/org#OrganizationalUnit>](http://www.w3.org/ns/org#OrganizationalUnit)
+- <a id="change-720552349725700"></a>**[<http://purl.org/cerif/frapo/Output>](http://purl.org/cerif/frapo/Output)** `Remove Class` [permalink](#change-720552349725700)
+  - Removed class: [<http://purl.org/cerif/frapo/Output>](http://purl.org/cerif/frapo/Output)
+- <a id="change-720552350050300"></a>**[<https://w3id.org/dingo#Person>](https://w3id.org/dingo#Person)** `Remove Class` [permalink](#change-720552350050300)
+  - Removed class: [<https://w3id.org/dingo#Person>](https://w3id.org/dingo#Person)
+- <a id="change-720552350057300"></a>**[<https://w3id.org/dingo#PersonRole>](https://w3id.org/dingo#PersonRole)** `Remove Class` [permalink](#change-720552350057300)
+  - Removed class: [<https://w3id.org/dingo#PersonRole>](https://w3id.org/dingo#PersonRole)
+- <a id="change-720552349849200"></a>**[<http://schema.org/PostalAddress>](http://schema.org/PostalAddress)** `Remove Class` [permalink](#change-720552349849200)
+  - Removed class: [<http://schema.org/PostalAddress>](http://schema.org/PostalAddress)
+- <a id="change-720552350064500"></a>**[<https://w3id.org/dingo#Project>](https://w3id.org/dingo#Project)** `Remove Class` [permalink](#change-720552350064500)
+  - Removed class: [<https://w3id.org/dingo#Project>](https://w3id.org/dingo#Project)
+- <a id="change-720552348029600"></a>**[ProjectDivision](http://data.europa.eu/s66#ProjectDivision)** `Remove Class` [permalink](#change-720552348029600)
+  - Removed class: [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision)
+- <a id="change-720552349301900"></a>**[PropertyValue](http://data.europa.eu/s66#PropertyValue)** `Remove Class` [permalink](#change-720552349301900)
+  - Removed class: [eurio:PropertyValue](http://data.europa.eu/s66#PropertyValue)
+- <a id="change-720552349894400"></a>**[<http://schema.org/PropertyValue>](http://schema.org/PropertyValue)** `Remove Class` [permalink](#change-720552349894400)
+  - Removed class: [<http://schema.org/PropertyValue>](http://schema.org/PropertyValue)
+- <a id="change-720552350072300"></a>**[<https://w3id.org/dingo#Role>](https://w3id.org/dingo#Role)** `Remove Class` [permalink](#change-720552350072300)
+  - Removed class: [<https://w3id.org/dingo#Role>](https://w3id.org/dingo#Role)
+- <a id="change-720552349999600"></a>**[<http://www.w3.org/ns/org#Site>](http://www.w3.org/ns/org#Site)** `Remove Class` [permalink](#change-720552349999600)
+  - Removed class: [<http://www.w3.org/ns/org#Site>](http://www.w3.org/ns/org#Site)
+- <a id="change-720552349341100"></a>**[Task](http://data.europa.eu/s66#Task)** `Remove Class` [permalink](#change-720552349341100)
+  - Removed class: [eurio:Task](http://data.europa.eu/s66#Task)
+- <a id="change-720552349450900"></a>**[WorkPackage](http://data.europa.eu/s66#WorkPackage)** `Remove Class` [permalink](#change-720552349450900)
+  - Removed class: [eurio:WorkPackage](http://data.europa.eu/s66#WorkPackage)
+
+### Data properties
+
+- <a id="change-720552375093600"></a>**[addressRegion](http://data.europa.eu/s66#addressRegion)** `Remove Data Property` [permalink](#change-720552375093600)
+  - Removed data property: [eurio:addressRegion](http://data.europa.eu/s66#addressRegion)
+- <a id="change-720552375285800"></a>**[addressRegion](http://data.europa.eu/s66#addressRegion)** `Remove Range Data Property` [permalink](#change-720552375285800)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:addressRegion](http://data.europa.eu/s66#addressRegion)
+- <a id="change-720552370255200"></a>**[date](http://data.europa.eu/s66#date)** `Remove Range Data Property` [permalink](#change-720552370255200)
+  - Removed data range [xsd:dateTime](http://www.w3.org/2001/XMLSchema#dateTime) from [eurio:date](http://data.europa.eu/s66#date)
+- <a id="change-720552370691800"></a>**[duration](http://data.europa.eu/s66#duration)** `Remove Range Data Property` [permalink](#change-720552370691800)
+  - Removed data range [xsd:integer](http://www.w3.org/2001/XMLSchema#integer) from [eurio:duration](http://data.europa.eu/s66#duration)
+- <a id="change-720552370872700"></a>**[endDate](http://data.europa.eu/s66#endDate)** `Remove Range Data Property` [permalink](#change-720552370872700)
+  - Removed data range [xsd:dateTime](http://www.w3.org/2001/XMLSchema#dateTime) from [eurio:endDate](http://data.europa.eu/s66#endDate)
+- <a id="change-720552371110700"></a>**[faxNumber](http://data.europa.eu/s66#faxNumber)** `Remove Range Data Property` [permalink](#change-720552371110700)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:faxNumber](http://data.europa.eu/s66#faxNumber)
+- <a id="change-720552371218600"></a>**[fullAddress](http://data.europa.eu/s66#fullAddress)** `Remove Range Data Property` [permalink](#change-720552371218600)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:fullAddress](http://data.europa.eu/s66#fullAddress)
+- <a id="change-720552375295600"></a>**[fullText](http://data.europa.eu/s66#fullText)** `Remove Data Property` [permalink](#change-720552375295600)
+  - Removed data property: [eurio:fullText](http://data.europa.eu/s66#fullText)
+- <a id="change-720552375304800"></a>**[fullText](http://data.europa.eu/s66#fullText)** `Remove Range Data Property` [permalink](#change-720552375304800)
+  - Removed data range [xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI) from [eurio:fullText](http://data.europa.eu/s66#fullText)
+- <a id="change-720552375321800"></a>**[hasAuthor](http://data.europa.eu/s66#hasAuthor)** `Remove Data Property` [permalink](#change-720552375321800)
+  - Removed data property: [eurio:hasAuthor](http://data.europa.eu/s66#hasAuthor)
+- <a id="change-720552375346500"></a>**[hasAuthor](http://data.europa.eu/s66#hasAuthor)** `Remove Range Data Property` [permalink](#change-720552375346500)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:hasAuthor](http://data.europa.eu/s66#hasAuthor)
+- <a id="change-720552375363100"></a>**[hasJournalNumber](http://data.europa.eu/s66#hasJournalNumber)** `Remove Data Property` [permalink](#change-720552375363100)
+  - Removed data property: [eurio:hasJournalNumber](http://data.europa.eu/s66#hasJournalNumber)
+- <a id="change-720552375372500"></a>**[hasJournalNumber](http://data.europa.eu/s66#hasJournalNumber)** `Remove Range Data Property` [permalink](#change-720552375372500)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:hasJournalNumber](http://data.europa.eu/s66#hasJournalNumber)
+- <a id="change-720552375386700"></a>**[hasJournalTitle](http://data.europa.eu/s66#hasJournalTitle)** `Remove Data Property` [permalink](#change-720552375386700)
+  - Removed data property: [eurio:hasJournalTitle](http://data.europa.eu/s66#hasJournalTitle)
+- <a id="change-720552375396400"></a>**[hasJournalTitle](http://data.europa.eu/s66#hasJournalTitle)** `Remove Range Data Property` [permalink](#change-720552375396400)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:hasJournalTitle](http://data.europa.eu/s66#hasJournalTitle)
+- <a id="change-720552375410400"></a>**[hasKeyword](http://data.europa.eu/s66#hasKeyword)** `Remove Data Property` [permalink](#change-720552375410400)
+  - Removed data property: [eurio:hasKeyword](http://data.europa.eu/s66#hasKeyword)
+- <a id="change-720552375421300"></a>**[hasKeyword](http://data.europa.eu/s66#hasKeyword)** `Remove Range Data Property` [permalink](#change-720552375421300)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:hasKeyword](http://data.europa.eu/s66#hasKeyword)
+- <a id="change-720552375445500"></a>**[hasProjectStatus](http://data.europa.eu/s66#hasProjectStatus)** `Remove Data Property` [permalink](#change-720552375445500)
+  - Removed data property: [eurio:hasProjectStatus](http://data.europa.eu/s66#hasProjectStatus)
+- <a id="change-720552375499600"></a>**[hasProjectStatus](http://data.europa.eu/s66#hasProjectStatus)** `Remove Range Data Property` [permalink](#change-720552375499600)
+  - Removed data range not specified from [eurio:hasProjectStatus](http://data.europa.eu/s66#hasProjectStatus)
+- <a id="change-720552375744500"></a>**[hasPublishedPages](http://data.europa.eu/s66#hasPublishedPages)** `Remove Data Property` [permalink](#change-720552375744500)
+  - Removed data property: [eurio:hasPublishedPages](http://data.europa.eu/s66#hasPublishedPages)
+- <a id="change-720552375867800"></a>**[hasPublishedPages](http://data.europa.eu/s66#hasPublishedPages)** `Remove Range Data Property` [permalink](#change-720552375867800)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:hasPublishedPages](http://data.europa.eu/s66#hasPublishedPages)
+- <a id="change-720552375892500"></a>**[hasPublishedYear](http://data.europa.eu/s66#hasPublishedYear)** `Remove Data Property` [permalink](#change-720552375892500)
+  - Removed data property: [eurio:hasPublishedYear](http://data.europa.eu/s66#hasPublishedYear)
+- <a id="change-720552375924800"></a>**[hasPublishedYear](http://data.europa.eu/s66#hasPublishedYear)** `Remove Range Data Property` [permalink](#change-720552375924800)
+  - Removed data range [xsd:nonNegativeInteger](http://www.w3.org/2001/XMLSchema#nonNegativeInteger) from [eurio:hasPublishedYear](http://data.europa.eu/s66#hasPublishedYear)
+- <a id="change-720552375977500"></a>**[hasPublisher](http://data.europa.eu/s66#hasPublisher)** `Remove Data Property` [permalink](#change-720552375977500)
+  - Removed data property: [eurio:hasPublisher](http://data.europa.eu/s66#hasPublisher)
+- <a id="change-720552376044600"></a>**[hasPublisher](http://data.europa.eu/s66#hasPublisher)** `Remove Range Data Property` [permalink](#change-720552376044600)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:hasPublisher](http://data.europa.eu/s66#hasPublisher)
+- <a id="change-720552376063900"></a>**[hasResultCategory](http://data.europa.eu/s66#hasResultCategory)** `Remove Data Property` [permalink](#change-720552376063900)
+  - Removed data property: [eurio:hasResultCategory](http://data.europa.eu/s66#hasResultCategory)
+- <a id="change-720552376111900"></a>**[hasResultCategory](http://data.europa.eu/s66#hasResultCategory)** `Remove Range Data Property` [permalink](#change-720552376111900)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:hasResultCategory](http://data.europa.eu/s66#hasResultCategory)
+- <a id="change-720552376132100"></a>**[language](http://data.europa.eu/s66#language)** `Remove Data Property` [permalink](#change-720552376132100)
+  - Removed data property: [eurio:language](http://data.europa.eu/s66#language)
+- <a id="change-720552376408300"></a>**[language](http://data.europa.eu/s66#language)** `Remove Range Data Property` [permalink](#change-720552376408300)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:language](http://data.europa.eu/s66#language)
+- <a id="change-720552376494200"></a>**[officeName](http://data.europa.eu/s66#officeName)** `Remove Data Property` [permalink](#change-720552376494200)
+  - Removed data property: [eurio:officeName](http://data.europa.eu/s66#officeName)
+- <a id="change-720552376524500"></a>**[officeName](http://data.europa.eu/s66#officeName)** `Remove Range Data Property` [permalink](#change-720552376524500)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:officeName](http://data.europa.eu/s66#officeName)
+- <a id="change-720552376542600"></a>**[personMonths](http://data.europa.eu/s66#personMonths)** `Remove Data Property` [permalink](#change-720552376542600)
+  - Removed data property: [eurio:personMonths](http://data.europa.eu/s66#personMonths)
+- <a id="change-720552376592800"></a>**[personMonths](http://data.europa.eu/s66#personMonths)** `Remove Range Data Property` [permalink](#change-720552376592800)
+  - Removed data range [xsd:nonNegativeInteger](http://www.w3.org/2001/XMLSchema#nonNegativeInteger) from [eurio:personMonths](http://data.europa.eu/s66#personMonths)
+- <a id="change-720552372284500"></a>**[postalCode](http://data.europa.eu/s66#postalCode)** `Remove Range Data Property` [permalink](#change-720552372284500)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:postalCode](http://data.europa.eu/s66#postalCode)
+- <a id="change-720552371944900"></a>**[postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber)** `Remove Range Data Property` [permalink](#change-720552371944900)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:postOfficeBoxNumber](http://data.europa.eu/s66#postOfficeBoxNumber)
+- <a id="change-720552376616200"></a>**[profession](http://data.europa.eu/s66#profession)** `Remove Data Property` [permalink](#change-720552376616200)
+  - Removed data property: [eurio:profession](http://data.europa.eu/s66#profession)
+- <a id="change-720552376666500"></a>**[profession](http://data.europa.eu/s66#profession)** `Remove Range Data Property` [permalink](#change-720552376666500)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:profession](http://data.europa.eu/s66#profession)
+- <a id="change-720552372442600"></a>**[startDate](http://data.europa.eu/s66#startDate)** `Remove Range Data Property` [permalink](#change-720552372442600)
+  - Removed data range [xsd:dateTime](http://www.w3.org/2001/XMLSchema#dateTime) from [eurio:startDate](http://data.europa.eu/s66#startDate)
+- <a id="change-720552372628600"></a>**[streetAddress](http://data.europa.eu/s66#streetAddress)** `Remove Range Data Property` [permalink](#change-720552372628600)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:streetAddress](http://data.europa.eu/s66#streetAddress)
+- <a id="change-720552376731500"></a>**[subject](http://data.europa.eu/s66#subject)** `Remove Data Property` [permalink](#change-720552376731500)
+  - Removed data property: [eurio:subject](http://data.europa.eu/s66#subject)
+- <a id="change-720552376753200"></a>**[subject](http://data.europa.eu/s66#subject)** `Remove Range Data Property` [permalink](#change-720552376753200)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:subject](http://data.europa.eu/s66#subject)
+- <a id="change-720552376791100"></a>**[telephone](http://data.europa.eu/s66#telephone)** `Remove Data Property` [permalink](#change-720552376791100)
+  - Removed data property: [eurio:telephone](http://data.europa.eu/s66#telephone)
+- <a id="change-720552376836200"></a>**[telephone](http://data.europa.eu/s66#telephone)** `Remove Range Data Property` [permalink](#change-720552376836200)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:telephone](http://data.europa.eu/s66#telephone)
+- <a id="change-720552372820900"></a>**[title](http://data.europa.eu/s66#title)** `Remove Range Data Property` [permalink](#change-720552372820900)
+  - Removed data range [xsd:string](http://www.w3.org/2001/XMLSchema#string) from [eurio:title](http://data.europa.eu/s66#title)
+- <a id="change-720552376854800"></a>**[webLink](http://data.europa.eu/s66#webLink)** `Remove Data Property` [permalink](#change-720552376854800)
+  - Removed data property: [eurio:webLink](http://data.europa.eu/s66#webLink)
+- <a id="change-720552376895200"></a>**[webLink](http://data.europa.eu/s66#webLink)** `Remove Range Data Property` [permalink](#change-720552376895200)
+  - Removed data range [xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI) from [eurio:webLink](http://data.europa.eu/s66#webLink)
+- <a id="change-720552376919800"></a>**[webResource](http://data.europa.eu/s66#webResource)** `Remove Data Property` [permalink](#change-720552376919800)
+  - Removed data property: [eurio:webResource](http://data.europa.eu/s66#webResource)
+- <a id="change-720552376942700"></a>**[webResource](http://data.europa.eu/s66#webResource)** `Remove Range Data Property` [permalink](#change-720552376942700)
+  - Removed data range [xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI) from [eurio:webResource](http://data.europa.eu/s66#webResource)
+
+### Domains
+
+- <a id="change-720552375267900"></a>**[addressRegion](http://data.europa.eu/s66#addressRegion)** `Remove Domain` [permalink](#change-720552375267900)
+  - Removed domain [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) from [eurio:addressRegion](http://data.europa.eu/s66#addressRegion)
+  - Remove Domain From Property: [eurio:addressRegion](http://data.europa.eu/s66#addressRegion)
+- <a id="change-720552370018000"></a>**[date](http://data.europa.eu/s66#date)** `Remove Domain` [permalink](#change-720552370018000)
+  - Removed domain [eurio:GrantPayment](http://data.europa.eu/s66#GrantPayment) from [eurio:date](http://data.europa.eu/s66#date)
+  - Remove Domain From Property: [eurio:date](http://data.europa.eu/s66#date)
+- <a id="change-720552375313800"></a>**[fullText](http://data.europa.eu/s66#fullText)** `Remove Domain` [permalink](#change-720552375313800)
+  - Removed domain [eurio:Result](http://data.europa.eu/s66#Result) from [eurio:fullText](http://data.europa.eu/s66#fullText)
+  - Remove Domain From Property: [eurio:fullText](http://data.europa.eu/s66#fullText)
+- <a id="change-720552375355100"></a>**[hasAuthor](http://data.europa.eu/s66#hasAuthor)** `Remove Domain` [permalink](#change-720552375355100)
+  - Removed domain [eurio:Result](http://data.europa.eu/s66#Result) from [eurio:hasAuthor](http://data.europa.eu/s66#hasAuthor)
+  - Remove Domain From Property: [eurio:hasAuthor](http://data.europa.eu/s66#hasAuthor)
+- <a id="change-720552368762400"></a>**[hasBusinessSector](http://data.europa.eu/s66#hasBusinessSector)** `Remove Domain` [permalink](#change-720552368762400)
+  - Removed domain [eurio:Project](http://data.europa.eu/s66#Project) from [eurio:hasBusinessSector](http://data.europa.eu/s66#hasBusinessSector)
+  - Remove Domain From Property: [eurio:hasBusinessSector](http://data.europa.eu/s66#hasBusinessSector)
+- <a id="change-720552351164000"></a>**[hasContactDetails](http://data.europa.eu/s66#hasContactDetails)** `Remove Domain` [permalink](#change-720552351164000)
+  - Removed domain [eurio:Role](http://data.europa.eu/s66#Role) from [eurio:hasContactDetails](http://data.europa.eu/s66#hasContactDetails)
+  - Remove Domain From Property: [eurio:hasContactDetails](http://data.europa.eu/s66#hasContactDetails)
+- <a id="change-720552368782900"></a>**[hasEvent](http://data.europa.eu/s66#hasEvent)** `Remove Domain` [permalink](#change-720552368782900)
+  - Removed domain [eurio:Project](http://data.europa.eu/s66#Project) from [eurio:hasEvent](http://data.europa.eu/s66#hasEvent)
+  - Remove Domain From Property: [eurio:hasEvent](http://data.europa.eu/s66#hasEvent)
+- <a id="change-720552368800800"></a>**[hasEventType](http://data.europa.eu/s66#hasEventType)** `Remove Domain` [permalink](#change-720552368800800)
+  - Removed domain [eurio:Event](http://data.europa.eu/s66#Event) from [eurio:hasEventType](http://data.europa.eu/s66#hasEventType)
+  - Remove Domain From Property: [eurio:hasEventType](http://data.europa.eu/s66#hasEventType)
+- <a id="change-720552375380300"></a>**[hasJournalNumber](http://data.europa.eu/s66#hasJournalNumber)** `Remove Domain` [permalink](#change-720552375380300)
+  - Removed domain [eurio:Result](http://data.europa.eu/s66#Result) from [eurio:hasJournalNumber](http://data.europa.eu/s66#hasJournalNumber)
+  - Remove Domain From Property: [eurio:hasJournalNumber](http://data.europa.eu/s66#hasJournalNumber)
+- <a id="change-720552375403400"></a>**[hasJournalTitle](http://data.europa.eu/s66#hasJournalTitle)** `Remove Domain` [permalink](#change-720552375403400)
+  - Removed domain [eurio:Result](http://data.europa.eu/s66#Result) from [eurio:hasJournalTitle](http://data.europa.eu/s66#hasJournalTitle)
+  - Remove Domain From Property: [eurio:hasJournalTitle](http://data.europa.eu/s66#hasJournalTitle)
+- <a id="change-720552375428400"></a>**[hasKeyword](http://data.europa.eu/s66#hasKeyword)** `Remove Domain` [permalink](#change-720552375428400)
+  - Removed domain [eurio:Project](http://data.europa.eu/s66#Project) from [eurio:hasKeyword](http://data.europa.eu/s66#hasKeyword)
+  - Remove Domain From Property: [eurio:hasKeyword](http://data.europa.eu/s66#hasKeyword)
+- <a id="change-720552368822600"></a>**[hasOrganisationCategory](http://data.europa.eu/s66#hasOrganisationCategory)** `Remove Domain` [permalink](#change-720552368822600)
+  - Removed domain [eurio:Organisation](http://data.europa.eu/s66#Organisation) from [eurio:hasOrganisationCategory](http://data.europa.eu/s66#hasOrganisationCategory)
+  - Remove Domain From Property: [eurio:hasOrganisationCategory](http://data.europa.eu/s66#hasOrganisationCategory)
+- <a id="change-720552368839700"></a>**[hasProjectDivision](http://data.europa.eu/s66#hasProjectDivision)** `Remove Domain` [permalink](#change-720552368839700)
+  - Removed domain [eurio:Project](http://data.europa.eu/s66#Project) from [eurio:hasProjectDivision](http://data.europa.eu/s66#hasProjectDivision)
+  - Remove Domain From Property: [eurio:hasProjectDivision](http://data.europa.eu/s66#hasProjectDivision)
+- <a id="change-720552375457400"></a>**[hasProjectStatus](http://data.europa.eu/s66#hasProjectStatus)** `Remove Domain` [permalink](#change-720552375457400)
+  - Removed domain [eurio:Project](http://data.europa.eu/s66#Project) from [eurio:hasProjectStatus](http://data.europa.eu/s66#hasProjectStatus)
+  - Remove Domain From Property: [eurio:hasProjectStatus](http://data.europa.eu/s66#hasProjectStatus)
+- <a id="change-720552375835600"></a>**[hasPublishedPages](http://data.europa.eu/s66#hasPublishedPages)** `Remove Domain` [permalink](#change-720552375835600)
+  - Removed domain [eurio:Result](http://data.europa.eu/s66#Result) from [eurio:hasPublishedPages](http://data.europa.eu/s66#hasPublishedPages)
+  - Remove Domain From Property: [eurio:hasPublishedPages](http://data.europa.eu/s66#hasPublishedPages)
+- <a id="change-720552375953400"></a>**[hasPublishedYear](http://data.europa.eu/s66#hasPublishedYear)** `Remove Domain` [permalink](#change-720552375953400)
+  - Removed domain [eurio:Result](http://data.europa.eu/s66#Result) from [eurio:hasPublishedYear](http://data.europa.eu/s66#hasPublishedYear)
+  - Remove Domain From Property: [eurio:hasPublishedYear](http://data.europa.eu/s66#hasPublishedYear)
+- <a id="change-720552376023800"></a>**[hasPublisher](http://data.europa.eu/s66#hasPublisher)** `Remove Domain` [permalink](#change-720552376023800)
+  - Removed domain [eurio:Result](http://data.europa.eu/s66#Result) from [eurio:hasPublisher](http://data.europa.eu/s66#hasPublisher)
+  - Remove Domain From Property: [eurio:hasPublisher](http://data.europa.eu/s66#hasPublisher)
+- <a id="change-720552353618500"></a>**[hasResult](http://data.europa.eu/s66#hasResult)** `Remove Domain` [permalink](#change-720552353618500)
+  - Removed domain not specified from [eurio:hasResult](http://data.europa.eu/s66#hasResult)
+  - Remove Domain From Property: [eurio:hasResult](http://data.europa.eu/s66#hasResult)
+- <a id="change-720552376089700"></a>**[hasResultCategory](http://data.europa.eu/s66#hasResultCategory)** `Remove Domain` [permalink](#change-720552376089700)
+  - Removed domain [eurio:Result](http://data.europa.eu/s66#Result) from [eurio:hasResultCategory](http://data.europa.eu/s66#hasResultCategory)
+  - Remove Domain From Property: [eurio:hasResultCategory](http://data.europa.eu/s66#hasResultCategory)
+- <a id="change-720552368924300"></a>**[hasTask](http://data.europa.eu/s66#hasTask)** `Remove Domain` [permalink](#change-720552368924300)
+  - Removed domain [eurio:WorkPackage](http://data.europa.eu/s66#WorkPackage) from [eurio:hasTask](http://data.europa.eu/s66#hasTask)
+  - Remove Domain From Property: [eurio:hasTask](http://data.europa.eu/s66#hasTask)
+- <a id="change-720552368947900"></a>**[isDivisionOf](http://data.europa.eu/s66#isDivisionOf)** `Remove Domain` [permalink](#change-720552368947900)
+  - Removed domain [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision) from [eurio:isDivisionOf](http://data.europa.eu/s66#isDivisionOf)
+  - Remove Domain From Property: [eurio:isDivisionOf](http://data.europa.eu/s66#isDivisionOf)
+- <a id="change-720552368959600"></a>**[isEventOf](http://data.europa.eu/s66#isEventOf)** `Remove Domain` [permalink](#change-720552368959600)
+  - Removed domain [eurio:Event](http://data.europa.eu/s66#Event) from [eurio:isEventOf](http://data.europa.eu/s66#isEventOf)
+  - Remove Domain From Property: [eurio:isEventOf](http://data.europa.eu/s66#isEventOf)
+- <a id="change-720552369020900"></a>**[isSubDivisionOf](http://data.europa.eu/s66#isSubDivisionOf)** `Remove Domain` [permalink](#change-720552369020900)
+  - Removed domain [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision) from [eurio:isSubDivisionOf](http://data.europa.eu/s66#isSubDivisionOf)
+  - Remove Domain From Property: [eurio:isSubDivisionOf](http://data.europa.eu/s66#isSubDivisionOf)
+- <a id="change-720552369042400"></a>**[isTaskOf](http://data.europa.eu/s66#isTaskOf)** `Remove Domain` [permalink](#change-720552369042400)
+  - Removed domain [eurio:Task](http://data.europa.eu/s66#Task) from [eurio:isTaskOf](http://data.europa.eu/s66#isTaskOf)
+  - Remove Domain From Property: [eurio:isTaskOf](http://data.europa.eu/s66#isTaskOf)
+- <a id="change-720552376567800"></a>**[personMonths](http://data.europa.eu/s66#personMonths)** `Remove Domain` [permalink](#change-720552376567800)
+  - Removed domain [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision) from [eurio:personMonths](http://data.europa.eu/s66#personMonths)
+  - Remove Domain From Property: [eurio:personMonths](http://data.europa.eu/s66#personMonths)
+- <a id="change-720552376701500"></a>**[profession](http://data.europa.eu/s66#profession)** `Remove Domain` [permalink](#change-720552376701500)
+  - Removed domain [eurio:Person](http://data.europa.eu/s66#Person) from [eurio:profession](http://data.europa.eu/s66#profession)
+  - Remove Domain From Property: [eurio:profession](http://data.europa.eu/s66#profession)
+- <a id="change-720552369064700"></a>**[refersToEntityType](http://data.europa.eu/s66#refersToEntityType)** `Remove Domain` [permalink](#change-720552369064700)
+  - Removed domain [eurio:Acronym](http://data.europa.eu/s66#Acronym) from [eurio:refersToEntityType](http://data.europa.eu/s66#refersToEntityType)
+  - Remove Domain From Property: [eurio:refersToEntityType](http://data.europa.eu/s66#refersToEntityType)
+- <a id="change-720552376773500"></a>**[subject](http://data.europa.eu/s66#subject)** `Remove Domain` [permalink](#change-720552376773500)
+  - Removed domain [eurio:Project](http://data.europa.eu/s66#Project) from [eurio:subject](http://data.europa.eu/s66#subject)
+  - Remove Domain From Property: [eurio:subject](http://data.europa.eu/s66#subject)
+- <a id="change-720552376814700"></a>**[telephone](http://data.europa.eu/s66#telephone)** `Remove Domain` [permalink](#change-720552376814700)
+  - Removed domain [eurio:ContactPoint](http://data.europa.eu/s66#ContactPoint) from [eurio:telephone](http://data.europa.eu/s66#telephone)
+  - Remove Domain From Property: [eurio:telephone](http://data.europa.eu/s66#telephone)
+
+### Object properties
+
+- <a id="change-720552368526000"></a>**[address](http://data.europa.eu/s66#address)** `Remove Object Property` [permalink](#change-720552368526000)
+  - Removed object property: [eurio:address](http://data.europa.eu/s66#address)
+- <a id="change-720552368706500"></a>**[address](http://data.europa.eu/s66#address)** `Remove Range Object Property` [permalink](#change-720552368706500)
+  - Removed object range [eurio:PostalAddress](http://data.europa.eu/s66#PostalAddress) from [eurio:address](http://data.europa.eu/s66#address)
+- <a id="change-720552368719500"></a>**[hasBusinessSector](http://data.europa.eu/s66#hasBusinessSector)** `Remove Object Property` [permalink](#change-720552368719500)
+  - Removed object property: [eurio:hasBusinessSector](http://data.europa.eu/s66#hasBusinessSector)
+- <a id="change-720552368727000"></a>**[hasBusinessSector](http://data.europa.eu/s66#hasBusinessSector)** `Remove Range Object Property` [permalink](#change-720552368727000)
+  - Removed object range [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept) from [eurio:hasBusinessSector](http://data.europa.eu/s66#hasBusinessSector)
+- <a id="change-720552368769700"></a>**[hasEvent](http://data.europa.eu/s66#hasEvent)** `Remove Object Property` [permalink](#change-720552368769700)
+  - Removed object property: [eurio:hasEvent](http://data.europa.eu/s66#hasEvent)
+- <a id="change-720552368775200"></a>**[hasEvent](http://data.europa.eu/s66#hasEvent)** `Remove Range Object Property` [permalink](#change-720552368775200)
+  - Removed object range [eurio:Event](http://data.europa.eu/s66#Event) from [eurio:hasEvent](http://data.europa.eu/s66#hasEvent)
+- <a id="change-720552368790400"></a>**[hasEventType](http://data.europa.eu/s66#hasEventType)** `Remove Object Property` [permalink](#change-720552368790400)
+  - Removed object property: [eurio:hasEventType](http://data.europa.eu/s66#hasEventType)
+- <a id="change-720552368795400"></a>**[hasEventType](http://data.europa.eu/s66#hasEventType)** `Remove Range Object Property` [permalink](#change-720552368795400)
+  - Removed object range [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept) from [eurio:hasEventType](http://data.europa.eu/s66#hasEventType)
+- <a id="change-720552368806300"></a>**[hasIdentifier](http://data.europa.eu/s66#hasIdentifier)** `Remove Object Property` [permalink](#change-720552368806300)
+  - Removed object property: [eurio:hasIdentifier](http://data.europa.eu/s66#hasIdentifier)
+- <a id="change-720552368811900"></a>**[hasIdentifier](http://data.europa.eu/s66#hasIdentifier)** `Remove Range Object Property` [permalink](#change-720552368811900)
+  - Removed object range [eurio:PropertyValue](http://data.europa.eu/s66#PropertyValue) from [eurio:hasIdentifier](http://data.europa.eu/s66#hasIdentifier)
+- <a id="change-720552368817100"></a>**[hasOrganisationCategory](http://data.europa.eu/s66#hasOrganisationCategory)** `Remove Object Property` [permalink](#change-720552368817100)
+  - Removed object property: [eurio:hasOrganisationCategory](http://data.europa.eu/s66#hasOrganisationCategory)
+- <a id="change-720552368829600"></a>**[hasOrganisationCategory](http://data.europa.eu/s66#hasOrganisationCategory)** `Remove Range Object Property` [permalink](#change-720552368829600)
+  - Removed object range [skos:Concept](http://www.w3.org/2004/02/skos/core#Concept) from [eurio:hasOrganisationCategory](http://data.europa.eu/s66#hasOrganisationCategory)
+- <a id="change-720552368834800"></a>**[hasProjectDivision](http://data.europa.eu/s66#hasProjectDivision)** `Remove Object Property` [permalink](#change-720552368834800)
+  - Removed object property: [eurio:hasProjectDivision](http://data.europa.eu/s66#hasProjectDivision)
+- <a id="change-720552368845100"></a>**[hasProjectDivision](http://data.europa.eu/s66#hasProjectDivision)** `Remove Range Object Property` [permalink](#change-720552368845100)
+  - Removed object range [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision) from [eurio:hasProjectDivision](http://data.europa.eu/s66#hasProjectDivision)
+- <a id="change-720552368858100"></a>**[hasSubDivision](http://data.europa.eu/s66#hasSubDivision)** `Remove Object Property` [permalink](#change-720552368858100)
+  - Removed object property: [eurio:hasSubDivision](http://data.europa.eu/s66#hasSubDivision)
+- <a id="change-720552368864300"></a>**[hasSubDivision](http://data.europa.eu/s66#hasSubDivision)** `Remove Range Object Property` [permalink](#change-720552368864300)
+  - Removed object range [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision) from [eurio:hasSubDivision](http://data.europa.eu/s66#hasSubDivision)
+- <a id="change-720552368875200"></a>**[hasTask](http://data.europa.eu/s66#hasTask)** `Remove Object Property` [permalink](#change-720552368875200)
+  - Removed object property: [eurio:hasTask](http://data.europa.eu/s66#hasTask)
+- <a id="change-720552368917100"></a>**[hasTask](http://data.europa.eu/s66#hasTask)** `Remove Range Object Property` [permalink](#change-720552368917100)
+  - Removed object range [eurio:Task](http://data.europa.eu/s66#Task) from [eurio:hasTask](http://data.europa.eu/s66#hasTask)
+- <a id="change-720552368930000"></a>**[isDivisionOf](http://data.europa.eu/s66#isDivisionOf)** `Remove Object Property` [permalink](#change-720552368930000)
+  - Removed object property: [eurio:isDivisionOf](http://data.europa.eu/s66#isDivisionOf)
+- <a id="change-720552368954700"></a>**[isEventOf](http://data.europa.eu/s66#isEventOf)** `Remove Object Property` [permalink](#change-720552368954700)
+  - Removed object property: [eurio:isEventOf](http://data.europa.eu/s66#isEventOf)
+- <a id="change-720552368969400"></a>**[isEventOf](http://data.europa.eu/s66#isEventOf)** `Remove Range Object Property` [permalink](#change-720552368969400)
+  - Removed object range [eurio:Project](http://data.europa.eu/s66#Project) from [eurio:isEventOf](http://data.europa.eu/s66#isEventOf)
+- <a id="change-720552368984200"></a>**[isHeldAt](http://data.europa.eu/s66#isHeldAt)** `Remove Object Property` [permalink](#change-720552368984200)
+  - Removed object property: [eurio:isHeldAt](http://data.europa.eu/s66#isHeldAt)
+- <a id="change-720552368993400"></a>**[isHeldAt](http://data.europa.eu/s66#isHeldAt)** `Remove Range Object Property` [permalink](#change-720552368993400)
+  - Removed object range [eurio:Site](http://data.europa.eu/s66#Site) from [eurio:isHeldAt](http://data.europa.eu/s66#isHeldAt)
+- <a id="change-720552356092800"></a>**[isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn)** `Remove Range Object Property` [permalink](#change-720552356092800)
+  - Removed object range not specified from [eurio:isInvolvedIn](http://data.europa.eu/s66#isInvolvedIn)
+- <a id="change-720552357115600"></a>**[isResultOf](http://data.europa.eu/s66#isResultOf)** `Remove Range Object Property` [permalink](#change-720552357115600)
+  - Removed object range not specified from [eurio:isResultOf](http://data.europa.eu/s66#isResultOf)
+- <a id="change-720552369002100"></a>**[isSubDivisionOf](http://data.europa.eu/s66#isSubDivisionOf)** `Remove Object Property` [permalink](#change-720552369002100)
+  - Removed object property: [eurio:isSubDivisionOf](http://data.europa.eu/s66#isSubDivisionOf)
+- <a id="change-720552369013000"></a>**[isSubDivisionOf](http://data.europa.eu/s66#isSubDivisionOf)** `Remove Range Object Property` [permalink](#change-720552369013000)
+  - Removed object range [eurio:ProjectDivision](http://data.europa.eu/s66#ProjectDivision) from [eurio:isSubDivisionOf](http://data.europa.eu/s66#isSubDivisionOf)
+- <a id="change-720552369028400"></a>**[isTaskOf](http://data.europa.eu/s66#isTaskOf)** `Remove Object Property` [permalink](#change-720552369028400)
+  - Removed object property: [eurio:isTaskOf](http://data.europa.eu/s66#isTaskOf)
+- <a id="change-720552369035800"></a>**[isTaskOf](http://data.europa.eu/s66#isTaskOf)** `Remove Range Object Property` [permalink](#change-720552369035800)
+  - Removed object range [eurio:WorkPackage](http://data.europa.eu/s66#WorkPackage) from [eurio:isTaskOf](http://data.europa.eu/s66#isTaskOf)
+- <a id="change-720552369047000"></a>**[refersToEntityType](http://data.europa.eu/s66#refersToEntityType)** `Remove Object Property` [permalink](#change-720552369047000)
+  - Removed object property: [eurio:refersToEntityType](http://data.europa.eu/s66#refersToEntityType)
+
+---
+
+Generated by `tools/och_changelog_html.py`.

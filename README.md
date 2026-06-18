@@ -48,6 +48,36 @@ To generate a change KG with the OCH ontology, we provide a mapping template in 
 ### Examples
 Some examples of how the language can be used to describe data for RDF transformation is shown in the [examples folder](examples/). Csv templates with the associated mappings to generate the change KG are in the [change data template folder](change_data_template/). 
 
+## Changelog generator
+
+The repository includes a CLI tool that turns an OCH RDF change graph into a human-readable changelog.
+
+To generate a standalone, searchable HTML page:
+
+```bash
+python3 tools/och2changelog.py examples/ELI/eli_changelog.ttl \
+  -o examples/ELI/eli_changelog-searchable.html \
+  --title "ELI ontological changelog"
+```
+
+To generate a conventional Markdown changelog:
+
+```bash
+python3 tools/och2changelog.py examples/ELI/eli_changelog.ttl \
+  -o examples/ELI/CHANGELOG.md \
+  --title "ELI ontological changelog"
+```
+
+The output format is inferred from the output extension. It can also be selected explicitly with `--output-format html` or `--output-format markdown`. When no output path or format is given, HTML remains the default.
+
+All example changelogs can be regenerated at once:
+
+```bash
+./examples/generate_changelogs.sh
+```
+
+This generates `*_changelog-searchable.html` files by default, keeping them separate from WIDOCO documentation. Use `--markdown` for Markdown only or `--all` for both formats.
+
 ## Contribute
 The management of issues and improvements suggested for this vocabulary is done by addressing [issues]() in the repository. If you are interested in collaborate with us in a new version of the language, send us an email or open a new issue or discussion!
 
