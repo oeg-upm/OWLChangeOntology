@@ -1,5 +1,20 @@
 @prefix epo: <http://data.europa.eu/a4g/ontology#> .
 @prefix och: <https://w3id.org/def/och#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://example.org/epo/changelog/4.1.1-4.2.0>
+        a                och:Changelog ;
+        och:prevVersion  epo:core-4.1.1 ;
+        och:newVersion   epo:core-4.2.0 .
+
+epo:core-4.1.1
+        a                owl:Ontology ;
+        owl:versionInfo  "4.1.1" .
+
+epo:core-4.2.0
+        a                 owl:Ontology ;
+        owl:priorVersion  epo:core-4.1.1 ;
+        owl:versionInfo   "4.2.0" .
 
 <http://example.org/epo/change/802339719108500>
         a                        och:AddObjectProperty ;

@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ELI ontological changelog</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #182026;
+      --muted: #65717a;
+      --line: #d9e0e5;
+      --panel: #ffffff;
+      --page: #f6f8f9;
+      --accent: #176b87;
+      --accent-2: #7a4f1d;
+      --added: #0f7b4f;
+      --removed: #b33f32;
+      --focus: #0b5fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    .shell { max-width: 1180px; margin: 0 auto; padding: 28px 20px 52px; }
+    .hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 22px; align-items: end; margin-bottom: 22px; }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 4vw, 3.6rem); letter-spacing: 0; line-height: 1; }
+    .subtitle { max-width: 760px; margin: 0; color: var(--muted); font-size: 1rem; overflow-wrap: anywhere; }
+    .stats { display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); gap: 10px; }
+    .stat { min-width: 128px; border: 1px solid var(--line); background: var(--panel); border-radius: 8px; padding: 12px; }
+    .stat span { display: block; color: var(--accent); font-size: 1.35rem; font-weight: 750; }
+    .stat strong { display: block; color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; }
+    .metadata { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin: 18px 0 22px; }
+    .metadata div { border-left: 3px solid var(--accent-2); background: #fffaf3; padding: 10px 12px; }
+    dt { color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; }
+    dd { margin: 2px 0 0; overflow-wrap: anywhere; }
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: grid;
+      grid-template-columns: minmax(240px, 1fr) repeat(3, minmax(150px, 190px));
+      gap: 10px;
+      align-items: center;
+      padding: 12px;
+      margin: 0 0 22px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .96);
+      backdrop-filter: blur(10px);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(24, 32, 38, .08);
+    }
+    input, select, button {
+      width: 100%;
+      min-height: 42px;
+      border: 1px solid #c9d3da;
+      border-radius: 6px;
+      background: white;
+      color: var(--ink);
+      font: inherit;
+      padding: 0 12px;
+    }
+    button { cursor: pointer; background: var(--ink); color: white; border-color: var(--ink); }
+    input:focus, select:focus, button:focus { outline: 3px solid color-mix(in srgb, var(--focus) 24%, transparent); outline-offset: 1px; }
+    .group-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 24px 0 10px; }
+    .group-heading h2 { margin: 0; font-size: 1.25rem; }
+    .group-heading span { color: var(--muted); white-space: nowrap; }
+    .cards { display: grid; gap: 10px; }
+    .change-card {
+      scroll-margin-top: 88px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 15px;
+      box-shadow: 0 1px 0 rgba(24, 32, 38, .04);
+    }
+    .change-card:target { border-color: var(--focus); box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 16%, transparent); }
+    .change-card[hidden], .category-group[hidden] { display: none; }
+    .change-card header { display: grid; grid-template-columns: minmax(0, 1fr) minmax(190px, 34%); gap: 14px; align-items: start; }
+    .eyebrow { margin: 0 0 3px; color: var(--accent); font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
+    h3 { margin: 0; font-size: 1.08rem; overflow-wrap: anywhere; }
+    .card-links { display: grid; justify-items: end; gap: 4px; min-width: 0; }
+    .permalink { color: var(--accent); font-size: .82rem; font-weight: 700; text-decoration: none; }
+    .permalink:hover { text-decoration: underline; }
+    .uri { color: var(--muted); font-size: .86rem; text-align: right; overflow-wrap: anywhere; text-decoration-color: #b9c4cb; }
+    .details { margin: 12px 0 0; padding-left: 20px; }
+    .details li { margin: 4px 0; overflow-wrap: anywhere; }
+    .details a, .raw td a, .metadata a, .change-uri a {
+      color: inherit;
+      text-decoration-line: underline;
+      text-decoration-style: dotted;
+      text-decoration-color: #91a3ad;
+      text-underline-offset: 3px;
+    }
+    .details a:visited, .raw td a:visited, .metadata a:visited, .change-uri a:visited { color: inherit; }
+    .details a:hover, .raw td a:hover, .metadata a:hover, .change-uri a:hover {
+      color: var(--accent);
+      text-decoration-style: solid;
+    }
+    .raw { margin-top: 10px; color: var(--muted); }
+    .raw summary { cursor: pointer; font-size: .9rem; }
+    table { width: 100%; margin-top: 8px; border-collapse: collapse; font-size: .9rem; }
+    th, td { border-top: 1px solid var(--line); padding: 7px 4px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+    th { width: 220px; color: var(--muted); font-weight: 650; }
+    .change-uri { margin: 8px 0 0; overflow-wrap: anywhere; font-size: .86rem; }
+    .empty { border: 1px dashed #b6c0c7; border-radius: 8px; padding: 28px; text-align: center; background: white; }
+    .empty h2 { margin: 0 0 6px; }
+    .empty p { margin: 0; color: var(--muted); }
+    .footer { margin-top: 26px; color: var(--muted); font-size: .86rem; }
+    @media (max-width: 860px) {
+      .hero, .toolbar, .change-card header { grid-template-columns: 1fr; }
+      .card-links { justify-items: start; }
+      .uri { text-align: left; }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <h1>ELI ontological changelog</h1>
+        <p class="subtitle">Human-readable HTML serialization of an OCH change graph.</p>
+      </div>
+      <div class="stats"><div class="stat"><span>23</span><strong>changes</strong></div>
+<div class="stat"><span>4</span><strong>categories</strong></div>
+<div class="stat"><span>7</span><strong>change types</strong></div>
+<div class="stat"><span>2026-06-18</span><strong>generated</strong></div></div>
+    </section>
+    <dl class="metadata"><div><dt>Changelog metadata</dt><dd>No changelog resource or version metadata is provided in this RDF graph.</dd></div></dl>
+    <form class="toolbar" role="search">
+      <input id="searchInput" type="search" placeholder="Search entities, IRIs, annotations, types..." autocomplete="off">
+      <select id="categoryFilter" aria-label="Category">
+        <option value="">All categories</option>
+        <option value="Annotations">Annotations (12)</option>
+<option value="Domains">Domains (4)</option>
+<option value="Object properties">Object properties (4)</option>
+<option value="Property relations">Property relations (3)</option>
+      </select>
+      <select id="actionFilter" aria-label="Action">
+        <option value="">All actions</option>
+        <option value="Added">Added (19)</option>
+<option value="Removed">Removed (4)</option>
+      </select>
+      <select id="typeFilter" aria-label="Change type">
+        <option value="">All types</option>
+        <option value="AddAnnotationToEntity">Add Annotation to Entity (9)</option>
+<option value="AddDomain">Add Domain (3)</option>
+<option value="AddObjectProperty">Add Object Property (2)</option>
+<option value="AddRangeObjectProperty">Add Range Object Property (2)</option>
+<option value="AddSubProperty">Add Sub Property (3)</option>
+<option value="RemoveAnnotationFromEntity">Remove Annotation from Entity (3)</option>
+<option value="RemoveDomain">Remove Domain (1)</option>
+      </select>
+    </form>
+    <div id="resultCount" class="footer">23 visible changes</div>
+    
+            <section class="category-group" data-category="Annotations">
+              <div class="group-heading">
+                <h2>Annotations</h2>
+                <span>12 changes</span>
+              </div>
+              <div class="cards">
+                
+                <article id="change-718015689520400" class="change-card" data-id="2">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Annotation to Entity</p>
+                      <h3>cited_by</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015689520400" title="Permanent link to this change">
+                        #718015689520400
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added annotation on <a href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a>: <a href="http://www.w3.org/2004/02/skos/core#historyNote">skos:historyNote</a> = &quot;v1.5 : was made a subproperty of <a href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a>
+v1.2 : improved definition&quot;@en</li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Annotation To Entity</th><td><a href="http://www.w3.org/2004/02/skos/core#historyNote">skos:historyNote</a></td></tr>
+<tr><th>Source Add Annotation To Entity</th><td><a href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a></td></tr>
+<tr><th>Target Add Annotation To Entity</th><td>&quot;v1.5 : was made a subproperty of <a href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a>
+v1.2 : improved definition&quot;@en</td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015689520400">&lt;http://example.org/eli/change/718015689520400&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015690138000" class="change-card" data-id="4">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Annotation to Entity</p>
+                      <h3>cited_by</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015690138000" title="Permanent link to this change">
+                        #718015690138000
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added annotation on <a href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a>: <a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a> = &quot;modified in v1.5&quot;^^<a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Annotation To Entity</th><td><a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a></td></tr>
+<tr><th>Source Add Annotation To Entity</th><td><a href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a></td></tr>
+<tr><th>Target Add Annotation To Entity</th><td>&quot;modified in v1.5&quot;^^<a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015690138000">&lt;http://example.org/eli/change/718015690138000&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015683595800" class="change-card" data-id="0">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Removed / Remove Annotation from Entity</p>
+                      <h3>cited_by</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015683595800" title="Permanent link to this change">
+                        #718015683595800
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Removed annotation from <a href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a>: <a href="http://www.w3.org/2004/02/skos/core#historyNote">skos:historyNote</a> = &quot;v1.2 : improved definition&quot;@en</li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Removed Annotation From Entity</th><td><a href="http://www.w3.org/2004/02/skos/core#historyNote">skos:historyNote</a></td></tr>
+<tr><th>Source Remove Annotation From Entity</th><td><a href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a></td></tr>
+<tr><th>Target Remove Annotation From Entity</th><td>&quot;v1.2 : improved definition&quot;@en</td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015683595800">&lt;http://example.org/eli/change/718015683595800&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015689156700" class="change-card" data-id="1">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Removed / Remove Annotation from Entity</p>
+                      <h3>cited_by</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015689156700" title="Permanent link to this change">
+                        #718015689156700
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Removed annotation from <a href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a>: <a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a> = &quot;modified in v1.2&quot;^^<a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Removed Annotation From Entity</th><td><a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a></td></tr>
+<tr><th>Source Remove Annotation From Entity</th><td><a href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a></td></tr>
+<tr><th>Target Remove Annotation From Entity</th><td>&quot;modified in v1.2&quot;^^<a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015689156700">&lt;http://example.org/eli/change/718015689156700&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015690226200" class="change-card" data-id="5">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Annotation to Entity</p>
+                      <h3>cited_by_case_law</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015690226200" title="Permanent link to this change">
+                        #718015690226200
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#cited_by_case_law">eli:cited_by_case_law</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added annotation on <a href="http://data.europa.eu/eli/ontology#cited_by_case_law">eli:cited_by_case_law</a>: <a href="http://www.w3.org/2004/02/skos/core#historyNote">skos:historyNote</a> = &quot;v1.5 : was made a subproperty of <a href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a>&quot;@en</li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Annotation To Entity</th><td><a href="http://www.w3.org/2004/02/skos/core#historyNote">skos:historyNote</a></td></tr>
+<tr><th>Source Add Annotation To Entity</th><td><a href="http://data.europa.eu/eli/ontology#cited_by_case_law">eli:cited_by_case_law</a></td></tr>
+<tr><th>Target Add Annotation To Entity</th><td>&quot;v1.5 : was made a subproperty of <a href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a>&quot;@en</td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015690226200">&lt;http://example.org/eli/change/718015690226200&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015690302600" class="change-card" data-id="6">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Annotation to Entity</p>
+                      <h3>cited_by_case_law</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015690302600" title="Permanent link to this change">
+                        #718015690302600
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#cited_by_case_law">eli:cited_by_case_law</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added annotation on <a href="http://data.europa.eu/eli/ontology#cited_by_case_law">eli:cited_by_case_law</a>: <a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a> = &quot;modified in v1.5&quot;@en</li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Annotation To Entity</th><td><a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a></td></tr>
+<tr><th>Source Add Annotation To Entity</th><td><a href="http://data.europa.eu/eli/ontology#cited_by_case_law">eli:cited_by_case_law</a></td></tr>
+<tr><th>Target Add Annotation To Entity</th><td>&quot;modified in v1.5&quot;@en</td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015690302600">&lt;http://example.org/eli/change/718015690302600&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015690491800" class="change-card" data-id="9">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Annotation to Entity</p>
+                      <h3>cites</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015690491800" title="Permanent link to this change">
+                        #718015690491800
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#cites">eli:cites</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added annotation on <a href="http://data.europa.eu/eli/ontology#cites">eli:cites</a>: <a href="http://www.w3.org/2004/02/skos/core#historyNote">skos:historyNote</a> = &quot;v1.5 : was made a subproperty of <a href="http://data.europa.eu/eli/ontology#refers_to">eli:refers_to</a>&quot;@en</li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Annotation To Entity</th><td><a href="http://www.w3.org/2004/02/skos/core#historyNote">skos:historyNote</a></td></tr>
+<tr><th>Source Add Annotation To Entity</th><td><a href="http://data.europa.eu/eli/ontology#cites">eli:cites</a></td></tr>
+<tr><th>Target Add Annotation To Entity</th><td>&quot;v1.5 : was made a subproperty of <a href="http://data.europa.eu/eli/ontology#refers_to">eli:refers_to</a>&quot;@en</td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015690491800">&lt;http://example.org/eli/change/718015690491800&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015690587900" class="change-card" data-id="10">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Annotation to Entity</p>
+                      <h3>cites</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015690587900" title="Permanent link to this change">
+                        #718015690587900
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#cites">eli:cites</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added annotation on <a href="http://data.europa.eu/eli/ontology#cites">eli:cites</a>: <a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a> = &quot;modified in v1.5&quot;@en</li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Annotation To Entity</th><td><a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a></td></tr>
+<tr><th>Source Add Annotation To Entity</th><td><a href="http://data.europa.eu/eli/ontology#cites">eli:cites</a></td></tr>
+<tr><th>Target Add Annotation To Entity</th><td>&quot;modified in v1.5&quot;@en</td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015690587900">&lt;http://example.org/eli/change/718015690587900&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015692633600" class="change-card" data-id="19">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Annotation to Entity</p>
+                      <h3>number</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015692633600" title="Permanent link to this change">
+                        #718015692633600
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#number">eli:number</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added annotation on <a href="http://data.europa.eu/eli/ontology#number">eli:number</a>: <a href="http://www.w3.org/2004/02/skos/core#historyNote">skos:historyNote</a> = &quot;v1.5 : broaden the domain to Work or Expression instead of LegalResource or LegalExpression.&quot;@en</li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Annotation To Entity</th><td><a href="http://www.w3.org/2004/02/skos/core#historyNote">skos:historyNote</a></td></tr>
+<tr><th>Source Add Annotation To Entity</th><td><a href="http://data.europa.eu/eli/ontology#number">eli:number</a></td></tr>
+<tr><th>Target Add Annotation To Entity</th><td>&quot;v1.5 : broaden the domain to Work or Expression instead of LegalResource or LegalExpression.&quot;@en</td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015692633600">&lt;http://example.org/eli/change/718015692633600&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015692833200" class="change-card" data-id="20">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Annotation to Entity</p>
+                      <h3>number</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015692833200" title="Permanent link to this change">
+                        #718015692833200
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#number">eli:number</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added annotation on <a href="http://data.europa.eu/eli/ontology#number">eli:number</a>: <a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a> = &quot;modified in v1.5&quot;@en</li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Annotation To Entity</th><td><a href="http://www.w3.org/2002/07/owl#versionInfo">owl:versionInfo</a></td></tr>
+<tr><th>Source Add Annotation To Entity</th><td><a href="http://data.europa.eu/eli/ontology#number">eli:number</a></td></tr>
+<tr><th>Target Add Annotation To Entity</th><td>&quot;modified in v1.5&quot;@en</td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015692833200">&lt;http://example.org/eli/change/718015692833200&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015693227900" class="change-card" data-id="22">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Annotation to Entity</p>
+                      <h3>number</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015693227900" title="Permanent link to this change">
+                        #718015693227900
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#number">eli:number</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added annotation on <a href="http://data.europa.eu/eli/ontology#number">eli:number</a>: <a href="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a> = &quot;An identifier or other disambiguating feature for a work or expression. This can be the number of a legislation, the number of an article, or the issue number of an official journal.&quot;@en</li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Annotation To Entity</th><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td></tr>
+<tr><th>Source Add Annotation To Entity</th><td><a href="http://data.europa.eu/eli/ontology#number">eli:number</a></td></tr>
+<tr><th>Target Add Annotation To Entity</th><td>&quot;An identifier or other disambiguating feature for a work or expression. This can be the number of a legislation, the number of an article, or the issue number of an official journal.&quot;@en</td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015693227900">&lt;http://example.org/eli/change/718015693227900&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015692058700" class="change-card" data-id="17">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Removed / Remove Annotation from Entity</p>
+                      <h3>number</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015692058700" title="Permanent link to this change">
+                        #718015692058700
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#number">eli:number</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Removed annotation from <a href="http://data.europa.eu/eli/ontology#number">eli:number</a>: <a href="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a> = &quot;An identifier or other disambiguating feature for a legal resource or legal expression. This can be the number of a legislation, the number of an article, or the issue number of an official journal.&quot;@en</li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Removed Annotation From Entity</th><td><a href="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td></tr>
+<tr><th>Source Remove Annotation From Entity</th><td><a href="http://data.europa.eu/eli/ontology#number">eli:number</a></td></tr>
+<tr><th>Target Remove Annotation From Entity</th><td>&quot;An identifier or other disambiguating feature for a legal resource or legal expression. This can be the number of a legislation, the number of an article, or the issue number of an official journal.&quot;@en</td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015692058700">&lt;http://example.org/eli/change/718015692058700&gt;</a></p>
+                  </details>
+                </article>
+                
+              </div>
+            </section>
+            
+            <section class="category-group" data-category="Domains">
+              <div class="group-heading">
+                <h2>Domains</h2>
+                <span>4 changes</span>
+              </div>
+              <div class="cards">
+                
+                <article id="change-718015690818800" class="change-card" data-id="12">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Domain</p>
+                      <h3>is_referred_to_by</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015690818800" title="Permanent link to this change">
+                        #718015690818800
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added domain <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a> to <a href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a></li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Domain</th><td><a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a></td></tr>
+<tr><th>Added Domain To Property</th><td><a href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a></td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015690818800">&lt;http://example.org/eli/change/718015690818800&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015692900100" class="change-card" data-id="21">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Domain</p>
+                      <h3>number</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015692900100" title="Permanent link to this change">
+                        #718015692900100
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#number">eli:number</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added domain not specified to <a href="http://data.europa.eu/eli/ontology#number">eli:number</a></li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Domain To Property</th><td><a href="http://data.europa.eu/eli/ontology#number">eli:number</a></td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015692900100">&lt;http://example.org/eli/change/718015692900100&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015692231000" class="change-card" data-id="18">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Removed / Remove Domain</p>
+                      <h3>number</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015692231000" title="Permanent link to this change">
+                        #718015692231000
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#number">eli:number</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Removed domain not specified from <a href="http://data.europa.eu/eli/ontology#number">eli:number</a></li>
+<li>Remove Domain From Property: <a href="http://data.europa.eu/eli/ontology#number">eli:number</a></li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Remove Domain From Property</th><td><a href="http://data.europa.eu/eli/ontology#number">eli:number</a></td></tr>
+<tr><th>Removed Domain From Property</th><td><a href="http://data.europa.eu/eli/ontology#number">eli:number</a></td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015692231000">&lt;http://example.org/eli/change/718015692231000&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015691778700" class="change-card" data-id="16">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Domain</p>
+                      <h3>refers_to</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015691778700" title="Permanent link to this change">
+                        #718015691778700
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#refers_to">eli:refers_to</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added domain not specified to <a href="http://data.europa.eu/eli/ontology#refers_to">eli:refers_to</a></li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Domain To Property</th><td><a href="http://data.europa.eu/eli/ontology#refers_to">eli:refers_to</a></td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015691778700">&lt;http://example.org/eli/change/718015691778700&gt;</a></p>
+                  </details>
+                </article>
+                
+              </div>
+            </section>
+            
+            <section class="category-group" data-category="Object properties">
+              <div class="group-heading">
+                <h2>Object properties</h2>
+                <span>4 changes</span>
+              </div>
+              <div class="cards">
+                
+                <article id="change-718015690668300" class="change-card" data-id="11">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Object Property</p>
+                      <h3>is_referred_to_by</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015690668300" title="Permanent link to this change">
+                        #718015690668300
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added object property: <a href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a></li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Object Property</th><td><a href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a></td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015690668300">&lt;http://example.org/eli/change/718015690668300&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015690973100" class="change-card" data-id="13">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Range Object Property</p>
+                      <h3>is_referred_to_by</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015690973100" title="Permanent link to this change">
+                        #718015690973100
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added object range not specified to <a href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a></li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Range To Property</th><td><a href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a></td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015690973100">&lt;http://example.org/eli/change/718015690973100&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015691544200" class="change-card" data-id="14">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Object Property</p>
+                      <h3>refers_to</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015691544200" title="Permanent link to this change">
+                        #718015691544200
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#refers_to">eli:refers_to</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added object property: <a href="http://data.europa.eu/eli/ontology#refers_to">eli:refers_to</a></li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Object Property</th><td><a href="http://data.europa.eu/eli/ontology#refers_to">eli:refers_to</a></td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015691544200">&lt;http://example.org/eli/change/718015691544200&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015691708200" class="change-card" data-id="15">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Range Object Property</p>
+                      <h3>refers_to</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015691708200" title="Permanent link to this change">
+                        #718015691708200
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#refers_to">eli:refers_to</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added object range <a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a> to <a href="http://data.europa.eu/eli/ontology#refers_to">eli:refers_to</a></li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Added Object Range</th><td><a href="http://www.w3.org/2002/07/owl#Thing">owl:Thing</a></td></tr>
+<tr><th>Added Range To Property</th><td><a href="http://data.europa.eu/eli/ontology#refers_to">eli:refers_to</a></td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015691708200">&lt;http://example.org/eli/change/718015691708200&gt;</a></p>
+                  </details>
+                </article>
+                
+              </div>
+            </section>
+            
+            <section class="category-group" data-category="Property relations">
+              <div class="group-heading">
+                <h2>Property relations</h2>
+                <span>3 changes</span>
+              </div>
+              <div class="cards">
+                
+                <article id="change-718015689866600" class="change-card" data-id="3">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Sub Property</p>
+                      <h3>cited_by</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015689866600" title="Permanent link to this change">
+                        #718015689866600
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added subproperty relation: <a href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a> subproperty of <a href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a></li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Source Add Sub Property</th><td><a href="http://data.europa.eu/eli/ontology#cited_by">eli:cited_by</a></td></tr>
+<tr><th>Target Add Sub Property</th><td><a href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a></td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015689866600">&lt;http://example.org/eli/change/718015689866600&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015690359500" class="change-card" data-id="7">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Sub Property</p>
+                      <h3>cited_by_case_law</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015690359500" title="Permanent link to this change">
+                        #718015690359500
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#cited_by_case_law">eli:cited_by_case_law</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added subproperty relation: <a href="http://data.europa.eu/eli/ontology#cited_by_case_law">eli:cited_by_case_law</a> subproperty of <a href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a></li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Source Add Sub Property</th><td><a href="http://data.europa.eu/eli/ontology#cited_by_case_law">eli:cited_by_case_law</a></td></tr>
+<tr><th>Target Add Sub Property</th><td><a href="http://data.europa.eu/eli/ontology#is_referred_to_by">eli:is_referred_to_by</a></td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015690359500">&lt;http://example.org/eli/change/718015690359500&gt;</a></p>
+                  </details>
+                </article>
+                
+                <article id="change-718015690424700" class="change-card" data-id="8">
+                  <header>
+                    <div>
+                      <p class="eyebrow">Added / Add Sub Property</p>
+                      <h3>cites</h3>
+                    </div>
+                    <div class="card-links">
+                      <a class="permalink" href="#change-718015690424700" title="Permanent link to this change">
+                        #718015690424700
+                      </a>
+                      <a class="uri" href="http://data.europa.eu/eli/ontology#cites">eli:cites</a>
+                    </div>
+                  </header>
+                  <ul class="details"><li>Added subproperty relation: <a href="http://data.europa.eu/eli/ontology#cites">eli:cites</a> subproperty of <a href="http://data.europa.eu/eli/ontology#refers_to">eli:refers_to</a></li></ul>
+                  <details class="raw">
+                    <summary>RDF properties</summary>
+                    <table><tr><th>Source Add Sub Property</th><td><a href="http://data.europa.eu/eli/ontology#cites">eli:cites</a></td></tr>
+<tr><th>Target Add Sub Property</th><td><a href="http://data.europa.eu/eli/ontology#refers_to">eli:refers_to</a></td></tr></table>
+                    <p class="change-uri">Change URI: <a href="http://example.org/eli/change/718015690424700">&lt;http://example.org/eli/change/718015690424700&gt;</a></p>
+                  </details>
+                </article>
+                
+              </div>
+            </section>
+            
+    
+      <div id="emptyState" class="empty" hidden>
+        <h2>No changes match the current filters</h2>
+        <p>Try a broader search term or clear one of the filters.</p>
+      </div>
+    
+    <p class="footer">Generated by tools/och_changelog_html.py on 2026-06-18 10:37 UTC.</p>
+  </main>
+  <script>
+    const changes = [{"id": 0, "query": "<http://example.org/eli/change/718015683595800> removeannotationfromentity remove annotation from entity removed annotations eli:cited_by cited_by removed annotation from eli:cited_by: <http://www.w3.org/2004/02/skos/core#historynote> = \"v1.2 : improved definition\"@en", "category": "Annotations", "action": "Removed", "type": "RemoveAnnotationFromEntity", "typeLabel": "Remove Annotation from Entity"}, {"id": 1, "query": "<http://example.org/eli/change/718015689156700> removeannotationfromentity remove annotation from entity removed annotations eli:cited_by cited_by removed annotation from eli:cited_by: <http://www.w3.org/2002/07/owl#versioninfo> = \"modified in v1.2\"^^xsd:string", "category": "Annotations", "action": "Removed", "type": "RemoveAnnotationFromEntity", "typeLabel": "Remove Annotation from Entity"}, {"id": 2, "query": "<http://example.org/eli/change/718015689520400> addannotationtoentity add annotation to entity added annotations eli:cited_by cited_by added annotation on eli:cited_by: <http://www.w3.org/2004/02/skos/core#historynote> = \"v1.5 : was made a subproperty of eli:is_referred_to_by\nv1.2 : improved definition\"@en", "category": "Annotations", "action": "Added", "type": "AddAnnotationToEntity", "typeLabel": "Add Annotation to Entity"}, {"id": 3, "query": "<http://example.org/eli/change/718015689866600> addsubproperty add sub property added property relations eli:cited_by cited_by added subproperty relation: eli:cited_by subproperty of eli:is_referred_to_by", "category": "Property relations", "action": "Added", "type": "AddSubProperty", "typeLabel": "Add Sub Property"}, {"id": 4, "query": "<http://example.org/eli/change/718015690138000> addannotationtoentity add annotation to entity added annotations eli:cited_by cited_by added annotation on eli:cited_by: <http://www.w3.org/2002/07/owl#versioninfo> = \"modified in v1.5\"^^xsd:string", "category": "Annotations", "action": "Added", "type": "AddAnnotationToEntity", "typeLabel": "Add Annotation to Entity"}, {"id": 5, "query": "<http://example.org/eli/change/718015690226200> addannotationtoentity add annotation to entity added annotations eli:cited_by_case_law cited_by_case_law added annotation on eli:cited_by_case_law: <http://www.w3.org/2004/02/skos/core#historynote> = \"v1.5 : was made a subproperty of eli:is_referred_to_by\"@en", "category": "Annotations", "action": "Added", "type": "AddAnnotationToEntity", "typeLabel": "Add Annotation to Entity"}, {"id": 6, "query": "<http://example.org/eli/change/718015690302600> addannotationtoentity add annotation to entity added annotations eli:cited_by_case_law cited_by_case_law added annotation on eli:cited_by_case_law: <http://www.w3.org/2002/07/owl#versioninfo> = \"modified in v1.5\"@en", "category": "Annotations", "action": "Added", "type": "AddAnnotationToEntity", "typeLabel": "Add Annotation to Entity"}, {"id": 7, "query": "<http://example.org/eli/change/718015690359500> addsubproperty add sub property added property relations eli:cited_by_case_law cited_by_case_law added subproperty relation: eli:cited_by_case_law subproperty of eli:is_referred_to_by", "category": "Property relations", "action": "Added", "type": "AddSubProperty", "typeLabel": "Add Sub Property"}, {"id": 8, "query": "<http://example.org/eli/change/718015690424700> addsubproperty add sub property added property relations eli:cites cites added subproperty relation: eli:cites subproperty of eli:refers_to", "category": "Property relations", "action": "Added", "type": "AddSubProperty", "typeLabel": "Add Sub Property"}, {"id": 9, "query": "<http://example.org/eli/change/718015690491800> addannotationtoentity add annotation to entity added annotations eli:cites cites added annotation on eli:cites: <http://www.w3.org/2004/02/skos/core#historynote> = \"v1.5 : was made a subproperty of eli:refers_to\"@en", "category": "Annotations", "action": "Added", "type": "AddAnnotationToEntity", "typeLabel": "Add Annotation to Entity"}, {"id": 10, "query": "<http://example.org/eli/change/718015690587900> addannotationtoentity add annotation to entity added annotations eli:cites cites added annotation on eli:cites: <http://www.w3.org/2002/07/owl#versioninfo> = \"modified in v1.5\"@en", "category": "Annotations", "action": "Added", "type": "AddAnnotationToEntity", "typeLabel": "Add Annotation to Entity"}, {"id": 11, "query": "<http://example.org/eli/change/718015690668300> addobjectproperty add object property added object properties eli:is_referred_to_by is_referred_to_by added object property: eli:is_referred_to_by", "category": "Object properties", "action": "Added", "type": "AddObjectProperty", "typeLabel": "Add Object Property"}, {"id": 12, "query": "<http://example.org/eli/change/718015690818800> adddomain add domain added domains eli:is_referred_to_by is_referred_to_by added domain <http://www.w3.org/2002/07/owl#thing> to eli:is_referred_to_by", "category": "Domains", "action": "Added", "type": "AddDomain", "typeLabel": "Add Domain"}, {"id": 13, "query": "<http://example.org/eli/change/718015690973100> addrangeobjectproperty add range object property added object properties eli:is_referred_to_by is_referred_to_by added object range not specified to eli:is_referred_to_by", "category": "Object properties", "action": "Added", "type": "AddRangeObjectProperty", "typeLabel": "Add Range Object Property"}, {"id": 14, "query": "<http://example.org/eli/change/718015691544200> addobjectproperty add object property added object properties eli:refers_to refers_to added object property: eli:refers_to", "category": "Object properties", "action": "Added", "type": "AddObjectProperty", "typeLabel": "Add Object Property"}, {"id": 15, "query": "<http://example.org/eli/change/718015691708200> addrangeobjectproperty add range object property added object properties eli:refers_to refers_to added object range <http://www.w3.org/2002/07/owl#thing> to eli:refers_to", "category": "Object properties", "action": "Added", "type": "AddRangeObjectProperty", "typeLabel": "Add Range Object Property"}, {"id": 16, "query": "<http://example.org/eli/change/718015691778700> adddomain add domain added domains eli:refers_to refers_to added domain not specified to eli:refers_to", "category": "Domains", "action": "Added", "type": "AddDomain", "typeLabel": "Add Domain"}, {"id": 17, "query": "<http://example.org/eli/change/718015692058700> removeannotationfromentity remove annotation from entity removed annotations eli:number number removed annotation from eli:number: rdfs:comment = \"an identifier or other disambiguating feature for a legal resource or legal expression. this can be the number of a legislation, the number of an article, or the issue number of an official journal.\"@en", "category": "Annotations", "action": "Removed", "type": "RemoveAnnotationFromEntity", "typeLabel": "Remove Annotation from Entity"}, {"id": 18, "query": "<http://example.org/eli/change/718015692231000> removedomain remove domain removed domains eli:number number removed domain not specified from eli:number remove domain from property: eli:number", "category": "Domains", "action": "Removed", "type": "RemoveDomain", "typeLabel": "Remove Domain"}, {"id": 19, "query": "<http://example.org/eli/change/718015692633600> addannotationtoentity add annotation to entity added annotations eli:number number added annotation on eli:number: <http://www.w3.org/2004/02/skos/core#historynote> = \"v1.5 : broaden the domain to work or expression instead of legalresource or legalexpression.\"@en", "category": "Annotations", "action": "Added", "type": "AddAnnotationToEntity", "typeLabel": "Add Annotation to Entity"}, {"id": 20, "query": "<http://example.org/eli/change/718015692833200> addannotationtoentity add annotation to entity added annotations eli:number number added annotation on eli:number: <http://www.w3.org/2002/07/owl#versioninfo> = \"modified in v1.5\"@en", "category": "Annotations", "action": "Added", "type": "AddAnnotationToEntity", "typeLabel": "Add Annotation to Entity"}, {"id": 21, "query": "<http://example.org/eli/change/718015692900100> adddomain add domain added domains eli:number number added domain not specified to eli:number", "category": "Domains", "action": "Added", "type": "AddDomain", "typeLabel": "Add Domain"}, {"id": 22, "query": "<http://example.org/eli/change/718015693227900> addannotationtoentity add annotation to entity added annotations eli:number number added annotation on eli:number: rdfs:comment = \"an identifier or other disambiguating feature for a work or expression. this can be the number of a legislation, the number of an article, or the issue number of an official journal.\"@en", "category": "Annotations", "action": "Added", "type": "AddAnnotationToEntity", "typeLabel": "Add Annotation to Entity"}];
+    const controls = {
+      search: document.getElementById('searchInput'),
+      category: document.getElementById('categoryFilter'),
+      action: document.getElementById('actionFilter'),
+      type: document.getElementById('typeFilter')
+    };
+    const resultCount = document.getElementById('resultCount');
+    const emptyState = document.getElementById('emptyState');
+
+    function matches(change, filters, excluded = '') {
+      return (!filters.search || change.query.includes(filters.search))
+        && (excluded === 'category' || !filters.category || change.category === filters.category)
+        && (excluded === 'action' || !filters.action || change.action === filters.action)
+        && (excluded === 'type' || !filters.type || change.type === filters.type);
+    }
+
+    function currentFilters() {
+      return {
+        search: controls.search.value.trim().toLowerCase(),
+        category: controls.category.value,
+        action: controls.action.value,
+        type: controls.type.value
+      };
+    }
+
+    function availableValues(field, filters) {
+      const values = new Map();
+      for (const change of changes) {
+        if (!matches(change, filters, field)) continue;
+        const value = change[field];
+        const label = field === 'type' ? change.typeLabel : value;
+        const entry = values.get(value) || { label, count: 0 };
+        entry.count++;
+        values.set(value, entry);
+      }
+      return values;
+    }
+
+    function normalizeSelections(filters) {
+      let changed = true;
+      while (changed) {
+        changed = false;
+        for (const field of ['category', 'action', 'type']) {
+          if (filters[field] && !availableValues(field, filters).has(filters[field])) {
+            filters[field] = '';
+            controls[field].value = '';
+            changed = true;
+          }
+        }
+      }
+    }
+
+    function updateSelect(field, filters) {
+      const select = controls[field];
+      const selected = filters[field];
+      const values = availableValues(field, filters);
+      const labels = {
+        category: 'All categories',
+        action: 'All actions',
+        type: 'All types'
+      };
+      const options = [...values.entries()].sort((left, right) =>
+        left[1].label.localeCompare(right[1].label)
+      );
+
+      select.replaceChildren(new Option(labels[field], ''));
+      for (const [value, item] of options) {
+        select.add(new Option(`${item.label} (${item.count})`, value));
+      }
+      select.value = values.has(selected) ? selected : '';
+    }
+
+    function applyFilters() {
+      const filters = currentFilters();
+      normalizeSelections(filters);
+      updateSelect('category', filters);
+      updateSelect('action', filters);
+      updateSelect('type', filters);
+      let visible = 0;
+
+      for (const change of changes) {
+        const match = matches(change, filters);
+        const card = document.querySelector(`[data-id="${change.id}"]`);
+        card.hidden = !match;
+        if (match) visible++;
+      }
+
+      for (const group of document.querySelectorAll('.category-group')) {
+        group.hidden = group.querySelectorAll('.change-card:not([hidden])').length === 0;
+      }
+      resultCount.textContent = `${visible} visible change${visible === 1 ? '' : 's'}`;
+      emptyState.hidden = visible !== 0;
+    }
+
+    Object.values(controls).forEach(control => control.addEventListener('input', applyFilters));
+    applyFilters();
+  </script>
+</body>
+</html>
