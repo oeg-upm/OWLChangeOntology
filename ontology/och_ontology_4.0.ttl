@@ -366,10 +366,10 @@ xsd:string rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/och#hasImpactAssessment
 :hasImpactAssessment rdf:type owl:ObjectProperty ;
                      rdfs:domain [ rdf:type owl:Class ;
-                                   owl:unionOf ( :Changelog
-                                                 :OntologicalChange
-                                               )
-                                 ] ;
+                        owl:unionOf ( :Changelog
+                                      :OntologicalChange
+                                    )
+                      ] ;
                      rdfs:range :ImpactAssessment ;
                      rdfs:comment "Relates an ontological change or a changelog to an assessment of its impact. Since :ChangeSet is a subclass of :Changelog, assessments of change sets are covered as well and express aggregate impact." ;
                      rdfs:label "has impact assessment" .
@@ -377,11 +377,9 @@ xsd:string rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/def/och#hasLogicalImpact
 :hasLogicalImpact rdf:type owl:ObjectProperty ;
+                  owl:propertyChainAxiom ( :hasImpactAssessment :logicalImpact ) ;
                   rdfs:domain :OntologicalChange ;
                   rdfs:range :LogicalImpact ;
-                  owl:propertyChainAxiom ( :hasImpactAssessment
-                                           :logicalImpact
-                                         ) ;
                   rdfs:comment "Shortcut relating a change directly to its logical impact, for consumers that do not need provenance. It is entailed by the chain of :hasImpactAssessment and :logicalImpact, and should not be the only representation when more than one assessment of the same change exists." ;
                   rdfs:label "has logical impact" .
 
@@ -406,8 +404,8 @@ xsd:string rdf:type rdfs:Datatype .
 ###  https://w3id.org/def/och#issuedBy
 :issuedBy rdf:type owl:ObjectProperty ;
           rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( :ImpactAssessment
-                                      :OntologicalChange
+                        owl:unionOf ( :OntologicalChange
+                                      :ImpactAssessment
                                     )
                       ] ;
           rdfs:range <http://xmlns.com/foaf/0.1/Agent> ;
@@ -424,8 +422,8 @@ xsd:string rdf:type rdfs:Datatype .
 
 
 ###  https://w3id.org/def/och#logicalImpact
-:logicalImpact rdf:type owl:ObjectProperty ,
-                        owl:FunctionalProperty ;
+:logicalImpact rdf:type owl:ObjectProperty ;
+               rdf:type owl:FunctionalProperty ;
                rdfs:domain :LogicalImpactAssessment ;
                rdfs:range :LogicalImpact ;
                rdfs:comment "The logical impact established by an assessment. Functional: a single assessment yields exactly one verdict. Divergent verdicts must be expressed as separate assessments with distinct provenance." ;
@@ -1561,8 +1559,8 @@ owl:Ontology rdf:type owl:Class .
 
 ###  https://w3id.org/def/och#Reasoner
 :Reasoner rdf:type owl:Class ;
-          rdfs:subClassOf <http://www.w3.org/ns/prov#SoftwareAgent> ,
-                          <http://xmlns.com/foaf/0.1/Agent> ;
+          rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ,
+                    <http://www.w3.org/ns/prov#SoftwareAgent> ;
           rdfs:comment "A software agent that decides entailment. Recording it is what makes a logical impact verdict reproducible, since a reasoner that is incomplete for the expressivity of the ontology may fail to establish an entailment that holds."@en ;
           rdfs:label "Reasoner"@en .
 
@@ -1761,7 +1759,7 @@ owl:Ontology rdf:type owl:Class .
 
 ###  https://w3id.org/def/och#ChangeCategoryScheme
 :ChangeCategoryScheme rdf:type owl:NamedIndividual ,
-                               <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                       <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
                       rdfs:comment "An open concept scheme for justification-based refinements of the effectual and ineffectual distinction. Concepts added to this scheme should be related to :Effectual or :Ineffectual with skos:broader. "@en ;
                       rdfs:label "Change Category Scheme"@en ;
                       <http://www.w3.org/2004/02/skos/core#scopeNote> "Extension point for fine-grained change categories."@en .
@@ -1769,7 +1767,7 @@ owl:Ontology rdf:type owl:Class .
 
 ###  https://w3id.org/def/och#Effectual
 :Effectual rdf:type owl:NamedIndividual ,
-                    :LogicalImpact ;
+                        :LogicalImpact ;
            <http://www.w3.org/2004/02/skos/core#inScheme> :LogicalImpactScheme ;
            rdfs:comment "The change alters the set of entailments. An added axiom is effectual when it is not entailed by the previous version; a removed axiom is effectual when it is not entailed by the new version."@en ;
            rdfs:label "Effectual"@en ;
@@ -1785,7 +1783,7 @@ owl:Ontology rdf:type owl:Class .
 
 ###  https://w3id.org/def/och#Ineffectual
 :Ineffectual rdf:type owl:NamedIndividual ,
-                      :LogicalImpact ;
+                          :LogicalImpact ;
              <http://www.w3.org/2004/02/skos/core#inScheme> :LogicalImpactScheme ;
              rdfs:comment "The change does not alter the set of entailments. An added axiom is ineffectual when it is already entailed by the previous version; a removed axiom is ineffectual when it remains entailed by the new version."@en ;
              rdfs:label "Ineffectual"@en ;
@@ -1808,17 +1806,17 @@ owl:Ontology rdf:type owl:Class .
 
 ###  https://w3id.org/def/och#LogicalImpactScheme
 :LogicalImpactScheme rdf:type owl:NamedIndividual ,
-                              <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                      <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
                      <http://www.w3.org/2004/02/skos/core#hasTopConcept> :Effectual ,
-                                                                         :Ineffectual ,
-                                                                         :Undetermined ;
+                                            :Ineffectual ,
+                                            :Undetermined ;
                      rdfs:comment "The concept scheme grouping the possible logical impact values."@en ;
                      rdfs:label "Logical Impact Scheme"@en .
 
 
 ###  https://w3id.org/def/och#OWL2DirectSemantics
 :OWL2DirectSemantics rdf:type owl:NamedIndividual ,
-                              :EntailmentRegime ;
+                                  :EntailmentRegime ;
                      rdfs:comment "Entailment decided under the OWL 2 Direct Semantics."@en ;
                      rdfs:label "OWL 2 Direct Semantics"@en ;
                      <http://www.w3.org/2004/02/skos/core#prefLabel> "OWL 2 Direct Semantics"@en .
@@ -1826,7 +1824,7 @@ owl:Ontology rdf:type owl:Class .
 
 ###  https://w3id.org/def/och#OWL2RDFBasedSemantics
 :OWL2RDFBasedSemantics rdf:type owl:NamedIndividual ,
-                                :EntailmentRegime ;
+                                    :EntailmentRegime ;
                        rdfs:comment "Entailment decided under the OWL 2 RDF-Based Semantics."@en ;
                        rdfs:label "OWL 2 RDF-Based Semantics"@en ;
                        <http://www.w3.org/2004/02/skos/core#prefLabel> "OWL 2 RDF-Based Semantics"@en .
@@ -1834,7 +1832,7 @@ owl:Ontology rdf:type owl:Class .
 
 ###  https://w3id.org/def/och#RDFSEntailment
 :RDFSEntailment rdf:type owl:NamedIndividual ,
-                         :EntailmentRegime ;
+                             :EntailmentRegime ;
                 rdfs:comment "Entailment decided under RDFS semantics."@en ;
                 rdfs:label "RDFS Entailment"@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "RDFS Entailment"@en .
@@ -1842,7 +1840,7 @@ owl:Ontology rdf:type owl:Class .
 
 ###  https://w3id.org/def/och#Refactoring
 :Refactoring rdf:type owl:NamedIndividual ,
-                      :DeductiveDirection ;
+                          :DeductiveDirection ;
              rdfs:comment "The change redistributes entailments without a uniform direction, typically when a change set both gains and loses consequences."@en ;
              rdfs:label "Refactoring"@en ;
              <http://www.w3.org/2004/02/skos/core#prefLabel> "Refactoring"@en .
@@ -1857,7 +1855,7 @@ owl:Ontology rdf:type owl:Class .
 
 ###  https://w3id.org/def/och#Strengthening
 :Strengthening rdf:type owl:NamedIndividual ,
-                        :DeductiveDirection ;
+                            :DeductiveDirection ;
                rdfs:comment "The change increases the set of entailments."@en ;
                rdfs:label "Strengthening"@en ;
                <http://www.w3.org/2004/02/skos/core#prefLabel> "Strengthening"@en .
@@ -1879,7 +1877,7 @@ owl:Ontology rdf:type owl:Class .
 
 ###  https://w3id.org/def/och#Undetermined
 :Undetermined rdf:type owl:NamedIndividual ,
-                       :LogicalImpact ;
+                           :LogicalImpact ;
               <http://www.w3.org/2004/02/skos/core#inScheme> :LogicalImpactScheme ;
               rdfs:comment "The logical impact could not be decided, for instance because the entailment check exceeded the time limit stated in :reasoningTimeout, because the reasoner is incomplete for the expressivity of the ontology, or because one of the versions could not be loaded. The value is asserted positively so that an undecided change remains distinguishable from an unassessed one."@en ;
               rdfs:label "Undetermined"@en ;
@@ -1888,7 +1886,7 @@ owl:Ontology rdf:type owl:Class .
 
 ###  https://w3id.org/def/och#Weakening
 :Weakening rdf:type owl:NamedIndividual ,
-                    :DeductiveDirection ;
+                        :DeductiveDirection ;
            rdfs:comment "The change decreases the set of entailments."@en ;
            rdfs:label "Weakening"@en ;
            <http://www.w3.org/2004/02/skos/core#prefLabel> "Weakening"@en .
